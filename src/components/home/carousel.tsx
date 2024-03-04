@@ -84,28 +84,28 @@ const Carousel = () => {
               <source src={slide.video} type='video/mp4' />
             </video>
 
-            <div className='absolute -inset-2  flex items-center md:pl-16 pt-5  bg-black bg-opacity-30'>
+            <div className='absolute -inset-2  flex items-center md:pl-16 md:pt-5 pt-2  bg-black bg-opacity-30'>
               <div className='bg-opacity-50 md:w-4/5 h-full p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
-                  <h2 className='md:text-xl font-bold text-sm ml-4 '>
+                  <h2 className='md:text-2xl font-bold text-sm ml-4 '>
                     {slide.weAre}
                   </h2>
                   {/* <Separator
                     orientation='vertical'
                     className='bg-num-orange w-1 h-10'
                   /> */}
-                  <h2 className='md:text-5xl pl-2  text-sm  border-l-4 border-num-orange'>
+                  <h2 className='md:text-6xl pl-2  text-sm  border-l-4 border-num-orange'>
                     {slide.title}
                   </h2>
-                  <p className='md:text-lg ml-4 font-sans md:pt-5 md:pb-2 text-xs md:w-5/12'>
+                  <p className='md:text-xl ml-4 font-sans md:pt-5 md:pb-2 text-xs md:w-5/12'>
                     {slide.content}
                   </p>
                   <Button className='w-40 ml-4 bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>
                     Read More{`>`}
                   </Button>
                 </div>
-                <div className='flex flex-row mt-4 text-lg font-medium'>
+                <div className='flex flex-row md:mt-4 mt-2 md:text-xl text-sm font-medium'>
                   {`#`}
                   {slide.heading}
                 </div>
