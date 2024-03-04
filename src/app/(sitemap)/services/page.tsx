@@ -98,7 +98,7 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Services</p>
       </div>
-      <div className='flex h-96'>
+      <div className='flex w-full h-96'>
         <Image
           src={'/services/banner.png'}
           height={600}
