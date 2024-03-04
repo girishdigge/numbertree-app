@@ -10,8 +10,8 @@ import { Separator } from '@radix-ui/react-separator';
 const slides = [
   {
     heading: "Empowering Tomorrow's infrastructure",
-    title: 'We are',
-    titleMain: 'Techno-Commercial Auditors',
+    weAre: 'We are',
+    title: 'Techno-Commercial Auditors',
     content:
       "We are India's foremost techno-commercial audit firm with close to two decades of expertise.",
     link: '/techno-commercial-project',
@@ -19,8 +19,8 @@ const slides = [
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
-    title: 'We are',
-    titleMain: 'Quantity Surveyors',
+    weAre: 'We are',
+    title: 'Quantity Surveyors',
     content:
       'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
     link: '/quantity-survey',
@@ -28,17 +28,17 @@ const slides = [
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
-    title: 'We are',
-    titleMain: 'Contract Administrators',
+    weAre: 'We are',
+    title: 'Contract Administrators',
     content:
-      'Our comprehensive services in Contract Administration and Bill Checking ensure transparency, compliance, and cost optimization.',
+      'Our comprehensive services in Contract Administration & Bill Checking ensure transparency, compliance, & cost optimization.',
     link: '/contract-administration',
     video: '/carousel/v3.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
-    title: 'We are',
-    titleMain: 'Cost Consultants',
+    weAre: 'We are',
+    title: 'Cost Consultants',
     content:
       'We provide cost management services on a wide range of construction projects across sectors in infrastructure.',
     link: '/cost-consultants',
@@ -46,8 +46,8 @@ const slides = [
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
-    title: 'We are',
-    titleMain: 'NumberTree',
+    weAre: 'We are',
+    title: 'NumberTree',
     content:
       'We are a consulting engineering & audit services firm, partnering with businesses that advance the world... ',
     link: '/numbertree',
@@ -72,13 +72,13 @@ const Carousel = () => {
     <div className='text-white z-1 relative bg-white'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className='relative md:h-96'>
+          <div key={index} className='relative'>
             <video
               autoPlay
               muted
               loop
               width='w-full'
-              height='200'
+              height='600'
               className='object-cover'
             >
               <source src={slide.video} type='video/mp4' />
@@ -89,21 +89,25 @@ const Carousel = () => {
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
                   <h2 className='md:text-xl font-bold text-sm ml-4 '>
-                    {slide.title}
+                    {slide.weAre}
                   </h2>
                   {/* <Separator
                     orientation='vertical'
                     className='bg-num-orange w-1 h-10'
                   /> */}
                   <h2 className='md:text-5xl pl-2  text-sm  border-l-4 border-num-orange'>
-                    {slide.titleMain}
+                    {slide.title}
                   </h2>
-                  <p className='md:text-lg ml-4 md:pt-5 md:pb-2 text-xs md:w-2/5'>
+                  <p className='md:text-lg ml-4 font-sans md:pt-5 md:pb-2 text-xs md:w-5/12'>
                     {slide.content}
                   </p>
                   <Button className='w-40 ml-4 bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>
                     Read More{`>`}
                   </Button>
+                </div>
+                <div className='flex flex-row mt-4 text-lg font-medium'>
+                  {`#`}
+                  {slide.heading}
                 </div>
               </div>
             </div>
