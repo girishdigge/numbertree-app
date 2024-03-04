@@ -33,7 +33,8 @@ const Page = () => {
       </h1>
       <br />
       <div className='flex flex-row'>
-        <div className='w-2/3 ml-40'>
+        <div className='w-1/4'></div>
+        <div className='w-1/2 '>
           <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
             Heading goes here
           </h1>
@@ -58,7 +59,7 @@ const Page = () => {
             aspernatur?
           </p>
         </div>
-        <div className='w-1/3 flex justify-center'>CTA</div>
+        <div className='w-1/4 flex justify-center'>CTA</div>
       </div>
     </div>
   );

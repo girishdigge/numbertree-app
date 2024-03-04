@@ -42,14 +42,14 @@ const slides = [
     content:
       'We provide cost management services on a wide range of construction projects across sectors in infrastructure.',
     link: '/cost-consultants',
-    video: '/carousel/4.gif', // replace with the actual video path
+    video: '/carousel/v4.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
     title: 'We are',
     titleMain: 'NumberTree',
     content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world... ',
     link: '/numbertree',
     video: '/carousel/v5.mp4', // replace with the actual video path
   },
@@ -72,7 +72,7 @@ const Carousel = () => {
     <div className='text-white z-1 relative bg-white'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className='relative md:h-96'>
+          <div key={index} className='relative '>
             <video
               autoPlay
               muted

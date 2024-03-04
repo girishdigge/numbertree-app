@@ -15,19 +15,19 @@ const Projects = () => {
   const projects = [
     {
       heading: "Empowering Tomorrow's infrastructure",
-      location: 'Guwahati Airport',
-      content:
-        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-      link: '/quantity-survey',
-      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
       location: 'Parliment,New Delhi',
       content:
         'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
       link: '/numbertree',
       image: '/projects/newParliment.webp', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      location: 'Guwahati Airport',
+      content:
+        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
+      link: '/quantity-survey',
+      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
     },
     {
       heading: "Empowering Tomorrow's infrastructure",
