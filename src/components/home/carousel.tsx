@@ -78,7 +78,7 @@ const Carousel = () => {
               muted
               loop
               width='w-full'
-              height='40'
+              height='96'
               className='object-cover'
             >
               <source src={slide.video} type='video/mp4' />

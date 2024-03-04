@@ -59,7 +59,7 @@ const Projects = () => {
           {'Commited To Excellence Across Infra Projects'}
         </h3>
       </div>
-      <Carousel className='flex items-center justify-center ml-12 w-11/12 relative'>
+      <Carousel className='flex items-center justify-center ml-14 w-11/12 relative'>
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
@@ -67,8 +67,8 @@ const Projects = () => {
                 <Image
                   className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
                   src={project.image}
-                  height={768}
-                  width={1600}
+                  height={800}
+                  width={1400}
                   alt='image'
                 />
                 <div className='absolute inset-0 flex items-center  mt-5'>
