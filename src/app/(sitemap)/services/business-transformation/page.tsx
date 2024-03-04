@@ -29,7 +29,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='absolute -inset-20 flex items-end justify-center'>
+      <div className='absolute -inset-32 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Business Transformation
         </h1>
@@ -83,8 +83,8 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={200}
-                  width={200}
+                  height={250}
+                  width={300}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -99,8 +99,8 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/newParliment.jpg`}
-                  height={200}
-                  width={200}
+                  height={250}
+                  width={300}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -115,8 +115,8 @@ const Page = () => {
               <Link href={`/projects/merc`}>
                 <Image
                   src={`/projects/merc.jpg`}
-                  height={200}
-                  width={200}
+                  height={250}
+                  width={300}
                   alt='project'
                   className='object-cover group-hover:opacity-90' // Fade image slightly on hover
                 />
