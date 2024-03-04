@@ -29,7 +29,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='absolute -inset-32 flex items-end justify-center'>
+      <div className='absolute inset-40 translate-y-60 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Techno Commercial Audit
         </h1>

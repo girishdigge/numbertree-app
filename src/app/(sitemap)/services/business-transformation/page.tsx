@@ -7,14 +7,14 @@ import { RxSlash } from 'react-icons/rx';
 const Page = () => {
   return (
     <div className=''>
-      <div className='flex flex-row mt-2 mb-2 ml-12'>
+      <div className='relative flex flex-row mt-2 mb-2 ml-12'>
         <span className='mt-1'>
-          <Link href='/'>
+          <Link href={'/'}>
             <IoHomeSharp color='/services/1f3563' />
           </Link>
         </span>
         <RxSlash color='gray' className='mt-1' />
-        <Link href={`/services`}>
+        <Link href={'/services'}>
           <p className='font-bold text-num-indigo'>Services</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
@@ -29,7 +29,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='absolute -inset-32 flex items-end justify-center'>
+      <div className='z-2 absolute translate-y-60 inset-40 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Business Transformation
         </h1>
