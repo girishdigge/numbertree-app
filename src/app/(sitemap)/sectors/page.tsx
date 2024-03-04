@@ -115,11 +115,11 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Sectors</p>
       </div>
-      <div className='flex w-full h-96'>
+      <div className='flex w-full'>
         <Image
           src={'/sectors/banner.png'}
-          height={800}
-          width={1200}
+          height={768}
+          width={1920}
           alt='services banner'
         />
       </div>

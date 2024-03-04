@@ -102,8 +102,8 @@ const Page = () => {
       <div className='flex w-full'>
         <Image
           src={'/projects/banner.png'}
-          height={600}
-          width={1200}
+          height={768}
+          width={1920}
           alt='services banner'
         />
       </div>
