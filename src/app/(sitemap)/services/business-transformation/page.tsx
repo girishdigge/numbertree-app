@@ -6,7 +6,7 @@ import { RxSlash } from 'react-icons/rx';
 
 const Page = () => {
   return (
-    <div className='-translate-y-10'>
+    <div className=''>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
         <span className='mt-1'>
           <Link href='/'>
@@ -20,20 +20,22 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Business Transformation</p>
       </div>
-      <div className='flex flex-col relative md:h-96'>
+      <div className='flex flex-col '>
         <Image
-          src={`/services/BusinessTransformation.jpg`}
-          width={1920}
-          height={768}
+          src={`/services/BusinessTransformation1.jpg`}
+          width={2046}
+          height={999}
           alt='business transformation'
-          className='md:-translate-y-60'
+          className='object-contain'
         />
       </div>
-      <h1 className='md:-translate-y-0 -translate-y-20 font-bold md:text-7xl text-3xl flex justify-center text-white'>
-        Business Transformation
-      </h1>
+      <div className='absolute -inset-20 flex items-end justify-center'>
+        <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
+          Business Transformation
+        </h1>
+      </div>
       <br />
-      <div className='flex flex-row translate-y-10'>
+      <div className='flex flex-row'>
         <div className='w-1/4'></div>
         <div className='w-1/2 '>
           <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
