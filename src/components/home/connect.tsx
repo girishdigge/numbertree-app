@@ -8,8 +8,8 @@ const Connect = () => {
         <div className='flex flex-row relative h-80 ml-1'>
           <Image
             src={`/connect/linkedin.png`}
-            height={300}
-            width={600}
+            height={400}
+            width={800}
             alt='linkedin'
             className='object-cover'
           />

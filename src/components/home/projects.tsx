@@ -67,8 +67,8 @@ const Projects = () => {
                 <Image
                   className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
                   src={project.image}
-                  height={600}
-                  width={1200}
+                  height={768}
+                  width={1600}
                   alt='image'
                 />
                 <div className='absolute inset-0 flex items-center  mt-5'>
