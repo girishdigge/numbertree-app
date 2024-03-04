@@ -8,8 +8,8 @@ const Connect = () => {
         <div className='flex flex-row relative h-80 ml-1'>
           <Image
             src={`/connect/linkedin.png`}
-            height={400}
-            width={600}
+            height={540}
+            width={960}
             alt='linkedin'
             className='object-cover'
           />
@@ -40,8 +40,8 @@ const Connect = () => {
         <div className='z-1 flex flex-row relative h-80'>
           <Image
             src={`/connect/insignts.png`}
-            height={400}
-            width={600}
+            height={540}
+            width={960}
             alt='insights'
             className='object-cover'
           />
