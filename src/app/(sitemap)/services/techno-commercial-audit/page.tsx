@@ -29,7 +29,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='absolute inset-40 translate-y-60 flex items-end justify-center'>
+      <div className='absolute md:inset-40 inset-60 md:translate-y-60 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Techno Commercial Audit
         </h1>
@@ -37,13 +37,13 @@ const Page = () => {
 
       <br />
       <div className='flex flex-row '>
-        <div className='w-1/4'></div>
-        <div className='w-1/2 '>
-          <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
+        <div className='hidden md:flex w-1/4'></div>
+        <div className='md:w-1/2 w-full '>
+          <h1 className='md:text-xl  flex justify-center font-semibold text-num-indigo mb-4'>
             We pride ourselves as India’s foremost techno commercial audit firm
             with over two decades of experience across varied industries.
           </h1>
-          <p>
+          <p className='font-serif md:text-base text-xs '>
             Our offering of Techno commercial Audit – helps businesses harnesses
             the power of financial insights with great clarity, it transforms
             not just the way businesses operate but also unlocks their full
@@ -66,7 +66,7 @@ const Page = () => {
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <ul className='list-disc ml-6 '>
+          <ul className='list-disc ml-6 font-serif'>
             <li> Techno Commercial Internal Audit</li>
             <li> Project Concurrent Audit</li>
             <li> Project Closure Audit</li>
@@ -132,7 +132,7 @@ const Page = () => {
           <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
             Other Services
           </h2>
-          <ul className='list-disc ml-6 '>
+          <ul className='list-disc ml-6 font-serif'>
             <li> Business Transformation</li>
             <li> Claim Management</li>
             <li> Contract Administration</li>
