@@ -6,7 +6,7 @@ import { RxSlash } from 'react-icons/rx';
 
 const Page = () => {
   return (
-    <div>
+    <div className='-translate-y-10'>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
         <span className='mt-1'>
           <Link href='/'>
@@ -20,46 +20,130 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Business Transformation</p>
       </div>
-      <div className='flex flex-col'>
+      <div className='flex flex-col relative md:h-96'>
         <Image
           src={`/services/BusinessTransformation.jpg`}
-          width={1200}
-          height={400}
+          width={1920}
+          height={768}
           alt='business transformation'
+          className='md:-translate-y-60'
         />
       </div>
-      <h1 className='-translate-y-20 font-bold text-7xl flex justify-center text-white'>
+      <h1 className='md:-translate-y-0 -translate-y-20 font-bold md:text-7xl text-3xl flex justify-center text-white'>
         Business Transformation
       </h1>
       <br />
-      <div className='flex flex-row'>
+      <div className='flex flex-row translate-y-10'>
         <div className='w-1/4'></div>
         <div className='w-1/2 '>
           <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
-            Heading goes here
+            We pride ourselves as India’s foremost techno commercial audit firm
+            with over two decades of experience across varied industries.
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam
-            pariatur, ipsa amet error, maxime quia placeat quam fugiat enim nemo
-            quibusdam accusantium quas aliquid quidem. Excepturi eaque quos
-            quidem repellat quas voluptates! Sunt magni cupiditate atque cum
-            optio. Expedita totam rem assumenda ipsum, sunt reprehenderit,
-            accusantium voluptate labore facilis doloribus sed illum nesciunt
-            provident impedit id dolorem minima earum architecto sint
-            repudiandae eligendi aliquam quis, maiores vero. Pariatur, dolores
-            minima incidunt tempora ipsum animi impedit laboriosam aliquid ipsam
-            nisi modi. Eveniet accusantium a repellendus recusandae neque quos?
-            Repudiandae impedit numquam doloribus libero quo culpa deleniti
-            optio facilis sit, delectus, ratione repellat eos earum nisi natus.
-            Ipsa assumenda eligendi blanditiis accusamus sint laborum facere
-            dicta fugit quibusdam. Quam ut, laboriosam at, a possimus ex soluta
-            perferendis fuga id exercitationem explicabo ad expedita repellat
-            alias amet pariatur ipsa laborum? Hic sed earum necessitatibus
-            quidem dolore amet doloribus. Aliquam similique distinctio
-            aspernatur?
+            Our offering of Techno commercial Audit – helps businesses harnesses
+            the power of financial insights with great clarity, it transforms
+            not just the way businesses operate but also unlocks their full
+            potential and propels them to growth This specialized audit examines
+            both the technical and commercial aspects of infrastructure
+            ventures, providing a comprehensive evaluation of their feasibility,
+            efficiency, and financial viability. Our dedicated team of engineers
+            & auditors work collaboratively to present a meticulous analysis of
+            project plans, contracts, cost estimates, procurement processes,
+            Quantity Survey and financial controls. We are well equipped to use
+            our processes and identify potential risks, cost-saving
+            opportunities, and areas for improvement. With our multidimensional
+            approach, Techno-Commercial Audit serves as a valuable tool for
+            project managers & senior management in navigating the complex
+            landscape of infrastructure development, ensuring transparency,
+            accountability, and successful project delivery.
           </p>
+          <br />
+          <h2 className='text-lg flex justify-center font-semibold text-num-indigo mb-4'>
+            Some of the specialized services provided under Techno commercial
+            audit are
+          </h2>
+          <ul className='list-disc ml-6 '>
+            <li> Techno Commercial Internal Audit</li>
+            <li> Project Concurrent Audit</li>
+            <li> Project Closure Audit</li>
+            <li>Functional Audits/P2P Audits/Process Audits </li>
+            <li>Revenue Assurance Audit of Toll Plaza</li>
+            <li> Energy Audit- Renewables</li>
+          </ul>
+          <br />
+
+          <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
+            Related Projects
+          </h2>
+          <div className='flex gap-2 mb-4'>
+            <div className='w-1/3 group relative'>
+              <Link href={`/projects/newParliment`}>
+                <Image
+                  src={`/projects/mumbaiDelhiExpressway.jpg`}
+                  height={200}
+                  width={200}
+                  alt='project'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mumbai Delhi Expressway
+                </p>
+              </div>
+            </div>
+            <div className='w-1/3 group relative'>
+              <Link href={`/projects/newParliment`}>
+                <Image
+                  src={`/projects/newParliment.jpg`}
+                  height={200}
+                  width={200}
+                  alt='project'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className='w-11/12 text-xl text-white flex justify-center font-bold text-center'>
+                  New Parliment, new Delhi
+                </p>
+              </div>
+            </div>
+            <div className='w-1/3 group relative '>
+              <Link href={`/projects/merc`}>
+                <Image
+                  src={`/projects/merc.jpg`}
+                  height={200}
+                  width={200}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mercedes Benz,Pune
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
+            Other Services
+          </h2>
+          <ul className='list-disc ml-6 '>
+            <li> Business Transformation</li>
+            <li> Claim Management</li>
+            <li> Contract Administration</li>
+            <li> Project Monitoring & Control </li>
+            <li> Quantity Survey </li>
+            <li>Transaction Advisory </li>
+            {/* <li> Techno Commercial Audit</li> */}
+          </ul>
         </div>
-        <div className='w-1/4 flex justify-center'>CTA</div>
+        <div className='w-1/4 flex justify-center'>
+          <h2 className='text-lg flex font-bold text-num-indigo mb-4'>
+            Get in touch
+          </h2>
+        </div>
       </div>
     </div>
   );
