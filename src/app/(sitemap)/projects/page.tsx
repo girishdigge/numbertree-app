@@ -18,7 +18,7 @@ const Page = () => {
       location: 'Parliment,New Delhi',
       content:
         'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
+      link: '/projects/new-parliment',
       image: '/projects/newParliment1.jpg', // replace with the actual image path
     },
     {

@@ -1,3 +1,4 @@
+import GetInTouch from '@/components/sitemap/getintouch';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,7 +11,7 @@ const Page = () => {
       <div className='relative flex flex-row mt-2 mb-2 ml-12'>
         <span className='mt-1'>
           <Link href={'/'}>
-            <IoHomeSharp color='/services/1f3563' />
+            <IoHomeSharp color='#1f3563' />
           </Link>
         </span>
         <RxSlash color='gray' className='mt-1' />
@@ -83,8 +84,8 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={250}
-                  width={300}
+                  height={200}
+                  width={200}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -96,26 +97,26 @@ const Page = () => {
               </div>
             </div>
             <div className='w-1/3 group relative'>
-              <Link href={`/projects/newParliment`}>
-                <Image
-                  src={`/projects/newParliment.jpg`}
-                  height={250}
-                  width={300}
-                  alt='project'
-                  className='group-hover:opacity-90' // Fade image slightly on hover
-                />
+              <Image
+                src={`/projects/newParliment.jpg`}
+                height={200}
+                width={200}
+                alt='project'
+                className='group-hover:opacity-90' // Fade image slightly on hover
+              />
+              <Link href={`/projects/new-parliment`}>
+                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                  <p className=' text-xl text-white flex justify-center font-bold text-center w-3/4'>
+                    New Parliment, new Delhi
+                  </p>
+                </div>
               </Link>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className='w-11/12 text-xl text-white flex justify-center font-bold text-center'>
-                  New Parliment, new Delhi
-                </p>
-              </div>
             </div>
             <div className='w-1/3 group relative '>
               <Link href={`/projects/merc`}>
                 <Image
                   src={`/projects/merc.jpg`}
-                  height={250}
+                  height={300}
                   width={300}
                   alt='project'
                   className='object-cover group-hover:opacity-90' // Fade image slightly on hover
@@ -128,23 +129,108 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
+          <h2 className='text-lg flex font-semibold text-num-indigo mt-2 mb-1 '>
             Other Services
           </h2>
-          <ul className='list-disc ml-6 font-serif'>
-            <li> Business Transformation</li>
-            <li> Claim Management</li>
-            <li> Contract Administration</li>
-            <li> Project Monitoring & Control </li>
-            <li> Quantity Survey </li>
-            <li>Transaction Advisory </li>
-            {/* <li> Techno Commercial Audit</li> */}
+          <ul className='list-disc ml-6 font-serif '>
+            {/* <Link href={'/services/business-transformation'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Business Transformation
+              </li>
+            </Link> */}
+            <Link href={'/services/claim-management'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Claim Management
+              </li>
+            </Link>
+            <Link href={'/services/contract-administration'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Contract Administration
+              </li>
+            </Link>
+            <Link href={'/services/project-monitoring-and-control'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Project Monitoring & Control{' '}
+              </li>
+            </Link>
+            <Link href={'/services/quantity-survey'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Quantity Survey{' '}
+              </li>
+            </Link>
+            <Link href={'/services/transaction-advisory'}>
+              <li className='hover:text-num-blue hover:underline'>
+                Transaction Advisory{' '}
+              </li>
+            </Link>
+            <Link href={'/services/techno-commercial-audit'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Techno Commercial Audit
+              </li>
+            </Link>
           </ul>
-        </div>
-        <div className='w-1/4 flex justify-center'>
-          <h2 className='text-lg flex font-bold text-num-indigo mb-4'>
-            Get in touch
+          <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
+            Explore More
           </h2>
+          <div className='grid grid-cols-3 gap-2 mb-4'>
+            <Link href={`/sectors/aviation`}>
+              <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+                <Image
+                  src={`/sectors/Aviation.jpg`}
+                  height={200}
+                  width={200}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+                <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
+                  <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                    Aviation
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link href={`/sectors/bridges-structures`}>
+              <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+                <Image
+                  src={`/sectors/BridgesStructure.jpg`}
+                  height={200}
+                  width={200}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+                <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                  <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                    Bridges Structures
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link href={`/sectors/commercial`}>
+              <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+                <Image
+                  src={`/sectors/Commercial.jpg`}
+                  height={200}
+                  width={200}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+                <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                  <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                    Commercial
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className='hidden w-1/4 md:flex pl-10 '>
+          <GetInTouch />
         </div>
       </div>
     </div>

@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
-import { FaSquarePhone } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
+import { FaSquarePhone } from 'react-icons/fa6';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import GetInTouch from '@/components/sitemap/getintouch';
@@ -19,24 +19,24 @@ const Page = () => {
           </Link>
         </span>
         <RxSlash color='gray' className='mt-1' />
-        <Link href={`/sectors`}>
-          <p className='font-bold text-num-indigo'>Sectors</p>
+        <Link href={`/projects`}>
+          <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Aviation</p>
+        <p className='font-bold text-num-indigo'>New Parliment</p>
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/sectors/Aviation1.jpg`}
+          src={`/projects/newParliment1.jpg`}
           width={2046}
           height={999}
-          alt='Aviation'
+          alt='New Parliment,new Delhi'
           className='object-contain'
         />
       </div>
-      <div className='absolute md:inset-40 inset-60 md:translate-y-60 flex items-end justify-center'>
+      <div className='absolute md:inset-40 inset-60 md:translate-y-80 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
-          Aviation
+          New Parliment,new Delhi
         </h1>
       </div>
 
@@ -142,72 +142,49 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <h2 className='text-lg flex font-semibold text-num-indigo mb-1 mt-2 '>
-            Other Sectors
+          <h2 className='text-lg flex font-semibold text-num-indigo mt-2 mb-1 '>
+            Services offered
           </h2>
           <ul className='list-disc ml-6 font-serif '>
-            {/* <Link href={'/sectors/aviation'}>
-              <li className='hover:text-num-blue hover:underline'>Aviation</li>
-            </Link> */}
-            <Link href={'/sectors/bridges-structures'}>
+            <Link href={'/services/business-transformation'}>
               <li className='hover:text-num-blue hover:underline'>
-                Bridges Structures
+                {' '}
+                Business Transformation
               </li>
             </Link>
-            <Link href={'/sectors/commercial'}>
+            <Link href={'/services/claim-management'}>
               <li className='hover:text-num-blue hover:underline'>
-                Commercial
+                {' '}
+                Claim Management
               </li>
             </Link>
-            <Link href={'/sectors/industrial'}>
+            <Link href={'/services/contract-administration'}>
               <li className='hover:text-num-blue hover:underline'>
-                Industrial
+                {' '}
+                Contract Administration
               </li>
             </Link>
-            <Link href={'/sectors/institutional'}>
+            <Link href={'/services/project-monitoring-and-control'}>
               <li className='hover:text-num-blue hover:underline'>
-                Institutional
+                {' '}
+                Project Monitoring & Control{' '}
               </li>
             </Link>
-            <Link href={'/sectors/oil-gas'}>
-              <li className='hover:text-num-blue hover:underline'>Oil & Gas</li>
-            </Link>
-            <Link href={'/sectors/ports'}>
-              <li className='hover:text-num-blue hover:underline'>Ports</li>
-            </Link>
-            <Link href={'/sectors/power-transmission'}>
+            <Link href={'/services/quantity-survey'}>
               <li className='hover:text-num-blue hover:underline'>
-                Power Transmission
+                {' '}
+                Quantity Survey{' '}
               </li>
             </Link>
-            <Link href={'/sectors/railways-metro'}>
+            <Link href={'/services/transaction-advisory'}>
               <li className='hover:text-num-blue hover:underline'>
-                Railways & Metro
+                Transaction Advisory{' '}
               </li>
             </Link>
-            <Link href={'/sectors/renewable-energy'}>
+            <Link href={'/services/techno-commercial-audit'}>
               <li className='hover:text-num-blue hover:underline'>
-                Renewable Energy
-              </li>
-            </Link>
-            <Link href={'/sectors/residential'}>
-              <li className='hover:text-num-blue hover:underline'>
-                Residential
-              </li>
-            </Link>
-            <Link href={'/sectors/roads-highways'}>
-              <li className='hover:text-num-blue hover:underline'>
-                Roads & Highway
-              </li>
-            </Link>
-            <Link href={'/sectors/thermal-power-plant'}>
-              <li className='hover:text-num-blue hover:underline'>
-                Thermal Power Plant
-              </li>
-            </Link>
-            <Link href={'/sectors/water-infrastructure'}>
-              <li className='hover:text-num-blue hover:underline'>
-                Water Infrastructure
+                {' '}
+                Techno Commercial Audit
               </li>
             </Link>
           </ul>
@@ -216,50 +193,50 @@ const Page = () => {
           </h2>
           <div className='grid grid-cols-3 gap-2 mb-4'>
             <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
-              <Link href={`/services/business-transformation`}>
+              <Link href={`/sectors/aviation`}>
                 <Image
-                  src={`/services/BusinessTransformation1.jpg`}
+                  src={`/sectors/Aviation.jpg`}
                   height={200}
                   width={200}
-                  alt='services'
+                  alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
               <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
                 <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
-                  Business Transformation
+                  Aviation
                 </p>
               </div>
             </div>
             <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
-              <Link href={`/services/claim-management`}>
+              <Link href={`/sectors/bridges-structures`}>
                 <Image
-                  src={`/services/ClaimManagement1.jpg`}
+                  src={`/sectors/BridgesStructure.jpg`}
                   height={200}
                   width={200}
-                  alt='services'
-                  className='group-hover:opacity-90' // Fade image slightly on hover
-                />
-              </Link>
-              <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
-                <p className=' md:text-base w-3/4 text-xs text-num-indigo  flex justify-center font-bold text-center'>
-                  Claim Management
-                </p>
-              </div>
-            </div>
-            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
-              <Link href={`/services/contract-adminstration`}>
-                <Image
-                  src={`/services/ContractAdminstration1.jpg`}
-                  height={200}
-                  width={200}
-                  alt='services'
+                  alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
               <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
                 <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
-                  Contract Adminstration
+                  Bridges Structures
+                </p>
+              </div>
+            </div>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/commercial`}>
+                <Image
+                  src={`/sectors/Commercial.jpg`}
+                  height={200}
+                  width={200}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Commercial
                 </p>
               </div>
             </div>
