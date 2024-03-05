@@ -6,8 +6,8 @@ import { RxSlash } from 'react-icons/rx';
 import { FaSquarePhone } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
-import { FaQuoteLeft } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { FaQuoteLeft } from 'react-icons/fa';
 import GetInTouch from '@/components/sitemap/getintouch';
 const Page = () => {
   return (
@@ -34,7 +34,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='z-2 absolute translate-y-40 inset-40 flex items-end justify-center'>
+      <div className='z-2 absolute md:translate-y-3/4 inset-40 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Techno Commercial Audit
         </h1>
@@ -46,9 +46,18 @@ const Page = () => {
           <hr className=' w-1/2' />
           <h1 className='text-sm font-bold mb-2'> share this page</h1>
           <div className='flex gap-2 justify-center items-center'>
-            <FaFacebookF size={30} className='bg-num-orange p-1  rounded-xl' />
-            <FaLinkedinIn size={31} className='bg-num-orange p-1 rounded-xl' />
-            <FaXTwitter size={30} className='bg-num-orange p-1 rounded-xl' />
+            <FaFacebookF
+              size={30}
+              className='bg-num-orange p-1 text-num-indigo  rounded-xl'
+            />
+            <FaLinkedinIn
+              size={31}
+              className='bg-num-orange text-num-indigo p-1 rounded-xl'
+            />
+            <FaXTwitter
+              size={30}
+              className='bg-num-orange text-num-indigo p-1 rounded-xl'
+            />
           </div>
         </div>
         <div className='md:w-1/2 w-3/4 justify-center '>
@@ -198,7 +207,7 @@ const Page = () => {
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
-                <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
+                <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
                   <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
                     Aviation
                   </p>
@@ -214,7 +223,7 @@ const Page = () => {
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
-                <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
                   <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
                     Bridges Structures
                   </p>
@@ -230,7 +239,7 @@ const Page = () => {
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
-                <div className=' flex justify-center bg-gray-10 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
                   <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
                     Commercial
                   </p>
