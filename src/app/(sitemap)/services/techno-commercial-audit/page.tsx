@@ -27,14 +27,14 @@ const Page = () => {
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/services/techoComAudit1.jpg`}
-          width={2041}
-          height={996}
+          src={`/services/TechoComAudit1.jpg`}
+          width={2046}
+          height={999}
           alt='Techno Commercial Audit'
           className='object-contain'
         />
       </div>
-      <div className='absolute md:inset-40 inset-60 md:translate-y-40 flex items-end justify-center'>
+      <div className='z-2 absolute translate-y-40 inset-40 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Techno Commercial Audit
         </h1>

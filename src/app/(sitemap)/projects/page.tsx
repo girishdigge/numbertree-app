@@ -49,11 +49,11 @@ const Page = () => {
     },
     {
       heading: "Empowering Tomorrow's infrastructure",
-      location: 'Pune Metro',
+      location: 'Port',
       content:
         'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
       link: '/numbertree',
-      image: '/projects/puneMetro.jpg', // replace with the actual image path
+      image: '/projects/port2.jpg', // replace with the actual image path
     },
     {
       heading: "Empowering Tomorrow's infrastructure",
