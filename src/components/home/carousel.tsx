@@ -88,24 +88,24 @@ const Carousel = () => {
               <div className='bg-opacity-50 md:w-4/5 h-full p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
-                  <h2 className='md:text-2xl font-bold text-sm ml-4 '>
+                  <h2 className='md:text-xl font-bold text-sm ml-4 '>
                     {slide.weAre}
                   </h2>
                   {/* <Separator
                     orientation='vertical'
                     className='bg-num-orange w-1 h-10'
                   /> */}
-                  <h2 className='md:text-7xl pl-2  text-sm  border-l-4 border-num-orange'>
+                  <h2 className='md:text-6xl pl-2  text-sm  border-l-4 border-num-orange'>
                     {slide.title}
                   </h2>
-                  <p className='md:text-2xl ml-4 font-sans md:pt-5 md:pb-2 text-xs md:w-5/12'>
+                  <p className='md:text-xl ml-4 font-sans md:pt-5 md:pb-2 text-xs md:w-5/12'>
                     {slide.content}
                   </p>
                   <Button className='w-40 ml-4 bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>
                     Read More{`>`}
                   </Button>
                 </div>
-                <div className='hidden md:flex flex-row translate-x-3/4 translate-y-20 md:mt-4 mt-2 md:text-xl text-sm '>
+                <div className='hidden md:flex flex-row translate-x-3/4  md:mt-4 mt-2 md:text-xl text-sm '>
                   {`#`}
                   {slide.heading}
                 </div>

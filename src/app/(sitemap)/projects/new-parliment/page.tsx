@@ -34,7 +34,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='absolute md:inset-40 inset-60 md:translate-y-80 flex items-end justify-center'>
+      <div className='absolute md:inset-40 inset-60 md:translate-y-40 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           New Parliment,new Delhi
         </h1>

@@ -15,7 +15,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-55'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-2xl font-bold mt-4 mb-4'>
+              <h1 className='text-num-orange text-2xl font-bold mt-4 mb-2'>
                 Linkedin
               </h1>
               <h2 className=' text-3xl font-medium mb-3 text-white'>
@@ -26,8 +26,7 @@ const Connect = () => {
                 Tunnel & Bridge Projects, Industrial Projects, Metro & Rail
                 Projects, Water Treatment Plants, Transmission and Distribution
                 projects, Oil & Gas projects, Power Projects, Real Estate –
-                Residential & Commercial Projects, Institutional and Civil
-                Projects.
+                Residential...
               </p>
               <div className='flex flex-row-reverse mr-4'>
                 <Button className='w-40 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
@@ -47,7 +46,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-50'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-2xl font-bold mt-4 mb-4'>
+              <h1 className='text-num-orange text-2xl font-bold mt-4 mb-2'>
                 Insights
               </h1>
               <h2 className='text-3xl  mb-3 font-medium text-white'>

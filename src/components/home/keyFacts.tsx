@@ -16,32 +16,32 @@ const KeyFacts = () => {
         </div>
         <div className='md:grid grid-cols-3 gap-y-4 items-center w-3/5 '>
           <div className='flex flex-col  w-4/5 ml-5'>
-            <h1 className='text-5xl text-num-orange font-bold mb-2'>6600+</h1>{' '}
-            <p className='text-xl text-num-blue font-semibold'>
+            <h1 className='text-4xl text-num-orange font-bold mb-2'>6600+</h1>{' '}
+            <p className='text-lg text-num-blue font-semibold'>
               Road & Highway Project(km)
             </p>
           </div>
           <div className='flex flex-col  w-4/5 ml-5'>
-            <h1 className='text-5xl text-num-orange font-bold  mb-2'>1230+</h1>{' '}
-            <p className='text-xl text-num-blue font-semibold  w-2/3'>
+            <h1 className='text-4xl text-num-orange font-bold  mb-2'>1230+</h1>{' '}
+            <p className='text-lg text-num-blue font-semibold  w-2/3'>
               Oil & Gas Pipeline(km)
             </p>
           </div>
           <div className='flex flex-col  w-4/5 ml-5'>
-            <h1 className='text-5xl text-num-orange font-bold  mb-2'>900+</h1>{' '}
-            <p className='text-xl text-num-blue font-semibold '>
-              Civil Construction Projects(Mil sq ft)
+            <h1 className='text-4xl text-num-orange font-bold  mb-2'>900+</h1>{' '}
+            <p className='text-lg text-num-blue font-semibold '>
+              Construction Projects(Mil sq ft)
             </p>
           </div>
           <div className='flex flex-col  w-4/5 ml-5 mt-5'>
-            <h1 className='text-5xl text-num-orange font-bold  mb-2'>2000+</h1>{' '}
-            <p className='text-xl text-num-blue font-semibold '>
+            <h1 className='text-4xl text-num-orange font-bold  mb-2'>2000+</h1>{' '}
+            <p className='text-lg text-num-blue font-semibold '>
               Railway & Metro Projects(km)
             </p>
           </div>
           <div className='flex flex-col  ml-5 mt-5'>
-            <h1 className='text-5xl text-num-orange font-bold  mb-2'>3500+</h1>{' '}
-            <p className='text-xl text-num-blue font-semibold '>
+            <h1 className='text-4xl text-num-orange font-bold  mb-2'>3500+</h1>{' '}
+            <p className='text-lg text-num-blue font-semibold '>
               Power Transmission Towers
             </p>
           </div>

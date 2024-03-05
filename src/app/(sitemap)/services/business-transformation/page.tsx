@@ -30,7 +30,7 @@ const Page = () => {
           className='object-contain'
         />
       </div>
-      <div className='z-2 absolute translate-y-60 inset-40 flex items-end justify-center'>
+      <div className='z-2 absolute translate-y-40 inset-40 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Business Transformation
         </h1>

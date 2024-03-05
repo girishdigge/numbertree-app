@@ -22,7 +22,7 @@ const Career = () => {
             People are at the heart of our services. Come explore a world of
             oppurtunities in various functions and roles.
           </p>
-          <Button className='w-1/3 bg-num-orange mt-10 border-0'>
+          <Button className='w-1/3 bg-num-orange mt-8 mb-2 border-0'>
             Explore Career{`>`}
           </Button>
         </div>
