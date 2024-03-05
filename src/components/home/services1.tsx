@@ -116,8 +116,8 @@ const BusinessTransformation = () => {
           </Link>
         </div>
         <Image
-          src='/services/0.jpg'
-          alt='dummy image'
+          src='/services/BusinessTransformation.jpg'
+          alt='business transformation'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'
@@ -142,8 +142,8 @@ const ContractAdiministration = () => {
           </Link>
         </div>
         <Image
-          src='/services/1.jpg'
-          alt='dummy image'
+          src='/services/ContractAdminstration.jpg'
+          alt='Contract Adminstration'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'
@@ -167,8 +167,8 @@ const QuantitySurvey = () => {
           </Link>
         </div>
         <Image
-          src='/services/2.jpg'
-          alt='dummy image'
+          src='/services/QuantitySurvey.jpg'
+          alt='Quantity Survey'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'
@@ -192,8 +192,8 @@ const ClaimManagement = () => {
           </Link>
         </div>
         <Image
-          src='/services/3.jpg'
-          alt='dummy image'
+          src='/services/ClaimManagement.jpg'
+          alt='Claim Management'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'
@@ -219,8 +219,8 @@ const ProjectMonitoring = () => {
           </Link>
         </div>
         <Image
-          src='/services/4.jpg'
-          alt='dummy image'
+          src='/services/ProjectMonCon.jpg'
+          alt='Project Monitoring & Control'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'
@@ -239,12 +239,12 @@ const TechnoCommercial = () => {
             firm with over two decades of experience across varied industries.
           </h1>
           <Link href={'/services/techno-commercial-audit'}>
-            <Button className='w-40 w-40 bg-num-indigo hover:bg-num-orange '>{`Read more>`}</Button>
+            <Button className='w-40 bg-num-indigo hover:bg-num-orange '>{`Read more>`}</Button>
           </Link>
         </div>
         <Image
-          src='/services/5.jpg'
-          alt='dummy image'
+          src='/services/TechoComAudit.jpg'
+          alt='Techno Com Audit'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'
@@ -270,8 +270,8 @@ const TransctionAdvisory = () => {
           </Link>
         </div>
         <Image
-          src='/services/6.jpg'
-          alt='dummy image'
+          src='/services/TransactionAdvisory.jpg'
+          alt=' Transaction Advisory'
           width='1000'
           height='1000'
           className=' h-[60%]  md:h-[90%]  -bottom-10 w-[50%] rounded-xl mx-auto'

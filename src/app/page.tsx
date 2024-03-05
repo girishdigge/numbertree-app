@@ -26,13 +26,15 @@ export default function Home() {
       <Sectors />
       <Services1 />
       {/* <Services /> */}
-      <KeyFacts />
-      <Projects />
-      <Testimonials />
-      <Career />
-      <ESG />
-      <Connect />
-      <Footer />
+      <div className='hidden md:inline'>
+        <KeyFacts />
+        <Projects />
+        <Testimonials />
+        <Career />
+        <ESG />
+        <Connect />
+        <Footer />
+      </div>
     </div>
   );
 }
