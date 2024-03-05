@@ -27,7 +27,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/services/techoComAudit.jpg`}
+          src={`/services/techoComAudit1.jpg`}
           width={2041}
           height={996}
           alt='Techno Commercial Audit'
