@@ -105,7 +105,7 @@ const Carousel = () => {
                     Read More{`>`}
                   </Button>
                 </div>
-                <div className='hidden md:flex flex-row translate-x-3/4  md:mt-4 mt-2 md:text-xl text-sm '>
+                <div className='hidden md:flex flex-row translate-x-3/4 translate-y-3/4 md:mt-4 mt-2 md:text-xl text-sm '>
                   {`#`}
                   {slide.heading}
                 </div>
