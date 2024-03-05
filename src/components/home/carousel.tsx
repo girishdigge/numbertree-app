@@ -84,7 +84,7 @@ const Carousel = () => {
               <source src={slide.video} type='video/mp4' />
             </video>
 
-            <div className='absolute -inset-2  flex items-center md:pl-16 md:pt-5 pt-2  bg-black bg-opacity-30'>
+            <div className='absolute inset-0  flex items-center md:pl-16 md:pt-5 pt-2  bg-black bg-opacity-30'>
               <div className='bg-opacity-50 md:w-4/5 h-full p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}

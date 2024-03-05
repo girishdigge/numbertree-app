@@ -9,7 +9,7 @@ const Page = () => {
     {
       id: 0,
       name: 'Business Transformation',
-      imageUrl: '/services/BusinessTransformation.jpg',
+      imageUrl: '/services/BusinessTransformation1.jpg',
       content: {
         heading: 'Business Transformation',
         paragraph:
@@ -20,7 +20,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Contract Adiministration',
-      imageUrl: '/services/ContractAdminstration.jpg',
+      imageUrl: '/services/ContractAdminstration1.jpg',
       content: {
         heading: 'Contract Adiministration',
         paragraph: `As a consulting engineering firm, we understand the importance of
@@ -33,7 +33,7 @@ const Page = () => {
     {
       id: 2,
       name: 'Quantity Survey',
-      imageUrl: '/services/QuantitySurvey.jpg',
+      imageUrl: '/services/QuantitySurvey1.jpg',
       content: {
         heading: 'Quantity Survey',
         paragraph: `In the infrastructure industry, precise and comprehensive
@@ -45,7 +45,7 @@ const Page = () => {
     {
       id: 3,
       name: 'Claim Management',
-      imageUrl: '/services/ClaimManagement.jpg',
+      imageUrl: '/services/ClaimManagement1.jpg',
       content: {
         heading: 'Claim Management',
         paragraph:
@@ -56,7 +56,7 @@ const Page = () => {
     {
       id: 4,
       name: 'Project Monitoring & Control',
-      imageUrl: '/services/ProjectMonCon.jpg',
+      imageUrl: '/services/ProjectMonCon1.jpg',
       content: {
         heading: 'Project Monitoring & Control',
         paragraph:
@@ -67,7 +67,7 @@ const Page = () => {
     {
       id: 5,
       name: 'Techno Commercial Audit',
-      imageUrl: '/services/TechoComAudit.jpg',
+      imageUrl: '/services/TechoComAudit1.jpg',
       content: {
         heading: 'Techno Commercial Audit',
         paragraph:
@@ -78,7 +78,7 @@ const Page = () => {
     {
       id: 6,
       name: 'Transction Advisory',
-      imageUrl: '/services/TransactionAdvisory.jpg',
+      imageUrl: '/services/TransactionAdvisory1.jpg',
       content: {
         heading: 'Transction Advisory',
         paragraph:
