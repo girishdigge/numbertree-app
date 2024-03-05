@@ -97,8 +97,8 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={200}
-                  width={200}
+                  height={400}
+                  width={400}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -112,8 +112,8 @@ const Page = () => {
             <div className='w-1/3 group relative'>
               <Image
                 src={`/projects/newParliment.jpg`}
-                height={200}
-                width={200}
+                height={400}
+                width={400}
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
@@ -193,8 +193,8 @@ const Page = () => {
               <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
                 <Image
                   src={`/sectors/Aviation.jpg`}
-                  height={200}
-                  width={200}
+                  height={400}
+                  width={400}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -209,8 +209,8 @@ const Page = () => {
               <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
                 <Image
                   src={`/sectors/BridgesStructure.jpg`}
-                  height={200}
-                  width={200}
+                  height={400}
+                  width={400}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -225,8 +225,8 @@ const Page = () => {
               <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
                 <Image
                   src={`/sectors/Commercial.jpg`}
-                  height={200}
-                  width={200}
+                  height={400}
+                  width={400}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />

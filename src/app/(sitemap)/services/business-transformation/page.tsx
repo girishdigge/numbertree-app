@@ -23,7 +23,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/services/BusinessTransformation1.jpg`}
+          src={`/services/BusinessTransformation.jpg`}
           width={2046}
           height={999}
           alt='business transformation'
@@ -84,8 +84,8 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={200}
-                  width={200}
+                  height={300}
+                  width={300}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -99,8 +99,8 @@ const Page = () => {
             <div className='w-1/3 group relative'>
               <Image
                 src={`/projects/newParliment.jpg`}
-                height={200}
-                width={200}
+                height={300}
+                width={300}
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
@@ -184,7 +184,7 @@ const Page = () => {
                 <Image
                   src={`/sectors/Aviation.jpg`}
                   height={200}
-                  width={200}
+                  width={400}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -200,7 +200,7 @@ const Page = () => {
                 <Image
                   src={`/sectors/BridgesStructure.jpg`}
                   height={200}
-                  width={200}
+                  width={400}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -216,7 +216,7 @@ const Page = () => {
                 <Image
                   src={`/sectors/Commercial.jpg`}
                   height={200}
-                  width={200}
+                  width={400}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />

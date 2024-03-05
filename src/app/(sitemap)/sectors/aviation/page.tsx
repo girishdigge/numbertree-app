@@ -97,8 +97,8 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={200}
-                  width={200}
+                  height={300}
+                  width={300}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -112,8 +112,8 @@ const Page = () => {
             <div className='w-1/3 group relative'>
               <Image
                 src={`/projects/newParliment.jpg`}
-                height={200}
-                width={200}
+                height={300}
+                width={300}
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
@@ -219,8 +219,8 @@ const Page = () => {
               <Link href={`/services/business-transformation`}>
                 <Image
                   src={`/services/BusinessTransformation1.jpg`}
-                  height={200}
-                  width={200}
+                  height={250}
+                  width={400}
                   alt='services'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -235,8 +235,8 @@ const Page = () => {
               <Link href={`/services/claim-management`}>
                 <Image
                   src={`/services/ClaimManagement1.jpg`}
-                  height={200}
-                  width={200}
+                  height={250}
+                  width={400}
                   alt='services'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
@@ -251,8 +251,8 @@ const Page = () => {
               <Link href={`/services/contract-adminstration`}>
                 <Image
                   src={`/services/ContractAdminstration1.jpg`}
-                  height={200}
-                  width={200}
+                  height={250}
+                  width={400}
                   alt='services'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
