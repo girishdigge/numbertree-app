@@ -1,4 +1,10 @@
 import { FaArrowRight } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedinIn } from 'react-icons/fa';
+import GetInTouch from '@/components/sitemap/getintouch';
+import Image from 'next/image';
+import Link from 'next/link';
 const Page = () => {
   return (
     <div>
@@ -39,40 +45,209 @@ const Page = () => {
           </div>
         </div>
       </div> */}
-      <div className='flex flex-row-3'>
-        <div className='w-1/5'></div>
-        <div className='flex w-3/5 mt-20 flex-col items-center justify-center'>
-          <p>
-            {`For over two decades, BIM has enabled built environment industry
-          professionals to share information in a single, shared project-based
-          set of objects and systems. It helps clients to understand design and
-          engineering choices visually. It allows the creative team to test
-          options on the layout of critical services virtually. And it outputs
-          vital documentation and enables greater collaboration.`}
-          </p>
-          <br />
-          <p>
-            {` At NumberTree, we’ve been pushing BIM’s capabilities, finding ways to amplify these effects
-          and realise its potential and value on all our projects and developing
-          automatic creation of content from data that enables us to respond
-          directly to client needs.`}
-          </p>
-          <h1 className='font-medium text-2xl mt-2'>
-            Information and data in – design and documentation out
-          </h1>
-          <p>
-            {`BIM’s centralisation of the data about all a project’s elements, and the power of linking BIM and other data together, is at the heart of its potential, often importing information directly from existing analytical models – bringing uniformity and consistency to the model from the start. We develop BIM models that go beyond storage of relevant information (sizes, dimensions and so on), to enable automated geometry and design, layout and documentation of repeat elements and provide coordination across disciplines. `}
-          </p>
-          <br />
-          <p>{` You might want to change layouts or equipment options across a whole building – we build models that enable rapid design iteration and automatically generate solutions and documentation, freeing our designers up for more valuable tasks. Clients gain confidence in a chosen design route, as many key decisions can be made with greater clarity using the model, right from the start.`}</p>
-          <br />
-          <p>{` We use BIM to validate design choices too, helping clients explore the viability of a proposed combination of services of functions, establishing how ‘buildable’ the desired approach is. For clients developing buildings or assets in different locations, our unique capabilities in BIM, including developing global BIM data standards, help to achieve better results, while ensuring their building or asset complies with local building regulations.`}</p>
-          <br />
-          <h1 className='font-medium text-2xl mt-2'>
-            The asset management advantage
-          </h1>
+      <div className='flex flex-row'>
+        <div className='hidden md:flex w-1/5 items-center md:flex-col mt-2'>
+          <hr className=' w-1/2' />
+          <h1 className='text-sm font-bold mb-2'> share this page</h1>
+          <div className='flex gap-2 justify-center items-center'>
+            <FaFacebookF
+              size={30}
+              className='bg-num-orange p-1 text-num-indigo  rounded-xl'
+            />
+            <FaLinkedinIn
+              size={31}
+              className='bg-num-orange text-num-indigo p-1 rounded-xl'
+            />
+            <FaXTwitter
+              size={30}
+              className='bg-num-orange text-num-indigo p-1 rounded-xl'
+            />
+          </div>
         </div>
-        <div className='w-1/5'></div>
+
+        <div className='flex w-3/5 mt-0 flex-col items-center justify-center'>
+          <h1 className='font-medium text-2xl mt-2 mb-1'>
+            3D/4D/5D BIM services
+          </h1>
+          <p className='font-serif'>
+            {` At NumberTree, we take pride in offering cutting-edge Building Information Modeling (BIM) services to our clients. Our team of highly skilled professionals combines industry expertise with advanced technological tools to deliver comprehensive BIM solutions. With our BIM 3D/4D/5D services, we bring a new era of efficiency, collaboration, and cost-effectiveness to infrastructure projects..`}
+          </p>
+          <br />
+          <h2 className='font-medium text-2xl mt-2 mb-1'>
+            BIM 3D Services: The Foundation of Exceptional Design
+          </h2>
+
+          <p className='font-serif'>{`Our BIM 3D services lay the groundwork for exceptional infrastructure design. We employ the latest software and techniques to create highly accurate and detailed 3D models of the project. These models serve as a virtual representation of the physical structure, allowing stakeholders to visualize and analyse every aspect with remarkable clarity. Our team ensures that the 3D models are not only visually appealing but also meticulously aligned with the project requirements and industry standards`}</p>
+          <br />
+          <h2 className='font-medium text-2xl mt-2 mb-1'>
+            BIM 4D Services: Adding the Dimension of Time
+          </h2>
+          <p className='font-serif'>{` With our BIM 4D services, we transcend traditional design boundaries and incorporate the element of time into the infrastructure projects. By linking the 3D models with project schedules and timelines, we create dynamic visualizations that showcase the construction process in a time-based sequence. This enables stakeholders to gain valuable insights into project phasing, identify potential clashes, optimize construction sequences, and make informed decisions to enhance project efficiency and reduce delays.`}</p>
+          <br />
+          <h2 className='font-medium text-2xl mt-2 mb-1'>
+            BIM 5D Services: The Power of Cost Optimization
+          </h2>
+
+          <p className='font-serif'>{`Taking BIM, a step further, our BIM 5D services integrate cost data into the digital models, empowering you to make financially sound decisions throughout the project lifecycle. By linking the 3D models with accurate material quantities, labor costs, and resource allocations, we enable precise cost estimations and cost tracking. Our BIM 5D services facilitate real-time cost analysis, enabling you to identify cost-saving opportunities, evaluate alternative design options, and ultimately maximize your return on investment.`}</p>
+          <br />
+          <br />
+
+          <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
+            Related Projects
+          </h2>
+          <div className='flex gap-2 mb-4'>
+            <div className='w-1/3 group relative'>
+              <Link href={`/projects/newParliment`}>
+                <Image
+                  src={`/projects/mumbaiDelhiExpressway.jpg`}
+                  height={300}
+                  width={300}
+                  alt='project'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mumbai Delhi Expressway
+                </p>
+              </div>
+            </div>
+            <div className='w-1/3 group relative'>
+              <Image
+                src={`/projects/newParliment.jpg`}
+                height={300}
+                width={300}
+                alt='project'
+                className='group-hover:opacity-90' // Fade image slightly on hover
+              />
+              <Link href={`/projects/new-parliment`}>
+                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                  <p className=' text-xl text-white flex justify-center font-bold text-center w-3/4'>
+                    New Parliment, new Delhi
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className='w-1/3 group relative '>
+              <Link href={`/projects/merc`}>
+                <Image
+                  src={`/projects/merc.jpg`}
+                  height={300}
+                  width={300}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mercedes Benz,Pune
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2 className='text-lg flex font-semibold text-num-indigo mt-2 mb-1 '>
+            Services offered
+          </h2>
+          <ul className='list-disc ml-6 font-serif '>
+            <Link href={'/services/business-transformation'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Business Transformation
+              </li>
+            </Link>
+            <Link href={'/services/claim-management'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Claim Management
+              </li>
+            </Link>
+            <Link href={'/services/contract-administration'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Contract Administration
+              </li>
+            </Link>
+            <Link href={'/services/project-monitoring-and-control'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Project Monitoring & Control{' '}
+              </li>
+            </Link>
+            <Link href={'/services/quantity-survey'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Quantity Survey{' '}
+              </li>
+            </Link>
+            <Link href={'/services/transaction-advisory'}>
+              <li className='hover:text-num-blue hover:underline'>
+                Transaction Advisory{' '}
+              </li>
+            </Link>
+            <Link href={'/services/techno-commercial-audit'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Techno Commercial Audit
+              </li>
+            </Link>
+          </ul>
+          <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
+            Explore More
+          </h2>
+          <div className='grid grid-cols-3 gap-2 mb-4'>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/aviation`}>
+                <Image
+                  src={`/sectors/Aviation.jpg`}
+                  height={200}
+                  width={300}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Aviation
+                </p>
+              </div>
+            </div>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/bridges-structures`}>
+                <Image
+                  src={`/sectors/BridgesStructure.jpg`}
+                  height={200}
+                  width={300}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Bridges Structures
+                </p>
+              </div>
+            </div>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/commercial`}>
+                <Image
+                  src={`/sectors/Commercial.jpg`}
+                  height={200}
+                  width={300}
+                  alt='sector'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+              </Link>
+              <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Commercial
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='hidden w-1/4 md:flex pl-10 mt-2'>
+          <GetInTouch />
+        </div>
       </div>
     </div>
   );
