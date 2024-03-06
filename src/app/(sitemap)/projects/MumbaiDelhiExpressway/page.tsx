@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
-import { FaSquarePhone } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FaSquarePhone } from 'react-icons/fa6';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import GetInTouch from '@/components/sitemap/getintouch';
 const Page = () => {
   return (
@@ -19,24 +19,24 @@ const Page = () => {
           </Link>
         </span>
         <RxSlash color='gray' className='mt-1' />
-        <Link href={`/services`}>
-          <p className='font-bold text-num-indigo'>Services</p>
+        <Link href={`/projects`}>
+          <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Techno Commercial Audit</p>
+        <p className='font-bold text-num-indigo'>Mumbai Delhi Expressway</p>
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/services/TechoComAudit1.jpg`}
+          src={`/projects/mumbaiDelhiExpressway.jpg`}
           width={2046}
           height={999}
-          alt='Techno Commercial Audit'
+          alt='Mumbai Delhi Expressway'
           className='object-contain'
         />
       </div>
-      <div className='z-2 absolute md:translate-y-3/4 inset-40 flex items-end justify-center'>
+      <div className='absolute md:inset-40 inset-60 md:translate-y-3/4 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
-          Techno Commercial Audit
+          Mumbai Delhi Expressway
         </h1>
       </div>
 
@@ -48,7 +48,7 @@ const Page = () => {
           <div className='flex gap-2 justify-center items-center'>
             <FaFacebookF
               size={30}
-              className='bg-num-orange p-1 text-num-indigo  rounded-xl'
+              className='bg-num-orange text-num-indigo p-1  rounded-xl'
             />
             <FaLinkedinIn
               size={31}
@@ -106,25 +106,23 @@ const Page = () => {
               <Link href={`/projects/newParliment`}>
                 <Image
                   src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={400}
-                  width={400}
+                  height={300}
+                  width={300}
                   alt='project'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
-              <Link href={`/projects/MumbaiDelhiExpressway`}>
-                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                    Mumbai Delhi Expressway
-                  </p>
-                </div>
-              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mumbai Delhi Expressway
+                </p>
+              </div>
             </div>
             <div className='w-1/3 group relative'>
               <Image
                 src={`/projects/newParliment.jpg`}
-                height={400}
-                width={400}
+                height={300}
+                width={300}
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
@@ -146,17 +144,15 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
-              <Link href={`/projects/merc-pune`}>
-                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                    Mercedes Benz,Pune
-                  </p>
-                </div>
-              </Link>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mercedes Benz,Pune
+                </p>
+              </div>
             </div>
           </div>
           <h2 className='text-lg flex font-semibold text-num-indigo mt-2 mb-1 '>
-            Other Services
+            Services offered
           </h2>
           <ul className='list-disc ml-6 font-serif '>
             <Link href={'/services/business-transformation'}>
@@ -194,62 +190,65 @@ const Page = () => {
                 Transaction Advisory{' '}
               </li>
             </Link>
-            {/* <Link href={'/services/techno-commercial-audit'}>
-              <li className='hover:text-num-blue hover:underline'> Techno Commercial Audit</li>
-            </Link> */}
+            <Link href={'/services/techno-commercial-audit'}>
+              <li className='hover:text-num-blue hover:underline'>
+                {' '}
+                Techno Commercial Audit
+              </li>
+            </Link>
           </ul>
           <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
             Explore More
           </h2>
           <div className='grid grid-cols-3 gap-2 mb-4'>
-            <Link href={`/sectors/aviation`}>
-              <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/aviation`}>
                 <Image
                   src={`/sectors/Aviation.jpg`}
-                  height={400}
-                  width={400}
+                  height={200}
+                  width={300}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
-                <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
-                  <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
-                    Aviation
-                  </p>
-                </div>
+              </Link>
+              <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-1'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Aviation
+                </p>
               </div>
-            </Link>
-            <Link href={`/sectors/bridges-structures`}>
-              <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+            </div>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/bridges-structures`}>
                 <Image
                   src={`/sectors/BridgesStructure.jpg`}
-                  height={400}
-                  width={400}
+                  height={200}
+                  width={300}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
-                <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
-                  <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
-                    Bridges Structures
-                  </p>
-                </div>
+              </Link>
+              <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Bridges Structures
+                </p>
               </div>
-            </Link>
-            <Link href={`/sectors/commercial`}>
-              <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+            </div>
+            <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
+              <Link href={`/sectors/commercial`}>
                 <Image
                   src={`/sectors/Commercial.jpg`}
-                  height={400}
-                  width={400}
+                  height={200}
+                  width={300}
                   alt='sector'
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
-                <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
-                  <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
-                    Commercial
-                  </p>
-                </div>
+              </Link>
+              <div className=' flex justify-center bg-gray-50 shadow-lg border-gray-800 items-end border border-l-1 border-r-1 border-b-12'>
+                <p className=' md:text-base text-xs text-num-indigo  flex justify-center font-bold text-center'>
+                  Commercial
+                </p>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
         <div className='hidden w-1/4 md:flex pl-10 '>

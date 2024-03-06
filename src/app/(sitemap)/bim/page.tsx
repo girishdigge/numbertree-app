@@ -23,7 +23,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-flow-col bg-gray-200 shadow-md'>
+      {/* <div className='grid grid-flow-col bg-gray-200 shadow-md'>
         <div className='flex items-center'>
           Building Information Modelling (BIM)
         </div>
@@ -38,7 +38,7 @@ const Page = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='flex flex-row-3'>
         <div className='w-1/5'></div>
         <div className='flex w-3/5 mt-20 flex-col items-center justify-center'>

@@ -112,11 +112,13 @@ const Page = () => {
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                  Mumbai Delhi Expressway
-                </p>
-              </div>
+              <Link href={`/projects/MumbaiDelhiExpressway`}>
+                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                    Mumbai Delhi Expressway
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className='w-1/3 group relative'>
               <Image
@@ -144,20 +146,22 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                  Mercedes Benz,Pune
-                </p>
-              </div>
+              <Link href={`/projects/merc-pune`}>
+                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                    Mercedes Benz,Pune
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <h2 className='text-lg flex font-semibold text-num-indigo mb-1 mt-2 '>
             Other Sectors
           </h2>
           <ul className='list-disc ml-6 font-serif '>
-            {/* <Link href={'/sectors/aviation'}>
+            <Link href={'/sectors/aviation'}>
               <li className='hover:text-num-blue hover:underline'>Aviation</li>
-            </Link> */}
+            </Link>
             <Link href={'/sectors/bridges-structures'}>
               <li className='hover:text-num-blue hover:underline'>
                 Bridges Structures
@@ -178,9 +182,9 @@ const Page = () => {
                 Institutional
               </li>
             </Link>
-            <Link href={'/sectors/oil-gas'}>
+            {/* <Link href={'/sectors/oil-gas'}>
               <li className='hover:text-num-blue hover:underline'>Oil & Gas</li>
-            </Link>
+            </Link> */}
             <Link href={'/sectors/ports'}>
               <li className='hover:text-num-blue hover:underline'>Ports</li>
             </Link>

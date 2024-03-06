@@ -23,20 +23,20 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Purvanchal Expressway</p>
+        <p className='font-bold text-num-indigo'>Mercedes Benz Pune</p>
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/projects/purvanchalExpressway.jpg`}
+          src={`/projects/merc.jpg`}
           width={2046}
           height={999}
-          alt='Purvanchal Expressway'
+          alt='Mercedes Benz Pune'
           className='object-contain'
         />
       </div>
       <div className='absolute md:inset-40 inset-60 md:translate-y-3/4 flex items-end justify-center'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
-          Purvanchal Expressway
+          Mercedes Benz Pune
         </h1>
       </div>
 

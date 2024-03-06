@@ -112,11 +112,13 @@ const Page = () => {
                   className='group-hover:opacity-90' // Fade image slightly on hover
                 />
               </Link>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                  Mumbai Delhi Expressway
-                </p>
-              </div>
+              <Link href={`/projects/MumbaiDelhiExpressway`}>
+                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                    Mumbai Delhi Expressway
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className='w-1/3 group relative'>
               <Image
@@ -135,20 +137,21 @@ const Page = () => {
               </Link>
             </div>
             <div className='w-1/3 group relative '>
-              <Link href={`/projects/merc`}>
-                <Image
-                  src={`/projects/merc.jpg`}
-                  height={300}
-                  width={300}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90' // Fade image slightly on hover
-                />
+              <Image
+                src={`/projects/merc.jpg`}
+                height={300}
+                width={300}
+                alt='project'
+                className='object-cover group-hover:opacity-90' // Fade image slightly on hover
+              />
+
+              <Link href={`/projects/merc-pune`}>
+                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                    Mercedes Benz,Pune
+                  </p>
+                </div>
               </Link>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                  Mercedes Benz,Pune
-                </p>
-              </div>
             </div>
           </div>
           <h2 className='text-lg flex font-semibold text-num-indigo mb-1 mt-2 '>

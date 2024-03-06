@@ -26,7 +26,7 @@ const Page = () => {
       location: 'Mercedes Benz,Pune',
       content:
         'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
+      link: 'projects/merc-pune',
       image: '/projects/merc.jpg', // replace with the actual image path
     },
     {
@@ -60,7 +60,7 @@ const Page = () => {
       location: 'mumbai Delhi Expressway',
       content:
         'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
+      link: '/projects/MumbaiDelhiExpressway',
       image: '/projects/mumbaiDelhiExpressway.jpg', // replace with the actual image path
     },
     {
