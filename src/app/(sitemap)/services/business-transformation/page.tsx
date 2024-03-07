@@ -132,14 +132,6 @@ const Page = () => {
                   Sectors
                 </Button>
               </div>
-              <div className='flex gap-2'>
-                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
-                  Service
-                </Button>
-                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
-                  Sectors
-                </Button>
-              </div>
             </div>
           </div>
           <div>
@@ -260,7 +252,7 @@ const Page = () => {
           <GetInTouch />
         </div>
       </div>
-      <div>
+      <div className='mt-4'>
         {' '}
         <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
           Related Projects
