@@ -72,7 +72,7 @@ const Carousel = () => {
     <div className='text-white z-1 relative bg-white'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className='relative -translate-y-20'>
+          <div key={index} className='relative -translate-y-16'>
             <video
               autoPlay
               muted
@@ -111,7 +111,7 @@ const Carousel = () => {
                 </div> */}
               </div>
             </div>
-            <div className='z-100 text-2xl bg-num-indigo  text-num-orange flex justify-end'>
+            <div className='z-100 text-3xl bg-num-indigo pb-1 text-num-orange flex justify-end'>
               {`#Empowering Tomorrow's infrastructure`}
             </div>
           </div>
