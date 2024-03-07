@@ -6,9 +6,15 @@ const KeyFacts = () => {
           <div className='bg-num-orange h-32 w-10 mt-10 mb-10'></div>
         </div>
         <div className='flex flex-col justify-center items-center w-2/5'>
-          <h1 className='text-4xl font-bold text-num-orange w-4/5 mb-5'>
-            Key Facts
-          </h1>
+          <div>
+            <h1 className='text-7xl text-num-watermark font-medium'>
+              Key Facts
+            </h1>
+
+            <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+              Key Facts
+            </h2>
+          </div>
           <p className='text-md text-num-blue font-medium w-4/5'>
             We are commited to working with you collaboratively to understand
             your goals and create a strategy that will achieve them.

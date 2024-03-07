@@ -22,7 +22,7 @@ const Page = () => {
               Building Information Modelling (BIM)
             </h1>
 
-            <h2 className='font-serif mt-4 pr-4 md:text-base text-xs'>
+            <h2 className=' mt-4 pr-4 md:text-base text-xs'>
               We push BIM harder, enhancing collaboration, creativity and
               knowledge sharing on every project
             </h2>
@@ -69,7 +69,7 @@ const Page = () => {
           <h1 className='font-medium text-2xl mt-2 mb-1'>
             3D/4D/5D BIM services
           </h1>
-          <p className='font-serif'>
+          <p className=''>
             {` At NumberTree, we take pride in offering cutting-edge Building Information Modeling (BIM) services to our clients. Our team of highly skilled professionals combines industry expertise with advanced technological tools to deliver comprehensive BIM solutions. With our BIM 3D/4D/5D services, we bring a new era of efficiency, collaboration, and cost-effectiveness to infrastructure projects..`}
           </p>
           <br />
@@ -77,18 +77,18 @@ const Page = () => {
             BIM 3D Services: The Foundation of Exceptional Design
           </h2>
 
-          <p className='font-serif'>{`Our BIM 3D services lay the groundwork for exceptional infrastructure design. We employ the latest software and techniques to create highly accurate and detailed 3D models of the project. These models serve as a virtual representation of the physical structure, allowing stakeholders to visualize and analyse every aspect with remarkable clarity. Our team ensures that the 3D models are not only visually appealing but also meticulously aligned with the project requirements and industry standards`}</p>
+          <p className=''>{`Our BIM 3D services lay the groundwork for exceptional infrastructure design. We employ the latest software and techniques to create highly accurate and detailed 3D models of the project. These models serve as a virtual representation of the physical structure, allowing stakeholders to visualize and analyse every aspect with remarkable clarity. Our team ensures that the 3D models are not only visually appealing but also meticulously aligned with the project requirements and industry standards`}</p>
           <br />
           <h2 className='font-medium text-2xl mt-2 mb-1'>
             BIM 4D Services: Adding the Dimension of Time
           </h2>
-          <p className='font-serif'>{` With our BIM 4D services, we transcend traditional design boundaries and incorporate the element of time into the infrastructure projects. By linking the 3D models with project schedules and timelines, we create dynamic visualizations that showcase the construction process in a time-based sequence. This enables stakeholders to gain valuable insights into project phasing, identify potential clashes, optimize construction sequences, and make informed decisions to enhance project efficiency and reduce delays.`}</p>
+          <p className=''>{` With our BIM 4D services, we transcend traditional design boundaries and incorporate the element of time into the infrastructure projects. By linking the 3D models with project schedules and timelines, we create dynamic visualizations that showcase the construction process in a time-based sequence. This enables stakeholders to gain valuable insights into project phasing, identify potential clashes, optimize construction sequences, and make informed decisions to enhance project efficiency and reduce delays.`}</p>
           <br />
           <h2 className='font-medium text-2xl mt-2 mb-1'>
             BIM 5D Services: The Power of Cost Optimization
           </h2>
 
-          <p className='font-serif'>{`Taking BIM, a step further, our BIM 5D services integrate cost data into the digital models, empowering you to make financially sound decisions throughout the project lifecycle. By linking the 3D models with accurate material quantities, labor costs, and resource allocations, we enable precise cost estimations and cost tracking. Our BIM 5D services facilitate real-time cost analysis, enabling you to identify cost-saving opportunities, evaluate alternative design options, and ultimately maximize your return on investment.`}</p>
+          <p className=''>{`Taking BIM, a step further, our BIM 5D services integrate cost data into the digital models, empowering you to make financially sound decisions throughout the project lifecycle. By linking the 3D models with accurate material quantities, labor costs, and resource allocations, we enable precise cost estimations and cost tracking. Our BIM 5D services facilitate real-time cost analysis, enabling you to identify cost-saving opportunities, evaluate alternative design options, and ultimately maximize your return on investment.`}</p>
           <br />
           <br />
 
@@ -148,7 +148,7 @@ const Page = () => {
           <h2 className='text-lg flex font-semibold text-num-indigo mt-2 mb-1 '>
             Services offered
           </h2>
-          <ul className='list-disc ml-6 font-serif '>
+          <ul className='list-disc ml-6  '>
             <Link href={'/services/business-transformation'}>
               <li className='hover:text-num-blue hover:underline'>
                 {' '}

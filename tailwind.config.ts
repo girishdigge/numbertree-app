@@ -19,6 +19,10 @@ const config = {
     },
     extend: {
       colors: {
+        wilmer: {
+          orange: '#ff5e14',
+          gray: '#f2f3f5',
+        },
         num: {
           orange: '#ea5c23',
           saffron: '#f39322',

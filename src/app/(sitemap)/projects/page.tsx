@@ -1,93 +1,27 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
+import { projects } from '@/data/projectsData';
+import { featuredProjects } from '@/data/projectsData';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectGroup,
+  SelectValue,
+} from '@/components/ui/select';
+
+import { useEffect, useState } from 'react';
+
 const Page = () => {
-  const featuredProjects = [
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Guwahati Airport',
-      content:
-        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-      link: '/quantity-survey',
-      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Parliment,New Delhi',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/projects/new-parliment',
-      image: '/projects/newParliment1.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Mercedes Benz,Pune',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: 'projects/merc-pune',
-      image: '/projects/merc.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Leh Airport',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/leh.jpg', // replace with the actual image path
-    },
-  ];
-  const projects = [
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Bharat Mandapam G20',
-      content:
-        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-      link: '/quantity-survey',
-      image: '/projects/bm-g20.webp', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Port',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/port2.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'mumbai Delhi Expressway',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/projects/MumbaiDelhiExpressway',
-      image: '/projects/mumbaiDelhiExpressway.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'purvanchal Expressway',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/purvanchalExpressway.jpeg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'STP Kanpur',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/STP_Kanpur.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'transmission Distribution Bihar',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/transmission_Bihar.jpg', // replace with the actual image path
-    },
-  ];
+  const [service, setService] = useState('');
+  const [sector, setSector] = useState('');
+
   return (
     <div>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
@@ -131,38 +65,89 @@ const Page = () => {
           </h3>
         </div>
       </div>
+      <div className='flex flex-col items-center justify-center'>
+        <h1 className='text-xl text-num-indigo font-medium m-2'>Explore By:</h1>
+        <div className='flex gap-2'>
+          <Select>
+            <SelectTrigger className='w-[180px]'>
+              <SelectValue placeholder='Services' />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>Services</SelectLabel>
+                <SelectItem value='1'>Business Transformation</SelectItem>
+                <SelectItem value='2'>Claim Management</SelectItem>
+                <SelectItem value='3'>Contract Adminstration</SelectItem>
+                <SelectItem value='4'>Project Monitoring & Control</SelectItem>
+                <SelectItem value='5'>Quantity Survey</SelectItem>
+                <SelectItem value='6'>Techno Commercial Audit</SelectItem>
+                <SelectItem value='7'>Transaction Advisory</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          <Select>
+            <SelectTrigger className='w-[180px]'>
+              <SelectValue
+                placeholder='Sectors'
+                onChange={(e: any) => setSector(e.target.value)}
+              />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value='1'>Aviation</SelectItem>
+              <SelectItem value='2'>bridges structures</SelectItem>
+              <SelectItem value='3'>commercial</SelectItem>
+              <SelectItem value='4'>industrial</SelectItem>
+              <SelectItem value='5'>institutional</SelectItem>
+              <SelectItem value='6'>oil & gas</SelectItem>
+              <SelectItem value='7'>ports</SelectItem>
+              <SelectItem value='8'>power transmission</SelectItem>
+              <SelectItem value='9'>railways & metro</SelectItem>
+              <SelectItem value='10'>renwable energy</SelectItem>
+              <SelectItem value='11'>residential</SelectItem>
+              <SelectItem value='12'>roads & highways</SelectItem>
+              <SelectItem value='13'>thermal power plant</SelectItem>
+              <SelectItem value='14'>water infrastructure</SelectItem>
+            </SelectContent>
+          </Select>
+          <Button className='font-bold' variant={'secondary'}>
+            Reset
+          </Button>
+        </div>
+      </div>
       <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
         Featured Projects
       </h1>
-      <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
-        {featuredProjects.map((projects, index) => (
-          <div key={index}>
-            <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
-              <Link href={projects.link}>
-                <Image
-                  src={projects.image}
-                  width={800}
-                  height={400}
-                  alt={projects.location}
-                  className='object-contain'
-                />
+      {!service && !sector && (
+        <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
+          {featuredProjects.map((projects, index) => (
+            <div key={index}>
+              <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
+                <Link href={projects.link}>
+                  <Image
+                    src={projects.image}
+                    width={800}
+                    height={400}
+                    alt={projects.location}
+                    className='object-contain'
+                  />
 
-                <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
-                  <span className='text-white font-bold'>
-                    Find out more
-                    <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                      {`+`}
-                    </Button>
-                  </span>
-                  <h1 className='text-white text-2xl font-bold '>
-                    {projects.location}
-                  </h1>
-                </div>
-              </Link>
+                  <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
+                    <span className='text-white font-bold'>
+                      Find out more
+                      <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
+                        {`+`}
+                      </Button>
+                    </span>
+                    <h1 className='text-white text-2xl font-bold '>
+                      {projects.location}
+                    </h1>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
       <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
         All Projects
       </h1>

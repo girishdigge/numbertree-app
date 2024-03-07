@@ -65,7 +65,7 @@ const Page = () => {
             We pride ourselves as India’s foremost techno commercial audit firm
             with over two decades of experience across varied industries.
           </h1>
-          <p className='font-serif md:text-base text-xs '>
+          <p className=' md:text-base text-xs '>
             Our offering of Techno commercial Audit – helps businesses harnesses
             the power of financial insights with great clarity, it transforms
             not just the way businesses operate but also unlocks their full
@@ -88,7 +88,7 @@ const Page = () => {
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <ul className='list-disc ml-6 font-serif'>
+          <ul className='list-disc ml-6 '>
             <li> Techno Commercial Internal Audit</li>
             <li> Project Concurrent Audit</li>
             <li> Project Closure Audit</li>
@@ -159,7 +159,7 @@ const Page = () => {
           <h2 className='text-lg flex font-semibold text-num-indigo mb-1 mt-2 '>
             Other Sectors
           </h2>
-          <ul className='list-disc ml-6 font-serif '>
+          <ul className='list-disc ml-6  '>
             <Link href={'/sectors/aviation'}>
               <li className='hover:text-num-blue hover:underline'>Aviation</li>
             </Link>

@@ -1,5 +1,6 @@
 import GetInTouch from '@/components/sitemap/getintouch';
 import { Button } from '@/components/ui/button';
+import { FaQuoteLeft } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
@@ -26,137 +27,42 @@ const Page = () => {
       </div>
       <div className='flex flex-col '>
         <Image
-          src={`/services/BusinessTransformation.jpg`}
+          src={`/services/BusinessTransformation2.jpg`}
           width={2046}
-          height={999}
+          height={768}
           alt='business transformation'
           className='object-contain'
         />
       </div>
-      <div className='z-2 absolute md:translate-y-3/4 inset-40 flex items-end justify-center'>
+      <div className='z-2 absolute inset-0 flex items-end'>
         <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
           Business Transformation
         </h1>
       </div>
       <br />
       <div className='flex flex-row'>
-        <div className='hidden md:flex w-1/4 items-center md:flex-col'>
-          <hr className=' w-1/2' />
-          <h1 className='text-sm font-bold mb-2'> share this page</h1>
-          <div className='flex gap-2 justify-center items-center'>
+        <div className='flex w-1/4 pl-4 flex-col'>
+          <h1 className='text-lg font-bold '> share this page</h1>
+          <hr className=' w-1/2 border border-num-pink mb-2' />
+          <div className='flex gap-2 mb-12'>
             <FaFacebookF
               size={30}
-              className='bg-num-orange p-1 text-num-indigo  rounded-xl'
+              className='bg-num-orange p-1 text-white  rounded-xl'
             />
             <FaLinkedinIn
               size={31}
-              className='bg-num-orange text-num-indigo p-1 rounded-xl'
+              className='bg-num-orange text-white p-1 rounded-xl'
             />
             <FaXTwitter
               size={30}
-              className='bg-num-orange text-num-indigo p-1 rounded-xl'
+              className='bg-num-orange text-white p-1 rounded-xl'
             />
           </div>
-        </div>
-        <div className='w-1/2 '>
-          <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
-            We pride ourselves as India’s foremost techno commercial audit firm
-            with over two decades of experience across varied industries.
-          </h1>
-          <p className='font-serif  md:text-base text-xs'>
-            Our offering of Techno commercial Audit – helps businesses harnesses
-            the power of financial insights with great clarity, it transforms
-            not just the way businesses operate but also unlocks their full
-            potential and propels them to growth This specialized audit examines
-            both the technical and commercial aspects of infrastructure
-            ventures, providing a comprehensive evaluation of their feasibility,
-            efficiency, and financial viability. Our dedicated team of engineers
-            & auditors work collaboratively to present a meticulous analysis of
-            project plans, contracts, cost estimates, procurement processes,
-            Quantity Survey and financial controls. We are well equipped to use
-            our processes and identify potential risks, cost-saving
-            opportunities, and areas for improvement. With our multidimensional
-            approach, Techno-Commercial Audit serves as a valuable tool for
-            project managers & senior management in navigating the complex
-            landscape of infrastructure development, ensuring transparency,
-            accountability, and successful project delivery.
-          </p>
-          <br />
-          <h2 className='text-lg flex justify-center font-semibold text-num-indigo mb-4'>
-            Some of the specialized services provided under Techno commercial
-            audit are
-          </h2>
-          <ul className='list-disc ml-6 font-serif'>
-            <li> Techno Commercial Internal Audit</li>
-            <li> Project Concurrent Audit</li>
-            <li> Project Closure Audit</li>
-            <li>Functional Audits/P2P Audits/Process Audits </li>
-            <li>Revenue Assurance Audit of Toll Plaza</li>
-            <li> Energy Audit- Renewables</li>
-          </ul>
-          <br />
-
-          <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
-            Related Projects
-          </h2>
-          <div className='flex gap-2 mb-4'>
-            <div className='w-1/3 group relative'>
-              <Link href={`/projects/newParliment`}>
-                <Image
-                  src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={300}
-                  width={300}
-                  alt='project'
-                  className='group-hover:opacity-90' // Fade image slightly on hover
-                />
-              </Link>
-              <Link href={`/projects/MumbaiDelhiExpressway`}>
-                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                    Mumbai Delhi Expressway
-                  </p>
-                </div>
-              </Link>
-            </div>
-            <div className='w-1/3 group relative'>
-              <Image
-                src={`/projects/newParliment.jpg`}
-                height={300}
-                width={300}
-                alt='project'
-                className='group-hover:opacity-90' // Fade image slightly on hover
-              />
-              <Link href={`/projects/new-parliment`}>
-                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                  <p className=' text-xl text-white flex justify-center font-bold text-center w-3/4'>
-                    New Parliment, new Delhi
-                  </p>
-                </div>
-              </Link>
-            </div>
-            <div className='w-1/3 group relative '>
-              <Link href={`/projects/merc`}>
-                <Image
-                  src={`/projects/merc.jpg`}
-                  height={300}
-                  width={300}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90' // Fade image slightly on hover
-                />
-              </Link>
-              <Link href={`/projects/merc-pune`}>
-                <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                  <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                    Mercedes Benz,Pune
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <h2 className='text-lg flex font-semibold text-num-indigo mt-2 mb-1 '>
+          <h2 className='text-lg font-bold flex  text-num-indigo mt-2  '>
             Other Services
           </h2>
-          <ul className='list-disc ml-6 font-serif '>
+          <hr className=' w-1/2 border border-num-pink mb-2' />
+          <ul className='list-disc ml-4  flex flex-col mb-12 '>
             {/* <Link href={'/services/business-transformation'}>
               <li className='hover:text-num-blue hover:underline'>
                 {' '}
@@ -199,7 +105,101 @@ const Page = () => {
               </li>
             </Link>
           </ul>
-          <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
+          <div className='mb-12'>
+            <h1 className='text-xl font-bold text-num-indigo mb-2'>Tags</h1>
+            <div className='flex flex-col gap-2'>
+              <div className='flex gap-2'>
+                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                  Service
+                </Button>
+                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                  Sectors
+                </Button>
+              </div>
+              <div className='flex gap-2'>
+                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                  Service
+                </Button>
+                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                  Sectors
+                </Button>
+              </div>
+              <div className='flex gap-2'>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
+                  Service
+                </Button>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
+                  Sectors
+                </Button>
+              </div>
+              <div className='flex gap-2'>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
+                  Service
+                </Button>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
+                  Sectors
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 className='text-lg font-bold'>Why we are here?</h1>
+            <p className='w-3/4 text-base'>
+              Lorem ipsum dolor sit amet eros, conse ctetuer adipiscing elit,
+              sed diami nonum nibhie vixtu eget.
+            </p>
+          </div>
+        </div>
+        <div className='w-1/2 '>
+          <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
+            We pride ourselves as India’s foremost techno commercial audit firm
+            with over two decades of experience across varied industries.
+          </h1>
+          <p className='  md:text-base text-xs'>
+            Our offering of Techno commercial Audit – helps businesses harnesses
+            the power of financial insights with great clarity, it transforms
+            not just the way businesses operate but also unlocks their full
+            potential and propels them to growth This specialized audit examines
+            both the technical and commercial aspects of infrastructure
+            ventures, providing a comprehensive evaluation of their feasibility,
+            efficiency, and financial viability. Our dedicated team of engineers
+            & auditors work collaboratively to present a meticulous analysis of
+            project plans, contracts, cost estimates, procurement processes,
+            Quantity Survey and financial controls. We are well equipped to use
+            our processes and identify potential risks, cost-saving
+            opportunities, and areas for improvement. With our multidimensional
+            approach, Techno-Commercial Audit serves as a valuable tool for
+            project managers & senior management in navigating the complex
+            landscape of infrastructure development, ensuring transparency,
+            accountability, and successful project delivery.
+          </p>
+          <br />
+          <div className='  mt-4 w-full bg-wilmer-orange  p-4 mb-4'>
+            <div className='flex m-4 mr-2 font-sans text-white '>
+              <p className='font-semibold font-lg ml-2 mr-4 w-11/12'>
+                {`We offer seamless and integrated service, from inception
+                  through to completion and handover, we are the right hand of
+                  project managers. We listen to our clients needs and strive
+                  to provide them the best service."`}
+              </p>
+              <FaQuoteLeft size={40} className='text-white ' />
+            </div>
+          </div>
+          <h2 className='text-lg flex justify-center font-semibold text-num-indigo mb-4'>
+            Some of the specialized services provided under Techno commercial
+            audit are
+          </h2>
+          <ul className='list-disc ml-6 '>
+            <li> Techno Commercial Internal Audit</li>
+            <li> Project Concurrent Audit</li>
+            <li> Project Closure Audit</li>
+            <li>Functional Audits/P2P Audits/Process Audits </li>
+            <li>Revenue Assurance Audit of Toll Plaza</li>
+            <li> Energy Audit- Renewables</li>
+          </ul>
+          <br />
+
+          {/* <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
             Explore More
           </h2>
           <div className='grid grid-cols-3 gap-2 mb-4'>
@@ -251,10 +251,189 @@ const Page = () => {
                 </div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className='hidden w-1/4 md:flex pl-10 '>
           <GetInTouch />
+        </div>
+      </div>
+      <div>
+        {' '}
+        <h1 className='text-7xl text-num-watermark font-medium'>
+          Related Projects
+        </h1>
+        <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+          Related Projects
+        </h2>
+        <div className='flex gap-2 mb-4'>
+          <div className=' group relative'>
+            <Link href={`/projects/newParliment`}>
+              <Image
+                src={`/projects/mumbaiDelhiExpressway.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='group-hover:opacity-90' // Fade image slightly on hover
+              />
+            </Link>
+            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                Mumbai expressway
+              </h1>
+            </div>
+            {/* <Link href={`/projects/MumbaiDelhiExpressway`}>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mumbai Delhi Expressway
+                </p>
+              </div>
+            </Link> */}
+          </div>
+          <div className=' group relative'>
+            <Image
+              src={`/projects/newParliment.jpg`}
+              height={400}
+              width={400}
+              alt='project'
+              className='group-hover:opacity-90' // Fade image slightly on hover
+            />
+            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                New Parliment,Delhi
+              </h1>
+            </div>
+            {/* <Link href={`/projects/new-parliment`}>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center w-3/4'>
+                  New Parliment, new Delhi
+                </p>
+              </div>
+            </Link> */}
+          </div>
+
+          <div className='w-1/3 group relative '>
+            <Link href={`/projects/merc`}>
+              <Image
+                src={`/projects/merc.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90' // Fade image slightly on hover
+              />
+            </Link>
+            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                Mercedes, Pune
+              </h1>
+            </div>
+            {/* <Link href={`/projects/merc-pune`}>
+              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
+                <p className=' text-xl text-white flex justify-center font-bold text-center'>
+                  Mercedes Benz,Pune
+                </p>
+              </div>
+            </Link> */}
+          </div>
+        </div>
+      </div>
+      <h1 className='text-7xl text-num-watermark font-medium'>Explore More</h1>
+
+      <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+        Explore More
+      </h2>
+      <div className='grid grid-cols-2 gap-1'>
+        <div className='flex'>
+          <div className=' group relative '>
+            <Link href={`/sectors/aviation`}>
+              <Image
+                src={`/sectors1/Aviation.jpg`}
+                height={800}
+                width={800}
+                alt='sector'
+                className='object-contain group-hover:opacity-95 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+              />
+            </Link>
+            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                Aviation
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div className='grid grid-cols-2 gap-1 pb-4 align-middle'>
+          <div>
+            <div className=' group relative '>
+              <Link href={`/sectors/bridges-structures`}>
+                <Image
+                  src={`/sectors1/BridgesStructure.jpg`}
+                  height={400}
+                  width={400}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  Bridges Structures
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className='group relative '>
+              <Link href={`/sectors/commercial`}>
+                <Image
+                  src={`/sectors1/Commercial.jpg`}
+                  height={400}
+                  width={400}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  Commercial
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className=' group relative '>
+              <Link href={`/sectors/industrial`}>
+                <Image
+                  src={`/sectors1/Industrial.jpg`}
+                  height={400}
+                  width={400}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  Industrial
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className=' group relative'>
+              <Link href={`/sectors/institutional`}>
+                <Image
+                  src={`/sectors1/Institutional.jpg`}
+                  height={400}
+                  width={400}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                />
+              </Link>
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  Institutional
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
