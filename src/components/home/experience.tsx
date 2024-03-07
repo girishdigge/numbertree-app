@@ -71,7 +71,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className='grid md:grid-cols-3 grid-cols-2 justify-center items-center mt-10 mb-10'>
+    <div className='grid md:grid-cols-3 grid-cols-2 justify-center items-center mt-0 mb-10'>
       {group.map((item, index) => (
         <div
           key={index}

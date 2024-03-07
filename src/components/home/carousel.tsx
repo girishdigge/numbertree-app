@@ -72,19 +72,19 @@ const Carousel = () => {
     <div className='text-white z-1 relative bg-white'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className='relative'>
+          <div key={index} className='relative -translate-y-20'>
             <video
               autoPlay
               muted
               loop
               width='w-full'
-              height='600'
+              height='480'
               className='object-cover'
             >
               <source src={slide.video} type='video/mp4' />
             </video>
 
-            <div className='absolute inset-0  flex items-center md:pl-16 md:pt-5 pt-2  bg-black bg-opacity-30'>
+            <div className='absolute inset-0  flex items-center md:pl-16 md:pt-20 pt-2  bg-black bg-opacity-30'>
               <div className='bg-opacity-50 md:w-4/5 h-full p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
@@ -105,11 +105,14 @@ const Carousel = () => {
                     Read More{`>`}
                   </Button>
                 </div>
-                <div className='hidden md:flex flex-row translate-x-3/4 translate-y-3/4 md:mt-4 mt-2 md:text-xl text-sm '>
+                {/* <div className='hidden md:flex items-end justify-end md:mt-4 mt-2 md:text-xl text-sm '>
                   {`#`}
                   {slide.heading}
-                </div>
+                </div> */}
               </div>
+            </div>
+            <div className='z-100 text-2xl bg-num-indigo text-num-orange flex justify-end'>
+              {`#Empowering Tomorrow's infrastructure`}
             </div>
           </div>
         ))}

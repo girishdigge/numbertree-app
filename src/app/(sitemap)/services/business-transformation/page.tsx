@@ -148,6 +148,9 @@ const Page = () => {
               Lorem ipsum dolor sit amet eros, conse ctetuer adipiscing elit,
               sed diami nonum nibhie vixtu eget.
             </p>
+            <Button className='w-40 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+              Connect
+            </Button>
           </div>
         </div>
         <div className='w-1/2 '>
