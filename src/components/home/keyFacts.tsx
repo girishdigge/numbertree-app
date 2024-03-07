@@ -47,7 +47,7 @@ const KeyFacts = () => {
           </div>
           <div className='flex flex-col  ml-5 mt-5'>
             <h1 className='text-4xl text-num-orange font-bold  mb-2'>3500+</h1>{' '}
-            <p className='text-lg text-num-blue font-semibold w-4/5'>
+            <p className='text-lg text-num-blue font-semibold w-4/5 mr-4'>
               Power Transmission Towers
             </p>
           </div>

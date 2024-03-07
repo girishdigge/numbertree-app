@@ -111,7 +111,7 @@ const Carousel = () => {
                 </div> */}
               </div>
             </div>
-            <div className='z-100 text-3xl font-semibold bg-num-orange pb-2 pr-2 text-num-white flex justify-end'>
+            <div className='z-100 text-3xl font-semibold bg-num-indigo pb-2 pr-2 text-wilmer-orange flex justify-end'>
               {`#Empowering Tomorrow's infrastructure`}
             </div>
           </div>
