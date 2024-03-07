@@ -25,7 +25,7 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Business Transformation</p>
       </div>
-      <div className='flex flex-col '>
+      <div className='relative '>
         <Image
           src={`/services/BusinessTransformation2.jpg`}
           width={2046}
@@ -33,11 +33,11 @@ const Page = () => {
           alt='business transformation'
           className='object-contain'
         />
-      </div>
-      <div className='z-2 absolute inset-0 flex items-end'>
-        <h1 className='font-bold md:text-5xl text-3xl flex justify-center text-white'>
-          Business Transformation
-        </h1>
+        <div className='absolute inset-0 flex items-start '>
+          <h1 className='font-bold md:text-5xl text-3xl mt-2 ml-2 flex border-l-2 border-num-orange justify-center text-white'>
+            Business Transformation
+          </h1>
+        </div>
       </div>
       <br />
       <div className='flex flex-row'>
@@ -109,18 +109,18 @@ const Page = () => {
             <h1 className='text-xl font-bold text-num-indigo mb-2'>Tags</h1>
             <div className='flex flex-col gap-2'>
               <div className='flex gap-2'>
-                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
                   Service
                 </Button>
-                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
                   Sectors
                 </Button>
               </div>
               <div className='flex gap-2'>
-                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
                   Service
                 </Button>
-                <Button className='bg-wilmer-gray text-black hover:bg-wilmer-orange hover:text-white'>
+                <Button className='bg-num-indigo text-white hover:bg-wilmer-orange hover:text-white'>
                   Sectors
                 </Button>
               </div>
@@ -175,7 +175,7 @@ const Page = () => {
           </p>
           <br />
           <div className='  mt-4 w-full bg-wilmer-orange  p-4 mb-4'>
-            <div className='flex m-4 mr-2 font-sans text-white '>
+            <div className='flex m-4 mr-2  text-white '>
               <p className='font-semibold font-lg ml-2 mr-4 w-11/12'>
                 {`We offer seamless and integrated service, from inception
                   through to completion and handover, we are the right hand of
@@ -259,28 +259,28 @@ const Page = () => {
       </div>
       <div>
         {' '}
-        <h1 className='text-7xl text-num-watermark font-medium'>
+        <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
           Related Projects
         </h1>
-        <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+        <h2 className='-translate-y-6 ml-1 text-4xl text-num-orange font-medium'>
           Related Projects
         </h2>
         <div className='flex gap-2 mb-4'>
           <div className=' group relative'>
-            <Link href={`/projects/newParliment`}>
+            <Link href={`/projects/MumbaiDelhiExpressway`}>
               <Image
                 src={`/projects/mumbaiDelhiExpressway.jpg`}
                 height={400}
-                width={400}
+                width={600}
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  Mumbai expressway
+                </h1>
+              </div>
             </Link>
-            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                Mumbai expressway
-              </h1>
-            </div>
             {/* <Link href={`/projects/MumbaiDelhiExpressway`}>
               <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
                 <p className=' text-xl text-white flex justify-center font-bold text-center'>
@@ -290,18 +290,20 @@ const Page = () => {
             </Link> */}
           </div>
           <div className=' group relative'>
-            <Image
-              src={`/projects/newParliment.jpg`}
-              height={400}
-              width={400}
-              alt='project'
-              className='group-hover:opacity-90' // Fade image slightly on hover
-            />
-            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                New Parliment,Delhi
-              </h1>
-            </div>
+            <Link href={`/projects/new-parliment`}>
+              <Image
+                src={`/projects/newParliment.jpg`}
+                height={400}
+                width={600}
+                alt='project'
+                className='group-hover:opacity-90' // Fade image slightly on hover
+              />
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  New Parliment,Delhi
+                </h1>
+              </div>
+            </Link>
             {/* <Link href={`/projects/new-parliment`}>
               <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
                 <p className=' text-xl text-white flex justify-center font-bold text-center w-3/4'>
@@ -311,21 +313,21 @@ const Page = () => {
             </Link> */}
           </div>
 
-          <div className='w-1/3 group relative '>
-            <Link href={`/projects/merc`}>
+          <div className=' group relative '>
+            <Link href={`/projects/merc-pune`}>
               <Image
                 src={`/projects/merc.jpg`}
                 height={400}
-                width={400}
+                width={600}
                 alt='project'
                 className='object-cover group-hover:opacity-90' // Fade image slightly on hover
               />
+              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
+                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
+                  Mercedes, Pune
+                </h1>
+              </div>
             </Link>
-            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                Mercedes, Pune
-              </h1>
-            </div>
             {/* <Link href={`/projects/merc-pune`}>
               <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
                 <p className=' text-xl text-white flex justify-center font-bold text-center'>
@@ -336,9 +338,11 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <h1 className='text-7xl text-num-watermark font-medium'>Explore More</h1>
+      <h1 className='text-7xl translate-y-4 translate-x-2 text-num-watermark font-medium'>
+        Explore More
+      </h1>
 
-      <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+      <h2 className='-translate-y-8 ml-1 text-4xl text-num-orange font-medium'>
         Explore More
       </h2>
       <div className='grid grid-cols-2 gap-1'>
