@@ -353,8 +353,8 @@ const Page = () => {
         </h2>
       </div>
       <div className='grid grid-cols-2 gap-1'>
-        <div className='flex'>
-          <div className=' group relative  hover:scale-105 transition duration-500 ease-in-out'>
+        <div className='flex overflow-hidden'>
+          <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Link href={`/sectors/aviation`}>
               <Image
                 src={`/sectors1/Aviation.jpg`}
@@ -376,8 +376,8 @@ const Page = () => {
         </div>
 
         <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
-          <div>
-            <div className=' group relative hover:scale-105 transition duration-500 ease-in-out'>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Link href={`/sectors/bridges-structures`}>
                 <Image
                   src={`/sectors1/BridgesStructure.jpg`}
@@ -399,8 +399,8 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className='group relative hover:scale-105 transition duration-500 ease-in-out'>
+          <div className='flex overflow-hidden'>
+            <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Link href={`/sectors/commercial`}>
                 <Image
                   src={`/sectors1/Commercial.jpg`}
@@ -420,8 +420,8 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className=' group relative hover:scale-105 transition duration-500 ease-in-out'>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Link href={`/sectors/industrial`}>
                 <Image
                   src={`/sectors1/Industrial.jpg`}
@@ -441,8 +441,8 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className=' group relative hover:scale-105 transition duration-500 ease-in-out'>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Link href={`/sectors/institutional`}>
                 <Image
                   src={`/sectors1/Institutional.jpg`}
