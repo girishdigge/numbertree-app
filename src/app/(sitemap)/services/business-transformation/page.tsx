@@ -81,38 +81,42 @@ const Page = () => {
               </li>
             </Link>
             <Link href={'/services/contract-administration'}>
-              <li className='hover:text-num-blue hover:underline  '>
+              <li className='  '>
                 {' '}
-                <span className='border-2 border-num-orange'>
+                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
                   Contract Administration
                 </span>
               </li>
             </Link>
             <Link href={'/services/project-monitoring-and-control'}>
-              <li className='hover:text-num-blue hover:underline '>
+              <li className=' '>
                 {' '}
-                <span className='border-2 border-num-orange'>
+                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
                   Project Monitoring & Control{' '}
                 </span>
               </li>
             </Link>
             <Link href={'/services/quantity-survey'}>
-              <li className='hover:text-num-blue hover:underline'>
+              <li className=''>
                 {' '}
-                <span className='border-2 border-num-orange'>
+                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
                   Quantity Survey{' '}
                 </span>
               </li>
             </Link>
             <Link href={'/services/transaction-advisory'}>
-              <li className='hover:text-num-blue hover:underline'>
-                Transaction Advisory{' '}
+              <li className=''>
+                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                  Transaction Advisory{' '}
+                </span>
               </li>
             </Link>
             <Link href={'/services/techno-commercial-audit'}>
-              <li className='hover:text-num-blue hover:underline'>
-                {' '}
-                Techno Commercial Audit
+              <li className=''>
+                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                  {' '}
+                  Techno Commercial Audit
+                </span>
               </li>
             </Link>
           </ul>
@@ -157,7 +161,7 @@ const Page = () => {
           </div> */}
         </div>
         <div className='w-1/2 flex flex-col items-center'>
-          <h1 className='text-3xl flex justify-center font-normal w-3/4 text-num-indigo mb-4'>
+          <h1 className='text-3xl flex justify-center font-normal w-3/4 text-black mb-4'>
             We pride ourselves as India’s foremost techno commercial audit firm
             with over two decades of experience across varied industries.
           </h1>
@@ -201,17 +205,17 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <h2 className='text-2xl w-3/4 flex justify-center font-semibold text-num-indigo mb-4'>
+          <h2 className='text-2xl w-3/4 flex justify-center font-semibold text-black mb-4'>
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <ul className='list-disc text-xl ml-6 '>
-            <li> Techno Commercial Internal Audit</li>
-            <li> Project Concurrent Audit</li>
-            <li> Project Closure Audit</li>
-            <li>Functional Audits/P2P Audits/Process Audits </li>
-            <li>Revenue Assurance Audit of Toll Plaza</li>
-            <li> Energy Audit- Renewables</li>
+          <ul className=' text-xl  ml-2'>
+            <li>{`-> Techno Commercial Internal Audit`}</li>
+            <li>{`-> Project Concurrent Audit`}</li>
+            <li>{`-> Project Closure Audit`}</li>
+            <li>{`-> Functional Audits/P2P Audits/Process Audits`} </li>
+            <li>{`-> Revenue Assurance Audit of Toll Plaza`}</li>
+            <li>{`-> Energy Audit- Renewables`}</li>
           </ul>
           <br />
           {/* <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
