@@ -203,10 +203,10 @@ const Page = () => {
             </p>
           </div>
           <br />
-          <div className='   ml-8'>
-            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={18} className='text-white ' />
-              <p className='text- ml-6 mr-4 w-11/12'>
+          <div className=' text-justify  ml-8'>
+            <div className='flex flex-col pl-2 pt-2 border-t-2 bg-num-orange bg-opacity-20 border-t-wilmer-orange  m-4 mr-2 text-black '>
+              <FaQuoteLeft size={18} className=' ' />
+              <p className='text-lg font-medium ml-6 mr-4 w-11/12'>
                 {`We offer seamless and integrated service, from inception
                   through to completion and handover, we are the right hand of
                   project managers. We listen to our clients needs and strive
