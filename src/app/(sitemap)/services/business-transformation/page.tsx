@@ -64,7 +64,7 @@ const Page = () => {
             Our Services
           </h2>
 
-          <hr className=' w-1/2 border border-num-pink mb-2' />
+          <hr className=' w-1/2 mb-2' />
           <ul className='  flex flex-col mb-12 gap-4 '>
             {/* <Link href={'/services/business-transformation'}>
               <li className='hover:text-num-blue hover:underline'>
@@ -75,7 +75,7 @@ const Page = () => {
             <Link href={'/services/claim-management'}>
               <li className=' '>
                 {' '}
-                <span className='border-2 border-num-orange hover:border-num-indigo hover:bg-num-orange hover:text-white '>
+                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
                   Claim Management
                 </span>
               </li>
@@ -191,7 +191,7 @@ const Page = () => {
           </div>
           <br />
           <div className='   ml-8'>
-            <div className='flex flex-col w-3/4 bg-wilmer-orange  m-4 mr-2 p-4 text-white '>
+            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
               <FaQuoteLeft size={18} className='text-white ' />
               <p className='text- ml-6 mr-4 w-11/12'>
                 {`We offer seamless and integrated service, from inception
@@ -201,11 +201,11 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <h2 className='text-lg flex justify-center font-semibold text-num-indigo mb-4'>
+          <h2 className='text-2xl w-3/4 flex justify-center font-semibold text-num-indigo mb-4'>
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <ul className='list-disc ml-6 '>
+          <ul className='list-disc text-xl ml-6 '>
             <li> Techno Commercial Internal Audit</li>
             <li> Project Concurrent Audit</li>
             <li> Project Closure Audit</li>
