@@ -55,8 +55,8 @@ const Page = () => {
       <br />
       <div className='flex flex-row'>
         <div className='flex w-1/4 pl-4 flex-col'>
-          <h1 className='text-xl font-bold '> share this page</h1>
-          <hr className=' w-2/5 border  mb-2' />
+          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
+
           <div className='flex gap-4 mb-12'>
             <FaFacebookF
               size={30}
@@ -135,7 +135,7 @@ const Page = () => {
             </p>
           </div>
           <br />
-          <div className='   ml-8'>
+          <div className='  ml-8'>
             <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
               <FaQuoteLeft size={18} className='text-white ' />
               <p className='text- ml-6 mr-4 w-11/12'>
@@ -146,48 +146,48 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <h2 className='text-2xl w-3/4 flex justify-center font-semibold text-black mb-4'>
+          <h2 className='text-2xl w-3/4 flex  justify-center font-semibold text-black mb-4'>
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <ul className=' text-lg mb-8'>
-            <li>
+          <div className='flex flex-col items-start'>
+            <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
                 {`Techno Commercial Internal Audit`}
               </span>
-            </li>
-            <li>
+            </p>
+            <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
                 {`Project Concurrent Audit`}
               </span>
-            </li>
-            <li>
+            </p>
+            <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
                 {`Project Closure Audit`}
               </span>
-            </li>
-            <li>
+            </p>
+            <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
                 {`Functional Audits/P2P Audits/Process Audits`}
               </span>
-            </li>
-            <li>
+            </p>
+            <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
                 {`Revenue Assurance Audit of Toll Plaza`}
               </span>
-            </li>
-            <li>
+            </p>
+            <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
                 {`Energy Audit- Renewables`}
               </span>
-            </li>
-          </ul>
+            </p>
+          </div>
           <br />
           {/* <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
             Explore More
@@ -243,6 +243,7 @@ const Page = () => {
             </Link>
           </div> */}
         </div>
+
         <div className='hidden w-1/4 md:flex '>
           <GetInTouch />
         </div>
