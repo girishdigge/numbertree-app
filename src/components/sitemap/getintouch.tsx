@@ -1,12 +1,11 @@
 import { FaSquarePhone } from 'react-icons/fa6';
+import { IoIosMail } from 'react-icons/io';
 import { FaQuoteLeft } from 'react-icons/fa';
 const GetInTouch = () => {
   return (
     <div className='flex flex-col '>
-      <div className='text-black border-2 border-num-indigo'>
-        <h2 className='text-lg flex font-bold text-num-blue mb-4'>
-          Get in touch
-        </h2>
+      <div className='bg-num-orange bg-opacity-10  font-medium border-2 border-num-indigo pl-8 pr-12'>
+        <h2 className='text-xl flex font-bold  p-2'>Get in touch</h2>
         <h3>Mumbai Office</h3>
         <span className='flex mb-4'>
           <FaSquarePhone size={24} />
@@ -14,13 +13,13 @@ const GetInTouch = () => {
         </span>
         <h3>Delhi Office</h3>
         <span className='flex mb-4'>
-          <FaSquarePhone size={24} />
-          {`+91-9988776655`}
+          <IoIosMail size={24} />
+          {`info@numbertree.in`}
         </span>
         <h3>Dubai Office</h3>
         <span className='flex mb-4'>
-          <FaSquarePhone size={24} />
-          {`+971-9988776655`}
+          <IoIosMail size={24} />
+          {`services@numbertree.in`}
         </span>
       </div>
       {/* <h2 className='text-lg flex font-bold text-num-indigo mt-4 mb-4'>

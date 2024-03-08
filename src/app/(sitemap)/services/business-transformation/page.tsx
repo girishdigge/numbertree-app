@@ -8,6 +8,7 @@ import { RxSlash } from 'react-icons/rx';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 
 const Page = () => {
   return (
@@ -33,19 +34,27 @@ const Page = () => {
           alt='business transformation'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex items-center '>
-          <div className='bg-opacity-50 bg-black '>
-            <h1 className='font-bold md:text-5xl text-3xl mt-2 ml-2 flex  border-num-orange justify-center text-white'>
+        <div className='absolute inset-0 flex flex-col justify-center '>
+          <div className='bg-opacity-50 bg-black  text-white w-1/2'>
+            <h2 className='md:text-2xl font-light text-sm ml-4 '>EXPLORE</h2>
+            <h1 className='font-bold md:text-5xl text-3xl border-l-4 border-num-orange ml-2 flex '>
               Business Transformation
             </h1>
+            <p className='text-lg font-medium ml-4 w-3/4'>
+              We provide cost management services on a wide range of
+              construction projects across sectors in infrastructure.
+            </p>
           </div>
+          <Button className='w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+            Connect
+          </Button>
         </div>
       </div>
       <br />
       <div className='flex flex-row'>
         <div className='flex w-1/4 pl-4 flex-col'>
           <h1 className='text-lg font-bold '> share this page</h1>
-          <hr className=' w-1/2 border border-num-pink mb-2' />
+          <hr className=' w-1/2 border  mb-2' />
           <div className='flex gap-2 mb-12'>
             <FaFacebookF
               size={30}
@@ -60,7 +69,7 @@ const Page = () => {
               className='bg-num-orange text-white p-1 rounded-xl'
             />
           </div>
-          <h2 className='text-lg font-bold flex  text-num-indigo mt-2  '>
+          <h2 className='text-lg font-bold flex  text-black mt-2  '>
             Our Services
           </h2>
 
@@ -75,7 +84,7 @@ const Page = () => {
             <Link href={'/services/claim-management'}>
               <li className=' '>
                 {' '}
-                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                <span className='border-2 p-1 text-lg border-num-orange  hover:bg-num-orange hover:text-white '>
                   Claim Management
                 </span>
               </li>
@@ -83,7 +92,7 @@ const Page = () => {
             <Link href={'/services/contract-administration'}>
               <li className='  '>
                 {' '}
-                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                <span className='border-2 p-1 text-lg border-num-orange  hover:bg-num-orange hover:text-white '>
                   Contract Administration
                 </span>
               </li>
@@ -91,7 +100,7 @@ const Page = () => {
             <Link href={'/services/project-monitoring-and-control'}>
               <li className=' '>
                 {' '}
-                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                <span className='border-2 p-1 text-lg border-num-orange  hover:bg-num-orange hover:text-white '>
                   Project Monitoring & Control{' '}
                 </span>
               </li>
@@ -99,21 +108,21 @@ const Page = () => {
             <Link href={'/services/quantity-survey'}>
               <li className=''>
                 {' '}
-                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                <span className='border-2 p-1 text-lg border-num-orange  hover:bg-num-orange hover:text-white '>
                   Quantity Survey{' '}
                 </span>
               </li>
             </Link>
             <Link href={'/services/transaction-advisory'}>
               <li className=''>
-                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                <span className='border-2 p-1 text-lg border-num-orange  hover:bg-num-orange hover:text-white '>
                   Transaction Advisory{' '}
                 </span>
               </li>
             </Link>
             <Link href={'/services/techno-commercial-audit'}>
               <li className=''>
-                <span className='border-2 border-num-orange  hover:bg-num-orange hover:text-white '>
+                <span className='border-2 p-1 text-lg border-num-orange  hover:bg-num-orange hover:text-white '>
                   {' '}
                   Techno Commercial Audit
                 </span>
@@ -209,13 +218,18 @@ const Page = () => {
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <ul className=' text-xl  ml-2'>
-            <li>{`-> Techno Commercial Internal Audit`}</li>
-            <li>{`-> Project Concurrent Audit`}</li>
-            <li>{`-> Project Closure Audit`}</li>
-            <li>{`-> Functional Audits/P2P Audits/Process Audits`} </li>
-            <li>{`-> Revenue Assurance Audit of Toll Plaza`}</li>
-            <li>{`-> Energy Audit- Renewables`}</li>
+          <ul className=' text-xl mb-8'>
+            <li>
+              <span className='flex items-center'>
+                <FaArrowRight size={16} className='mr-1' />
+                {`Techno Commercial Internal Audit`}
+              </span>
+            </li>
+            <li>{` Project Concurrent Audit`}</li>
+            <li>{`Project Closure Audit`}</li>
+            <li>{`Functional Audits/P2P Audits/Process Audits`} </li>
+            <li>{`Revenue Assurance Audit of Toll Plaza`}</li>
+            <li>{`Energy Audit- Renewables`}</li>
           </ul>
           <br />
           {/* <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
@@ -272,18 +286,20 @@ const Page = () => {
             </Link>
           </div> */}
         </div>
-        <div className='hidden w-1/4 md:flex pl-10 '>
+        <div className='hidden w-1/4 md:flex '>
           <GetInTouch />
         </div>
       </div>
       <div className='mt-4'>
         {' '}
-        <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
+        {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
           Related Projects
-        </h1>
-        <h2 className='-translate-y-6 ml-1 text-4xl text-num-orange font-medium'>
-          Related Projects
-        </h2>
+        </h1> */}
+        <div className='flex justify-center mt-20 mb-2'>
+          <h2 className=' text-2xl text-num-orange font-medium'>
+            Related Projects
+          </h2>
+        </div>
         <div className='flex gap-2 mb-4'>
           <div className=' group relative'>
             <Link href={`/projects/MumbaiDelhiExpressway`}>
@@ -294,10 +310,15 @@ const Page = () => {
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  Mumbai expressway
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>
+                      Mumbai Delhi Expressway
+                    </h2>
+                    <h1 className='text-num-pink ml-1'>Mumbai-Delhi</h1>
+                  </div>
+                </div>
               </div>
             </Link>
             {/* <Link href={`/projects/MumbaiDelhiExpressway`}>
@@ -317,10 +338,13 @@ const Page = () => {
                 alt='project'
                 className='group-hover:opacity-90' // Fade image slightly on hover
               />
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  New Parliment,Delhi
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>New Parliment</h2>
+                    <h1 className='text-num-pink ml-1'>Delhi</h1>
+                  </div>
+                </div>
               </div>
             </Link>
             {/* <Link href={`/projects/new-parliment`}>
@@ -341,10 +365,13 @@ const Page = () => {
                 alt='project'
                 className='object-cover group-hover:opacity-90' // Fade image slightly on hover
               />
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  Mercedes, Pune
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>Mercedes Benz</h2>
+                    <h1 className='text-num-pink ml-1'>Pune</h1>
+                  </div>
+                </div>
               </div>
             </Link>
             {/* <Link href={`/projects/merc-pune`}>
@@ -357,13 +384,14 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <h1 className='text-7xl translate-y-4 translate-x-2 text-num-watermark font-medium'>
+      {/* <h1 className='text-7xl translate-y-4 translate-x-2 text-num-watermark font-medium'>
         Explore More
-      </h1>
-
-      <h2 className='-translate-y-8 ml-1 text-4xl text-num-orange font-medium'>
-        Explore More
-      </h2>
+      </h1> */}
+      <div className='flex justify-center mt-20'>
+        <h2 className=' text-2xl text-num-orange font-medium mb-2'>
+          Explore More
+        </h2>
+      </div>
       <div className='grid grid-cols-2 gap-1'>
         <div className='flex'>
           <div className=' group relative '>
@@ -376,10 +404,13 @@ const Page = () => {
                 className='object-contain group-hover:opacity-95 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
               />
             </Link>
-            <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-              <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                Aviation
-              </h1>
+            <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+              <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                <div className='ml-8'>
+                  <h2 className='font-bold  text-2xl'>Aviation</h2>
+                  <h1 className='text-num-pink ml-1'>Sector</h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -396,10 +427,13 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  Bridges Structures
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>Bridges Structures</h2>
+                    <h1 className='text-num-pink ml-1'>Sector</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -414,10 +448,13 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  Commercial
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>Commercial</h2>
+                    <h1 className='text-num-pink ml-1'>Sector</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -432,10 +469,13 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  Industrial
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>Industrial</h2>
+                    <h1 className='text-num-pink ml-1'>Sector</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -450,10 +490,13 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute -translate-y-10 flex items-end justify-end'>
-                <h1 className='font-bold md:text-2xl text-3xl flex justify-end text-white bg-black bg-opacity-50'>
-                  Institutional
-                </h1>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h2 className='font-bold  text-2xl'>Institutional</h2>
+                    <h1 className='text-num-pink ml-1'>Sector</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
