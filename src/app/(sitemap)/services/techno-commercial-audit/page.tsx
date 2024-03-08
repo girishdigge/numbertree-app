@@ -150,7 +150,7 @@ const Page = () => {
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
-          <div className='flex flex-col items-start'>
+          <div className='flex flex-col items-start mr-24'>
             <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
