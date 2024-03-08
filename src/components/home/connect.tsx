@@ -28,7 +28,7 @@ const Connect = () => {
                 projects, Oil & Gas projects, Power Projects, Real Estate –
                 Residential...
               </p>
-              <div className='flex flex-row-reverse mr-4'>
+              <div className='flex flex-row-reverse mt-14 mr-4'>
                 <Button className='w-40 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
                   Connect{`>`}
                 </Button>

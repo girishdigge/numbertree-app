@@ -10,7 +10,7 @@ import { Separator } from '@radix-ui/react-separator';
 const slides = [
   {
     heading: "Empowering Tomorrow's infrastructure",
-    weAre: 'We are',
+    weAre: 'WE ARE',
     title: 'Techno-Commercial Auditors',
     content:
       "We are India's foremost techno-commercial audit firm with close to two decades of expertise.",
@@ -84,12 +84,12 @@ const Carousel = () => {
               <source src={slide.video} type='video/mp4' />
             </video>
 
-            <div className='absolute inset-0  flex items-center md:pl-16 md:pt-20 pt-2 mb-11  bg-black bg-opacity-30'>
+            <div className='absolute inset-0  flex items-center  md:pl-16 md:pt-40 pt-2   bg-black bg-opacity-30'>
               <div className='bg-opacity-50 md:w-4/5 h-full p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
-                  <h2 className='md:text-2xl font-bold text-sm ml-4 '>
-                    {slide.weAre}
+                  <h2 className='md:text-2xl font-light text-sm ml-4 '>
+                    {`WE ARE`}
                   </h2>
                   {/* <Separator
                     orientation='vertical'
@@ -111,9 +111,9 @@ const Carousel = () => {
                 </div> */}
               </div>
             </div>
-            <div className='z-100 text-3xl font-semibold bg-num-indigo pb-2 pr-2 text-wilmer-orange flex justify-end'>
+            {/* <div className='z-100 text-3xl font-semibold bg-num-indigo pb-2 pr-2 text-wilmer-orange flex justify-end'>
               {`#Empowering Tomorrow's infrastructure`}
-            </div>
+            </div> */}
           </div>
         ))}
       </Slider>

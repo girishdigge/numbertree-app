@@ -11,7 +11,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
 const Page = () => {
   return (
-    <div className=''>
+    <div className='text-black'>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
         <span className='mt-1'>
           <Link href='/'>
@@ -34,21 +34,23 @@ const Page = () => {
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
-          <div className=''>
+          <div className='ml-10'>
             <h2 className='md:text-2xl font-light text-sm ml-4 mb-2'>
               EXPLORE
             </h2>
-            <h1 className='font-bold md:text-5xl text-3xl mb-2 border-num-orange ml-2 flex '>
-              Techno Commercial Audit
-            </h1>
-            <p className='text-lg font-medium ml-4 mb-2 w-1/2'>
-              We provide cost management services on a wide range of
-              construction projects across sectors in infrastructure.
-            </p>
+            <div className='border-l-4 w-1/2 border-num-orange'>
+              <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
+                Techno Commercial Audit
+              </h1>
+              <p className='text-xl font-medium ml-4 mb-2'>
+                We provide cost management services on a wide range of
+                construction projects across sectors in infrastructure.
+              </p>
+            </div>
+            <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+              Contact Us
+            </Button>
           </div>
-          <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
-            Connect
-          </Button>
         </div>
       </div>
 
@@ -253,103 +255,85 @@ const Page = () => {
         {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
           Related Projects
         </h1> */}
-        <div className='flex justify-center mt-20 mb-2'>
+        <div className='flex ml-10 mt-20 mb-2'>
           <h2 className='  text-2xl text-black font-medium'>
             Related Projects
           </h2>
         </div>
         <div className='flex gap-2 mb-4'>
-          <div className=' group relative'>
-            <Link href={`/projects/MumbaiDelhiExpressway`}>
-              <Image
-                src={`/projects/mumbaiDelhiExpressway.jpg`}
-                height={400}
-                width={600}
-                alt='project'
-                className='group-hover:opacity-90' // Fade image slightly on hover
-              />
-              <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-30 '>
-                <div className=' text-white flex flex-col '>
-                  <div className='ml-8'>
-                    <h2 className='font-bold  text-2xl'>
-                      Mumbai Delhi Expressway
-                    </h2>
-                    <h1 className='text-num-pink font-semibold ml-1'>
-                      Mumbai-Delhi
-                    </h1>
+          <div className='overflow-hidden'>
+            <div className=' group relative overflow-hidden hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
+              <Link href={`/projects/MumbaiDelhiExpressway`}>
+                <Image
+                  src={`/projects/mumbaiDelhiExpressway.jpg`}
+                  height={400}
+                  width={600}
+                  alt='project'
+                  className='group-hover:opacity-90 hover:scale-110 transition duration-500 ease-in-out' // Fade image slightly on hover
+                />
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h2 className='font-bold  text-2xl'>
+                        Mumbai Delhi Expressway
+                      </h2>
+                      <h1 className='text-num-orange pb-2 ml-1'>
+                        Mumbai-Delhi
+                      </h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-            {/* <Link href={`/projects/MumbaiDelhiExpressway`}>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                  Mumbai Delhi Expressway
-                </p>
-              </div>
-            </Link> */}
+              </Link>
+            </div>
           </div>
-          <div className=' group relative'>
-            <Link href={`/projects/new-parliment`}>
-              <Image
-                src={`/projects/newParliment.jpg`}
-                height={400}
-                width={600}
-                alt='project'
-                className='group-hover:opacity-90' // Fade image slightly on hover
-              />
-              <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-30'>
-                <div className=' text-white  flex flex-col '>
-                  <div className='ml-8'>
-                    <h2 className='font-bold  text-2xl'>New Parliment</h2>
-                    <h1 className='text-num-pink font-semibold ml-1'>Delhi</h1>
+          <div className='overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Link href={`/projects/new-parliment`}>
+                <Image
+                  src={`/projects/newParliment.jpg`}
+                  height={400}
+                  width={600}
+                  alt='project'
+                  className='group-hover:opacity-90' // Fade image slightly on hover
+                />
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h2 className='font-bold  text-2xl'>New Parliment</h2>
+                      <h1 className='text-num-orange pb-2 ml-1'>Delhi</h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-            {/* <Link href={`/projects/new-parliment`}>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center w-3/4'>
-                  New Parliment, new Delhi
-                </p>
-              </div>
-            </Link> */}
+              </Link>
+            </div>
           </div>
-
-          <div className=' group relative '>
-            <Link href={`/projects/merc-pune`}>
-              <Image
-                src={`/projects/merc.jpg`}
-                height={400}
-                width={600}
-                alt='project'
-                className='object-cover group-hover:opacity-90' // Fade image slightly on hover
-              />
-              <div className='z-2 absolute inset-0 flex flex-col justify-end  bg-black bg-opacity-30 '>
-                <div className=' text-white  flex flex-col '>
-                  <div className='ml-8'>
-                    <h2 className='font-bold  text-2xl'>Mercedes Benz</h2>
-                    <h1 className='text-num-pink font-semibold ml-1'>Pune</h1>
+          <div className='overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Link href={`/projects/merc-pune`}>
+                <Image
+                  src={`/projects/merc.jpg`}
+                  height={400}
+                  width={600}
+                  alt='project'
+                  className='object-cover group-hover:opacity-90' // Fade image slightly on hover
+                />
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h2 className='font-bold  text-2xl'>Mercedes Benz</h2>
+                      <h1 className='text-num-orange pb-2 ml-1'>Pune</h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-            {/* <Link href={`/projects/merc-pune`}>
-              <div className='absolute flex justify-center items-end inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 ease-in-out'>
-                <p className=' text-xl text-white flex justify-center font-bold text-center'>
-                  Mercedes Benz,Pune
-                </p>
-              </div>
-            </Link> */}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      {/* <h1 className='text-7xl translate-y-4 translate-x-2 text-num-watermark font-medium'>
-        Explore More
-      </h1> */}
-      <div className='flex justify-center mt-20'>
-        <h2 className=' text-2xl text-black font-medium mb-2'>
-          Explore Sectors
+
+      <div className='flex  mt-20'>
+        <h2 className=' text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-4 font-medium ml-10 mb-2'>
+          Explore More
         </h2>
       </div>
       <div className='grid grid-cols-2 gap-1'>
@@ -364,11 +348,11 @@ const Page = () => {
                 className='object-contain group-hover:opacity-95' // Fade image slightly on hover
               />
             </Link>
-            <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5 bg-black bg-opacity-30 '>
-              <div className=' text-white  flex flex-col '>
-                <div className='ml-8 mb-2'>
-                  <h2 className='mb-2 font-bold  text-2xl'>Aviation</h2>
-                  {/* <h1 className='text-num-pink ml-1'>Sector</h1> */}
+            <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+              <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                <div className='ml-8'>
+                  <h1 className='text-num-orange ml-1'>Sector</h1>
+                  <h2 className='font-bold pb-2 text-2xl'>Aviation</h2>
                 </div>
               </div>
             </div>
@@ -387,13 +371,13 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-40 '>
-                <div className=' text-white flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
-                    <h2 className='mb-2 font-bold  text-2xl'>
+                    <h1 className='text-num-orange ml-1'>Sector</h1>
+                    <h2 className='font-bold pb-2  text-2xl'>
                       Bridges Structures
                     </h2>
-                    {/* <h1 className='text-num-pink ml-1'>Sector</h1> */}
                   </div>
                 </div>
               </div>
@@ -410,11 +394,11 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-40 '>
-                <div className=' text-white  flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
-                    <h2 className='mb-2 font-bold  text-2xl'>Commercial</h2>
-                    {/* <h1 className='text-num-pink ml-1'>Sector</h1> */}
+                    <h1 className='text-num-orange ml-1'>Sector</h1>
+                    <h2 className='font-bold pb-2  text-2xl'>Commercial</h2>
                   </div>
                 </div>
               </div>
@@ -431,11 +415,11 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-40'>
-                <div className=' text-white  flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
-                    <h2 className='mb-2 font-bold  text-2xl'>Industrial</h2>
-                    {/* <h1 className='text-num-pink ml-1'>Sector</h1> */}
+                    <h1 className='text-num-orange ml-1'>Sector</h1>
+                    <h2 className='font-bold pb-2  text-2xl'>Industrial</h2>
                   </div>
                 </div>
               </div>
@@ -452,11 +436,11 @@ const Page = () => {
                   className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end  bg-black bg-opacity-40 '>
-                <div className=' text-white flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
-                    <h2 className='mb-2 font-bold  text-2xl'>Institutional</h2>
-                    {/* <h1 className='text-num-pink ml-1'>Sector</h1> */}
+                    <h1 className='text-num-orange ml-1'>Sector</h1>
+                    <h2 className='font-bold pb-2  text-2xl'>Institutional</h2>
                   </div>
                 </div>
               </div>

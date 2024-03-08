@@ -402,8 +402,8 @@ const Page = () => {
             <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
               <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                 <div className='ml-8'>
+                  <h1 className='text-num-orange ml-1'>Sector</h1>
                   <h2 className='font-bold  text-2xl'>Aviation</h2>
-                  <h1 className='text-num-pink ml-1'>Sector</h1>
                 </div>
               </div>
             </div>
