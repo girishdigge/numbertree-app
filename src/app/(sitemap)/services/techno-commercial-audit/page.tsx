@@ -135,7 +135,7 @@ const Page = () => {
             </p>
           </div>
           <br />
-          <div className='  ml-8'>
+          <div className='w-4/5 '>
             <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
               <FaQuoteLeft size={18} className='text-white ' />
               <p className='text-lg font-medium ml-6 mr-4 mb-2 w-11/12'>
