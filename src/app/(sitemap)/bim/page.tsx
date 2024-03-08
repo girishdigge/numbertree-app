@@ -47,7 +47,7 @@ const Page = () => {
       </div> */}
       <div className='flex flex-row'>
         <div className='hidden md:flex w-1/5 items-center md:flex-col mt-2'>
-          <hr className=' w-1/2' />
+          {/* <hr className=' w-1/2' />
           <h1 className='text-sm font-bold mb-2'> share this page</h1>
           <div className='flex gap-2 justify-center items-center'>
             <FaFacebookF
@@ -62,7 +62,7 @@ const Page = () => {
               size={30}
               className='bg-num-orange text-num-indigo p-1 rounded-xl'
             />
-          </div>
+          </div> */}
         </div>
 
         <div className='flex w-3/5 mt-0 flex-col items-center justify-center'>
@@ -90,9 +90,8 @@ const Page = () => {
 
           <p className=''>{`Taking BIM, a step further, our BIM 5D services integrate cost data into the digital models, empowering you to make financially sound decisions throughout the project lifecycle. By linking the 3D models with accurate material quantities, labor costs, and resource allocations, we enable precise cost estimations and cost tracking. Our BIM 5D services facilitate real-time cost analysis, enabling you to identify cost-saving opportunities, evaluate alternative design options, and ultimately maximize your return on investment.`}</p>
           <br />
-          <br />
 
-          <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
+          {/* <h2 className='text-lg flex font-semibold text-num-indigo mb-4'>
             Related Projects
           </h2>
           <div className='flex gap-2 mb-4'>
@@ -242,11 +241,72 @@ const Page = () => {
                   Commercial
                 </p>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </div>
         <div className='hidden w-1/4 md:flex pl-10 mt-2'>
-          <GetInTouch />
+          {/* <GetInTouch /> */}
+        </div>
+      </div>
+      <div className='grid grid-cols-2'>
+        <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+          <h1 className='text-sm mb-2'>Featured service</h1>
+          <h2 className='text-2xl mb-2 w-3/4'>
+            Connecting the physical and digital worlds
+          </h2>
+          <p className='w-3/4'>
+            Our digital twin approach, provided as consultants and
+            technologists, is to develop a twin that connects disparate
+            information sources, building a digital twin that generates valuable
+            intelligence every day.
+          </p>
+          <Link href={'/bim'}>
+            <h4 className='text-sm mt-4 font-medium underline'>{`Learn more about our services ->`}</h4>
+          </Link>
+        </div>
+        <Image src={'/bim/arup.jpg'} height={400} width={500} alt='img' />
+      </div>
+      <div className=' flex align-center justify-center items-center'>
+        <div className='w-2/3 mb-4 mt-4'>
+          <h1 className='text-2xl mb-2 '>
+            Increased coordination, improved collaboration
+          </h1>
+          <p>
+            BIM’s ability to coordinate multiple types of information is driving
+            up expectations in the industry, particularly around level of
+            information and quality of collaboration. Our BIM models are
+            collaborative to the core, allowing designers and engineers to
+            collaborate and achieve the work-from-anywhere approach that is
+            vital on major international projects.
+          </p>
+        </div>
+      </div>
+      <div className='grid grid-cols-2'>
+        <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+          <h1 className='text-sm mb-2'>Featured project</h1>
+          <h2 className='text-2xl mb-2 w-3/4'>
+            Connecting the physical and digital worlds
+          </h2>
+          <p className='w-3/4'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            asperiores consequuntur repellendus reprehenderit modi nam incidunt
+            totam aperiam, perspiciatis praesentium voluptates dolores velit,
+            suscipit animi veritatis possimus molestiae tenetur ut illo earum
+            quasi voluptas maiores odio blanditiis. Asperiores,
+          </p>
+          <Link href={'/bim'}>
+            <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+          </Link>
+        </div>
+        <Image src={'/bim/arup2.jpg'} height={400} width={500} alt='img' />
+      </div>
+      <div className=' flex align-center justify-center items-center'>
+        <div className='w-2/3 mb-4 mt-4'>
+          <h1 className='text-2xl mb-2 '>BIM showcase</h1>
+          <p>
+            These four recent projects demonstrate how Arup pushes BIM to
+            achieve a wider range of client goals:
+          </p>
         </div>
       </div>
     </div>

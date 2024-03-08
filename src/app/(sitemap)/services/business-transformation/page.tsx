@@ -34,9 +34,11 @@ const Page = () => {
           className='object-contain'
         />
         <div className='absolute inset-0 flex items-start '>
-          <h1 className='font-bold md:text-5xl text-3xl mt-2 ml-2 flex border-l-2 border-num-orange justify-center text-white'>
-            Business Transformation
-          </h1>
+          <div className='bg-opacity-50 bg-black '>
+            <h1 className='font-bold md:text-5xl text-3xl mt-2 ml-2 flex border-l-4 border-num-orange justify-center text-white'>
+              Business Transformation
+            </h1>
+          </div>
         </div>
       </div>
       <br />
@@ -169,15 +171,16 @@ const Page = () => {
             accountability, and successful project delivery.
           </p>
           <br />
-          <div className='  mt-4 w-full bg-wilmer-orange  p-4 mb-4'>
-            <div className='flex m-4 mr-2  text-white '>
-              <p className='font-semibold font-lg ml-2 mr-4 w-11/12'>
+
+          <div className='   ml-8'>
+            <div className='flex flex-col w-3/4 bg-wilmer-orange  m-4 mr-2 p-4 text-white '>
+              <FaQuoteLeft size={18} className='text-white ' />
+              <p className='text- ml-6 mr-4 w-11/12'>
                 {`We offer seamless and integrated service, from inception
                   through to completion and handover, we are the right hand of
                   project managers. We listen to our clients needs and strive
                   to provide them the best service."`}
               </p>
-              <FaQuoteLeft size={40} className='text-white ' />
             </div>
           </div>
           <h2 className='text-lg flex justify-center font-semibold text-num-indigo mb-4'>
