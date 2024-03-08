@@ -219,17 +219,12 @@ const Page = () => {
             audit are
           </h2>
           <ul className=' text-xl mb-8'>
-            <li>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Techno Commercial Internal Audit`}
-              </span>
-            </li>
-            <li>{` Project Concurrent Audit`}</li>
-            <li>{`Project Closure Audit`}</li>
-            <li>{`Functional Audits/P2P Audits/Process Audits`} </li>
-            <li>{`Revenue Assurance Audit of Toll Plaza`}</li>
-            <li>{`Energy Audit- Renewables`}</li>
+            <li>{`->Techno Commercial Internal Audit`}</li>
+            <li>{`->Project Concurrent Audit`}</li>
+            <li>{`->Project Closure Audit`}</li>
+            <li>{`->Functional Audits/P2P Audits/Process Audits`} </li>
+            <li>{`->Revenue Assurance Audit of Toll Plaza`}</li>
+            <li>{`->Energy Audit- Renewables`}</li>
           </ul>
           <br />
           {/* <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
