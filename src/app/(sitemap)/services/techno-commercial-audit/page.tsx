@@ -353,14 +353,14 @@ const Page = () => {
       </div>
       <div className='grid grid-cols-2 gap-1'>
         <div className='flex'>
-          <div className=' group relative '>
+          <div className=' group relative  hover:scale-105 transition duration-500 ease-in-out'>
             <Link href={`/sectors/aviation`}>
               <Image
                 src={`/sectors1/Aviation.jpg`}
                 height={800}
                 width={800}
                 alt='sector'
-                className='object-contain group-hover:opacity-95 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                className='object-contain group-hover:opacity-95' // Fade image slightly on hover
               />
             </Link>
             <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5 bg-black bg-opacity-30 '>
@@ -376,14 +376,14 @@ const Page = () => {
 
         <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
           <div>
-            <div className=' group relative '>
+            <div className=' group relative hover:scale-105 transition duration-500 ease-in-out'>
               <Link href={`/sectors/bridges-structures`}>
                 <Image
                   src={`/sectors1/BridgesStructure.jpg`}
                   height={400}
                   width={400}
                   alt='project'
-                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
               <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-40 '>
@@ -399,14 +399,14 @@ const Page = () => {
             </div>
           </div>
           <div>
-            <div className='group relative '>
+            <div className='group relative hover:scale-105 transition duration-500 ease-in-out'>
               <Link href={`/sectors/commercial`}>
                 <Image
                   src={`/sectors1/Commercial.jpg`}
                   height={400}
                   width={400}
                   alt='project'
-                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
               <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-40 '>
@@ -420,14 +420,14 @@ const Page = () => {
             </div>
           </div>
           <div>
-            <div className=' group relative '>
+            <div className=' group relative hover:scale-105 transition duration-500 ease-in-out'>
               <Link href={`/sectors/industrial`}>
                 <Image
                   src={`/sectors1/Industrial.jpg`}
                   height={400}
                   width={400}
                   alt='project'
-                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
               <div className='z-2 absolute inset-0 flex flex-col justify-end bg-black bg-opacity-40'>
@@ -441,14 +441,14 @@ const Page = () => {
             </div>
           </div>
           <div>
-            <div className=' group relative'>
+            <div className=' group relative hover:scale-105 transition duration-500 ease-in-out'>
               <Link href={`/sectors/institutional`}>
                 <Image
                   src={`/sectors1/Institutional.jpg`}
                   height={400}
                   width={400}
                   alt='project'
-                  className='object-cover group-hover:opacity-90 hover:scale-105 transition duration-500 ease-in-out' // Fade image slightly on hover
+                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
                 />
               </Link>
               <div className='z-2 absolute inset-0 flex flex-col justify-end  bg-black bg-opacity-40 '>
