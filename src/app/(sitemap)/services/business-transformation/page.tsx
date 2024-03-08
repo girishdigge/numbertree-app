@@ -33,9 +33,9 @@ const Page = () => {
           alt='business transformation'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex items-start '>
+        <div className='absolute inset-0 flex items-center '>
           <div className='bg-opacity-50 bg-black '>
-            <h1 className='font-bold md:text-5xl text-3xl mt-2 ml-2 flex border-l-4 border-num-orange justify-center text-white'>
+            <h1 className='font-bold md:text-5xl text-3xl mt-2 ml-2 flex  border-num-orange justify-center text-white'>
               Business Transformation
             </h1>
           </div>
@@ -61,10 +61,11 @@ const Page = () => {
             />
           </div>
           <h2 className='text-lg font-bold flex  text-num-indigo mt-2  '>
-            Other Services
+            Our Services
           </h2>
+
           <hr className=' w-1/2 border border-num-pink mb-2' />
-          <ul className='list-disc ml-4  flex flex-col mb-12 '>
+          <ul className='  flex flex-col mb-12 gap-4 '>
             {/* <Link href={'/services/business-transformation'}>
               <li className='hover:text-num-blue hover:underline'>
                 {' '}
@@ -72,27 +73,35 @@ const Page = () => {
               </li>
             </Link> */}
             <Link href={'/services/claim-management'}>
-              <li className='hover:text-num-blue hover:underline'>
+              <li className=' '>
                 {' '}
-                Claim Management
+                <span className='border-2 border-num-orange hover:border-num-indigo hover:bg-num-orange hover:text-white '>
+                  Claim Management
+                </span>
               </li>
             </Link>
             <Link href={'/services/contract-administration'}>
-              <li className='hover:text-num-blue hover:underline'>
+              <li className='hover:text-num-blue hover:underline  '>
                 {' '}
-                Contract Administration
+                <span className='border-2 border-num-orange'>
+                  Contract Administration
+                </span>
               </li>
             </Link>
             <Link href={'/services/project-monitoring-and-control'}>
-              <li className='hover:text-num-blue hover:underline'>
+              <li className='hover:text-num-blue hover:underline '>
                 {' '}
-                Project Monitoring & Control{' '}
+                <span className='border-2 border-num-orange'>
+                  Project Monitoring & Control{' '}
+                </span>
               </li>
             </Link>
             <Link href={'/services/quantity-survey'}>
               <li className='hover:text-num-blue hover:underline'>
                 {' '}
-                Quantity Survey{' '}
+                <span className='border-2 border-num-orange'>
+                  Quantity Survey{' '}
+                </span>
               </li>
             </Link>
             <Link href={'/services/transaction-advisory'}>
@@ -107,7 +116,7 @@ const Page = () => {
               </li>
             </Link>
           </ul>
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h1 className='text-xl font-bold text-num-indigo mb-2'>Tags</h1>
             <div className='flex flex-col gap-2'>
               <div className='flex gap-2'>
@@ -134,9 +143,9 @@ const Page = () => {
                   Sectors
                 </Button>
               </div>
-            </div>
-          </div>
-          <div>
+            </div> */}
+          {/* </div> */}
+          {/* <div>
             <h1 className='text-lg font-bold'>Why we are here?</h1>
             <p className='w-3/4 text-base'>
               Lorem ipsum dolor sit amet eros, conse ctetuer adipiscing elit,
@@ -145,33 +154,42 @@ const Page = () => {
             <Button className='w-40 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
               Connect
             </Button>
-          </div>
+          </div> */}
         </div>
-        <div className='w-1/2 '>
-          <h1 className='text-xl flex justify-center font-semibold text-num-indigo mb-4'>
+        <div className='w-1/2 flex flex-col items-center'>
+          <h1 className='text-3xl flex justify-center font-normal w-3/4 text-num-indigo mb-4'>
             We pride ourselves as India’s foremost techno commercial audit firm
             with over two decades of experience across varied industries.
           </h1>
-          <p className='  md:text-base text-xs'>
-            Our offering of Techno commercial Audit – helps businesses harnesses
-            the power of financial insights with great clarity, it transforms
-            not just the way businesses operate but also unlocks their full
-            potential and propels them to growth This specialized audit examines
-            both the technical and commercial aspects of infrastructure
-            ventures, providing a comprehensive evaluation of their feasibility,
-            efficiency, and financial viability. Our dedicated team of engineers
-            & auditors work collaboratively to present a meticulous analysis of
-            project plans, contracts, cost estimates, procurement processes,
-            Quantity Survey and financial controls. We are well equipped to use
-            our processes and identify potential risks, cost-saving
-            opportunities, and areas for improvement. With our multidimensional
-            approach, Techno-Commercial Audit serves as a valuable tool for
-            project managers & senior management in navigating the complex
-            landscape of infrastructure development, ensuring transparency,
-            accountability, and successful project delivery.
-          </p>
+          <div className='flex flex-col items-center'>
+            <p className='  w-3/4 md:text-lg text-xs'>
+              Our offering of Techno commercial Audit – helps businesses
+              harnesses the power of financial insights with great clarity, it
+              transforms not just the way businesses operate but also unlocks
+              their full potential and propels them to growth This specialized
+              audit examines both the technical and commercial aspects of
+              infrastructure ventures, providing a comprehensive evaluation of
+              their feasibility, efficiency, and financial viability.
+            </p>{' '}
+            <br />
+            <p className='  w-3/4 md:text-lg text-xs'>
+              Our dedicated team of engineers & auditors work collaboratively to
+              present a meticulous analysis of project plans, contracts, cost
+              estimates, procurement processes, Quantity Survey and financial
+              controls. We are well equipped to use our processes and identify
+              potential risks, cost-saving opportunities, and areas for
+              improvement.
+            </p>{' '}
+            <br />
+            <p className='  w-3/4 md:text-lg text-xs'>
+              With our multidimensional approach, Techno-Commercial Audit serves
+              as a valuable tool for project managers & senior management in
+              navigating the complex landscape of infrastructure development,
+              ensuring transparency, accountability, and successful project
+              delivery.
+            </p>
+          </div>
           <br />
-
           <div className='   ml-8'>
             <div className='flex flex-col w-3/4 bg-wilmer-orange  m-4 mr-2 p-4 text-white '>
               <FaQuoteLeft size={18} className='text-white ' />
@@ -196,7 +214,6 @@ const Page = () => {
             <li> Energy Audit- Renewables</li>
           </ul>
           <br />
-
           {/* <h2 className='text-lg flex font-semibold text-num-indigo mt-4 mb-4 '>
             Explore More
           </h2>
