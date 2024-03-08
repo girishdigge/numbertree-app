@@ -76,26 +76,28 @@ const Page = () => {
               Our Services
             </h2>
             <div className='flex flex-col gap-2'>
-              <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                Claim Management
-              </Button>
-              <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                Contract Administration
-              </Button>
-              <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                Project Monitoring & Control
-              </Button>
-              <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                {' '}
-                Quantity Survey
-              </Button>
-              <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                Transaction Advisory
-              </Button>
-              <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                {' '}
-                Techno Commercial Audit
-              </Button>
+              <div className='w-1/2'>
+                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                  Claim Management
+                </Button>
+                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                  Contract Administration
+                </Button>
+                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                  Project Monitoring & Control
+                </Button>
+                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                  {' '}
+                  Quantity Survey
+                </Button>
+                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                  Transaction Advisory
+                </Button>
+                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                  {' '}
+                  Techno Commercial Audit
+                </Button>
+              </div>
             </div>
           </div>
         </div>
