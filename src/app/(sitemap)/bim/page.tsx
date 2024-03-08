@@ -264,7 +264,7 @@ const Page = () => {
             <h4 className='text-sm mt-4 font-medium underline'>{`Learn more about our services ->`}</h4>
           </Link>
         </div>
-        <Image src={'/bim/arup.jpg'} height={400} width={500} alt='img' />
+        <Image src={'/bim/arup.jpg'} height={600} width={800} alt='img' />
       </div>
       <div className=' flex align-center justify-center items-center'>
         <div className='w-2/3 mb-4 mt-4'>
@@ -298,7 +298,7 @@ const Page = () => {
             <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
           </Link>
         </div>
-        <Image src={'/bim/arup2.jpg'} height={400} width={500} alt='img' />
+        <Image src={'/bim/arup2.jpg'} height={600} width={800} alt='img' />
       </div>
       <div className=' flex align-center justify-center items-center'>
         <div className='w-2/3 mb-4 mt-4'>
