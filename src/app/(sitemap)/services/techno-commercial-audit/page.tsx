@@ -56,7 +56,7 @@ const Page = () => {
       <div className='flex flex-row'>
         <div className='flex w-1/4 pl-4 flex-col'>
           <h1 className='text-xl font-bold '> share this page</h1>
-          <hr className=' w-1/2 border  mb-2' />
+          <hr className=' w-2/5 border  mb-2' />
           <div className='flex gap-4 mb-12'>
             <FaFacebookF
               size={30}
