@@ -6,6 +6,7 @@ import { IoHomeSharp } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { MessageForm } from '@/app/(sitemap)/contact/message/MessageForm';
 const Page = () => {
   return (
     <div className=''>
@@ -19,8 +20,8 @@ const Page = () => {
         <Link href={'/contact'}>
           <p className='font-bold text-num-indigo'>Contact Us</p>
         </Link>
-        {/* <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Business Transformation</p> */}
+        <RxSlash color='gray' className='mt-1' />
+        <p className='font-bold text-num-indigo'>Send a Message</p>
       </div>
       <div className='relative '>
         <Image
@@ -53,17 +54,19 @@ const Page = () => {
               Request for Proposal
             </Button>
           </Link>
-          <Link href={`/contact/message`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
-              Send a Message
-            </Button>
-          </Link>
+
+          <Button className='w-80 h-12 text-lg bg-num-orange text-white hover:bg-num-orange'>
+            Send a Message
+          </Button>
           <Link href={`/contact/expert`}>
             <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Find an Expert
             </Button>
           </Link>
         </div>
+      </div>
+      <div className='flex flex-col pl-20 mt-10'>
+        <MessageForm />
       </div>
     </div>
   );

@@ -19,8 +19,9 @@ const Page = () => {
         <Link href={'/contact'}>
           <p className='font-bold text-num-indigo'>Contact Us</p>
         </Link>
-        {/* <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Business Transformation</p> */}
+        <RxSlash color='gray' className='mt-1' />
+
+        <p className='font-bold text-num-indigo'>Find an Expert</p>
       </div>
       <div className='relative '>
         <Image
@@ -58,11 +59,9 @@ const Page = () => {
               Send a Message
             </Button>
           </Link>
-          <Link href={`/contact/expert`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
-              Find an Expert
-            </Button>
-          </Link>
+          <Button className='w-80 h-12 text-lg bg-num-orange text-white hover:bg-num-orange'>
+            Find an Expert
+          </Button>
         </div>
       </div>
     </div>

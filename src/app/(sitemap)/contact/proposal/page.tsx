@@ -6,6 +6,7 @@ import { IoHomeSharp } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { ProposalForm } from '@/app/(sitemap)/contact/proposal/ProposalForm';
 const Page = () => {
   return (
     <div className=''>
@@ -19,8 +20,8 @@ const Page = () => {
         <Link href={'/contact'}>
           <p className='font-bold text-num-indigo'>Contact Us</p>
         </Link>
-        {/* <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Business Transformation</p> */}
+        <RxSlash color='gray' className='mt-1' />
+        <p className='font-bold text-num-indigo'>Request a Proposal</p>
       </div>
       <div className='relative '>
         <Image
@@ -48,11 +49,9 @@ const Page = () => {
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
         <div className='flex gap-10'>
-          <Link href={`/contact/proposal`}>
-            <Button className='w-80 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
-              Request for Proposal
-            </Button>
-          </Link>
+          <Button className='w-80 text-lg h-12 bg-num-orange text-white hover:bg-num-orange '>
+            Request for Proposal
+          </Button>
           <Link href={`/contact/message`}>
             <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Send a Message
@@ -64,6 +63,21 @@ const Page = () => {
             </Button>
           </Link>
         </div>
+      </div>
+      <div className='flex flex-col pl-20 pt-10 pb-10 text-justify bg-gray-100'>
+        <p className='text-xl w-3/5'>
+          We are proud of the work we do at NumberTree, solving problems &
+          helping our clients across sector in overcoming their business
+          challenges.
+        </p>
+        <br />
+        <p className='text-xl w-3/5'>
+          If you would like to know more about what we do and how we can help
+          you achieve your objectives , fill out the following form
+        </p>
+      </div>
+      <div className='flex flex-col pl-20 mt-10'>
+        <ProposalForm />
       </div>
     </div>
   );
