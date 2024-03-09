@@ -1,25 +1,26 @@
 import { FaSquarePhone } from 'react-icons/fa6';
 import { IoIosMail } from 'react-icons/io';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
 const GetInTouch = () => {
   return (
-    <div className='flex flex-col '>
-      <div className='bg-num-orange bg-opacity-10  font-medium border-2 border-num-indigo pl-8 pr-12'>
-        <h2 className='text-xl flex font-bold  p-2'>Get in touch</h2>
-        <h3>Mumbai Office</h3>
+    <div className='flex flex-col w-full mr-6'>
+      <div className='bg-num-orange  bg-opacity-50 w-full font-medium border-2 border-num-indigo pl-16 pr-16'>
+        <h2 className='text-xl flex font-bold text-black  p-2'>Get in touch</h2>
+        <h3 className='text-num-blue text-lg'>Mumbai Office</h3>
         <span className='flex mb-4'>
-          <FaSquarePhone size={24} />
+          <FaSquarePhone size={24} className='text-num-blue' />
           {`+91-9988776655`}
         </span>
-        <h3>Delhi Office</h3>
+        <h3 className='text-num-blue text-lg'>Delhi Office</h3>
         <span className='flex mb-4'>
-          <IoIosMail size={24} />
+          <IoIosMail size={24} className='text-num-blue' />
           {`info@numbertree.in`}
         </span>
-        <h3>Dubai Office</h3>
-        <span className='flex mb-4'>
-          <IoIosMail size={24} />
-          {`services@numbertree.in`}
+        <h3 className='text-num-blue text-lg'>Dubai Office</h3>
+        <span className='flex  mb-4'>
+          <FaLocationDot size={24} className='text-num-blue ' />
+          United Arab Emirates
         </span>
       </div>
       {/* <h2 className='text-lg flex font-bold text-num-indigo mt-4 mb-4'>
