@@ -154,9 +154,9 @@ const Page = () => {
                     </Link>
                   </div>
                   <Image
-                    src={'/bim/arup.jpg'}
+                    src={'/images/tab1.jpg'}
                     height={600}
-                    width={800}
+                    width={600}
                     alt='img'
                   />
                 </div>
@@ -181,9 +181,9 @@ const Page = () => {
                     </Link>
                   </div>
                   <Image
-                    src={'/bim/arup.jpg'}
+                    src={'/images/tab2.jpg'}
                     height={600}
-                    width={800}
+                    width={600}
                     alt='img'
                   />
                 </div>{' '}
@@ -208,9 +208,9 @@ const Page = () => {
                     </Link>
                   </div>
                   <Image
-                    src={'/bim/arup.jpg'}
+                    src={'/images/tab3.jpg'}
                     height={600}
-                    width={800}
+                    width={600}
                     alt='img'
                   />
                 </div>
@@ -235,9 +235,9 @@ const Page = () => {
                     </Link>
                   </div>
                   <Image
-                    src={'/bim/arup.jpg'}
+                    src={'/images/tab4.jpg'}
                     height={600}
-                    width={800}
+                    width={600}
                     alt='img'
                   />
                 </div>

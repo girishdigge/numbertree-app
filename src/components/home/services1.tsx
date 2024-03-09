@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { Tabs } from '../ui/tabs';
+import { Tabs } from '@/components/ui/tabAceternity';
 import Link from 'next/link';
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 
 const Services1 = () => {
   const tabs = [
