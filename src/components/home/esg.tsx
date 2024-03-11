@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 const ESG = () => {
   return (
     <div>
-      <div className='grid grid-cols-2 mt-10 p-0'>
+      <div className='md:grid grid-cols-2 mt-10 p-0'>
         <div className='flex flex-col justify-center border border-t-1 border-r-1 border-b-1 bg-num-blue bg-opacity-10 border-num-indigo p-2'>
           <div className=' ml-14 '>
             <h1 className='text-7xl text-num-watermark font-medium'>ESG</h1>

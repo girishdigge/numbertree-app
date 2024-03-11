@@ -39,10 +39,10 @@ const Page = () => {
               EXPLORE
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
                 Techno Commercial Audit
               </h1>
-              <p className='md:text-xl text-xs font-medium ml-4 mb-2'>
+              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
                 We provide cost management services on a wide range of
                 construction projects across sectors in infrastructure.
               </p>

@@ -3,9 +3,9 @@ import { Button } from '../ui/button';
 
 const Connect = () => {
   return (
-    <div className='bg-num-blue bg-opacity-10 p-10'>
-      <div className='flex flex-row gap-4 ml-4 mr-4'>
-        <div className='flex flex-row relative h-80 ml-1'>
+    <div className='bg-num-blue bg-opacity-10 md:p-10 md:mt-0 mt-10'>
+      <div className='md:flex flex-row gap-4 md:ml-4 mr-4'>
+        <div className='flex flex-row relative h-80 mb-10 md:mb-0 md:ml-1'>
           <Image
             src={`/connect/linkedin.png`}
             height={540}
@@ -15,7 +15,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-55'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-2xl font-bold mt-4 mb-2'>
+              <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-2'>
                 Linkedin
               </h1>
               <h2 className=' text-3xl font-medium mb-3 text-white'>
@@ -28,7 +28,7 @@ const Connect = () => {
                 projects, Oil & Gas projects, Power Projects, Real Estate –
                 Residential...
               </p>
-              <div className='flex flex-row-reverse mt-14 mr-4'>
+              <div className='flex flex-row-reverse md:mt-14 mr-4'>
                 <Button className='w-40 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
                   Connect{`>`}
                 </Button>
@@ -46,7 +46,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-50'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-2xl font-bold mt-4 mb-2'>
+              <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-2'>
                 Insights
               </h1>
               <h2 className='text-3xl  mb-3 font-medium text-white'>
@@ -56,7 +56,7 @@ const Connect = () => {
                 Pioneering intellectual direction focused on the significant
                 issues shaping both the present and the future.
               </p>
-              <div className='flex flex-row-reverse mr-4 mt-20'>
+              <div className='flex flex-row-reverse mr-4 md:mt-20'>
                 <Button className='w-40 mt-3 bg-num-indigo  border-0 hover:bg-num-orange'>
                   Explore{`>`}
                 </Button>

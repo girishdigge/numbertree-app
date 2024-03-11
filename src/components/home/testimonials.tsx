@@ -43,7 +43,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center mt-20 '>
       <div className=''>
         <h1 className='text-7xl text-num-indigo opacity-10 font-medium'>
           Testimonials
@@ -57,7 +57,7 @@ const Testimonials = () => {
         <Slider {...settings}>
           {testimonials.map((test, index) => (
             <div key={index} className='flex mt-10 mb-5 '>
-              <div className='grid grid-cols-2'>
+              <div className='md:grid grid-cols-2'>
                 <div className='w-3/5 flex flex-row-reverse pr-4  border-dotted border-r border-r-1 pb-1 border-num-indigo '>
                   <Image
                     src={test.image}

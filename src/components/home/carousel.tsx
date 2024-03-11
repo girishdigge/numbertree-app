@@ -72,7 +72,7 @@ const Carousel = () => {
     <div className='text-white z-1 relative bg-white'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className='relative -translate-y-16'>
+          <div key={index} className='relative md:-translate-y-16'>
             <video
               autoPlay
               muted
@@ -98,7 +98,7 @@ const Carousel = () => {
                   <h2 className='md:text-7xl pl-2  text-sm  border-l-4 border-num-orange'>
                     {slide.title}
                   </h2>
-                  <p className='md:text-2xl ml-4 font-sans md:pt-5 md:pb-2 text-xs md:w-5/12'>
+                  <p className='md:text-2xl ml-4  md:pt-5 md:pb-2 text-xs md:w-5/12 w-3/4'>
                     {slide.content}
                   </p>
                   <Button className='w-40 ml-4 bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>

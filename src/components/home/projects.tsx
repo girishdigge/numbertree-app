@@ -47,7 +47,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div>
+    <div className=''>
       <div className='mt-10 ml-28'>
         <h1 className='text-7xl text-num-watermark font-medium'>Projects</h1>
 
@@ -71,25 +71,25 @@ const Projects = () => {
                   width={1400}
                   alt='image'
                 />
-                <div className='absolute inset-0 flex items-center  mt-5'>
-                  <div className='bg-black bg-opacity-70 w-2/5 h-4/5 p-5'>
-                    <div className='flex flex-row mt-10 ml-2'>
-                      <h1 className='text-num-orange text-lg ml-1 mt-1 font-semibold'>
+                <div className='absolute inset-0 flex items-center  md:mt-5 mt-2'>
+                  <div className='bg-black bg-opacity-70 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
+                    <div className='md:flex hidden flex-row mt-10 ml-2'>
+                      <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
                         OUR LATEST WORK
                       </h1>
                     </div>
-                    <div className='text-white ml-2'>
-                      <h2 className='md:text-xl text-sm  mb-2'>
+                    <div className=' text-white ml-2'>
+                      <h2 className='md:text-2xl md:flex hidden font-light text-sm  mb-2'>
                         {project.heading}
                       </h2>
-                      <h3 className='text-4xl font-bold '>
+                      <h3 className='md:text-6xl text-xl font-bold '>
                         {project.location}
                       </h3>
-                      <hr className='w-3/5 border-num-orange border-2 mt-3 mb-3' />
-                      <h2 className='md:text-md mb-5 w-4/5 text-sm'>
+                      <hr className='w-3/5 border-num-orange border-2 md:mt-3 md:mb-3' />
+                      <h2 className='md:text-xl md:mb-5 md:w-4/5 text-xs'>
                         {project.content}
                       </h2>
-                      <Button className='w-40 bg-num-indigo mt-5 border-0 hover:bg-num-orange'>
+                      <Button className='w-40 bg-num-indigo md:mt-5 border-0 hover:bg-num-orange'>
                         Read More{`>`}
                       </Button>
                     </div>

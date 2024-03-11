@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { RxSlash } from 'react-icons/rx';
 import { IoHomeSharp } from 'react-icons/io5';
+import { FaSquarePhone } from 'react-icons/fa6';
+import { IoIosMail } from 'react-icons/io';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -62,6 +64,76 @@ const Page = () => {
           <Button className='w-80 h-12 text-lg bg-num-orange text-white hover:bg-num-orange'>
             Find an Expert
           </Button>
+        </div>
+      </div>
+      <div className='flex m-20'>
+        <div className='grid grid-cols-3 gap-6'>
+          <div className='grid grid-cols-2'>
+            <Image
+              src={`/testimonials/saqlain.png`}
+              width={150}
+              height={200}
+              alt='1'
+            />
+            <div className='flex flex-col justify-center'>
+              <h1 className='text-2xl font-semibold'>John Doe</h1>
+              <h2 className='text-lg font-light text-num2-blue'>
+                CEO Numbertree
+              </h2>
+              <span className='flex'>
+                <IoIosMail size={24} className='text-num-indigo' />
+                {`info@numbertree.in`}
+              </span>
+              <span className='flex'>
+                <FaSquarePhone size={24} className='text-num-indigo' />
+                {`+91-9988776655`}
+              </span>
+            </div>
+          </div>
+          <div className='grid grid-cols-2'>
+            <Image
+              src={`/testimonials/chetan.png`}
+              width={150}
+              height={200}
+              alt='1'
+            />
+            <div className='flex flex-col justify-center'>
+              <h1 className='text-2xl font-semibold'>John Doe</h1>
+              <h2 className='text-lg font-light text-num2-blue'>
+                CEO Numbertree
+              </h2>
+              <span className='flex'>
+                <IoIosMail size={24} className='text-num-indigo' />
+                {`info@numbertree.in`}
+              </span>
+              <span className='flex'>
+                <FaSquarePhone size={24} className='text-num-indigo' />
+                {`+91-9988776655`}
+              </span>
+            </div>
+          </div>
+          <div className='grid grid-cols-2'>
+            <Image
+              src={`/testimonials/girish.png`}
+              width={150}
+              height={200}
+              alt='1'
+            />
+            <div className='flex flex-col justify-center'>
+              <h1 className='text-2xl font-semibold'>John Doe</h1>
+              <h2 className='text-lg font-light text-num2-blue'>
+                CEO Numbertree
+              </h2>
+              <span className='flex'>
+                <IoIosMail size={24} className='text-num-indigo' />
+                {`info@numbertree.in`}
+              </span>
+              <span className='flex'>
+                <FaSquarePhone size={24} className='text-num-indigo' />
+                {`+91-9988776655`}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
