@@ -15,10 +15,10 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-55'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-2'>
+              <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-1'>
                 Linkedin
               </h1>
-              <h2 className=' text-3xl font-medium mb-3 text-white'>
+              <h2 className=' md:text-3xl text-xl font-medium md:mb-3 mb-1 text-white'>
                 Empowering Tomorrow{`'`}s infrastructure
               </h2>
               <p className=' text-white'>
@@ -49,7 +49,7 @@ const Connect = () => {
               <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-2'>
                 Insights
               </h1>
-              <h2 className='text-3xl  mb-3 font-medium text-white'>
+              <h2 className='md:text-3xl text-xl  md:mb-3 mb-1 font-medium text-white'>
                 Without Boundaries
               </h2>
               <p className='w-4/5 text-white'>
