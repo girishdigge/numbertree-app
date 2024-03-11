@@ -30,7 +30,7 @@ const Page = () => {
           alt='business transformation'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-0 bg-black  text-white'>
           <div className='ml-10'>
             <div className='border-l-4 w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
@@ -46,59 +46,59 @@ const Page = () => {
         </div>
       </div>
       <div className='flex justify-center mt-20 mb-20'>
-        <div className='grid grid-cols-3 gap-4  w-3/4'>
+        <div className='grid grid-cols-3 gap-6  w-4/5'>
           <Image
-            src={`/bim/arup.jpg`}
+            src={`/career/c1.jpg`}
             width={400}
-            height={400}
+            height={500}
             alt='business transformation'
             className='object-contain'
           />
-          <div className='border-b-4 border-num-orange flex flex-col items-center justify-center'>
+          <div className='border-b-4 border-2 border-gray-400 border-b-num-orange flex flex-col items-center justify-center'>
             <Image
               src={`/logo/s0.png`}
               width={100}
               height={100}
               alt='business transformation'
-              className='object-contain'
+              className='object-contain mt-10'
             />
             <h1 className=''>Explore career</h1>
             <h2 className='text-xl font-bold'>Life at NumberTree</h2>
-            <p className='w-3/4 text-justify'>
+            <p className='w-3/4 text-justify mb-10'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
               fugit magnam dolorem commodi.
             </p>
           </div>
           <Image
-            src={`/bim/arup.jpg`}
+            src={`/career/c1.jpg`}
             width={400}
-            height={400}
+            height={500}
             alt='business transformation'
             className='object-contain'
           />
-          <div className='border-b-4 border-num-orange flex flex-col items-center justify-center'>
+          <div className='border-b-4 border-2 border-gray-400 border-b-num-orange flex flex-col items-center justify-center'>
             <Image
               src={`/logo/s1.png`}
               width={100}
               height={100}
               alt='business transformation'
-              className='object-contain'
+              className='object-contain mt-10'
             />
             <h1 className=''>Explore career</h1>
             <h2 className='text-xl font-bold'>Life at NumberTree</h2>
-            <p className='w-3/4 text-justify'>
+            <p className='w-3/4 text-justify mb-10'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
               fugit magnam dolorem commodi.
             </p>
           </div>
           <Image
-            src={`/resource/career.png`}
+            src={`/career/c3.jpg`}
             width={400}
-            height={400}
+            height={500}
             alt='business transformation'
             className='object-contain'
           />
-          <div className='border-b-4 border-num-orange flex flex-col items-center justify-center'>
+          <div className='border-b-4 border-2 border-gray-400 border-b-num-orange flex flex-col items-center justify-center'>
             <Image
               src={`/logo/s2.png`}
               width={100}
@@ -116,19 +116,19 @@ const Page = () => {
         </div>
       </div>
       <div>
-        <div className='relative '>
+        <div className='relative w-11/12'>
           <Image
             src={`/career/office.jpg`}
             width={1400}
             height={800}
             alt='business transformation'
-            className='object-contain'
+            className='object-contain '
           />
-          <div className='absolute inset-0 flex flex-col justify-center items-end'>
-            <div className=' bg-num-orange p-20 gap-4 flex flex-col w-1/3 h-96 mr-20 text-white'>
+          <div className='absolute -inset-20 flex flex-col justify-center items-end'>
+            <div className=' bg-num-orange p-20 gap-4 flex flex-col w-1/3  text-white'>
               <h1 className='text-xl'>Explore career</h1>
-              <h2 className='text-4xl font-bold'>Life at NumberTree</h2>
-              <p className='w-3/4 text-justify text-lg'>
+              <h2 className='text-3xl font-bold'>Life at NumberTree</h2>
+              <p className='text-justify text-lg'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
                 fugit magnam dolorem.
               </p>

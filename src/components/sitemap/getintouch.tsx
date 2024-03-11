@@ -7,17 +7,17 @@ const GetInTouch = () => {
     <div className='flex flex-col w-full mr-6'>
       <div className='bg-num-orange  bg-opacity-50 w-full font-medium border-2 border-num-indigo pl-16 pr-16'>
         <h2 className='text-xl flex font-bold text-black  p-2'>Get in touch</h2>
-        <h3 className='text-num-blue text-lg'>Mumbai Office</h3>
+        <h3 className='text-num-orange text-lg'>Mumbai Office</h3>
         <span className='flex mb-4'>
           <FaSquarePhone size={24} className='text-num-blue' />
           {`+91-9988776655`}
         </span>
-        <h3 className='text-num-blue text-lg'>Delhi Office</h3>
+        <h3 className='text-num-orange text-lg'>Delhi Office</h3>
         <span className='flex mb-4'>
           <IoIosMail size={24} className='text-num-blue' />
           {`info@numbertree.in`}
         </span>
-        <h3 className='text-num-blue text-lg'>Dubai Office</h3>
+        <h3 className='text-num-orange text-lg'>Dubai Office</h3>
         <span className='flex  mb-4'>
           <FaLocationDot size={24} className='text-num-blue ' />
           United Arab Emirates

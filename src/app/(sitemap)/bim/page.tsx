@@ -125,9 +125,9 @@ const Page = () => {
           </p>
           <div>
             <Tabs defaultValue='1' className='w-[full]'>
-              <TabsList className='grid w-11/12 ml-2 grid-cols-4 mb-4'>
+              <TabsList className='grid grid-cols-4 mb-4 gap-2'>
                 <TabsTrigger value='1'>
-                  Design and production automation
+                  Design & production automation
                 </TabsTrigger>
                 <TabsTrigger value='2'>Data management</TabsTrigger>
                 <TabsTrigger value='3'>Digital asset management</TabsTrigger>

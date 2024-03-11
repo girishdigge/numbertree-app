@@ -255,7 +255,7 @@ const Page = () => {
         {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
           Related Projects
         </h1> */}
-        <div className='flex ml-10 mt-20 mb-2'>
+        <div className='flex ml-4 mt-20 mb-2'>
           <h2 className='  text-2xl text-black font-medium'>
             Related Projects
           </h2>
@@ -332,7 +332,7 @@ const Page = () => {
       </div>
 
       <div className='flex  mt-20'>
-        <h2 className=' text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-4 font-medium ml-10 mb-2'>
+        <h2 className=' text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-4 mb-2'>
           Explore More
         </h2>
       </div>

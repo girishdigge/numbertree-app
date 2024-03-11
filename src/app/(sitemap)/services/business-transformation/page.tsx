@@ -382,7 +382,7 @@ const Page = () => {
       {/* <h1 className='text-7xl translate-y-4 translate-x-2 text-num-watermark font-medium'>
         Explore More
       </h1> */}
-      <div className='flex justify-center mt-20'>
+      <div className='flex justify-center mt-10'>
         <h2 className=' text-2xl text-num-orange font-medium mb-2'>
           Explore More
         </h2>
