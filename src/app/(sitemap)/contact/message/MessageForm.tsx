@@ -25,9 +25,12 @@ const FormSchema = z.object({
     message: 'Name is required.',
   }),
 
-  email: z.string().min(2, {
-    message: 'Email is required.',
-  }),
+  email: z
+    .string()
+    .min(2, {
+      message: 'Email is required.',
+    })
+    .email('enter valid email'),
 
   phone: z.string().min(2, {
     message: 'Number is required.',
