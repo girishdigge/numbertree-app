@@ -21,7 +21,7 @@ export const featuredProjects = [
   },
   {
     serviceId: '2',
-    sectorId: '0',
+    sectorId: '4',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Mercedes Benz,Pune',
     content:
@@ -31,7 +31,7 @@ export const featuredProjects = [
   },
   {
     serviceId: '3',
-    sectorId: '0',
+    sectorId: '1',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Leh Airport',
     content:
