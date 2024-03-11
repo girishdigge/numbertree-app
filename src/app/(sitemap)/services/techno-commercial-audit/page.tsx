@@ -38,11 +38,11 @@ const Page = () => {
             <h2 className='md:text-2xl font-light text-sm ml-4 mb-2'>
               EXPLORE
             </h2>
-            <div className='border-l-4 w-1/2 border-num-orange'>
+            <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
                 Techno Commercial Audit
               </h1>
-              <p className='text-xl font-medium ml-4 mb-2'>
+              <p className='md:text-xl text-xs font-medium ml-4 mb-2'>
                 We provide cost management services on a wide range of
                 construction projects across sectors in infrastructure.
               </p>
@@ -55,8 +55,57 @@ const Page = () => {
       </div>
 
       <br />
+      <div className='md:hidden flex flex-col items-center justify-center'>
+        <div className='flex   pl-4 flex-col'>
+          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
+
+          <div className='flex gap-4 mb-4'>
+            <FaFacebookF
+              size={30}
+              className='bg-num-orange p-1 text-white  rounded-xl'
+            />
+            <FaLinkedinIn
+              size={31}
+              className='bg-num-orange text-white p-1 rounded-xl'
+            />
+            <FaXTwitter
+              size={30}
+              className='bg-num-orange text-white p-1 rounded-xl'
+            />
+          </div>
+          <div>
+            <h2 className='text-xl font-bold flex  text-black mb-2 '>
+              Our Services
+            </h2>
+            <div className='flex w-full gap-2'>
+              <div className=''>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Claim Management
+                </Button>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Contract Administration
+                </Button>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Project Monitoring & Control
+                </Button>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  {' '}
+                  Quantity Survey
+                </Button>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Transaction Advisory
+                </Button>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  {' '}
+                  Techno Commercial Audit
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='flex flex-row'>
-        <div className='flex w-1/4 pl-4 flex-col'>
+        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-12'>
@@ -103,13 +152,13 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='w-1/2 flex flex-col items-center  text-justify'>
-          <h1 className='text-3xl flex justify-center font-normal w-3/4 text-black mb-4'>
+        <div className='md:w-1/2 flex flex-col items-center  text-justify'>
+          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
             We pride ourselves as India’s foremost techno commercial audit firm
             with over two decades of experience across varied industries.
           </h1>
           <div className='flex flex-col items-center '>
-            <p className='  w-3/4 md:text-lg text-xs flex '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               Our offering of Techno commercial Audit – helps businesses
               harnesses the power of financial insights with great clarity, it
               transforms not just the way businesses operate but also unlocks
@@ -119,7 +168,7 @@ const Page = () => {
               their feasibility, efficiency, and financial viability.
             </p>{' '}
             <br />
-            <p className='  w-3/4 md:text-lg text-xs '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs '>
               Our dedicated team of engineers & auditors work collaboratively to
               present a meticulous analysis of project plans, contracts, cost
               estimates, procurement processes, Quantity Survey and financial
@@ -128,7 +177,7 @@ const Page = () => {
               improvement.
             </p>{' '}
             <br />
-            <p className='  w-3/4 md:text-lg text-xs'>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs'>
               With our multidimensional approach, Techno-Commercial Audit serves
               as a valuable tool for project managers & senior management in
               navigating the complex landscape of infrastructure development,
@@ -148,7 +197,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <h2 className='text-2xl w-3/4 flex  justify-center font-semibold text-black mb-4'>
+          <h2 className='text-2xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
             Some of the specialized services provided under Techno commercial
             audit are
           </h2>
@@ -260,7 +309,7 @@ const Page = () => {
             Related Projects
           </h2>
         </div>
-        <div className='flex gap-2 mb-4'>
+        <div className='flex md:flex-row flex-col gap-2 mb-4'>
           <div className='overflow-hidden'>
             <div className=' group relative overflow-hidden hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
               <Link href={`/projects/MumbaiDelhiExpressway`}>
@@ -274,7 +323,7 @@ const Page = () => {
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
-                      <h2 className='font-bold  text-2xl'>
+                      <h2 className='font-bold  md:text-2xl'>
                         Mumbai Delhi Expressway
                       </h2>
                       <h1 className='text-num-orange pb-2 ml-1'>
@@ -299,7 +348,7 @@ const Page = () => {
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
-                      <h2 className='font-bold  text-2xl'>New Parliment</h2>
+                      <h2 className='font-bold  md:text-2xl'>New Parliment</h2>
                       <h1 className='text-num-orange pb-2 ml-1'>Delhi</h1>
                     </div>
                   </div>
@@ -320,7 +369,7 @@ const Page = () => {
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
-                      <h2 className='font-bold  text-2xl'>Mercedes Benz</h2>
+                      <h2 className='font-bold  md:text-2xl'>Mercedes Benz</h2>
                       <h1 className='text-num-orange pb-2 ml-1'>Pune</h1>
                     </div>
                   </div>
@@ -332,11 +381,11 @@ const Page = () => {
       </div>
 
       <div className='flex  mt-20'>
-        <h2 className=' text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-4 mb-2'>
+        <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-4 mb-2'>
           Explore More
         </h2>
       </div>
-      <div className='grid grid-cols-2 gap-1'>
+      <div className='md:grid md:grid-cols-2 gap-1'>
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Link href={`/sectors/aviation`}>
@@ -352,7 +401,7 @@ const Page = () => {
               <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                 <div className='ml-8'>
                   <h1 className='text-num-orange ml-1'>Sector</h1>
-                  <h2 className='font-bold pb-2 text-2xl'>Aviation</h2>
+                  <h2 className='font-bold pb-2 md:text-2xl'>Aviation</h2>
                 </div>
               </div>
             </div>
@@ -375,7 +424,7 @@ const Page = () => {
                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  text-2xl'>
+                    <h2 className='font-bold pb-2  md:text-2xl'>
                       Bridges Structures
                     </h2>
                   </div>
@@ -398,7 +447,7 @@ const Page = () => {
                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  text-2xl'>Commercial</h2>
+                    <h2 className='font-bold pb-2  md:text-2xl'>Commercial</h2>
                   </div>
                 </div>
               </div>
@@ -419,7 +468,7 @@ const Page = () => {
                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  text-2xl'>Industrial</h2>
+                    <h2 className='font-bold pb-2  md:text-2xl'>Industrial</h2>
                   </div>
                 </div>
               </div>
@@ -440,7 +489,9 @@ const Page = () => {
                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  text-2xl'>Institutional</h2>
+                    <h2 className='font-bold pb-2  md:text-2xl'>
+                      Institutional
+                    </h2>
                   </div>
                 </div>
               </div>
