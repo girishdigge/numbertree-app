@@ -87,10 +87,10 @@ const Testimonials = () => {
                 <div className='flex justify-center items-center mr-10'>
                   <Image
                     src={`/logo/star.png`}
-                    height={200}
+                    height={50}
                     width={200}
                     alt='img'
-                    className='w-28 '
+                    className='md:w-28 '
                   />
                 </div>
               </div>
