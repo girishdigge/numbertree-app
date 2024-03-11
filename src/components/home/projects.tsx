@@ -59,7 +59,7 @@ const Projects = () => {
           {'Commited To Excellence Across Infra Projects'}
         </h3>
       </div>
-      <Carousel className='flex items-center justify-center ml-14 w-11/12 relative'>
+      <Carousel className='flex items-center justify-center ml-14 md:w-11/12 relative'>
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
@@ -72,7 +72,7 @@ const Projects = () => {
                   alt='image'
                 />
                 <div className='absolute inset-0 flex items-center  md:mt-5 mt-2'>
-                  <div className='bg-black bg-opacity-70 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
+                  <div className='bg-black md:bg-opacity-70 bg-opacity-40 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
                     <div className='md:flex hidden flex-row mt-10 ml-2'>
                       <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
                         OUR LATEST WORK

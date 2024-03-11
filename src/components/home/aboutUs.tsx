@@ -14,7 +14,7 @@ const AboutUs = () => {
             'NumberTree is an infrastructure consulting engineering & audit services firm. We are committed to delivering exceptional and cutting-edge solutions to today’s business problems.'
           }
         </p>
-        <div className='mt-5'>
+        <div className='md:mt-5'>
           <Button className='w-40  text-bold text-white font-medium bg-num-indigo hover:bg-num-orange'>
             About Us
           </Button>

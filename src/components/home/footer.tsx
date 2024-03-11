@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
           </div> */}
         </div>
-        <div className='flex flex-col items-center w-1/5 '>
+        <div className='md:flex hidden flex-col items-center w-1/5 '>
           <div className='flex w-auto h-auto mr-8 mt-6'>
             <Image
               src={`/logo/numbertree-logo.png`}

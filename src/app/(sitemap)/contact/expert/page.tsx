@@ -77,9 +77,7 @@ const Page = () => {
             />
             <div className='flex flex-col justify-center'>
               <h1 className='text-2xl font-semibold'>John Doe</h1>
-              <h2 className='text-lg font-light text-num2-blue'>
-                CEO Numbertree
-              </h2>
+              <h2 className='text-lg font-light text-num2-blue'>CEO</h2>
               <span className='flex'>
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`info@numbertree.in`}
@@ -99,9 +97,7 @@ const Page = () => {
             />
             <div className='flex flex-col justify-center'>
               <h1 className='text-2xl font-semibold'>John Doe</h1>
-              <h2 className='text-lg font-light text-num2-blue'>
-                CEO Numbertree
-              </h2>
+              <h2 className='text-lg font-light text-num2-blue'>Director</h2>
               <span className='flex'>
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`info@numbertree.in`}
@@ -121,9 +117,7 @@ const Page = () => {
             />
             <div className='flex flex-col justify-center'>
               <h1 className='text-2xl font-semibold'>John Doe</h1>
-              <h2 className='text-lg font-light text-num2-blue'>
-                CEO Numbertree
-              </h2>
+              <h2 className='text-lg font-light text-num2-blue'>Manager</h2>
               <span className='flex'>
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`info@numbertree.in`}
