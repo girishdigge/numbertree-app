@@ -118,7 +118,7 @@ const Page = () => {
       <div>
         <div className='relative '>
           <Image
-            src={`/projects/newParliment.webp`}
+            src={`/career/office.jpg`}
             width={1400}
             height={800}
             alt='business transformation'

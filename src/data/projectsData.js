@@ -1,5 +1,7 @@
 export const featuredProjects = [
   {
+    serviceId: '1',
+    sectorId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Guwahati Airport',
     content:
@@ -8,6 +10,8 @@ export const featuredProjects = [
     image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
   },
   {
+    serviceId: '1',
+    sectorId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Parliment,New Delhi',
     content:
@@ -16,6 +20,8 @@ export const featuredProjects = [
     image: '/projects/newParliment1.jpg', // replace with the actual image path
   },
   {
+    serviceId: '2',
+    sectorId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Mercedes Benz,Pune',
     content:
@@ -24,6 +30,8 @@ export const featuredProjects = [
     image: '/projects/merc.jpg', // replace with the actual image path
   },
   {
+    serviceId: '3',
+    sectorId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Leh Airport',
     content:
@@ -35,8 +43,8 @@ export const featuredProjects = [
 
 export const projects = [
   {
-    ServiceId: 1,
-    SectorId: 0,
+    serviceId: '1',
+    sectorId: '2',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Bharat Mandapam G20',
     content:
@@ -45,8 +53,8 @@ export const projects = [
     image: '/projects/bm-g20.webp', // replace with the actual image path
   },
   {
-    ServiceId: 0,
-    SectorId: 1,
+    serviceId: '3',
+    sectorId: '2',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Port',
     content:
@@ -55,8 +63,8 @@ export const projects = [
     image: '/projects/port2.jpg', // replace with the actual image path
   },
   {
-    ServiceId: 2,
-    SectorId: 0,
+    serviceId: '0',
+    sectorId: '3',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'mumbai Delhi Expressway',
     content:
@@ -65,8 +73,8 @@ export const projects = [
     image: '/projects/mumbaiDelhiExpressway.jpg', // replace with the actual image path
   },
   {
-    ServiceId: 3,
-    SectorId: 0,
+    serviceId: '1',
+    sectorId: '6',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'purvanchal Expressway',
     content:
@@ -75,8 +83,8 @@ export const projects = [
     image: '/projects/purvanchalExpressway.jpeg', // replace with the actual image path
   },
   {
-    ServiceId: 0,
-    SectorId: 3,
+    serviceId: '1',
+    sectorId: '7',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'STP Kanpur',
     content:
@@ -85,8 +93,8 @@ export const projects = [
     image: '/projects/STP_Kanpur.jpg', // replace with the actual image path
   },
   {
-    ServiceId: 0,
-    SectorId: 4,
+    serviceId: '1',
+    sectorId: '2',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'transmission Distribution Bihar',
     content:

@@ -21,7 +21,20 @@ import { useEffect, useState } from 'react';
 const Page = () => {
   const [service, setService] = useState('');
   const [sector, setSector] = useState('');
+  const [filteredProjects, setFilteredProjects] = useState(projects);
 
+  useEffect(() => {
+    console.log(service, sector);
+
+    // Filter projects based on selected service and sector
+    const filtered = projects.filter((project) => {
+      return (
+        (!service || project.serviceId.includes(service)) &&
+        (!sector || project.sectorId.includes(sector))
+      );
+    });
+    setFilteredProjects(filtered);
+  }, [service, sector]);
   return (
     <div>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
@@ -68,7 +81,11 @@ const Page = () => {
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-xl text-num-indigo font-medium m-2'>Explore By:</h1>
         <div className='flex gap-2'>
-          <Select>
+          <Select
+            onValueChange={(value: string) => {
+              setService(value), setSector('');
+            }}
+          >
             <SelectTrigger className='w-[180px]'>
               <SelectValue placeholder='Services' />
             </SelectTrigger>
@@ -85,74 +102,89 @@ const Page = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
-          <Select>
+          <Select onValueChange={(value: string) => setSector(value)}>
             <SelectTrigger className='w-[180px]'>
               <SelectValue
                 placeholder='Sectors'
-                onChange={(e: any) => setSector(e.target.value)}
+                onChange={(e: any) => {
+                  setSector(e.target.value), setService('');
+                }}
               />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value='1'>Aviation</SelectItem>
-              <SelectItem value='2'>bridges structures</SelectItem>
-              <SelectItem value='3'>commercial</SelectItem>
-              <SelectItem value='4'>industrial</SelectItem>
-              <SelectItem value='5'>institutional</SelectItem>
-              <SelectItem value='6'>oil & gas</SelectItem>
-              <SelectItem value='7'>ports</SelectItem>
-              <SelectItem value='8'>power transmission</SelectItem>
-              <SelectItem value='9'>railways & metro</SelectItem>
-              <SelectItem value='10'>renwable energy</SelectItem>
-              <SelectItem value='11'>residential</SelectItem>
-              <SelectItem value='12'>roads & highways</SelectItem>
-              <SelectItem value='13'>thermal power plant</SelectItem>
-              <SelectItem value='14'>water infrastructure</SelectItem>
+              <SelectGroup>
+                <SelectLabel>Sectors</SelectLabel>
+                <SelectItem value='1'>Aviation</SelectItem>
+                <SelectItem value='2'>bridges structures</SelectItem>
+                <SelectItem value='3'>commercial</SelectItem>
+                <SelectItem value='4'>industrial</SelectItem>
+                <SelectItem value='5'>institutional</SelectItem>
+                <SelectItem value='6'>oil & gas</SelectItem>
+                <SelectItem value='7'>ports</SelectItem>
+                <SelectItem value='8'>power transmission</SelectItem>
+                <SelectItem value='9'>railways & metro</SelectItem>
+                <SelectItem value='10'>renwable energy</SelectItem>
+                <SelectItem value='11'>residential</SelectItem>
+                <SelectItem value='12'>roads & highways</SelectItem>
+                <SelectItem value='13'>thermal power plant</SelectItem>
+                <SelectItem value='14'>water infrastructure</SelectItem>
+              </SelectGroup>
             </SelectContent>
           </Select>
-          <Button className='font-bold' variant={'secondary'}>
+          <Button
+            onClick={() => {
+              // setSector(''), setService('');
+              window.location.reload();
+            }}
+            className='font-bold'
+            variant={'secondary'}
+          >
             Reset
           </Button>
         </div>
       </div>
-      <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
-        Featured Projects
-      </h1>
-      {!service && !sector && (
-        <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
-          {featuredProjects.map((projects, index) => (
-            <div key={index}>
-              <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
-                <Link href={projects.link}>
-                  <Image
-                    src={projects.image}
-                    width={800}
-                    height={400}
-                    alt={projects.location}
-                    className='object-contain'
-                  />
 
-                  <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
-                    <span className='text-white font-bold'>
-                      Find out more
-                      <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                        {`+`}
-                      </Button>
-                    </span>
-                    <h1 className='text-white text-2xl font-bold '>
-                      {projects.location}
-                    </h1>
-                  </div>
-                </Link>
+      {!service && !sector && (
+        <div>
+          <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
+            Featured Projects
+          </h1>
+          <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
+            {featuredProjects.map((projects, index) => (
+              <div key={index}>
+                <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
+                  <Link href={projects.link}>
+                    <Image
+                      src={projects.image}
+                      width={800}
+                      height={400}
+                      alt={projects.location}
+                      className='object-contain'
+                    />
+
+                    <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
+                      <span className='text-white font-bold'>
+                        Find out more
+                        <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
+                          {`+`}
+                        </Button>
+                      </span>
+                      <h1 className='text-white text-2xl font-bold '>
+                        {projects.location}
+                      </h1>
+                    </div>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
       <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
         All Projects
       </h1>
       <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
-        {projects.map((projects, index) => (
+        {filteredProjects.map((projects, index) => (
           <div key={index}>
             <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
               <Link href={projects.link}>

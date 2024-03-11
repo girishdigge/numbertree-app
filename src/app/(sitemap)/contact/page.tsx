@@ -24,7 +24,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/images/contact.jpg`}
+          src={`/connect/contact.jpg`}
           width={2046}
           height={768}
           alt='business transformation'
