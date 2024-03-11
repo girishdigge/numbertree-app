@@ -99,9 +99,12 @@ const Projects = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className='h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-        <CarouselNext className='h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+        <CarouselPrevious className='md:flex hidden h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+        <CarouselNext className='md:flex hidden h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
       </Carousel>
+      <div className='md:hidden flex justify-center'>
+        <h1 className='text-2xl font-medium text-num-indigo'>{`<- swipe ->`}</h1>
+      </div>
     </div>
   );
 };
