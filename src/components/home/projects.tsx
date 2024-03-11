@@ -59,7 +59,7 @@ const Projects = () => {
           {'Commited To Excellence Across Infra Projects'}
         </h3>
       </div>
-      <Carousel className='flex items-center justify-center ml-14 md:w-11/12 relative'>
+      <Carousel className='flex items-center justify-center md:ml-14 ml-10 w-11/12 relative'>
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
