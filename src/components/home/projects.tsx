@@ -81,9 +81,9 @@ const Projects = () => {
                     width={1400}
                     alt='image'
                   />
-                  <div className='absolute inset-0 flex items-center  md:mt-5 mt-2'>
-                    <div className='bg-black md:bg-opacity-70 bg-opacity-40 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
-                      <div className='md:flex hidden flex-row mt-10 ml-2'>
+                  <div className='absolute inset-0 flex  '>
+                    <div className='bg-black md:bg-opacity-50 bg-opacity-40 md:w-1/2 w-1/2  md:p-5'>
+                      <div className='md:flex hidden flex-row mt-4 ml-2'>
                         <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
                           OUR LATEST WORK
                         </h1>
@@ -99,7 +99,7 @@ const Projects = () => {
                         <h2 className='md:text-xl md:mb-5 md:w-4/5 text-xs'>
                           {project.content}
                         </h2>
-                        <Button className='w-40 bg-num-indigo md:mt-5 border-0 hover:bg-num-orange'>
+                        <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
                           Read More{`>`}
                         </Button>
                       </div>
