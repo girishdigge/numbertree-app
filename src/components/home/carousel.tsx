@@ -88,19 +88,21 @@ const Carousel = () => {
               <div className='bg-opacity-50 md:w-4/5 h-full md:p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
-                  <h2 className='md:text-2xl font-light text-sm ml-4 '>
+                  <h2 className='md:text-lg font-light text-sm ml-4 '>
                     {`WE ARE`}
                   </h2>
                   {/* <Separator
                     orientation='vertical'
                     className='bg-num-orange w-1 h-10'
                   /> */}
-                  <h2 className='md:text-7xl pl-2  text-sm  border-l-4 border-num-orange'>
-                    {slide.title}
-                  </h2>
-                  <p className='md:text-2xl ml-4  md:pt-5 md:pb-2 text-xs md:w-5/12 w-3/4'>
-                    {slide.content}
-                  </p>
+                  <div className=' border-l-4 border-num-orange'>
+                    <h2 className='md:text-7xl w-11/12 pl-2  text-sm '>
+                      {slide.title}
+                    </h2>
+                    <p className='md:text-2xl ml-4  md:pt-5  text-xs md:w-5/12 w-3/4'>
+                      {slide.content}
+                    </p>
+                  </div>
                   <Button className='w-40 ml-4 bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>
                     Read More{`>`}
                   </Button>

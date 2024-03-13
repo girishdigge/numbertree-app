@@ -83,15 +83,24 @@ const Services = () => {
   return (
     <div>
       <div className='mt-20 md:ml-14'>
-        <h1 className='text-7xl text-num-watermark font-medium'>Services</h1>
+        <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
+          Services
+        </h1>
 
         <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
           Services
         </h2>
 
-        <h3 className='-translate-y-10 md:text-xl text-num-indigo  ml-1'>
+        <h3 className='-translate-y-10 md:text-xl ml-1'>
           {'Empowering Decision Making To Transform'}
         </h3>
+        <h4 className='w-11/12 -translate-y-4 text-xl text-justify mb-4'>
+          We partner with clients across the infrastructure landscape to help
+          them deliver projects, of varying of complexity and at various stages
+          of development, with ease. At the same time, we help them adopt
+          solutions that make a positive & lasting impact in their field of
+          operations.
+        </h4>
       </div>
 
       <div className='h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start '>

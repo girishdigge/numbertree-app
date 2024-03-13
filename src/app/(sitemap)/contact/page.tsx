@@ -64,22 +64,22 @@ const Page = () => {
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
         <div className='flex gap-10'>
           <Link href={`/contact/proposal`}>
-            <Button className='w-80 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
               Request for Proposal
             </Button>
           </Link>
           <Link href={`/contact/message`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Send a Message
             </Button>
           </Link>
           <Link href={`/contact/expert`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Find an Expert
             </Button>
           </Link>
           <Link href={`/contact/enquiries`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Enquiries
             </Button>
           </Link>

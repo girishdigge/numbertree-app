@@ -38,10 +38,10 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-xl font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
-                Building Information Modelling (BIM)
+                Building Information Modelling
               </h1>
               <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
                 We push BIM harder, enhancing collaboration, creativity and
@@ -275,6 +275,10 @@ const Page = () => {
             <p className='text-xl mt-2 mb-4'>{`Taking BIM, a step further, our BIM 5D services integrate cost data into the digital models, empowering you to make financially sound decisions throughout the project lifecycle. By linking the 3D models with accurate material quantities, labor costs, and resource allocations, we enable precise cost estimations and cost tracking. Our BIM 5D services facilitate real-time cost analysis, enabling you to identify cost-saving opportunities, evaluate alternative design options, and ultimately maximize your return on investment.`}</p>
             <br />
             <h1 className='font-medium text-3xl mt-2 '>BIM showcase</h1>
+            <p className='mb-8  text-xl '>
+              These four recent projects demonstrate how NumberTree pushes BIM
+              to achieve a wider range of client goals:
+            </p>
           </div>
         </div>
 
@@ -302,11 +306,7 @@ const Page = () => {
         <Image src={'/bim/arup.jpg'} height={600} width={800} alt='img' />
       </div> */}
 
-      <div className='flex mt-0 flex-col items-center'>
-        <p className='mb-8 w-1/2 text-xl ml-4 '>
-          These four recent projects demonstrate how NumberTree pushes BIM to
-          achieve a wider range of client goals:
-        </p>
+      <div className='flex mt-0 flex-col items-center justify-center'>
         <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
           <div>
             <Tabs defaultValue='1' className='w-[full]'>

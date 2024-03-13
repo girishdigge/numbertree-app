@@ -12,7 +12,9 @@ const Sectors = () => {
   return (
     <div className='w-full'>
       <div className='mt-10 md:ml-14 ml-2'>
-        <h1 className='text-7xl text-num-watermark font-medium'>Sectors</h1>
+        <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
+          Sectors
+        </h1>
 
         <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
           Sectors
@@ -21,18 +23,24 @@ const Sectors = () => {
         <h3 className='-translate-y-10 text-2xl text-num-indigo font-light ml-1 mr-1'>
           {'Expertise across the infrastructure spectrum'}
         </h3>
+        <h4 className='w-11/12 -translate-y-4 text-xl text-justify mb-4'>
+          We are infrastructure experts. Adapting to the needs of the companies
+          we serve, is our forte. With close to two decades of experience, we
+          have earned the trust of diverse businesses across the infrastructure
+          spectrum.
+        </h4>
       </div>
       <div className='flex md:flex-row flex-col items-baseline justify-center md:ml-14 md:mr-14 space-x-5 space-y-2'>
         <Link
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num2-blue md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Energy
           </h1>
-          <p className='flex w-4/5 ml-4 mt-2 md:text-lg '>
+          <p className='flex w-4/5  ml-4 mt-2 md:text-lg '>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
             ea officiis sint deleniti delectus perspiciatis inventore.
           </p>
@@ -43,7 +51,7 @@ const Sectors = () => {
                 <Image
                   height={212}
                   width={232}
-                  src={`/logo/s11.png`}
+                  src={`/logo/s01.png`}
                   alt='hovered image'
                 />
               ) : (
@@ -63,7 +71,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num2-blue md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Urban Development
@@ -80,7 +88,7 @@ const Sectors = () => {
                   <Image
                     height={212}
                     width={232}
-                    src={`/logo/s22.png`}
+                    src={`/logo/s02.png`}
                     alt='hovered image'
                   />
                 ) : (
@@ -101,7 +109,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num2-blue md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Transportation
@@ -118,7 +126,7 @@ const Sectors = () => {
                   <Image
                     height={212}
                     width={232}
-                    src={`/logo/s33.png`}
+                    src={`/logo/s03.png`}
                     alt='hovered image'
                   />
                 ) : (

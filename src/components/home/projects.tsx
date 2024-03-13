@@ -49,61 +49,69 @@ const Projects = () => {
   return (
     <div className=''>
       <div className='mt-10 ml-28'>
-        <h1 className='text-7xl text-num-watermark font-medium'>Projects</h1>
+        <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
+          Projects
+        </h1>
 
         <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
           Projects
         </h2>
 
-        <h3 className='-translate-y-10 text-2xl text-num-indigo font-light ml-1 mt-2'>
+        <h3 className='-translate-y-10 text-2xl  font-light ml-1 mt-2'>
           {'Commited To Excellence Across Infra Projects'}
         </h3>
+        <h4 className='w-11/12 -translate-y-4 text-xl text-justify mb-6'>
+          At NumberTree, we are experts at handling and serving projects which
+          are multidimensional, large scale and complex. From the challenging
+          Tsunami Rehabilitation Project at Nicobar Island to the New parliament
+          building, New Delhi. We approach each project with an aim to
+          positively impact communities around us and help them prosper.
+        </h4>
       </div>
-      <Carousel className='flex items-center justify-center md:ml-14 ml-10 w-11/12 relative'>
-        <CarouselContent>
-          {projects.map((project, index) => (
-            <CarouselItem key={index}>
-              <div className='relative'>
-                <Image
-                  className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
-                  src={project.image}
-                  height={800}
-                  width={1400}
-                  alt='image'
-                />
-                <div className='absolute inset-0 flex items-center  md:mt-5 mt-2'>
-                  <div className='bg-black md:bg-opacity-70 bg-opacity-40 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
-                    <div className='md:flex hidden flex-row mt-10 ml-2'>
-                      <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
-                        OUR LATEST WORK
-                      </h1>
-                    </div>
-                    <div className=' text-white ml-2'>
-                      <h2 className='md:text-2xl md:flex hidden font-light text-sm  mb-2'>
-                        {project.heading}
-                      </h2>
-                      <h3 className='md:text-6xl text-xl font-bold '>
-                        {project.location}
-                      </h3>
-                      <hr className='w-3/5 border-num-orange border-2 md:mt-3 md:mb-3' />
-                      <h2 className='md:text-xl md:mb-5 md:w-4/5 text-xs'>
-                        {project.content}
-                      </h2>
-                      <Button className='w-40 bg-num-indigo md:mt-5 border-0 hover:bg-num-orange'>
-                        Read More{`>`}
-                      </Button>
+      <div className='flex items-center justify-center'>
+        <Carousel className='flex items-center justify-center w-5/6 relative'>
+          <CarouselContent>
+            {projects.map((project, index) => (
+              <CarouselItem key={index}>
+                <div className='relative'>
+                  <Image
+                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    src={project.image}
+                    height={800}
+                    width={1400}
+                    alt='image'
+                  />
+                  <div className='absolute inset-0 flex items-center  md:mt-5 mt-2'>
+                    <div className='bg-black md:bg-opacity-70 bg-opacity-40 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
+                      <div className='md:flex hidden flex-row mt-10 ml-2'>
+                        <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
+                          OUR LATEST WORK
+                        </h1>
+                      </div>
+                      <div className=' text-white ml-2'>
+                        <h2 className='md:text-2xl md:flex hidden font-light text-sm  mb-2'>
+                          {project.heading}
+                        </h2>
+                        <h3 className='md:text-6xl text-xl font-bold '>
+                          {project.location}
+                        </h3>
+                        <hr className='w-3/5 border-num-orange border-2 md:mt-3 md:mb-3' />
+                        <h2 className='md:text-xl md:mb-5 md:w-4/5 text-xs'>
+                          {project.content}
+                        </h2>
+                        <Button className='w-40 bg-num-indigo md:mt-5 border-0 hover:bg-num-orange'>
+                          Read More{`>`}
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className='md:flex hidden h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-        <CarouselNext className='md:flex hidden h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-      </Carousel>
-      <div className='md:hidden flex justify-center'>
-        <h1 className='text-2xl font-medium text-num-indigo'>{`<- swipe ->`}</h1>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          <CarouselNext className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+        </Carousel>
       </div>
     </div>
   );

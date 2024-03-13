@@ -85,7 +85,7 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-xl font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
                 Business Transformaiton
@@ -360,7 +360,7 @@ const Page = () => {
       </div>
 
       <div className='flex  mt-20'>
-        <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
+        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
           Explore More
         </h2>
       </div>

@@ -7,7 +7,7 @@ const KeyFacts = () => {
         </div>
         <div className='flex flex-col justify-center items-center w-2/5'>
           <div>
-            <h1 className='md:text-7xl text-2xl text-num-watermark font-medium'>
+            <h1 className='md:text-7xl text-2xl text-num-watermark text-opacity-50 font-medium'>
               Key Facts
             </h1>
 

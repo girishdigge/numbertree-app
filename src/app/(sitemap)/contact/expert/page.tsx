@@ -53,27 +53,27 @@ const Page = () => {
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
         <div className='flex gap-10'>
           <Link href={`/contact/proposal`}>
-            <Button className='w-80 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
               Request for Proposal
             </Button>
           </Link>
           <Link href={`/contact/message`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Send a Message
             </Button>
           </Link>
-          <Button className='w-80 h-12 text-lg bg-num-orange text-white hover:bg-num-orange'>
+          <Button className='w-64 h-12 text-lg bg-num-orange text-white hover:bg-num-orange'>
             Find an Expert
           </Button>
           <Link href={`/contact/enquiries`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+            <Button className='w-64 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Enquiries
             </Button>
           </Link>
         </div>
       </div>
-      <div className='flex m-20'>
-        <div className='grid grid-cols-3 gap-20'>
+      <div className='flex m-10'>
+        <div className='grid grid-cols-3 gap-10'>
           <div className='grid grid-cols-2'>
             <Image
               src={`/testimonials/saqlain.png`}
@@ -81,7 +81,7 @@ const Page = () => {
               height={250}
               alt='1'
             />
-            <div className='flex flex-col ml-2 gap-2 justify-center'>
+            <div className='flex flex-col ml-2 gap-1 justify-center'>
               <h1 className='text-2xl font-semibold'>John Doe</h1>
               <h2 className='text-lg font-light text-num2-blue'>CEO</h2>
               <span className='flex'>
@@ -106,7 +106,7 @@ const Page = () => {
               height={250}
               alt='1'
             />
-            <div className='flex flex-col ml-2 gap-2 justify-center'>
+            <div className='flex flex-col ml-2 gap-1 justify-center'>
               <h1 className='text-2xl font-semibold'>John Doe</h1>
               <h2 className='text-lg font-light text-num2-blue'>Director</h2>
               <span className='flex'>
@@ -131,7 +131,7 @@ const Page = () => {
               height={250}
               alt='1'
             />
-            <div className='flex flex-col ml-2 gap-2 justify-center'>
+            <div className='flex flex-col ml-2 gap-1 justify-center'>
               <h1 className='text-2xl font-semibold'>John Doe</h1>
               <h2 className='text-lg font-light text-num2-blue'>Manager</h2>
               <span className='flex'>
