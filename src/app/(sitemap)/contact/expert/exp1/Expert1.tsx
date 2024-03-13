@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-
+import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -19,10 +19,10 @@ import { toast } from '@/components/ui/use-toast';
 import { Checkbox } from '@/components/ui/checkbox';
 
 const FormSchema = z.object({
-  reason: z.string().min(2, {
+  firstName: z.string().min(2, {
     message: 'reason is required.',
   }),
-  name: z.string().min(2, {
+  lastName: z.string().min(2, {
     message: 'Name is required.',
   }),
 
@@ -33,25 +33,37 @@ const FormSchema = z.object({
     })
     .email('enter valid email'),
 
-  phone: z.string().min(6, {
+  phone: z.string().min(2, {
     message: 'Number is required.',
   }),
 
   company: z.string().min(2, {
     message: 'Firm name is required.',
   }),
+  country: z.string().min(2, {
+    message: 'Contry name is required.',
+  }),
+  message: z.string().min(2, {
+    message: 'Message is required.',
+  }),
+  where: z.string().min(2, {
+    message: 'required.',
+  }),
   check: z.boolean().default(true).optional(),
 });
 
-export function ProposalForm() {
+export function Expert1() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      reason: '',
-      name: '',
+      firstName: '',
+      lastName: '',
       email: '',
-      phone: '',
       company: '',
+      phone: '',
+      country: '',
+      message: '',
+      where: '',
       check: true,
     },
   });
@@ -71,42 +83,44 @@ export function ProposalForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className='w-3/4 grid grid-cols-2 gap-8'
+        className='w-3/4 grid grid-col gap-8'
       >
-        <FormField
-          control={form.control}
-          name='reason'
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className=' text-lg'>Reason for Enquiry</FormLabel>
-              <FormControl>
-                <Input
-                  className='bg-gray-100 shadow-md'
-                  placeholder=''
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name='name'
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className=' text-lg '>Full Name</FormLabel>
-              <FormControl>
-                <Input
-                  className='bg-gray-100 shadow-md'
-                  placeholder=''
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <div className='grid grid-cols-2 gap-8'>
+          <FormField
+            control={form.control}
+            name='firstName'
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=' text-lg'>First Name</FormLabel>
+                <FormControl>
+                  <Input
+                    className='bg-gray-100 shadow-md'
+                    placeholder=''
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name='lastName'
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className=' text-lg '>Last Name</FormLabel>
+                <FormControl>
+                  <Input
+                    className='bg-gray-100 shadow-md'
+                    placeholder=''
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
         <FormField
           control={form.control}
           name='email'
@@ -158,7 +172,59 @@ export function ProposalForm() {
             </FormItem>
           )}
         />
-        <br />
+        <FormField
+          control={form.control}
+          name='country'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className=' text-lg'>Country</FormLabel>
+              <FormControl>
+                <Input
+                  className='bg-gray-100 shadow-md'
+                  placeholder=' '
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='message'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className=' text-lg'>Message</FormLabel>
+              <FormControl>
+                <Textarea
+                  className='bg-gray-100 shadow-md'
+                  placeholder='Type your message here.'
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='where'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className=' text-lg'>
+                Where did you hear about us?
+              </FormLabel>
+              <FormControl>
+                <Input
+                  className='bg-gray-100 shadow-md'
+                  placeholder=' '
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name='check'
@@ -180,7 +246,6 @@ export function ProposalForm() {
             </FormItem>
           )}
         />
-        <br />
         <Button
           className='w-80 h-12 text-lg bg-num-indigo hover:bg-num-orange mb-20'
           type='submit'

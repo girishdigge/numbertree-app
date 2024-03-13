@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { toast } from '@/components/ui/use-toast';
+import { Checkbox } from '@/components/ui/checkbox';
 
 const FormSchema = z.object({
   firstName: z.string().min(2, {
@@ -45,7 +46,10 @@ const FormSchema = z.object({
   message: z.string().min(2, {
     message: 'Message is required.',
   }),
-  where: z.string(),
+  where: z.string().min(2, {
+    message: 'required.',
+  }),
+  check: z.boolean().default(true).optional(),
 });
 
 export function MessageForm() {
@@ -60,6 +64,7 @@ export function MessageForm() {
       country: '',
       message: '',
       where: '',
+      check: true,
     },
   });
 
@@ -220,7 +225,27 @@ export function MessageForm() {
             </FormItem>
           )}
         />
-
+        <FormField
+          control={form.control}
+          name='check'
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Checkbox
+                  className='bg-gray-100 shadow-md mr-1'
+                  checked={field.value}
+                  onCheckedChange={field.onChange}
+                />
+              </FormControl>
+              <FormLabel className=' text-lg'>
+                {' '}
+                I consent to receiving emails from NumberTree, including
+                updates, newsletters, and important notifications.
+              </FormLabel>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <Button
           className='w-80 h-12 text-lg bg-num-indigo hover:bg-num-orange mb-20'
           type='submit'

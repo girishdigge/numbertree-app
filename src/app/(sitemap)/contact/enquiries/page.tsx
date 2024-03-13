@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { RxSlash } from 'react-icons/rx';
 import { IoHomeSharp } from 'react-icons/io5';
+import { FaSquarePhone } from 'react-icons/fa6';
+import { IoIosMail } from 'react-icons/io';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { ProposalForm } from '@/app/(sitemap)/contact/proposal/ProposalForm';
 const Page = () => {
   return (
     <div className=''>
@@ -21,7 +22,8 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Contact Us</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Request a Proposal</p>
+
+        <p className='font-bold text-num-indigo'>Enquiries</p>
       </div>
       <div className='relative '>
         <Image
@@ -49,9 +51,11 @@ const Page = () => {
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
         <div className='flex gap-10'>
-          <Button className='w-80 text-lg h-12 bg-num-orange text-white hover:bg-num-orange '>
-            Request for Proposal
-          </Button>
+          <Link href={`/contact/proposal`}>
+            <Button className='w-80 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
+              Request for Proposal
+            </Button>
+          </Link>
           <Link href={`/contact/message`}>
             <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Send a Message
@@ -62,27 +66,45 @@ const Page = () => {
               Find an Expert
             </Button>
           </Link>
-          <Link href={`/contact/enquiries`}>
-            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
-              Enquiries
-            </Button>
-          </Link>
+          <Button className='w-80 h-12 text-lg bg-num-orange text-white hover:bg-num-orange'>
+            Enquiries
+          </Button>
         </div>
       </div>
-      <div className='flex flex-col pl-20 pt-10 pb-10 text-justify bg-gray-100'>
-        <p className='text-xl w-3/5'>
-          We are proud of the work we do at NumberTree, solving problems &
-          helping our clients across sector in overcoming their business
-          challenges.
-        </p>
-        <br />
-        <p className='text-xl w-3/5'>
-          If you would like to know more about what we do and how we can help
-          you achieve your objectives , fill out the following form
-        </p>
-      </div>
-      <div className='flex flex-col pl-20 mt-10'>
-        <ProposalForm />
+      <div className='grid grid-cols-2 gap-16 m-20'>
+        <div className='flex flex-col items-center'>
+          <div>
+            <h1 className='text-3xl'>For Press Enquiry</h1>
+            <h2 className='text-xl text-num-blue underline font-semibold'>
+              Press.enquiries@numbertree.in
+            </h2>
+          </div>
+        </div>
+        <div className='flex flex-col'>
+          <div>
+            <h1 className='text-3xl'>Service Related</h1>
+            <h2 className='text-xl text-num-blue underline font-semibold'>
+              services@numbertree.in
+            </h2>
+          </div>
+        </div>
+
+        <div className='flex flex-col items-center'>
+          <div>
+            <h1 className='text-3xl'>General Query</h1>
+            <h2 className='text-xl text-num-blue underline font-semibold'>
+              info.enquiries@numbertree.in
+            </h2>
+          </div>
+        </div>
+        <div className='flex flex-col '>
+          <div>
+            <h1 className='text-3xl'>Career Related</h1>
+            <h2 className='text-xl text-num-blue underline font-semibold'>
+              careers.enquiries@numbertree.in
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   );

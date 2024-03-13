@@ -9,7 +9,48 @@ import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 const Page = () => {
+  const projects = [
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      location: 'Parliment,New Delhi',
+      content:
+        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      link: '/numbertree',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      location: 'Guwahati Airport',
+      content:
+        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
+      link: '/quantity-survey',
+      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      location: 'Mercedes Benz,Pune',
+      content:
+        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      link: '/numbertree',
+      image: '/projects/merc.jpg', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      location: 'Leh Airport',
+      content:
+        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      link: '/numbertree',
+      image: '/projects/leh.jpg', // replace with the actual image path
+    },
+  ];
   return (
     <div className='text-black'>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
@@ -35,9 +76,7 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-2xl font-light text-sm ml-4 mb-2'>
-              EXPLORE
-            </h2>
+            <h2 className='md:text-xl font-light text-sm ml-4 mb-2'>EXPLORE</h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
                 Techno Commercial Audit
@@ -309,7 +348,7 @@ const Page = () => {
             Related Projects
           </h2>
         </div>
-        <div className='flex md:flex-row flex-col gap-2 mb-4'>
+        {/* <div className='flex md:flex-row flex-col gap-2 mb-4'>
           <div className='overflow-hidden'>
             <div className=' group relative overflow-hidden hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
               <Link href={`/projects/MumbaiDelhiExpressway`}>
@@ -376,6 +415,67 @@ const Page = () => {
                 </div>
               </Link>
             </div>
+          </div>
+        </div> */}
+        <div className=''>
+          {/* <div className='mt-10 ml-28'>
+            <h1 className='text-7xl text-num-watermark font-medium'>
+              Projects
+            </h1>
+
+            <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+              Projects
+            </h2>
+
+            <h3 className='-translate-y-10 text-2xl text-num-indigo font-light ml-1 mt-2'>
+              {'Commited To Excellence Across Infra Projects'}
+            </h3>
+          </div> */}
+          <Carousel className='flex items-center justify-center md:ml-14 ml-10 w-11/12 relative'>
+            <CarouselContent>
+              {projects.map((project, index) => (
+                <CarouselItem key={index}>
+                  <div className='relative'>
+                    <Image
+                      className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                      src={project.image}
+                      height={800}
+                      width={1400}
+                      alt='image'
+                    />
+                    <div className='absolute inset-0 flex items-center  md:mt-5 mt-2'>
+                      <div className='bg-black md:bg-opacity-70 bg-opacity-40 md:w-2/5 w-3/5 md:h-4/5 md:p-5'>
+                        <div className='md:flex hidden flex-row mt-10 ml-2'>
+                          <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
+                            OUR LATEST WORK
+                          </h1>
+                        </div>
+                        <div className=' text-white ml-2'>
+                          <h2 className='md:text-2xl md:flex hidden font-light text-sm  mb-2'>
+                            {project.heading}
+                          </h2>
+                          <h3 className='md:text-6xl text-xl font-bold '>
+                            {project.location}
+                          </h3>
+                          <hr className='w-3/5 border-num-orange border-2 md:mt-3 md:mb-3' />
+                          <h2 className='md:text-xl md:mb-5 md:w-4/5 text-xs'>
+                            {project.content}
+                          </h2>
+                          <Button className='w-40 bg-num-indigo md:mt-5 border-0 hover:bg-num-orange'>
+                            Read More{`>`}
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className='md:flex hidden h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+            <CarouselNext className='md:flex hidden h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          </Carousel>
+          <div className='md:hidden flex justify-center'>
+            <h1 className='text-2xl font-medium text-num-indigo'>{`<- swipe ->`}</h1>
           </div>
         </div>
       </div>

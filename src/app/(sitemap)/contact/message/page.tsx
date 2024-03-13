@@ -25,7 +25,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/images/contact.jpg`}
+          src={`/images/contact1.jpg`}
           width={2046}
           height={768}
           alt='business transformation'
@@ -61,6 +61,11 @@ const Page = () => {
           <Link href={`/contact/expert`}>
             <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Find an Expert
+            </Button>
+          </Link>
+          <Link href={`/contact/enquiries`}>
+            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+              Enquiries
             </Button>
           </Link>
         </div>

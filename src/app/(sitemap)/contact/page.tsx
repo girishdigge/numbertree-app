@@ -24,13 +24,28 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/connect/contact.jpg`}
+          src={`/images/contact1.jpg`}
           width={2046}
           height={768}
           alt='business transformation'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+          <div className='ml-10'>
+            {/* <h2 className='md:text-xl font-light text-sm ml-4 mb-2'>EXPLORE</h2> */}
+            <div className='border-l-4 md:w-1/2 border-num-orange'>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+                Contact us
+              </h1>
+              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
+                Get in touch with our global experts to discover how NumberTree
+                can help you realize your vision. Please choose an option below
+                and we will get back to you shortly.{' '}
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
             <div className='border-l-4 w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
@@ -43,7 +58,7 @@ const Page = () => {
               and we will get back to you shortly.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
@@ -61,6 +76,11 @@ const Page = () => {
           <Link href={`/contact/expert`}>
             <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
               Find an Expert
+            </Button>
+          </Link>
+          <Link href={`/contact/enquiries`}>
+            <Button className='w-80 h-12 text-lg bg-num-indigo text-white hover:bg-num-orange'>
+              Enquiries
             </Button>
           </Link>
         </div>
