@@ -53,6 +53,14 @@ const Testimonials = () => {
           Testimonials
         </h2>
       </div>
+      <h4 className='w-3/4 -translate-y-4 md:text-xl text-justify mb-4'>
+        <p>
+          We offer seamless and integrated service, from inception through to
+          completion and handover, we are the right hand of project managers. We
+          listen to our clients’ needs and strive to provide them the best
+          service.
+        </p>
+      </h4>
       <div className='relative mb-14 w-4/5 border border- rounded-sm shadow-xl'>
         <Slider {...settings}>
           {testimonials.map((test, index) => (
@@ -81,8 +89,10 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <div className='w-4/5 flex flex-col ml-4'>
-                  <h1 className='text-4xl text-num-indigo'>{test.name}</h1>
-                  <h2 className='text-md ml-12'>{test.role}</h2>
+                  <h1 className='md:text-4xl text-2xl md:ml-10 text-num-indigo'>
+                    {test.name}
+                  </h1>
+                  <h2 className='text-base md:ml-12'>{test.role}</h2>
                 </div>
                 <div className='flex justify-center items-center mr-10'>
                   <Image
@@ -90,7 +100,7 @@ const Testimonials = () => {
                     height={50}
                     width={200}
                     alt='img'
-                    className='md:w-28 '
+                    className='w-28 '
                   />
                 </div>
               </div>

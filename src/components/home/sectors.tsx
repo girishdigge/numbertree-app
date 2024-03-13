@@ -23,7 +23,7 @@ const Sectors = () => {
         <h3 className='-translate-y-10 text-2xl text-num-indigo font-light ml-1 mr-1'>
           {'Expertise across the infrastructure spectrum'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 text-xl text-justify mb-4'>
+        <h4 className='w-11/12 -translate-y-4 md:text-xl text-justify mb-4'>
           We are infrastructure experts. Adapting to the needs of the companies
           we serve, is our forte. With close to two decades of experience, we
           have earned the trust of diverse businesses across the infrastructure

@@ -94,7 +94,7 @@ const Services = () => {
         <h3 className='-translate-y-10 md:text-xl ml-1'>
           {'Empowering Decision Making To Transform'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 text-xl text-justify mb-4'>
+        <h4 className='w-11/12 -translate-y-4 md:text-xl text-justify mb-4'>
           We partner with clients across the infrastructure landscape to help
           them deliver projects, of varying of complexity and at various stages
           of development, with ease. At the same time, we help them adopt

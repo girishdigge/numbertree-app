@@ -36,16 +36,17 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <div className='border-l-4 w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
+            {/* <h2 className='md:text-xl font-light text-sm ml-4 mb-2'>EXPLORE</h2> */}
+            <div className='border-l-4 md:w-1/2 border-num-orange'>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
                 Contact us
               </h1>
+              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
+                Get in touch with our global experts to discover how NumberTree
+                can help you realize your vision. Please choose an option below
+                and we will get back to you shortly.{' '}
+              </p>
             </div>
-            <p className='text-xl w-3/5 font-medium ml-4 mb-2'>
-              Get in touch with our global experts to discover how NumberTree
-              can help you realize your vision. Please choose an option below
-              and we will get back to you shortly.
-            </p>
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@ const Page = () => {
           </span>
         </div>
       </div>
-      <div className='grid grid-cols justify-end gap-4 m-20'>
+      <div className='grid grid-cols-4  gap-4 m-20'>
         <div className='flex flex-col'>
           <div>
             <h1 className='text-2xl'>For Press Enquiry</h1>

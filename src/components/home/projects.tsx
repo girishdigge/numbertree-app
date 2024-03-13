@@ -48,7 +48,7 @@ const Projects = () => {
   ];
   return (
     <div className=''>
-      <div className='mt-10 ml-28'>
+      <div className='mt-10 md:ml-28 ml-10'>
         <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
           Projects
         </h1>
@@ -60,7 +60,7 @@ const Projects = () => {
         <h3 className='-translate-y-10 text-2xl  font-light ml-1 mt-2'>
           {'Commited To Excellence Across Infra Projects'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 text-xl text-justify mb-6'>
+        <h4 className='w-11/12 -translate-y-4 md:text-xl text-justify mb-6'>
           At NumberTree, we are experts at handling and serving projects which
           are multidimensional, large scale and complex. From the challenging
           Tsunami Rehabilitation Project at Nicobar Island to the New parliament

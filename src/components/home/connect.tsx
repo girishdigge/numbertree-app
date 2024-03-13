@@ -3,8 +3,8 @@ import { Button } from '../ui/button';
 
 const Connect = () => {
   return (
-    <div className='bg-num-blue bg-opacity-10 md:p-10 md:mt-0 mt-10'>
-      <div className='md:flex flex-row gap-4 md:ml-4 mr-4'>
+    <div className='bg-num-blue bg-opacity-10 md:p-8 md:mt-0 mt-10'>
+      <div className='md:flex flex-row gap-2 md:ml-4 mr-4'>
         <div className='flex flex-row relative h-80 mb-10 md:mb-0 md:ml-1'>
           <Image
             src={`/connect/linkedin.png`}
@@ -28,7 +28,7 @@ const Connect = () => {
                 projects, Oil & Gas projects, Power Projects, Real Estate –
                 Residential...
               </p>
-              <div className='flex flex-row-reverse md:mt-14 mr-4'>
+              <div className='flex flex-row-reverse mt-10 mr-4'>
                 <Button className='w-40 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
                   Connect{`>`}
                 </Button>
@@ -46,7 +46,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-50'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-2'>
+              <h1 className='text-num-orange text-2xl font-bold md:mt-4 mb-1'>
                 Insights
               </h1>
               <h2 className='md:text-3xl text-xl  md:mb-3 mb-1 font-medium text-white'>
