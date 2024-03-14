@@ -262,7 +262,7 @@ const Page = () => {
             <div className='w-full grid-rows-2  relative hover:scale-105 transition duration-500 ease-in-out'>
               <Link href={`/services/contract-adminstration`}>
                 <Image
-                  src={`/services/ContractAdminstration1.jpg`}
+                  src={`/services/ContractAdministration1.jpg`}
                   height={250}
                   width={400}
                   alt='services'

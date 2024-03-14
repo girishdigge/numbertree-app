@@ -150,7 +150,7 @@ const ContractAdiministration = () => {
           </Link>
         </div>
         <Image
-          src='/services/ContractAdminstration.jpg'
+          src='/services/ContractAdministration.jpg'
           alt='Contract Adminstration'
           width='1000'
           height='1000'
@@ -251,7 +251,7 @@ const TechnoCommercial = () => {
           </Link>
         </div>
         <Image
-          src='/services/TechoComAudit.jpg'
+          src='/services/TechnoComAudit.jpg'
           alt='Techno Com Audit'
           width='1000'
           height='1000'

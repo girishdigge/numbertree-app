@@ -2,6 +2,7 @@ export const featuredProjects = [
   {
     serviceId: '1',
     sectorId: '0',
+    locationId: '1',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Guwahati Airport',
     content:
@@ -12,6 +13,7 @@ export const featuredProjects = [
   {
     serviceId: '1',
     sectorId: '0',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Parliment,New Delhi',
     content:
@@ -22,6 +24,7 @@ export const featuredProjects = [
   {
     serviceId: '2',
     sectorId: '4',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Mercedes Benz,Pune',
     content:
@@ -32,6 +35,7 @@ export const featuredProjects = [
   {
     serviceId: '3',
     sectorId: '1',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Leh Airport',
     content:
@@ -45,6 +49,7 @@ export const projects = [
   {
     serviceId: '1',
     sectorId: '2',
+    locationId: '1',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Bharat Mandapam G20',
     content:
@@ -55,6 +60,7 @@ export const projects = [
   {
     serviceId: '3',
     sectorId: '2',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'Port',
     content:
@@ -65,6 +71,7 @@ export const projects = [
   {
     serviceId: '0',
     sectorId: '3',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'mumbai Delhi Expressway',
     content:
@@ -75,6 +82,7 @@ export const projects = [
   {
     serviceId: '1',
     sectorId: '6',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'purvanchal Expressway',
     content:
@@ -85,6 +93,7 @@ export const projects = [
   {
     serviceId: '1',
     sectorId: '7',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'STP Kanpur',
     content:
@@ -95,6 +104,7 @@ export const projects = [
   {
     serviceId: '1',
     sectorId: '2',
+    locationId: '0',
     heading: "Empowering Tomorrow's infrastructure",
     location: 'transmission Distribution Bihar',
     content:

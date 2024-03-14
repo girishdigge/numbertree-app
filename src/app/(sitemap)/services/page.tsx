@@ -20,7 +20,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Contract Adiministration',
-      imageUrl: '/services/ContractAdminstration1.jpg',
+      imageUrl: '/services/ContractAdministration1.jpg',
       content: {
         heading: 'Contract Adiministration',
         paragraph: `As a consulting engineering firm, we understand the importance of
@@ -67,7 +67,7 @@ const Page = () => {
     {
       id: 5,
       name: 'Techno Commercial Audit',
-      imageUrl: '/services/TechoComAudit1.jpg',
+      imageUrl: '/services/TechnoComAudit1.jpg',
       content: {
         heading: 'Techno Commercial Audit',
         paragraph:
@@ -98,13 +98,22 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Services</p>
       </div>
-      <div className='flex w-full '>
+      <div className='relative '>
         <Image
           src={'/services/banner.png'}
-          height={768}
           width={1920}
+          height={768}
           alt='services banner'
         />
+        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+          <div className='ml-10'>
+            <div className='border-l-4 md:w-1/2 border-num-orange'>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+                Our Services
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='flex flex-col bg-gray-100'>
         <div className='ml-10  w-4/5'>
@@ -118,15 +127,14 @@ const Page = () => {
             </h2>
 
             <h3 className='-translate-y-10 text-2xl text-num-indigo font-light mt-2'>
-              {'Empowering decision making to transform '}
+              {'Empowering decision making to transform businesses'}
             </h3>
           </div>
           <h3 className='-translate-y-8 text-base text-num-blue mb-8'>
-            We partner with clients across the infrastructure landscape to help
-            them deliver projects, of varying of complexity and at various
-            stages of development, with ease. At the same time, we help them
-            adopt solutions that make a positive & lasting impact in their field
-            of operations.
+            We partner with businesses to help them deliver projects, of varying
+            of complexity. We provide services at various stages of construction
+            and development. Our comprehensive range of services, help
+            businesses deliver positive impact beyond their industries.
           </h3>
         </div>
         <div className='flex items-center justify-center'>

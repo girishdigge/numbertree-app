@@ -115,13 +115,22 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Sectors</p>
       </div>
-      <div className='flex w-full'>
+      <div className='relative'>
         <Image
           src={'/sectors/banner.png'}
           height={768}
           width={1920}
           alt='services banner'
         />
+        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+          <div className='ml-10'>
+            <div className='border-l-4 md:w-1/2 border-num-orange'>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+                Our Sectors
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='flex flex-col bg-gray-100'>
         <div className='ml-10 w-4/5'>
@@ -133,15 +142,18 @@ const Page = () => {
             </h2>
 
             <h3 className='-translate-y-10 text-2xl text-num-indigo font-light mt-2'>
-              {'Empowering decision making to transform.'}
+              {'Uplifting communities, improving access'}
             </h3>
           </div>
           <h3 className='-translate-y-8 text-base text-num-blue mb-8'>
-            We partner with clients across the infrastructure landscape to help
-            them deliver projects, of varying of complexity and at various
-            stages of development, with ease. At the same time, we help them
-            adopt solutions that make a positive & lasting impact in their field
-            of operations.
+            {`In today's dynamic business environment, a company's success is
+            intricately linked to its specialized knowledge and expertise within
+            the industry. The integration of in-depth domain knowledge with
+            unique expertise not only meets customer demands but also ensures a
+            thorough understanding of the ever-changing industry trends.`}
+          </h3>
+          <h3 className='-translate-y-8 text-base text-num-blue mb-8'>
+            {`We cater to sectors across infrastructure segments. Our indepth knowledge of the sector coupled with customized approach to each infrastructure project, has made us preferred partners to some of the leading infrastructure companies in India and abroad.`}
           </h3>
         </div>
         <div className='grid grid-cols-2  gap-4 '>

@@ -27,7 +27,7 @@ const Page = () => {
       content:
         'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
       link: '/numbertree',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      image: '/projects/newParliment1.jpg', // replace with the actual image path
     },
     {
       heading: "Empowering Tomorrow's infrastructure",
@@ -176,26 +176,41 @@ const Page = () => {
             </h2>
             <div className='flex flex-col gap-2'>
               <div className='w-1/2'>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Claim Management
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Contract Administration
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Project Monitoring & Control
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Transaction Advisory
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
+                <Link href='/services/claim-management'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Claim Management
+                  </Button>
+                </Link>
+
+                <Link href='/services/contract-administration'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Contract Administration
+                  </Button>
+                </Link>
+
+                <Link href='/services/project-monitoring-and-control'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Project Monitoring & Control
+                  </Button>
+                </Link>
+
+                <Link href='/services/quantity-survey'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Quantity Survey
+                  </Button>
+                </Link>
+
+                <Link href='/services/techno-commercial-audit'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Techno Commercial Audit
+                  </Button>
+                </Link>
+
+                <Link href='/services/transaction-advisory'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Transaction Advisory
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -367,113 +382,117 @@ const Page = () => {
       <div className='md:grid md:grid-cols-2 gap-1'>
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
+            <Image
+              src={`/sectors1/Aviation.jpg`}
+              height={800}
+              width={800}
+              alt='sector'
+              className='object-contain group-hover:opacity-95' // Fade image slightly on hover
+            />
             <Link href={`/sectors/aviation`}>
-              <Image
-                src={`/sectors1/Aviation.jpg`}
-                height={800}
-                width={800}
-                alt='sector'
-                className='object-contain group-hover:opacity-95' // Fade image slightly on hover
-              />
-            </Link>
-            <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
-              <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                <div className='ml-8'>
-                  <h1 className='text-num-orange ml-1'>Sector</h1>
-                  <h2 className='font-bold pb-2 md:text-2xl'>Aviation</h2>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h1 className='text-num-orange ml-1'>Sector</h1>
+                    <h2 className='font-bold pb-2 md:text-2xl'>Aviation</h2>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
         <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors1/BridgesStructure.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/bridges-structures`}>
-                <Image
-                  src={`/sectors1/BridgesStructure.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>
-                      Bridges Structures
-                    </h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Bridges Structures
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className='flex overflow-hidden'>
             <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors1/Commercial.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/commercial`}>
-                <Image
-                  src={`/sectors1/Commercial.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>Commercial</h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Commercial
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors1/Industrial.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/industrial`}>
-                <Image
-                  src={`/sectors1/Industrial.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>Industrial</h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Industrial
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors1/Institutional.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/institutional`}>
-                <Image
-                  src={`/sectors1/Institutional.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>
-                      Institutional
-                    </h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Institutional
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

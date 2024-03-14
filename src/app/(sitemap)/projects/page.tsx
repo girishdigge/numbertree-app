@@ -21,20 +21,22 @@ import { useEffect, useState } from 'react';
 const Page = () => {
   const [service, setService] = useState('');
   const [sector, setSector] = useState('');
+  const [location, setLocation] = useState('');
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
   useEffect(() => {
-    console.log(service, sector);
+    console.log(service, sector, location);
 
     // Filter projects based on selected service and sector
     const filtered = projects.filter((project) => {
       return (
         (!service || project.serviceId.includes(service)) &&
-        (!sector || project.sectorId.includes(sector))
+        (!sector || project.sectorId.includes(sector)) &&
+        (!location || project.locationId.includes(location))
       );
     });
     setFilteredProjects(filtered);
-  }, [service, sector]);
+  }, [service, sector, location]);
   return (
     <div>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
@@ -46,13 +48,22 @@ const Page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Projects</p>
       </div>
-      <div className='flex w-full'>
+      <div className='relative'>
         <Image
           src={'/projects/banner.png'}
           height={768}
           width={1920}
           alt='services banner'
         />
+        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+          <div className='ml-10'>
+            <div className='border-l-4 md:w-1/2 border-num-orange'>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+                Our Projects
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='flex flex-col bg-gray-100'>
         <div className='ml-10 w-4/5'>
@@ -66,15 +77,15 @@ const Page = () => {
             </h2>
 
             <h3 className='-translate-y-10 text-2xl text-num-indigo font-light mt-2'>
-              {'Commited To Excellence Across Infra Projects'}
+              {'Taking projects from complexity to profitability'}
             </h3>
           </div>
           <h3 className='-translate-y-8 text-base text-num-blue mb-8'>
-            At NumberTree, we are experts at handling and serving projects which
-            are multidimensional, large scale and complex. From the challenging
-            Tsunami Rehabilitation Project at Nicobar Island to the New
-            parliament building, New Delhi. We approach each project with an aim
-            to positively impact communities around us and help them prosper.
+            We are experts at handling projects which are multidimensional,
+            large scale and complex. Our commitment is to ensure that each
+            project is completed within budgeted cost and time. We approach each
+            project with an aim to positively impact communities around us and
+            help them prosper.
           </h3>
         </div>
       </div>
@@ -83,7 +94,7 @@ const Page = () => {
         <div className='flex gap-2'>
           <Select
             onValueChange={(value: string) => {
-              setService(value), setSector('');
+              setService(value), setLocation(''), setSector('');
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -102,12 +113,16 @@ const Page = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
-          <Select onValueChange={(value: string) => setSector(value)}>
+          <Select
+            onValueChange={(value: string) => {
+              setSector(value), setLocation(''), setService('');
+            }}
+          >
             <SelectTrigger className='w-[180px]'>
               <SelectValue
                 placeholder='Sectors'
                 onChange={(e: any) => {
-                  setSector(e.target.value), setService('');
+                  setSector(e.target.value);
                 }}
               />
             </SelectTrigger>
@@ -131,6 +146,59 @@ const Page = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
+          <Select
+            onValueChange={(value: string) => {
+              setLocation(value), setSector(''), setService('');
+            }}
+          >
+            <SelectTrigger className='w-[180px]'>
+              <SelectValue
+                placeholder='Location'
+                onChange={(e: any) => {
+                  setLocation(e.target.value);
+                }}
+              />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>States</SelectLabel>
+                <SelectItem value='1'>Andhra Pradesh</SelectItem>
+                <SelectItem value='2'>Arunachal Pradesh</SelectItem>
+                <SelectItem value='3'>Assam</SelectItem>
+                <SelectItem value='4'>Bihar</SelectItem>
+                <SelectItem value='5'>Chhattisgarh</SelectItem>
+                <SelectItem value='6'>Delhi</SelectItem>
+                <SelectItem value='7'>Goa</SelectItem>
+                <SelectItem value='8'>Gujarat</SelectItem>
+                <SelectItem value='9'>Haryana</SelectItem>
+                <SelectItem value='10'>Himachal Pradesh</SelectItem>
+                <SelectItem value='11'>Jharkhand</SelectItem>
+                <SelectItem value='12'>Karnataka</SelectItem>
+                <SelectItem value='13'>Kerala</SelectItem>
+                <SelectItem value='14'>Madhya Pradesh</SelectItem>
+                <SelectItem value='15'>Maharashtra</SelectItem>
+                <SelectItem value='16'>Manipur</SelectItem>
+                <SelectItem value='17'>Meghalaya</SelectItem>
+                <SelectItem value='18'>Mizoram</SelectItem>
+                <SelectItem value='19'>Nagaland</SelectItem>
+                <SelectItem value='20'>Odisha</SelectItem>
+                <SelectItem value='21'>Punjab</SelectItem>
+                <SelectItem value='22'>Rajasthan</SelectItem>
+                <SelectItem value='23'>Sikkim</SelectItem>
+                <SelectItem value='24'>Tamil Nadu</SelectItem>
+                <SelectItem value='25'>Telangana</SelectItem>
+                <SelectItem value='26'>Tripura</SelectItem>
+                <SelectItem value='27'>Uttar Pradesh</SelectItem>
+                <SelectItem value='28'>Uttarakhand</SelectItem>
+                <SelectItem value='29'>West Bengal</SelectItem>
+                <SelectItem value='30'>Andaman and Nicobar Islands</SelectItem>
+                <SelectItem value='31'>Chandigarh</SelectItem>
+                <SelectItem value='32'>Daman and Diu</SelectItem>
+                <SelectItem value='33'>Lakshadweep</SelectItem>
+                <SelectItem value='34'>Puducherry</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
           <Button
             onClick={() => {
               // setSector(''), setService('');
@@ -144,7 +212,7 @@ const Page = () => {
         </div>
       </div>
 
-      {!service && !sector && (
+      {!service && !sector && !location && (
         <div>
           <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
             Featured Projects
