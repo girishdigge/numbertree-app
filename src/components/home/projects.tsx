@@ -57,15 +57,15 @@ const Projects = () => {
           Projects
         </h2>
 
-        <h3 className='-translate-y-10 text-2xl  font-light ml-1 mt-2'>
-          {'Commited To Excellence Across Infra Projects'}
+        <h3 className='-translate-y-10 md:text-2xl  font-light ml-1 mt-2'>
+          {'Taking projects from complexity to profitability'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 md:text-xl text-justify mb-6'>
-          At NumberTree, we are experts at handling and serving projects which
-          are multidimensional, large scale and complex. From the challenging
-          Tsunami Rehabilitation Project at Nicobar Island to the New parliament
-          building, New Delhi. We approach each project with an aim to
-          positively impact communities around us and help them prosper.
+        <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-6'>
+          We are experts at handling projects which are multidimensional, large
+          scale and complex. Our commitment is to ensure that each project is
+          completed within budgeted cost and time. We approach each project with
+          an aim to positively impact communities around us and help them
+          prosper.
         </h4>
       </div>
       <div className='flex items-center justify-center'>

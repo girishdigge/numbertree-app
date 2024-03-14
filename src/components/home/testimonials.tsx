@@ -52,11 +52,14 @@ const Testimonials = () => {
         <h2 className='-translate-y-12 ml-28 text-4xl text-num-orange font-medium'>
           Testimonials
         </h2>
+        <h3 className='-translate-y-10 md:text-2xl  font-light ml-14 mt-2'>
+          {'Striving for excellence in service '}
+        </h3>
       </div>
-      <h4 className='w-3/4 -translate-y-4 md:text-xl text-justify mb-4'>
+      <h4 className='w-3/4 -translate-y-4 md:text-base text-sm text-justify mb-4'>
         <p>
           We offer seamless and integrated service, from inception through to
-          completion and handover, we are the right hand of project managers. We
+          completion and handover, we are managements eyes at the project. We
           listen to our clients’ needs and strive to provide them the best
           service.
         </p>

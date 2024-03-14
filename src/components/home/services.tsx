@@ -91,15 +91,14 @@ const Services = () => {
           Services
         </h2>
 
-        <h3 className='-translate-y-10 md:text-xl ml-1'>
-          {'Empowering Decision Making To Transform'}
+        <h3 className='-translate-y-10 md:text-2xl ml-1'>
+          {'Empowering decision making to transform businesses '}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 md:text-xl text-justify mb-4'>
-          We partner with clients across the infrastructure landscape to help
-          them deliver projects, of varying of complexity and at various stages
-          of development, with ease. At the same time, we help them adopt
-          solutions that make a positive & lasting impact in their field of
-          operations.
+        <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-4'>
+          We partner with businesses to help them deliver projects, of varying
+          of complexity. We provide services at various stages of construction
+          and development. Our comprehensive range of services, help businesses
+          deliver positive impact beyond their industries.
         </h4>
       </div>
 
@@ -140,7 +139,7 @@ const ContractAdiministration = () => {
     <div>
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='w-4/5 text-base mb-2'>
+          <h1 className='w-4/5 md:text-base text-sm mb-2'>
             As a consulting engineering firm, we understand the importance of
             efficient contract administration and accurate bill checking in
             maintaining financial integrity and control of infrastructure &
@@ -166,7 +165,7 @@ const QuantitySurvey = () => {
     <div>
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='w-4/5 text-base mb-2'>
+          <h1 className='w-4/5 md:text-base text-sm mb-2'>
             In the infrastructure industry, precise and comprehensive
             quantification of materials, labour, and resources is crucial for
             successful project planning and budgeting.
@@ -191,7 +190,7 @@ const ClaimManagement = () => {
     <div>
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='w-4/5 text-base mb-2'>
+          <h1 className='w-4/5 md:text-base text-sm mb-2'>
             We are proud of the work we do at NumberTree, solving problems &
             helping our clients across sector in overcoming their business
             challenges.
@@ -216,7 +215,7 @@ const ProjectMonitoring = () => {
     <div>
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='w-4/5 text-base mb-2'>
+          <h1 className='w-4/5 md:text-base text-sm mb-2'>
             NumberTree offers advanced digital project monitoring services to
             enhance project oversight, efficiency, and transparency. Leveraging
             cutting-edge technologies and data-driven insights, our digital
@@ -243,7 +242,7 @@ const TechnoCommercial = () => {
     <div>
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='w-4/5 text-base mb-2'>
+          <h1 className='w-4/5 md:text-base text-sm mb-2'>
             We pride ourselves as India{`'`}s foremost techno commercial audit
             firm with over two decades of experience across varied industries.
           </h1>
@@ -267,7 +266,7 @@ const TransctionAdvisory = () => {
     <div>
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
-          <h1 className='w-4/5 text-base mb-2'>
+          <h1 className='w-4/5 md:text-base text-sm mb-2'>
             Our team ensures that your financial transactions are accurately
             processed, risks are minimized, and resources are optimized. We are
             experienced in navigating the field of complex contracts & terms,

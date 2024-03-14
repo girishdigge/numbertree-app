@@ -7,9 +7,9 @@ const AboutUs = () => {
       {/* <div className='w-1/6'></div> */}
       <div className='flex flex-col mt-10 w-2/3 md:ml-16 ml-1'>
         <h2 className='md:text-4xl text-num-indigo mb-4'>
-          {'Professionals skilled in molding the constructed surroundings.'}
+          {'We are Infrastructure Experts '}
         </h2>
-        <p className='md:text-base text-sm text-num-blue  md:w-3/4'>
+        <p className='md:text-lg text-sm text-num-blue  md:w-3/4'>
           {
             'NumberTree is an infrastructure consulting engineering & audit services firm. We are committed to delivering exceptional and cutting-edge solutions to today’s business problems.'
           }

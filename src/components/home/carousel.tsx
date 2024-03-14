@@ -11,9 +11,9 @@ const slides = [
   {
     heading: "Empowering Tomorrow's infrastructure",
     weAre: 'WE ARE',
-    title: 'Techno-Commercial Auditors',
+    title: 'Techno- Commercial Auditors',
     content:
-      "We are India's foremost techno-commercial audit firm with close to two decades of expertise.",
+      'We are India’s foremost techno commercial audit firm with close to two decades of expertise.',
     link: '/techno-commercial-project',
     video: '/carousel/v1.mp4', // replace with the actual video path
   },
@@ -22,34 +22,43 @@ const slides = [
     weAre: 'We are',
     title: 'Quantity Surveyors',
     content:
-      'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
+      'Our quantity surveyors play a vital role in ensuring accurate cost estimation and effective resource allocation.',
     link: '/quantity-survey',
     video: '/carousel/v2.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
     weAre: 'We are',
-    title: 'Contract Administrators',
+    title: 'Contract Administrators ',
     content:
-      'Our comprehensive services in Contract Administration & Bill Checking ensure transparency, compliance, & cost optimization.',
+      'Our comprehensive services in Contract Administration and Bill Checking ensure transparency, compliance and cost optimization.',
     link: '/contract-administration',
     video: '/carousel/v3.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
     weAre: 'We are',
-    title: 'Cost Consultants',
+    title: 'Cost Consultants ',
     content:
-      'We provide cost management services on a wide range of construction projects across sectors in infrastructure.',
+      'We provide cost management services on wide range of construction projects across sectors in infrastructure.',
     link: '/cost-consultants',
     video: '/carousel/v4.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
     weAre: 'We are',
-    title: 'NumberTree',
+    title: 'Building Information Modellers ',
     content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world... ',
+      'Digitization of infrastructure operations & projects is our forte, we help in digital transformation of construction through BIMfirst, Digital twin.',
+    link: '/numbertree',
+    video: '/carousel/v2.mp4', // replace with the actual video path
+  },
+  {
+    heading: "Empowering Tomorrow's infrastructure",
+    weAre: 'We are',
+    title: 'Numbertree ',
+    content:
+      'We are a consulting engineering & audit services firm. We partner with businesses that advance the world, to overcome challenges they face and unlock their full potential.',
     link: '/numbertree',
     video: '/carousel/v5.mp4', // replace with the actual video path
   },

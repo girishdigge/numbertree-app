@@ -93,7 +93,9 @@ const Experience = () => {
             {animatedCounts[index]}
             {index === 0 ? 'st' : '+'}
           </div>
-          <div className='text-center ml-4 mr-4 mb-5'>{item.title}</div>
+          <div className='text-center md:text-lg ml-4 mr-4 mb-5'>
+            {item.title}
+          </div>
         </div>
       ))}
     </div>

@@ -7,16 +7,18 @@ const ESG = () => {
       <div className='md:grid grid-cols-2 mt-10 p-0'>
         <div className='flex flex-col justify-center border border-t-1 border-r-1 border-b-1 bg-num-blue bg-opacity-10 border-num-indigo p-2'>
           <div className=' ml-14 '>
-            <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>ESG</h1>
+            <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
+              ESG
+            </h1>
 
             <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
               ESG
             </h2>
 
-            <h3 className='-translate-y-10 text-2xl text-num-indigo font-light ml-1'>
+            <h3 className='-translate-y-10 md:text-2xl text-num-indigo font-light ml-1'>
               {`Strategic Consulting`}
             </h3>
-            <p className='text-num-blue w-3/4 '>
+            <p className='text-num-blue md:text-base text-sm  w-3/4 '>
               Navigating Excellence:Your Gateway to Sustainable Living and
               Responsible Business Practices.
             </p>

@@ -20,14 +20,13 @@ const Sectors = () => {
           Sectors
         </h2>
 
-        <h3 className='-translate-y-10 text-2xl text-num-indigo font-light ml-1 mr-1'>
-          {'Expertise across the infrastructure spectrum'}
+        <h3 className='-translate-y-10 md:text-2xl text-num-indigo ml-1 mr-1'>
+          {'Uplifting communities, improving access'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 md:text-xl text-justify mb-4'>
+        <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-4'>
           We are infrastructure experts. Adapting to the needs of the companies
           we serve, is our forte. With close to two decades of experience, we
-          have earned the trust of diverse businesses across the infrastructure
-          spectrum.
+          have earned the trust of diverse businesses across sectors.
         </h4>
       </div>
       <div className='flex md:flex-row flex-col items-baseline justify-center md:ml-14 md:mr-14 space-x-5 space-y-2'>
