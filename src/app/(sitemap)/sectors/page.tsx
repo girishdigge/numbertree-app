@@ -11,96 +11,96 @@ const Page = () => {
       href: '/sectors/aviation',
       description:
         'A modal dialog that interrupts the user with important content and expects a response.',
-      image: '/sectors1/Aviation.jpg',
+      image: '/sectors/Aviation1.jpg',
     },
     {
       title: 'Bridges Structures',
       href: '/sectors/bridges-structures',
       description:
         'For sighted users to preview content available behind a link.',
-      image: '/sectors1/BridgesStructure.jpg',
+      image: '/sectors/BridgesStructure1.jpg',
     },
     {
       title: 'Commercial',
       href: '/sectors/commercial',
       description:
         'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-      image: '/sectors1/Commercial.jpg',
+      image: '/sectors/Commercial1.jpg',
     },
     {
       title: 'Industrial',
       href: '/sectors/industrial',
       description: 'Visually or semantically separates content.',
-      image: '/sectors1/Industrial.jpg',
+      image: '/sectors/Industrial1.jpg',
     },
     {
       title: 'Institutional',
       href: '/sectors/institutional',
       description:
         'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-      image: '/sectors1/Institutional.jpg',
+      image: '/sectors/Institutional1.jpg',
     },
     {
       title: 'Oil Gas',
       href: '/sectors/oil-gas',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors1/OilGas.jpg',
+      image: '/sectors/OilGas1.jpg',
     },
     {
       title: 'Ports',
       href: '/sectors/ports',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors1/Ports.jpg',
+      image: '/sectors/Ports1.jpg',
     },
     {
       title: 'Power Transmission',
       href: '/sectors/power-transmission',
       description:
         'A modal dialog that interrupts the user with important content and expects a response.',
-      image: '/sectors1/PowerTransmission.jpg',
+      image: '/sectors/PowerTransmission1.jpg',
     },
     {
       title: 'Railways Metro',
       href: '/sectors/railways-metro',
       description:
         'For sighted users to preview content available behind a link.',
-      image: '/sectors1/RailwaysMetro.jpg',
+      image: '/sectors/RailwaysMetro1.jpg',
     },
     {
       title: 'Renewable Energy',
       href: '/sectors/renewable-energy',
       description:
         'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-      image: '/sectors1/RenewableEnergy.jpg',
+      image: '/sectors/RenewableEnergy1.jpg',
     },
     {
       title: 'Residential',
       href: '/sectors/residential',
       description: 'Visually or semantically separates content.',
-      image: '/sectors1/Residential.jpg',
+      image: '/sectors/Residential1.jpg',
     },
     {
       title: 'Roads Highways',
       href: '/sectors/roads-highways',
       description:
         'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-      image: '/sectors1/RoadsHighways.jpg',
+      image: '/sectors/RoadsHighways1.jpg',
     },
     {
       title: 'Thermal Power Plant',
       href: '/sectors/thermal-power-plant',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors1/ThermalPowerPlant.jpg',
+      image: '/sectors/ThermalPowerPlant1.jpg',
     },
     {
       title: 'Water Infrastructure',
       href: '/sectors/water-infrastructure',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors1/WaterInfrastructure.jpg',
+      image: '/sectors/WaterInfrastructure1.jpg',
     },
   ];
 
@@ -117,7 +117,7 @@ const Page = () => {
       </div>
       <div className='relative'>
         <Image
-          src={'/sectors/banner.png'}
+          src={'/sectors/OilGas.jpg'}
           height={768}
           width={1920}
           alt='services banner'

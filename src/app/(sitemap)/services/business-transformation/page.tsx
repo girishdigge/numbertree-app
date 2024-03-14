@@ -80,7 +80,7 @@ const Page = () => {
           src={`/services/BusinessTransformation1.jpg`}
           width={2046}
           height={768}
-          alt='Business transformaiton'
+          alt='Business transformation'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
@@ -88,7 +88,7 @@ const Page = () => {
             <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
-                Business Transformaiton
+                Business Transformation
               </h1>
               <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
                 We provide cost management services on a wide range of
@@ -127,26 +127,46 @@ const Page = () => {
             </h2>
             <div className='flex w-full gap-2'>
               <div className=''>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Claim Management
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Contract Administration
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Project Monitoring & Control
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Transaction Advisory
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
+                {/* <Link href='/services/business-transformation'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Business Transformation
+                  </Button>
+                </Link> */}
+                <Link href='/services/claim-management'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Claim Management
+                  </Button>
+                </Link>
+
+                <Link href='/services/contract-administration'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Contract Administration
+                  </Button>
+                </Link>
+
+                <Link href='/services/project-monitoring-and-control'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Project Monitoring & Control
+                  </Button>
+                </Link>
+
+                <Link href='/services/quantity-survey'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Quantity Survey
+                  </Button>
+                </Link>
+
+                <Link href='/services/techno-commercial-audit'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Techno Commercial Audit
+                  </Button>
+                </Link>
+
+                <Link href='/services/transaction-advisory'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Transaction Advisory
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -176,6 +196,11 @@ const Page = () => {
             </h2>
             <div className='flex flex-col gap-2'>
               <div className='w-1/2'>
+                {/* <Link href='/services/business-transformation'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Business Transformation
+                  </Button>
+                </Link> */}
                 <Link href='/services/claim-management'>
                   <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
                     Claim Management
@@ -383,7 +408,7 @@ const Page = () => {
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image
-              src={`/sectors1/Aviation.jpg`}
+              src={`/sectors/Aviation1.jpg`}
               height={800}
               width={800}
               alt='sector'
@@ -406,7 +431,7 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors1/BridgesStructure.jpg`}
+                src={`/sectors/BridgesStructure1.jpg`}
                 height={400}
                 width={400}
                 alt='project'
@@ -429,7 +454,7 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors1/Commercial.jpg`}
+                src={`/sectors/Commercial1.jpg`}
                 height={400}
                 width={400}
                 alt='project'
@@ -452,7 +477,7 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors1/Industrial.jpg`}
+                src={`/sectors/Industrial1.jpg`}
                 height={400}
                 width={400}
                 alt='project'
@@ -475,7 +500,7 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors1/Institutional.jpg`}
+                src={`/sectors/Institutional1.jpg`}
                 height={400}
                 width={400}
                 alt='project'

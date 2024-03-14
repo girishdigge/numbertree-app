@@ -9,7 +9,57 @@ import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
+import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+
 const Page = () => {
+  const projects = [
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      name: 'New Parliment',
+      location: 'Delhi',
+      content:
+        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      link: '/numbertree',
+      image: '/projects/newParliment1.jpg', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      name: 'Guwahati Airport',
+      location: 'Guwahati',
+
+      content:
+        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
+      link: '/quantity-survey',
+      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      name: 'Mercedes Benz',
+      location: 'Pune',
+
+      content:
+        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      link: '/numbertree',
+      image: '/projects/merc.jpg', // replace with the actual image path
+    },
+    {
+      heading: "Empowering Tomorrow's infrastructure",
+      name: 'Leh Airport',
+      location: 'Leh',
+
+      content:
+        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
+      link: '/numbertree',
+      image: '/projects/leh.jpg', // replace with the actual image path
+    },
+  ];
   return (
     <div className=''>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
@@ -27,7 +77,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/services/QuantitySurvey2.jpg`}
+          src={`/services/QuantitySurvey1.jpg`}
           width={2046}
           height={768}
           alt='Quantity Survey'
@@ -35,7 +85,7 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-xl font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
                 Quantity Survey
@@ -77,26 +127,46 @@ const Page = () => {
             </h2>
             <div className='flex w-full gap-2'>
               <div className=''>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Claim Management
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Contract Administration
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Project Monitoring & Control
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Transaction Advisory
-                </Button>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
+                <Link href='/services/business-transformation'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Business Transformation
+                  </Button>
+                </Link>
+                <Link href='/services/claim-management'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Claim Management
+                  </Button>
+                </Link>
+
+                <Link href='/services/contract-administration'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Contract Administration
+                  </Button>
+                </Link>
+
+                <Link href='/services/project-monitoring-and-control'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Project Monitoring & Control
+                  </Button>
+                </Link>
+
+                {/* <Link href='/services/quantity-survey'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Quantity Survey
+                  </Button>
+                </Link> */}
+
+                <Link href='/services/techno-commercial-audit'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Techno Commercial Audit
+                  </Button>
+                </Link>
+
+                <Link href='/services/transaction-advisory'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Transaction Advisory
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -126,26 +196,46 @@ const Page = () => {
             </h2>
             <div className='flex flex-col gap-2'>
               <div className='w-1/2'>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Claim Management
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Contract Administration
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Project Monitoring & Control
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  Transaction Advisory
-                </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
-                  {' '}
-                  Techno Commercial Audit
-                </Button>
+                <Link href='/services/business-transformation'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Business Transformation
+                  </Button>
+                </Link>
+                <Link href='/services/claim-management'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Claim Management
+                  </Button>
+                </Link>
+
+                <Link href='/services/contract-administration'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Contract Administration
+                  </Button>
+                </Link>
+
+                <Link href='/services/project-monitoring-and-control'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Project Monitoring & Control
+                  </Button>
+                </Link>
+
+                {/* <Link href='/services/quantity-survey'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Quantity Survey
+                  </Button>
+                </Link> */}
+
+                <Link href='/services/techno-commercial-audit'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Techno Commercial Audit
+                  </Button>
+                </Link>
+
+                <Link href='/services/transaction-advisory'>
+                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                    Transaction Advisory
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -233,7 +323,13 @@ const Page = () => {
             <p>
               <span className='flex items-center'>
                 <FaArrowRight size={16} className='mr-1' />
-                {`Preparation,Site Survey & Remeasurement of work`}
+                {`Preparation,Site Survey`}
+              </span>
+            </p>
+            <p>
+              <span className='flex items-center'>
+                <FaArrowRight size={16} className='mr-1' />
+                {`Remeasurement of work`}
               </span>
             </p>
             {/* <p>
@@ -255,197 +351,173 @@ const Page = () => {
         {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
           Related Projects
         </h1> */}
-        <div className='flex ml-4 mt-20 mb-2'>
+        <div className='flex ml-14 mt-20 mb-2'>
           <h2 className='  text-2xl text-black font-medium'>
             Related Projects
           </h2>
         </div>
-        <div className='flex md:flex-row flex-col gap-2 mb-4'>
-          <div className='overflow-hidden'>
-            <div className=' group relative overflow-hidden hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
-              <Link href={`/projects/MumbaiDelhiExpressway`}>
-                <Image
-                  src={`/projects/mumbaiDelhiExpressway.jpg`}
-                  height={400}
-                  width={600}
-                  alt='project'
-                  className='group-hover:opacity-90 hover:scale-110 transition duration-500 ease-in-out' // Fade image slightly on hover
-                />
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h2 className='font-bold  md:text-2xl'>
-                        Mumbai Delhi Expressway
-                      </h2>
-                      <h1 className='text-num-orange pb-2 ml-1'>
-                        Mumbai-Delhi
-                      </h1>
+        <Carousel
+          opts={{
+            align: 'start',
+          }}
+          className=' flex items-center justify-center md:ml-14 ml-10 md:w-11/12 w-4/5 relative'
+        >
+          <CarouselContent>
+            {projects.map((project, index) => (
+              <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
+                <div className='relative'>
+                  <Image
+                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    src={project.image}
+                    height={800}
+                    width={1200}
+                    alt='image'
+                  />
+                  <div className='absolute inset-0 flex items-end  md:mt-5 mt-2'>
+                    <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
+                      <div className=' text-white ml-2 flex justify-around'>
+                        <div>
+                          <h3 className='md:text-3xl text-xl font-bold '>
+                            {project.name}
+                          </h3>
+                          <h2 className='text-num-orange ml-1 text-lg font-semibold'>
+                            {project.location}
+                          </h2>
+                        </div>
+                        <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
+                          Read More{`>`}
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </Link>
-            </div>
-          </div>
-          <div className='overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Link href={`/projects/new-parliment`}>
-                <Image
-                  src={`/projects/newParliment.jpg`}
-                  height={400}
-                  width={600}
-                  alt='project'
-                  className='group-hover:opacity-90' // Fade image slightly on hover
-                />
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h2 className='font-bold  md:text-2xl'>New Parliment</h2>
-                      <h1 className='text-num-orange pb-2 ml-1'>Delhi</h1>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className='overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Link href={`/projects/merc-pune`}>
-                <Image
-                  src={`/projects/merc.jpg`}
-                  height={400}
-                  width={600}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90' // Fade image slightly on hover
-                />
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h2 className='font-bold  md:text-2xl'>Mercedes Benz</h2>
-                      <h1 className='text-num-orange pb-2 ml-1'>Pune</h1>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          <CarouselNext className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+        </Carousel>
       </div>
 
       <div className='flex  mt-20'>
-        <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-4 mb-2'>
+        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
           Explore More
         </h2>
       </div>
       <div className='md:grid md:grid-cols-2 gap-1'>
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
+            <Image
+              src={`/sectors/Aviation1.jpg`}
+              height={800}
+              width={800}
+              alt='sector'
+              className='object-contain group-hover:opacity-95' // Fade image slightly on hover
+            />
             <Link href={`/sectors/aviation`}>
-              <Image
-                src={`/sectors1/Aviation.jpg`}
-                height={800}
-                width={800}
-                alt='sector'
-                className='object-contain group-hover:opacity-95' // Fade image slightly on hover
-              />
-            </Link>
-            <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
-              <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                <div className='ml-8'>
-                  <h1 className='text-num-orange ml-1'>Sector</h1>
-                  <h2 className='font-bold pb-2 md:text-2xl'>Aviation</h2>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                  <div className='ml-8'>
+                    <h1 className='text-num-orange ml-1'>Sector</h1>
+                    <h2 className='font-bold pb-2 md:text-2xl'>Aviation</h2>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
         <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors/BridgesStructure1.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/bridges-structures`}>
-                <Image
-                  src={`/sectors1/BridgesStructure.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>
-                      Bridges Structures
-                    </h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Bridges Structures
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className='flex overflow-hidden'>
             <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors/Commercial1.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/commercial`}>
-                <Image
-                  src={`/sectors1/Commercial.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>Commercial</h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Commercial
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors/Industrial1.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/industrial`}>
-                <Image
-                  src={`/sectors1/Industrial.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>Industrial</h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Industrial
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/sectors/Institutional1.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
               <Link href={`/sectors/institutional`}>
-                <Image
-                  src={`/sectors1/Institutional.jpg`}
-                  height={400}
-                  width={400}
-                  alt='project'
-                  className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-                />
-              </Link>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                  <div className='ml-8'>
-                    <h1 className='text-num-orange ml-1'>Sector</h1>
-                    <h2 className='font-bold pb-2  md:text-2xl'>
-                      Institutional
-                    </h2>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Sector</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Institutional
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

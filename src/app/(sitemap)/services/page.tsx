@@ -9,7 +9,7 @@ const Page = () => {
     {
       id: 0,
       name: 'Business Transformation',
-      imageUrl: '/services/BusinessTransformation1.jpg',
+      imageUrl: '/services/BusinessTransformation.jpg',
       content: {
         heading: 'Business Transformation',
         paragraph:
@@ -20,7 +20,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Contract Adiministration',
-      imageUrl: '/services/ContractAdministration1.jpg',
+      imageUrl: '/services/ContractAdministration.jpg',
       content: {
         heading: 'Contract Adiministration',
         paragraph: `As a consulting engineering firm, we understand the importance of
@@ -33,7 +33,7 @@ const Page = () => {
     {
       id: 2,
       name: 'Quantity Survey',
-      imageUrl: '/services/QuantitySurvey1.jpg',
+      imageUrl: '/services/QuantitySurvey.jpg',
       content: {
         heading: 'Quantity Survey',
         paragraph: `In the infrastructure industry, precise and comprehensive
@@ -45,7 +45,7 @@ const Page = () => {
     {
       id: 3,
       name: 'Claim Management',
-      imageUrl: '/services/ClaimManagement1.jpg',
+      imageUrl: '/services/ClaimManagement.jpg',
       content: {
         heading: 'Claim Management',
         paragraph:
@@ -56,7 +56,7 @@ const Page = () => {
     {
       id: 4,
       name: 'Project Monitoring & Control',
-      imageUrl: '/services/ProjectMonCon1.jpg',
+      imageUrl: '/services/ProjectMonCon.jpg',
       content: {
         heading: 'Project Monitoring & Control',
         paragraph:
@@ -67,7 +67,7 @@ const Page = () => {
     {
       id: 5,
       name: 'Techno Commercial Audit',
-      imageUrl: '/services/TechnoComAudit1.jpg',
+      imageUrl: '/services/TechnoComAudit.jpg',
       content: {
         heading: 'Techno Commercial Audit',
         paragraph:
@@ -78,7 +78,7 @@ const Page = () => {
     {
       id: 6,
       name: 'Transction Advisory',
-      imageUrl: '/services/TransactionAdvisory1.jpg',
+      imageUrl: '/services/TransactionAdvisory.jpg',
       content: {
         heading: 'Transction Advisory',
         paragraph:
@@ -100,7 +100,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={'/services/banner.png'}
+          src={'/services/ProjectMonCon1.jpg'}
           width={1920}
           height={768}
           alt='services banner'
@@ -146,7 +146,7 @@ const Page = () => {
                     <Image
                       src={service.imageUrl}
                       width={800}
-                      height={400}
+                      height={600}
                       alt={service.name}
                     />
                     <div className='z-2 absolute inset-0 flex flex-col justify-end '>
