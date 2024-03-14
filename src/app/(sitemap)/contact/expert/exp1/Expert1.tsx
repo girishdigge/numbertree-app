@@ -17,7 +17,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { toast } from '@/components/ui/use-toast';
 import { Checkbox } from '@/components/ui/checkbox';
-
+import { Exp1Message } from '../expertMessage';
 const FormSchema = z.object({
   firstName: z.string().min(2, {
     message: 'reason is required.',
@@ -70,13 +70,15 @@ export function Expert1() {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     toast({
-      title: 'You submitted the following values:',
+      className: 'bg-num-orange text-white text-xl',
+      title: 'Your message sent successfully',
       description: (
-        <pre className='mt-2 w-[340px] rounded-md bg-slate-950 p-4'>
+        <pre className='mt-2 w-[340px] rounded-md bg-num-orange text-xl gap-2 p-4'>
           <code className='text-white'>{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
     });
+    Exp1Message(data);
   }
 
   return (

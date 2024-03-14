@@ -11,96 +11,96 @@ const Page = () => {
       href: '/sectors/aviation',
       description:
         'A modal dialog that interrupts the user with important content and expects a response.',
-      image: '/sectors/Aviation.jpg',
+      image: '/sectors1/Aviation.jpg',
     },
     {
       title: 'Bridges Structures',
       href: '/sectors/bridges-structures',
       description:
         'For sighted users to preview content available behind a link.',
-      image: '/sectors/BridgesStructure.jpg',
+      image: '/sectors1/BridgesStructure.jpg',
     },
     {
       title: 'Commercial',
       href: '/sectors/commercial',
       description:
         'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-      image: '/sectors/Commercial.jpg',
+      image: '/sectors1/Commercial.jpg',
     },
     {
       title: 'Industrial',
       href: '/sectors/industrial',
       description: 'Visually or semantically separates content.',
-      image: '/sectors/Industrial.jpg',
+      image: '/sectors1/Industrial.jpg',
     },
     {
       title: 'Institutional',
       href: '/sectors/institutional',
       description:
         'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-      image: '/sectors/Institutional.jpg',
+      image: '/sectors1/Institutional.jpg',
     },
     {
       title: 'Oil Gas',
       href: '/sectors/oil-gas',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors/OilGas.jpg',
+      image: '/sectors1/OilGas.jpg',
     },
     {
       title: 'Ports',
       href: '/sectors/ports',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors/Ports.jpg',
+      image: '/sectors1/Ports.jpg',
     },
     {
       title: 'Power Transmission',
       href: '/sectors/power-transmission',
       description:
         'A modal dialog that interrupts the user with important content and expects a response.',
-      image: '/sectors/PowerTransmission.jpg',
+      image: '/sectors1/PowerTransmission.jpg',
     },
     {
       title: 'Railways Metro',
       href: '/sectors/railways-metro',
       description:
         'For sighted users to preview content available behind a link.',
-      image: '/sectors/RailwaysMetro.jpg',
+      image: '/sectors1/RailwaysMetro.jpg',
     },
     {
       title: 'Renewable Energy',
       href: '/sectors/renewable-energy',
       description:
         'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-      image: '/sectors/RenewableEnergy.jpg',
+      image: '/sectors1/RenewableEnergy.jpg',
     },
     {
       title: 'Residential',
       href: '/sectors/residential',
       description: 'Visually or semantically separates content.',
-      image: '/sectors/Residential.jpg',
+      image: '/sectors1/Residential.jpg',
     },
     {
       title: 'Roads Highways',
       href: '/sectors/roads-highways',
       description:
         'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-      image: '/sectors/RoadsHighways.jpg',
+      image: '/sectors1/RoadsHighways.jpg',
     },
     {
       title: 'Thermal Power Plant',
       href: '/sectors/thermal-power-plant',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors/ThermalPowerPlant.jpg',
+      image: '/sectors1/ThermalPowerPlant.jpg',
     },
     {
       title: 'Water Infrastructure',
       href: '/sectors/water-infrastructure',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors/WaterInfrastructure.jpg',
+      image: '/sectors1/WaterInfrastructure.jpg',
     },
   ];
 
@@ -144,27 +144,31 @@ const Page = () => {
             of operations.
           </h3>
         </div>
-        <div className='grid grid-cols-2 gap-8 '>
+        <div className='grid grid-cols-2  gap-4 '>
           {sectors.map((sector, index) => (
             <div key={index}>
               <div className='z-1 flex flex-row relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
                 <Link href={sector.href}>
                   <Image
                     src={sector.image}
-                    width={600}
-                    height={600}
+                    width={800}
+                    height={400}
                     alt={sector.title}
                   />
-                  <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
-                    <span className='text-white font-bold'>
-                      Find out more
-                      <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                        {`+`}
-                      </Button>
-                    </span>
-                    <h1 className='text-white text-2xl font-bold '>
-                      {sector.title}
-                    </h1>
+                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                      <div className='ml-8'>
+                        <h1 className='text-white text-2xl font-bold '>
+                          {sector.title}
+                        </h1>
+                        <span className='text-white font-bold'>
+                          Find out more
+                          <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
+                            {`+`}
+                          </Button>
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </Link>
               </div>
@@ -172,11 +176,11 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <div className='flex flex-row justify-center text-num-indigo font-bold mt-10 mb-4'>
+      <div className='flex flex-row  justify-center text-num-indigo font-bold mt-10 mb-4'>
         <h1 className='text-2xl'>Explore more</h1>
       </div>
-      <div className='w-11/12  flex flex-rows items-center justify-center ml-10 gap-6 mb-10'>
-        <div className='flex flex-col w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
+      <div className='w-11/12  flex md:flex-row flex-col items-center  justify-center md:ml-10 ml-2 gap-6 mb-10'>
+        <div className='flex md:flex-col md:w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
           <Link href={`/services`}>
             <div className='flex flex-row '>
               <Image
@@ -193,16 +197,15 @@ const Page = () => {
                 </h2>
               </div>
             </div>
-            <div className='w-11/12 flex flex-row-reverse ml-4 mb-4'>
+            <div className='w-11/12 flex flex-row-reverse text-justify ml-4 mb-4'>
               We partner with clients across the infrastructure landscape to
               help them deliver projects, of varying of complexity and at
-              various stages of development. At the same time, we help them
-              adopt solutions that make a positive & lasting impact in their
-              field of operations.
+              various stages of development.We help them adopt solutions that
+              make a positive & lasting impact in their field of operations.
             </div>
           </Link>
         </div>
-        <div className='flex flex-col w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
+        <div className='flex flex-col md:w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
           <Link href={`/projects`}>
             <div className='flex flex-row '>
               <Image
@@ -219,7 +222,7 @@ const Page = () => {
                 </h2>
               </div>
             </div>
-            <div className='w-11/12 flex flex-row-reverse ml-4 mb-4'>
+            <div className='w-11/12 flex flex-row-reverse text-justify ml-4 mb-4'>
               We are experts at handling and serving projects which are
               multidimensional, large scale and complex.We approach each project
               with an aim to positively impact communities around us and help

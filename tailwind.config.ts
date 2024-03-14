@@ -38,6 +38,7 @@ const config = {
             dark: '#4a4a49',
           },
           blue: '#7b9ece',
+          teal: '#007F73',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

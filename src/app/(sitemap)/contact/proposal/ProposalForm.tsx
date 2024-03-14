@@ -17,6 +17,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { toast } from '@/components/ui/use-toast';
 import { Checkbox } from '@/components/ui/checkbox';
+import { sendProposal } from './SendProposal';
 
 const FormSchema = z.object({
   reason: z.string().min(2, {
@@ -58,13 +59,15 @@ export function ProposalForm() {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     toast({
-      title: 'You submitted the following values:',
+      className: 'bg-num-orange text-white text-xl',
+      title: 'Your proposal request sent successfully',
       description: (
-        <pre className='mt-2 w-[340px] rounded-md bg-slate-950 p-4'>
+        <pre className='mt-2 w-[340px] rounded-md bg-num-orange text-xl gap-2 p-4'>
           <code className='text-white'>{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
     });
+    sendProposal(data);
   }
 
   return (

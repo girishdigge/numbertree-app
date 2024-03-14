@@ -162,16 +162,20 @@ const Page = () => {
                       className='object-contain'
                     />
 
-                    <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
-                      <span className='text-white font-bold'>
-                        Find out more
-                        <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                          {`+`}
-                        </Button>
-                      </span>
-                      <h1 className='text-white text-2xl font-bold '>
-                        {projects.location}
-                      </h1>
+                    <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                      <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                        <div className='ml-8'>
+                          <h1 className='text-white text-2xl font-bold '>
+                            {projects.location}
+                          </h1>
+                          <span className='text-white font-bold'>
+                            Find out more
+                            <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
+                              {`+`}
+                            </Button>
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </Link>
                 </div>
@@ -196,27 +200,31 @@ const Page = () => {
                   className='object-contain'
                 />
 
-                <div className='ml-6 z-10 absolute flex flex-col-reverse inset-0 '>
-                  <span className='text-white font-bold'>
-                    Find out more
-                    <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                      {`+`}
-                    </Button>
-                  </span>
-                  <h1 className='text-white text-2xl font-bold '>
-                    {projects.location}
-                  </h1>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-white text-2xl font-bold '>
+                        {projects.location}
+                      </h1>
+                      <span className='text-white font-bold'>
+                        Find out more
+                        <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
+                          {`+`}
+                        </Button>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </Link>
             </div>
           </div>
         ))}
       </div>
-      <div className='flex flex-row justify-center text-num-indigo font-bold mt-10 mb-4'>
+      <div className='flex flex-row justify-center  text-num-indigo font-bold mt-10 mb-4'>
         <h1 className='text-2xl'>Explore more</h1>
       </div>
-      <div className='w-11/12  flex flex-rows items-center justify-center ml-10 gap-6 mb-10'>
-        <div className='flex flex-col w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
+      <div className='w-11/12  flex md:flex-row flex-col items-center  justify-center md:ml-10 ml-2 gap-6 mb-10'>
+        <div className='flex md:flex-col md:w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
           <Link href={`/services`}>
             <div className='flex flex-row '>
               <Image
@@ -233,16 +241,15 @@ const Page = () => {
                 </h2>
               </div>
             </div>
-            <div className='w-11/12 flex flex-row-reverse ml-4 mb-4'>
+            <div className='w-11/12 flex flex-row-reverse text-justify ml-4 mb-4'>
               We partner with clients across the infrastructure landscape to
               help them deliver projects, of varying of complexity and at
-              various stages of development. At the same time, we help them
-              adopt solutions that make a positive & lasting impact in their
-              field of operations.
+              various stages of development.We help them adopt solutions that
+              make a positive & lasting impact in their field of operations.
             </div>
           </Link>
         </div>
-        <div className='flex flex-col w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
+        <div className='flex flex-col md:w-1/2 border border-1 border-b-4 border-b-num-orange shadow-xl bg-white text-num-indigo hover:bg-num-indigo hover:border-b-0 hover:text-white'>
           <Link href={`/sectors`}>
             <div className='flex flex-row '>
               <Image
@@ -259,7 +266,7 @@ const Page = () => {
                 </h2>
               </div>
             </div>
-            <div className='w-11/12 flex flex-row-reverse ml-4 mb-4'>
+            <div className='w-11/12 flex flex-row-reverse text-justify ml-4 mb-4'>
               We are infrastructure experts. Adapting to the needs of the
               companies we serve, is our forte.With close to two decades of
               experience, we have earned the trust of diverse businesses across
