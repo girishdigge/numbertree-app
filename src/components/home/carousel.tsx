@@ -108,7 +108,7 @@ const Carousel = () => {
                     <h2 className='md:text-7xl w-11/12 pl-2  text-sm '>
                       {slide.title}
                     </h2>
-                    <p className='md:text-2xl ml-4  md:pt-5  text-xs md:w-5/12 w-3/4'>
+                    <p className='md:text-2xl ml-4  md:pt-5  text-xs md:w-2/3 w-3/4'>
                       {slide.content}
                     </p>
                   </div>
