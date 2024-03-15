@@ -94,11 +94,11 @@ const Page = () => {
                 construction projects across sectors in infrastructure.
               </p>
             </div>
-            {/* <Link href={`/`}>
+            <Link href={`/`}>
               <Button className='w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white'>
                 Read More
               </Button>
-            </Link> */}
+            </Link>
             <Link href={`/contact`}>
               <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
                 Contact Us
