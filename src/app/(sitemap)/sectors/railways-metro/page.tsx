@@ -80,27 +80,28 @@ const Page = () => {
           alt='Railways & Metro'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-base font-light text-sm ml-4 mb-2'>
+            <h2 className='md:text-base font-light text-sm ml-4 mb-2 animate-fadeInLeft'>
               TRANSPORTATION
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Railways & Metro
               </h1>
-              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2'>
-                We provide cost management services on a wide range of
-                construction projects across sectors in infrastructure.
+              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
+                Driving development through consulting and audit services for
+                railways and metros, vital lifelines shaping modern
+                infrastructure and economic progress.
               </p>
             </div>
-            <Link href={`/sectors`}>
-              <Button className='w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white'>
+            <Link href={`/sectors`} className=''>
+              <Button className='w-40 ml-4 bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
                 All sectors
               </Button>
             </Link>
-            <Link href={`/contact`}>
-              <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+            <Link href={`/contact`} className='animate-fadeInUp'>
+              <Button className='w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
             </Link>
