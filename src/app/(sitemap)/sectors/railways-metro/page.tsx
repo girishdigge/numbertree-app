@@ -1,6 +1,7 @@
 import GetInTouch from '@/components/sitemap/getintouch';
 import { Button } from '@/components/ui/button';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { FaQuoteRight } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
@@ -24,37 +25,37 @@ const Page = () => {
       name: 'Mumbai Metro Project ',
       location: 'Mumbai',
       link: '/#',
-      image: '/projects/mumbaiMetro.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Western Freight Corridor',
       location: 'Western',
       link: '/#',
-      image: '/projects/westernCorridor.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Eastern Freight Corridor ',
       location: 'Eastern',
       link: '/#',
-      image: '/projects/easternCorridor.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Pune Metro Project ',
       location: 'Pune',
       link: '/#',
-      image: '/projects/puneMetroa.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Etihad Railways',
       location: 'Etihad',
       link: '/#',
-      image: '/projects/etihadRailways.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Red Sea Airport ',
       location: 'Red Sea',
       link: '/#',
-      image: '/projects/redSea.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
   ];
   return (
@@ -94,7 +95,7 @@ const Page = () => {
                 construction projects across sectors in infrastructure.
               </p>
             </div>
-            <Link href={`/contact`}>
+            <Link href={`/`}>
               <Button className='w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white'>
                 Read More
               </Button>
@@ -110,7 +111,7 @@ const Page = () => {
 
       <br />
       <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex   pl-4 flex-col'>
+        <div className='flex  pl-4 flex-col'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-4'>
@@ -308,10 +309,6 @@ const Page = () => {
           </div>
         </div>
         <div className=' flex flex-col items-center  text-justify'>
-          <h1 className='text-5xl text-num-orange flex font-semibold md:w-3/4 w-11/12 mb-8'>
-            TRANSPORTATION
-          </h1>
-          <br />
           <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
             <em>Helping people move faster, safer and sustainably</em>
           </h1>
@@ -344,17 +341,21 @@ const Page = () => {
             <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
               <FaQuoteLeft size={30} className='text-white ' />
               <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
-                {`Our integrated and collaborative approach has helped us serve all
+                <em>
+                  {' '}
+                  {`Our integrated and collaborative approach has helped us serve all
               major transport systems. Our unique expertise enables us to
               deliver high-quality solutions for our clients that pave the way
               for long-lasting benefits to society."`}
+                </em>
               </p>
             </div>
           </div>
-          <h2 className='text-5xl md:w-3/4 w-11/12 flex mt-24  font-semibold text-num-orange mb-4'>
-            RAILWAYS & METRO
-          </h2>
+
           <div className='flex flex-col items-center w-3/4'>
+            <h2 className='text-5xl md:w-3/4  mt-24 underline underline-offset-8 font-semibold text-num-orange mb-4'>
+              Railways & Metro
+            </h2>
             <p className='  md:w-3/4 w-11/12 md:text-3xl text-xs mt-4 mb-8 flex '>
               Rapid urbanization and increasing traffic congestion, has
               necessitated investment in rail and metro infrastructure in the
@@ -389,8 +390,25 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='hidden w-1/4 md:flex '>
+        <div className='hidden w-1/4 md:flex flex-col justify-between '>
           <GetInTouch />
+
+          <div className='bg-white mb-80  bg-opacity-50 w-full font-xl border-2 border-wilmer-orange p-2 pl-16 pr-16'>
+            <div className='flex flex-col  text-wilmer-orange '>
+              <p className='text-xl font-medium  mb-2 '>
+                <em>
+                  {' '}
+                  {`Our integrated and collaborative approach has helped us serve all
+              major transport systems. Our unique expertise enables us to
+              deliver high-quality solutions for our clients that pave the way
+              for long-lasting benefits to society.`}
+                </em>
+              </p>
+              <div className='flex justify-end'>
+                <FaQuoteLeft size={30} className='text-wilmer-orange ' />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className='mt-4'>
@@ -446,7 +464,7 @@ const Page = () => {
         </Carousel>
       </div>
 
-      <div className='flex  mt-20'>
+      <div className='flex  mt-24'>
         <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
           Explore More
         </h2>
