@@ -94,9 +94,9 @@ const Page = () => {
                 construction projects across sectors in infrastructure.
               </p>
             </div>
-            <Link href={`/`}>
+            <Link href={`/sectors`}>
               <Button className='w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white'>
-                Read More
+                All sectors
               </Button>
             </Link>
             <Link href={`/contact`}>
