@@ -83,7 +83,7 @@ const Page = () => {
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
             <h2 className='md:text-base font-light text-sm ml-4 mb-2'>
-              EXPLORE
+              TRANSPORTATION
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
@@ -94,6 +94,11 @@ const Page = () => {
                 construction projects across sectors in infrastructure.
               </p>
             </div>
+            <Link href={`/contact`}>
+              <Button className='w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white'>
+                Read More
+              </Button>
+            </Link>
             <Link href={`/contact`}>
               <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
                 Contact Us
@@ -303,8 +308,8 @@ const Page = () => {
           </div>
         </div>
         <div className=' flex flex-col items-center  text-justify'>
-          <h1 className='text-5xl flex font-semibold md:w-3/4 w-11/12 text-black mb-8'>
-            Transportation
+          <h1 className='text-5xl text-num-orange flex font-semibold md:w-3/4 w-11/12 mb-8'>
+            TRANSPORTATION
           </h1>
           <br />
           <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
@@ -346,7 +351,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <h2 className='text-5xl md:w-3/4 w-11/12 flex mt-24  font-semibold text-black mb-4'>
+          <h2 className='text-5xl md:w-3/4 w-11/12 flex mt-24  font-semibold text-num-orange mb-4'>
             Railways & Metro
           </h2>
           <div className='flex flex-col items-center w-3/4'>
