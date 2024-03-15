@@ -350,66 +350,65 @@ const Page = () => {
               </p>
             </div>
           </div>
-
-          <div className='flex flex-col items-center w-3/4'>
-            <h2 className='md:text-5xl text-2xl md:w-3/4  mt-24 underline underline-offset-8 font-semibold text-num-orange mb-4'>
-              Railways & Metro
-            </h2>
-            <p className='  md:w-3/4 w-11/12 md:text-3xl text-xs mt-4 mb-8 flex '>
-              Rapid urbanization and increasing traffic congestion, has
-              necessitated investment in rail and metro infrastructure in the
-              development of a country.
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs mt-4 mb-8 flex '>
-              Rail networks efficiently move both goods and people, thereby
-              minimizing the strain on congested roadways. The emergence of
-              rapid urban mass transit options like metro systems, has further
-              provided alternative modes of transportation and reduced pressure
-              on surface transport networks.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
-              At Numbertree, we combine engineering techniques with commercial
-              aspects of project to arrive at the best solutions for the
-              challenges faced by this sector. By leveraging our technical
-              acumen, strategic insights, and state-of-the-art methodologies, we
-              empower clients to make informed decisions in real-time, ensuring
-              seamless project progression.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              We have vast experience in handling issues pertaining to
-              development of railway corridor. Furthermore, our quality
-              assurance services have earned accolades for optimizing the
-              systems and processes of numerous multinational corporations,
-              cementing our reputation as a trusted partner in the advancement
-              of infrastructure development.
-            </p>{' '}
-            <br />
-          </div>
         </div>
 
         <div className='hidden w-1/4 md:flex flex-col justify-between '>
           <GetInTouch />
-
-          <div className='bg-white mb-80  bg-opacity-50 w-full font-xl border-2 border-wilmer-orange p-2 pl-16 pr-16'>
-            <div className='flex flex-col  text-wilmer-orange '>
-              <p className='text-xl font-medium  mb-2 '>
-                <em>
-                  {' '}
-                  {`Our integrated and collaborative approach has helped us serve all
-              major transport systems. Our unique expertise enables us to
-              deliver high-quality solutions for our clients that pave the way
-              for long-lasting benefits to society.`}
-                </em>
-              </p>
-              <div className='flex justify-end'>
-                <FaQuoteLeft size={30} className='text-wilmer-orange ' />
-              </div>
+        </div>
+      </div>
+      <div className='flex flex-row text-justify pr-8 ml-8'>
+        <div className='w-1/4'></div>
+        <div className='flex flex-col w-3/5  mr-14'>
+          <h2 className='text-4xl   font-bold  mb-4'>Railways & Metro</h2>
+          <p className='   md:text-3xl text-xs mt-4 mb-8 flex '>
+            Rapid urbanization and increasing traffic congestion, has
+            necessitated investment in rail and metro infrastructure in the
+            development of a country.
+          </p>{' '}
+          <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
+            Rail networks efficiently move both goods and people, thereby
+            minimizing the strain on congested roadways. The emergence of rapid
+            urban mass transit options like metro systems, has further provided
+            alternative modes of transportation and reduced pressure on surface
+            transport networks.
+          </p>{' '}
+          <br />
+          <p className='   md:text-lg text-xs flex mb-8'>
+            At Numbertree, we combine engineering techniques with commercial
+            aspects of project to arrive at the best solutions for the
+            challenges faced by this sector. By leveraging our technical acumen,
+            strategic insights, and state-of-the-art methodologies, we empower
+            clients to make informed decisions in real-time, ensuring seamless
+            project progression.
+          </p>{' '}
+          <br />
+          <p className='   md:text-lg text-xs flex '>
+            We have vast experience in handling issues pertaining to development
+            of railway corridor. Furthermore, our quality assurance services
+            have earned accolades for optimizing the systems and processes of
+            numerous multinational corporations, cementing our reputation as a
+            trusted partner in the advancement of infrastructure development.
+          </p>{' '}
+          <br />
+        </div>
+        <div className='relative w-2/5'>
+          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
+            <p className='text-xl font-medium  mb-2 '>
+              <em>
+                {' '}
+                {`Our integrated and collaborative approach has helped us serve all
+                     major transport systems. Our unique expertise enables us to
+                  deliver high-quality solutions for our clients that pave the way
+                   for long-lasting benefits to society.`}
+              </em>
+            </p>
+            <div className='flex justify-end pt-40'>
+              <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
         </div>
       </div>
+
       <div className='mt-4'>
         {' '}
         {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
