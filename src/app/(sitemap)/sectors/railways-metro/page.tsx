@@ -1,7 +1,6 @@
 import GetInTouch from '@/components/sitemap/getintouch';
 import { Button } from '@/components/ui/button';
 import { FaQuoteLeft } from 'react-icons/fa';
-import { FaQuoteRight } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
@@ -353,7 +352,7 @@ const Page = () => {
           </div>
 
           <div className='flex flex-col items-center w-3/4'>
-            <h2 className='text-5xl md:w-3/4  mt-24 underline underline-offset-8 font-semibold text-num-orange mb-4'>
+            <h2 className='md:text-5xl text-2xl md:w-3/4  mt-24 underline underline-offset-8 font-semibold text-num-orange mb-4'>
               Railways & Metro
             </h2>
             <p className='  md:w-3/4 w-11/12 md:text-3xl text-xs mt-4 mb-8 flex '>
@@ -459,8 +458,8 @@ const Page = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-          <CarouselNext className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          <CarouselPrevious className=' h-14 w-12 text-white  bg-num-orange hover:bg-num-indigo ' />
+          <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
 
