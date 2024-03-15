@@ -359,7 +359,7 @@ const Page = () => {
       <div className='flex flex-row text-justify pr-8 ml-8'>
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
-          <h2 className='text-4xl   font-bold  mb-4'>Railways & Metro</h2>
+          <h2 className='text-3xl   font-bold  mb-4'>Railways & Metro</h2>
           <p className='   md:text-3xl text-xs mt-4 mb-8 flex '>
             Rapid urbanization and increasing traffic congestion, has
             necessitated investment in rail and metro infrastructure in the
