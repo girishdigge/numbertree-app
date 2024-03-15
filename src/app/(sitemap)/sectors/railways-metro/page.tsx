@@ -82,12 +82,14 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-base font-light text-sm ml-4 mb-2'>
+              EXPLORE
+            </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
                 Railways & Metro
               </h1>
-              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
+              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2'>
                 We provide cost management services on a wide range of
                 construction projects across sectors in infrastructure.
               </p>
@@ -300,35 +302,30 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='md:w-1/2 flex flex-col items-center  text-justify'>
-          <h1 className='text-4xl flex justify-center font-semibold md:w-3/4 w-11/12 text-black mb-4'>
+        <div className=' flex flex-col items-center  text-justify'>
+          <h1 className='text-5xl flex font-semibold md:w-3/4 w-11/12 text-black mb-8'>
             Transportation
           </h1>
           <br />
-          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            Helping people move faster, safer and sustainably
+          <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
+            <em>Helping people move faster, safer and sustainably</em>
           </h1>
           <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
               As populations grow, so do demands for safe, expedient and
               cost-effective transportation. We work with clients in India &
               abroad to achieve cost optimization, digitization/BIM and
               efficiency in processes and control in transportation projects.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
               We use our extensive knowledge in techno commercial audit, project
               planning, digital project monitoring, 5D/4D/3D BIM and managing
               transportation systems — to help our clients find smarter, more
               advanced ways to move people from one place to another.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our integrated and collaborative approach has helped us serve all
-              major transport systems. Our unique expertise enables us to
-              deliver high-quality solutions for our clients that pave the way
-              for long-lasting benefits to society.
-            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               Our work across Eastern & Western dedicated freight corridors,
@@ -339,29 +336,34 @@ const Page = () => {
           </div>
           <br />
           <div className='w-4/5 '>
-            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={18} className='text-white ' />
-              <p className='text-lg font-medium ml-6 mr-4 mb-2 w-11/12'>
-                {`"`}
+            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
+              <FaQuoteLeft size={30} className='text-white ' />
+              <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
+                {`Our integrated and collaborative approach has helped us serve all
+              major transport systems. Our unique expertise enables us to
+              deliver high-quality solutions for our clients that pave the way
+              for long-lasting benefits to society."`}
               </p>
             </div>
           </div>
-          <h2 className='text-3xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
+          <h2 className='text-5xl md:w-3/4 w-11/12 flex mt-8  font-semibold text-black mb-4'>
             Railways & Metro
           </h2>
-          <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
+          <div className='flex flex-col items-center w-3/4'>
+            <p className='  md:w-3/4 w-11/12 md:text-3xl text-xs mt-4 mb-8 flex '>
               Rapid urbanization and increasing traffic congestion, has
               necessitated investment in rail and metro infrastructure in the
-              development of a country’s infrastructure. Rail networks
-              efficiently move both goods and people, thereby minimizing the
-              strain on congested roadways. The emergence of rapid urban mass
-              transit options like metro systems, has further provided
-              alternative modes of transportation and reduced pressure on
-              surface transport networks.
+              development of a country.
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs mt-4 mb-8 flex '>
+              Rail networks efficiently move both goods and people, thereby
+              minimizing the strain on congested roadways. The emergence of
+              rapid urban mass transit options like metro systems, has further
+              provided alternative modes of transportation and reduced pressure
+              on surface transport networks.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
               At Numbertree, we combine engineering techniques with commercial
               aspects of project to arrive at the best solutions for the
               challenges faced by this sector. By leveraging our technical
