@@ -71,7 +71,7 @@ const Page = () => {
         <div className='flex flex-col justify-center pl-8 bg-num-blue bg-opacity-30'>
           <h1 className='text-4xl mb-2'>Career at NumberTree</h1>
 
-          <p className='text-xl mt-2 mb-4 w-3/4'>
+          <p className='text-lg mt-2 mb-4 w-3/4'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
             asperiores consequuntur repellendus reprehenderit modi nam incidunt
             totam aperiam, perspiciatis praesentium voluptates dolores velit,
@@ -99,7 +99,7 @@ const Page = () => {
           <div className='absolute -inset-20 flex flex-col justify-center items-end'>
             <div className=' bg-num-indigo p-20 gap-4 flex flex-col w-1/3  text-white'>
               <h1 className='text-xl'>Explore career</h1>
-              <h2 className='text-3xl font-bold'>Life at NumberTree</h2>
+              <h2 className='text-4xl font-bold'>Life at NumberTree</h2>
               <p className='text-justify text-lg'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
                 fugit magnam dolorem.
@@ -125,7 +125,7 @@ const Page = () => {
                 Our Vision
               </h2>
 
-              <h3 className='-translate-y-10 text-xl text-justify  text-num-indigo font-light mt-2'>
+              <h3 className='-translate-y-10 text-lg text-justify  text-num-indigo font-light mt-2'>
                 {
                   'We are enablers of change, for our clients, for our environment & our people such that progress, growth and sustainability go hand in hand.'
                 }
@@ -165,7 +165,7 @@ const Page = () => {
                 Our Mission
               </h2>
 
-              <h3 className='-translate-y-10 text-xl text-justify text-num-indigo font-light mt-2'>
+              <h3 className='-translate-y-10 text-lg text-justify text-num-indigo font-light mt-2'>
                 {
                   'Our mission is to empower businesses with decision making insights to unlock their full potential and help them realize their objective to unlock their full potential.'
                 }
