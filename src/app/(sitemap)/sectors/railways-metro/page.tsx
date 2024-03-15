@@ -346,7 +346,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <h2 className='text-5xl md:w-3/4 w-11/12 flex mt-8  font-semibold text-black mb-4'>
+          <h2 className='text-5xl md:w-3/4 w-11/12 flex mt-24  font-semibold text-black mb-4'>
             Railways & Metro
           </h2>
           <div className='flex flex-col items-center w-3/4'>
