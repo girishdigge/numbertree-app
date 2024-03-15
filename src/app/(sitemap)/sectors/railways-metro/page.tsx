@@ -94,11 +94,11 @@ const Page = () => {
                 construction projects across sectors in infrastructure.
               </p>
             </div>
-            <Link href={`/`}>
+            {/* <Link href={`/`}>
               <Button className='w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white'>
                 Read More
               </Button>
-            </Link>
+            </Link> */}
             <Link href={`/contact`}>
               <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
                 Contact Us
@@ -360,7 +360,7 @@ const Page = () => {
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <h2 className='text-3xl   font-bold  mb-4'>Railways & Metro</h2>
-          <p className='   md:text-3xl text-xs mt-4 mb-8 flex '>
+          <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
             Rapid urbanization and increasing traffic congestion, has
             necessitated investment in rail and metro infrastructure in the
             development of a country.
