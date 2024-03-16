@@ -15,7 +15,7 @@ const KeyFacts = () => {
               Key Facts
             </h2>
           </div>
-          <p className='text-md text-num-blue font-medium w-4/5'>
+          <p className='text-md text-num-blue md:text-lg font-medium w-4/5'>
             We are commited to working with you collaboratively to understand
             your goals and create a strategy that will achieve them.
           </p>

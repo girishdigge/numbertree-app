@@ -18,7 +18,7 @@ const Career = () => {
           <h1 className='md:text-2xl  text-white  mb-4'>
             We promise growth, inclusion and diversity
           </h1>
-          <p className='text-white md:text-base text-sm w-4/5'>
+          <p className='text-white md:text-lg text-sm w-4/5'>
             People are at the heart of our services. At Numbertree, you can
             create relationships that support your development and a career path
             that fits your goals. Come explore a world of opportunities in

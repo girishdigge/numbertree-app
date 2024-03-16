@@ -52,11 +52,11 @@ const Testimonials = () => {
         <h2 className='-translate-y-12 ml-28 text-4xl text-num-orange font-medium'>
           Testimonials
         </h2>
-        <h3 className='-translate-y-10 md:text-2xl  font-light ml-14 mt-2'>
+        <h3 className='-translate-y-10 md:text-xl  font-medium ml-16 mt-2'>
           {'Striving for excellence in service '}
         </h3>
       </div>
-      <h4 className='w-3/4 -translate-y-4 md:text-base text-sm text-justify mb-4'>
+      <h4 className='w-3/4 -translate-y-4 md:text-lg text-sm text-justify mb-4'>
         <p>
           We offer seamless and integrated service, from inception through to
           completion and handover, we are managements eyes at the project. We
@@ -83,7 +83,7 @@ const Testimonials = () => {
                     <h1 className='h-4 text-8xl  text-left text-num-indigo'>
                       “
                     </h1>
-                    <p className='px-8 py-4 text-xl text-center text-num-indigo'>
+                    <p className='px-8 py-4 text-lg text-center text-num-indigo'>
                       {test.content}
                     </p>
                     <div className='h-3 text-8xl text-right text-num-indigo'>

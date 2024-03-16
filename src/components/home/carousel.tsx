@@ -97,7 +97,7 @@ const Carousel = () => {
               <div className='bg-opacity-50 md:w-4/5 h-full md:p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
-                  <h2 className='md:text-lg font-light text-sm ml-4 '>
+                  <h2 className='md:text-base font-light text-sm ml-4 '>
                     {`WE ARE`}
                   </h2>
                   {/* <Separator
@@ -105,10 +105,10 @@ const Carousel = () => {
                     className='bg-num-orange w-1 h-10'
                   /> */}
                   <div className=' border-l-4 border-num-orange'>
-                    <h2 className='md:text-7xl w-11/12 pl-2  text-sm '>
+                    <h2 className='md:text-7xl w-5/6 pl-2  text-sm '>
                       {slide.title}
                     </h2>
-                    <p className='md:text-2xl ml-4  md:pt-5  text-xs md:w-2/3 w-3/4'>
+                    <p className='md:text-lg ml-4  md:pt-5  text-xs md:w-2/3 w-3/4'>
                       {slide.content}
                     </p>
                   </div>

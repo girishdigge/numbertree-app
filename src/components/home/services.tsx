@@ -91,7 +91,7 @@ const Services = () => {
           Services
         </h2>
 
-        <h3 className='-translate-y-10 md:text-2xl ml-1'>
+        <h3 className='-translate-y-10 md:text-xl font-medium ml-1'>
           {'Empowering decision making to transform businesses '}
         </h3>
         <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-4'>

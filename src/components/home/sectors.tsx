@@ -20,7 +20,7 @@ const Sectors = () => {
           Sectors
         </h2>
 
-        <h3 className='-translate-y-10 md:text-2xl text-num-indigo ml-1 mr-1'>
+        <h3 className='-translate-y-10 md:text-xl font-medium text-num-indigo ml-1 mr-1'>
           {'Uplifting communities, improving access'}
         </h3>
         <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-4'>

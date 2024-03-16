@@ -57,7 +57,7 @@ const Projects = () => {
           Projects
         </h2>
 
-        <h3 className='-translate-y-10 md:text-2xl  font-light ml-1 mt-2'>
+        <h3 className='-translate-y-10 md:text-xl  font-medium ml-1 mt-2'>
           {'Taking projects from complexity to profitability'}
         </h3>
         <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-6'>
@@ -84,15 +84,15 @@ const Projects = () => {
                   <div className='absolute inset-0 flex  '>
                     <div className='bg-black md:bg-opacity-50 bg-opacity-40 md:w-1/2 w-1/2  md:p-5'>
                       <div className='md:flex hidden flex-row mt-4 ml-2'>
-                        <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 font-semibold'>
+                        <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 md:mb-2 font-semibold'>
                           OUR LATEST WORK
                         </h1>
                       </div>
                       <div className=' text-white ml-2'>
-                        <h2 className='md:text-2xl md:flex hidden font-light text-sm  mb-2'>
+                        <h2 className='md:text-xl md:flex hidden font-light text-sm  mb-2'>
                           {project.heading}
                         </h2>
-                        <h3 className='md:text-6xl text-xl font-bold '>
+                        <h3 className='md:text-4xl text-xl font-bold '>
                           {project.location}
                         </h3>
                         <hr className='w-3/5 border-num-orange border-2 md:mt-3 md:mb-3' />

@@ -15,10 +15,10 @@ const ESG = () => {
               ESG
             </h2>
 
-            <h3 className='-translate-y-10 md:text-2xl text-num-indigo font-light ml-1'>
+            <h3 className='-translate-y-10 md:text-xl text-num-indigo font-medium ml-1'>
               {`Strategic Consulting`}
             </h3>
-            <p className='text-num-blue md:text-base text-sm  w-3/4 '>
+            <p className='text-num-blue md:text-lg text-sm  w-3/4 '>
               Navigating Excellence:Your Gateway to Sustainable Living and
               Responsible Business Practices.
             </p>

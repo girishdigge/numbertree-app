@@ -21,14 +21,14 @@ const Connect = () => {
               <h2 className=' md:text-3xl text-xl font-medium md:mb-3 mb-1 text-white'>
                 Empowering Tomorrow{`'`}s infrastructure
               </h2>
-              <p className=' text-white'>
+              <p className=' text-white md:stext-lg'>
                 We perform Construction Site Audits of EPC & BOT Road Projects,
                 Tunnel & Bridge Projects, Industrial Projects, Metro & Rail
                 Projects, Water Treatment Plants, Transmission and Distribution
                 projects, Oil & Gas projects, Power Projects, Real Estate –
                 Residential...
               </p>
-              <div className='flex flex-row-reverse mt-10 mr-4'>
+              <div className='flex flex-row-reverse mt-6 mr-4'>
                 <Button className='w-40 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
                   Connect{`>`}
                 </Button>
@@ -52,11 +52,11 @@ const Connect = () => {
               <h2 className='md:text-3xl text-xl  md:mb-3 mb-1 font-medium text-white'>
                 Without Boundaries
               </h2>
-              <p className='w-4/5 text-white'>
+              <p className='w-4/5 text-white md:text-lg'>
                 Pioneering intellectual direction focused on the significant
                 issues shaping both the present and the future.
               </p>
-              <div className='flex flex-row-reverse mr-4 md:mt-20'>
+              <div className='flex flex-row-reverse mr-4 md:mt-14'>
                 <Button className='w-40 mt-3 bg-num-indigo  border-0 hover:bg-num-orange'>
                   Explore{`>`}
                 </Button>
