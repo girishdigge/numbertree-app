@@ -21,40 +21,34 @@ import {
 const Page = () => {
   const projects = [
     {
-      name: 'Mumbai Metro Project ',
+      name: '1.	Mumbai Delhi Expressway package ',
       location: 'Mumbai',
       link: '/#',
-      image: '/projects/mumbaiMetro.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Western Freight Corridor',
-      location: 'Western',
+      name: '2.	Delhi-Vadodara Greenfield Alignment ',
+      location: ' Delhi (NH148N),(Package 20)',
       link: '/#',
-      image: '/projects/westernCorridor.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Eastern Freight Corridor ',
-      location: 'Eastern',
+      name: 'Suryapet Khammam Road',
+      location: 'Tamil Nadu',
       link: '/#',
-      image: '/projects/easternCorridor.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Pune Metro Project ',
-      location: 'Pune',
+      name: 'Davangere Haveri Highway  ',
+      location: 'Karnataka Project (DHHP)',
       link: '/#',
-      image: '/projects/puneMetroa.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Etihad Railways',
-      location: 'Etihad',
+      name: 'Manmad ',
+      location: 'Malegaon Toll, Maharashtra ',
       link: '/#',
-      image: '/projects/etihadRailways.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Red Sea Airport ',
-      location: 'Red Sea',
-      link: '/#',
-      image: '/projects/redSea.jpg', // replace with the actual image path
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
   ];
   return (
@@ -70,7 +64,7 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Sectors</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Roads & Highways</p>
+        <p className='font-bold text-num-indigo'>Road & Highways</p>
       </div>
       <div className='relative '>
         <Image
@@ -80,20 +74,24 @@ const Page = () => {
           alt='Roads & Highways'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
+              TRANSPORTATION
+            </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+              <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Roads & Highways
               </h1>
-              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
-                We provide cost management services on a wide range of
-                construction projects across sectors in infrastructure.
-              </p>
+              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'></p>
             </div>
-            <Link href={`/contact`}>
-              <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+            <Link href={`/sectors`} className=''>
+              <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
+                All sectors
+              </Button>
+            </Link>
+            <Link href={`/contact`} className='animate-fadeInUp'>
+              <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
             </Link>
@@ -103,7 +101,7 @@ const Page = () => {
 
       <br />
       <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex   pl-4 flex-col'>
+        <div className='flex  pl-4 flex-col'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-4'>
@@ -300,35 +298,26 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='md:w-1/2 flex flex-col items-center  text-justify'>
-          <h1 className='text-4xl flex justify-center font-semibold md:w-3/4 w-11/12 text-black mb-4'>
-            Transportation
-          </h1>
-          <br />
-          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            Helping people move faster, safer and sustainably
+        <div className=' flex flex-col items-center  text-justify'>
+          <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
+            <em>Helping people move faster, safer and sustainably</em>
           </h1>
           <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
               As populations grow, so do demands for safe, expedient and
               cost-effective transportation. We work with clients in India &
               abroad to achieve cost optimization, digitization/BIM and
               efficiency in processes and control in transportation projects.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
               We use our extensive knowledge in techno commercial audit, project
               planning, digital project monitoring, 5D/4D/3D BIM and managing
               transportation systems — to help our clients find smarter, more
               advanced ways to move people from one place to another.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our integrated and collaborative approach has helped us serve all
-              major transport systems. Our unique expertise enables us to
-              deliver high-quality solutions for our clients that pave the way
-              for long-lasting benefits to society.
-            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               Our work across Eastern & Western dedicated freight corridors,
@@ -339,52 +328,72 @@ const Page = () => {
           </div>
           <br />
           <div className='w-4/5 '>
-            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={18} className='text-white ' />
-              <p className='text-lg font-medium ml-6 mr-4 mb-2 w-11/12'>
-                {`"`}
+            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
+              <FaQuoteLeft size={30} className='text-white ' />
+              <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
+                <em>
+                  {' '}
+                  {`Our integrated and collaborative approach has helped us serve all
+              major transport systems. Our unique expertise enables us to
+              deliver high-quality solutions for our clients that pave the way
+              for long-lasting benefits to society."`}
+                </em>
               </p>
             </div>
           </div>
-          <h2 className='text-3xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
-            Railways & Metro
-          </h2>
-          <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Rapid urbanization and increasing traffic congestion, has
-              necessitated investment in rail and metro infrastructure in the
-              development of a country’s infrastructure. Rail networks
-              efficiently move both goods and people, thereby minimizing the
-              strain on congested roadways. The emergence of rapid urban mass
-              transit options like metro systems, has further provided
-              alternative modes of transportation and reduced pressure on
-              surface transport networks.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              At Numbertree, we combine engineering techniques with commercial
-              aspects of project to arrive at the best solutions for the
-              challenges faced by this sector. By leveraging our technical
-              acumen, strategic insights, and state-of-the-art methodologies, we
-              empower clients to make informed decisions in real-time, ensuring
-              seamless project progression.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              We have vast experience in handling issues pertaining to
-              development of railway corridor. Furthermore, our quality
-              assurance services have earned accolades for optimizing the
-              systems and processes of numerous multinational corporations,
-              cementing our reputation as a trusted partner in the advancement
-              of infrastructure development.
-            </p>{' '}
-            <br />
-          </div>
         </div>
 
-        <div className='hidden w-1/4 md:flex '>
+        <div className='hidden w-1/4 md:flex flex-col justify-between '>
           <GetInTouch />
         </div>
+      </div>
+      <div className='flex flex-row text-justify pr-8 ml-8'>
+        <div className='w-1/4'></div>
+        <div className='flex flex-col w-3/5  mr-14'>
+          <h2 className='text-3xl   font-bold  mb-4'>Road & Highways </h2>
+          <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
+            As catalysts for economic growth and facilitators of connectivity,
+            roads are indispensable for development. It not only augments job
+            creation but also enhances community cohesion.
+          </p>{' '}
+          <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
+            With increasing urbanization, expanding, investing and upgrading
+            road infrastructure has never been more crucial.
+          </p>{' '}
+          <br />
+          <p className='   md:text-lg text-xs flex mb-8'>
+            {` At Numbertree, we've pioneered a collaborative and innovative
+            approach to support businesses in spearheading some of India's most
+            ambitious road and highway projects. We understand the diverse
+            challenges inherent in such projects, irrespective of scale or
+            complexity, we provide our professional and well thought services at
+            every stage of development.`}
+          </p>{' '}
+          <br />
+          <p className='   md:text-lg text-xs flex '>
+            {`Our flagship service of techno commercial audit along with contract administration, quantity survey and delay analysis are designed for this sector delivering quality and precision work consistently. We have saved costs and avoided time overrun in multiple expressways and roads projects. `}{' '}
+          </p>{' '}
+          <br />
+        </div>
+        <div className='md:flex relative hidden w-2/5'>
+          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
+            <p className='text-xl font-medium  mb-2 '>
+              <em>
+                {' '}
+                {`Our integrated and collaborative approach has helped us serve all
+                     major transport systems. Our unique expertise enables us to
+                  deliver high-quality solutions for our clients that pave the way
+                   for long-lasting benefits to society.`}
+              </em>
+            </p>
+            <div className='flex justify-end pt-40'>
+              <FaQuoteLeft size={40} className='text-wilmer-orange ' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='md:hidden p-16 flex  justify-center '>
+        <GetInTouch />
       </div>
       <div className='mt-4'>
         {' '}
@@ -417,7 +426,7 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-3xl text-xl font-bold '>
+                          <h3 className='md:text-2xl text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
@@ -434,12 +443,12 @@ const Page = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-          <CarouselNext className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          <CarouselPrevious className=' h-14 w-12 text-white  bg-num-orange hover:bg-num-indigo ' />
+          <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
 
-      <div className='flex  mt-20'>
+      <div className='flex  mt-24'>
         <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
           Explore More
         </h2>
@@ -455,11 +464,11 @@ const Page = () => {
               className='object-contain group-hover:opacity-95 ' // Fade image slightly on hover
             />
             <Link href={`/services/techno-commercial-audit`}>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col pb-5'>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Service</h1>
-                    <h2 className='font-bold pb-2 md:text-2xl'>
+                    <h2 className='font-bold  md:text-2xl'>
                       Techno Commercial Audit
                     </h2>
                   </div>
@@ -469,7 +478,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
+        <div className='grid grid-cols-2 gap-2  align-end '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
@@ -484,8 +493,31 @@ const Page = () => {
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
+                      <h2 className='font-bold mb-2  md:text-2xl'>
                         Contract Administration
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/services/ProjectMonCon.jpg`}
+                height={400}
+                width={400}
+                alt=''
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
+              <Link href={`/services/project-monitoring-and-control`}>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Service</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Project Monitoring & Control
                       </h2>
                     </div>
                   </div>
@@ -532,29 +564,6 @@ const Page = () => {
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
                         3D/4D/5D BIM
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className='flex overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Image
-                src={`/services/BusinessTransformation.jpg`}
-                height={400}
-                width={400}
-                alt='Business Transformation'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-              />
-              <Link href={`/services/business-transformation`}>
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
-                        Business Transformation
                       </h2>
                     </div>
                   </div>

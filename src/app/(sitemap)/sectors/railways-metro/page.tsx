@@ -80,13 +80,13 @@ const Page = () => {
           alt='Railways & Metro'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black text-white'>
+        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-base font-light text-sm ml-4 mb-2 animate-fadeInLeft'>
+            <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
               TRANSPORTATION
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
+              <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Railways & Metro
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
@@ -96,12 +96,12 @@ const Page = () => {
               </p>
             </div>
             <Link href={`/sectors`} className=''>
-              <Button className='w-40 ml-4 bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
+              <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
                 All sectors
               </Button>
             </Link>
             <Link href={`/contact`} className='animate-fadeInUp'>
-              <Button className='w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
+              <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
             </Link>
@@ -392,7 +392,7 @@ const Page = () => {
           </p>{' '}
           <br />
         </div>
-        <div className='relative w-2/5'>
+        <div className='md:flex relative hidden w-2/5'>
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
@@ -409,7 +409,9 @@ const Page = () => {
           </div>
         </div>
       </div>
-
+      <div className='md:hidden p-16 flex  justify-center '>
+        <GetInTouch />
+      </div>
       <div className='mt-4'>
         {' '}
         {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>
@@ -441,7 +443,7 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-3xl text-xl font-bold '>
+                          <h3 className='md:text-2xl text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
@@ -479,11 +481,11 @@ const Page = () => {
               className='object-contain group-hover:opacity-95 ' // Fade image slightly on hover
             />
             <Link href={`/services/techno-commercial-audit`}>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col pb-5'>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Service</h1>
-                    <h2 className='font-bold pb-2 md:text-2xl'>
+                    <h2 className='font-bold  md:text-2xl'>
                       Techno Commercial Audit
                     </h2>
                   </div>
@@ -493,7 +495,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
+        <div className='grid grid-cols-2 gap-2  align-end '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
@@ -508,7 +510,7 @@ const Page = () => {
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
+                      <h2 className='font-bold mb-2  md:text-2xl'>
                         Contract Administration
                       </h2>
                     </div>

@@ -77,22 +77,25 @@
 .animate-fadeIn {
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 2s;
 }
 
 .animate-fadeInUp {
   opacity: 0;
-  transform: translateX(400px);
-  animation: fadeInUp 2s ease-in-out forwards;
+  transform: translateX(100px);
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
 
 .animate-fadeInRight {
   opacity: 0;
-  transform: translateX(400px);
+  transform: translateX(300px);
   animation: fadeInRight 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 .animate-fadeInLeft {
   opacity: 0;
-  transform: translateX(-40px);
+  transform: translateX(-50px);
   animation: fadeInLeft 2s ease-in-out forwards;
 }
 
