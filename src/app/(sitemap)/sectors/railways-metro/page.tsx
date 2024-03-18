@@ -23,37 +23,33 @@ const Page = () => {
     {
       name: 'Mumbai Metro Project ',
       location: 'Mumbai',
-      link: '/#',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Western Freight Corridor',
       location: 'Western',
-      link: '/#',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
+    },
+
+    {
+      name: 'Pune Metro Project ',
+      location: 'Pune',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
+    },
+
+    {
+      name: 'Delhi Metro ',
+      location: 'New Delhi',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Eastern Freight Corridor ',
       location: 'Eastern',
-      link: '/#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Pune Metro Project ',
-      location: 'Pune',
-      link: '/#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Etihad Railways',
-      location: 'Etihad',
-      link: '/#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Red Sea Airport ',
-      location: 'Red Sea',
-      link: '/#',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
   ];
@@ -331,9 +327,9 @@ const Page = () => {
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               Our work across Eastern & Western dedicated freight corridors,
-              Pune metro, Mumbai metro, Etihad railways, Red Sea Airport – Saudi
-              Arabia, Delhi metro has helped us deliver comprehensive solutions
-              that connect people and places in forward-thinking ways.
+              Pune Metro, Mumbai Metro, Etihad Railways, Red Sea Airport – Saudi
+              Arabia, Leh Airport, Expressways & Roads has helped these clients
+              connect people and places in forward-thinking ways.
             </p>{' '}
           </div>
           <br />
@@ -377,10 +373,7 @@ const Page = () => {
           <p className='   md:text-lg text-xs flex mb-8'>
             At Numbertree, we combine engineering techniques with commercial
             aspects of project to arrive at the best solutions for the
-            challenges faced by this sector. By leveraging our technical acumen,
-            strategic insights, and state-of-the-art methodologies, we empower
-            clients to make informed decisions in real-time, ensuring seamless
-            project progression.
+            challenges faced by this sector.
           </p>{' '}
           <br />
           <p className='   md:text-lg text-xs flex '>
@@ -396,11 +389,10 @@ const Page = () => {
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
-                {' '}
-                {`Our integrated and collaborative approach has helped us serve all
-                     major transport systems. Our unique expertise enables us to
-                  deliver high-quality solutions for our clients that pave the way
-                   for long-lasting benefits to society.`}
+                By leveraging our technical acumen, strategic insights, and
+                state-of-the-art methodologies, we empower clients to make
+                informed decisions in real-time, ensuring seamless project
+                progression.
               </em>
             </p>
             <div className='flex justify-end pt-40'>
@@ -450,9 +442,11 @@ const Page = () => {
                             {project.location}
                           </h2>
                         </div>
-                        <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
-                          Read More{`>`}
-                        </Button>
+                        <Link href={project.link}>
+                          <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
+                            Read More{`>`}
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>

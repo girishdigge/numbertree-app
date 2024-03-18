@@ -21,33 +21,33 @@ import {
 const Page = () => {
   const projects = [
     {
-      name: '1.	Mumbai Delhi Expressway package ',
-      location: 'Mumbai',
-      link: '/#',
+      name: 'Kartavya Path ',
+      location: 'India Gate, New Delhi ',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: '2.	Delhi-Vadodara Greenfield Alignment ',
+      name: '2.	Delhi-Vadodara Greenfield',
       location: ' Delhi (NH148N),(Package 20)',
-      link: '/#',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Suryapet Khammam Road',
-      location: 'Tamil Nadu',
-      link: '/#',
+      location: 'Khammam,Tamil Nadu',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Davangere Haveri Highway  ',
-      location: 'Karnataka Project (DHHP)',
-      link: '/#',
+      location: 'Davengere,Karnataka',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Manmad ',
       location: 'Malegaon Toll, Maharashtra ',
-      link: '/#',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
   ];
@@ -74,7 +74,7 @@ const Page = () => {
           alt='Roads & Highways'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
+        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-10 bg-black text-white'>
           <div className='ml-10'>
             <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
               TRANSPORTATION
@@ -362,16 +362,19 @@ const Page = () => {
           </p>{' '}
           <br />
           <p className='   md:text-lg text-xs flex mb-8'>
-            {` At Numbertree, we've pioneered a collaborative and innovative
-            approach to support businesses in spearheading some of India's most
-            ambitious road and highway projects. We understand the diverse
-            challenges inherent in such projects, irrespective of scale or
-            complexity, we provide our professional and well thought services at
-            every stage of development.`}
-          </p>{' '}
+            The Mumbai-Delhi expressway, The Kartavya Path (earlier known as Raj
+            path), innumerable Toll ways have all benefitted from our services.
+            We understand the diverse challenges inherent in such projects,
+            irrespective of scale or complexity, we provide our professional and
+            well thought services at every stage of development.
+          </p>
           <br />
           <p className='   md:text-lg text-xs flex '>
-            {`Our flagship service of techno commercial audit along with contract administration, quantity survey and delay analysis are designed for this sector delivering quality and precision work consistently. We have saved costs and avoided time overrun in multiple expressways and roads projects. `}{' '}
+            Our flagship service of techno commercial audit along with contract
+            administration, quantity survey and delay analysis are designed for
+            this sector delivering quality and precision work consistently. We
+            have saved costs and avoided time overrun in multiple expressways
+            and roads projects.
           </p>{' '}
           <br />
         </div>
@@ -380,10 +383,7 @@ const Page = () => {
             <p className='text-xl font-medium  mb-2 '>
               <em>
                 {' '}
-                {`Our integrated and collaborative approach has helped us serve all
-                     major transport systems. Our unique expertise enables us to
-                  deliver high-quality solutions for our clients that pave the way
-                   for long-lasting benefits to society.`}
+                {`At Numbertree, we've pioneered a collaborative and innovative approach to support businesses in spearheading some of India's most ambitious road and highway projects.`}
               </em>
             </p>
             <div className='flex justify-end pt-40'>
@@ -433,9 +433,11 @@ const Page = () => {
                             {project.location}
                           </h2>
                         </div>
-                        <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
-                          Read More{`>`}
-                        </Button>
+                        <Link href={project.link}>
+                          <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
+                            Read More{`>`}
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
