@@ -21,40 +21,46 @@ import {
 const Page = () => {
   const projects = [
     {
-      name: 'Mumbai Metro Project ',
-      location: 'Mumbai',
-      link: '/#',
-      image: '/projects/mumbaiMetro.jpg', // replace with the actual image path
+      name: 'Jagdishpur Haldia Pipe Line - Phase 1',
+      location: 'Gaya-Bihar',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Western Freight Corridor',
-      location: 'Western',
-      link: '/#',
-      image: '/projects/westernCorridor.jpg', // replace with the actual image path
+      name: 'Dahej Nagothane Ethane O&G',
+      location: 'Panvel-Mumbai',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Eastern Freight Corridor ',
-      location: 'Eastern',
-      link: '/#',
-      image: '/projects/easternCorridor.jpg', // replace with the actual image path
+      name: 'Diesel Oil and Gas Project Bhubaneshwar',
+      location: 'Orissa',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Pune Metro Project ',
-      location: 'Pune',
-      link: '/#',
-      image: '/projects/puneMetroa.jpg', // replace with the actual image path
+      name: 'Auraiya - Phulpur section Pipeline',
+      location: 'Kanpur, Uttar Pradesh',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Etihad Railways',
-      location: 'Etihad',
-      link: '/#',
-      image: '/projects/etihadRailways.jpg', // replace with the actual image path
+      name: 'Infra-1 LPG import terminal facility ',
+      location: 'Haldia, West Bengal',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Red Sea Airport ',
-      location: 'Red Sea',
-      link: '/#',
-      image: '/projects/redSea.jpg', // replace with the actual image path
+      name: 'Mangla intra field pipeline',
+      location: 'Barmer, Rajasthan',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
+    },
+    {
+      name: 'Koradi Coal Mines',
+      location: 'Koradi',
+      link: '#',
+      image: '/projects/newParliment.jpg', // replace with the actual image path
     },
   ];
   return (
@@ -80,20 +86,28 @@ const Page = () => {
           alt='Oil & Gas'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-40 bg-black text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
+              URBAN INFRASTRUCTURE
+            </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+              <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Oil & Gas
               </h1>
-              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
-                We provide cost management services on a wide range of
-                construction projects across sectors in infrastructure.
+              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
+                The Oil & Gas sector is operating on the peak and the need for
+                resources is growing every day. We Help Oil & Gas companies
+                tighten their processes in order to succeed in future.
               </p>
             </div>
-            <Link href={`/contact`}>
-              <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+            <Link href={`/sectors`} className=''>
+              <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
+                All sectors
+              </Button>
+            </Link>
+            <Link href={`/contact`} className='animate-fadeInUp'>
+              <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
             </Link>
@@ -103,7 +117,7 @@ const Page = () => {
 
       <br />
       <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex   pl-4 flex-col'>
+        <div className='flex  pl-4 flex-col'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-4'>
@@ -172,9 +186,9 @@ const Page = () => {
                     Renewable Energy
                   </Button>
                 </Link>
-                <Link href={`/sectors/residential`}>
+                <Link href={`/sectors/oil & Gas`}>
                   <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
+                    Oil & Gas
                   </Button>
                 </Link>
                 <Link href={`/sectors/roads-highways`}>
@@ -271,9 +285,9 @@ const Page = () => {
                     Renewable Energy
                   </Button>
                 </Link>
-                <Link href={`/sectors/residential`}>
+                <Link href={`/sectors/oil & Gas`}>
                   <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
+                    Oil & Gas
                   </Button>
                 </Link>
                 <Link href={`/sectors/roads-highways`}>
@@ -300,91 +314,100 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='md:w-1/2 flex flex-col items-center  text-justify'>
-          <h1 className='text-4xl flex justify-center font-semibold md:w-3/4 w-11/12 text-black mb-4'>
-            Transportation
-          </h1>
-          <br />
-          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            Helping people move faster, safer and sustainably
+        <div className=' flex flex-col items-center  text-justify'>
+          <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
+            <em>Powering Progress in Infrastructure Development</em>
           </h1>
           <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              As populations grow, so do demands for safe, expedient and
-              cost-effective transportation. We work with clients in India &
-              abroad to achieve cost optimization, digitization/BIM and
-              efficiency in processes and control in transportation projects.
+            <h2 className='text-2xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-8'>
+              With rising global energy demand and evolving environmental
+              policies, oil and gas as well as power & utilities are faced with
+              delivering reliable, affordable, and secure energy supplies, all
+              while transitioning to cleaner energy in the long term.
+            </h2>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
+              Our strategic insight while working on various projects in the
+              sector helps these companies address the challenges of today and
+              turn their focus to a more sustainable future.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              We use our extensive knowledge in techno commercial audit, project
-              planning, digital project monitoring, 5D/4D/3D BIM and managing
-              transportation systems — to help our clients find smarter, more
-              advanced ways to move people from one place to another.
-            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our integrated and collaborative approach has helped us serve all
-              major transport systems. Our unique expertise enables us to
-              deliver high-quality solutions for our clients that pave the way
-              for long-lasting benefits to society.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our work across Eastern & Western dedicated freight corridors,
-              Pune metro, Mumbai metro, Etihad railways, Red Sea Airport – Saudi
-              Arabia, Delhi metro has helped us deliver comprehensive solutions
-              that connect people and places in forward-thinking ways.
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs  '>
+              We provide a range of services to energy clients, including
+              project and programme management, project controls, digital
+              project management, construction management and advisory services.
+              It is through the breadth of our services and expertise that we
+              add value to our clients.
             </p>{' '}
           </div>
           <br />
           <div className='w-4/5 '>
-            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={18} className='text-white ' />
-              <p className='text-lg font-medium ml-6 mr-4 mb-2 w-11/12'>
-                {`"`}
+            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
+              <FaQuoteLeft size={30} className='text-white ' />
+              <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
+                <em>
+                  {' '}
+                  {`We guide our clients in making informed decisions to build business resilience that will ultimately drive a positive impact – on their business, people and the environment."`}
+                </em>
               </p>
             </div>
           </div>
-          <h2 className='text-3xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
-            Railways & Metro
-          </h2>
-          <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Rapid urbanization and increasing traffic congestion, has
-              necessitated investment in rail and metro infrastructure in the
-              development of a country’s infrastructure. Rail networks
-              efficiently move both goods and people, thereby minimizing the
-              strain on congested roadways. The emergence of rapid urban mass
-              transit options like metro systems, has further provided
-              alternative modes of transportation and reduced pressure on
-              surface transport networks.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              At Numbertree, we combine engineering techniques with commercial
-              aspects of project to arrive at the best solutions for the
-              challenges faced by this sector. By leveraging our technical
-              acumen, strategic insights, and state-of-the-art methodologies, we
-              empower clients to make informed decisions in real-time, ensuring
-              seamless project progression.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              We have vast experience in handling issues pertaining to
-              development of railway corridor. Furthermore, our quality
-              assurance services have earned accolades for optimizing the
-              systems and processes of numerous multinational corporations,
-              cementing our reputation as a trusted partner in the advancement
-              of infrastructure development.
-            </p>{' '}
-            <br />
-          </div>
         </div>
 
-        <div className='hidden w-1/4 md:flex '>
+        <div className='hidden w-1/4 md:flex flex-col justify-between '>
           <GetInTouch />
         </div>
+      </div>
+      <div className='flex flex-row text-justify pr-8 ml-8'>
+        <div className='w-1/4'></div>
+        <div className='flex flex-col w-3/5  mr-14'>
+          <h2 className='text-3xl   font-bold  mb-4'>Oil & Gas</h2>
+          <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
+            We understand the challenges that are facing the oil and gas
+            industry. Pressure to reduce carbon emissions, volatile commodity
+            prices, changing demand patterns, financing and regulations are all
+            having significant impact. This environment is difficult for
+            organization to assess and make change.
+          </p>{' '}
+          <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
+            Our professionals support businesses across the oil and gas
+            industry, from global corporations, independent and national oil
+            companies, as well as refining and oil field services.
+          </p>{' '}
+          <br />
+          <p className='   md:text-lg text-xs flex mb-8'>
+            We can help them grow through our transaction advisory services ,
+            bring efficiency to operations through our consulting engineering
+            and audit services , as well manage risk . We aim to future-proof
+            businesses, helping to make them resilient and adapt to emerging
+            challenges.
+          </p>
+          <br />
+          <p className='   md:text-lg text-xs flex'>
+            Other Sectors in energy we serve.
+          </p>
+          <span className='text-num-blue font-medium underline'>
+            <Link href={`/sectors/thermal-power-plant`}>
+              Mining, Thermal & Nuclear.
+            </Link>
+          </span>
+          <br />
+        </div>
+        <div className='md:inline relative hidden w-2/5'>
+          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
+            <p className='text-xl font-medium  mb-2 '>
+              <em> {``}</em>
+            </p>
+            <div className='flex justify-end pt-40'>
+              <FaQuoteLeft size={40} className='text-wilmer-orange ' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='md:hidden p-16 flex  justify-center '>
+        <GetInTouch />
       </div>
       <div className='mt-4'>
         {' '}
@@ -417,16 +440,18 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-3xl text-xl font-bold '>
+                          <h3 className='md:text-2xl text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
                             {project.location}
                           </h2>
                         </div>
-                        <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
-                          Read More{`>`}
-                        </Button>
+                        <Link href={project.link}>
+                          <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
+                            Read More{`>`}
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -434,12 +459,12 @@ const Page = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-          <CarouselNext className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          <CarouselPrevious className=' h-14 w-12 text-white  bg-num-orange hover:bg-num-indigo ' />
+          <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
 
-      <div className='flex  mt-20'>
+      <div className='flex  mt-24'>
         <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
           Explore More
         </h2>
@@ -455,11 +480,11 @@ const Page = () => {
               className='object-contain group-hover:opacity-95 ' // Fade image slightly on hover
             />
             <Link href={`/services/techno-commercial-audit`}>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col pb-5'>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Service</h1>
-                    <h2 className='font-bold pb-2 md:text-2xl'>
+                    <h2 className='font-bold  md:text-2xl'>
                       Techno Commercial Audit
                     </h2>
                   </div>
@@ -469,7 +494,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
+        <div className='grid grid-cols-2 gap-2  align-end '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
@@ -484,7 +509,7 @@ const Page = () => {
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
+                      <h2 className='font-bold mb-2  md:text-2xl'>
                         Contract Administration
                       </h2>
                     </div>
@@ -494,21 +519,44 @@ const Page = () => {
             </div>
           </div>
           <div className='flex overflow-hidden'>
-            <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/services/QuantitySurvey.jpg`}
+                src={`/services/ProjectMonCon.jpg`}
                 height={400}
                 width={400}
-                alt='quantity-survey'
+                alt=''
                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
               />
-              <Link href={`/services/quantity-survey`}>
+              <Link href={`/services/project-monitoring-and-control`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
-                        Quantity Survey
+                        Project Monitoring & Control
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/services/ClaimManagement.jpg`}
+                height={400}
+                width={400}
+                alt='claim management'
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
+              <Link href={`/services/claim-management`}>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Service</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Claim Management
                       </h2>
                     </div>
                   </div>
@@ -532,29 +580,6 @@ const Page = () => {
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
                         3D/4D/5D BIM
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className='flex overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Image
-                src={`/services/BusinessTransformation.jpg`}
-                height={400}
-                width={400}
-                alt='Business Transformation'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-              />
-              <Link href={`/services/business-transformation`}>
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
-                        Business Transformation
                       </h2>
                     </div>
                   </div>
