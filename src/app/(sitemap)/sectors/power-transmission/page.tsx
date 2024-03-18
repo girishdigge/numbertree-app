@@ -444,7 +444,7 @@ const Page = () => {
           Explore More
         </h2>
       </div>
-      <div className='md:grid md:grid-cols-2 gap-1'>
+      <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image

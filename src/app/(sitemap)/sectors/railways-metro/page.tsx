@@ -325,11 +325,81 @@ const Page = () => {
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our work across Eastern & Western dedicated freight corridors,
-              Pune Metro, Mumbai Metro, Etihad Railways, Red Sea Airport – Saudi
-              Arabia, Leh Airport, Expressways & Roads has helped these clients
-              connect people and places in forward-thinking ways.
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs  '>
+              Our work across{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Eastern
+                </Link>
+              </span>{' '}
+              &{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Western
+                </Link>
+              </span>{' '}
+              dedicated freight corridors,{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Pune Metro
+                </Link>
+              </span>{' '}
+              ,
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Mumbai Metro
+                </Link>
+              </span>{' '}
+              ,
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Etihad Railways
+                </Link>
+              </span>{' '}
+              ,{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Red Sea Airport – Saudi Arabia
+                </Link>
+              </span>{' '}
+              ,{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Leh Airport
+                </Link>
+              </span>{' '}
+              ,
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Expressways & Roads
+                </Link>
+              </span>{' '}
+              has helped these clients connect people and places in
+              forward-thinking ways.
             </p>{' '}
           </div>
           <br />
@@ -385,7 +455,7 @@ const Page = () => {
           </p>{' '}
           <br />
         </div>
-        <div className='md:flex relative hidden w-2/5'>
+        <div className='md:inline relative hidden w-2/5'>
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
@@ -464,7 +534,7 @@ const Page = () => {
           Explore More
         </h2>
       </div>
-      <div className='md:grid md:grid-cols-2 gap-1'>
+      <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image

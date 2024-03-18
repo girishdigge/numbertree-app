@@ -21,21 +21,21 @@ import {
 const Page = () => {
   const projects = [
     {
-      name: 'Captain of Ports ',
+      name: 'Captain of Ports',
       location: 'Goa',
-      link: '/#',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
-      name: 'Cochin port Trust  ',
-      location: 'Cochin',
-      link: '/#',
+      name: 'Cochin port Trust',
+      location: 'Cochin,Kerala',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
     {
       name: 'Karwar Naval Base',
-      location: 'Karnataka',
-      link: '/#',
+      location: 'Karwar,Karnataka',
+      link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },
   ];
@@ -62,16 +62,19 @@ const Page = () => {
           alt='Ports'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
+        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-40 bg-black text-white'>
           <div className='ml-10'>
             <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
               TRANSPORTATION
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Ports
+                Ports & Maritime
               </h1>
-              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'></p>
+              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
+                Ports are gateways to regions, countries and transport modes. We
+                understand the challenges of this sector
+              </p>
             </div>
             <Link href={`/sectors`} className=''>
               <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
@@ -307,11 +310,81 @@ const Page = () => {
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our work across Eastern & Western dedicated freight corridors,
-              Pune metro, Mumbai metro, Etihad railways, Red Sea Airport – Saudi
-              Arabia, Delhi metro has helped us deliver comprehensive solutions
-              that connect people and places in forward-thinking ways.
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs  '>
+              Our work across{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Eastern
+                </Link>
+              </span>{' '}
+              &{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Western
+                </Link>
+              </span>{' '}
+              dedicated freight corridors,{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Pune Metro
+                </Link>
+              </span>{' '}
+              ,
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Mumbai Metro
+                </Link>
+              </span>{' '}
+              ,
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Etihad Railways
+                </Link>
+              </span>{' '}
+              ,{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Red Sea Airport – Saudi Arabia
+                </Link>
+              </span>{' '}
+              ,{' '}
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Leh Airport
+                </Link>
+              </span>{' '}
+              ,
+              <span>
+                <Link
+                  href={'#'}
+                  className='text-num-blue font-medium underline'
+                >
+                  Expressways & Roads
+                </Link>
+              </span>{' '}
+              has helped these clients connect people and places in
+              forward-thinking ways.
             </p>{' '}
           </div>
           <br />
@@ -321,10 +394,7 @@ const Page = () => {
               <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
                 <em>
                   {' '}
-                  {`Our integrated and collaborative approach has helped us serve all
-              major transport systems. Our unique expertise enables us to
-              deliver high-quality solutions for our clients that pave the way
-              for long-lasting benefits to society."`}
+                  {`Our integrated and collaborative approach has helped us serve all major transport systems. Our unique expertise enables us to deliver high-quality services for our clients that pave the way for long-lasting benefits to society."`}
                 </em>
               </p>
             </div>
@@ -339,9 +409,6 @@ const Page = () => {
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <h2 className='text-3xl   font-bold  mb-4'>Ports</h2>
-          {/* <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
-            
-          </p>{' '} */}
           <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
             Ports and their operations play a pivotal role in sustaining the
             economy. However, Today, ports face a number of intricate
@@ -356,7 +423,7 @@ const Page = () => {
             systems to enhance operational efficiency.
           </p>{' '}
           <br />
-          <p className='   md:text-lg text-xs flex '>
+          <p className='   md:text-lg text-xs flex mb-8'>
             What sets us apart is our commitment to understanding unique needs
             of our clients, offering customised solutions that addresses those
             pain points of. By leveraging innovation and our expertise, we
@@ -365,7 +432,7 @@ const Page = () => {
           </p>{' '}
           <br />
         </div>
-        <div className='md:flex relative hidden w-2/5'>
+        <div className='md:inline relative hidden w-2/5'>
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
@@ -420,9 +487,11 @@ const Page = () => {
                             {project.location}
                           </h2>
                         </div>
-                        <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
-                          Read More{`>`}
-                        </Button>
+                        <Link href={project.link}>
+                          <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
+                            Read More{`>`}
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -440,7 +509,7 @@ const Page = () => {
           Explore More
         </h2>
       </div>
-      <div className='md:grid md:grid-cols-2 gap-1'>
+      <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image
@@ -515,29 +584,6 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/services/ProjectMonCon.jpg`}
-                height={400}
-                width={400}
-                alt=''
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-              />
-              <Link href={`/services/project-monitoring-and-control`}>
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
-                        Project Monitoring & Control
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className='flex overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Image
                 src={`/services/ClaimManagement.jpg`}
                 height={400}
                 width={400}
@@ -551,6 +597,29 @@ const Page = () => {
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
                         Claim Management
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/services/ProjectMonCon.jpg`}
+                height={400}
+                width={400}
+                alt=''
+                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+              />
+              <Link href={`/services/project-monitoring-and-control`}>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Service</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Project Monitoring & Control
                       </h2>
                     </div>
                   </div>
