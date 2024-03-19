@@ -426,14 +426,14 @@ const Page = () => {
           <br />
         </div>
         <div className='md:inline relative hidden w-2/5'>
-          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
+          {/* <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em> {``}</em>
             </p>
             <div className='flex justify-end pt-40'>
               <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='md:hidden p-16 flex  justify-center '>
