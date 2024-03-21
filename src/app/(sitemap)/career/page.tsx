@@ -33,10 +33,10 @@ const Page = () => {
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-0 bg-black  text-white'>
           <div className='ml-10'>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight '>
                 Career
               </h1>
-              <p className=' md:text-xl text-xs font-medium ml-4 md:mb-2'>
+              <p className=' md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
                 Get in touch with our global experts to discover how NumberTree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.
@@ -68,7 +68,7 @@ const Page = () => {
         </div>
       </div>
       <div className='grid grid-cols-2 '>
-        <div className='flex flex-col justify-center pl-8 bg-num-blue bg-opacity-30'>
+        <div className='flex flex-col justify-center pl-8 '>
           <h1 className='text-4xl mb-2'>Career at NumberTree</h1>
 
           <p className='text-lg mt-2 mb-4 w-3/4'>
@@ -79,11 +79,11 @@ const Page = () => {
             quasi voluptas maiores odio blanditiis. Asperiores,
           </p>
 
-          <Link href={`/career`}>
+          {/* <Link href={`/career`}>
             <Button className='w-40 text-lg bg-num-indigo  hover:bg-num-orange'>
               Read More
             </Button>
-          </Link>
+          </Link> */}
         </div>
         <Image src={'/career/career1.jpg'} height={600} width={800} alt='img' />
       </div>
@@ -113,7 +113,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 bg-gray-100 pt-8 pb-8'>
+      <div className='grid grid-cols-2 bg-gray-20 pt-8 pb-8'>
         <div className='flex flex-col justify-center '>
           <div className='ml-10   w-4/5'>
             <div>
@@ -146,7 +146,7 @@ const Page = () => {
           className=''
         />
       </div>
-      <div className='grid grid-cols-2 bg-gray-100 pt-8 pb-8'>
+      <div className='grid grid-cols-2 bg-gray-20 pt-8 pb-8'>
         <Image
           src={'/career/mission.jpg'}
           height={600}

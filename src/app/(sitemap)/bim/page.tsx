@@ -476,6 +476,107 @@ const Page = () => {
           </p>
         </div>
       </div> */}
+      <div>
+        <div className='flex  mt-20'>
+          <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
+            Latest Insights
+          </h2>
+        </div>
+        <div className='flex justify-center items-center mb-20'>
+          <div className='grid grid-cols-3 '>
+            <div className='  flex flex-col items-center justify-center'>
+              <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+                <Image
+                  src={`/career/blog.jpg`}
+                  width={400}
+                  height={400}
+                  alt='business transformation'
+                  className='object-contain mt-10'
+                />
+                <Link href={`/career`}>
+                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                      <div className='ml-8'>
+                        <h1 className='text-num-orange ml-1'>Insight</h1>
+                        <h2 className='font-bold pb-2  md:text-2xl'>
+                          Insight Title
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <h2 className='text-xl w-3/4 font-bold mt-2 mb-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </h2>
+              <p className='w-3/4 text-justify mb-10'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                fugit magnam dolorem commodi. adipisicing elit.
+              </p>
+            </div>
+            <div className='  flex flex-col items-center justify-center'>
+              <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+                <Image
+                  src={`/career/blog.jpg`}
+                  width={400}
+                  height={400}
+                  alt='business transformation'
+                  className='object-contain mt-10'
+                />
+                <Link href={`/career`}>
+                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                      <div className='ml-8'>
+                        <h1 className='text-num-orange ml-1'>Insight</h1>
+                        <h2 className='font-bold pb-2  md:text-2xl'>
+                          Insight Title
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <h2 className='text-xl w-3/4 font-bold mt-2 mb-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </h2>
+              <p className='w-3/4 text-justify mb-10'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                fugit magnam dolorem commodi. adipisicing elit.
+              </p>
+            </div>
+            <div className='  flex flex-col items-center justify-center'>
+              <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+                <Image
+                  src={`/career/blog.jpg`}
+                  width={400}
+                  height={400}
+                  alt='business transformation'
+                  className='object-contain mt-10'
+                />
+                <Link href={`/career`}>
+                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                      <div className='ml-8'>
+                        <h1 className='text-num-orange ml-1'>Insight</h1>
+                        <h2 className='font-bold pb-2  md:text-2xl'>
+                          Insight Title
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <h2 className='text-xl w-3/4 font-bold mt-2 mb-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </h2>
+              <p className='w-3/4 text-justify mb-10'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                fugit magnam dolorem commodi. adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
