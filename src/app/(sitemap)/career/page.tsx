@@ -85,7 +85,7 @@ const Page = () => {
             </Button>
           </Link> */}
         </div>
-        <Image src={'/career/career1.jpg'} height={600} width={800} alt='img' />
+        <Image src={'/career/career2.jpg'} height={600} width={800} alt='img' />
       </div>
       <div className=' pt-10'>
         <div className='relative w-11/12'>

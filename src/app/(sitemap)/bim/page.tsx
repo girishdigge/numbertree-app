@@ -38,17 +38,19 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-lg font-light text-sm ml-4 mb-2 animate-fadeInLeft'>
+              EXPLORE
+            </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
+              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Building Information Modelling
               </h1>
-              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
+              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
                 We push BIM harder, enhancing collaboration, creativity and
                 knowledge sharing on every project
               </p>
             </div>
-            <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
+            <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
               Contact Us
             </Button>
           </div>
