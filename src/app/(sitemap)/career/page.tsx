@@ -78,12 +78,11 @@ const Page = () => {
             suscipit animi veritatis possimus molestiae tenetur ut illo earum
             quasi voluptas maiores odio blanditiis. Asperiores,
           </p>
-
-          {/* <Link href={`/career`}>
+          <Link href={`/career/jobs`}>
             <Button className='w-40 text-lg bg-num-indigo  hover:bg-num-orange'>
               Read More
             </Button>
-          </Link> */}
+          </Link>
         </div>
         <Image src={'/career/career2.jpg'} height={600} width={800} alt='img' />
       </div>
@@ -104,7 +103,7 @@ const Page = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
                 fugit magnam dolorem.
               </p>
-              <Link href={`/career`}>
+              <Link href={`/career/life-at-numbertree`}>
                 <Button className='w-40 text-lg bg-num-orange  hover:bg-white hover:text-num-orange'>
                   Read More
                 </Button>

@@ -34,7 +34,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num2-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Energy
@@ -50,8 +50,9 @@ const Sectors = () => {
                 <Image
                   height={212}
                   width={232}
-                  src={`/logo/s01.png`}
+                  src={`/logo/s11.png`}
                   alt='hovered image'
+                  className='pb-1'
                 />
               ) : (
                 <div className='p-4 pb-0'>
@@ -70,7 +71,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num2-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Urban Development
@@ -87,8 +88,9 @@ const Sectors = () => {
                   <Image
                     height={212}
                     width={232}
-                    src={`/logo/s02.png`}
+                    src={`/logo/s22.png`}
                     alt='hovered image'
+                    className='pb-2'
                   />
                 ) : (
                   <div className='p-4 pb-0'>
@@ -108,7 +110,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num2-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Transportation
@@ -125,8 +127,9 @@ const Sectors = () => {
                   <Image
                     height={212}
                     width={232}
-                    src={`/logo/s03.png`}
+                    src={`/logo/s33.png`}
                     alt='hovered image'
+                    className='pb-1'
                   />
                 ) : (
                   <div className='p-4 pb-0'>

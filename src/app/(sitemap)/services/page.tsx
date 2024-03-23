@@ -20,7 +20,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Contract Adiministration',
-      imageUrl: '/services/ContractAdministration.jpg',
+      imageUrl: '/services/ContractAdministration2.jpg',
       content: {
         heading: 'Contract Adiministration',
         paragraph: `As a consulting engineering firm, we understand the importance of
@@ -100,12 +100,12 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={'/services/ProjectMonCon1.jpg'}
+          src={'/services/banner.jpg'}
           width={1920}
           height={768}
           alt='services banner'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-40 bg-black  text-white'>
           <div className='ml-10'>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
@@ -141,7 +141,7 @@ const Page = () => {
           <div className='grid md:grid-cols-2 gap-8 '>
             {services.map((service, index) => (
               <div key={index}>
-                <div className='z-1 flex flex-row relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
+                <div className='z-1 flex flex-row  hover:scale-115 transform transition-all duration-500 ease-in-out'>
                   <Link href={service.content.link}>
                     <Image
                       src={service.imageUrl}

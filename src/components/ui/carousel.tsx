@@ -216,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className='h-4 w-4' />
+      <ArrowLeft className='h-6 w-6' />
       <span className='sr-only'>Previous slide</span>
     </Button>
   );
@@ -245,12 +245,65 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className='h-4 w-4' />
+      <ArrowRight className='h-6 w-6' />
       <span className='sr-only'>Next slide</span>
     </Button>
   );
 });
 CarouselNext.displayName = 'CarouselNext';
+const SliderPrevious = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, variant = 'outline', size = 'icon', ...props }, ref) => {
+  const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        'absolute  h-14 w-14 rounded-full bg-num-indigo hover:bg-num-orange',
+        orientation === 'horizontal' ? 'mr-16' : '',
+        className
+      )}
+      disabled={!canScrollPrev}
+      onClick={scrollPrev}
+      {...props}
+    >
+      <ArrowLeft className='h-6 w-6 text-white hover:text-num-indigo' />
+      <span className='sr-only'>Previous slide</span>
+    </Button>
+  );
+});
+SliderPrevious.displayName = 'SliderPrevious';
+
+const SliderNext = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, variant = 'outline', size = 'icon', ...props }, ref) => {
+  const { orientation, scrollNext, canScrollNext } = useCarousel();
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        'absolute h-14 w-14 rounded-full bg-num-indigo hover:bg-num-orange',
+        orientation === 'horizontal' ? '' : 'rotate-90',
+        className
+      )}
+      disabled={!canScrollNext}
+      onClick={scrollNext}
+      {...props}
+    >
+      <ArrowRight className='h-6 w-6 text-white hover:text-num-indigo' />
+      <span className='sr-only'>Next slide</span>
+    </Button>
+  );
+});
+SliderNext.displayName = 'SliderNext';
 
 export {
   type CarouselApi,
@@ -259,4 +312,6 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  SliderPrevious,
+  SliderNext,
 };
