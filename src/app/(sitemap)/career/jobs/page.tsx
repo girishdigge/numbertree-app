@@ -74,7 +74,7 @@ const Page = () => {
                       Career Area:{job.area}
                     </h3>
                     <h4 className='text-xl text-num-indigo'>
-                      Skill Required:{job.skills}
+                      Skills Required:{job.skills}
                     </h4>
                   </div>
                   <div className='flex  flex-col-reverse'>
