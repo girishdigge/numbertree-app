@@ -10,6 +10,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { Jobs } from '@/data/jobs';
 import { FaLocationDot } from 'react-icons/fa6';
 import { Button } from '@/components/ui/button';
+import { Suspense } from 'react';
 const Page = () => {
   return (
     <div className=''>
@@ -57,7 +58,9 @@ const Page = () => {
       </div>
       <div className='flex flex-rows-2 '>
         <div className='flex flex-col w-3/4 m-10 '>
-          {/* <InputSearchButton /> */}
+          <Suspense>
+            <InputSearchButton />
+          </Suspense>
           <div className='mt-10'>
             {Jobs.map((job, index) => (
               <div key={index} className='flex flex-col p-4'>
