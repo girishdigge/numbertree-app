@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
+import { InputSearchButton } from '@/components/sitemap/inputSearch';
 import { RxSlash } from 'react-icons/rx';
 import { IoHomeSharp } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
+
 import { FaLinkedinIn } from 'react-icons/fa';
+import { Jobs } from '@/data/jobs';
+import { FaLocationDot } from 'react-icons/fa6';
+import { Button } from '@/components/ui/button';
 const Page = () => {
   return (
     <div className=''>
@@ -53,8 +56,49 @@ const Page = () => {
         </h2>
       </div>
       <div className='flex flex-rows-2 '>
-        <div className='flex flex-col w-3/4 m-10'></div>
-        <div className='flex flex-col w-1/4 mt-10 ml-10'>hi</div>
+        <div className='flex flex-col w-3/4 m-10 '>
+          <InputSearchButton />
+          <div className='mt-10'>
+            {Jobs.map((job, index) => (
+              <div key={index} className='flex flex-col p-4'>
+                <div className=' flex border border-num-orange p-2'>
+                  <div className='flex flex-col w-11/12'>
+                    <h1 className='text-2xl font-medium'>{job.title}</h1>
+                    <h2 className='text-num-orange text-lg'>
+                      <span className='flex mb-2 mt-2'>
+                        <FaLocationDot size={24} color='text-num-orange' />
+                        {job.location}
+                      </span>
+                    </h2>
+                    <h3 className='text-xl mb-2 text-num-blue'>
+                      Career Area:{job.area}
+                    </h3>
+                    <h4 className='text-xl text-num-indigo'>
+                      Skills Required:{job.skills}
+                    </h4>
+                  </div>
+                  <div className='flex  flex-col-reverse'>
+                    <Button className='bg-num-indigo hover:bg-num-orange md:w-40'>
+                      Apply Now {`>`}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='flex flex-col w-1/4 mt-24 ml-10'>
+          <div className='flex flex-col bg-num-indigo p-10 m-10'>
+            <h1 className='text-white'>{`Don't see what you're looking for?`}</h1>
+            <h2 className='text-white'>Connect with us:</h2>
+            <Button className='bg-num-orange'>Follow us on linkedin</Button>
+          </div>
+          <div className='flex flex-col border-2 border-num-orange p-10 m-10'>
+            <h1>{`Want to know more about Number tree?`}</h1>
+            <h2>Explore our:</h2>
+            <Button className='bg-num-indigo'>Life at NumberTree</Button>
+          </div>
+        </div>
       </div>
     </div>
   );

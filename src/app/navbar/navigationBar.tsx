@@ -233,7 +233,7 @@ export function NavigationBar() {
         <NavigationMenuItem>
           <Link href='/bim' legacyBehavior passHref>
             <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2'>
+              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
                 BIM
               </NavigationMenuLink>
             </div>
@@ -284,9 +284,18 @@ export function NavigationBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <Link href='/insights' legacyBehavior passHref>
+            <div className=' mb-0.5'>
+              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
+                Insights / Blogs
+              </NavigationMenuLink>
+            </div>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href='/career' legacyBehavior passHref>
             <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2'>
+              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
                 Career
               </NavigationMenuLink>
             </div>
@@ -295,22 +304,14 @@ export function NavigationBar() {
         <NavigationMenuItem>
           <Link href='/contact' legacyBehavior passHref>
             <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2'>
+              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
                 Contact us
               </NavigationMenuLink>
             </div>
           </Link>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
-          <Link href='/resources' legacyBehavior passHref>
-            <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium  px-4 py-2 '>
-                Blogs
-              </NavigationMenuLink>
-            </div>
-          </Link>
-        </NavigationMenuItem>
-        <Separator orientation='vertical' className='bg-pink-400 w-1 h-10' />*/}
+
+        {/* <Separator orientation='vertical' className='bg-pink-400 w-1 h-10' /> */}
       </NavigationMenuList>
     </NavigationMenu>
   );
