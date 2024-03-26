@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { RxSlash } from 'react-icons/rx';
 import { IoHomeSharp } from 'react-icons/io5';
 
-import { Slider } from './slider';
+import { Slider } from '@/components/sitemap/slider';
 const Page = () => {
   return (
     <div className=''>
