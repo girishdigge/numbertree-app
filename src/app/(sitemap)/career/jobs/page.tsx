@@ -57,8 +57,8 @@ const Page = () => {
       </div>
       <div className='flex flex-rows-2 '>
         <div className='flex flex-col w-3/4 m-10 '>
-          <InputSearchButton />
-          {/* <div className='mt-10'>
+          {/* <InputSearchButton /> */}
+          <div className='mt-10'>
             {Jobs.map((job, index) => (
               <div key={index} className='flex flex-col p-4'>
                 <div className=' flex border border-num-orange p-2'>
@@ -85,7 +85,7 @@ const Page = () => {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
         <div className='flex flex-col w-1/4 mt-24 ml-10'>
           <div className='flex flex-col bg-num-indigo p-10 m-10'>
