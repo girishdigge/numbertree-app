@@ -53,14 +53,14 @@ const Projects = () => {
           Projects
         </h1>
 
-        <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+        <h2 className='-translate-y-12 ml-1 text-5xl text-num-orange font-medium'>
           Projects
         </h2>
 
-        <h3 className='-translate-y-10 md:text-xl  font-medium ml-1 mt-2'>
+        <h3 className='-translate-y-12 md:text-3xl  font-medium ml-1 mt-2'>
           {'Taking projects from complexity to profitability'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-6'>
+        <h4 className='w-1/2 -translate-y-10 md:text-lg text-sm text-justify ml-2 mb-6'>
           We are experts at handling projects which are multidimensional, large
           scale and complex. Our commitment is to ensure that each project is
           completed within budgeted cost and time. We approach each project with
@@ -84,14 +84,14 @@ const Projects = () => {
                   <div className='absolute inset-0 flex  '>
                     <div className='bg-black md:bg-opacity-50 bg-opacity-40 md:w-1/2 w-1/2  md:p-5'>
                       <div className='md:flex hidden flex-row mt-4 ml-2'>
-                        <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 md:mb-2 font-semibold'>
+                        {/* <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 md:mb-2 font-semibold'>
                           OUR LATEST WORK
-                        </h1>
+                        </h1> */}
                       </div>
                       <div className=' text-white ml-2'>
-                        <h2 className='md:text-xl md:flex hidden font-light text-sm  mb-2'>
+                        {/* <h2 className='md:text-xl md:flex hidden font-light text-sm  mb-2'>
                           {project.heading}
-                        </h2>
+                        </h2> */}
                         <h3 className='md:text-4xl text-xl font-bold '>
                           {project.location}
                         </h3>
@@ -100,7 +100,7 @@ const Projects = () => {
                           {project.content}
                         </h2>
                         <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
-                          Read More{`>`}
+                          Read More
                         </Button>
                       </div>
                     </div>
@@ -110,7 +110,7 @@ const Projects = () => {
             ))}
           </CarouselContent>
           <CarouselPrevious className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo ' />
-          <CarouselNext className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo ' />
+          <CarouselNext className=' h-14 w-12  text-num-orange border-num-orange hover:bg-num-orange ' />
         </Carousel>
       </div>
     </div>

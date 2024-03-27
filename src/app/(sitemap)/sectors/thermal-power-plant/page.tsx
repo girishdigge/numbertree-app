@@ -425,7 +425,7 @@
 //                           </h2>
 //                         </div>
 //                         <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
-//                           Read More{`>`}
+//                           Read More
 //                         </Button>
 //                       </div>
 //                     </div>

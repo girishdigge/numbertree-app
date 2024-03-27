@@ -298,7 +298,7 @@ const SliderNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className='h-6 w-6 text-white hover:text-num-indigo' />
+      <ArrowRight className='h-14 w-14 text-white hover:text-num-indigo' />
       <span className='sr-only'>Next slide</span>
     </Button>
   );

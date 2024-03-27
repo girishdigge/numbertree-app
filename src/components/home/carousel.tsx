@@ -11,7 +11,7 @@ const slides = [
   {
     heading: "Empowering Tomorrow's infrastructure",
     weAre: 'WE ARE',
-    title: 'Techno- Commercial Auditors',
+    title: 'Techno-Commercial Auditors',
     content:
       'We are India’s foremost techno commercial audit firm with close to two decades of expertise.',
     link: '/techno-commercial-project',
@@ -97,13 +97,10 @@ const Carousel = () => {
               <div className='bg-opacity-50 md:w-4/5 h-full md:p-5'>
                 <div className='text-white'>
                   {/* <div className='text-xl'>{slide.heading}</div> */}
-                  <h2 className='md:text-base font-light text-sm ml-4 '>
+                  <h2 className='md:text-sm font-light text-sm ml-4 '>
                     {`WE ARE`}
                   </h2>
-                  {/* <Separator
-                    orientation='vertical'
-                    className='bg-num-orange w-1 h-10'
-                  /> */}
+
                   <div className=' border-l-4 border-num-orange'>
                     <h2 className='md:text-7xl w-5/6 pl-2  text-sm '>
                       {slide.title}
@@ -112,8 +109,8 @@ const Carousel = () => {
                       {slide.content}
                     </p>
                   </div>
-                  <Button className='w-40 ml-4 bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>
-                    Read More{`>`}
+                  <Button className='w-40 ml-4  bg-num-indigo md:mt-5 mt-2 border-0 hover:bg-num-orange'>
+                    Read More
                   </Button>
                 </div>
                 {/* <div className='hidden md:flex items-end justify-end md:mt-4 mt-2 md:text-xl text-sm '>

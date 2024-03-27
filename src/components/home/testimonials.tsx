@@ -44,27 +44,29 @@ const Testimonials = () => {
 
   return (
     <div className='flex flex-col items-center mt-20 '>
-      <div className=''>
-        <h1 className='text-7xl text-num-indigo text-opacity-50 opacity-10 font-medium'>
-          Testimonials
-        </h1>
+      <div className='flex flex-row items-center justify-center'>
+        <div className='ml-36'>
+          <h1 className='text-7xl text-num-indigo text-opacity-50 opacity-10 font-medium'>
+            Testimonials
+          </h1>
 
-        <h2 className='-translate-y-12 ml-28 text-4xl text-num-orange font-medium'>
-          Testimonials
-        </h2>
-        <h3 className='-translate-y-10 md:text-xl  font-medium ml-16 mt-2'>
-          {'Striving for excellence in service '}
-        </h3>
+          <h2 className='-translate-y-12 ml-2  text-5xl text-num-orange font-medium'>
+            Testimonials
+          </h2>
+          <h3 className='-translate-y-12 md:text-3xl ml-2 font-medium mt-2'>
+            {'Striving for excellence in service '}
+          </h3>
+          <h4 className='w-1/2 ml-2 -translate-y-8 md:text-lg text-sm text-justify mb-4'>
+            <p>
+              We offer seamless and integrated service, from inception through
+              to completion and handover, we are managements eyes at the
+              project. We listen to our clients’ needs and strive to provide
+              them the best service.
+            </p>
+          </h4>
+        </div>
       </div>
-      <h4 className='w-3/4 -translate-y-4 md:text-lg text-sm text-justify mb-4'>
-        <p>
-          We offer seamless and integrated service, from inception through to
-          completion and handover, we are managements eyes at the project. We
-          listen to our clients’ needs and strive to provide them the best
-          service.
-        </p>
-      </h4>
-      <div className='relative mb-14 w-4/5 border border- rounded-sm shadow-xl'>
+      <div className='relative mb-14 w-4/5 border border-1 border-b-0  border-num-orange rounded-sm shadow-xl'>
         <Slider {...settings}>
           {testimonials.map((test, index) => (
             <div key={index} className='flex mt-10 mb-5 '>

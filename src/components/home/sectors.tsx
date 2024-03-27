@@ -16,14 +16,14 @@ const Sectors = () => {
           Sectors
         </h1>
 
-        <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+        <h2 className='-translate-y-12 ml-1 text-5xl text-num-orange font-medium'>
           Sectors
         </h2>
 
-        <h3 className='-translate-y-10 md:text-xl font-medium text-num-indigo ml-1 mr-1'>
+        <h3 className='-translate-y-10 md:text-3xl  text-num-indigo ml-1 mr-1'>
           {'Uplifting communities, improving access'}
         </h3>
-        <h4 className='w-11/12 -translate-y-4 md:text-lg text-sm text-justify mb-4'>
+        <h4 className='w-2/5 -translate-y-8 md:text-lg text-sm text-justify ml-2 mb-4'>
           We are infrastructure experts. Adapting to the needs of the companies
           we serve, is our forte. With close to two decades of experience, we
           have earned the trust of diverse businesses across sectors.
@@ -34,7 +34,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Energy
@@ -71,7 +71,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo  md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Urban Development
@@ -110,7 +110,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
           href={`/`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-blue md:hover:text-white'
+          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Transportation

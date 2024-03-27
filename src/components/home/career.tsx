@@ -15,7 +15,7 @@ const Career = () => {
 
       <div className='md:flex items-center justify-center md:w-3/5  mt-5 '>
         <div className='flex flex-col md:mt-10 md:w-2/3'>
-          <h1 className='md:text-2xl  text-white  mb-4'>
+          <h1 className='md:text-3xl  text-white  mb-4'>
             We promise growth, inclusion and diversity
           </h1>
           <p className='text-white md:text-lg text-sm w-4/5'>
@@ -24,8 +24,8 @@ const Career = () => {
             that fits your goals. Come explore a world of opportunities in
             various functions and roles.
           </p>
-          <Button className='w-1/3 bg-num-orange mt-8 mb-2 border-0'>
-            Explore Career{`>`}
+          <Button className='w-40 text-base bg-num-orange mt-8 mb-2 border-0'>
+            Explore Career
           </Button>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Experience = () => {
     },
     {
       logo: '/logo/delivered.png',
-      title: 'Projects Delivered till Date',
+      title: 'Projects Delivered',
       count: 1,
       actualCount: 750,
     },
@@ -37,7 +37,7 @@ const Experience = () => {
     },
     {
       logo: '/logo/professional.png',
-      title: 'Highly Skilled Manpower',
+      title: 'Skilled Manpower',
       count: 1,
       actualCount: 150,
     },
@@ -89,11 +89,11 @@ const Experience = () => {
             className='w-16 h-16 mb-2'
           />{' '}
           {/* Adjust width and height as needed */}
-          <div className='text-center md:text-5xl text-3xl text-num-orange mt-2 font-bold'>
+          <div className='text-center md:text-5xl text-3xl text-num-orange mt-2 font-extrabold'>
             {animatedCounts[index]}
             {index === 0 ? 'st' : '+'}
           </div>
-          <div className='text-center md:text-lg ml-4 mr-4 mb-5'>
+          <div className='text-center md:text-lg ml-4 mr-4 mb-5 '>
             {item.title}
           </div>
         </div>

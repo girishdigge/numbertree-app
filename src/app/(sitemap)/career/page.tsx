@@ -80,7 +80,7 @@ const Page = () => {
           </p>
           <Link href={`/career/jobs`}>
             <Button className='w-40 text-lg bg-num-indigo  hover:bg-num-orange'>
-              Apply Now {`>`}
+              Apply Now
             </Button>
           </Link>
         </div>
@@ -105,7 +105,7 @@ const Page = () => {
               </p>
               <Link href={`/career/life-at-numbertree`}>
                 <Button className='w-40 text-lg bg-num-orange  hover:bg-white hover:text-num-orange'>
-                  Read More {`>`}
+                  Read More
                 </Button>
               </Link>
             </div>
@@ -132,7 +132,7 @@ const Page = () => {
             </div>
             <Link href={`/about`}>
               <Button className='w-40 text-lg bg-num-indigo  hover:bg-num-orange'>
-                Read More {`>`}
+                Read More
               </Button>
             </Link>
           </div>
@@ -172,7 +172,7 @@ const Page = () => {
             </div>
             <Link href={`/about`}>
               <Button className='w-40 text-lg bg-num-indigo  hover:bg-num-orange'>
-                Read More {`>`}
+                Read More
               </Button>
             </Link>
           </div>
