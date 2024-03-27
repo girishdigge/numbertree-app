@@ -1,6 +1,6 @@
 const KeyFacts = () => {
   return (
-    <div className='md:mt-10 mt-96'>
+    <div className='md:mt-20 md:mb-10 mt-96'>
       <div className='flex pt-12 pb-12 bg-num-blue bg-opacity-10'>
         <div className='flex items-center justify-center w-10'>
           <div className='bg-num-orange h-32 w-10 mt-10 mb-10'></div>

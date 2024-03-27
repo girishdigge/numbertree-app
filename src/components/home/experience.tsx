@@ -89,7 +89,7 @@ const Experience = () => {
             className='w-16 h-16 mb-2'
           />{' '}
           {/* Adjust width and height as needed */}
-          <div className='text-center md:text-5xl text-3xl text-num-orange mt-2 font-extrabold'>
+          <div className='text-center md:text-5xl text-3xl text-num-orange mt-2 font-bold'>
             {animatedCounts[index]}
             {index === 0 ? 'st' : '+'}
           </div>

@@ -23,7 +23,7 @@ const Sectors = () => {
         <h3 className='-translate-y-10 md:text-3xl  text-num-indigo ml-1 mr-1'>
           {'Uplifting communities, improving access'}
         </h3>
-        <h4 className='w-2/5 -translate-y-8 md:text-lg text-sm text-justify ml-2 mb-4'>
+        <h4 className='w-2/5 -translate-y-8 md:text-lg text-sm text-justify ml-2 mb-4 mt-4'>
           We are infrastructure experts. Adapting to the needs of the companies
           we serve, is our forte. With close to two decades of experience, we
           have earned the trust of diverse businesses across sectors.
@@ -31,42 +31,45 @@ const Sectors = () => {
       </div>
       <div className='flex md:flex-row flex-col items-baseline justify-center md:ml-14 md:mr-14 space-x-5 space-y-2'>
         <Link
-          onMouseEnter={() => setIsHovered1(true)}
-          onMouseLeave={() => setIsHovered1(false)}
+          onMouseEnter={() => setIsHovered3(true)}
+          onMouseLeave={() => setIsHovered3(false)}
           href={`/`}
           className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
-            Energy
+            Transportation
           </h1>
-          <p className='flex w-4/5  ml-4 mt-2 md:text-lg '>
+          <p className='flex w-4/5 ml-4 mt-2 md:text-lg '>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
             ea officiis sint deleniti delectus perspiciatis inventore.
           </p>
           <div className='flex flex-row mt-16'>
             <div className='w-1/2 flex flex-col-reverse ml-4 mb-4'>{`Read More>`}</div>
             <div className='hidden md:flex w-1/2'>
-              {isHovered1 ? (
-                <Image
-                  height={212}
-                  width={232}
-                  src={`/logo/s11.png`}
-                  alt='hovered image'
-                  className='pb-1'
-                />
-              ) : (
-                <div className='p-4 pb-0'>
+              <div>
+                {isHovered3 ? (
                   <Image
                     height={212}
                     width={232}
-                    src={`/logo/s0.png`}
-                    alt='logo'
+                    src={`/logo/s33.png`}
+                    alt='hovered image'
+                    className='pb-1'
                   />
-                </div>
-              )}
+                ) : (
+                  <div className='p-4 pb-0'>
+                    <Image
+                      height={212}
+                      width={232}
+                      src={`/logo/s2.png`}
+                      alt='logo'
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </Link>
+
         <Link
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
@@ -107,41 +110,39 @@ const Sectors = () => {
           </div>
         </Link>
         <Link
-          onMouseEnter={() => setIsHovered3(true)}
-          onMouseLeave={() => setIsHovered3(false)}
+          onMouseEnter={() => setIsHovered1(true)}
+          onMouseLeave={() => setIsHovered1(false)}
           href={`/`}
           className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
-            Transportation
+            Energy
           </h1>
-          <p className='flex w-4/5 ml-4 mt-2 md:text-lg '>
+          <p className='flex w-4/5  ml-4 mt-2 md:text-lg '>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
             ea officiis sint deleniti delectus perspiciatis inventore.
           </p>
           <div className='flex flex-row mt-16'>
             <div className='w-1/2 flex flex-col-reverse ml-4 mb-4'>{`Read More>`}</div>
             <div className='hidden md:flex w-1/2'>
-              <div>
-                {isHovered3 ? (
+              {isHovered1 ? (
+                <Image
+                  height={212}
+                  width={232}
+                  src={`/logo/s11.png`}
+                  alt='hovered image'
+                  className='pb-1'
+                />
+              ) : (
+                <div className='p-4 pb-0'>
                   <Image
                     height={212}
                     width={232}
-                    src={`/logo/s33.png`}
-                    alt='hovered image'
-                    className='pb-1'
+                    src={`/logo/s0.png`}
+                    alt='logo'
                   />
-                ) : (
-                  <div className='p-4 pb-0'>
-                    <Image
-                      height={212}
-                      width={232}
-                      src={`/logo/s2.png`}
-                      alt='logo'
-                    />
-                  </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </div>
         </Link>

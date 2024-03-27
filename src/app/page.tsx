@@ -10,7 +10,7 @@ import ESG from '@/components/home/esg';
 import Footer from '@/components/home/footer';
 import Connect from '@/components/home/connect';
 import Testimonials from '@/components/home/testimonials';
-import Services from '@/components/home/services';
+import Service from '@/components/home/service';
 export default function Home() {
   return (
     <div>
@@ -19,7 +19,7 @@ export default function Home() {
       <Experience />
       <AboutUs />
       <Sectors />
-      <Services />
+      <Service />
       <KeyFacts />
       <Projects />
       <Testimonials />

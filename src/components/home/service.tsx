@@ -11,82 +11,73 @@ const Services = () => {
   const tabs = [
     {
       id: 0,
-      name: 'Business Transformation',
-      imageUrl: '/services/0.jpg',
-      content: {
-        heading: 'Business Transformation',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Techno-Commercial Audit',
+      imageUrl: '/services/TechnoComAudit1.jpg',
+      content: ` We pride ourselves as India's foremost techno commercial audit
+            firm with over two decades of experience across varied industries.`,
+      link: '#',
     },
+
     {
       id: 1,
-      name: 'Contract Adiministration',
-      imageUrl: '/services/1.jpg',
-      content: {
-        heading: 'Contract Adiministration',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Contract Adiministration & Bill Verification',
+      imageUrl: '/services/ContractAdministration2.jpg',
+      content: ` As a consulting engineering firm, we understand the importance of
+            efficient contract administration and accurate bill checking in
+            maintaining financial integrity and control of infrastructure &
+            construction projects.`,
+      link: '#',
     },
     {
       id: 2,
-      name: 'Quality Survey',
-      imageUrl: '/services/2.jpg',
-      content: {
-        heading: 'Quality Survey',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Project Management & Consultancy',
+      imageUrl: '/services/ProjectMonCon1.jpg',
+      content: `NumberTree offers advanced digital project monitoring services to
+            enhance project oversight, efficiency, and transparency. Leveraging
+            cutting-edge technologies and data-driven insights, our digital
+            solutions provide clients with real-time monitoring and actionable
+            intelligence`,
+      link: '#',
     },
     {
       id: 3,
-      name: 'Client Management',
-      imageUrl: '/services/3.jpg',
-      content: {
-        heading: 'Client Management',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Quantity Survey & Cost Control',
+      imageUrl: '/services/QuantitySurvey1.jpg',
+      content: ` In the infrastructure industry, precise and comprehensive
+            quantification of materials, labour, and resources is crucial for
+            successful project planning and budgeting.`,
+      link: '#',
     },
+
     {
       id: 4,
-      name: 'Project Monitoring & Control',
-      imageUrl: '/services/4.jpg',
-      content: {
-        heading: 'Project Monitoring & Control',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Construction Claim Management',
+      imageUrl: '/services/ClaimManagement1.jpg',
+      content: ` We are proud of the work we do at NumberTree, solving problems &
+            helping our clients across sector in overcoming their business
+            challenges.`,
+      link: '#',
     },
     {
       id: 5,
-      name: 'Techno Commercial Audit',
-      imageUrl: '/services/5.jpg',
-      content: {
-        heading: 'Techno Commercial Audit',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Transaction Advisory',
+      imageUrl: '/services/TransactionAdvisory1.jpg',
+      content: `Our team ensures that your financial transactions are accurately
+            processed, risks are minimized, and resources are optimized. We are
+            experienced in navigating the field of complex contracts & terms,
+            cost control & risk mitigation, Compliance & regulatory
+            requirements, vendor management & bill verification.`,
+      link: '#',
     },
     {
       id: 6,
-      name: 'Transction Advisory',
-      imageUrl: '/services/6.jpg',
-      content: {
-        heading: 'Transction Advisory',
-        paragraph:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
-        link: '#',
-      },
+      name: 'Business Transformation',
+      imageUrl: '/services/BusinessTransformation1.jpg',
+      content: `We help businesses harness the power of financial insights with
+            great clarity, it transforms not just the way businesses operate but
+            also unlocks their full potential and propels them to growth.`,
+      link: '#',
     },
-
     // Add more tabs as needed
   ];
 
@@ -96,55 +87,71 @@ const Services = () => {
 
   return (
     <div className='w-full '>
-      <div className='mt-20 ml-14'>
-        <h1 className='text-7xl text-num-watermark font-medium'>Services</h1>
+      <div className='mt-20 md:ml-14'>
+        <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
+          Services
+        </h1>
 
-        <h2 className='-translate-y-12 ml-1 text-4xl text-num-orange font-medium'>
+        <h2 className='-translate-y-12 ml-1 text-5xl text-num-orange font-medium'>
           Services
         </h2>
 
-        <h3 className='-translate-y-10 text-xl text-num-indigo  ml-1'>
-          {'Empowering Decision Making To Transform'}
+        <h3 className='-translate-y-10 md:text-3xl  ml-1'>
+          {'Empowering decision making to transform businesses '}
         </h3>
+        <h4 className='w-1/2 -translate-y-8 md:text-lg text-sm text-justify ml-2 mb-4 mt-4'>
+          We partner with businesses to help them deliver projects, of varying
+          of complexity. We provide services at various stages of construction
+          and development. Our comprehensive range of services, help businesses
+          deliver positive impact beyond their industries.
+        </h4>
       </div>
 
-      <div className=''>
-        <div className='flex font-bold w-11/12 ml-10 bg-num-indigo text-num-orange border-2 border-num-indigo'>
+      <div className='flex ml-16 items-center'>
+        <div className='flex w-3/4'>
+          <div className=' mt-2'>
+            <div className='relative'>
+              <Image
+                width={2040}
+                height={768}
+                src={tabs[activeTab].imageUrl}
+                alt={`Image for ${tabs[activeTab].name}`}
+                className='w-full h-auto'
+              />
+              <div className='absolute inset-0 flex  '>
+                <div className='bg-black md:bg-opacity-50 bg-opacity-40  md:p-5'>
+                  <div className=' text-white ml-2 w-1/2'>
+                    <h2 className='md:text-4xl  font-bold md:flex hidden text-sm  mb-2'>
+                      {tabs[activeTab].name}
+                    </h2>
+                    <hr className='w-2/5 border-num-orange border-2 md:mt-3 md:mb-3' />
+                    <h3 className='md:text-lg  font-bold '>
+                      {tabs[activeTab].content}
+                    </h3>
+
+                    <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+                      Read More
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col w-1/5 gap-y-1 font-bold bg-num-blue bg-opacity-10 text-num-orange '>
           {tabs.map((tab) => (
             <div
               key={tab.id}
-              className={`cursor-pointer px-4 py-2 ${
+              className={`cursor-pointer  px-4 py-4 ${
                 activeTab === tab.id
-                  ? 'text-white border-b-2 border-num-orange bg-num-orange rounded-md'
-                  : 'text-num-orange'
+                  ? 'text-white p-2  border-num-orange bg-num-orange'
+                  : 'text-num-orange '
               }`}
               onMouseEnter={() => handleTabChange(tab.id)}
             >
               {tab.name}
             </div>
           ))}
-        </div>
-        <div className='flex'>
-          <div className='w-full flex flex-col pl-24 justify-center border-4 border-num-indigo mr-1 mt-2 ml-10'>
-            <h2 className='text-3xl font-semibold text-num-indigo mb-5 mt-10 mr-4'>
-              {tabs[activeTab].content.heading}
-            </h2>
-            <p className='text-md text-num-indigo w-3/5 mb-5 font-medium'>
-              {tabs[activeTab].content.paragraph}
-            </p>
-            <Link href={tabs[activeTab].content.link}>
-              <Button className='bg-num-orange '>{`Read more>`}</Button>
-            </Link>
-          </div>
-          <div className='w-full mt-2 mr-20 '>
-            <Image
-              width={900}
-              height={600}
-              src={tabs[activeTab].imageUrl}
-              alt={`Image for ${tabs[activeTab].name}`}
-              className='w-full h-auto'
-            />
-          </div>
         </div>
       </div>
     </div>

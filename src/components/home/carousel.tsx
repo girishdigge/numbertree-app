@@ -10,6 +10,15 @@ import { Separator } from '@radix-ui/react-separator';
 const slides = [
   {
     heading: "Empowering Tomorrow's infrastructure",
+    weAre: 'We are',
+    title: 'Numbertree ',
+    content:
+      'We are a consulting engineering & audit services firm. We partner with businesses that advance the world, to overcome challenges they face and unlock their full potential.',
+    link: '/numbertree',
+    video: '/carousel/video6.mp4', // replace with the actual video path
+  },
+  {
+    heading: "Empowering Tomorrow's infrastructure",
     weAre: 'WE ARE',
     title: 'Techno-Commercial Auditors',
     content:
@@ -52,15 +61,6 @@ const slides = [
       'Digitization of infrastructure operations & projects is our forte, we help in digital transformation of construction through BIMfirst, Digital twin.',
     link: '/numbertree',
     video: '/carousel/bim1.mp4', // replace with the actual video path
-  },
-  {
-    heading: "Empowering Tomorrow's infrastructure",
-    weAre: 'We are',
-    title: 'Numbertree ',
-    content:
-      'We are a consulting engineering & audit services firm. We partner with businesses that advance the world, to overcome challenges they face and unlock their full potential.',
-    link: '/numbertree',
-    video: '/carousel/video6.mp4', // replace with the actual video path
   },
 ];
 

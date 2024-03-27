@@ -60,7 +60,7 @@ const Projects = () => {
         <h3 className='-translate-y-12 md:text-3xl  font-medium ml-1 mt-2'>
           {'Taking projects from complexity to profitability'}
         </h3>
-        <h4 className='w-1/2 -translate-y-10 md:text-lg text-sm text-justify ml-2 mb-6'>
+        <h4 className='w-1/2 -translate-y-10 md:text-lg text-sm text-justify ml-2 mb-6 mt-4'>
           We are experts at handling projects which are multidimensional, large
           scale and complex. Our commitment is to ensure that each project is
           completed within budgeted cost and time. We approach each project with
@@ -109,7 +109,7 @@ const Projects = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo ' />
+          <CarouselPrevious className=' h-14 w-12  text-num-orange border-num-orange hover:bg-num-orange ' />
           <CarouselNext className=' h-14 w-12  text-num-orange border-num-orange hover:bg-num-orange ' />
         </Carousel>
       </div>

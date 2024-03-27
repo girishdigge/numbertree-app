@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 
 const Connect = () => {
   return (
-    <div className='bg-num-blue bg-opacity-10 md:p-8 md:mt-0 mt-10'>
+    <div className='bg-num-blue bg-opacity-10 md:p-8 md:mt-0 md:pt-20 mt-10'>
       <div className='md:flex flex-row gap-2 md:ml-4 mr-4'>
         <div className='flex flex-row relative h-96  mb-10 md:mb-0 md:ml-1'>
           <Image

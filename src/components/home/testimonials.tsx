@@ -56,7 +56,7 @@ const Testimonials = () => {
           <h3 className='-translate-y-12 md:text-3xl ml-2 font-medium mt-2'>
             {'Striving for excellence in service '}
           </h3>
-          <h4 className='w-1/2 ml-2 -translate-y-8 md:text-lg text-sm text-justify mb-4'>
+          <h4 className='w-1/2 ml-2 -translate-y-8 md:text-lg text-sm text-justify mb-4 mt-4'>
             <p>
               We offer seamless and integrated service, from inception through
               to completion and handover, we are managements eyes at the
