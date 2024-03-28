@@ -29,15 +29,15 @@ export const ExploreArticles = [
 ];
 
 export const FeaturedArticles = [
-  {
-    type: 'article',
-    date: '10 Mar 2024',
-    image: '/insights/1.jpg',
-    title: 'The Future of Artificial Intelligence',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
+  // {
+  //   type: 'article',
+  //   date: '10 Mar 2024',
+  //   image: '/insights/1.jpg',
+  //   title: 'The Future of Artificial Intelligence',
+  //   content:
+  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  //   link: '#',
+  // },
   {
     type: 'article',
     date: '15 Apr 2024',
@@ -75,15 +75,6 @@ export const FeaturedArticles = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     link: '#',
   },
-  {
-    type: 'article',
-    date: '22 Aug 2024',
-    image: '/insights/6.jpg',
-    title: 'Revolutionizing Healthcare with AI',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
 ];
 
 export const Articles = [
@@ -94,7 +85,7 @@ export const Articles = [
     title: 'The Future of Artificial Intelligence',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+    link: `/insights/The-Future-of-Artificial-Intelligence`,
   },
   {
     type: 'article',

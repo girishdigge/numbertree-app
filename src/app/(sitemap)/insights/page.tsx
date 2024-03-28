@@ -55,7 +55,7 @@ const Page = () => {
           src={`/images/insightsBanner.jpg`}
           width={2046}
           height={768}
-          alt='Airports & Aviation'
+          alt='Insights'
           className='object-cover'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
