@@ -115,7 +115,7 @@ const Page = () => {
                 </div>
                 <div className='w-2/5 '>
                   <h1 className='text-7xl mb-4 pt-32'>Our Vision</h1>
-                  <hr className='w-1/2 border-4 border-num-orange' />
+                  <hr className='w-1/2 border-2 border-num-orange' />
                 </div>
               </div>
             </TabsContent>
@@ -137,7 +137,7 @@ const Page = () => {
                 </div>
                 <div className='w-2/5 '>
                   <h1 className='text-7xl mb-4 pt-32'>Our Mission</h1>
-                  <hr className='w-1/2 border-4 border-num-orange' />
+                  <hr className='w-1/2 border-2 border-num-orange' />
                 </div>
               </div>
             </TabsContent>
@@ -164,7 +164,7 @@ const Page = () => {
                 </div>
                 <div className='w-2/5 '>
                   <h1 className='text-7xl mb-4 pt-32'>Our Purpose</h1>
-                  <hr className='w-1/2 border-4 border-num-orange' />
+                  <hr className='w-1/2 border-2 border-num-orange' />
                 </div>
               </div>
             </TabsContent>
@@ -176,6 +176,7 @@ const Page = () => {
           <div className='w-1/2 border-2 border-num-orange border-r-0'>
             <div className='flex flex-col gap-8 p-14'>
               <h1 className='text-7xl'>Our Values</h1>
+              <hr className='w-1/2 -translate-y-4 border-2 border-num-orange' />
               <h2 className='text-3xl'>The compass that guides our ship</h2>
               <p className='text-lg w-3/4 text-justify'>
                 We work on the some of the most complex & challenging projects,
@@ -186,7 +187,7 @@ const Page = () => {
           </div>
           <div className='w-1/2 bg-num-indigo p-8'>
             <div className='grid grid-cols-2 gap-y-12'>
-              <div className='flex flex-col text-white items-end mr-10'>
+              <div className='flex flex-col text-white items-center ml-4'>
                 <Image
                   src={`/about/aim.png`}
                   width={80}
@@ -194,9 +195,9 @@ const Page = () => {
                   alt='aim'
                   className='object-cover bg-num-indigo'
                 />
-                <h1 className='text-lg'>Client First</h1>
+                <h1 className='text-xl'>Client First</h1>
               </div>
-              <div className='flex flex-col text-white ml-10'>
+              <div className='flex flex-col text-white items-center mr-4'>
                 <Image
                   src={`/about/agility.png`}
                   width={80}
@@ -204,9 +205,9 @@ const Page = () => {
                   alt='aim'
                   className='object-cover bg-num-indigo'
                 />
-                <h1 className='text-lg '>Agility</h1>
+                <h1 className='text-xl '>Agility</h1>
               </div>
-              <div className='flex flex-col text-white items-end mr-10'>
+              <div className='flex flex-col text-white items-center ml-4'>
                 <Image
                   src={`/about/integrity.png`}
                   width={80}
@@ -214,9 +215,9 @@ const Page = () => {
                   alt='integrity'
                   className='object-cover bg-num-indigo'
                 />
-                <h1 className='text-lg'>Integrity</h1>
+                <h1 className='text-xl'>Integrity</h1>
               </div>
-              <div className='flex flex-col text-white ml-8'>
+              <div className='flex flex-col text-white items-center mr-4'>
                 <Image
                   src={`/about/social.png`}
                   width={80}
@@ -224,9 +225,9 @@ const Page = () => {
                   alt='social impact'
                   className='object-cover bg-num-indigo'
                 />
-                <h1 className='text-lg '>Social Impact</h1>
+                <h1 className='text-xl '>Social Impact</h1>
               </div>
-              <div className='flex flex-col text-white items-end mr-10'>
+              <div className='flex flex-col text-white items-center ml-4'>
                 <Image
                   src={`/about/auction.png`}
                   width={80}
@@ -234,9 +235,9 @@ const Page = () => {
                   alt='integrity'
                   className='object-cover bg-num-indigo'
                 />
-                <h1 className='text-lg'>Law of Land</h1>
+                <h1 className='text-xl'>Law of Land</h1>
               </div>
-              <div className='flex flex-col text-white ml-8'>
+              <div className='flex flex-col text-white items-center  mr-4'>
                 <Image
                   src={`/about/idea.png`}
                   width={80}
@@ -244,10 +245,10 @@ const Page = () => {
                   alt='social impact'
                   className='object-cover bg-num-indigo'
                 />
-                <h1 className='text-lg '>Knowledge</h1>
+                <h1 className='text-xl '>Knowledge</h1>
               </div>
             </div>
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center mt-20'>
               <Button className='w-40 bg-num-orange hover:bg-white hover:text-black flex justify-center'>
                 Read More
               </Button>
@@ -259,7 +260,7 @@ const Page = () => {
         <div className='flex flex-row w-11/12'>
           <div className='w-2/5 '>
             <h1 className='text-7xl mb-4 pt-32'>Our Approach</h1>
-            <hr className='w-1/2 border-4 border-num-orange' />
+            <hr className='w-1/2 border-2 border-num-orange' />
           </div>
           <div className='w-3/5 text-justify'>
             <h1 className='text-3xl font-medium pt-8'>
@@ -336,13 +337,15 @@ const Page = () => {
         <div className='w-11/12 bg-num-indigo ml-12'>
           <div className='flex flex-col p-12 text-white'>
             <h1 className='text-7xl mb-4 mt-8 '>Our Ethics</h1>
-            <hr className='w-1/6 border-4 border-num-orange' />
+            <hr className='w-1/6 border-2 border-num-orange' />
             <div className='flex '>
-              <div className='w-1/3 flex mt-8'>
-                <h1 className='text-xl w-3/5 '>
-                  Committed to doing the right thing , every time
-                </h1>
-                <Button className='bg-num-orange hover:bg-white hover:text-black mt-2'>
+              <div className=' flex mt-8'>
+                <div className='w-1/2'>
+                  <h1 className='text-3xl  mr-4'>
+                    Committed to doing the right thing , every time
+                  </h1>
+                </div>
+                <Button className='w-40 bg-num-orange hover:bg-white hover:text-black mt-2 '>
                   Read more{' '}
                 </Button>
               </div>
@@ -387,15 +390,28 @@ const Page = () => {
           <div className='w-1/2  bg-num-orange'></div>
         </div>
       </div>
-      <div className='w-11/12 flex items-center justify-center'>
-        <div className='flex'>
+      <div className=' flex items-center justify-center mb-20'>
+        <div className='relative ml-10 mr-10'>
           <Image
             src={`/about/socialResponce.png`}
             width={1920}
-            height={600}
+            height={786}
             alt='integrity'
             className='object-cover bg-num-indigo'
           />
+          <div className='absolute inset-0 bg-black bg-opacity-50'>
+            <div className='flex flex-col items-center justify-center  text-white'>
+              <div>
+                <h1 className='text-7xl mt-40'>Corporate Social</h1>
+                <h1 className='text-7xl ml-8 mt-4 mb-20'>Responsibility</h1>
+                <Link href={'#'}>
+                  <Button className='bg-num-indigo w-40 hover:bg-num-orange hover:text-black ml-44'>
+                    Read More
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

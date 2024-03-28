@@ -178,6 +178,50 @@ export function NavigationBar() {
         {/* <Separator orientation='vertical' className='bg-pink-400 w-1 h-10' /> */}
         <NavigationMenuItem>
           <NavigationMenuTrigger>
+            <Link href={`/about`}>About Us</Link>
+          </NavigationMenuTrigger>
+
+          <NavigationMenuContent>
+            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
+              <li className='row-span-4'>
+                <NavigationMenuLink asChild>
+                  <a
+                    className='flex h-full w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
+                    href='/about'
+                  >
+                    <Logo />
+                    <div className='mb-2 mt-4 text-lg font-medium '>
+                      About Us
+                    </div>
+                    <p className='text-sm leading-tight text-muted-foreground'>
+                      For major engineering and construction (E&C) projects,
+                      Construction Site audit ( techno Commercial Audit) can be
+                      an effective tool to do more with less and help eliminate
+                      wasteful spending and cost overruns
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <ListItem href='/about/vision' title='Vision'>
+                We are enablers of change, for our clients, for our environment
+                & our people such that progress, growth and sustainability go
+                hand in hand.
+              </ListItem>
+              <ListItem href='/about/mission' title='Mission'>
+                To empower businesses to unlock their full potential, to grow
+                profitably and sustainably.
+              </ListItem>
+              <ListItem href='/about/people' title='Team / People'>
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+              <ListItem href='/about/csr-esg' title='CSR / ESG'>
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>
             <Link href={`/services`}> Services</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -239,55 +283,12 @@ export function NavigationBar() {
             </div>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>
-            <Link href={`/about`}>About</Link>
-          </NavigationMenuTrigger>
 
-          <NavigationMenuContent>
-            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
-              <li className='row-span-4'>
-                <NavigationMenuLink asChild>
-                  <a
-                    className='flex h-full w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
-                    href='/about'
-                  >
-                    <Logo />
-                    <div className='mb-2 mt-4 text-lg font-medium '>
-                      About Us
-                    </div>
-                    <p className='text-sm leading-tight text-muted-foreground'>
-                      For major engineering and construction (E&C) projects,
-                      Construction Site audit ( techno Commercial Audit) can be
-                      an effective tool to do more with less and help eliminate
-                      wasteful spending and cost overruns
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href='/about/vision' title='Vision'>
-                We are enablers of change, for our clients, for our environment
-                & our people such that progress, growth and sustainability go
-                hand in hand.
-              </ListItem>
-              <ListItem href='/about/mission' title='Mission'>
-                To empower businesses to unlock their full potential, to grow
-                profitably and sustainably.
-              </ListItem>
-              <ListItem href='/about/people' title='Team / People'>
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-              <ListItem href='/about/csr-esg' title='CSR / ESG'>
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href='/insights' legacyBehavior passHref>
             <div className=' mb-0.5'>
               <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
-                Insights / Blogs
+                Insights
               </NavigationMenuLink>
             </div>
           </Link>
