@@ -6,6 +6,9 @@ import { IoHomeSharp } from 'react-icons/io5';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
+import BlogCard from '@/components/sitemap/blog-card';
+import { ExploreArticles } from '@/data/Insights';
+
 const Page = () => {
   return (
     <div className=''>
@@ -193,7 +196,16 @@ const Page = () => {
             Latest Insights
           </h2>
         </div>
-        <div className='flex justify-center items-center mb-20'>
+        <div className='container mx-auto px-4 py-8'>
+          {/* <h1 className='text-3xl font-bold mb-4'>Latest Blogs</h1> */}
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+            {ExploreArticles.map((blog, index) => (
+              <BlogCard key={index} blog={blog} />
+            ))}
+          </div>
+        </div>
+
+        {/* <div className='flex justify-center items-center mb-20'>
           <div className='grid grid-cols-3 '>
             <div className='  flex flex-col items-center justify-center'>
               <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
@@ -286,7 +298,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

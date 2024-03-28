@@ -43,10 +43,10 @@ const Page = () => {
             <IoHomeSharp color='#1f3563' />
           </Link>
         </span>
-        <RxSlash color='gray' className='mt-1' />
+        {/* <RxSlash color='gray' className='mt-1' />
         <Link href={`/sectors`}>
           <p className='font-bold text-num-indigo'>Sectors</p>
-        </Link>
+        </Link> */}
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Insights</p>
       </div>
