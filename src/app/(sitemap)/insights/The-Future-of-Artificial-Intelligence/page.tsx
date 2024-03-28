@@ -48,7 +48,7 @@ const Page = () => {
               </h1>
               <p className='text-gray-600 mb-4 '>10 Mar 2024</p>
               <div className='flex flex-col '>
-                <p className='    md:text-lg text-xs flex mb-8'>
+                <p className=' md:text-lg text-xs flex mb-8'>
                   As populations grow, so do demands for safe, expedient and
                   cost-effective transportation. We work with clients in India &
                   abroad to achieve cost optimization, digitization/BIM and
@@ -110,16 +110,16 @@ const Page = () => {
         </div>
         <div className='flex mt-10 ml-6 gap-x-2'>
           <h1 className='text-xl font-medium p-1'>Tags:</h1>
-          <h2 className='border border-num-orange text-lg font-medium p-1'>
+          <h2 className='border border-num-orange text-base tracking-widest p-1'>
             Article
           </h2>
-          <h2 className='border border-num-orange text-lg font-medium p-1'>
+          <h2 className='border border-num-orange text-base tracking-widest  p-1'>
             Artificial Intelligence
           </h2>
-          <h2 className='border border-num-orange text-lg font-medium p-1'>
+          <h2 className='border border-num-orange text-base tracking-widest  p-1'>
             BIM
           </h2>
-          <h2 className='border border-num-orange text-lg font-medium p-1'>
+          <h2 className='border border-num-orange text-base tracking-widest p-1'>
             Future
           </h2>
         </div>

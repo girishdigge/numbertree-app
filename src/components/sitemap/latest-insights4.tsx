@@ -1,6 +1,7 @@
 import BlogCard from '@/components/sitemap/blog-card';
 import { FeaturedArticles } from '@/data/Insights';
 import Image from 'next/image';
+import Link from 'next/link';
 const LatestInsights = () => {
   return (
     <div>
@@ -12,21 +13,25 @@ const LatestInsights = () => {
         <div className='grid grid-rows-1 gap-6 mb-8'>
           {FeaturedArticles.map((blog, index) => (
             <div key={index} className='flex flex-col'>
-              <div className='flex flex-row'>
-                <div className='w-1/3 '>
-                  <Image
-                    src={blog.image}
-                    width={2046}
-                    height={768}
-                    alt='Airports & Aviation'
-                    className='object-contain'
-                  />
+              <Link href={blog.link}>
+                <div className='flex flex-row'>
+                  <div className='w-1/3 '>
+                    <Image
+                      src={blog.image}
+                      width={2046}
+                      height={768}
+                      alt='Airports & Aviation'
+                      className='object-contain'
+                    />
+                  </div>
+                  <div className='w-2/3 flex flex-col '>
+                    <h1 className='text-lg font-medium ml-2 hover:underline'>
+                      {blog.title}
+                    </h1>
+                    <p className='text-gray-600  ml-2'>{blog.date}</p>
+                  </div>
                 </div>
-                <div className='w-2/3 flex flex-col '>
-                  <h1 className='text-lg font-medium ml-2'>{blog.title}</h1>
-                  <p className='text-gray-600  ml-2'>{blog.date}</p>
-                </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

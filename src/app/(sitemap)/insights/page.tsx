@@ -1,24 +1,11 @@
 'use client';
 import { useState } from 'react';
-import GetInTouch from '@/components/sitemap/getintouch';
 import { Button } from '@/components/ui/button';
-import { FaQuoteLeft } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
-import { FaFacebookF } from 'react-icons/fa6';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
-import { Card, CardContent } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
+
 import { Articles } from '@/data/Insights';
 import BlogCard from '@/components/sitemap/blog-card';
 import BlogPagination from '@/components/sitemap/blog-pagination';
