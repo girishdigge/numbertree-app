@@ -119,6 +119,9 @@ const Page = () => {
           <h2 className='border border-num-orange text-lg font-medium p-1'>
             BIM
           </h2>
+          <h2 className='border border-num-orange text-lg font-medium p-1'>
+            Future
+          </h2>
         </div>
         <div>
           <div className='flex  mt-20'>
