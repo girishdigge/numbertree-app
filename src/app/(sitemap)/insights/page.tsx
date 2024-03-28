@@ -120,7 +120,7 @@ const Page = () => {
                   designers and developers. Building businesses that change the
                   world.`}
                 </p>
-                <div className='flex flex-row-reverse mt-40 mr-4'>
+                <div className='flex flex-row-reverse mt-36 mr-4'>
                   <Link href={'/about'}>
                     <Button className='w-40 mt-2 text-base hover:bg-num-indigo border-0 bg-num-orange'>
                       Explore
