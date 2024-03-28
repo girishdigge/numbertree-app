@@ -30,13 +30,13 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
           alt={blog.title}
         />
         <div className='p-6'>
-          <h2 className='text-xl font-bold mb-2'>{blog.title}</h2>
           <div className='flex flex-row justify-between'>
             <p className='text-gray-600 mb-4 pt-2'>{blog.date}</p>
             <Button className='border bg-white text-black border-num-indigo rounded-full hover:bg-white'>
               {blog.type}
             </Button>
           </div>
+          <h2 className='text-xl font-bold mb-2'>{blog.title}</h2>
           <p className='text-gray-800'>{blog.content}</p>
           <p className='text-lg mt-4 font-medium'>
             Read More <span className='text-num-orange'>{`->`}</span>
