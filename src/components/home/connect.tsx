@@ -15,7 +15,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-55'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-4xl font-bold md:mt-4 mb-1'>
+              <h1 className='text-num-orange text-4xl font-medium md:mt-4 mb-1'>
                 Linkedin
               </h1>
               <h2 className=' md:text-3xl text-3xl font-medium md:mb-3 mb-1 text-white'>
@@ -46,7 +46,7 @@ const Connect = () => {
           />
           <div className=' absolute inset-0 bg-black bg-opacity-50'>
             <div className='ml-6'>
-              <h1 className='text-num-orange text-4xl font-bold md:mt-4 mb-1'>
+              <h1 className='text-num-orange text-4xl font-medium md:mt-4 mb-1'>
                 Insights
               </h1>
               <h2 className='md:text-3xl text-xl  md:mb-3 mb-1 font-medium text-white'>
