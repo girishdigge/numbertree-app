@@ -52,7 +52,10 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Mumbai Delhi Expressway package 2
+                Mumbai-Delhi Expressway
+              </h1>
+              <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
+                Package 2
               </h1>
             </div>
             <Link href={`/projects`} className=''>
@@ -99,7 +102,7 @@ const Page = () => {
             <h3>Meerut , Uttar Pradesh </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>Value 1057.6 Cr </h3>
+            <h3>1057.6 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
@@ -120,15 +123,15 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              Our work on a section of The Delhi-Mumbai Expressway Project
-              serves as a markable example.
+              At the heart of our audit methodology lies the commitment to
+              deliver tangible results and drive positive change particularly to
+              fosters sustainable practices within organizations. Our work on a
+              section of The Delhi-Mumbai Expressway Project serves as a
+              markable example.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              Our work on a section of The Delhi-Mumbai Expressway Project
-              serves as a markable example.
-            </p>{' '}
-            <br />
+            {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
+            <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
               {`The Delhi-Vadodara Expressway, which is the first section of the
               Delhi – Mumbai Expressway, is a greenfield expressway spanning
@@ -146,7 +149,7 @@ const Page = () => {
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
               {`NumberTree was engaged for techno- commercial audit of 10 different packages, (Vadodara section) having project value of approx. INR 10,000 Crores`}
             </p>{' '}
-            <br />
+            {/* <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
               {`Our approach to assignment was -`}
             </p>{' '}
