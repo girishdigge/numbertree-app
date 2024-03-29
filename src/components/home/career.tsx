@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 const Career = () => {
   return (
     <div className='md:flex items-center justify-center bg-num-indigo'>
@@ -24,9 +25,11 @@ const Career = () => {
             that fits your goals. Come explore a world of opportunities in
             various functions and roles.
           </p>
-          <Button className='w-40 text-base bg-num-orange mt-8 mb-2 border-0'>
-            Explore Career
-          </Button>
+          <Link href={'/career'}>
+            <Button className='w-40 text-base bg-num-orange mt-8 mb-2 border-0'>
+              Explore Career
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

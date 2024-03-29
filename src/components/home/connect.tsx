@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const Connect = () => {
   return (
@@ -29,9 +30,13 @@ const Connect = () => {
                 Residential...
               </p>
               <div className='flex flex-row-reverse mt-24 mr-4'>
-                <Button className='w-40 mt-2 text-base bg-num-indigo border-0 hover:bg-num-orange'>
-                  Connect
-                </Button>
+                <Link
+                  href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
+                >
+                  <Button className='w-40 mt-2 text-base bg-num-indigo border-0 hover:bg-num-orange'>
+                    Connect
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -57,9 +62,11 @@ const Connect = () => {
                 issues shaping both the present and the future.
               </p>
               <div className='flex flex-row-reverse mr-4 md:mt-36'>
-                <Button className='w-40 mt-3 bg-num-indigo  border-0 hover:bg-num-orange'>
-                  Explore
-                </Button>
+                <Link href={'/insights'}>
+                  <Button className='w-40 mt-3 bg-num-indigo  border-0 hover:bg-num-orange'>
+                    Explore
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

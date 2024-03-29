@@ -70,22 +70,13 @@ const Testimonials = () => {
         <Slider {...settings}>
           {testimonials.map((test, index) => (
             <div key={index} className='flex mt-10 mb-5 '>
-              <div className='md:grid grid-cols-2'>
-                <div className='w-3/5 flex flex-row-reverse pr-4  border-dotted border-r border-r-1 pb-1 border-num-indigo '>
-                  <Image
-                    src={test.image}
-                    height={200}
-                    width={200}
-                    alt='img'
-                    className='w-72 '
-                  />
-                </div>
-                <div className='flex items-center mr-12'>
-                  <div className='mb-2'>
+              <div className='flex flex-col'>
+                <div className='flex items-center justify-center'>
+                  <div className='mb-2 w-1/2'>
                     <h1 className='h-4 text-8xl  text-left text-num-indigo'>
                       “
                     </h1>
-                    <p className='px-8 py-4 text-lg text-center text-num-indigo'>
+                    <p className='px-8 py-4 text-lg text-center  text-num-indigo'>
                       {test.content}
                     </p>
                     <div className='h-3 text-8xl text-right text-num-indigo'>
@@ -93,13 +84,13 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-                <div className='w-4/5 flex flex-col ml-4'>
-                  <h1 className='md:text-4xl text-2xl md:ml-10 text-num-indigo'>
+                <div className=' flex flex-col items-center mt-4 ml-4'>
+                  <h1 className='md:text-4xl text-2xl  text-num-indigo'>
                     {test.name}
                   </h1>
-                  <h2 className='text-base md:ml-12'>{test.role}</h2>
+                  <h2 className='text-base mt-4'>{test.role}</h2>
                 </div>
-                <div className='flex justify-center items-center mr-10'>
+                <div className='flex justify-center items-center mt-4'>
                   <Image
                     src={`/logo/star.png`}
                     height={50}

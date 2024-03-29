@@ -14,7 +14,7 @@ const Services = () => {
       name: 'Techno-Commercial Audit',
       imageUrl: '/services/TechnoComAudit.jpg',
       content: ` With this audit, we help promoters, owners and management of businesses engaged in infrastructure projects to reduce the project cost and achieve cost savings while improving the quality within the budgeted timeframe.`,
-      link: '#',
+      link: '/services/techno-commercial-audit',
     },
 
     {
@@ -22,21 +22,21 @@ const Services = () => {
       name: 'Contract Adiministration & Bill Verification',
       imageUrl: '/services/ContractAdministration.jpg',
       content: ` We help clients, navigate complex contracts, control costs, ensure compliance, manage vendors, and maintain financial transparency through this service. With this we contribute to successful project outcomes, stakeholder satisfaction, and the long-term sustainability of infrastructure developments`,
-      link: '#',
+      link: '/services/contract-administration',
     },
     {
       id: 2,
       name: 'Project Management Consultancy',
       imageUrl: '/services/ProjectMonCon.jpg',
       content: `We take ownership of the entire project and chart a roadmap for our PMC Clients. We improve efficiency, reduce costs and time, and maximize value by managing the supply chain, making timely decisions, and operating in a proactive manner.`,
-      link: '#',
+      link: '/services/project-monitoring-and-control',
     },
     {
       id: 3,
       name: 'Quantity Survey & Cost Control',
       imageUrl: '/services/QuantitySurvey.jpg',
       content: ` With this service, we enable project stakeholders to make informed decisions, manage risks, and optimize project budgets. We deliver accurate and detailed quantity calculations, supporting our clients in achieving successful project outcomes.`,
-      link: '#',
+      link: '/services/quantity-survey',
     },
 
     {
@@ -44,21 +44,21 @@ const Services = () => {
       name: 'Construction Claim Management',
       imageUrl: '/services/ClaimManagement.jpg',
       content: ` Our expertise, meticulous approach, and dedication to delivering results make us the ideal choice for resolving project delays. We help businesses successfully navigate the complexities of delay analysis and claim management with confidence and efficiency. `,
-      link: '#',
+      link: '/services/claim-management',
     },
     {
       id: 5,
       name: 'Transaction Advisory',
       imageUrl: '/services/TransactionAdvisory.jpg',
       content: `We provide high-quality advisory services. With focus on debt intermediation, M&A, SME IPO, infrastructure advisory, project consultancy, and structured finance, we bring a wealth of expertise and experience to the table.`,
-      link: '#',
+      link: '/services/transaction-advisory',
     },
     {
       id: 6,
       name: 'Business Transformation',
       imageUrl: '/services/BusinessTransformation.jpg',
       content: `Construction businesses have a primary need for improved efficiency in project delivery. Traditional construction processes often suffer from delays, cost overruns, and quality issues, which can be mitigated by adopting innovative approaches and methodologies. With transformative technologies, construction firms can streamline their operations leading to improved profitability.`,
-      link: '#',
+      link: '/services/business-transformation',
     },
     // Add more tabs as needed
   ];
@@ -101,19 +101,20 @@ const Services = () => {
                 className='w-full h-auto'
               />
               <div className='absolute inset-0 flex  '>
-                <div className='bg-black md:bg-opacity-50 bg-opacity-40  md:p-5'>
+                <div className='bg-black md:bg-opacity-70 bg-opacity-70  md:p-5'>
                   <div className=' text-white ml-2 w-1/2'>
                     <h2 className='md:text-4xl  font-bold md:flex hidden text-sm  mb-2'>
                       {tabs[activeTab].name}
                     </h2>
                     <hr className='w-2/5 border-num-orange border-2 md:mt-3 md:mb-3' />
-                    <h3 className='md:text-lg  font-bold '>
+                    <h3 className='md:text-lg  font-medium '>
                       {tabs[activeTab].content}
                     </h3>
-
-                    <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
-                      Read More
-                    </Button>
+                    <Link href={tabs[activeTab].link}>
+                      <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+                        Read More
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>

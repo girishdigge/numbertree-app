@@ -109,8 +109,8 @@ const Projects = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-14 w-12  text-num-orange border-num-orange hover:bg-num-orange ' />
-          <CarouselNext className=' h-14 w-12  text-num-orange border-num-orange hover:bg-num-orange ' />
+          <CarouselPrevious className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo ' />
+          <CarouselNext className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo' />
         </Carousel>
       </div>
     </div>
