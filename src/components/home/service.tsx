@@ -138,13 +138,13 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col w-1/5 gap-y-2 font-bold bg-num-blue bg-opacity-10 text-num-orange '>
+        <div className='flex flex-col w-1/3 gap-y-2  font-bold bg-num-blue bg-opacity-10 text-num-orange mt-2 pt-0 pb-2'>
           {tabs.map((tab) => (
             <div
               key={tab.id}
-              className={`cursor-pointer  px-4 py-4 ${
+              className={`cursor-pointer  px-4 py-5 ${
                 activeTab === tab.id
-                  ? 'text-white p-2  border-num-orange bg-num-orange'
+                  ? 'text-white p-2  border-num-orange bg-num-indigo'
                   : 'text-num-orange '
               }`}
               onMouseEnter={() => handleTabChange(tab.id)}
