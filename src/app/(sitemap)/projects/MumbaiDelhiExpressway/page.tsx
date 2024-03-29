@@ -33,7 +33,9 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Mumbai Delhi Expressway</p>
+        <p className='font-bold text-num-indigo'>
+          Mumbai Delhi Expressway package 2
+        </p>
       </div>
       <div className='relative '>
         <Image
@@ -46,16 +48,16 @@ const Page = () => {
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
           <div className='ml-10'>
             <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
-              TRANSPORTATION
+              Project
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Mumbai Delhi Expressway
+                Mumbai Delhi Expressway package 2
               </h1>
             </div>
-            <Link href={`/sectors`} className=''>
+            <Link href={`/projects`} className=''>
               <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
-                All sectors
+                All Projects
               </Button>
             </Link>
             <Link href={`/contact`} className='animate-fadeInUp'>
@@ -68,108 +70,9 @@ const Page = () => {
       </div>
 
       <br />
-      <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
-          <div className='flex gap-4 mb-4'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mb-2 '>
-              Our Services
-            </h2>
-
-            <div className='flex w-full gap-2'>
-              <div className=''>
-                <Link href={`/sectors/aviation`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Aviation
-                  </Button>
-                </Link>
-                <Link href={`/sectors/bridges-structures`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Bridges & Structures
-                  </Button>
-                </Link>
-                <Link href={`/sectors/commercial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Commercial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/industrial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Industrial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/institutional`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Institutional
-                  </Button>
-                </Link>
-                <Link href={`/sectors/oil-gas`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Oil & Gas
-                  </Button>
-                </Link>
-                <Link href={`/sectors/power-transmission`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Power Transmission
-                  </Button>
-                </Link>
-                <Link href={`/sectors/ports`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Ports
-                  </Button>
-                </Link>
-                <Link href={`/sectors/renewable-energy`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Renewable Energy
-                  </Button>
-                </Link>
-                <Link href={`/sectors/residential`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
-                  </Button>
-                </Link>
-                <Link href={`/sectors/roads-highways`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Roads & Highways
-                  </Button>
-                </Link>
-                <Link href={`/sectors/railways-metro`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Railways & Metro
-                  </Button>
-                </Link>
-                <Link href={`/sectors/thermal-power-plant`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Thermal Power Plant
-                  </Button>
-                </Link>
-                <Link href={`/sectors/water-infrastructure`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Water Infrastructure
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className='flex flex-row'>
-        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
+        <div className='md:flex w-1/5   pl-4 flex-col'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-12'>
@@ -186,256 +89,103 @@ const Page = () => {
               className='bg-num-orange text-white p-1 rounded-xl'
             />
           </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-              Our Sectors
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <div className='w-1/2'>
-                <Link href={`/sectors/aviation`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Aviation
-                  </Button>
-                </Link>
-                <Link href={`/sectors/bridges-structures`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Bridges & Structures
-                  </Button>
-                </Link>
-                <Link href={`/sectors/commercial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Commercial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/industrial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Industrial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/institutional`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Institutional
-                  </Button>
-                </Link>
-                <Link href={`/sectors/oil-gas`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Oil & Gas
-                  </Button>
-                </Link>
-                <Link href={`/sectors/power-transmission`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Power Transmission
-                  </Button>
-                </Link>
-                <Link href={`/sectors/ports`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Ports
-                  </Button>
-                </Link>
-                <Link href={`/sectors/renewable-energy`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Renewable Energy
-                  </Button>
-                </Link>
-                <Link href={`/sectors/residential`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
-                  </Button>
-                </Link>
-                <Link href={`/sectors/roads-highways`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Roads & Highways
-                  </Button>
-                </Link>
-                <Link href={`/sectors/railways-metro`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Railways & Metro
-                  </Button>
-                </Link>
-                <Link href={`/sectors/thermal-power-plant`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Thermal Power Plant
-                  </Button>
-                </Link>
-                <Link href={`/sectors/water-infrastructure`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Water Infrastructure
-                  </Button>
-                </Link>
-              </div>
-            </div>
+          <div className='flex flex-col gap-y-2  tracking-widest'>
+            <h1 className='text-xl font-bold'>Project Details</h1>
+            <hr className='border-b-1 border-num-indigo mb-2' />
+            <h2 className='text-num-orange '>Project Name</h2>
+            <h3>Mumbai Delhi Expressway package 2</h3>
+            <hr className='border-b-1 border-num-indigo' />
+            <h2 className='text-num-orange '>Location</h2>
+            <h3>Meerut , Uttar Pradesh </h3>
+            <hr className='border-b-1 border-num-indigo' />
+            <h2 className='text-num-orange '>Value </h2>
+            <h3>Value 1057.6 Cr </h3>
+            <hr className='border-b-1 border-num-indigo' />
+            <h2 className='text-num-orange '>Client </h2>
+            <h3> </h3>
+            <hr className='border-b-1 border-num-indigo' />
+            <h2 className='text-num-orange '>completion Date</h2>
+            <h3>Dec 2018 </h3>
+            <hr className='border-b-1 border-num-indigo' />
+            <h2 className='text-num-orange '>Sector </h2>
+            <h3>Roads & Highways </h3>
+            <hr className='border-b-1 border-num-indigo' />
+            <h2 className='text-num-orange '>Service provided </h2>
+            <h3>Techno-Commercial Audit </h3>
           </div>
         </div>
-        <div className=' flex flex-col items-center  text-justify'>
-          <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
+        <div className='w-3/5 flex flex-col items-center text-justify'>
+          {/* <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
             <em>Helping people move faster, safer and sustainably</em>
-          </h1>
+          </h1> */}
           <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
-              As populations grow, so do demands for safe, expedient and
-              cost-effective transportation. We work with clients in India &
-              abroad to achieve cost optimization, digitization/BIM and
-              efficiency in processes and control in transportation projects.
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              Our work on a section of The Delhi-Mumbai Expressway Project
+              serves as a markable example.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
-              We use our extensive knowledge in techno commercial audit, project
-              planning, digital project monitoring, 5D/4D/3D BIM and managing
-              transportation systems — to help our clients find smarter, more
-              advanced ways to move people from one place to another.
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              Our work on a section of The Delhi-Mumbai Expressway Project
+              serves as a markable example.
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`The Delhi-Vadodara Expressway, which is the first section of the
+              Delhi – Mumbai Expressway, is a greenfield expressway spanning
+              1350 KM, connecting India's national capital, New Delhi, with its
+              financial capital, Mumbai. This fully access-controlled expressway
+              consists of 8 lanes (expandable to 12) and carries a total project
+              value, including land acquisition costs, of approximately INR
+              1,00,000 crores.`}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`The Delhi-Mumbai Expressway, including the Vadodara section, serves as a vital backbone of the Delhi-Mumbai Industrial Corridor (DMIC). It facilitates the movement of goods and enhances connectivity for industrial and economic development in the region.`}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`NumberTree was engaged for techno- commercial audit of 10 different packages, (Vadodara section) having project value of approx. INR 10,000 Crores`}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`Our approach to assignment was -`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`a) Enhancing Process Integrity and Performance: A Risk-Based Audit Approach - The primary focus of this audit was to assess process integrity, ensure compliance, and contribute to the continuous improvement of process performance. We adopted a risk-based approach, leveraging a well-defined conceptual framework for process monitoring. Our goal was to establish an effective control environment, taking into account the criticality of various risk scenarios.`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`b)    Driving Efficiency and Cost Savings through Material Consumption Optimization - One of the key areas we dedicated our attention to was controlling material consumption. Through meticulous drawing-based material reconciliations, we successfully identified the root causes of wastages.`}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`As a result, we suggested robust controls to minimize wastage and gain better insights into consumption patterns. This paved the way for optimized resource utilization and cost savings.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs  '>
-              Our work across{' '}
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Eastern
-                </Link>
-              </span>{' '}
-              &{' '}
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Western
-                </Link>
-              </span>{' '}
-              dedicated freight corridors,{' '}
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Pune Metro
-                </Link>
-              </span>{' '}
-              ,
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Mumbai Metro
-                </Link>
-              </span>{' '}
-              ,
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Etihad Railways
-                </Link>
-              </span>{' '}
-              ,{' '}
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Red Sea Airport – Saudi Arabia
-                </Link>
-              </span>{' '}
-              ,{' '}
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Leh Airport
-                </Link>
-              </span>{' '}
-              ,
-              <span>
-                <Link
-                  href={'#'}
-                  className='text-num-blue font-medium underline'
-                >
-                  Expressways & Roads
-                </Link>
-              </span>{' '}
-              has helped these clients connect people and places in
-              forward-thinking ways.
-            </p>{' '}
-          </div>
-          <br />
-          <div className='w-4/5 '>
-            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={30} className='text-white ' />
-              <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
-                <em>
-                  {' '}
-                  {`Our integrated and collaborative approach has helped us serve all major transport systems. Our unique expertise enables us to deliver high-quality services for our clients that pave the way for long-lasting benefits to society."`}
-                </em>
-              </p>
+            <div className='flex mt-10  gap-x-2 tracking-widest mb-10'>
+              <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+              <h2 className='border border-num-orange text-base  p-1'>
+                Roads & Highways
+              </h2>
+              <h2 className='border border-num-orange text-base   p-1'>
+                techno–commercial audit
+              </h2>
+              <h2 className='border border-num-orange text-base   p-1'>
+                featured project
+              </h2>
+              <h2 className='border border-num-orange text-base  p-1'>
+                Gujarat
+              </h2>
             </div>
           </div>
         </div>
 
-        <div className='hidden w-1/4 md:flex flex-col justify-between '>
+        <div className='w-1/5 mr-4 flex flex-col justify-between '>
           <GetInTouch />
         </div>
       </div>
-      <div className='flex flex-row text-justify pr-8 ml-8'>
-        <div className='w-1/4'></div>
-        <div className='flex flex-col w-3/5  mr-14'>
-          <h2 className='text-3xl   font-bold  mb-4'>Airports & Aviation</h2>
-          <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
-            Pairing expert knowledge with more than 15 years experience, our
-            teams have provided construction management and consultancy services
-            to many aviation projects.
-          </p>{' '}
-          <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
-            Our teams have extensive, first-hand experience in delivering
-            airport projects, combining with an exceptional commitment to
-            quality, digital construction management methods like 3D BIM and a
-            collaborative, client-focused approach to ensure success.
-          </p>{' '}
-          <br />
-          <p className='   md:text-lg text-xs flex mb-8'>
-            We have worked in some of the most prestigious projects like Red Sea
-            Airport, Bangalore international Airport, The Leh Airport. Whether
-            new build, airport expansion or renovation.
-          </p>{' '}
-          <br />
-          <p className='   md:text-lg text-xs flex mb-8'>
-            We offer a full range of digital services & engineering audit
-            services to help our clients deliver challenging, high-profile
-            projects efficiently and on time, every time.
-          </p>{' '}
-          <br />
-          <p className='   md:text-lg text-xs flex '>
-            Our specialists and subject matter experts work closely with airport
-            developers to improve processes , controls , SOP & MIS management to
-            ensure operations of projects in the right manner We provide prompt
-            and customised services that meet client expectations and airport
-            and industry needs.
-          </p>{' '}
-          <br />
-        </div>
-        <div className='md:inline relative hidden w-2/5'>
-          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
-            <p className='text-xl font-medium  mb-2 '>
-              <em>
-                {' '}
-                {`Our expertise drives innovation, efficiency and value into every project. Our teams have extensive, first-hand experience in delivering airport projects.`}
-              </em>
-            </p>
-            <div className='flex justify-end pt-40'>
-              <FaQuoteLeft size={40} className='text-wilmer-orange ' />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='md:hidden p-16 flex  justify-center '>
-        <GetInTouch />
-      </div>
+
       <div className='mt-4'>
         {' '}
         {/* <h1 className='text-7xl translate-y-6 translate-x-2 text-num-watermark font-medium'>

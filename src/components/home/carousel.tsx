@@ -60,14 +60,14 @@ const slides = [
     content:
       'Digitization of infrastructure operations & projects is our forte, we help in digital transformation of construction through BIMfirst, Digital twin.',
     link: '/numbertree',
-    video: '/carousel/bim1.mp4', // replace with the actual video path
+    video: '/carousel/video5.mp4', // replace with the actual video path
   },
 ];
 
 const Carousel = () => {
   const settings = {
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 5000, // Change slide every 5 seconds
+    autoplaySpeed: 3000, // Change slide every 5 seconds
     dots: false, // Hide navigation dots
     arrows: false, // Hide navigation arrows
     infinite: true, // Enable continuous looping

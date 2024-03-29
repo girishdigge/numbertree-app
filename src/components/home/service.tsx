@@ -109,7 +109,7 @@ const Services = () => {
 
       <div className='flex ml-16 items-center'>
         <div className='flex w-3/5'>
-          <div className=' mt-2'>
+          <div className=' mt-0'>
             <div className='relative'>
               <Image
                 width={1200}
@@ -138,14 +138,14 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col w-1/3 gap-y-2  font-bold bg-num-blue bg-opacity-10 text-num-orange mt-2 pt-0 pb-2'>
+        <div className='flex flex-col w-1/3  font-bold bg-num-blue bg-opacity-10 text-num-orange mt-0  '>
           {tabs.map((tab) => (
             <div
               key={tab.id}
-              className={`cursor-pointer  px-4 py-5 ${
+              className={`cursor-pointer  px-4 py-6 ${
                 activeTab === tab.id
-                  ? 'text-white p-2  border-num-orange bg-num-indigo'
-                  : 'text-num-orange '
+                  ? 'text-white p-2   bg-num-indigo'
+                  : 'text-num-orange border-b-2 border-num2-gray-dark'
               }`}
               onMouseEnter={() => handleTabChange(tab.id)}
             >

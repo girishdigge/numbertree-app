@@ -108,20 +108,14 @@ const Page = () => {
             />
           </div>
         </div>
-        <div className='flex mt-10 ml-6 gap-x-2'>
-          <h1 className='text-xl font-medium p-1'>Tags:</h1>
-          <h2 className='border border-num-orange text-base tracking-widest p-1'>
-            Article
-          </h2>
-          <h2 className='border border-num-orange text-base tracking-widest  p-1'>
+        <div className='flex mt-10 ml-6 gap-x-2 tracking-widest'>
+          <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+          <h2 className='border border-num-orange text-base  p-1'>Article</h2>
+          <h2 className='border border-num-orange text-base   p-1'>
             Artificial Intelligence
           </h2>
-          <h2 className='border border-num-orange text-base tracking-widest  p-1'>
-            BIM
-          </h2>
-          <h2 className='border border-num-orange text-base tracking-widest p-1'>
-            Future
-          </h2>
+          <h2 className='border border-num-orange text-base   p-1'>BIM</h2>
+          <h2 className='border border-num-orange text-base  p-1'>Future</h2>
         </div>
         <div>
           <div className='flex  mt-20'>
