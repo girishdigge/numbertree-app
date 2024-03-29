@@ -12,7 +12,7 @@ const Services = () => {
     {
       id: 0,
       name: 'Techno-Commercial Audit',
-      imageUrl: '/services/TechnoComAudit1.jpg',
+      imageUrl: '/services/TechnoComAudit.jpg',
       content: ` We pride ourselves as India's foremost techno commercial audit
             firm with over two decades of experience across varied industries.`,
       link: '#',
@@ -21,7 +21,7 @@ const Services = () => {
     {
       id: 1,
       name: 'Contract Adiministration & Bill Verification',
-      imageUrl: '/services/ContractAdministration2.jpg',
+      imageUrl: '/services/ContractAdministration.jpg',
       content: ` As a consulting engineering firm, we understand the importance of
             efficient contract administration and accurate bill checking in
             maintaining financial integrity and control of infrastructure &
@@ -31,7 +31,7 @@ const Services = () => {
     {
       id: 2,
       name: 'Project Management & Consultancy',
-      imageUrl: '/services/ProjectMonCon1.jpg',
+      imageUrl: '/services/ProjectMonCon.jpg',
       content: `NumberTree offers advanced digital project monitoring services to
             enhance project oversight, efficiency, and transparency. Leveraging
             cutting-edge technologies and data-driven insights, our digital
@@ -42,7 +42,7 @@ const Services = () => {
     {
       id: 3,
       name: 'Quantity Survey & Cost Control',
-      imageUrl: '/services/QuantitySurvey1.jpg',
+      imageUrl: '/services/QuantitySurvey.jpg',
       content: ` In the infrastructure industry, precise and comprehensive
             quantification of materials, labour, and resources is crucial for
             successful project planning and budgeting.`,
@@ -52,7 +52,7 @@ const Services = () => {
     {
       id: 4,
       name: 'Construction Claim Management',
-      imageUrl: '/services/ClaimManagement1.jpg',
+      imageUrl: '/services/ClaimManagement.jpg',
       content: ` We are proud of the work we do at NumberTree, solving problems &
             helping our clients across sector in overcoming their business
             challenges.`,
@@ -61,7 +61,7 @@ const Services = () => {
     {
       id: 5,
       name: 'Transaction Advisory',
-      imageUrl: '/services/TransactionAdvisory1.jpg',
+      imageUrl: '/services/TransactionAdvisory.jpg',
       content: `Our team ensures that your financial transactions are accurately
             processed, risks are minimized, and resources are optimized. We are
             experienced in navigating the field of complex contracts & terms,
@@ -72,7 +72,7 @@ const Services = () => {
     {
       id: 6,
       name: 'Business Transformation',
-      imageUrl: '/services/BusinessTransformation1.jpg',
+      imageUrl: '/services/BusinessTransformation.jpg',
       content: `We help businesses harness the power of financial insights with
             great clarity, it transforms not just the way businesses operate but
             also unlocks their full potential and propels them to growth.`,
@@ -108,12 +108,12 @@ const Services = () => {
       </div>
 
       <div className='flex ml-16 items-center'>
-        <div className='flex w-3/4'>
+        <div className='flex w-3/5'>
           <div className=' mt-2'>
             <div className='relative'>
               <Image
-                width={2040}
-                height={768}
+                width={1200}
+                height={600}
                 src={tabs[activeTab].imageUrl}
                 alt={`Image for ${tabs[activeTab].name}`}
                 className='w-full h-auto'
@@ -138,7 +138,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col w-1/5 gap-y-1 font-bold bg-num-blue bg-opacity-10 text-num-orange '>
+        <div className='flex flex-col w-1/5 gap-y-2 font-bold bg-num-blue bg-opacity-10 text-num-orange '>
           {tabs.map((tab) => (
             <div
               key={tab.id}

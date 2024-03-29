@@ -20,7 +20,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Contract Adiministration',
-      imageUrl: '/services/ContractAdministration2.jpg',
+      imageUrl: '/services/ContractAdministration.jpg',
       content: {
         heading: 'Contract Adiministration',
         paragraph: `As a consulting engineering firm, we understand the importance of

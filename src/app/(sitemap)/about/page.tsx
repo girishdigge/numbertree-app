@@ -74,9 +74,11 @@ const Page = () => {
             assist in overcoming the challenges that arise in today's business
             landscape.`}
             </p>
-            <Button className='w-40 bg-num-indigo mb-20 hover:bg-num-orange'>
-              Read More
-            </Button>
+            <Link href={`/about/more-about-us`}>
+              <Button className='w-40 bg-num-indigo mb-20 hover:bg-num-orange'>
+                Read More
+              </Button>
+            </Link>
           </div>
         </div>
         <div className='flex w-2/5 mr-2'>
