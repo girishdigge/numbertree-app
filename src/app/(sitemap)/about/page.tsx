@@ -251,9 +251,11 @@ const Page = () => {
               </div>
             </div>
             <div className='flex justify-center mt-20'>
-              <Button className='w-40 bg-num-orange hover:bg-white hover:text-black flex justify-center'>
-                Read More
-              </Button>
+              <Link href={'/about/values'}>
+                <Button className='w-40 bg-num-orange hover:bg-white hover:text-black flex justify-center'>
+                  Read More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

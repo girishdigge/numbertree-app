@@ -13,8 +13,7 @@ const Services = () => {
       id: 0,
       name: 'Techno-Commercial Audit',
       imageUrl: '/services/TechnoComAudit.jpg',
-      content: ` We pride ourselves as India's foremost techno commercial audit
-            firm with over two decades of experience across varied industries.`,
+      content: ` With this audit, we help promoters, owners and management of businesses engaged in infrastructure projects to reduce the project cost and achieve cost savings while improving the quality within the budgeted timeframe.`,
       link: '#',
     },
 
@@ -22,30 +21,21 @@ const Services = () => {
       id: 1,
       name: 'Contract Adiministration & Bill Verification',
       imageUrl: '/services/ContractAdministration.jpg',
-      content: ` As a consulting engineering firm, we understand the importance of
-            efficient contract administration and accurate bill checking in
-            maintaining financial integrity and control of infrastructure &
-            construction projects.`,
+      content: ` We help clients, navigate complex contracts, control costs, ensure compliance, manage vendors, and maintain financial transparency through this service. With this we contribute to successful project outcomes, stakeholder satisfaction, and the long-term sustainability of infrastructure developments`,
       link: '#',
     },
     {
       id: 2,
-      name: 'Project Management & Consultancy',
+      name: 'Project Management Consultancy',
       imageUrl: '/services/ProjectMonCon.jpg',
-      content: `NumberTree offers advanced digital project monitoring services to
-            enhance project oversight, efficiency, and transparency. Leveraging
-            cutting-edge technologies and data-driven insights, our digital
-            solutions provide clients with real-time monitoring and actionable
-            intelligence`,
+      content: `We take ownership of the entire project and chart a roadmap for our PMC Clients. We improve efficiency, reduce costs and time, and maximize value by managing the supply chain, making timely decisions, and operating in a proactive manner.`,
       link: '#',
     },
     {
       id: 3,
       name: 'Quantity Survey & Cost Control',
       imageUrl: '/services/QuantitySurvey.jpg',
-      content: ` In the infrastructure industry, precise and comprehensive
-            quantification of materials, labour, and resources is crucial for
-            successful project planning and budgeting.`,
+      content: ` With this service, we enable project stakeholders to make informed decisions, manage risks, and optimize project budgets. We deliver accurate and detailed quantity calculations, supporting our clients in achieving successful project outcomes.`,
       link: '#',
     },
 
@@ -53,29 +43,21 @@ const Services = () => {
       id: 4,
       name: 'Construction Claim Management',
       imageUrl: '/services/ClaimManagement.jpg',
-      content: ` We are proud of the work we do at NumberTree, solving problems &
-            helping our clients across sector in overcoming their business
-            challenges.`,
+      content: ` Our expertise, meticulous approach, and dedication to delivering results make us the ideal choice for resolving project delays. We help businesses successfully navigate the complexities of delay analysis and claim management with confidence and efficiency. `,
       link: '#',
     },
     {
       id: 5,
       name: 'Transaction Advisory',
       imageUrl: '/services/TransactionAdvisory.jpg',
-      content: `Our team ensures that your financial transactions are accurately
-            processed, risks are minimized, and resources are optimized. We are
-            experienced in navigating the field of complex contracts & terms,
-            cost control & risk mitigation, Compliance & regulatory
-            requirements, vendor management & bill verification.`,
+      content: `We provide high-quality advisory services. With focus on debt intermediation, M&A, SME IPO, infrastructure advisory, project consultancy, and structured finance, we bring a wealth of expertise and experience to the table.`,
       link: '#',
     },
     {
       id: 6,
       name: 'Business Transformation',
       imageUrl: '/services/BusinessTransformation.jpg',
-      content: `We help businesses harness the power of financial insights with
-            great clarity, it transforms not just the way businesses operate but
-            also unlocks their full potential and propels them to growth.`,
+      content: `Construction businesses have a primary need for improved efficiency in project delivery. Traditional construction processes often suffer from delays, cost overruns, and quality issues, which can be mitigated by adopting innovative approaches and methodologies. With transformative technologies, construction firms can streamline their operations leading to improved profitability.`,
       link: '#',
     },
     // Add more tabs as needed

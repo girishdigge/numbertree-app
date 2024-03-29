@@ -40,8 +40,10 @@ const Sectors = () => {
             Transportation
           </h1>
           <p className='flex w-4/5 ml-4 mt-2 md:text-lg '>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-            ea officiis sint deleniti delectus perspiciatis inventore.
+            As populations grow, so do demands for safe, expedient and
+            cost-effective transportation across both developed & developing
+            countries .We have expertise in Roads & Highways, multiple metro
+            work and railways as well as port & airport projects.
           </p>
           <div className='flex flex-row mt-16'>
             <div className='w-1/2 flex flex-col-reverse ml-4 mb-4'>{`Read More>`}</div>
@@ -77,11 +79,13 @@ const Sectors = () => {
           className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo  md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
-            Urban Development
+            Urban Infrastructure
           </h1>
           <p className='flex w-4/5 ml-4 mt-2 md:text-lg '>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-            ea officiis sint deleniti delectus perspiciatis inventore.
+            Urban Infrastructure is the foundation of society. Water, sewerage,
+            health, education, sports, housing and recreational facilities are
+            the core of society and its development. Our team is experienced in
+            all these crucial sectors.
           </p>
           <div className='flex flex-row mt-6'>
             <div className='w-1/2 flex flex-col-reverse ml-4 mb-4'>{`Read More>`}</div>
@@ -119,8 +123,10 @@ const Sectors = () => {
             Energy
           </h1>
           <p className='flex w-4/5  ml-4 mt-2 md:text-lg '>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-            ea officiis sint deleniti delectus perspiciatis inventore.
+            Energy sector is faced with delivering reliable, affordable, and
+            secure supplies, while also transitioning to cleaner energy. Our
+            strategic insight while working on various projects in the sector
+            address the challenges helps our clients succeed.
           </p>
           <div className='flex flex-row mt-16'>
             <div className='w-1/2 flex flex-col-reverse ml-4 mb-4'>{`Read More>`}</div>

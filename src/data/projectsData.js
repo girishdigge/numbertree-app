@@ -77,7 +77,7 @@ export const projects = [
     content:
       'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
     link: '/projects/MumbaiDelhiExpressway',
-    image: '/projects/mumbaiDelhiExpressway.jpg', // replace with the actual image path
+    image: '/projects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
   },
   {
     serviceId: '1',
