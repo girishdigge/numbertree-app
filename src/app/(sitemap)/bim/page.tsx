@@ -12,6 +12,8 @@ import { RxSlash } from 'react-icons/rx';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import BlogCard from '@/components/sitemap/blog-card';
+import { ExploreArticles } from '@/data/Insights';
 const Page = () => {
   return (
     <div>
@@ -134,26 +136,26 @@ const Page = () => {
             </h2>
             <div className='flex flex-col gap-2'>
               <div className='w-1/2'>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   Business Transformation
                 </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   Claim Management
                 </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   Contract Administration
                 </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   Project Monitoring & Control
                 </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   {' '}
                   Quantity Survey
                 </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   Transaction Advisory
                 </Button>
-                <Button className='bg-num-indigo mb-2  text-white hover:bg-wilmer-orange hover:text-white'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black   hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   {' '}
                   Techno Commercial Audit
                 </Button>
@@ -312,17 +314,16 @@ const Page = () => {
         <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
           <div>
             <Tabs defaultValue='1' className='w-[full]'>
-              <TabsList className='grid grid-cols-4 mb-4 gap-2'>
-                <TabsTrigger value='1'>
-                  Design & production automation
-                </TabsTrigger>
-                <TabsTrigger value='2'>Data management</TabsTrigger>
-                <TabsTrigger value='3'>Digital asset management</TabsTrigger>
-                <TabsTrigger value='4'>Collabration</TabsTrigger>
+              <TabsList className='grid grid-cols-5 mb-4 gap-2'>
+                <TabsTrigger value='1'>5D BIM</TabsTrigger>
+                <TabsTrigger value='2'>3D BIM</TabsTrigger>
+                <TabsTrigger value='3'>Digital Twin</TabsTrigger>
+                <TabsTrigger value='5'>Digital Construction</TabsTrigger>
+                <TabsTrigger value='4'>IoT</TabsTrigger>
               </TabsList>
-
+              <hr className='border-b-2 border-num-orange' />
               <TabsContent value='1'>
-                <div className='grid grid-cols-2'>
+                <div className='grid grid-cols-2 bg-num-blue bg-opacity-10'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>Featured project 1</h1>
                     <h2 className='text-2xl mb-2 w-3/4'>
@@ -345,6 +346,7 @@ const Page = () => {
                     height={600}
                     width={600}
                     alt='img'
+                    className='p-4'
                   />
                 </div>
               </TabsContent>
@@ -429,154 +431,242 @@ const Page = () => {
                   />
                 </div>
               </TabsContent>
+              <TabsContent value='5'>
+                <div className='grid grid-cols-2'>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Featured project 4</h1>
+                    <h2 className='text-2xl mb-2 w-3/4'>
+                      Connecting the physical and digital worlds
+                    </h2>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora asperiores consequuntur repellendus reprehenderit
+                      modi nam incidunt totam aperiam, perspiciatis praesentium
+                      voluptates dolores velit, suscipit animi veritatis
+                      possimus molestiae tenetur ut illo earum quasi voluptas
+                      maiores odio blanditiis. Asperiores,
+                    </p>
+                    <Link href={'/bim'}>
+                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+                    </Link>
+                  </div>
+                  <Image
+                    src={'/images/tab1.jpg'}
+                    height={600}
+                    width={600}
+                    alt='img'
+                  />
+                </div>
+              </TabsContent>
             </Tabs>
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2'>
-        <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-          <h1 className='text-sm mb-2'>Featured project</h1>
-          <h2 className='text-2xl mb-2 w-3/4'>
-            Connecting the physical and digital worlds
-          </h2>
-          <p className='text-xl mt-2 mb-4 w-3/4'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-            asperiores consequuntur repellendus reprehenderit modi nam incidunt
-            totam aperiam, perspiciatis praesentium voluptates dolores velit,
-            suscipit animi veritatis possimus molestiae tenetur ut illo earum
-            quasi voluptas maiores odio blanditiis. Asperiores,
-          </p>
-          <Link href={'/bim'}>
-            <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-          </Link>
-        </div>
-        <Image src={'/bim/arup2.jpg'} height={600} width={800} alt='img' />
-      </div>
-      {/* <div className='flex mt-0 flex-row'>
-        <div className='hidden md:flex w-1/5 items-center md:flex-col mt-2'></div>
-        <div className=' flex w-3/5 mt-10 flex-col items-center justify-center mb-10 '>
-          <h1 className='font-medium text-3xl mt-2 mb-1 '>
-            New layers, new insights
-          </h1>
-          <p className='text-xl text-justify mt-2 mb-10'>
-            Drawing on NumberTree breadth of expertise and services, our BIM
-            models are now used as the foundation for analytic models, such as
-            those evaluating energy use and carbon emissions, fire safety
-            implications, acoustic impacts, lighting or airflow. In order to
-            exploit the data held in BIM we developed the unique and
-            ground-breaking Global Revit and Global Tekla Standards for BIM.
-            These are fundamental building blocks to sharing data, providing a
-            single global standard that transcends boundaries, such as language,
-            measurement units, codes, symbols, and much more.
-          </p>
-          <br />
-          <p className='text-xl text-justify mt-2 mb-10'>
-            Given our clients’ growing desire for sustainable operations and
-            outcomes, future spatial flexibility, new digital services, greater
-            energy efficiency or particular user experiences, BIM’s importance
-            as a central intelligence source will also grow.
-          </p>
-        </div>
-      </div> */}
-      <div>
-        <div className='flex  mt-20'>
-          <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
-            Latest Insights
-          </h2>
-        </div>
-        <div className='flex justify-center items-center mb-20'>
-          <div className='grid grid-cols-3 '>
-            <div className='  flex flex-col items-center justify-center'>
-              <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-                <Image
-                  src={`/career/blog.jpg`}
-                  width={400}
-                  height={400}
-                  alt='business transformation'
-                  className='object-contain mt-10'
-                />
-                <Link href={`/career`}>
-                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                      <div className='ml-8'>
-                        <h1 className='text-num-orange ml-1'>Insight</h1>
-                        <h2 className='font-bold pb-2  md:text-2xl'>
-                          Insight Title
-                        </h2>
-                      </div>
-                    </div>
+      <div className='flex mt-0 flex-col items-center justify-center'>
+        <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
+          <div>
+            <Tabs defaultValue='1' className='w-[full]'>
+              <TabsContent value='1'>
+                <div className='grid grid-cols-2 bg-num-blue bg-opacity-10'>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Featured project 1</h1>
+                    <h2 className='text-2xl mb-2 w-3/4'>
+                      Connecting the physical and digital worlds
+                    </h2>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora asperiores consequuntur repellendus reprehenderit
+                      modi nam incidunt totam aperiam, perspiciatis praesentium
+                      voluptates dolores velit, suscipit animi veritatis
+                      possimus molestiae tenetur ut illo earum quasi voluptas
+                      maiores odio blanditiis. Asperiores,
+                    </p>
+                    <Link href={'/bim'}>
+                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-              <h2 className='text-xl w-3/4 font-bold mt-2 mb-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h2>
-              <p className='w-3/4 text-justify mb-10'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-                fugit magnam dolorem commodi. adipisicing elit.
-              </p>
-            </div>
-            <div className='  flex flex-col items-center justify-center'>
-              <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-                <Image
-                  src={`/career/blog.jpg`}
-                  width={400}
-                  height={400}
-                  alt='business transformation'
-                  className='object-contain mt-10'
-                />
-                <Link href={`/career`}>
-                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                      <div className='ml-8'>
-                        <h1 className='text-num-orange ml-1'>Insight</h1>
-                        <h2 className='font-bold pb-2  md:text-2xl'>
-                          Insight Title
-                        </h2>
-                      </div>
-                    </div>
+                  <Image
+                    src={'/images/tab1.jpg'}
+                    height={600}
+                    width={600}
+                    alt='img'
+                    className='p-4'
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value='2'>
+                <div className='grid grid-cols-2'>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Featured project 2</h1>
+                    <h2 className='text-2xl mb-2 w-3/4'>
+                      Connecting the physical and digital worlds
+                    </h2>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora asperiores consequuntur repellendus reprehenderit
+                      modi nam incidunt totam aperiam, perspiciatis praesentium
+                      voluptates dolores velit, suscipit animi veritatis
+                      possimus molestiae tenetur ut illo earum quasi voluptas
+                      maiores odio blanditiis. Asperiores,
+                    </p>
+                    <Link href={'/bim'}>
+                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-              <h2 className='text-xl w-3/4 font-bold mt-2 mb-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h2>
-              <p className='w-3/4 text-justify mb-10'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-                fugit magnam dolorem commodi. adipisicing elit.
-              </p>
-            </div>
-            <div className='  flex flex-col items-center justify-center'>
-              <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-                <Image
-                  src={`/career/blog.jpg`}
-                  width={400}
-                  height={400}
-                  alt='business transformation'
-                  className='object-contain mt-10'
-                />
-                <Link href={`/career`}>
-                  <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                    <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                      <div className='ml-8'>
-                        <h1 className='text-num-orange ml-1'>Insight</h1>
-                        <h2 className='font-bold pb-2  md:text-2xl'>
-                          Insight Title
-                        </h2>
-                      </div>
-                    </div>
+                  <Image
+                    src={'/images/tab2.jpg'}
+                    height={600}
+                    width={600}
+                    alt='img'
+                  />
+                </div>{' '}
+              </TabsContent>
+              <TabsContent value='3'>
+                <div className='grid grid-cols-2'>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Featured project 3</h1>
+                    <h2 className='text-2xl mb-2 w-3/4'>
+                      Connecting the physical and digital worlds
+                    </h2>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora asperiores consequuntur repellendus reprehenderit
+                      modi nam incidunt totam aperiam, perspiciatis praesentium
+                      voluptates dolores velit, suscipit animi veritatis
+                      possimus molestiae tenetur ut illo earum quasi voluptas
+                      maiores odio blanditiis. Asperiores,
+                    </p>
+                    <Link href={'/bim'}>
+                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+                    </Link>
                   </div>
-                </Link>
+                  <Image
+                    src={'/images/tab3.jpg'}
+                    height={600}
+                    width={600}
+                    alt='img'
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value='4'>
+                <div className='grid grid-cols-2'>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Featured project 4</h1>
+                    <h2 className='text-2xl mb-2 w-3/4'>
+                      Connecting the physical and digital worlds
+                    </h2>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora asperiores consequuntur repellendus reprehenderit
+                      modi nam incidunt totam aperiam, perspiciatis praesentium
+                      voluptates dolores velit, suscipit animi veritatis
+                      possimus molestiae tenetur ut illo earum quasi voluptas
+                      maiores odio blanditiis. Asperiores,
+                    </p>
+                    <Link href={'/bim'}>
+                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+                    </Link>
+                  </div>
+                  <Image
+                    src={'/images/tab4.jpg'}
+                    height={600}
+                    width={600}
+                    alt='img'
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value='5'>
+                <div className='grid grid-cols-2'>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Featured project 4</h1>
+                    <h2 className='text-2xl mb-2 w-3/4'>
+                      Connecting the physical and digital worlds
+                    </h2>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora asperiores consequuntur repellendus reprehenderit
+                      modi nam incidunt totam aperiam, perspiciatis praesentium
+                      voluptates dolores velit, suscipit animi veritatis
+                      possimus molestiae tenetur ut illo earum quasi voluptas
+                      maiores odio blanditiis. Asperiores,
+                    </p>
+                    <Link href={'/bim'}>
+                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
+                    </Link>
+                  </div>
+                  <Image
+                    src={'/images/tab1.jpg'}
+                    height={600}
+                    width={600}
+                    alt='img'
+                  />
+                </div>
+              </TabsContent>
+              <div className='grid grid-cols-2'>
+                <div></div>
+                <TabsList className='grid grid-cols-5 mb-4  bg-white'>
+                  <TabsTrigger value='1'>
+                    <Image
+                      src={'/images/tab1.jpg'}
+                      height={100}
+                      width={120}
+                      alt='img'
+                    />
+                  </TabsTrigger>
+                  <TabsTrigger value='2'>
+                    {' '}
+                    <Image
+                      src={'/images/tab2.jpg'}
+                      height={100}
+                      width={120}
+                      alt='img'
+                    />
+                  </TabsTrigger>
+                  <TabsTrigger value='3'>
+                    {' '}
+                    <Image
+                      src={'/images/tab3.jpg'}
+                      height={100}
+                      width={120}
+                      alt='img'
+                    />
+                  </TabsTrigger>
+                  <TabsTrigger value='5'>
+                    {' '}
+                    <Image
+                      src={'/images/tab4.jpg'}
+                      height={100}
+                      width={120}
+                      alt='img'
+                    />
+                  </TabsTrigger>
+                  <TabsTrigger value='4'>
+                    {' '}
+                    <Image
+                      src={'/images/tab1.jpg'}
+                      height={100}
+                      width={120}
+                      alt='img'
+                    />
+                  </TabsTrigger>
+                </TabsList>
               </div>
-              <h2 className='text-xl w-3/4 font-bold mt-2 mb-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h2>
-              <p className='w-3/4 text-justify mb-10'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-                fugit magnam dolorem commodi. adipisicing elit.
-              </p>
-            </div>
+            </Tabs>
           </div>
+        </div>
+      </div>
+
+      <div className='flex  mt-20'>
+        <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
+          Latest Insights
+        </h2>
+      </div>
+      <div className='container mx-auto px-4 py-8'>
+        {/* <h1 className='text-3xl font-bold mb-4'>Latest Blogs</h1> */}
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+          {ExploreArticles.map((blog, index) => (
+            <BlogCard key={index} blog={blog} />
+          ))}
         </div>
       </div>
     </div>

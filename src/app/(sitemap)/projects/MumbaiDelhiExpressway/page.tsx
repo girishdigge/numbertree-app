@@ -107,7 +107,7 @@ const Page = () => {
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
-            <h2 className='text-num-orange '>completion Date</h2>
+            <h2 className='text-num-orange '>Completion Date</h2>
             <h3>Dec 2018 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>

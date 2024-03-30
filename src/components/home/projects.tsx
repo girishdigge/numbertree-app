@@ -14,36 +14,15 @@ import { Button } from '../ui/button';
 const Projects = () => {
   const projects = [
     {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Parliment,New Delhi',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
+      name: 'Mumbai Delhi Expressway package 2',
+      location: 'Meerut , Uttar Pradesh',
+      value: '1057.6 Cr(INR)',
+      date: 'Dec 2018',
+      client: '',
+      sector: 'Roads & Highways',
+      service: 'Techno-Commercial Audit',
       image: '/projects/newParliment1.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Guwahati Airport',
-      content:
-        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-      link: '/quantity-survey',
-      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Mercedes Benz,Pune',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
       link: '/numbertree',
-      image: '/projects/merc.jpg', // replace with the actual image path
-    },
-    {
-      heading: "Empowering Tomorrow's infrastructure",
-      location: 'Leh Airport',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/leh.jpg', // replace with the actual image path
     },
   ];
   return (
@@ -82,7 +61,7 @@ const Projects = () => {
                     alt='image'
                   />
                   <div className='absolute inset-0 flex  '>
-                    <div className='bg-black md:bg-opacity-50 bg-opacity-40 md:w-1/2 w-1/2  md:p-5'>
+                    <div className='bg-black md:bg-opacity-70  md:w-1/3 w-1/2  '>
                       <div className='md:flex hidden flex-row mt-4 ml-2'>
                         {/* <h1 className='text-num-orange md:text-2xl  text-xl ml-1 mt-1 md:mb-2 font-semibold'>
                           OUR LATEST WORK
@@ -92,16 +71,49 @@ const Projects = () => {
                         {/* <h2 className='md:text-xl md:flex hidden font-light text-sm  mb-2'>
                           {project.heading}
                         </h2> */}
-                        <h3 className='md:text-4xl text-xl font-bold '>
+                        {/* <h3 className='md:text-4xl text-xl font-bold '>
                           {project.location}
                         </h3>
                         <hr className='w-3/5 border-num-orange border-2 md:mt-3 md:mb-3' />
                         <h2 className='md:text-xl md:mb-5 md:w-4/5 text-xs'>
                           {project.content}
-                        </h2>
-                        <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
-                          Read More
-                        </Button>
+                        </h2> */}
+                        <div className='flex flex-col gap-y-2 pl-4 tracking-widest'>
+                          <h1 className='text-2xl font-bold  tracking-widest'>
+                            Project Details
+                          </h1>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          <h2 className='text-num-orange text-lg '>
+                            Project Name
+                          </h2>
+                          <h3 className='text-xl'>{project.name}</h3>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          <h2 className='text-num-orange text-lg '>Location</h2>
+                          <h3 className='text-xl'>{project.location}</h3>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          <h2 className='text-num-orange text-lg '>Value </h2>
+                          <h3 className='text-xl'>{project.value}</h3>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          {/* <h2 className='text-num-orange text-lg '>Client </h2>
+                          <h3> </h3>
+                         <hr className='border-b-1 w-40 border-white mb-2' /> */}
+                          <h2 className='text-num-orange text-lg '>
+                            completion Date
+                          </h2>
+                          <h3 className='text-xl'>{project.date} </h3>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          <h2 className='text-num-orange text-lg '>Sector </h2>
+                          <h3 className='text-xl'>{project.sector}</h3>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          <h2 className='text-num-orange text-lg '>
+                            Service provided{' '}
+                          </h2>
+                          <h3 className='text-xl'>{project.service}</h3>
+                          <hr className='border-b-1 w-40 border-white mb-2' />
+                          <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+                            Read More
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
