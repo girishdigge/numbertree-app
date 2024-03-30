@@ -128,7 +128,7 @@ const Page = () => {
               services of BIMfirst and transaction advisory, that reflects our
               commitment to meet our clients’ evolving needs.
             </h2>
-            <h2 className='font-medium text-xl mt-4 mb-4'>
+            <h2 className='font-medium text-xl mt-8 '>
               Here’s what some of our clients have to say about us
             </h2>
           </div>
@@ -160,7 +160,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='relative mb-14 w-3/4 border ml-8 border-1 border-b-0 mt-10 border-num-orange rounded-sm shadow-xl'>
+      <div className='relative mb-14 w-3/4 border ml-8 border-1 border-b-0 mt-4 border-num-orange rounded-sm shadow-xl'>
         <Slider {...settings}>
           {testimonials.map((test, index) => (
             <div key={index} className='flex mt-10 mb-5 '>
