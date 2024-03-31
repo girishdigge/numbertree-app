@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 const Connect = () => {
   return (
-    <div className='bg-num-blue bg-opacity-10 md:p-8 md:mt-0 md:pt-20 mt-10'>
+    <div className='md:p-8 md:mt-0 md:pt-20 mt-10'>
       <div className='md:flex flex-row gap-2 md:ml-4 mr-4'>
         <div className='flex flex-row relative h-96  mb-10 md:mb-0 md:ml-1'>
           <Image
-            src={`/connect/linkedin.png`}
+            src={`/images/linkedin.jpg`}
             height={540}
             width={960}
             alt='linkedin'
@@ -43,7 +43,7 @@ const Connect = () => {
         </div>
         <div className='z-1 flex flex-row relative h-96'>
           <Image
-            src={`/connect/insignts.png`}
+            src={`/images/insightsBanner.jpg`}
             height={540}
             width={960}
             alt='insights'

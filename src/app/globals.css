@@ -153,3 +153,36 @@
     transform: translateX(0);
   }
 }
+
+.animated-hr {
+  width: 0;
+  border: none;
+  height: 2px;
+  background-color: #ea5c23; /* Adjust the color to your liking */
+  position: relative;
+  animation: expand 0.8s ease forwards;
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes conveyor-belt {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-conveyor-belt {
+  animation: conveyor-belt 15s linear infinite; /* Adjust duration as needed */
+}

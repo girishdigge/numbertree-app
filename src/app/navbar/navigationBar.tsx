@@ -16,153 +16,108 @@ import {
 import Image from 'next/image';
 import { Separator } from '@radix-ui/react-separator';
 
-const services: { title: string; href: string; description: string }[] = [
+const services: { title: string; href: string }[] = [
   {
     title: 'Business Transformation',
     href: '/services/business-transformation',
-    description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
     title: 'Claim Management',
     href: '/services/claim-management',
-    description:
-      'For sighted users to preview content available behind a link.',
   },
   {
     title: 'Contract Administration',
     href: '/services/contract-administration',
-    description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
   {
     title: 'Project Monitoring & Control',
     href: '/services/project-monitoring-and-control',
-    description: 'Visually or semantically separates content.',
   },
   {
     title: 'Quantity Survey',
     href: '/services/quantity-survey',
-    description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
   },
   {
     title: 'Techno Commercial Audit',
     href: '/services/techno-commercial-audit',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
   {
     title: 'Transaction Advisory',
     href: '/services/transaction-advisory',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
 ];
 
-const sectors: { title: string; href: string; description: string }[] = [
+const sectors: { title: string; href: string }[] = [
   {
     title: 'Aviation',
     href: '/sectors/aviation',
-    description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
     title: 'Bridges Structures',
     href: '/sectors/bridges-structures',
-    description:
-      'For sighted users to preview content available behind a link.',
   },
   {
     title: 'Commercial',
     href: '/sectors/commercial',
-    description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
   {
     title: 'Industrial',
     href: '/sectors/industrial',
-    description: 'Visually or semantically separates content.',
   },
   {
     title: 'Institutional',
     href: '/sectors/institutional',
-    description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
   },
   {
     title: 'Oil Gas',
     href: '/sectors/oil-gas',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
   {
     title: 'Ports',
     href: '/sectors/ports',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
   {
     title: 'Power Transmission',
     href: '/sectors/power-transmission',
-    description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
     title: 'Railways Metro',
     href: '/sectors/railways-metro',
-    description:
-      'For sighted users to preview content available behind a link.',
   },
   {
     title: 'Renewable Energy',
     href: '/sectors/renewable-energy',
-    description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
   {
     title: 'Residential',
     href: '/sectors/residential',
-    description: 'Visually or semantically separates content.',
   },
   {
     title: 'Roads Highways',
     href: '/sectors/roads-highways',
-    description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
   },
   {
     title: 'Thermal Power Plant',
     href: '/sectors/thermal-power-plant',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
   {
     title: 'Water Infrastructure',
     href: '/sectors/water-infrastructure',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
 ];
 
-const projects: { title: string; href: string; description: string }[] = [
+const projects: { title: string; href: string }[] = [
   {
     title: 'Featured Projects',
-    href: '/projects/featured-projects',
-    description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
+    href: '/projects',
   },
   {
     title: 'Latest Projects',
-    href: '/projects/latest-projects',
-    description:
-      'For sighted users to preview content available behind a link.',
+    href: '/projects',
   },
   {
     title: 'past-projects',
-    href: '/projects/past-projects',
-    description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+    href: '/projects',
   },
 ];
 
@@ -182,41 +137,38 @@ export function NavigationBar() {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
-            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
+            <hr className='border-2 border-num-orange animated-hr' />
+            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[800px] lg:grid-cols-[.75fr_1fr] '>
               <li className='row-span-4'>
                 <NavigationMenuLink asChild>
                   <a
-                    className='flex h-full w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
+                    className='flex  w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
                     href='/about'
                   >
                     <Logo />
-                    <div className='mb-2 mt-4 text-lg font-medium '>
+                    <div className='mb-2 mt-4 text-2xl font-bold text-num-orange'>
                       About Us
                     </div>
-                    <p className='text-sm leading-tight text-muted-foreground'>
-                      For major engineering and construction (E&C) projects,
-                      Construction Site audit ( techno Commercial Audit) can be
-                      an effective tool to do more with less and help eliminate
-                      wasteful spending and cost overruns
+                    {/* <p className='text-base leading-tight text-muted-foreground w-11/12'> */}
+                    <p className='text-lg  font-medium '>
+                      We are Infrastructure Experts
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href='/about/vision' title='Vision'>
-                We are enablers of change, for our clients, for our environment
-                & our people such that progress, growth and sustainability go
-                hand in hand.
-              </ListItem>
-              <ListItem href='/about/mission' title='Mission'>
-                To empower businesses to unlock their full potential, to grow
-                profitably and sustainably.
-              </ListItem>
-              <ListItem href='/about/people' title='Team / People'>
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-              <ListItem href='/about/csr-esg' title='CSR / ESG'>
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+              <ListItem href='/about/values' title='Our Values' />
+              <ListItem
+                href='/about/client-ethics'
+                title='Clients & Ethics'
+              ></ListItem>
+              <ListItem
+                href='/about/leadership-people'
+                title='Leadership & People'
+              ></ListItem>
+              <ListItem
+                href='/about/csr-esg'
+                title='ESG & Corporate Social Responsibility'
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -225,17 +177,27 @@ export function NavigationBar() {
             <Link href={`/services`}> Services</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className='grid w-[400px] gap-4 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
-              {services.map((service) => (
-                <ListItem
-                  key={service.title}
-                  title={service.title}
-                  href={service.href}
-                >
-                  {service.description}
-                </ListItem>
-              ))}
-            </ul>
+            <hr className='border-2 border-num-orange animated-hr' />
+
+            <div className='flex'>
+              <div className='flex flex-col w-1/3 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
+                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-orange'>
+                  Services
+                </h1>
+                <p className='text-lg  font-medium '>
+                  Empowering decision making to transform businesses
+                </p>
+              </div>
+              <ul className='grid w-[400px] gap-4 p-4 md:w-[500px] md:grid-cols-2 lg:w-[800px] '>
+                {services.map((service) => (
+                  <ListItem
+                    key={service.title}
+                    title={service.title}
+                    href={service.href}
+                  ></ListItem>
+                ))}
+              </ul>
+            </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -243,17 +205,26 @@ export function NavigationBar() {
             <Link href={`/sectors`}> Sectors</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className='grid w-[400px] gap-1 p-1 md:w-[500px] md:grid-cols-3 lg:w-[600px] '>
-              {sectors.map((sector) => (
-                <ListItem
-                  key={sector.title}
-                  title={sector.title}
-                  href={sector.href}
-                >
-                  {sector.description}
-                </ListItem>
-              ))}
-            </ul>
+            <hr className='border-2 border-num-orange animated-hr' />
+            <div className='flex'>
+              <div className='flex flex-col w-1/3 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
+                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-orange'>
+                  Sectors
+                </h1>
+                <p className='text-lg  font-medium '>
+                  Uplifting communities, improving access
+                </p>
+              </div>
+              <ul className='grid w-[400px] gap-1 p-1 md:w-[500px] md:grid-cols-3 lg:w-[800px] '>
+                {sectors.map((sector) => (
+                  <ListItem
+                    key={sector.title}
+                    title={sector.title}
+                    href={sector.href}
+                  ></ListItem>
+                ))}
+              </ul>
+            </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -261,17 +232,26 @@ export function NavigationBar() {
             <Link href={`/projects`}>Projects</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] '>
-              {projects.map((project) => (
-                <ListItem
-                  key={project.title}
-                  title={project.title}
-                  href={project.href}
-                >
-                  {project.description}
-                </ListItem>
-              ))}
-            </ul>
+            <hr className='border-2 border-num-orange animated-hr' />
+            <div className='flex'>
+              <div className='flex flex-col w-1/2 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
+                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-orange'>
+                  Projects
+                </h1>
+                <p className='text-lg  font-medium '>
+                  Taking projects from complexity to profitability
+                </p>
+              </div>
+              <ul className='grid grid-cols-1 w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[600px] '>
+                {projects.map((project) => (
+                  <ListItem
+                    key={project.title}
+                    title={project.title}
+                    href={project.href}
+                  ></ListItem>
+                ))}
+              </ul>
+            </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -333,7 +313,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className='text-sm font-medium leading-none'>{title}</div>
+          <div className='text-lg font-medium leading-none'>{title}</div>
           <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>
             {children}
           </p>

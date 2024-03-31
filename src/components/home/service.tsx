@@ -101,13 +101,13 @@ const Services = () => {
                 className='w-full h-auto'
               />
               <div className='absolute inset-0 flex  '>
-                <div className='bg-black md:bg-opacity-70 bg-opacity-70  md:p-5'>
+                <div className='bg-black  bg-opacity-40  md:p-5'>
                   <div className=' text-white ml-2 w-1/2'>
                     <h2 className='md:text-4xl  font-bold md:flex hidden text-sm  mb-2'>
                       {tabs[activeTab].name}
                     </h2>
                     <hr className='w-2/5 border-num-orange border-2 md:mt-3 md:mb-3' />
-                    <h3 className='md:text-lg  font-medium '>
+                    <h3 className='md:text-lg bg-black bg-opacity-5 '>
                       {tabs[activeTab].content}
                     </h3>
                     <Link href={tabs[activeTab].link}>
@@ -121,13 +121,13 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col w-1/3  font-bold bg-num-blue bg-opacity-10 text-num-orange mt-0  '>
+        <div className='flex flex-col w-1/3  font-bold bg-num-blue bg-opacity-10 text-num-orange   '>
           {tabs.map((tab) => (
             <div
               key={tab.id}
-              className={`cursor-pointer  px-4 py-6 ${
+              className={`cursor-pointer  px-4 py-6  ${
                 activeTab === tab.id
-                  ? 'text-white p-2   bg-num-indigo'
+                  ? 'text-white   bg-num-indigo'
                   : 'text-num-orange border-b-2 border-num2-gray-dark'
               }`}
               onMouseEnter={() => handleTabChange(tab.id)}

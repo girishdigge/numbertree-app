@@ -10,21 +10,9 @@ import {
 } from '@/components/ui/carousel';
 import Image from 'next/image';
 import { Button } from '../ui/button';
-
+import Link from 'next/link';
+import { MainPageProjects } from '@/data/mainPageProjects';
 const Projects = () => {
-  const projects = [
-    {
-      name: 'Mumbai Delhi Expressway package 2',
-      location: 'Meerut , Uttar Pradesh',
-      value: '1057.6 Cr(INR)',
-      date: 'Dec 2018',
-      client: '',
-      sector: 'Roads & Highways',
-      service: 'Techno-Commercial Audit',
-      image: '/projects/newParliment1.jpg', // replace with the actual image path
-      link: '/numbertree',
-    },
-  ];
   return (
     <div className=''>
       <div className='mt-10 md:ml-28 ml-10'>
@@ -50,7 +38,7 @@ const Projects = () => {
       <div className='flex items-center justify-center'>
         <Carousel className='flex items-center justify-center w-5/6 relative'>
           <CarouselContent>
-            {projects.map((project, index) => (
+            {MainPageProjects.map((project, index) => (
               <CarouselItem key={index}>
                 <div className='relative'>
                   <Image
@@ -98,7 +86,7 @@ const Projects = () => {
                           <h3> </h3>
                          <hr className='border-b-1 w-40 border-white mb-2' /> */}
                           <h2 className='text-num-orange text-lg '>
-                            completion Date
+                            Completion Date
                           </h2>
                           <h3 className='text-xl'>{project.date} </h3>
                           <hr className='border-b-1 w-40 border-white mb-2' />
@@ -110,9 +98,11 @@ const Projects = () => {
                           </h2>
                           <h3 className='text-xl'>{project.service}</h3>
                           <hr className='border-b-1 w-40 border-white mb-2' />
-                          <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
-                            Read More
-                          </Button>
+                          <Link href={project.link}>
+                            <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+                              Read More
+                            </Button>
+                          </Link>
                         </div>
                       </div>
                     </div>

@@ -9,7 +9,7 @@ const Career = () => {
         <Image
           width={1920}
           height={600}
-          src={'/resource/career.png'}
+          src={'/resource/career.jpg'}
           alt={'career'}
         />
       </div>
