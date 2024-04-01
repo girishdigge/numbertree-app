@@ -136,26 +136,26 @@ const Page = () => {
             </h2>
             <div className='flex flex-col gap-2'>
               <div className='w-1/2'>
-                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Business Transformation
                 </Button>
-                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Claim Management
                 </Button>
-                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Contract Administration
                 </Button>
-                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Project Monitoring & Control
                 </Button>
-                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   {' '}
                   Quantity Survey
                 </Button>
-                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Transaction Advisory
                 </Button>
-                <Button className='w-72 bg-gray-100 mb-2 text-black   hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-200 mb-2 text-black   hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   {' '}
                   Techno Commercial Audit
                 </Button>
@@ -292,7 +292,7 @@ const Page = () => {
       </div>
 
       {/* <div className='grid grid-cols-2'>
-        <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+        <div className='flex flex-col justify-center pl-8 bg-gray-200'>
           <h1 className='text-sm mb-2'>Featured service</h1>
           <h2 className='text-2xl mb-2 w-3/4'>
             Connecting the physical and digital worlds

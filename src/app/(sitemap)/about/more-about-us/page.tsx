@@ -203,34 +203,42 @@ const Page = () => {
           </div>
         </div>
         <div className='w-1/3 flex flex-col gap-8'>
-          <Image
-            src={`/about/L1.png`}
-            width={400}
-            height={360}
-            alt='Insights'
-            className='object-fill bg-num-indigo'
-          />
-          <Image
-            src={`/about/L2.png`}
-            width={400}
-            height={360}
-            alt='Insights'
-            className='object-fill bg-num-indigo'
-          />
-          <Image
-            src={`/about/L3.png`}
-            width={400}
-            height={360}
-            alt='Insights'
-            className='object-fill bg-num-indigo'
-          />
-          <Image
-            src={`/about/socialSquare.png`}
-            width={400}
-            height={360}
-            alt='Insights'
-            className='object-fill bg-num-indigo'
-          />
+          <Link href={`/about/client-ethics`}>
+            <Image
+              src={`/about/L1.png`}
+              width={400}
+              height={360}
+              alt='Insights'
+              className='object-fill bg-num-indigo'
+            />
+          </Link>
+          <Link href={`/about/leadership-people`}>
+            <Image
+              src={`/about/L2.png`}
+              width={400}
+              height={360}
+              alt='Insights'
+              className='object-fill bg-num-indigo'
+            />
+          </Link>
+          <Link href={`/about/leadership-people`}>
+            <Image
+              src={`/about/L3.png`}
+              width={400}
+              height={360}
+              alt='Insights'
+              className='object-fill bg-num-indigo'
+            />
+          </Link>
+          <Link href={`/about/csr-esg`}>
+            <Image
+              src={`/about/socialSquare.png`}
+              width={400}
+              height={360}
+              alt='Insights'
+              className='object-fill bg-num-indigo'
+            />
+          </Link>
         </div>
       </div>
     </div>

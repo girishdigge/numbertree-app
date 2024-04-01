@@ -233,7 +233,7 @@ const Page = () => {
                   {`Committed to doing the right thing, every time`}
                 </p>
                 <div className='flex flex-row-reverse md:mt-44 mr-4'>
-                  <Link href={'/about'}>
+                  <Link href={'/about/client-ethics'}>
                     <Button className='w-40 mt-2 text-base hover:bg-num-indigo border-0 bg-num-orange'>
                       Read More
                     </Button>
@@ -255,17 +255,9 @@ const Page = () => {
                 <h1 className='text-num-orange text-4xl font-medium md:mt-4 mb-4'>
                   Corporate Social Responsibility
                 </h1>
-                {/* <h2 className='md:text-3xl text-xl  md:mb-3 mb-1 font-medium text-white'>
-                  Without Boundaries
-                </h2> */}
-                {/* <p className='w-4/5 text-white md:text-lg'>
-                  {` We work with disruptors. Risk takers. Fearless leaders. Those
-                  unafraid to go against the grain. Whether you're interested in
-                  what we can do for your business, or you're interested in
-                  joining our growing team, get in touch.`}
-                </p> */}
+
                 <div className='flex flex-row-reverse mr-4 md:mt-56'>
-                  <Link href={'/contact'}>
+                  <Link href={'/about/csr-esg'}>
                     <Button className='w-40 mt-3 hover:bg-num-indigo  border-0 bg-num-orange'>
                       Read More
                     </Button>

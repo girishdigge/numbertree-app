@@ -173,16 +173,3 @@
     left: 0;
   }
 }
-
-@keyframes conveyor-belt {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-conveyor-belt {
-  animation: conveyor-belt 15s linear infinite; /* Adjust duration as needed */
-}

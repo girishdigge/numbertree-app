@@ -101,115 +101,7 @@
 // // };
 // // export default KeyFacts;
 
-// 'use client';
-
-// import React, { useState, useEffect } from 'react';
-// import { motion, AnimatePresence } from 'framer-motion';
-// import Image from 'next/image';
-
-// const images = [
-//   {
-//     url: '/keyfacts/road.png',
-//     alt: '6600+',
-//     title: 'Roads & Highway Project(km)',
-//   },
-//   {
-//     url: '/keyfacts/oil.png',
-//     alt: '1230+',
-//     title: 'Oil & Gas Pipeline(km)',
-//   },
-//   {
-//     url: '/keyfacts/construction.png',
-//     alt: '900+',
-//     title: 'Civil Construction Projects (Mil Sq ft)',
-//   },
-//   {
-//     url: '/keyfacts/subway.png',
-//     alt: '2000+',
-//     title: 'Railways& Metro Projects (km)',
-//   },
-//   {
-//     url: '/keyfacts/electricity.png',
-//     alt: '3500+',
-//     title: 'Power Transmission Towers',
-//   },
-
-//   {
-//     url: '/keyfacts/airplane.png',
-//     alt: '3500+',
-//     title: 'Airport Projects',
-//   },
-// ];
-
-// const Keyfacts = () => {
-//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setCurrentImageIndex((prevIndex) =>
-//         prevIndex === images.length - 1 ? 0 : prevIndex + 1
-//       );
-//     }, 2000);
-
-//     return () => {
-//       clearInterval(interval);
-//     };
-//   }, []);
-
-//   return (
-//     <div className='w-full '>
-//       <div className='mt-20 md:ml-14'>
-//         <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
-//           KeyFacts
-//         </h1>
-
-//         <h2 className='-translate-y-12 ml-1 text-5xl text-num-orange font-medium'>
-//           KeyFacts
-//         </h2>
-
-//         <h3 className='-translate-y-10 md:text-3xl w-1/2 mt-2  ml-1'>
-//           {
-//             'We are commited to working with you collaboratively to understand your goals and create a strategy that will achieve them. '
-//           }
-//         </h3>
-//         <div className='grid grid-cols-3 gap-y-20 p-20 bg-num-indigo text-white'>
-//           <AnimatePresence custom={currentImageIndex}>
-//             {images.map((image, index) => (
-//               <motion.div
-//                 key={index}
-//                 initial={{ opacity: 0 }}
-//                 animate={{
-//                   opacity: index === currentImageIndex ? 1 : 1,
-//                   scale: index === currentImageIndex ? 1.3 : 1,
-//                   transition: { duration: 0.5 },
-//                 }}
-//                 className='flex flex-col items-center justify-center gap-2'
-//                 exit={{ opacity: 0 }}
-//                 custom={index}
-//                 transition={{
-//                   opacity: { duration: 0.5 },
-//                 }}
-//               >
-//                 <Image
-//                   src={image.url}
-//                   alt={image.alt}
-//                   width={100}
-//                   height={100}
-//                   className='object-fit  items-center justify-center flex mx-auto'
-//                 />
-//                 <h1 className='text-4xl font-bold'>{image.alt}</h1>
-//                 <h1 className='text-xl font-bold'>{image.title}</h1>
-//               </motion.div>
-//             ))}
-//           </AnimatePresence>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Keyfacts;
-
+import Marquee from 'react-fast-marquee';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -218,12 +110,12 @@ const images = [
   {
     url: '/keyfacts/road.png',
     alt: '6600+',
-    title: 'Roads & Highway Project(km)',
+    title: 'Roads & Highway Project (km)',
   },
   {
     url: '/keyfacts/oil.png',
     alt: '1230+',
-    title: 'Oil & Gas Pipeline(km)',
+    title: 'Oil & Gas Pipeline (km)',
   },
   {
     url: '/keyfacts/construction.png',
@@ -233,7 +125,7 @@ const images = [
   {
     url: '/keyfacts/subway.png',
     alt: '2000+',
-    title: 'Railways& Metro Projects (km)',
+    title: 'Railways & Metro Projects (km)',
   },
   {
     url: '/keyfacts/electricity.png',
@@ -278,40 +170,28 @@ const Keyfacts = () => {
             'We are committed to working with you collaboratively to understand your goals and create a strategy that will achieve them. '
           }
         </h3>
-        <div className='grid  gap-y-20 p-20 bg-num-indigo text-white'>
-          <AnimatePresence custom={currentImageIndex}>
-            <div className='logo-container flex overflow-hidden animate-conveyor-belt'>
+        <div className='grid  bg-num-indigo text-white'>
+          <Marquee pauseOnHover={true} speed={75}>
+            <div className=' grid grid-cols-6 p-4 '>
               {images.map((image, index) => (
-                <motion.div
-                  key={index}
-                  // initial={{ opacity: 0 }}
-                  animate={
-                    {
-                      // opacity: index === currentImageIndex ? 1 : 1,
-                      // scale: index === currentImageIndex ? 1.1 : 1,
-                      // transition: { duration: 0.1 },
-                    }
-                  }
-                  className='flex flex-col items-center justify-center gap-2'
-                  // exit={{ opacity: 0 }}
-                  custom={index}
-                  // transition={{
-                  //   opacity: { duration: 0.1 },
-                  // }}
-                >
-                  <Image
-                    src={image.url}
-                    alt={image.alt}
-                    width={100}
-                    height={100}
-                    className='object-fit  items-center justify-center flex mx-auto'
-                  />
-                  <h1 className='text-4xl font-bold'>{image.alt}</h1>
-                  <h1 className='text-xl font-bold'>{image.title}</h1>
-                </motion.div>
+                <div key={index}>
+                  <div className='flex flex-col items-center justify-center gap-y-2'>
+                    <Image
+                      src={image.url}
+                      alt={image.alt}
+                      width={100}
+                      height={100}
+                      className='object-contain'
+                    />
+                    <h1 className='text-4xl font-bold'>{image.alt}</h1>
+                    <h1 className='text-xl w-1/2 ml-4 font-bold'>
+                      {image.title}
+                    </h1>
+                  </div>
+                </div>
               ))}
             </div>
-          </AnimatePresence>
+          </Marquee>
         </div>
       </div>
     </div>

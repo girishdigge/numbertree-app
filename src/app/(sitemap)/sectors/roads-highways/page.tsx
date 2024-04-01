@@ -17,6 +17,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import SectorLinks from '@/components/sitemap/sectorLinks';
 
 const Page = () => {
   const projects = [
@@ -201,103 +202,7 @@ const Page = () => {
         </div>
       </div>
       <div className='flex flex-row'>
-        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
-
-          <div className='flex gap-4 mb-12'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-              Our Sectors
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <div className='w-1/2'>
-                <Link href={`/sectors/aviation`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Aviation
-                  </Button>
-                </Link>
-                <Link href={`/sectors/bridges-structures`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Bridges & Structures
-                  </Button>
-                </Link>
-                <Link href={`/sectors/commercial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Commercial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/industrial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Industrial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/institutional`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Institutional
-                  </Button>
-                </Link>
-                <Link href={`/sectors/oil-gas`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Oil & Gas
-                  </Button>
-                </Link>
-                <Link href={`/sectors/power-transmission`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Power Transmission
-                  </Button>
-                </Link>
-                <Link href={`/sectors/ports`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Ports
-                  </Button>
-                </Link>
-                <Link href={`/sectors/renewable-energy`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Renewable Energy
-                  </Button>
-                </Link>
-                <Link href={`/sectors/residential`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
-                  </Button>
-                </Link>
-                <Link href={`/sectors/roads-highways`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Roads & Highways
-                  </Button>
-                </Link>
-                <Link href={`/sectors/railways-metro`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Railways & Metro
-                  </Button>
-                </Link>
-                <Link href={`/sectors/thermal-power-plant`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Thermal Power Plant
-                  </Button>
-                </Link>
-                <Link href={`/sectors/water-infrastructure`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Water Infrastructure
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SectorLinks />
         <div className=' flex flex-col items-center  text-justify'>
           <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
             <em>Helping people move faster, safer and sustainably</em>
