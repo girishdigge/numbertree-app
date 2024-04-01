@@ -79,13 +79,12 @@ const Page = () => {
           <h1 className='text-num-blue text-2xl mb-2'>Mumbai Office</h1>
           <span className='flex text-lg'>
             <FaSquarePhone size={24} className='text-num-indigo ' />
-            {`+91-9988776655`}
+            {`022-49617073`}
           </span>
           <span className='flex text-lg mt-2'>
             <FaLocationDot size={22} className='text-num-indigo mr-1' />
             <p className='text-black w-3/4 text-justify '>
-              5th Floor, 502, Town Centre, 1, Marol Naka, Andheri East, Mumbai,
-              400059
+              502 Town Centre-1,Andheri Kurla Road,Andheri East, Mumbai, 400059
             </p>
           </span>
         </div>
@@ -93,12 +92,12 @@ const Page = () => {
           <h1 className='text-num-blue text-2xl mb-2'>Delhi Office</h1>
           <span className='flex text-lg'>
             <FaSquarePhone size={24} className='text-num-indigo ' />
-            {`+91-9988776655`}
+            {`011-41458409`}
           </span>
           <span className='flex text-lg mt-2'>
             <FaLocationDot size={22} className='text-num-indigo mr-1' />
             <p className='text-black w-3/4 text-justify '>
-              A-99, 3rd Floor, Lajpat Nagar 2, New Delhi, 110024
+              A-99, 3rd Floor, Lajpat Nagar 2, New Delhi, 110018
             </p>
           </span>
         </div>
@@ -106,7 +105,7 @@ const Page = () => {
           <h1 className='text-num-blue text-2xl mb-2'>Dubai Office</h1>
           <span className='flex text-lg'>
             <FaSquarePhone size={24} className='text-num-indigo ' />
-            {`+91-9988776655`}
+            {`+971`}
           </span>
           <span className='flex text-lg mt-2'>
             <FaLocationDot size={22} className='text-num-indigo mr-1' />

@@ -52,9 +52,9 @@ const Page = () => {
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 HPCL Mittal Energy Limited
               </h1>
-              {/* <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Package 2
-              </h1> */}
+              <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
+                Polymer addition Project
+              </h1>
             </div>
             <Link href={`/projects`} className=''>
               <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
@@ -100,10 +100,10 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>HPCL Mittal Energy Limited </h3>
+            <h3>HPCL Mittal Energy Limited (HMEL) Polymer addition Project</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>Bhatinda </h3>
+            <h3>Bhatinda,Punjab </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
             <h3>746 Cr(INR) </h3>

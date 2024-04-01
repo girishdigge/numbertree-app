@@ -136,26 +136,26 @@ const Page = () => {
             </h2>
             <div className='flex flex-col gap-2'>
               <div className='w-1/2'>
-                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Business Transformation
                 </Button>
-                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Claim Management
                 </Button>
-                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Contract Administration
                 </Button>
-                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Project Monitoring & Control
                 </Button>
-                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   {' '}
                   Quantity Survey
                 </Button>
-                <Button className='w-72 bg-gray-200 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                   Transaction Advisory
                 </Button>
-                <Button className='w-72 bg-gray-200 mb-2 text-black   hover:border hover:border-wilmer-orange hover:bg-num-gray'>
+                <Button className='w-72 bg-gray-100 mb-2 text-black   hover:border hover:border-wilmer-orange hover:bg-num-gray'>
                   {' '}
                   Techno Commercial Audit
                 </Button>
@@ -163,95 +163,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        {/* <div className='md:w-1/2 flex flex-col items-center  text-justify'>
-          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            We pride ourselves as India’s foremost techno commercial audit firm
-            with over two decades of experience across varied industries.
-          </h1>
-          <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              Our offering of Techno commercial Audit – helps businesses
-              harnesses the power of financial insights with great clarity, it
-              transforms not just the way businesses operate but also unlocks
-              their full potential and propels them to growth This specialized
-              audit examines both the technical and commercial aspects of
-              infrastructure ventures, providing a comprehensive evaluation of
-              their feasibility, efficiency, and financial viability.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs '>
-              Our dedicated team of engineers & auditors work collaboratively to
-              present a meticulous analysis of project plans, contracts, cost
-              estimates, procurement processes, Quantity Survey and financial
-              controls. We are well equipped to use our processes and identify
-              potential risks, cost-saving opportunities, and areas for
-              improvement.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs'>
-              With our multidimensional approach, Techno-Commercial Audit serves
-              as a valuable tool for project managers & senior management in
-              navigating the complex landscape of infrastructure development,
-              ensuring transparency, accountability, and successful project
-              delivery.
-            </p>
-          </div>
-          <br />
-          <div className='w-4/5 '>
-            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={18} className='text-white ' />
-              <p className='text-lg font-medium ml-6 mr-4 mb-2 w-11/12'>
-                {`We offer seamless and integrated service, from inception
-                  through to completion and handover, we are the right hand of
-                  project managers. We listen to our clients needs and strive
-                  to provide them the best service."`}
-              </p>
-            </div>
-          </div>
-          <h2 className='text-2xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
-            Some of the specialized services provided under Techno commercial
-            audit are
-          </h2>
-          <div className='flex flex-col w-2/3 mr-10'>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Techno Commercial Internal Audit`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Project Concurrent Audit`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Project Closure Audit`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Functional Audits/P2P Audits/Process Audits`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Revenue Assurance Audit of Toll Plaza`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Energy Audit- Renewables`}
-              </span>
-            </p>
-          </div>
-          <br />
-        </div> */}
+
         <div className='flex flex-row justify-center text-justify'>
           <div className='md:w-3/4 flex flex-col justify-center text-justify'>
             <h1 className='font-medium text-3xl mt-2 mb-1'>
@@ -291,58 +203,41 @@ const Page = () => {
         </div>
       </div>
 
-      {/* <div className='grid grid-cols-2'>
-        <div className='flex flex-col justify-center pl-8 bg-gray-200'>
-          <h1 className='text-sm mb-2'>Featured service</h1>
-          <h2 className='text-2xl mb-2 w-3/4'>
-            Connecting the physical and digital worlds
-          </h2>
-          <p className='text-xl mt-2 mb-4w-3/4'>
-            Our digital twin approach, provided as consultants and
-            technologists, is to develop a twin that connects disparate
-            information sources, building a digital twin that generates valuable
-            intelligence every day.
-          </p>
-          <Link href={'/bim'}>
-            <h4 className='text-sm mt-4 font-medium underline'>{`Learn more about our services ->`}</h4>
-          </Link>
-        </div>
-        <Image src={'/bim/arup.jpg'} height={600} width={800} alt='img' />
-      </div> */}
-
       <div className='flex mt-0 flex-col items-center justify-center'>
         <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
           <div>
             <Tabs defaultValue='1' className='w-[full]'>
-              <TabsList className='grid grid-cols-5 mb-4 gap-2'>
+              <TabsList className='grid grid-cols-4 mb-4 gap-2'>
                 <TabsTrigger value='1'>5D BIM</TabsTrigger>
                 <TabsTrigger value='2'>3D BIM</TabsTrigger>
                 <TabsTrigger value='3'>Digital Twin</TabsTrigger>
-                <TabsTrigger value='5'>Digital Construction</TabsTrigger>
-                <TabsTrigger value='4'>IoT</TabsTrigger>
+                <TabsTrigger value='4'>Digital Project Monitoring</TabsTrigger>
+                {/* <TabsTrigger value='4'>IoT</TabsTrigger> */}
               </TabsList>
               <hr className='border-b-2 border-num-orange' />
               <TabsContent value='1'>
                 <div className='grid grid-cols-2 bg-num-blue bg-opacity-10'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 1</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
+                    <h1 className='text-sm mb-2'>
+                      The Power of Cost Optimization
+                    </h1>
+                    {/* <h2 className='text-2xl mb-2 w-3/4'>
                       Connecting the physical and digital worlds
-                    </h2>
+                    </h2> */}
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      BIM 5D model integrates cost data into the digital models,
+                      empowering decision makers to make financially accurate
+                      decisions throughout the project lifecycle. By linking the
+                      3D models with accurate material quantities, labor costs,
+                      and resource allocations, we enable precise cost
+                      estimations and cost tracking. Our BIM 5D services
+                      facilitate real-time cost analysis, enabling businesses to
+                      identify cost-saving opportunities, evaluate alternative
+                      design options, and ultimately maximize ROI.
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab1.jpg'}
+                    src={'/bim/b1.png'}
                     height={600}
                     width={600}
                     alt='img'
@@ -353,24 +248,23 @@ const Page = () => {
               <TabsContent value='2'>
                 <div className='grid grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 2</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2>
+                    <h1 className='text-sm mb-2'>
+                      The Foundation of Exceptional Design
+                    </h1>
+
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      The BIM model lays the groundwork for exceptional
+                      infrastructure design. We employ the latest software and
+                      techniques to create highly accurate and detailed 3D
+                      models of the project. These models allow stakeholders to
+                      visualize and analyse every aspect of the project with
+                      remarkable clarity. We ensure that the 3D models are not
+                      only visually appealing but also meticulously aligned with
+                      the project requirements and industry standards.
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab2.jpg'}
+                    src={'/bim/b2.png'}
                     height={600}
                     width={600}
                     alt='img'
@@ -379,25 +273,9 @@ const Page = () => {
               </TabsContent>
               <TabsContent value='3'>
                 <div className='grid grid-cols-2'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 3</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2>
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
-                    </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
-                  </div>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'></div>
                   <Image
-                    src={'/images/tab3.jpg'}
+                    src={'/bim/b3.png'}
                     height={600}
                     width={600}
                     alt='img'
@@ -407,51 +285,30 @@ const Page = () => {
               <TabsContent value='4'>
                 <div className='grid grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 4</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2>
+                    <h1 className='text-sm mb-2'>
+                      Digital Project Monitoring{' '}
+                    </h1>
+
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      {`NumberTree offers advanced digital project monitoring
+                      services to enhance project oversight, efficiency, and
+                      transparency. 
+                       The scope includes- `}
+                      <li>Integrated project management</li>
+                      <li> Automated data collection and analysis </li>
+                      <li>Real time monitoring and reporting</li>
+                      <li>Performance & risk analytics </li>
+                      <li>Document Management and Version Control</li>
+                      <li>Mobile Applications and Field Data Capture </li>
+                      <li>Data Security and Compliance</li>
+                      With our digital project monitoring services, clients can
+                      benefit from enhanced project visibility, proactive
+                      decision-making, and improved collaboration among
+                      stakeholders.
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab4.jpg'}
-                    height={600}
-                    width={600}
-                    alt='img'
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value='5'>
-                <div className='grid grid-cols-2'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 4</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2>
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
-                    </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
-                  </div>
-                  <Image
-                    src={'/images/tab1.jpg'}
+                    src={'/bim/b4.png'}
                     height={600}
                     width={600}
                     alt='img'
@@ -469,26 +326,23 @@ const Page = () => {
               <TabsContent value='1'>
                 <div className='grid grid-cols-2 bg-num-blue bg-opacity-10'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 1</h1>
+                    <h1 className='text-sm mb-2'>UAE</h1>
                     <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
+                      The Etihad Rail Stage-2 project
                     </h2>
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      Core Services -To develop BIM models (LOD 500) for Civil,
+                      Structural and MEP discipline Etihad Rail is being
+                      developed in line with the Abu Dhabi Economic Vision 2030
+                      and the UAE Vision 2021, which in turn contributes to
+                      economic diversification through strategic initiatives set
+                      to bolster UAE socio-economic growth and diversification
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab1.jpg'}
-                    height={600}
-                    width={600}
+                    src={'/bim/etihad.png'}
+                    height={800}
+                    width={800}
                     alt='img'
                     className='p-4'
                   />
@@ -497,26 +351,28 @@ const Page = () => {
               <TabsContent value='2'>
                 <div className='grid grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 2</h1>
+                    <h1 className='text-sm mb-2'>SAUDI ARABIA</h1>
                     <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
+                      Red Sea International Airport Project
                     </h2>
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      The Red Sea International Airport received its first
+                      flight last year .The airport serves as a gateway to the
+                      Red Sea Resort - a dedicated luxury regenerative tourism
+                      spot being developed in Saudi Arabia.
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
+                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                      As part of vision2030 initiative, Saudi Arabia is
+                      developing several exciting tourist destinations. The
+                      development of tourism industry is being done as part of a
+                      strategic roadmap, to develop the country’s non-oil
+                      economy...
+                    </p>
                   </div>
                   <Image
-                    src={'/images/tab2.jpg'}
-                    height={600}
-                    width={600}
+                    src={'/featuredProjects/Red-Sea.jpg'}
+                    height={800}
+                    width={800}
                     alt='img'
                   />
                 </div>{' '}
@@ -524,26 +380,25 @@ const Page = () => {
               <TabsContent value='3'>
                 <div className='grid grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 3</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2>
+                    <h1 className='text-sm mb-2'>
+                      Shurayrah Island Central Hotel 3 Project - Red Sea
+                    </h1>
+
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      The project involved the development of Shurayrah Island
+                      which is composed of 13 luxury resorts located on the
+                      untouched island in the Red Sea Area. The Shurayrah Island
+                      master plan also included Shurayrah Central Hotel 3. Our
+                      services included BIM LOD-350-500 MEP Services Integration
+                      of PODs MEP Services Modeling & Coordination & Sheet
+                      Production of Hotel PODs BIM Clash Detection As-Built
+                      Model Visualizatio
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab3.jpg'}
-                    height={600}
-                    width={600}
+                    src={'/bim/shurayrah.png'}
+                    height={800}
+                    width={800}
                     alt='img'
                   />
                 </div>
@@ -551,26 +406,29 @@ const Page = () => {
               <TabsContent value='4'>
                 <div className='grid grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 4</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2>
+                    <h1 className='text-sm mb-2'>
+                      SeaWorld Entertainment Park
+                    </h1>
+
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      The project involved the development of Shurayrah Island
+                      which is composed of 13 luxury resorts located on the
+                      untouched island in the Red Sea Area. The Shurayrah Island
+                      master plan also included Shurayrah Central Hotel 3. Our
+                      services included BIM LOD-350-500 MEP Services Integration
+                      of PODs MEP Services Modeling & Coordination & Sheet
+                      Production of Hotel PODs BIM Clash Detection As-Built
+                      Model Visualizatio Our scope of work included , BIM
+                      LOD-400 and Services Integration MEPF Modeling &
+                      Coordination & Sheet Production of Various Oceans of the
+                      project. BIM Clash Detection BOQ’s from BIM Model As-Built
+                      Model Visualization
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab4.jpg'}
-                    height={600}
-                    width={600}
+                    src={'/bim/seaWorld.jpg'}
+                    height={800}
+                    width={800}
                     alt='img'
                   />
                 </div>
@@ -578,26 +436,25 @@ const Page = () => {
               <TabsContent value='5'>
                 <div className='grid grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Featured project 4</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
+                    <h1 className='text-sm mb-2'>Grand Bleu Tower</h1>
+                    {/* <h2 className='text-2xl mb-2 w-3/4'>
                       Connecting the physical and digital worlds
-                    </h2>
+                    </h2> */}
                     <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempora asperiores consequuntur repellendus reprehenderit
-                      modi nam incidunt totam aperiam, perspiciatis praesentium
-                      voluptates dolores velit, suscipit animi veritatis
-                      possimus molestiae tenetur ut illo earum quasi voluptas
-                      maiores odio blanditiis. Asperiores,
+                      BIM Consultancy: Building Maintenance Unit Package Dubai
+                      Marina Grand Bleu Tower is a skyscraper located on the
+                      first line of the beach of the Emaar Beach front Island.
+                      Emaar Beachfront is the part of new peninsula which will
+                      be used for building skyscrapers for residential and
+                      investment purposes. Scope of Work included BIM LOD-350
+                      and LOD-500 BIM Works of the BMU (Building Maintenance
+                      Unit) Package for Facility Management
                     </p>
-                    <Link href={'/bim'}>
-                      <h4 className='text-sm mt-4 font-medium underline'>{`Find out more about our work ->`}</h4>
-                    </Link>
                   </div>
                   <Image
-                    src={'/images/tab1.jpg'}
-                    height={600}
-                    width={600}
+                    src={'/bim/emmar.jpg'}
+                    height={800}
+                    width={800}
                     alt='img'
                   />
                 </div>
@@ -607,7 +464,7 @@ const Page = () => {
                 <TabsList className='grid grid-cols-5 mb-4  bg-white'>
                   <TabsTrigger value='1'>
                     <Image
-                      src={'/images/tab1.jpg'}
+                      src={'/bim/etihad.png'}
                       height={100}
                       width={120}
                       alt='img'
@@ -616,7 +473,7 @@ const Page = () => {
                   <TabsTrigger value='2'>
                     {' '}
                     <Image
-                      src={'/images/tab2.jpg'}
+                      src={'/featuredProjects/Red-Sea.jpg'}
                       height={100}
                       width={120}
                       alt='img'
@@ -625,16 +482,7 @@ const Page = () => {
                   <TabsTrigger value='3'>
                     {' '}
                     <Image
-                      src={'/images/tab3.jpg'}
-                      height={100}
-                      width={120}
-                      alt='img'
-                    />
-                  </TabsTrigger>
-                  <TabsTrigger value='5'>
-                    {' '}
-                    <Image
-                      src={'/images/tab4.jpg'}
+                      src={'/bim/shurayrah.png'}
                       height={100}
                       width={120}
                       alt='img'
@@ -643,7 +491,16 @@ const Page = () => {
                   <TabsTrigger value='4'>
                     {' '}
                     <Image
-                      src={'/images/tab1.jpg'}
+                      src={'/bim/seaWorld.jpg'}
+                      height={100}
+                      width={120}
+                      alt='img'
+                    />
+                  </TabsTrigger>
+                  <TabsTrigger value='5'>
+                    {' '}
+                    <Image
+                      src={'/bim/emmar.jpg'}
                       height={100}
                       width={120}
                       alt='img'

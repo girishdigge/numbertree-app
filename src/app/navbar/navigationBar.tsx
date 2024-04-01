@@ -138,7 +138,7 @@ export function NavigationBar() {
 
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
-            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[800px] lg:grid-cols-[.75fr_1fr] '>
+            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[1000px] lg:grid-cols-[.75fr_1fr] '>
               <li className='row-span-4'>
                 <NavigationMenuLink asChild>
                   <a
@@ -188,7 +188,7 @@ export function NavigationBar() {
                   Empowering decision making to transform businesses
                 </p>
               </div>
-              <ul className='grid w-[400px] gap-4 p-4 md:w-[500px] md:grid-cols-2 lg:w-[800px] '>
+              <ul className='grid w-[400px] gap-4 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1000px] '>
                 {services.map((service) => (
                   <ListItem
                     key={service.title}
@@ -215,7 +215,7 @@ export function NavigationBar() {
                   Uplifting communities, improving access
                 </p>
               </div>
-              <ul className='grid w-[400px] gap-1 p-1 md:w-[500px] md:grid-cols-3 lg:w-[800px] '>
+              <ul className='grid w-[400px] gap-1 p-1 md:w-[500px] md:grid-cols-3 lg:w-[1000px] '>
                 {sectors.map((sector) => (
                   <ListItem
                     key={sector.title}
@@ -242,7 +242,7 @@ export function NavigationBar() {
                   Taking projects from complexity to profitability
                 </p>
               </div>
-              <ul className='grid grid-cols-1 w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[600px] '>
+              <ul className='grid grid-cols-1 w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[1000px] '>
                 {projects.map((project) => (
                   <ListItem
                     key={project.title}

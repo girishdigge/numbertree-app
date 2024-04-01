@@ -131,6 +131,18 @@ const Page = () => {
             >
               <h3>Techno-Commercial Audit </h3>
             </Link>
+            <Link
+              href={`/services/techno-commercial-audit`}
+              className='hover:underline'
+            >
+              <h3>SOP & MIS Preparation</h3>
+            </Link>
+            <Link
+              href={`/services/techno-commercial-audit`}
+              className='hover:underline'
+            >
+              <h3>Contractor Billing Audit</h3>
+            </Link>
           </div>
         </div>
         <div className='w-3/5 flex flex-col items-center text-justify'>

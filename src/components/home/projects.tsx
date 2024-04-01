@@ -15,7 +15,7 @@ import { MainPageProjects } from '@/data/mainPageProjects';
 const Projects = () => {
   return (
     <div className=''>
-      <div className='mt-10 md:ml-28 ml-10'>
+      <div className='mt-20 md:ml-14'>
         <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
           Projects
         </h1>

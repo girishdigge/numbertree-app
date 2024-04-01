@@ -117,8 +117,8 @@ const Page = () => {
             <h3>April 2017 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
-            <Link href={`/sectors/roads-highways`} className='hover:underline'>
-              <h3>Roads & Highway </h3>
+            <Link href={`/sectors/institutional`} className='hover:underline'>
+              <h3>Institutional</h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>

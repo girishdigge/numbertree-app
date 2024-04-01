@@ -9,20 +9,23 @@ const GetInTouch = () => {
         <h2 className='text-xl flex font-bold text-num-blue  p-2'>
           Get in touch
         </h2>
-        <h3 className='text-num-blue text-lg'>Mumbai Office</h3>
+        <h3 className='text-num-blue text-lg'>Contact</h3>
+        <span className='flex mb-2'>
+          <FaSquarePhone size={24} className='text-num-indigo' />
+          {`022-49617073`}
+        </span>
         <span className='flex mb-4'>
           <FaSquarePhone size={24} className='text-num-indigo' />
-          {`+91-9988776655`}
+          {`011-41458409`}
         </span>
-        <h3 className='text-num-blue text-lg'>Delhi Office</h3>
-        <span className='flex mb-4'>
+        <h3 className='text-num-blue text-lg'>Enquiries</h3>
+        <span className='flex mb-2'>
           <IoIosMail size={24} className='text-num-indigo' />
           {`info@numbertree.in`}
         </span>
-        <h3 className='text-num-blue text-lg'>Dubai Office</h3>
-        <span className='flex  mb-4'>
-          <FaLocationDot size={24} className='text-num-indigo ' />
-          United Arab Emirates
+        <span className='flex mb-4'>
+          <IoIosMail size={24} className='text-num-indigo' />
+          {`services@numbertree.in`}
         </span>
       </div>
       {/* <h2 className='text-lg flex font-bold text-num-indigo mt-4 mb-4'>

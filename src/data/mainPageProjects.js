@@ -1,9 +1,9 @@
 export const MainPageProjects = [
   {
-    name: 'The new Parliament Building ',
+    name: 'The New Parliament Building ',
     location: 'New Delhi ',
     value: '477.08 Cr(INR)',
-    date: 'Feb 2021',
+    date: 'Nov 2021',
     client: '',
     sector: 'Institutional ',
     service: 'Techno-Commercial Audit',
@@ -49,7 +49,7 @@ export const MainPageProjects = [
     value: ' 360 Cr(INR)',
     date: 'April 2017',
     client: '',
-    sector: 'Roads & Highways ',
+    sector: 'Institutional ',
     service:
       'Techno Commercial Audit , operational excellence review of planning & billing ',
     image: '/featuredProjects/IIM-kashipur.jpg', // replace with the actual image path
@@ -73,7 +73,7 @@ export const MainPageProjects = [
     value: '549 Cr(INR)',
     date: 'Sep 2017',
     client: '',
-    sector: 'Roads & Highways ',
+    sector: 'Renewable Energy',
     service: 'Techno-Commercial Audit',
     image: '/featuredProjects/bhutan-magadechhu.jpg', // replace with the actual image path
     link: '/projects/featured-projects/magdechhu-bhutan',
