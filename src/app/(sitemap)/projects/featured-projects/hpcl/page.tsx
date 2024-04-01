@@ -33,14 +33,14 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>The new Parliament Building</p>
+        <p className='font-bold text-num-indigo'>HPCL Mittal Energy Limited</p>
       </div>
       <div className='relative '>
         <Image
-          src={`/featuredProjects/parlimentInside.jpg`}
+          src={`/featuredProjects/hpcl.jpg`}
           width={2046}
           height={768}
-          alt='new parliment'
+          alt='hpcl'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -50,7 +50,7 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                The new Parliament Building
+                HPCL Mittal Energy Limited
               </h1>
               {/* <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Package 2
@@ -100,23 +100,23 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>The new Parliament Building</h3>
+            <h3>HPCL Mittal Energy Limited </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>New Delhi </h3>
+            <h3>Bhatinda </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>477.08 Cr(INR) </h3>
+            <h3>746 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Feb 2021 </h3>
+            <h3>Nov 2020 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
             <Link href={`/sectors/institutional`} className='hover:underline'>
-              <h3>Institutional </h3>
+              <h3>Industrial </h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
@@ -134,64 +134,39 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`During the momentous occasion of 75th year of Independence, the
-              new Parliament building of India was inaugurated by the prime
-              minister. The new building embodies the entire nation's rich
-              culture, pride, and spirit. The new Parliament building holds
-              immense significance for India on various fronts. It symbolises
-              India's growing power on the global stage, characterised by its
-              large, modern, and sustainable design. The New Parliament also
-              offers parliamentarians a more efficient and effective workspace
-              and enhance their productivity.`}
+              {`HMEL is a joint venture between the state-owned Hindustan Petroleum Corporation (HPCL) and Mittal Energy Investment. HMEL is setting up the Guru Gobind Singh Polymer Addition Plant at Bhatinda Refinery, its petrochemical complex in Punjab.`}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`The work on the project is underway and HMEL is planning to build the petrochemical plant before its scheduled completion date in 2021. Land for the unit was acquired in 2017 and in the same year, CB&I bagged the contract to provide the basic engineering for the ethylene plant, which will produce 1,200 Ktpa per annum.`}
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new building was completed in May 2023 . It was constructed as a part of the Central Vista Redevelopment project – which was commissioned in the year 2019.`}
+              {`The new dual-feed ethylene plant will include a steam cracker, refinery off-gas treatment unit, C4 hydrogenation unit, pyrolysis gasoline hydrogenation unit, benzene extraction unit, and a high-density polyethylene unit producing 450 kilotonnes per annum.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`It has several architectural marvels to show case. The new Parliament building has a triangular-shaped layout covering  approx. 65,000 sq m. It is conceptualised around eight themes, showcasing approx.255 crafts sourced from around 400 artisans across India. `}
+              {`The petrochemical complex is being built at a cost of Rs 19,635 crore and is expected to provide direct employment to 600 people.`}
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new Indian Parliament building boasts six gates named after real and mythical creatures, evoking Indian culture and mythology at its entrance. A Foucault pendulum hangs from the ceiling of the Central Foyer. It is the largest of its kind in India and symbolises India's connection with the vast cosmos. The Lok Sabha Hall and Rajya Sabha Hall embody the Peacock, India's national bird, and the Lotus, the national flower, respectively.`}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new complex is a "platinum-rated green building". It showcases India's dedication to sustainability. The new complex also utilises sustainable materials such as sandstone, commonly found in Indian architecture.The new building is environmentally friendly and aims for a 30 percent reduction in electricity consumption compared to the old one. It features rainwater harvesting, water recycling, and a space-efficient design, with a lifespan of 150 years. All records, including house proceedings are digitised to align with the new Parliament's eco-friendly approach. `}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`At Numbertree, We feel immensely honoured & proud to have been associated with this prestigious project. As techno commercial auditors & as quantity surveyors, we are proud to have contributed to its success.
-We are equally honoured to have collaborated on various projects under central vista such as the India gate and the Kartavya Path.
-`}
-            </p>{' '}
-            {/* <br /> */}
           </div>
 
           <div className='flex  mt-10  gap-x-2 tracking-widest'>
             <h1 className='text-xl font-medium  p-1'>Tags:</h1>
             <h2 className='border border-num-orange text-sm  p-1'>
-              Urban Infrastructure
+              Industrial
             </h2>
             <h2 className='border border-num-orange text-sm  p-1'>
-              Institutional
-            </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              operational review
+              techno–commercial audit
             </h2>
           </div>
           <div className='flex  mt-2 gap-x-2 tracking-widest mb-10'>
-            <h2 className='border border-num-orange text-sm   p-1'>
-              techno–commercial audit
-            </h2>
-            <h2 className='border border-num-orange text-sm   p-1'>
-              planning and billing
-            </h2>
             <h2 className='border border-num-orange text-sm  p-1'>
               Featured Project
             </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>New Delhi</h2>
+            <h2 className='border border-num-orange text-sm  p-1'>Punjab</h2>
           </div>
         </div>
 

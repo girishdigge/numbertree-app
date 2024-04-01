@@ -33,11 +33,13 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>The new Parliament Building</p>
+        <p className='font-bold text-num-indigo'>
+          Magdechhu Hydroelectric Project
+        </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/featuredProjects/parlimentInside.jpg`}
+          src={`/featuredProjects/bhutan-magadechhu.jpg`}
           width={2046}
           height={768}
           alt='new parliment'
@@ -50,7 +52,7 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                The new Parliament Building
+                Magdechhu Hydroelectric Project
               </h1>
               {/* <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Package 2
@@ -100,23 +102,23 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>The new Parliament Building</h3>
+            <h3>Magadechhu Power Transmission </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>New Delhi </h3>
+            <h3>Jigmeling </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>477.08 Cr(INR) </h3>
+            <h3>547 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Feb 2021 </h3>
+            <h3>Sep 2017 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
             <Link href={`/sectors/institutional`} className='hover:underline'>
-              <h3>Institutional </h3>
+              <h3>Power & Transmission </h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
@@ -134,60 +136,61 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`During the momentous occasion of 75th year of Independence, the
-              new Parliament building of India was inaugurated by the prime
-              minister. The new building embodies the entire nation's rich
-              culture, pride, and spirit. The new Parliament building holds
-              immense significance for India on various fronts. It symbolises
-              India's growing power on the global stage, characterised by its
-              large, modern, and sustainable design. The New Parliament also
-              offers parliamentarians a more efficient and effective workspace
-              and enhance their productivity.`}
+              {`This engagement entailed an Item-Rate-Turnkey contract executed through Bhutan Power Corporation Limited, with a project value of INR 548.97 Crores.`}
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new building was completed in May 2023 . It was constructed as a part of the Central Vista Redevelopment project – which was commissioned in the year 2019.`}
+              {`This project was full of learning for our team . We share some of the challenges here which were ably overcome. #techno commercial audit , cost overrun  & quantity surveyor`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`It has several architectural marvels to show case. The new Parliament building has a triangular-shaped layout covering  approx. 65,000 sq m. It is conceptualised around eight themes, showcasing approx.255 crafts sourced from around 400 artisans across India. `}
+              {`Complex Project Structures: Power Transmission structures involve intricate contractual arrangements, multiple stakeholders, and intricate project frameworks. Unravelling these complexities is important for accurate cost assessment.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new Indian Parliament building boasts six gates named after real and mythical creatures, evoking Indian culture and mythology at its entrance. A Foucault pendulum hangs from the ceiling of the Central Foyer. It is the largest of its kind in India and symbolises India's connection with the vast cosmos. The Lok Sabha Hall and Rajya Sabha Hall embody the Peacock, India's national bird, and the Lotus, the national flower, respectively.`}
+              {`Evolving Regulatory Environment: Energy sector is constantly evolving with changes in regulations and policies. Ensuring compliance throughout the audit process is essential. Regulatory changes can affect cost calculations, tariff structures, and contract terms, necessitating adaptable methodologies.`}
             </p>{' '}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new complex is a "platinum-rated green building". It showcases India's dedication to sustainability. The new complex also utilises sustainable materials such as sandstone, commonly found in Indian architecture.The new building is environmentally friendly and aims for a 30 percent reduction in electricity consumption compared to the old one. It features rainwater harvesting, water recycling, and a space-efficient design, with a lifespan of 150 years. All records, including house proceedings are digitised to align with the new Parliament's eco-friendly approach. `}
+              {`Technical Expertise: Power transmission projects are highly technical in nature, involving engineering specifications, equipment selection, and construction methodologies. The team must possess adequate technical expertise to evaluate project design, implementation, and the impact of technical decisions on project costs. `}
             </p>{' '}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`At Numbertree, We feel immensely honoured & proud to have been associated with this prestigious project. As techno commercial auditors & as quantity surveyors, we are proud to have contributed to its success.
-We are equally honoured to have collaborated on various projects under central vista such as the India gate and the Kartavya Path.
-`}
+              {`Scope Creep and Change Orders: Changes in project scope, design modifications, and additional work orders can contribute to cost overruns. The validity and justification of change orders can be challenging, as it requires thorough understanding of the project's original scope and contractual agreements.`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`Contractor Management: Effective evaluation of contractor performance and identifying any deviations from contractual obligations is essential for project success. Issues such as delays, poor quality work, and inadequate cost control measures can lead to cost overruns.`}
             </p>{' '}
             {/* <br /> */}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`Our Success Mantra`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`- Close collaboration with stakeholders of the project`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`- Subject matter expertise`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`- Rigorous analytical skills`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`- Effective application of Project management principles`}
+            </p>{' '}
+            <br />
           </div>
 
           <div className='flex  mt-10  gap-x-2 tracking-widest'>
             <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+            <h2 className='border border-num-orange text-sm  p-1'>Energy</h2>
             <h2 className='border border-num-orange text-sm  p-1'>
-              Urban Infrastructure
+              Power & Transmission
             </h2>
             <h2 className='border border-num-orange text-sm  p-1'>
-              Institutional
-            </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              operational review
+              techno–commercial audit
             </h2>
           </div>
           <div className='flex  mt-2 gap-x-2 tracking-widest mb-10'>
-            <h2 className='border border-num-orange text-sm   p-1'>
-              techno–commercial audit
-            </h2>
-            <h2 className='border border-num-orange text-sm   p-1'>
-              planning and billing
-            </h2>
             <h2 className='border border-num-orange text-sm  p-1'>
               Featured Project
             </h2>

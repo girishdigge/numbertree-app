@@ -41,7 +41,7 @@ export const MainPageProjects = [
     sector: 'Airport & Aviation ',
     service: '3D BIM ',
     image: '/featuredProjects/Red-Sea.jpg', // replace with the actual image path
-    link: '/projects/featured-projects/',
+    link: '/projects/featured-projects/red-sea',
   },
   {
     name: 'IIM Kashipur Construction Project ',
@@ -53,7 +53,7 @@ export const MainPageProjects = [
     service:
       'Techno Commercial Audit , operational excellence review of planning & billing ',
     image: '/featuredProjects/IIM-kashipur.jpg', // replace with the actual image path
-    link: '/projects/featured-projects/',
+    link: '/projects/featured-projects/iim-kashipur',
   },
 
   {
@@ -65,7 +65,7 @@ export const MainPageProjects = [
     sector: 'Roads & Highways ',
     service: 'Techno-Commercial Audit',
     image: '/featuredProjects/Delhi-meerut-expressway.jpeg', // replace with the actual image path
-    link: '/projects/featured-projects/',
+    link: '/projects/featured-projects/delhi-vadodara',
   },
   {
     name: 'Magdechhu Hydroelectric Project',
@@ -75,7 +75,18 @@ export const MainPageProjects = [
     client: '',
     sector: 'Roads & Highways ',
     service: 'Techno-Commercial Audit',
-    image: '/featuredProjects/Mangdechhu-Hydroelectric.jpg', // replace with the actual image path
-    link: '/projects/featured-projects/',
+    image: '/featuredProjects/bhutan-magadechhu.jpg', // replace with the actual image path
+    link: '/projects/featured-projects/magdechhu-bhutan',
+  },
+  {
+    name: 'HPCL Mittal Energy Limited (HMEL)',
+    location: 'Bhatinda,Punjab',
+    value: '746 Cr(INR)',
+    date: 'Nov 2020',
+    client: '',
+    sector: 'Industrial',
+    service: 'Techno-Commercial Audit',
+    image: '/featuredProjects/hpcl.jpg', // replace with the actual image path
+    link: '/projects/featured-projects/hpcl',
   },
 ];

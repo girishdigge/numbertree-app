@@ -33,14 +33,16 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>The new Parliament Building</p>
+        <p className='font-bold text-num-indigo'>
+          Delhi-Vadodara Greenfield Alignment
+        </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/featuredProjects/parlimentInside.jpg`}
+          src={`/featuredProjects/Delhi-meerut-expressway.jpeg`}
           width={2046}
           height={768}
-          alt='new parliment'
+          alt='mumbaiDelhiExpressway'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -50,11 +52,11 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                The new Parliament Building
+                Delhi-Vadodara
               </h1>
-              {/* <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Package 2
-              </h1> */}
+              <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
+                Greenfield Alignment NH148N - Package 20
+              </h1>
             </div>
             <Link href={`/projects`} className=''>
               <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
@@ -100,23 +102,26 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>The new Parliament Building</h3>
+            <h3>
+              Project Name Delhi-Vadodara Greenfield Alignment, NH148N - Package
+              20
+            </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
             <h3>New Delhi </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>477.08 Cr(INR) </h3>
+            <h3>743.89 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Feb 2021 </h3>
+            <h3>Dec 2018 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
-            <Link href={`/sectors/institutional`} className='hover:underline'>
-              <h3>Institutional </h3>
+            <Link href={`/sectors/roads-highways`} className='hover:underline'>
+              <h3>Roads & Highway </h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
@@ -134,64 +139,68 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`During the momentous occasion of 75th year of Independence, the
-              new Parliament building of India was inaugurated by the prime
-              minister. The new building embodies the entire nation's rich
-              culture, pride, and spirit. The new Parliament building holds
-              immense significance for India on various fronts. It symbolises
-              India's growing power on the global stage, characterised by its
-              large, modern, and sustainable design. The New Parliament also
-              offers parliamentarians a more efficient and effective workspace
-              and enhance their productivity.`}
+              Package 20 of the Delhi-Vadodara Greenfield Alignment is an 850.78
+              crore(INR) section of the Delhi-Mumbai Expressway that is being
+              constructed under the BharatMala Pariyojana.
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new building was completed in May 2023 . It was constructed as a part of the Central Vista Redevelopment project – which was commissioned in the year 2019.`}
+              {`This section runs from the junction with SH-175 near Baletiya village to the junction with SH-63 near Pratap Nagar village, covering 21.500 Km. The Delhi-Vadodara Greenfield Alignment, also known as NH-148N, is 845 km long. `}
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`It has several architectural marvels to show case. The new Parliament building has a triangular-shaped layout covering  approx. 65,000 sq m. It is conceptualised around eight themes, showcasing approx.255 crafts sourced from around 400 artisans across India. `}
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new Indian Parliament building boasts six gates named after real and mythical creatures, evoking Indian culture and mythology at its entrance. A Foucault pendulum hangs from the ceiling of the Central Foyer. It is the largest of its kind in India and symbolises India's connection with the vast cosmos. The Lok Sabha Hall and Rajya Sabha Hall embody the Peacock, India's national bird, and the Lotus, the national flower, respectively.`}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new complex is a "platinum-rated green building". It showcases India's dedication to sustainability. The new complex also utilises sustainable materials such as sandstone, commonly found in Indian architecture.The new building is environmentally friendly and aims for a 30 percent reduction in electricity consumption compared to the old one. It features rainwater harvesting, water recycling, and a space-efficient design, with a lifespan of 150 years. All records, including house proceedings are digitised to align with the new Parliament's eco-friendly approach. `}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`At Numbertree, We feel immensely honoured & proud to have been associated with this prestigious project. As techno commercial auditors & as quantity surveyors, we are proud to have contributed to its success.
-We are equally honoured to have collaborated on various projects under central vista such as the India gate and the Kartavya Path.
-`}
-            </p>{' '}
             {/* <br /> */}
-          </div>
-
-          <div className='flex  mt-10  gap-x-2 tracking-widest'>
-            <h1 className='text-xl font-medium  p-1'>Tags:</h1>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              Urban Infrastructure
-            </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              Institutional
-            </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              operational review
-            </h2>
-          </div>
-          <div className='flex  mt-2 gap-x-2 tracking-widest mb-10'>
-            <h2 className='border border-num-orange text-sm   p-1'>
-              techno–commercial audit
-            </h2>
-            <h2 className='border border-num-orange text-sm   p-1'>
-              planning and billing
-            </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              Featured Project
-            </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>New Delhi</h2>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`The alignment has four sections:`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`a) DND–Faridabad–KMP`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`b)   Sohna–KMP–Vadodara`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`c)  Vadodara–Virar`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`d)  Virar–JNPT `}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`The project includes plans to:`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`• Install solar powered lights at major structures, interchanges, and toll plazas`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`• Conserve rainwater at every 500 meters of highway`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`• Minimize ecological impact`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`• Afforest 20 kilometres of the project, and set aside an equivalent amount of land for afforestation  `}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`Numbertree was appointed by the contractor for techno-Commercial Audit, CTC/ SOP/ MIS Preparation & Implementation as well as contractor billing audit`}
+            </p>{' '}
+            <div className='flex mt-10  gap-x-2 tracking-widest mb-10'>
+              <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+              <h2 className='border border-num-orange text-sm  p-1'>
+                Roads & Highways
+              </h2>
+              <h2 className='border border-num-orange text-sm   p-1'>
+                techno–commercial audit
+              </h2>
+              <h2 className='border border-num-orange text-sm   p-1'>
+                featured project
+              </h2>
+              <h2 className='border border-num-orange text-sm  p-1'>
+                New Delhi
+              </h2>
+            </div>
           </div>
         </div>
 
