@@ -27,7 +27,9 @@ const SectorMobileLinks = () => {
               className='bg-num-orange text-white p-1 rounded-xl'
             />
           </Link>
-          <Link href={`#`}>
+          <Link
+            href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
+          >
             <FaXTwitter
               size={30}
               className='bg-num-orange text-white p-1 rounded-xl'
