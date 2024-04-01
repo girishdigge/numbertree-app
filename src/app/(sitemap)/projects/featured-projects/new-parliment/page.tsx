@@ -179,29 +179,29 @@ const Page = () => {
             <br />
           </div>
 
-          <div className='flex mt-10  gap-x-2 tracking-widest mb-10'>
+          <div className='flex  mt-10  gap-x-2 tracking-widest'>
             <h1 className='text-xl font-medium  p-1'>Tags:</h1>
-            <h2 className='border border-num-orange text-base  p-1'>
+            <h2 className='border border-num-orange text-sm  p-1'>
               Urban Infrastructure
             </h2>
-            <h2 className='border border-num-orange text-base  p-1'>
+            <h2 className='border border-num-orange text-sm  p-1'>
               Institutional
             </h2>
-            <h2 className='border border-num-orange text-base  p-1'>
+            <h2 className='border border-num-orange text-sm  p-1'>
               operational review
             </h2>
-            <h2 className='border border-num-orange text-base   p-1'>
+          </div>
+          <div className='flex  mt-2 gap-x-2 tracking-widest mb-10'>
+            <h2 className='border border-num-orange text-sm   p-1'>
               techno–commercial audit
             </h2>
-            <h2 className='border border-num-orange text-base   p-1'>
+            <h2 className='border border-num-orange text-sm   p-1'>
               planning and billing
             </h2>
-            <h2 className='border border-num-orange text-base  p-1'>
+            <h2 className='border border-num-orange text-sm  p-1'>
               Featured Project
             </h2>
-            <h2 className='border border-num-orange text-base  p-1'>
-              New Delhi
-            </h2>
+            <h2 className='border border-num-orange text-sm  p-1'>New Delhi</h2>
           </div>
         </div>
 

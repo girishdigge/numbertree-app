@@ -122,9 +122,25 @@ const Page = () => {
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
-            <Link href={`/sectors/commercial`} className='hover:underline'>
-              <h3>Commercial </h3>
+            <Link
+              href={`/services/techno-commercial-audit`}
+              className='hover:underline'
+            >
+              <h3>Techno-Commercial Audit </h3>
             </Link>
+            <Link
+              href={`/services/contract-administration`}
+              className='hover:underline'
+            >
+              <h3>Audit of Contractor Bill Checking </h3>
+            </Link>
+            <Link
+              href={`/services/quantity-survey`}
+              className='hover:underline'
+            >
+              <h3>Drawing Based Quantity Computation </h3>
+            </Link>
+            <hr className='border-b-1 border-num-indigo' />
           </div>
         </div>
         <div className='w-3/5 flex flex-col items-center text-justify'>
@@ -133,63 +149,42 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              At the heart of our audit methodology lies the commitment to
-              deliver tangible results and drive positive change particularly to
-              fosters sustainable practices within organizations. Our work on a
-              section of The Delhi-Mumbai Expressway Project serves as a
-              markable example.
+              In Dec 2023, India hosted the coveted G20 summit which saw the
+              gathering of world leaders from 20 countries including USA, Russia
+              ,France amongst others.
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The Delhi-Vadodara Expressway, which is the first section of the
-              Delhi – Mumbai Expressway, is a greenfield expressway spanning
-              1350 KM, connecting India's national capital, New Delhi, with its
-              financial capital, Mumbai. This fully access-controlled expressway
-              consists of 8 lanes (expandable to 12) and carries a total project
-              value, including land acquisition costs, of approximately INR
-              1,00,000 crores.`}
+              {`The Prestigious event was held under India’s Presidency, and took place  at the newly inaugurated international exhibition cum convention centre (IECC) complex also known as Bharat Mandapam in New Delhi’s Pragati maidan. It is built under the tutelage of India Trade promotion organization. The venue boasts of state-of-the-art facilities like a convention Centre, exhibition halls, fully equipped business Centre, numerous meeting rooms and an amphitheater. Bharat Mandapam has been developed as India’s largest MICE destination. The complex ranks among the top exhibition and convention complexes globally.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The Delhi-Mumbai Expressway, including the Vadodara section, serves as a vital backbone of the Delhi-Mumbai Industrial Corridor (DMIC). It facilitates the movement of goods and enhances connectivity for industrial and economic development in the region.`}
+              {`Its impressive multipurpose hall can collectively accommodate up to 7000 attendees and the amphitheater boasts of an impressive seating capacity of 3000 individuals. Built over 123 acres, with a total cost of approx. Rs 2150Cr, it is set to transform the MICE industry in India.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`NumberTree was engaged for techno- commercial audit of 10 different packages, (Vadodara section) having project value of approx. INR 10,000 Crores`}
+              {`Numbertree is humbled to have contributed in the capacity of concurrent Techno-Commercial auditors of this giant project, right from mobilization to demobilization, by the project developers. We served as drawing based bill verification consultants for the project as well.`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`A concurrent techno-commercial audit is an essential tool to avoid cost overrun in a large and complex project like this. As India's leading #technocommercial audit firm, we are equipped to handle challenging & complex projects. We are immensely proud of our #team that worked efficiently for over 3years at the project site.`}
             </p>{' '}
             {/* <br /> */}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`Our approach to assignment was -`}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`a) Enhancing Process Integrity and Performance: A Risk-Based Audit Approach - The primary focus of this audit was to assess process integrity, ensure compliance, and contribute to the continuous improvement of process performance. We adopted a risk-based approach, leveraging a well-defined conceptual framework for process monitoring. Our goal was to establish an effective control environment, taking into account the criticality of various risk scenarios.`}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`b)    Driving Efficiency and Cost Savings through Material Consumption Optimization - One of the key areas we dedicated our attention to was controlling material consumption. Through meticulous drawing-based material reconciliations, we successfully identified the root causes of wastages.`}
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`As a result, we suggested robust controls to minimize wastage and gain better insights into consumption patterns. This paved the way for optimized resource utilization and cost savings.`}
-            </p>{' '}
-            <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
             <div className='flex mt-10  gap-x-2 tracking-widest mb-10'>
               <h1 className='text-xl font-medium  p-1'>Tags:</h1>
-              <h2 className='border border-num-orange text-base  p-1'>
+              <h2 className='border border-num-orange text-sm  p-1'>
                 Roads & Highways
               </h2>
-              <h2 className='border border-num-orange text-base   p-1'>
+              <h2 className='border border-num-orange text-sm   p-1'>
                 techno–commercial audit
               </h2>
-              <h2 className='border border-num-orange text-base   p-1'>
+              <h2 className='border border-num-orange text-sm   p-1'>
                 featured project
               </h2>
-              <h2 className='border border-num-orange text-base  p-1'>
-                Gujarat
-              </h2>
+              <h2 className='border border-num-orange text-sm  p-1'>Gujarat</h2>
             </div>
           </div>
         </div>

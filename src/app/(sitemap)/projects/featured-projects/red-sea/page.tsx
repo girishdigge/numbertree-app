@@ -34,15 +34,15 @@ const Page = () => {
         </Link>
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>
-          Mumbai Delhi Expressway package 2
+          Red Sea International airport
         </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/projects/mumbaiDelhiExpressway.jpeg`}
+          src={`/featuredProjects/Red-Sea.jpg`}
           width={2046}
           height={768}
-          alt='mumbaiDelhiExpressway'
+          alt='red sea'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -52,10 +52,10 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Mumbai-Delhi Expressway
+                Red Sea
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Package 2
+                International airport
               </h1>
             </div>
             <Link href={`/projects`} className=''>
@@ -102,31 +102,28 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>Mumbai Delhi Expressway package 2</h3>
+            <h3>Red Sea International airport</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>Meerut , Uttar Pradesh </h3>
+            <h3>Saudi Arabia</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>1057.6 Cr(INR) </h3>
+            <h3>Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Dec 2018 </h3>
+            <h3>Dec 2023 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
-            <Link href={`/sectors/roads-highways`} className='hover:underline'>
-              <h3>Roads & Highway </h3>
+            <Link href={`/sectors/aviation`} className='hover:underline'>
+              <h3>Airport & Aviation</h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
-            <Link
-              href={`/services/techno-commercial-audit`}
-              className='hover:underline'
-            >
-              <h3>Techno-Commercial Audit </h3>
+            <Link href={`/bim`} className='hover:underline'>
+              <h3>3D BIM</h3>
             </Link>
           </div>
         </div>
@@ -136,62 +133,50 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              At the heart of our audit methodology lies the commitment to
-              deliver tangible results and drive positive change particularly to
-              fosters sustainable practices within organizations. Our work on a
-              section of The Delhi-Mumbai Expressway Project serves as a
-              markable example.
+              The Red Sea International Airport received its first flight last
+              year .The airport serves as a gateway to the Red Sea Resort - a
+              dedicated luxury regenerative tourism spot being developed in
+              Saudi Arabia.
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The Delhi-Vadodara Expressway, which is the first section of the
-              Delhi – Mumbai Expressway, is a greenfield expressway spanning
-              1350 KM, connecting India's national capital, New Delhi, with its
-              financial capital, Mumbai. This fully access-controlled expressway
-              consists of 8 lanes (expandable to 12) and carries a total project
-              value, including land acquisition costs, of approximately INR
-              1,00,000 crores.`}
+              {`As part of vision2030 initiative, Saudi Arabia is developing several exciting tourist destinations. The development of tourism industry is being done as part of a strategic roadmap, to develop the country’s non-oil economy `}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The Delhi-Mumbai Expressway, including the Vadodara section, serves as a vital backbone of the Delhi-Mumbai Industrial Corridor (DMIC). It facilitates the movement of goods and enhances connectivity for industrial and economic development in the region.`}
+              {`The Red Sea international airport , located 15km inland from the Red Sea coast, is projected to reach a capacity of handling 1 million passengers annually by 2030.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`NumberTree was engaged for techno- commercial audit of 10 different packages, (Vadodara section) having project value of approx. INR 10,000 Crores`}
+              {`The 3D Building information Modelling , 3DBIM for the MEP of the Red Sea international airport was undertaken by Numbertree.`}
+            </p>{' '}
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`We offer the entire gamut of BIM services. With our 3DBIM, 4DBIM, 5DBIM services, we bring a new era of collaboration, efficiency and cost-effectiveness to infrastructure projects.`}
             </p>{' '}
             {/* <br /> */}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`Our approach to assignment was -`}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`a) Enhancing Process Integrity and Performance: A Risk-Based Audit Approach - The primary focus of this audit was to assess process integrity, ensure compliance, and contribute to the continuous improvement of process performance. We adopted a risk-based approach, leveraging a well-defined conceptual framework for process monitoring. Our goal was to establish an effective control environment, taking into account the criticality of various risk scenarios.`}
-            </p>{' '}
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`b)    Driving Efficiency and Cost Savings through Material Consumption Optimization - One of the key areas we dedicated our attention to was controlling material consumption. Through meticulous drawing-based material reconciliations, we successfully identified the root causes of wastages.`}
-            </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`As a result, we suggested robust controls to minimize wastage and gain better insights into consumption patterns. This paved the way for optimized resource utilization and cost savings.`}
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
-            <br />
-            <div className='flex mt-10  gap-x-2 tracking-widest mb-10'>
-              <h1 className='text-xl font-medium  p-1'>Tags:</h1>
-              <h2 className='border border-num-orange text-sm  p-1'>
-                Roads & Highways
-              </h2>
-              <h2 className='border border-num-orange text-sm   p-1'>
-                techno–commercial audit
-              </h2>
-              <h2 className='border border-num-orange text-sm   p-1'>
-                featured project
-              </h2>
-              <h2 className='border border-num-orange text-sm  p-1'>Gujarat</h2>
-            </div>
+          </div>
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p> <br />
+          <div className='flex mt-10  gap-x-2 tracking-widest mb-2'>
+            <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+            <h2 className='border border-num-orange text-sm  p-1'>
+              Airport & Aviation
+            </h2>
+            <h2 className='border border-num-orange text-sm   p-1'>3D BIM</h2>
+            <h2 className='border border-num-orange text-sm   p-1'>
+              Digital construction monitoring
+            </h2>
+          </div>
+          <div className='flex gap-x-2 tracking-widest mb-10'>
+            <h2 className='border border-num-orange text-sm  p-1'>MEP</h2>
+            <h2 className='border border-num-orange text-sm  p-1'>
+              Latest Projects
+            </h2>
+            <h2 className='border border-num-orange text-sm  p-1'>
+              Saudi Arabia
+            </h2>
           </div>
         </div>
 
