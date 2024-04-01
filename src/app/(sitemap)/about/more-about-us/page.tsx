@@ -26,7 +26,7 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>About Us</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'> More About Us</p>
+        <p className='font-bold text-num-indigo'> About NumberTree</p>
       </div>
       <div className='relative '>
         <Image
@@ -43,7 +43,7 @@ const Page = () => {
             </h2> */}
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                About Us
+                About NumberTree
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
                 Connecting Communities. Enriching Lives

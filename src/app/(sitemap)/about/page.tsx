@@ -313,27 +313,33 @@ const Page = () => {
         </div>
         <div className='w-11/12'>
           <div className='grid grid-cols-3'>
-            <Image
-              src={`/about/L1.png`}
-              width={400}
-              height={340}
-              alt='integrity'
-              className='object-cover bg-num-indigo'
-            />
-            <Image
-              src={`/about/L2.png`}
-              width={400}
-              height={340}
-              alt='integrity'
-              className='object-cover bg-num-indigo'
-            />
-            <Image
-              src={`/about/L3.png`}
-              width={400}
-              height={340}
-              alt='integrity'
-              className='object-cover bg-num-indigo'
-            />
+            <Link href={`/about/client-ethics`}>
+              <Image
+                src={`/about/L1.png`}
+                width={400}
+                height={340}
+                alt='integrity'
+                className='object-cover bg-num-indigo'
+              />
+            </Link>
+            <Link href={`/about/leadership-people`}>
+              <Image
+                src={`/about/L2.png`}
+                width={400}
+                height={340}
+                alt='integrity'
+                className='object-cover bg-num-indigo'
+              />
+            </Link>
+            <Link href={`/about/leadership-people`}>
+              <Image
+                src={`/about/L3.png`}
+                width={400}
+                height={340}
+                alt='integrity'
+                className='object-cover bg-num-indigo'
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -349,9 +355,11 @@ const Page = () => {
                     Committed to doing the right thing , every time
                   </h1>
                 </div>
-                <Button className='w-40 bg-num-orange hover:bg-white hover:text-black mt-2 '>
-                  Read more{' '}
-                </Button>
+                <Link href={`/about/client-ethics`}>
+                  <Button className='w-40 bg-num-orange hover:bg-white hover:text-black mt-2 '>
+                    Read more{' '}
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className='w-11/12 flex flex-col mt-10'>
@@ -408,7 +416,7 @@ const Page = () => {
               <div>
                 <h1 className='text-7xl mt-40'>Corporate Social</h1>
                 <h1 className='text-7xl ml-8 mt-4 mb-20'>Responsibility</h1>
-                <Link href={'#'}>
+                <Link href={'/about/csr-esg'}>
                   <Button className='bg-num-indigo w-40 hover:bg-num-orange hover:text-black ml-44'>
                     Read More
                   </Button>
