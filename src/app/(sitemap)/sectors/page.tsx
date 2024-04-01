@@ -11,7 +11,7 @@ const Page = () => {
       href: '/sectors/aviation',
       description:
         'A modal dialog that interrupts the user with important content and expects a response.',
-      image: '/sectors/Aviation1.jpg',
+      image: '/sectors/Aviation.jpg',
     },
     {
       title: 'Bridges Structures',
@@ -31,7 +31,7 @@ const Page = () => {
       title: 'Industrial',
       href: '/sectors/industrial',
       description: 'Visually or semantically separates content.',
-      image: '/sectors/Industrial1.jpg',
+      image: '/sectors/Industrial.jpg',
     },
     {
       title: 'Institutional',
@@ -52,7 +52,7 @@ const Page = () => {
       href: '/sectors/ports',
       description:
         'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-      image: '/sectors/Ports1.jpg',
+      image: '/sectors/Ports.jpg',
     },
     {
       title: 'Power Transmission',
@@ -66,7 +66,7 @@ const Page = () => {
       href: '/sectors/railways-metro',
       description:
         'For sighted users to preview content available behind a link.',
-      image: '/sectors/RailwaysMetro1.jpg',
+      image: '/sectors/RailwaysMetro.jpg',
     },
     {
       title: 'Renewable Energy',
@@ -86,7 +86,7 @@ const Page = () => {
       href: '/sectors/roads-highways',
       description:
         'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-      image: '/sectors/RoadsHighways1.jpg',
+      image: '/sectors/RoadsHighways.jpg',
     },
     {
       title: 'Thermal Power Plant',

@@ -34,15 +34,15 @@ const Page = () => {
         </Link>
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>
-          Mumbai Delhi Expressway package 2
+          ITPO Convention Center,Bharat Mandapam.
         </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/projects/mumbaiDelhiExpressway.jpeg`}
+          src={`/projects/itpo.jpg`}
           width={2046}
           height={768}
-          alt='mumbaiDelhiExpressway'
+          alt='ITPO'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -52,10 +52,10 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Mumbai-Delhi Expressway
+                ITPO Convention Center
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Package 2
+                Bharat Mandapam
               </h1>
             </div>
             <Link href={`/projects`} className=''>
@@ -79,42 +79,52 @@ const Page = () => {
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-12'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
+            <Link href={'#'}>
+              <FaFacebookF
+                size={30}
+                className='bg-num-orange p-1 text-white  rounded-xl'
+              />
+            </Link>
+            <Link href={'#'}>
+              <FaLinkedinIn
+                size={31}
+                className='bg-num-orange text-white p-1 rounded-xl'
+              />
+            </Link>
+            <Link href={'#'}>
+              <FaXTwitter
+                size={30}
+                className='bg-num-orange text-white p-1 rounded-xl'
+              />
+            </Link>
           </div>
           <div className='flex flex-col gap-y-2  tracking-widest'>
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>Mumbai Delhi Expressway package 2</h3>
+            <h3>ITPO Convention Center,Bharat Mandapam.</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>Meerut , Uttar Pradesh </h3>
+            <h3>New Delhi</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>1057.6 Cr(INR) </h3>
+            <h3>2150 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Dec 2018 </h3>
+            <h3>Sep 2023</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
-            <h3>Roads & Highways </h3>
+            <Link href={`/sectors/commercial`} className='hover:underline'>
+              <h3>Commercial </h3>
+            </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
-            <h3>Techno-Commercial Audit </h3>
+            <Link href={`/sectors/commercial`} className='hover:underline'>
+              <h3>Commercial </h3>
+            </Link>
           </div>
         </div>
         <div className='w-3/5 flex flex-col items-center text-justify'>
@@ -250,7 +260,7 @@ const Page = () => {
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image
-              src={`/sectors/Aviation1.jpg`}
+              src={`/sectors/Aviation.jpg`}
               height={800}
               width={800}
               alt='sector'
@@ -273,20 +283,18 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/BridgesStructure1.jpg`}
+                src={`/sectors/OilGas1.jpg`}
                 height={400}
                 width={400}
                 alt='project'
                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
               />
-              <Link href={`/sectors/bridges-structures`}>
+              <Link href={`/sectors/oil-gas`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Sector</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
-                        Bridges Structures
-                      </h2>
+                      <h2 className='font-bold pb-2  md:text-2xl'>Oil & Gas</h2>
                     </div>
                   </div>
                 </div>
@@ -319,7 +327,7 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/Industrial1.jpg`}
+                src={`/sectors/Industrial.jpg`}
                 height={400}
                 width={400}
                 alt='project'

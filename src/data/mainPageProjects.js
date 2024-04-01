@@ -6,9 +6,9 @@ export const MainPageProjects = [
     date: 'Feb 2021',
     client: '',
     sector: 'Institutional ',
-    service: 'Techno-Commercial Audit, Internal Audit',
-    image: '/featuredProjects/newParliment.jpg', // replace with the actual image path
-    link: '/projects',
+    service: 'Techno-Commercial Audit',
+    image: '/featuredProjects/parlimentInside.jpg', // replace with the actual image path
+    link: '/projects/featured-projects/new-parliment',
   },
   {
     name: 'ITPO Convention Center,Bharat Mandapam.',
@@ -19,7 +19,7 @@ export const MainPageProjects = [
     sector: 'Commercial',
     service: 'Techno-Commercial Audit, Audit of Contractor Bill Checking ',
     image: '/featuredProjects/itpo.jpg', // replace with the actual image path
-    link: '/projects',
+    link: '/projects/featured-projects/ITPO',
   },
   {
     name: 'Mumbai Delhi Expressway package 2',
@@ -30,7 +30,7 @@ export const MainPageProjects = [
     sector: 'Roads & Highways',
     service: 'Techno-Commercial Audit',
     image: '/featuredProjects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
-    link: '/projects',
+    link: '/projects/featured-projects/MumbaiDelhiExpressway',
   },
   {
     name: 'Red Sea International airport',
@@ -41,7 +41,7 @@ export const MainPageProjects = [
     sector: 'Airport & Aviation ',
     service: '3D BIM ',
     image: '/featuredProjects/Red-Sea.jpg', // replace with the actual image path
-    link: '/projects',
+    link: '/projects/featured-projects/',
   },
   {
     name: 'IIM Kashipur Construction Project ',
@@ -53,7 +53,7 @@ export const MainPageProjects = [
     service:
       'Techno Commercial Audit , operational excellence review of planning & billing ',
     image: '/featuredProjects/IIM-kashipur.jpg', // replace with the actual image path
-    link: '/projects',
+    link: '/projects/featured-projects/',
   },
 
   {
@@ -65,6 +65,17 @@ export const MainPageProjects = [
     sector: 'Roads & Highways ',
     service: 'Techno-Commercial Audit',
     image: '/featuredProjects/Delhi-meerut-expressway.jpeg', // replace with the actual image path
-    link: '/projects',
+    link: '/projects/featured-projects/',
+  },
+  {
+    name: 'Magdechhu Hydroelectric Project',
+    location: 'Jigmeling,Bhutan',
+    value: '549 Cr(INR)',
+    date: 'Sep 2017',
+    client: '',
+    sector: 'Roads & Highways ',
+    service: 'Techno-Commercial Audit',
+    image: '/featuredProjects/Mangdechhu-Hydroelectric.jpg', // replace with the actual image path
+    link: '/projects/featured-projects/',
   },
 ];
