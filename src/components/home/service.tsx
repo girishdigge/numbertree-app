@@ -128,7 +128,7 @@ const Services = () => {
               className={`cursor-pointer  px-4 py-6  ${
                 activeTab === tab.id
                   ? 'text-white   bg-num-indigo'
-                  : 'text-num-orange border-b-2 border-num2-gray-dark'
+                  : 'text-black border-b-2 border-num2-gray-dark'
               }`}
               onMouseEnter={() => handleTabChange(tab.id)}
             >

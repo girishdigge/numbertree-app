@@ -19,7 +19,7 @@ const Page = () => {
           </Link>
         </span>
         <RxSlash color='gray' className='mt-1' />
-        <Link href={'/contact'}>
+        <Link href={'/contact/proposal'}>
           <p className='font-bold text-num-indigo'>Career</p>
         </Link>
         {/* <RxSlash color='gray' className='mt-1' />

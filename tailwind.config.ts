@@ -20,7 +20,8 @@ const config = {
     extend: {
       colors: {
         wilmer: {
-          orange: '#ff5e14',
+          // orange: '#ff5e14',
+          orange: '#ea5c23',
           gray: '#f2f3f5',
         },
         num: {

@@ -18,6 +18,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import SectorLinks from '@/components/sitemap/sectorLinks';
+import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 
 const Page = () => {
   const projects = [
@@ -97,7 +98,7 @@ const Page = () => {
                 All sectors
               </Button>
             </Link>
-            <Link href={`/contact`} className='animate-fadeInUp'>
+            <Link href={`/contact/proposal`} className='animate-fadeInUp'>
               <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
@@ -108,104 +109,7 @@ const Page = () => {
 
       <br />
       <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
-
-          <div className='flex gap-4 mb-4'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mb-2 '>
-              Our Services
-            </h2>
-
-            <div className='flex w-full gap-2'>
-              <div className=''>
-                <Link href={`/sectors/aviation`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Aviation
-                  </Button>
-                </Link>
-                <Link href={`/sectors/bridges-structures`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Bridges & Structures
-                  </Button>
-                </Link>
-                <Link href={`/sectors/commercial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Commercial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/industrial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Industrial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/institutional`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Institutional
-                  </Button>
-                </Link>
-                <Link href={`/sectors/oil-gas`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Oil & Gas
-                  </Button>
-                </Link>
-                <Link href={`/sectors/power-transmission`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Power Transmission
-                  </Button>
-                </Link>
-                <Link href={`/sectors/ports`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Ports
-                  </Button>
-                </Link>
-                <Link href={`/sectors/renewable-energy`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Renewable Energy
-                  </Button>
-                </Link>
-                <Link href={`/sectors/residential`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
-                  </Button>
-                </Link>
-                <Link href={`/sectors/roads-highways`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Roads & Highways
-                  </Button>
-                </Link>
-                <Link href={`/sectors/railways-metro`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Railways & Metro
-                  </Button>
-                </Link>
-                <Link href={`/sectors/thermal-power-plant`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Thermal Power Plant
-                  </Button>
-                </Link>
-                <Link href={`/sectors/water-infrastructure`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Water Infrastructure
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SectorMobileLinks />
       </div>
       <div className='flex flex-row'>
         <SectorLinks />
@@ -214,21 +118,19 @@ const Page = () => {
             <em>Helping people move faster, safer and sustainably</em>
           </h1>
           <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               As populations grow, so do demands for safe, expedient and
               cost-effective transportation. We work with clients in India &
               abroad to achieve cost optimization, digitization/BIM and
               efficiency in processes and control in transportation projects.
             </p>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               We use our extensive knowledge in techno commercial audit, project
               planning, digital project monitoring, 5D/4D/3D BIM and managing
               transportation systems — to help our clients find smarter, more
               advanced ways to move people from one place to another.
             </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '></p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs  '>
               Our work across{' '}
@@ -309,7 +211,7 @@ const Page = () => {
           </div>
           <br />
           <div className='w-4/5 '>
-            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
+            <div className='flex flex-col p-12 bg-wilmer-orange  mb-20 m-4 mr-2 text-white '>
               <FaQuoteLeft size={30} className='text-white ' />
               <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
                 <em>
@@ -332,12 +234,13 @@ const Page = () => {
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <h2 className='text-3xl   font-bold  mb-4'>Railways & Metro</h2>
-          <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
+          <hr className='border-b-2  border-num-orange' />
+          <p className='md:text-2xl text-xs mt-4  flex '>
             Rapid urbanization and increasing traffic congestion, has
             necessitated investment in rail and metro infrastructure in the
             development of a country.
           </p>{' '}
-          <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
+          <p className='   md:text-lg text-xs mt-4  flex '>
             Rail networks efficiently move both goods and people, thereby
             minimizing the strain on congested roadways. The emergence of rapid
             urban mass transit options like metro systems, has further provided
@@ -345,7 +248,7 @@ const Page = () => {
             transport networks.
           </p>{' '}
           <br />
-          <p className='   md:text-lg text-xs flex mb-8'>
+          <p className='   md:text-lg text-xs flex '>
             At Numbertree, we combine engineering techniques with commercial
             aspects of project to arrive at the best solutions for the
             challenges faced by this sector.
@@ -360,8 +263,8 @@ const Page = () => {
           </p>{' '}
           <br />
         </div>
-        <div className='md:inline relative hidden w-2/5'>
-          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
+        <div className='md:inline relative hidden mt-20 w-2/5'>
+          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
                 By leveraging our technical acumen, strategic insights, and
@@ -370,7 +273,7 @@ const Page = () => {
                 progression.
               </em>
             </p>
-            <div className='flex justify-end pt-40'>
+            <div className='flex justify-end '>
               <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
@@ -455,7 +358,7 @@ const Page = () => {
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Service</h1>
                     <h2 className='font-bold  md:text-2xl'>
-                      Techno Commercial Audit
+                      Techno-Commercial Audit
                     </h2>
                   </div>
                 </div>
@@ -480,7 +383,7 @@ const Page = () => {
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold mb-2  md:text-2xl'>
-                        Contract Administration
+                        Contract Adiministration & Bill Verification
                       </h2>
                     </div>
                   </div>
@@ -503,7 +406,7 @@ const Page = () => {
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
-                        Quantity Survey
+                        Quantity Survey & Cost Control
                       </h2>
                     </div>
                   </div>

@@ -30,7 +30,7 @@ const ActionButtons = () => {
                   <Link href='/bim'>BIM</Link>
                   <Link href='/about'>About</Link>
                   <Link href='/career'>Career</Link>
-                  <Link href='/contact'>Contact</Link>
+                  <Link href='/contact/proposal'>Contact</Link>
                   <Link href='/resources'>Resources/Blog</Link>
                 </div>
               </SheetDescription>

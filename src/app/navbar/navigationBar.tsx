@@ -283,7 +283,7 @@ export function NavigationBar() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href='/contact' legacyBehavior passHref>
+          <Link href='/contact/proposal' legacyBehavior passHref>
             <div className=' mb-0.5'>
               <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
                 Contact us

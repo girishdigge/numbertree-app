@@ -7,21 +7,31 @@ import { Button } from '@/components/ui/button';
 const SectorLinks = () => {
   return (
     <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-      <h1 className='text-xl font-bold mb-2'> Share this page</h1>
+      <h1 className='text-xl font-bold mb-2'>Follow Us</h1>
 
       <div className='flex gap-4 mb-12'>
-        <FaFacebookF
-          size={30}
-          className='bg-num-orange p-1 text-white  rounded-xl'
-        />
-        <FaLinkedinIn
-          size={31}
-          className='bg-num-orange text-white p-1 rounded-xl'
-        />
-        <FaXTwitter
-          size={30}
-          className='bg-num-orange text-white p-1 rounded-xl'
-        />
+        <Link
+          href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
+        >
+          <FaFacebookF
+            size={30}
+            className='bg-num-orange p-1 text-white  rounded-xl'
+          />
+        </Link>
+        <Link
+          href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
+        >
+          <FaLinkedinIn
+            size={31}
+            className='bg-num-orange text-white p-1 rounded-xl'
+          />
+        </Link>
+        <Link href={`#`}>
+          <FaXTwitter
+            size={30}
+            className='bg-num-orange text-white p-1 rounded-xl'
+          />
+        </Link>
       </div>
       <div>
         <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
@@ -31,14 +41,14 @@ const SectorLinks = () => {
           <div className='w-1/2'>
             <Link href={`/sectors/aviation`}>
               <Button className='w-52 items-start justify-start bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                Aviation
+                Airport & Aviation
               </Button>
             </Link>
-            <Link href={`/sectors/bridges-structures`}>
+            {/* <Link href={`/sectors/bridges-structures`}>
               <Button className='w-52 items-start justify-start bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                 Bridges & Structures
               </Button>
-            </Link>
+            </Link> */}
             <Link href={`/sectors/commercial`}>
               <Button className='w-52 items-start justify-start bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                 Commercial
@@ -89,11 +99,11 @@ const SectorLinks = () => {
                 Railways & Metro
               </Button>
             </Link>
-            <Link href={`/sectors/thermal-power-plant`}>
+            {/* <Link href={`/sectors/thermal-power-plant`}>
               <Button className='w-52 items-start justify-start bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                 Thermal Power Plant
               </Button>
-            </Link>
+            </Link> */}
             <Link href={`/sectors/water-infrastructure`}>
               <Button className='w-52 items-start justify-start bg-gray-100 mb-2 text-black  hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                 Water Infrastructure

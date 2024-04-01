@@ -73,21 +73,24 @@ const Page = () => {
           </Link>
         </div>
       </div>
-      <div className='flex m-10'>
-        <div className='grid grid-cols-3 gap-10'>
-          <div className='grid grid-cols-2'>
+      <div className='flex m-20'>
+        <div className='grid grid-cols-3 gap-8'>
+          <div className='flex'>
             <Image
-              src={`/testimonials/saqlain.png`}
-              width={200}
+              src={`/testimonials/profile.png`}
+              width={150}
               height={250}
               alt='1'
+              className='object-contain w-1/3 flex '
             />
-            <div className='flex flex-col ml-2 gap-1 justify-center'>
-              <h1 className='text-2xl font-semibold'>John Doe</h1>
-              <h2 className='text-lg font-light text-num2-blue'>CEO</h2>
+            <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
+              <h1 className='text-2xl font-semibold'>Syed Mahtab Alam</h1>
+              <h2 className='text-lg font-light text-num2-blue'>
+                Founder & CEO
+              </h2>
               <span className='flex'>
                 <IoIosMail size={24} className='text-num-indigo' />
-                {`info@numbertree.in`}
+                {`Mahtab.syed@numbertree.in`}
               </span>
               <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
@@ -100,50 +103,82 @@ const Page = () => {
               </Link>
             </div>
           </div>
-          <div className='grid grid-cols-2'>
+          <div className='flex'>
             <Image
-              src={`/testimonials/chetan.png`}
-              width={200}
+              src={`/testimonials/profile.png`}
+              width={150}
               height={250}
               alt='1'
+              className='object-contain w-1/3 flex '
             />
-            <div className='flex flex-col ml-2 gap-1 justify-center'>
-              <h1 className='text-2xl font-semibold'>John Doe</h1>
-              <h2 className='text-lg font-light text-num2-blue'>Director</h2>
+            <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
+              <h1 className='text-2xl font-semibold'>Ajay Shekhar </h1>
+              <h2 className='text-lg font-light text-num2-blue'>Partner</h2>
               <span className='flex'>
                 <IoIosMail size={24} className='text-num-indigo' />
-                {`info@numbertree.in`}
+                {`ajay.shekhar@numbertree.in`}
               </span>
               <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
               </span>
-              <Link href={`/contact/expert/exp2`}>
+              <Link href={`/contact/expert/exp1`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
                 </Button>
               </Link>
             </div>
           </div>
-          <div className='grid grid-cols-2'>
+          <div className='flex'>
             <Image
-              src={`/testimonials/girish.png`}
-              width={200}
+              src={`/testimonials/profile.png`}
+              width={150}
               height={250}
               alt='1'
+              className='object-contain w-1/3 flex '
             />
-            <div className='flex flex-col ml-2 gap-1 justify-center'>
-              <h1 className='text-2xl font-semibold'>John Doe</h1>
-              <h2 className='text-lg font-light text-num2-blue'>Manager</h2>
+            <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
+              <h1 className='text-2xl font-semibold'>Sulagna Bisoi </h1>
+              <h2 className='text-lg font-light text-num2-blue'>
+                Head Sales – India & UAE
+              </h2>
               <span className='flex'>
                 <IoIosMail size={24} className='text-num-indigo' />
-                {`info@numbertree.in`}
+                {`sulagna@numbertree.in`}
               </span>
               <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
               </span>
-              <Link href={`/contact/expert/exp3`}>
+              <Link href={`/contact/expert/exp1`}>
+                <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
+                  Send Message
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div className='flex'>
+            <Image
+              src={`/testimonials/profile.png`}
+              width={150}
+              height={250}
+              alt='1'
+              className='object-contain w-1/3 flex '
+            />
+            <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
+              <h1 className='text-2xl font-semibold'>Kishan Panchal </h1>
+              <h2 className='text-lg font-light text-num2-blue'>
+                Business Development Manager
+              </h2>
+              <span className='flex'>
+                <IoIosMail size={24} className='text-num-indigo' />
+                {`sulagna@numbertree.in`}
+              </span>
+              <span className='flex'>
+                <FaSquarePhone size={24} className='text-num-indigo' />
+                {`+91-9988776655`}
+              </span>
+              <Link href={`/contact/expert/exp4`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
                 </Button>

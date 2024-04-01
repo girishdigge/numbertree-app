@@ -11,7 +11,7 @@ export const MainPageProjects = [
     link: '/projects',
   },
   {
-    name: 'Bharat Mandapam ITPO',
+    name: 'ITPO Convention Center,Bharat Mandapam.',
     location: 'New Delhi ',
     value: '2150 Cr(INR)',
     date: 'Sep 2023',
@@ -33,7 +33,7 @@ export const MainPageProjects = [
     link: '/projects',
   },
   {
-    name: 'Red Sea International airport, 3D BIM of for MEP of the project',
+    name: 'Red Sea International airport',
     location: 'Red Sea, Saudi Arabia ',
     value: ' ',
     date: 'Dec 2023',

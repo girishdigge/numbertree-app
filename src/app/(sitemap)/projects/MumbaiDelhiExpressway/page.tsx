@@ -63,7 +63,7 @@ const Page = () => {
                 All Projects
               </Button>
             </Link>
-            <Link href={`/contact`} className='animate-fadeInUp'>
+            <Link href={`/contact/proposal`} className='animate-fadeInUp'>
               <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>

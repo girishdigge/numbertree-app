@@ -18,6 +18,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import SectorLinks from '@/components/sitemap/sectorLinks';
+import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 
 const Page = () => {
   const projects = [
@@ -144,7 +145,7 @@ const Page = () => {
                 All sectors
               </Button>
             </Link>
-            <Link href={`/contact`} className='animate-fadeInUp'>
+            <Link href={`/contact/proposal`} className='animate-fadeInUp'>
               <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
@@ -155,104 +156,7 @@ const Page = () => {
 
       <br />
       <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
-
-          <div className='flex gap-4 mb-4'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mb-2 '>
-              Our Services
-            </h2>
-
-            <div className='flex w-full gap-2'>
-              <div className=''>
-                <Link href={`/sectors/aviation`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Aviation
-                  </Button>
-                </Link>
-                <Link href={`/sectors/bridges-structures`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Bridges & Structures
-                  </Button>
-                </Link>
-                <Link href={`/sectors/commercial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Commercial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/industrial`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Industrial
-                  </Button>
-                </Link>
-                <Link href={`/sectors/institutional`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Institutional
-                  </Button>
-                </Link>
-                <Link href={`/sectors/oil-gas`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Oil & Gas
-                  </Button>
-                </Link>
-                <Link href={`/sectors/power-transmission`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Power Transmission
-                  </Button>
-                </Link>
-                <Link href={`/sectors/ports`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Ports
-                  </Button>
-                </Link>
-                <Link href={`/sectors/renewable-energy`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Renewable Energy
-                  </Button>
-                </Link>
-                <Link href={`/sectors/residential`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Residential
-                  </Button>
-                </Link>
-                <Link href={`/sectors/roads-highways`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Roads & Highways
-                  </Button>
-                </Link>
-                <Link href={`/sectors/railways-metro`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Railways & Metro
-                  </Button>
-                </Link>
-                <Link href={`/sectors/thermal-power-plant`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Thermal Power Plant
-                  </Button>
-                </Link>
-                <Link href={`/sectors/water-infrastructure`}>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Water Infrastructure
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SectorMobileLinks />
       </div>
       <div className='flex flex-row'>
         <SectorLinks />
@@ -261,14 +165,14 @@ const Page = () => {
             <em>Urban Infrastructure is the foundation of society</em>
           </h1>
           <div className='flex flex-col items-center '>
-            <h2 className='text-2xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-8'>
+            <h2 className='text-2xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black '>
               Infrastructure is the foundation of society. The transport, energy
               and digital networks form the cornerstones of economic growth. And
               the health, education, sports, housing and recreational facilities
               invest in the fabric of society.
             </h2>{' '}
             <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-8'>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
               Infrastructure development is a global challenge. As businesses
               strive to develop infrastructure, support communities and create
               livelihood, the developing markets as well as developed countries
@@ -287,7 +191,7 @@ const Page = () => {
           </div>
           <br />
           <div className='w-4/5 '>
-            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 text-white '>
+            <div className='flex flex-col p-12 bg-wilmer-orange  m-4 mr-2 mb-20 text-white '>
               <FaQuoteLeft size={30} className='text-white ' />
               <p className='text-xl font-medium ml-6 mr-4 mb-2 w-11/12'>
                 <em>
@@ -307,12 +211,13 @@ const Page = () => {
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <h2 className='text-3xl   font-bold  mb-4'>Institutional</h2>
-          <p className='md:text-3xl text-xs mt-4 mb-8 flex '>
+          <hr className='border-b-2  border-num-orange' />
+          <p className='md:text-2xl text-xs mt-4  flex '>
             Our wealth of experience in this sector emanates from our services
             provided during construction India’s premier educational institutes
             like IIM Trichy, IIM Kashipur, and the coveted Nalanda University.
           </p>{' '}
-          <p className='   md:text-lg text-xs mt-4 mb-8 flex '>
+          <p className='   md:text-lg text-xs mt-4  flex '>
             We have worked on certain landmark building like the grandeur
             personified – The new parliament building and Bharat Mandapam – the
             G20 summit venue. We offer strategic advice and support to those
@@ -323,7 +228,7 @@ const Page = () => {
             fluctuating costs.
           </p>{' '}
           <br />
-          <p className='   md:text-lg text-xs flex mb-8'>
+          <p className='   md:text-lg text-xs flex '>
             From initial development stage till completion, Numbertree provides
             multidimensional services at all phases of a project. We help
             clients across all types of development – educational institutes,
@@ -332,8 +237,8 @@ const Page = () => {
           </p>
           <br />
         </div>
-        <div className='md:inline relative hidden w-2/5'>
-          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10 pt-36  text-wilmer-orange '>
+        <div className='md:inline relative hidden mb-20 w-2/5'>
+          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
                 {' '}
@@ -341,7 +246,7 @@ const Page = () => {
 `}
               </em>
             </p>
-            <div className='flex justify-end pt-40'>
+            <div className='flex justify-end '>
               <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
@@ -426,7 +331,7 @@ const Page = () => {
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Service</h1>
                     <h2 className='font-bold  md:text-2xl'>
-                      Project Monitoring and Control
+                      Project Management Consultancy
                     </h2>
                   </div>
                 </div>
@@ -474,7 +379,7 @@ const Page = () => {
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold mb-2  md:text-2xl'>
-                        Contract Administration
+                        Contract Adiministration & Bill Verification
                       </h2>
                     </div>
                   </div>
@@ -497,7 +402,7 @@ const Page = () => {
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
-                        Techno Commercial Audit
+                        Techno-Commercial Audit
                       </h2>
                     </div>
                   </div>
@@ -520,7 +425,7 @@ const Page = () => {
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
-                        Quantity Survey
+                        Quantity Survey & Cost Control
                       </h2>
                     </div>
                   </div>

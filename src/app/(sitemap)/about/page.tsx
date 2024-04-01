@@ -46,7 +46,7 @@ const Page = () => {
               </p>
             </div>
 
-            <Link href={`/contact`} className='animate-fadeInUp'>
+            <Link href={`/contact/proposal`} className='animate-fadeInUp'>
               <Button className='md:w-40 ml-4 bg-num-orange text-white mt-2 hover:bg-white hover:text-black animate-fadeInUp'>
                 Contact Us
               </Button>

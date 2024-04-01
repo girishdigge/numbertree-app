@@ -158,14 +158,14 @@ const Keyfacts = () => {
     <div className='w-full '>
       <div className='mt-20 md:ml-14'>
         <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
-          KeyFacts
+          Key Facts
         </h1>
 
         <h2 className='-translate-y-12 ml-1 text-5xl text-num-orange font-medium'>
-          KeyFacts
+          Key Facts
         </h2>
 
-        <h3 className='-translate-y-10 md:text-3xl w-1/2 mt-2  ml-1'>
+        <h3 className='-translate-y-10 md:text-3xl font-medium w-1/2 mt-2  ml-1'>
           {
             'We are committed to working with you collaboratively to understand your goals and create a strategy that will achieve them. '
           }

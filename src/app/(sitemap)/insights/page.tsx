@@ -60,7 +60,7 @@ const Page = () => {
               </p>
             </div>
 
-            <Link href={`/contact`} className='animate-fadeInUp'>
+            <Link href={`/contact/proposal`} className='animate-fadeInUp'>
               <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
                 Contact Us
               </Button>
@@ -140,7 +140,7 @@ const Page = () => {
                   joining our growing team, get in touch.`}
                 </p>
                 <div className='flex flex-row-reverse mr-4 md:mt-32'>
-                  <Link href={'/contact'}>
+                  <Link href={'/contact/proposal'}>
                     <Button className='w-40 mt-3 hover:bg-num-indigo  border-0 bg-num-orange'>
                       Connect
                     </Button>

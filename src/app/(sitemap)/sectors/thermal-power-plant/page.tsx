@@ -92,7 +92,7 @@
 //                 construction projects across sectors in infrastructure.
 //               </p>
 //             </div>
-//             <Link href={`/contact`}>
+//             <Link href={`/contact/proposal`}>
 //               <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
 //                 Contact Us
 //               </Button>
