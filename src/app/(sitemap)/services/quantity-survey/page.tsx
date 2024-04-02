@@ -75,7 +75,9 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Services</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Quantity Survey</p>
+        <p className='font-bold text-num-indigo'>
+          Quantity Survey & Cost Control
+        </p>
       </div>
       <div className='relative '>
         <Image
@@ -92,7 +94,7 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Quantity Survey
+                Quantity Survey & Cost Control
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
                 With this service, we enable project stakeholders to make

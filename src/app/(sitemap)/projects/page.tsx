@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/select';
 
 import { useEffect, useState } from 'react';
+import { MainPageProjects } from '@/data/mainPageProjects';
 
 const Page = () => {
   const [service, setService] = useState('');
@@ -218,7 +219,7 @@ const Page = () => {
             Featured Projects
           </h1>
           <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
-            {featuredProjects.map((projects, index) => (
+            {MainPageProjects.map((projects, index) => (
               <div key={index}>
                 <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
                   <Link href={projects.link}>
@@ -227,7 +228,7 @@ const Page = () => {
                       width={800}
                       height={400}
                       alt={projects.location}
-                      className='object-contain'
+                      className='object-cover'
                     />
 
                     <div className='z-2 absolute inset-0 flex flex-col justify-end '>

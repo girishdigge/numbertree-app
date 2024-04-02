@@ -174,7 +174,7 @@ const Page = () => {
                           {sector.title}
                         </h1>
                         <span className='text-white font-bold'>
-                          Find out more
+                          Read more
                           <Button className='w-10 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
                             {`+`}
                           </Button>

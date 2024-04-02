@@ -22,23 +22,23 @@ const services: { title: string; href: string }[] = [
     href: '/services/business-transformation',
   },
   {
-    title: 'Claim Management',
+    title: 'Construction Claim Management',
     href: '/services/claim-management',
   },
   {
-    title: 'Contract Administration',
+    title: 'Contract Adiministration & Bill Verification',
     href: '/services/contract-administration',
   },
   {
-    title: 'Project Monitoring & Control',
+    title: 'Project Management Consultancy',
     href: '/services/project-monitoring-and-control',
   },
   {
-    title: 'Quantity Survey',
+    title: 'Quantity Survey & Cost Control',
     href: '/services/quantity-survey',
   },
   {
-    title: 'Techno Commercial Audit',
+    title: 'Techno-Commercial Audit',
     href: '/services/techno-commercial-audit',
   },
   {
@@ -49,7 +49,7 @@ const services: { title: string; href: string }[] = [
 
 const sectors: { title: string; href: string }[] = [
   {
-    title: 'Aviation',
+    title: 'Airports & Aviation',
     href: '/sectors/aviation',
   },
   // {
@@ -69,19 +69,19 @@ const sectors: { title: string; href: string }[] = [
     href: '/sectors/institutional',
   },
   {
-    title: 'Oil Gas',
+    title: 'Oil & Gas',
     href: '/sectors/oil-gas',
   },
   {
-    title: 'Ports',
+    title: 'Ports & Maritime',
     href: '/sectors/ports',
   },
   {
-    title: 'Power Transmission',
+    title: 'Power & Transmission',
     href: '/sectors/power-transmission',
   },
   {
-    title: 'Railways Metro',
+    title: 'Railways & Metro',
     href: '/sectors/railways-metro',
   },
   {
@@ -93,7 +93,7 @@ const sectors: { title: string; href: string }[] = [
     href: '/sectors/residential',
   },
   {
-    title: 'Roads Highways',
+    title: 'Roads & Highways',
     href: '/sectors/roads-highways',
   },
   // {
@@ -156,26 +156,38 @@ export function NavigationBar() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <div className='flex flex-col'>
-                <ListItem
-                  href='/about/more-about-us'
-                  title='About NumberTree'
-                />
-                <ListItem href='/about/values' title='Our Values' />
-                <ListItem
-                  href='/about/client-ethics'
-                  title='Clients & Ethics'
-                ></ListItem>
-              </div>
-              <div>
-                <ListItem
-                  href='/about/leadership-people'
-                  title='Leadership & People'
-                ></ListItem>
-                <ListItem
-                  href='/about/csr-esg'
-                  title='ESG & Corporate Social Responsibility'
-                ></ListItem>
+              <div className='flex gap-6'>
+                <div>
+                  <ListItem
+                    href='/about/more-about-us'
+                    title='About NumberTree'
+                  />
+                  <ListItem href='/about' title='Our Mission' />
+                  <ListItem href='/about' title='Our Vission' />
+
+                  <ListItem href='/about/values' title='Our Values' />
+                </div>
+                <div>
+                  <ListItem
+                    href='/about/client-ethics'
+                    title='Our Ethics'
+                  ></ListItem>
+                  <ListItem
+                    href='/about/client-ethics'
+                    title='Our Clients'
+                  ></ListItem>
+                </div>
+                <div>
+                  <ListItem
+                    href='/about/leadership-people'
+                    title='Our People'
+                  ></ListItem>
+                  <ListItem
+                    href='/about/leadership-people'
+                    title='Our Leadership'
+                  ></ListItem>
+                  <ListItem href='/about/csr-esg' title='ESG & CSR'></ListItem>
+                </div>
               </div>
             </ul>
           </NavigationMenuContent>
@@ -189,12 +201,14 @@ export function NavigationBar() {
 
             <div className='flex'>
               <div className='flex flex-col w-1/3 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
-                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
-                  Services
-                </h1>
-                <p className='text-lg w-3/4  font-medium animate-fadeLeft'>
-                  Empowering decision making to transform businesses
-                </p>
+                <Link href={`/services`}>
+                  <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
+                    Services
+                  </h1>
+                  <p className='text-lg w-3/4  font-medium animate-fadeLeft'>
+                    Empowering decision making to transform businesses
+                  </p>
+                </Link>
               </div>
               <ul className='grid grid-cols-3 w-[400px] gap-4 p-4 md:w-[500px] md:grid-cols-2 lg:w-[1000px] '>
                 {services.map((service) => (
@@ -216,12 +230,14 @@ export function NavigationBar() {
             <hr className='border-2 border-num-orange animated-hr' />
             <div className='flex'>
               <div className='flex flex-col w-1/3   bg-muted p-2 m-3 mt-6 rounded-lg'>
-                <h1 className=' mt-6 text-3xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
-                  Sectors
-                </h1>
-                <p className='text-lg w-3/4 font-medium animate-fadeLeft pb-10'>
-                  Uplifting communities, improving access
-                </p>
+                <Link href={`/sectors`}>
+                  <h1 className=' mt-6 text-3xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
+                    Sectors
+                  </h1>
+                  <p className='text-lg w-3/4 font-medium animate-fadeLeft pb-10'>
+                    Uplifting communities, improving access
+                  </p>
+                </Link>
               </div>
               <ul className='grid w-[400px] gap-1 p-1  md:w-[500px] md:grid-cols-3 lg:w-[1000px] '>
                 {sectors.map((sector) => (
@@ -243,9 +259,11 @@ export function NavigationBar() {
             <hr className='border-2 border-num-orange animated-hr' />
             <div className='flex'>
               <div className='flex flex-col w-1/2 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
-                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
-                  Projects
-                </h1>
+                <Link href={`/projects`}>
+                  <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
+                    Projects
+                  </h1>
+                </Link>
                 <p className='text-lg  font-medium animate-fadeLeft pb-10 w-3/4'>
                   Taking projects from complexity to profitability
                 </p>

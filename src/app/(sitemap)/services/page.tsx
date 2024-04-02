@@ -19,10 +19,10 @@ const Page = () => {
     },
     {
       id: 1,
-      name: 'Contract Adiministration',
+      name: 'Contract Adiministration & Bill Verification',
       imageUrl: '/services/ContractAdministration.jpg',
       content: {
-        heading: 'Contract Adiministration',
+        heading: 'Contract Adiministration & Bill Verification',
         paragraph: `As a consulting engineering firm, we understand the importance of
             efficient contract administration and accurate bill checking in
             maintaining financial integrity and control of infrastructure &
@@ -32,10 +32,10 @@ const Page = () => {
     },
     {
       id: 2,
-      name: 'Quantity Survey',
+      name: 'Quantity Survey & Cost Control',
       imageUrl: '/services/QuantitySurvey.jpg',
       content: {
-        heading: 'Quantity Survey',
+        heading: 'Quantity Survey & Cost Control',
         paragraph: `In the infrastructure industry, precise and comprehensive
             quantification of materials, labour, and resources is crucial for
             successful project planning and budgeting.`,
@@ -44,10 +44,10 @@ const Page = () => {
     },
     {
       id: 3,
-      name: 'Claim Management',
+      name: 'Construction Claim Management',
       imageUrl: '/services/ClaimManagement.jpg',
       content: {
-        heading: 'Claim Management',
+        heading: 'Construction Claim Management',
         paragraph:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
         link: '/services/claim-management',
@@ -55,10 +55,10 @@ const Page = () => {
     },
     {
       id: 4,
-      name: 'Project Monitoring & Control',
+      name: 'Project Management Consultancy',
       imageUrl: '/services/ProjectMonCon.jpg',
       content: {
-        heading: 'Project Monitoring & Control',
+        heading: 'Project Management Consultancy',
         paragraph:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
         link: '/services/project-monitoring-and-control',
@@ -66,10 +66,10 @@ const Page = () => {
     },
     {
       id: 5,
-      name: 'Techno Commercial Audit',
+      name: 'Techno-Commercial Audit',
       imageUrl: '/services/TechnoComAudit.jpg',
       content: {
-        heading: 'Techno Commercial Audit',
+        heading: 'Techno-Commercial Audit',
         paragraph:
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
         link: '/services/techno-commercial-audit',

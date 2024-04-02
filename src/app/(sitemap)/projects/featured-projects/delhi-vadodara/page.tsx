@@ -74,8 +74,8 @@ const Page = () => {
 
       <br />
 
-      <div className='flex flex-row'>
-        <div className='md:flex w-1/5   pl-4 flex-col'>
+      <div className='flex md:flex-row flex-col'>
+        <div className='md:flex md:w-1/5   pl-4 md:flex-col'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
           <div className='flex gap-4 mb-12'>
@@ -145,8 +145,8 @@ const Page = () => {
             </Link>
           </div>
         </div>
-        <div className='w-3/5 flex flex-col items-center text-justify'>
-          {/* <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
+        <div className='md:w-3/5 flex flex-col items-center text-justify'>
+          {/* <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:md:w-3/4 w-11/12 text-black mb-4'>
             <em>Helping people move faster, safer and sustainably</em>
           </h1> */}
           <div className='flex flex-col items-center '>
@@ -216,7 +216,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-1/5 mr-4 flex flex-col justify-between '>
+        <div className='md:w-1/5 mr-4 flex flex-col justify-between '>
           <GetInTouch />
         </div>
       </div>
