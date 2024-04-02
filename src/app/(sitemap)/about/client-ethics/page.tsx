@@ -134,7 +134,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-1/4 flex flex-col'>
+        <div className='w-1/4 md:flex hidden flex-col'>
           <div className='flex flex-col items-center'>
             <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
@@ -170,7 +170,7 @@ const Page = () => {
                     <h1 className='h-4 text-8xl  text-left text-num-indigo'>
                       “
                     </h1>
-                    <p className='px-8 py-4 text-lg text-center  text-num-indigo'>
+                    <p className='px-8 py-4 md:text-lg text-center  text-num-indigo'>
                       {test.content}
                     </p>
                     <div className='h-3 text-8xl text-right text-num-indigo'>
@@ -201,9 +201,11 @@ const Page = () => {
       <div className='grid grid-cols-2 m-8'>
         <div className='border-2 border-num-orange border-r-0 p-10 flex flex-col items-center justify-center'>
           <div>
-            <h1 className='text-5xl font-medium  mb-3'>Our Clients</h1>
+            <h1 className='md:text-5xl text-2xl font-medium  mb-3'>
+              Our Clients
+            </h1>
             <hr className='w-40 border-2 border-num-orange' />
-            <h2 className='text-2xl mt-4 mb-4 w-2/3'>
+            <h2 className='md:text-2xl mt-4 mb-4 w-2/3'>
               Committed to doing the right thing, every time
             </h2>
           </div>

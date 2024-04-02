@@ -62,7 +62,7 @@ const Page = () => {
               {'We promise growth, inclusion and diversity'}
             </h3>
           </div>
-          <h3 className='-translate-y-8 text-lg text-num-blue mb-8'>
+          <h3 className='-translate-y-8 md:text-lg text-sm text-num-blue mb-8'>
             People are at the heart of our services. At Numbertree, you can
             create relationships that support your development and a career path
             that fits your goals. Come explore a world of opportunities in
@@ -70,11 +70,11 @@ const Page = () => {
           </h3>
         </div>
       </div>
-      <div className='grid grid-cols-2 '>
+      <div className='grid md:grid-cols-2 '>
         <div className='flex flex-col justify-center pl-8 '>
-          <h1 className='text-4xl mb-2'>Career at NumberTree</h1>
+          <h1 className='md:text-4xl text-2xl mb-2'>Career at NumberTree</h1>
 
-          <p className='text-lg mt-2 mb-4 w-3/4'>
+          <p className='md:text-lg text-sm mt-2 mb-4 w-3/4'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
             asperiores consequuntur repellendus reprehenderit modi nam incidunt
             totam aperiam, perspiciatis praesentium voluptates dolores velit,
@@ -90,16 +90,16 @@ const Page = () => {
         <Image src={'/career/career2.jpg'} height={600} width={800} alt='img' />
       </div>
       <div className=' pt-10'>
-        <div className='relative w-11/12'>
+        <div className='md:relative w-11/12'>
           <Image
             src={`/career/office1.jpg`}
             width={1500}
             height={600}
             alt='business transformation'
-            className='object-contain '
+            className='object-contain md:inline hidden'
           />
-          <div className='absolute -inset-20 flex flex-col justify-center items-end'>
-            <div className=' bg-num-indigo p-20 gap-4 flex flex-col w-1/3  text-white'>
+          <div className='md:absolute md:-inset-20 flex flex-col justify-center items-end'>
+            <div className=' bg-num-indigo p-20 gap-4 flex flex-col md:w-1/3  text-white'>
               <h1 className='text-xl'>Explore career</h1>
               <h2 className='text-4xl font-bold'>Life at NumberTree</h2>
               <p className='text-justify text-lg'>
@@ -115,7 +115,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 bg-gray-20 pt-8 pb-8'>
+      <div className='grid md:grid-cols-2 bg-gray-20 pt-8 pb-8'>
         <div className='flex flex-col justify-center '>
           <div className='ml-10   w-4/5'>
             <div>
@@ -148,7 +148,7 @@ const Page = () => {
           className=''
         />
       </div>
-      <div className='grid grid-cols-2 bg-gray-20 pt-8 pb-8'>
+      <div className='grid md:grid-cols-2 bg-gray-20 pt-8 pb-8'>
         <Image
           src={'/career/mission.jpg'}
           height={600}

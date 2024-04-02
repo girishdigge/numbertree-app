@@ -52,10 +52,10 @@ const sectors: { title: string; href: string }[] = [
     title: 'Aviation',
     href: '/sectors/aviation',
   },
-  {
-    title: 'Bridges Structures',
-    href: '/sectors/bridges-structures',
-  },
+  // {
+  //   title: 'Bridges Structures',
+  //   href: '/sectors/bridges-structures',
+  // },
   {
     title: 'Commercial',
     href: '/sectors/commercial',
@@ -96,10 +96,10 @@ const sectors: { title: string; href: string }[] = [
     title: 'Roads Highways',
     href: '/sectors/roads-highways',
   },
-  {
-    title: 'Thermal Power Plant',
-    href: '/sectors/thermal-power-plant',
-  },
+  // {
+  //   title: 'Thermal Power Plant',
+  //   href: '/sectors/thermal-power-plant',
+  // },
   {
     title: 'Water Infrastructure',
     href: '/sectors/water-infrastructure',
@@ -138,24 +138,24 @@ export function NavigationBar() {
 
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
-            <div className='grid grid-cols-3 gap-3 p-6 md:w-[400px] lg:w-[1000px] lg:grid-cols-[.75fr_1fr] '>
-              <div className='row-span-4'>
+            <ul className='grid grid-cols-3 gap-3 p-6 md:w-[400px] lg:w-[1000px] lg:grid-cols-[.75fr_1fr] '>
+              <li className='row-span-4'>
                 <NavigationMenuLink asChild>
                   <a
-                    className='flex w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
+                    className='flex w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6  no-underline outline-none focus:shadow-md'
                     href='/about'
                   >
                     <Logo />
-                    <div className='mb-2 mt-4 text-2xl font-bold text-num-orange'>
+                    <div className='mb-2 mt-4 text-2xl font-bold text-num-indigo animate-fadeLeftTitle'>
                       About Us
                     </div>
                     {/* <p className='text-base leading-tight text-muted-foreground w-11/12'> */}
-                    <p className='text-lg  font-medium '>
+                    <p className='text-lg w-1/2 font-medium pb-10 animate-fadeLeft'>
                       We are Infrastructure Experts
                     </p>
                   </a>
                 </NavigationMenuLink>
-              </div>
+              </li>
               <div className='flex flex-col'>
                 <ListItem
                   href='/about/more-about-us'
@@ -177,11 +177,11 @@ export function NavigationBar() {
                   title='ESG & Corporate Social Responsibility'
                 ></ListItem>
               </div>
-            </div>
+            </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
+          <NavigationMenuTrigger className='flex'>
             <Link href={`/services`}> Services</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -189,10 +189,10 @@ export function NavigationBar() {
 
             <div className='flex'>
               <div className='flex flex-col w-1/3 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
-                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-orange'>
+                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
                   Services
                 </h1>
-                <p className='text-lg  font-medium '>
+                <p className='text-lg w-3/4  font-medium animate-fadeLeft'>
                   Empowering decision making to transform businesses
                 </p>
               </div>
@@ -215,15 +215,15 @@ export function NavigationBar() {
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
             <div className='flex'>
-              <div className='flex flex-col w-1/3 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
-                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-orange'>
+              <div className='flex flex-col w-1/3   bg-muted p-2 m-3 mt-6 rounded-lg'>
+                <h1 className=' mt-6 text-3xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
                   Sectors
                 </h1>
-                <p className='text-lg  font-medium '>
+                <p className='text-lg w-3/4 font-medium animate-fadeLeft pb-10'>
                   Uplifting communities, improving access
                 </p>
               </div>
-              <ul className='grid w-[400px] gap-1 p-1 md:w-[500px] md:grid-cols-3 lg:w-[1000px] '>
+              <ul className='grid w-[400px] gap-1 p-1  md:w-[500px] md:grid-cols-3 lg:w-[1000px] '>
                 {sectors.map((sector) => (
                   <ListItem
                     key={sector.title}
@@ -243,10 +243,10 @@ export function NavigationBar() {
             <hr className='border-2 border-num-orange animated-hr' />
             <div className='flex'>
               <div className='flex flex-col w-1/2 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
-                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-orange'>
+                <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
                   Projects
                 </h1>
-                <p className='text-lg  font-medium '>
+                <p className='text-lg  font-medium animate-fadeLeft pb-10 w-3/4'>
                   Taking projects from complexity to profitability
                 </p>
               </div>
@@ -321,7 +321,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className='text-lg font-medium leading-none'>{title}</div>
+          <div className='text-base font-medium leading-none'>{title}</div>
           <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>
             {children}
           </p>

@@ -83,7 +83,7 @@ const Page = () => {
         </div>
         <div className='flex w-2/5 mr-2'>
           <div className='flex items-center'>
-            <p className='text-3xl p-2 border-l-4 border-num-orange'>
+            <p className='md:text-3xl p-2 border-l-4 border-num-orange'>
               We catalyse effective & informed decision-making through
               unparalleled insights into the working and execution of large &
               complex infrastructures projects
@@ -108,15 +108,17 @@ const Page = () => {
             <hr className='border mt-6' />
             <TabsContent value='vision'>
               <div className='flex'>
-                <div className='w-3/5'>
-                  <p className='md:text-lg text-xs mt-4 pt-32 pb-10 mb-8 w-3/5'>
+                <div className='md:w-3/5'>
+                  <p className='md:text-lg text-xs mt-4 pt-32 pb-10 mb-8 md:w-3/5 w-4/5'>
                     We are enablers of change, for our clients, for our
                     environment & our people such that progress, growth and
                     sustainability go hand in hand
                   </p>
                 </div>
-                <div className='w-2/5 '>
-                  <h1 className='text-7xl mb-4 pt-32'>Our Vision</h1>
+                <div className='md:w-2/5 '>
+                  <h1 className='md:text-7xl text-4xl mb-4 pt-32'>
+                    Our Vision
+                  </h1>
                   <hr className='w-1/2 border-2 border-num-orange' />
                 </div>
               </div>
@@ -138,7 +140,9 @@ const Page = () => {
                   </p>
                 </div>
                 <div className='w-2/5 '>
-                  <h1 className='text-7xl mb-4 pt-32'>Our Mission</h1>
+                  <h1 className='md:text-7xl text-4xl mb-4 pt-32'>
+                    Our Mission
+                  </h1>
                   <hr className='w-1/2 border-2 border-num-orange' />
                 </div>
               </div>
@@ -165,7 +169,9 @@ const Page = () => {
                   </p>
                 </div>
                 <div className='w-2/5 '>
-                  <h1 className='text-7xl mb-4 pt-32'>Our Purpose</h1>
+                  <h1 className='md:text-7xl text-4xl mb-4 pt-32'>
+                    Our Purpose
+                  </h1>
                   <hr className='w-1/2 border-2 border-num-orange' />
                 </div>
               </div>
@@ -175,12 +181,12 @@ const Page = () => {
       </div>
       <div className='flex  items-center justify-center mb-20 mt-10'>
         <div className='flex w-11/12 '>
-          <div className='w-1/2 border-2 border-num-orange border-r-0'>
+          <div className='md:w-1/2 border-2 border-num-orange border-r-0'>
             <div className='flex flex-col gap-8 p-14'>
-              <h1 className='text-7xl'>Our Values</h1>
+              <h1 className='md:text-7xl text-4xl'>Our Values</h1>
               <hr className='w-1/2 -translate-y-4 border-2 border-num-orange' />
               <h2 className='text-3xl'>The compass that guides our ship</h2>
-              <p className='text-lg w-3/4 text-justify'>
+              <p className='md:text-lg w-3/4 text-justify'>
                 We work on the some of the most complex & challenging projects,
                 partnering with great businesses that will shape tomorrow’s
                 world in the most positive and sustainable way.{' '}
@@ -188,7 +194,7 @@ const Page = () => {
             </div>
           </div>
           <div className='w-1/2 bg-num-indigo p-8'>
-            <div className='grid grid-cols-2 gap-y-12'>
+            <div className='grid md:grid-cols-2 gap-y-12'>
               <div className='flex flex-col text-white items-center ml-4'>
                 <Image
                   src={`/about/aim.png`}
@@ -262,12 +268,12 @@ const Page = () => {
       </div>
       <div className='flex justify-center'>
         <div className='flex flex-row w-11/12'>
-          <div className='w-2/5 '>
-            <h1 className='text-7xl mb-4 pt-32'>Our Approach</h1>
+          <div className='md:w-2/5 '>
+            <h1 className='md:text-7xl text-4xl mb-4 pt-32'>Our Approach</h1>
             <hr className='w-1/2 border-2 border-num-orange' />
           </div>
-          <div className='w-3/5 text-justify'>
-            <h1 className='text-3xl font-medium pt-8'>
+          <div className='md:w-3/5 text-justify'>
+            <h1 className='md:text-3xl text-xl font-medium pt-8'>
               We are here to amplify leadership’s vision
             </h1>
             <h2 className='text-2xl  mt-4 w-4/5'>
@@ -283,14 +289,14 @@ const Page = () => {
               influence over a company's strategic trajectory, we thus act as
               partners to help you navigate the rough seas.`}
             </p>
-            <hr className='border border-num-orange w-4/5 mb-8' />
+            <hr className='border border-num-orange w-4/5 mb-8 ' />
             <div className='w-4/5 flex'>
               <Image
                 src={`/about/approach.png`}
                 width={130}
                 height={130}
                 alt='integrity'
-                className='object-cover bg-num-indigo'
+                className='object-cover bg-num-indigo md:flex hidden'
               />
               <div className='flex flex-col ml-4'>
                 <FaQuoteLeft size={18} className=' text-num-orange' />
@@ -312,7 +318,7 @@ const Page = () => {
           <div className='w-1/2 bg-num-orange'></div>
         </div>
         <div className='w-11/12'>
-          <div className='grid grid-cols-3'>
+          <div className='grid md:grid-cols-3'>
             <Link href={`/about/client-ethics`}>
               <Image
                 src={`/about/L1.png`}

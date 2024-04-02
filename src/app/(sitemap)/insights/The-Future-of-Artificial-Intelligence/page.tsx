@@ -33,7 +33,7 @@ const Page = () => {
         </p>
       </div>
       <div className='flex flex-row'>
-        <div className='w-3/4 flex justify-center'>
+        <div className='md:w-3/4 flex justify-center'>
           <div className='w-4/5 mt-2'>
             <Image
               src={`/projects/merc.jpg`}
@@ -82,14 +82,14 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='w-1/4 flex flex-col  ml-2'>
+        <div className='md:w-1/4 hidden md:flex flex-col  ml-2'>
           <div>
             {' '}
             <LatestInsights /> <BlogCTA />
           </div>
         </div>
       </div>
-      <div className='w-11/12 ml-20'>
+      <div className='md:w-11/12 md:ml-20'>
         <div className='flex pl-4 flex-col ml-4'>
           <h1 className='text-xl font-bold mb-2'> Share this page</h1>
 
@@ -108,7 +108,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <div className='flex mt-10 ml-6 gap-x-2 tracking-widest'>
+        <div className='md:flex hidden mt-10 ml-6 gap-x-2 tracking-widest'>
           <h1 className='text-xl font-medium  p-1'>Tags:</h1>
           <h2 className='border border-num-orange text-base  p-1'>Article</h2>
           <h2 className='border border-num-orange text-base   p-1'>
@@ -119,7 +119,7 @@ const Page = () => {
         </div>
         <div>
           <div className='flex  mt-20'>
-            <h2 className=' md:text-3xl text-black  hover:text-white p-2 font-medium ml-4'>
+            <h2 className=' md:text-3xl text-black  hover:text-white p-2 font-medium md:ml-4'>
               You may also like
             </h2>
           </div>

@@ -31,7 +31,7 @@ const ActionButtons = () => {
                   <Link href='/about'>About</Link>
                   <Link href='/career'>Career</Link>
                   <Link href='/contact/proposal'>Contact</Link>
-                  <Link href='/resources'>Resources/Blog</Link>
+                  <Link href='/insights'>Resources/Blog</Link>
                 </div>
               </SheetDescription>
             </SheetHeader>

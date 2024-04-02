@@ -156,24 +156,36 @@ const Footer = () => {
           <div className='flex flex-col w-1/2 ml-12 mt-10'>
             <div className='grid grid-cols-3 '>
               <div>
-                <p className='text-base mb-3 font-normal '>Privacy Policy</p>
+                <Link href={`/footer/privacy`}>
+                  <p className='text-base mb-3 font-normal '>Privacy Policy</p>
+                </Link>
               </div>
               <div>
-                <p className='text-base mb-3 font-normal '>Cookie Policy</p>
+                <Link href={`/footer/cookies`}>
+                  <p className='text-base mb-3 font-normal '>Cookie Policy</p>
+                </Link>
               </div>
               <div>
-                <p className='text-base mb-3 font-normal  '>
-                  Terms and Conditions
-                </p>
+                <Link href={`/footer/terms`}>
+                  <p className='text-base mb-3 font-normal  '>
+                    Terms and Conditions
+                  </p>
+                </Link>
               </div>
               <div>
-                <p className='text-base font-normal '>Business licenses</p>
+                <Link href={`/footer/licences`}>
+                  <p className='text-base font-normal '>Business licenses</p>
+                </Link>
               </div>
               <div>
-                <p className='text-base font-normal '>Security</p>
+                <Link href={`/footer/security`}>
+                  <p className='text-base font-normal '>Security</p>
+                </Link>
               </div>
               <div>
-                <p className='text-base font-normal '>Accessibility</p>
+                <Link href={`/footer/accessibility`}>
+                  <p className='text-base font-normal '>Accessibility</p>
+                </Link>
               </div>
             </div>
           </div>

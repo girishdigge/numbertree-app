@@ -17,6 +17,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import ServiceMobileLinks from '@/components/sitemap/serviceMobileLinks';
+import ServiceLinks from '@/components/sitemap/serviceLinks';
 
 const Page = () => {
   const projects = [
@@ -73,278 +75,241 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Services</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Techno Commercial Audit</p>
+        <p className='font-bold text-num-indigo'>Techno-Commercial Audit</p>
       </div>
       <div className='relative '>
         <Image
-          src={`/services/TechnoComAudit1.jpg`}
+          src={`/services/TechnoComAudit.jpg`}
           width={2046}
           height={768}
-          alt='Techno Commercial Audit'
+          alt='Techno-com Audit'
           className='object-contain'
         />
-        <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
+        <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-lg font-light text-sm ml-4 mb-2'>EXPLORE</h2>
+            <h2 className='md:text-base font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
+              Service
+            </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-2xl mb-2 border-num-orange ml-2 flex '>
-                Techno Commercial Audit
+              <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
+                Techno-commercial Audit
               </h1>
-              <p className='md:text-xl text-xs font-medium ml-4 md:mb-2'>
-                We provide cost management services on a wide range of
-                construction projects across sectors in infrastructure.
+              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
+                Steering projects through resilience & profitability, our
+                service empowers you to make informed decision with real time
+                insights of the project
               </p>
             </div>
-            <Button className='w-40 ml-4  bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white'>
-              Contact Us
-            </Button>
+            <Link href={`/sectors`} className=''>
+              <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
+                All sectors
+              </Button>
+            </Link>
+            <Link href={`/contact/proposal`} className='animate-fadeInUp'>
+              <Button className='md:w-40 ml-4 bg-num-indigo text-white mt-2 hover:bg-wilmer-orange hover:text-white animate-fadeInUp'>
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
 
       <br />
       <div className='md:hidden flex flex-col items-center justify-center'>
-        <div className='flex   pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
-
-          <div className='flex gap-4 mb-4'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
+        <ServiceMobileLinks />
+      </div>
+      <div className='flex flex-row'>
+        <ServiceLinks />
+        <div className=' flex flex-col items-center  text-justify'>
+          <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
+            <em>
+              Moving infrastructure projects , from complexity to profitability
+            </em>
+          </h1>
+          <div className='flex flex-col items-center '>
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+              We understand that infrastructure projects are plagued with time &
+              cost overrun that threatens to derail a company’s strategic
+              vision. We take a systematic and controlled approach to audit,
+              with a view to facilitating decision-making and improving
+              operating efficiency.
+            </p>{' '}
           </div>
+          <div className='flex flex-col w-4/5 pr-8   mr-2 m-10 '>
+            <hr className='border-2 border-num-orange mb-6' />
+            <FaQuoteLeft size={30} className='text-num-orange mb-2 ml-2' />
+            <p className='md:text-lg  ml-2 mr-4 mb-2 w-11/12'>
+              <em>
+                {' '}
+                {`Every infrastructure assignment we work on , is an opportunity for us to bring our unique thinking to solve problems, innovate and collaborate with our clients and beyond. We are here to hand hold our clients through various stages of development so that they can focus on important issues.”`}
+              </em>
+            </p>
+            <hr className='border-2 border-num-orange mt-4' />
+          </div>
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            We pride ourselves on delivering unparalleled audit solutions. Our
+            professionals employ a risk-based approach to audit, with a view to
+            help improve performance and operating efficiency.
+          </p>
+          <br />
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            We help our clients establish and assess internal controls, standard
+            operating procedures, and financial processes Our services
+            particularly - time & cost overrun focussed audit help reduce client
+            risk, improve value and deliver positive outcomes in all sectors of
+            the built environment.
+          </p>
+          <br />
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            We align ourselves around clients’ sectors to provide
+            industry-relevant advice and specialized expertise. We create
+            custom-made client teams that bring together technical delivery
+            experts, strategists and other specialists. We work together to
+            achieve viable developments that capture client objectives through
+            value-driven and efficient consulting engineering and audit
+            services. We manage costs through rigorous change management and
+            risk-management processes.
+          </p>
+
+          <br />
+          <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
+            <span className='border-b-2 border-num-orange'>
+              From Insights to Actionables
+            </span>
+          </h1>
+
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            In today’s world, we cannot over emphasise the importance of
+            insights derived from financial numbers. It helps businesses take
+            informed and critical decisions which can transform businesses. Our
+            audit-based insights serves as a valuable asset, enabling informed
+            decision-making, optimizing operations, enhancing project
+            management, streamline processes, mitigating risks and identifying
+            opportunities for improvement.
+          </p>
+          <div className='w-4/5 '>
+            {/* <div className='flex flex-col p-8   m-4 mr-2 mb-20 '>
+              <hr className='border-2 border-num-orange mb-6' />
+              <FaQuoteLeft size={30} className='text-num-orange mb-2' />
+              <p className='md:text-lg  ml-2 mr-4 mb-2 w-11/12'>
+                <em>
+                  {' '}
+                  {`Every infrastructure assignment we work on , is an opportunity for us to bring our unique thinking to solve problems, innovate and collaborate with our clients and beyond. We are here to hand hold our clients through various stages of development so that they can focus on important issues.”`}
+                </em>
+              </p>
+              <hr className='border-2 border-num-orange mt-4' />
+            </div> */}
+          </div>
+        </div>
+
+        <div className='hidden w-1/4 md:flex flex-col justify-between '>
+          <GetInTouch />
+        </div>
+      </div>
+      <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
+        <div className='w-1/4'></div>
+        <div className='flex flex-col w-3/5  mr-14'>
           <div>
-            <h2 className='text-xl font-bold flex  text-black mb-2 '>
-              Our Services
+            <h2 className='text-3xl font-bold  mb-4'>
+              Techno-commercial Audit
             </h2>
-            <div className='flex w-full gap-2'>
-              <div className=''>
-                <Link href='/services/business-transformation'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Business Transformation
-                  </Button>
-                </Link>
-                <Link href='/services/claim-management'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Claim Management
-                  </Button>
-                </Link>
-
-                <Link href='/services/contract-administration'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Contract Administration
-                  </Button>
-                </Link>
-
-                <Link href='/services/project-monitoring-and-control'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Project Monitoring & Control
-                  </Button>
-                </Link>
-
-                <Link href='/services/quantity-survey'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Quantity Survey
-                  </Button>
-                </Link>
-                {/* 
-                <Link href='/services/techno-commercial-audit'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Techno Commercial Audit
-                  </Button>
-                </Link> */}
-
-                <Link href='/services/transaction-advisory'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Transaction Advisory
-                  </Button>
-                </Link>
-              </div>
+            <hr className='border-b-2  border-num-orange' />
+          </div>
+          <p className='md:text-2xl text-xs mt-4 mb-0 flex '>
+            We are india’s foremost techno commercial audit firm with close to
+            two decades years of experience across varied industries. This
+            specialized audit examines both the technical and commercial aspects
+            of infrastructure ventures, providing a comprehensive evaluation of
+            their feasibility, efficiency, and financial viability.{' '}
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs mt-4 mb-0 flex '>
+            Our dedicated team of engineers & auditors work collaboratively to
+            present a meticulous analysis of project plans, contracts, cost
+            estimates, procurement processes, and financial controls. We are
+            well equipped to use our processes and identify potential risks,
+            cost-saving opportunities, and areas for improvement.{' '}
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            With our multidimensional approach, this audit serves as a valuable
+            tool for project managers and top management in navigating the
+            complex landscape of infrastructure development, ensuring
+            transparency, accountability, and successful project delivery. The
+            scope of audit extends to capturing financial fraud and addressing
+            project mismanagement in the construction and infrastructure
+            industry. By leveraging on audit findings , businesses can{' '}
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            proactively detect anomalies and irregularities that may indicate
+            fraudulent activities or project mismanagement.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            Our audits enable early intervention and corrective actions,
+            safeguarding financial resources and ensuring project success. It
+            empowers businesses to maintain transparency, accountability, and
+            integrity, fostering trust among stakeholders.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            With a team of experienced engineers and auditors, we conduct
+            thorough assessments that evaluate the technical and commercial
+            feasibility of your infrastructure plans.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            We meticulously assess critical factors such as Men, Machine,
+            Material, Methods, and Money at the project level.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            We provide detailed breakdowns of our service activities, which are
+            categorized into pre-construction, early stage of construction,
+            significant construction, and project closure. Our services cater to
+            the entire project lifecycle, spanning from the conceptual proposal
+            stage to active construction, substantial completion, and even after
+            closeout.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            Committed to providing valuable insights, we strive to empower you
+            to make informed decisions and enhance your project outcomes. Let
+            our expert team and comprehensive services elevate your
+            infrastructure projects to the next level and help you achieve your
+            goals. We also identify and assess the risks of material
+            misstatement, with an emphasis on accounts that have a high
+            probability of containing errors.
+          </p>{' '}
+          <br />
+          <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
+            Some of the specialized Techno commercial audits that we provide
+            are:
+          </h1>
+          <li>Techno Commercial Internal Audit</li>
+          <li>Project Concurrent Audit</li>
+          <li>Project Closure Audit</li>
+          <li>Functional Audits/P2P Audits/Process Audits</li>
+          <li>Revenue Assurance Audit of Toll Plaza</li>
+          <li>Energy Audit- Renewables</li>
+        </div>
+        <div className='md:inline relative hidden mt-20 w-2/5'>
+          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
+            <p className='text-xl font-medium  mb-2 '>
+              <em>
+                {' '}
+                {`Our Techno-Commercial Audit, has earned the trust of industry leaders seeking transformation and growth.With a wealth of experience spanning close to two decades, we specialize in providing expert audits that drive optimal results for infrastructure projects`}
+              </em>
+            </p>
+            <div className='flex justify-end '>
+              <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
         </div>
       </div>
-      <div className='flex flex-row'>
-        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Share this page</h1>
-
-          <div className='flex gap-4 mb-12'>
-            <FaFacebookF
-              size={30}
-              className='bg-num-orange p-1 text-white  rounded-xl'
-            />
-            <FaLinkedinIn
-              size={31}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-            <FaXTwitter
-              size={30}
-              className='bg-num-orange text-white p-1 rounded-xl'
-            />
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-              Our Services
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <div className='w-1/2'>
-                <Link href='/services/business-transformation'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Business Transformation
-                  </Button>
-                </Link>
-                <Link href='/services/claim-management'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Claim Management
-                  </Button>
-                </Link>
-
-                <Link href='/services/contract-administration'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Contract Administration
-                  </Button>
-                </Link>
-
-                <Link href='/services/project-monitoring-and-control'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Project Monitoring & Control
-                  </Button>
-                </Link>
-
-                <Link href='/services/quantity-survey'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Quantity Survey
-                  </Button>
-                </Link>
-                {/* 
-                <Link href='/services/techno-commercial-audit'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Techno Commercial Audit
-                  </Button>
-                </Link> */}
-
-                <Link href='/services/transaction-advisory'>
-                  <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                    Transaction Advisory
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='md:w-1/2 flex flex-col items-center  text-justify'>
-          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            In the infrastructure industry, precise and comprehensive
-            quantification of materials, labour, and resources is crucial for
-            successful project planning and budgeting.
-          </h1>
-          <br />
-          <h1 className='text-3xl flex justify-center font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            Quantity surveying plays a vital role in ensuring accurate cost
-            estimation and effective resource allocation.
-          </h1>
-          <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              At NumberTree, quantity survey is our forte and we have completed
-              more than 100 projects spanning the last decade. NumberTree
-              provides cost management and quantity surveying (QS) services on a
-              vast range of construction projects.
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs '>
-              From accurately estimating costs for construction to providing
-              precise quantity calculations for engineering projects, we deliver
-              comprehensive solutions tailored to each {`project's`} unique
-              requirements.
-            </p>{' '}
-          </div>
-          <br />
-          <div className='w-4/5 '>
-            <div className='flex flex-col pl-2 pt-2 bg-wilmer-orange  m-4 mr-2 text-white '>
-              <FaQuoteLeft size={18} className='text-white ' />
-              <p className='text-lg font-medium ml-6 mr-4 mb-2 w-11/12'>
-                {`We offer seamless and integrated service, from inception
-                  through to completion and handover, we are the right hand of
-                  project managers. We listen to our clients needs and strive
-                  to provide them the best service."`}
-              </p>
-            </div>
-          </div>
-          <h2 className='text-2xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
-            Our portfolio of offerings ranges from pre-contract and
-            post-contract Quantity Surveying to the complete set of cost
-            management services.
-          </h2>
-          <div className='flex flex-col items-center '>
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex '>
-              We employ industry-standard measurement methods and advanced
-              software tools to provide invaluable insights into the quantities
-              of materials needed, the labour required, and the resources
-              necessary for construction projects.
-            </p>{' '}
-            <br />
-          </div>
-          <h2 className='text-2xl md:w-3/4 w-11/12 flex  justify-center font-semibold text-black mb-4'>
-            Our comprehensive range of quantity take off services include
-          </h2>
-          <div className='flex flex-col w-2/3 mr-10'>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Cost Overrun Investigation`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Cost Consultancy Services/BOQ 	`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`CTC & Budget preparation,BBS`}
-              </span>
-            </p>
-            {/* <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`BBS`}
-              </span>
-            </p> */}
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Preparation,Site Survey`}
-              </span>
-            </p>
-            <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Remeasurement of work`}
-              </span>
-            </p>
-            {/* <p>
-              <span className='flex items-center'>
-                <FaArrowRight size={16} className='mr-1' />
-                {`Site Survey & Remeasurement of work`}
-              </span>
-            </p> */}
-          </div>
-          <br />
-        </div>
-
-        <div className='hidden w-1/4 md:flex '>
-          <GetInTouch />
-        </div>
+      <div className='md:hidden p-16 flex  justify-center '>
+        <GetInTouch />
       </div>
       <div className='mt-4'>
         {' '}
@@ -377,16 +342,18 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-3xl text-xl font-bold '>
+                          <h3 className='md:text-2xl text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
                             {project.location}
                           </h2>
                         </div>
-                        <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
-                          Read More
-                        </Button>
+                        <Link href={project.link}>
+                          <Button className='w-40 bg-num-indigo mt-2 border-0 hover:bg-num-orange'>
+                            Read More
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -394,12 +361,12 @@ const Page = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
-          <CarouselNext className=' h-10 w-10 hover:bg-num-orange bg-num-indigo ' />
+          <CarouselPrevious className=' h-14 w-12 text-white  bg-num-orange hover:bg-num-indigo ' />
+          <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
 
-      <div className='flex  mt-20'>
+      <div className='flex  mt-24'>
         <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
           Explore More
         </h2>
@@ -408,7 +375,7 @@ const Page = () => {
         <div className='flex overflow-hidden'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image
-              src={`/sectors/Aviation1.jpg`}
+              src={`/sectors/Aviation.jpg`}
               height={800}
               width={800}
               alt='sector'
@@ -431,20 +398,18 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/BridgesStructure1.jpg`}
+                src={`/sectors/OilGas1.jpg`}
                 height={400}
                 width={400}
                 alt='project'
                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
               />
-              <Link href={`/sectors/bridges-structures`}>
+              <Link href={`/sectors/oil-gas`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Sector</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
-                        Bridges Structures
-                      </h2>
+                      <h2 className='font-bold pb-2  md:text-2xl'>Oil & Gas</h2>
                     </div>
                   </div>
                 </div>
