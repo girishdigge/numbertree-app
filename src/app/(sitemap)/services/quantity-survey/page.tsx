@@ -158,49 +158,28 @@ const Page = () => {
           </p>
           <br />
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            Moreover, market demands, and customer expectations are rapidly
-            changing. Clients are increasingly seeking greater value, faster
-            delivery, and more customised solutions. By embracing business model
-            transformation, construction companies can better respond to these
-            demands by developing new service offerings, incorporating digital
-            technologies for enhanced customer experience, and fostering a
-            culture of innovation.
+            Our portfolio of offerings ranges from pre-contract and
+            post-contract Quantity Surveying to the complete set of cost
+            management services. We employ industry-standard measurement methods
+            and advanced software tools to provide invaluable insights into the
+            quantities of materials needed, the labour required, and the
+            resources necessary for construction projects.
           </p>
 
           <br />
 
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            The construction industry is also facing a growing skills gap and
-            labour shortages. By adopting new business models that incorporate
-            automation, robotics, and other advanced technologies, firms can
-            address these challenges while increasing safety and reducing the
-            reliance on manual labour.
-          </p>
-          <br />
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            The competitive landscape of the construction industry is evolving,
-            with new players entering the market and established firms seeking
-            differentiation. Business model transformation enables construction
-            companies to stay ahead of the competition by continuously adapting
-            to market dynamics, exploring new revenue streams, and fostering a
-            culture of innovation and agility.
-          </p>
-          <br />
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            In summary, the importance of business model transformation in the
-            construction industry lies in its ability to drive efficiency,
-            sustainability, adaptability, and competitiveness, ensuring the
-            sector’s long-term growth and success
-          </p>
-          <br />
           <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
-            Our Business Transformation entails{' '}
+            Our comprehensive range of quantity take off services include –
           </h1>
           <div className=' flex flex-col  w-3/4  mb-4 text-xl font-medium '>
             <Link href={`/bim`}>
-              <li className='hover:underline'>BIMfirst</li>
-              <li className='hover:underline'>Digital Twin</li>
-              <li className='hover:underline'>Digital Project Monitoring </li>
+              <li className='hover:underline'>Cost Overrun Investigation</li>
+              <li className='hover:underline'>
+                Cost Consultancy Services/BOQ, CTC &amp; Budget preparation
+              </li>
+              <li className='hover:underline'>
+                BBS Preparation, Site Survey &amp; Remeasurement of work
+              </li>
             </Link>{' '}
           </div>
         </div>
@@ -209,7 +188,7 @@ const Page = () => {
           <GetInTouch />
         </div>
       </div>
-      <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
+      {/* <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <div>
@@ -240,7 +219,7 @@ const Page = () => {
           </p>{' '}
           <br />
         </div>
-        {/* <div className='md:inline relative hidden mt-20 w-2/5'>
+        <div className='md:inline relative hidden mt-20 w-2/5'>
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
@@ -252,9 +231,9 @@ const Page = () => {
               <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
-        </div> */}
+        </div> 
         <div className='w-1/4'></div>
-      </div>
+      </div> */}
       <div className='md:hidden p-16 flex  justify-center '>
         <GetInTouch />
       </div>

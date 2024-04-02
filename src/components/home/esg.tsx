@@ -40,6 +40,7 @@
 // export default ESG;
 import Image from 'next/image';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const ESG = () => {
   return (
@@ -60,10 +61,11 @@ const ESG = () => {
               <h3 className='md:text-3xl mb-2 '>{`Strategic Consulting`}</h3>
               <h3 className='md:text-lg  w-3/5'>{`Navigating Excellence:Your Gateway to Sustainable Living and
                Responsible Business Practices.`}</h3>
-
-              <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
-                Read More
-              </Button>
+              <Link href={`/about/csr-esg`}>
+                <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+                  Read More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

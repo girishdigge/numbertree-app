@@ -372,7 +372,7 @@ const Page = () => {
               <div className='grid grid-cols-3 gap-12'>
                 <div>
                   <Image
-                    src={`/about/B1.png`}
+                    src={`/about/B1.jpg`}
                     width={400}
                     height={340}
                     alt='integrity'

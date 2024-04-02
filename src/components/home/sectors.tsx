@@ -33,7 +33,7 @@ const Sectors = () => {
         <Link
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
-          href={`/`}
+          href={`/sectors`}
           className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
@@ -75,7 +75,7 @@ const Sectors = () => {
         <Link
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
-          href={`/`}
+          href={`/sectors`}
           className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo  md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
@@ -116,7 +116,7 @@ const Sectors = () => {
         <Link
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
-          href={`/`}
+          href={`/sectors`}
           className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
