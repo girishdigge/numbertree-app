@@ -21,6 +21,44 @@ import SectorLinks from '@/components/sitemap/sectorLinks';
 import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 
 const Page = () => {
+  // const projects = [
+  //   {
+  //     name: 'Red Sea Airport ',
+  //     location: 'Saudi Arabia',
+  //     link: '/projects/featured-projects/red-sea',
+  //     image: '/projects/Red-Sea.jpg', // replace with the actual image path
+  //   },
+  //   {
+  //     name: 'New Delhi',
+  //     location: 'New Delhi',
+  //     link: '/projects/featured-projects/new-parliment',
+  //     image: '/projects/parlimentInside.jpg', // replace with the actual image path
+  //   },
+  //   {
+  //     name: 'ITPO',
+  //     location: 'New Delhi',
+  //     link: '/projects/featured-projects/ITPO',
+  //     image: '/projects/itpo.jpg', // replace with the actual image path
+  //   },
+  //   {
+  //     name: 'Manohar Parrikar International Airport',
+  //     location: 'Goa',
+  //     link: '#',
+  //     image: '/projects/newParliment.jpg', // replace with the actual image path
+  //   },
+  //   {
+  //     name: 'Lok priya Gopinath Bordoloi International Airport ',
+  //     location: 'Guwahati,Assam',
+  //     link: '#',
+  //     image: '/projects/newParliment.jpg', // replace with the actual image path
+  //   },
+  //   {
+  //     name: 'The Kempe Gowda International Airport',
+  //     location: 'Bangalore ',
+  //     link: '#',
+  //     image: '/projects/newParliment.jpg', // replace with the actual image path
+  //   },
+  // ];
   const projects = [
     {
       name: 'Red Sea Airport ',
