@@ -69,7 +69,7 @@ const Footer = () => {
                   <h2 className='font-bold text-lg'>Dubai Office </h2>
                   <span className='flex'>
                     <FaSquarePhone size={20} className='text-white' />
-                    {`+971`}
+                    {`+971 50 815 4933`}
                   </span>
                   <p className='mb-4 mt-2 text-sm w-3/5'>
                     Office No.1043-0, Dawood Building, Hor AL ANZ, Al Barsha PO

@@ -202,7 +202,7 @@ const Page = () => {
         <div className='border-2 border-num-orange border-r-0 p-10 flex flex-col items-center justify-center'>
           <div>
             <h1 className='md:text-5xl text-2xl font-medium  mb-3'>
-              Our Clients
+              Our Ethics
             </h1>
             <hr className='w-40 border-2 border-num-orange' />
             <h2 className='md:text-2xl mt-4 mb-4 w-2/3'>
