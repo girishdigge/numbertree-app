@@ -291,13 +291,13 @@ const Page = () => {
             </p>
             <hr className='border border-num-orange w-4/5 mb-8 ' />
             <div className='w-4/5 flex'>
-              <Image
+              {/* <Image
                 src={`/about/approach.png`}
                 width={130}
                 height={130}
                 alt='integrity'
                 className='object-cover bg-num-indigo md:flex hidden'
-              />
+              /> */}
               <div className='flex flex-col ml-4'>
                 <FaQuoteLeft size={18} className=' text-num-orange' />
                 <p className='text-xl font-medium  w-11/12'>
