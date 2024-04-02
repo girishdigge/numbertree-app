@@ -84,7 +84,7 @@ const Page = () => {
               className='object-contain w-1/3 flex '
             />
             <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
-              <h1 className='text-2xl font-semibold'>Syed Mahtab Alam</h1>
+              <h1 className='text-2xl font-semibold'>Syed mahtab Alam</h1>
               <h2 className='text-lg font-light text-num2-blue'>
                 Founder & CEO
               </h2>
@@ -92,10 +92,10 @@ const Page = () => {
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`Mahtab.syed@numbertree.in`}
               </span>
-              <span className='flex'>
+              {/* <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
-              </span>
+              </span> */}
               <Link href={`/contact/expert/exp1`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
@@ -118,10 +118,10 @@ const Page = () => {
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`ajay.shekhar@numbertree.in`}
               </span>
-              <span className='flex'>
+              {/* <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
-              </span>
+              </span> */}
               <Link href={`/contact/expert/exp1`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
@@ -146,10 +146,10 @@ const Page = () => {
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`sulagna@numbertree.in`}
               </span>
-              <span className='flex'>
+              {/* <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
-              </span>
+              </span> */}
               <Link href={`/contact/expert/exp1`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
@@ -158,7 +158,7 @@ const Page = () => {
             </div>
           </div>
           <div className='flex'>
-            <Image
+            {/* <Image
               src={`/testimonials/profile.png`}
               width={150}
               height={250}
@@ -174,16 +174,16 @@ const Page = () => {
                 <IoIosMail size={24} className='text-num-indigo' />
                 {`sulagna@numbertree.in`}
               </span>
-              <span className='flex'>
+               <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
-              </span>
+              </span> 
               <Link href={`/contact/expert/exp4`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

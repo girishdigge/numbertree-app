@@ -22,7 +22,7 @@ const page = () => {
           <p className='font-bold text-num-indigo'>Find an Expert</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>Syed Mahtab Alam</p>
+        <p className='font-bold text-num-indigo'>Syed mahtab Alam</p>
       </div>
       <div className=' flex flex-col items-center justify-center mt-20 mb-10 ml-12'>
         <div className='flex flex-row mb-4'>
