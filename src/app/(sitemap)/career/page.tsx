@@ -40,7 +40,7 @@ const Page = () => {
                 Career
               </h1>
               <p className=' md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                Get in touch with our global experts to discover how NumberTree
+                Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.
               </p>
@@ -72,7 +72,7 @@ const Page = () => {
       </div>
       <div className='grid md:grid-cols-2 '>
         <div className='flex flex-col justify-center pl-8 '>
-          <h1 className='md:text-4xl text-2xl mb-2'>Career at NumberTree</h1>
+          <h1 className='md:text-4xl text-2xl mb-2'>Career at Numbertree</h1>
 
           <p className='md:text-lg text-sm mt-2 mb-4 w-3/4'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
@@ -101,7 +101,7 @@ const Page = () => {
           <div className='md:absolute md:-inset-20 flex flex-col justify-center items-end'>
             <div className=' bg-num-indigo p-20 gap-4 flex flex-col md:w-1/3  text-white'>
               <h1 className='text-xl'>Explore career</h1>
-              <h2 className='text-4xl font-bold'>Life at NumberTree</h2>
+              <h2 className='text-4xl font-bold'>Life at Numbertree</h2>
               <p className='text-justify text-lg'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
                 fugit magnam dolorem.

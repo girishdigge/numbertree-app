@@ -98,9 +98,9 @@ const Page = () => {
                 We provide expert advisory services
               </p>
             </div>
-            <Link href={`/sectors`} className=''>
+            <Link href={`/services`} className=''>
               <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>
-                All sectors
+                All services
               </Button>
             </Link>
             <Link href={`/contact/proposal`} className='animate-fadeInUp'>

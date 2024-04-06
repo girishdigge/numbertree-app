@@ -23,18 +23,17 @@ const Connect = () => {
                 Empowering Tomorrow{`'`}s infrastructure
               </h2>
               <p className=' text-white md:text-lg'>
-                We perform Construction Site Audits of EPC & BOT Road Projects,
-                Tunnel & Bridge Projects, Industrial Projects, Metro & Rail
-                Projects, Water Treatment Plants, Transmission and Distribution
-                projects, Oil & Gas projects, Power Projects, Real Estate –
-                Residential...
+                We are a professional techno-commercial Audit firm, focussed on
+                cost reduction through identification of frauds, theft, wastage,
+                Quantity take off etc. We provide high quality construction cost
+                consultancy to our clients.
               </p>
               <div className='flex flex-row-reverse mt-24 mr-4'>
                 <Link
                   href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
                 >
-                  <Button className='w-40 mt-2 text-base bg-num-indigo border-0 hover:bg-num-orange'>
-                    Connect
+                  <Button className='w-40 mt-4 text-base bg-num-indigo border-0 hover:bg-num-orange'>
+                    Follow us
                   </Button>
                 </Link>
               </div>
@@ -58,10 +57,9 @@ const Connect = () => {
                 Without Boundaries
               </h2>
               <p className='w-4/5 text-white md:text-lg'>
-                Pioneering intellectual direction focused on the significant
-                issues shaping both the present and the future.
+                Unravelling the meaning behind the news & trends
               </p>
-              <div className='flex flex-row-reverse mr-4 md:mt-36'>
+              <div className='flex flex-row-reverse mr-4 md:mt-40'>
                 <Link href={'/insights'}>
                   <Button className='w-40 mt-3 bg-num-indigo  border-0 hover:bg-num-orange'>
                     Explore

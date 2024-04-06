@@ -43,14 +43,34 @@ const SectorMobileLinks = () => {
 
           <div className='flex w-full gap-2'>
             <div className=''>
-              <Link href={`/sectors/aviation`}>
+              <Link href={`/sectors/roads-highways`}>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Aviation
+                  Road & Highways
                 </Button>
               </Link>
-              <Link href={`/sectors/bridges-structures`}>
+              <Link href={`/sectors/railways-metro`}>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Railways & Metro
+                </Button>
+              </Link>
+              <Link href={`/sectors/aviation`}>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Airports & Aviation
+                </Button>
+              </Link>
+              <Link href={`/sectors/ports`}>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Ports & Maritime
+                </Button>
+              </Link>
+              {/* <Link href={`/sectors/bridges-structures`}>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
                   Bridges & Structures
+                </Button>
+              </Link> */}
+              <Link href={`/sectors/institutional`}>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Institutional
                 </Button>
               </Link>
               <Link href={`/sectors/commercial`}>
@@ -63,9 +83,14 @@ const SectorMobileLinks = () => {
                   Industrial
                 </Button>
               </Link>
-              <Link href={`/sectors/institutional`}>
+              <Link href={`/sectors/residential`}>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Institutional
+                  Residential
+                </Button>
+              </Link>
+              <Link href={`/sectors/water-infrastructure`}>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Water Infrastructure
                 </Button>
               </Link>
               <Link href={`/sectors/oil-gas`}>
@@ -78,41 +103,18 @@ const SectorMobileLinks = () => {
                   Power Transmission
                 </Button>
               </Link>
-              <Link href={`/sectors/ports`}>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Ports
-                </Button>
-              </Link>
+
               <Link href={`/sectors/renewable-energy`}>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
                   Renewable Energy
                 </Button>
               </Link>
-              <Link href={`/sectors/residential`}>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Residential
-                </Button>
-              </Link>
-              <Link href={`/sectors/roads-highways`}>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Roads & Highways
-                </Button>
-              </Link>
-              <Link href={`/sectors/railways-metro`}>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Railways & Metro
-                </Button>
-              </Link>
-              <Link href={`/sectors/thermal-power-plant`}>
+
+              {/* <Link href={`/sectors/thermal-power-plant`}>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
                   Thermal Power Plant
                 </Button>
-              </Link>
-              <Link href={`/sectors/water-infrastructure`}>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Water Infrastructure
-                </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

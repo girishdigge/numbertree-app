@@ -374,7 +374,7 @@ const Page = () => {
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold mb-2  md:text-2xl'>
-                        Contract Adiministration & Bill Verification
+                        Contract Administration & Bill Verification
                       </h2>
                     </div>
                   </div>

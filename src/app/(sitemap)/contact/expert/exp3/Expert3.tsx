@@ -241,7 +241,7 @@ export function Expert3() {
               </FormControl>
               <FormLabel className=' text-lg'>
                 {' '}
-                I consent to receiving emails from NumberTree, including
+                I consent to receiving emails from Numbertree, including
                 updates, newsletters, and important notifications.
               </FormLabel>
               <FormMessage />

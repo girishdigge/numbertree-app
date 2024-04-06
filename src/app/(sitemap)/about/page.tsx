@@ -59,7 +59,7 @@ const Page = () => {
           <div className='w-5/6 text-justify'>
             <h1 className='text-3xl mb-10'>We are enablers of change</h1>
             <p className=' md:text-lg text-xs mb-8'>
-              {` NumberTree is a consulting engineering and audit services firm
+              {` Numbertree is a consulting engineering and audit services firm
             working with top infrastructure companies in the world. We are
             committed to shaping a brighter future. Over close to two decades of
             operations, we have earned the trust of diverse businesses. From

@@ -10,7 +10,7 @@ export const Services = [
     image: '/services/ClaimManagement.jpg', // replace with the actual image path
   },
   {
-    name: 'Contract Adiministration & Bill Verification',
+    name: 'Contract Administration & Bill Verification',
     link: '/services/contract-administration',
     image: '/services/ContractAdministration.jpg', // replace with the actual image path
   },

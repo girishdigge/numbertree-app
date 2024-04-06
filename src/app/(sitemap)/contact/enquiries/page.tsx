@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -42,7 +43,7 @@ const Page = () => {
                 Contact us
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                Get in touch with our global experts to discover how NumberTree
+                Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.{' '}
               </p>
@@ -83,8 +84,9 @@ const Page = () => {
           </span>
           <span className='flex text-lg mt-2'>
             <FaLocationDot size={22} className='text-num-indigo mr-1' />
-            <p className='text-black w-3/4 text-justify '>
-              502 Town Centre-1,Andheri Kurla Road,Andheri East, Mumbai, 400059
+            <p className='text-black w-2/3 text-justify '>
+              502 Town Centre-1, Andheri Kurla Road, Andheri East, Mumbai,
+              400059
             </p>
           </span>
         </div>
@@ -96,7 +98,7 @@ const Page = () => {
           </span>
           <span className='flex text-lg mt-2'>
             <FaLocationDot size={22} className='text-num-indigo mr-1' />
-            <p className='text-black w-3/4 text-justify '>
+            <p className='text-black w-2/3 text-justify '>
               A-99, 3rd Floor, Lajpat Nagar 2, New Delhi, 110018
             </p>
           </span>
@@ -109,7 +111,7 @@ const Page = () => {
           </span>
           <span className='flex text-lg mt-2'>
             <FaLocationDot size={22} className='text-num-indigo mr-1' />
-            <p className='text-black w-3/4 text-justify'>
+            <p className='text-black w-2/3 text-justify'>
               Office No.1043-0, Dawood Building, Hor AL ANZ, Al Barsha PO Box
               80080, United Arab Emirates
             </p>
@@ -121,10 +123,19 @@ const Page = () => {
           <div>
             <h1 className='text-2xl'>For Press Enquiry</h1>
             <h2 className=' text-num-blue underline font-semibold'>
-              <span className='flex mt-2'>
-                <IoIosMail size={24} className='text-num-indigo mr-1' />
-                <p className='text-base'>Press.enquiries@numbertree.in</p>
-              </span>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:Press.enquiries@numbertree.in`)
+                }
+              >
+                <span className='flex mt-2'>
+                  <IoIosMail size={24} className='text-num-indigo mr-1' />
+
+                  <p className='text-base hover:cursor-pointer'>
+                    Press.enquiries@numbertree.in
+                  </p>
+                </span>
+              </div>
             </h2>
           </div>
         </div>
@@ -133,10 +144,19 @@ const Page = () => {
             <h1 className='text-2xl'>Service Related</h1>
 
             <h2 className=' text-num-blue underline font-semibold'>
-              <span className='flex mt-2'>
-                <IoIosMail size={24} className='text-num-indigo mr-1' />
-                services@numbertree.in
-              </span>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:services@numbertree.in`)
+                }
+              >
+                <span className='flex mt-2'>
+                  <IoIosMail
+                    size={24}
+                    className='text-num-indigo mr-1 hover:cursor-pointer'
+                  />
+                  services@numbertree.in
+                </span>
+              </div>
             </h2>
           </div>
         </div>
@@ -145,10 +165,19 @@ const Page = () => {
           <div>
             <h1 className='text-2xl'>General Query</h1>
             <h2 className=' text-num-blue underline font-semibold'>
-              <span className='flex mt-2'>
-                <IoIosMail size={24} className='text-num-indigo mr-1' />
-                info.enquiries@numbertree.in
-              </span>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:info@numbertree.in`)
+                }
+              >
+                <span className='flex mt-2'>
+                  <IoIosMail
+                    size={24}
+                    className='text-num-indigo mr-1 hover:cursor-pointer'
+                  />
+                  info@numbertree.in
+                </span>
+              </div>
             </h2>
           </div>
         </div>
@@ -156,10 +185,19 @@ const Page = () => {
           <div>
             <h1 className='text-2xl'>Career Related</h1>
             <h2 className=' text-num-blue underline font-semibold'>
-              <span className='flex mt-2'>
-                <IoIosMail size={24} className='text-num-indigo mr-1' />
-                careers.enquiries@numbertree.in
-              </span>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:careers@numbertree.in`)
+                }
+              >
+                <span className='flex mt-2'>
+                  <IoIosMail
+                    size={24}
+                    className='text-num-indigo mr-1 hover:cursor-pointer'
+                  />
+                  careers@numbertree.in
+                </span>
+              </div>
             </h2>
           </div>
         </div>

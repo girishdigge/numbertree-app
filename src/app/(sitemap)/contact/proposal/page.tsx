@@ -39,7 +39,7 @@ const Page = () => {
                 Contact us
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                Get in touch with our global experts to discover how NumberTree
+                Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.{' '}
               </p>
@@ -72,7 +72,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col pl-20 pt-10 pb-10 text-justify bg-gray-100'>
         <p className='text-xl w-3/5'>
-          We are proud of the work we do at NumberTree, solving problems &
+          We are proud of the work we do at Numbertree, solving problems &
           helping our clients across sector in overcoming their business
           challenges.
         </p>

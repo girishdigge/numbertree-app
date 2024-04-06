@@ -38,27 +38,13 @@ const Page = () => {
                 Contact us
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                Get in touch with our global experts to discover how NumberTree
+                Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.{' '}
               </p>
             </div>
           </div>
         </div>
-        {/* <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
-          <div className='ml-10'>
-            <div className='border-l-4 w-1/2 border-num-orange'>
-              <h1 className='font-bold md:text-7xl text-3xl mb-2 border-num-orange ml-2 flex '>
-                Contact us
-              </h1>
-            </div>
-            <p className='text-xl w-3/5 font-medium ml-4 mb-2'>
-              Get in touch with our global experts to discover how NumberTree
-              can help you realize your vision. Please choose an option below
-              and we will get back to you shortly.
-            </p>
-          </div>
-        </div> */}
       </div>
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>

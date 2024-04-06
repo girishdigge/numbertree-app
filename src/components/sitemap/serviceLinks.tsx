@@ -42,22 +42,15 @@ const ServiceLinks = () => {
       </div>
       <div>
         <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-          Our Services
+          Other Services
         </h2>
         <div className='flex flex-col gap-2'>
           <div className='w-1/2'>
-            <Link href='/services/business-transformation'>
+            <Link href='/services/techno-commercial-audit'>
               <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                <h1 className='w-3/4'>Business Transformation</h1>
+                Techno-Commercial Audit
               </Button>
             </Link>
-            <Link href='/services/claim-management'>
-              <Button className='w-60 h-14 items-start justify-start flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                <h1>Construction Claim </h1>
-                <h1>Management</h1>
-              </Button>
-            </Link>
-
             <Link href='/services/contract-administration'>
               <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                 <h1> Contract Adiministration and</h1>
@@ -78,13 +71,18 @@ const ServiceLinks = () => {
                 <h1> Cost Control</h1>
               </Button>
             </Link>
-
-            <Link href='/services/techno-commercial-audit'>
-              <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                Techno-Commercial Audit
+            <Link href='/services/claim-management'>
+              <Button className='w-60 h-14 items-start justify-start flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <h1>Construction Claim </h1>
+                <h1>Management</h1>
               </Button>
             </Link>
 
+            <Link href='/services/business-transformation'>
+              <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
+                <h1 className='w-3/4'>Business Transformation</h1>
+              </Button>
+            </Link>
             <Link href='/services/transaction-advisory'>
               <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
                 Transaction Advisory

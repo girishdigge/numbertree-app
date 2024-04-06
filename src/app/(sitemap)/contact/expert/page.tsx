@@ -42,7 +42,7 @@ const Page = () => {
                 Contact us
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                Get in touch with our global experts to discover how NumberTree
+                Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.{' '}
               </p>
@@ -122,7 +122,7 @@ const Page = () => {
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
               </span> */}
-              <Link href={`/contact/expert/exp1`}>
+              <Link href={`/contact/expert/exp2`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
                 </Button>
@@ -150,7 +150,7 @@ const Page = () => {
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
               </span> */}
-              <Link href={`/contact/expert/exp1`}>
+              <Link href={`/contact/expert/exp3`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message
                 </Button>

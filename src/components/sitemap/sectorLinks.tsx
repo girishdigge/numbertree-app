@@ -49,11 +49,7 @@ const SectorLinks = () => {
           <Accordion type='single' collapsible className='w-full '>
             <AccordionItem value='item-1'>
               <AccordionTrigger>Transportation</AccordionTrigger>
-              <Link href={`/sectors/aviation`}>
-                <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
-                  Airport & Aviation
-                </AccordionContent>
-              </Link>
+
               <Link href={`/sectors/roads-highways`}>
                 <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
                   Roads & Highways
@@ -62,6 +58,11 @@ const SectorLinks = () => {
               <Link href={`/sectors/railways-metro`}>
                 <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
                   Railways & Metro
+                </AccordionContent>
+              </Link>
+              <Link href={`/sectors/aviation`}>
+                <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
+                  Airport & Aviation
                 </AccordionContent>
               </Link>
               <Link href={`/sectors/ports`}>
@@ -82,16 +83,17 @@ const SectorLinks = () => {
                   Institutional
                 </AccordionContent>
               </Link>
-              <Link href={`/sectors/industrial`}>
-                <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
-                  Industrial
-                </AccordionContent>
-              </Link>
               <Link href={`/sectors/commercial`}>
                 <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
                   Commercial
                 </AccordionContent>
               </Link>
+              <Link href={`/sectors/industrial`}>
+                <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
+                  Industrial
+                </AccordionContent>
+              </Link>
+
               <Link href={`/sectors/residential`}>
                 <AccordionContent className='bg-gray-100 mb-2 text-lg items-center justify-center hover:border-2 hover:border-wilmer-orange'>
                   Residential

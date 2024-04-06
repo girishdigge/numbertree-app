@@ -56,8 +56,8 @@ export const sendMessage = (data: any) => {
 
   sendMail({
     to: 'thelordshady@gmail.com',
-    name: 'NumberTree', // You can pass a default name or use the name from data
-    subject: 'Message from NumberTree',
+    name: 'Numbertree', // You can pass a default name or use the name from data
+    subject: 'Message from Numbertree',
     body: htmlContent, // Pass the HTML content
   });
 };

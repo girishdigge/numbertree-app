@@ -16,7 +16,7 @@ const BlogCTA = () => {
         </Link>
       </div>
       <div className='flex flex-col p-4 w-3/5 gap-y-2 border border-num-orange mt-20'>
-        <h1>{`Want to know about NumberTree?`}</h1>
+        <h1>{`Want to know about Numbertree?`}</h1>
         <h2>EXPLORE</h2>
         <Link href={`/about`}>
           <Button className='w-40 bg-num-indigo hover:bg-num-orange'>

@@ -17,28 +17,32 @@ const Testimonials = () => {
   };
   const testimonials = [
     {
-      name: 'Saqlain Shaikh',
-      role: 'CEO Osker Tech',
+      name: ' Oriental Structural Engineers Pvt. Ltd.',
+      role: 'Executive Director -SCM',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere quia consequuntur rem quaerat fuga voluptas. Laboriosam, fugit! Aperiam, quos.',
+        'We have had a professional relationship with Numbertree for several years and, during that time, have received excellent service. The team has consistently provided critical insights through their services, resulting in us viewing them as a trusted and valued audit firm.',
       rating: '⭐⭐⭐⭐⭐',
-      image: '/testimonials/saqlain.png', // replace with the actual image path
     },
     {
-      name: 'Chetan Chavan',
-      role: 'CMO Osker Tech',
+      name: 'GMR infra ',
+      role: 'CFO',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere quia consequuntur rem quaerat fuga voluptas. Laboriosam, fugit! Aperiam, quos.',
+        'Working with Numbertree has been a wonderful experience. I had the pleasure to work with the team from the time we engaged them. Every engagement has been completed in a very professional, organised manner and commitment to solve our problems. I trust and impressed Numbertree and their team professionalism, expertise, enthusiastic and knowledge.',
       rating: '⭐⭐⭐⭐⭐',
-      image: '/testimonials/chetan.png', // replace with the actual image path
     },
     {
-      name: 'Girish Digge',
-      role: 'CTO Osker Tech',
+      name: 'Shapoorji Pallonji & Company',
+      role: 'Ex CFO',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere quia consequuntur rem quaerat fuga voluptas. Laboriosam, fugit! Aperiam, quos.',
+        'The team at Numbertree is adept at tailoring their services to meet our specific needs and pain points. Whether it was quantity survey, forensic audit, or cost overrun investigation , Numbertree consistently delivered high-quality results that were customized to address our challenges. Their team led us to considerable cost saving in our projects.',
       rating: '⭐⭐⭐⭐⭐',
-      image: '/testimonials/girish.png', // replace with the actual image path
+    },
+    {
+      name: 'Shapoorji Pallonji & Company',
+      role: 'Additional general manager(Project Head)',
+      content:
+        'Working with Numbertree has been a game changer for our organization. Their commitment to excellence, in depth industry knowledge and proactive have added tremendous value to our operations. We highly recommend them.',
+      rating: '⭐⭐⭐⭐⭐',
     },
   ];
 
@@ -56,7 +60,7 @@ const Testimonials = () => {
           <h3 className='-translate-y-12 md:text-3xl ml-2 font-medium mt-2'>
             {'Striving for excellence in service '}
           </h3>
-          <h4 className='w-1/2 ml-2 -translate-y-8 md:text-lg text-sm text-justify mb-4 mt-4'>
+          <h4 className='w-1/2 ml-2 -translate-y-10 md:text-lg text-sm text-justify mb-4 mt-4'>
             <p>
               We offer seamless and integrated service, from inception through
               to completion and handover, we are managements eyes at the
@@ -72,11 +76,11 @@ const Testimonials = () => {
             <div key={index} className='flex mt-10 mb-5 '>
               <div className='flex flex-col'>
                 <div className='flex items-center justify-center'>
-                  <div className='mb-2 w-1/2'>
-                    <h1 className='h-4 text-8xl  text-left text-num-indigo'>
+                  <div className='mb-2 w-2/3'>
+                    <h1 className='h-4 text-8xl mb-2 text-left text-num-indigo'>
                       “
                     </h1>
-                    <p className='px-8 py-4 text-lg text-center  text-num-indigo'>
+                    <p className='px-8 py-2 text-lg text-center  text-num-indigo'>
                       {test.content}
                     </p>
                     <div className='h-3 text-8xl text-right text-num-indigo'>

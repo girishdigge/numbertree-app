@@ -69,12 +69,12 @@ const Services = () => {
     },
 
     {
-      title: 'Transction Advisory',
-      value: 'Transction Advisory',
+      title: 'Transaction Advisory',
+      value: 'Transaction Advisory',
       content: (
         <div className=' overflow-hidden relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-num-indigo to-num-orange'>
-          <p>Transction Advisory</p>
-          <TransctionAdvisory />
+          <p>Transaction Advisory</p>
+          <TransactionAdvisory />
         </div>
       ),
     },
@@ -191,7 +191,7 @@ const ClaimManagement = () => {
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
           <h1 className='w-4/5 md:text-base text-sm mb-2'>
-            We are proud of the work we do at NumberTree, solving problems &
+            We are proud of the work we do at Numbertree, solving problems &
             helping our clients across sector in overcoming their business
             challenges.
           </h1>
@@ -216,7 +216,7 @@ const ProjectMonitoring = () => {
       <div className='flex flex-row items-center justify-center'>
         <div className='flex flex-col w-1/2'>
           <h1 className='w-4/5 md:text-base text-sm mb-2'>
-            NumberTree offers advanced digital project monitoring services to
+            Numbertree offers advanced digital project monitoring services to
             enhance project oversight, efficiency, and transparency. Leveraging
             cutting-edge technologies and data-driven insights, our digital
             solutions provide clients with real-time monitoring and actionable
@@ -261,7 +261,7 @@ const TechnoCommercial = () => {
     </div>
   );
 };
-const TransctionAdvisory = () => {
+const TransactionAdvisory = () => {
   return (
     <div>
       <div className='flex flex-row items-center justify-center'>

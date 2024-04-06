@@ -18,15 +18,11 @@ import { Separator } from '@radix-ui/react-separator';
 
 const services: { title: string; href: string }[] = [
   {
-    title: 'Business Transformation',
-    href: '/services/business-transformation',
+    title: 'Techno-Commercial Audit',
+    href: '/services/techno-commercial-audit',
   },
   {
-    title: 'Construction Claim Management',
-    href: '/services/claim-management',
-  },
-  {
-    title: 'Contract Adiministration & Bill Verification',
+    title: 'Contract Administration & Bill Verification',
     href: '/services/contract-administration',
   },
   {
@@ -38,9 +34,15 @@ const services: { title: string; href: string }[] = [
     href: '/services/quantity-survey',
   },
   {
-    title: 'Techno-Commercial Audit',
-    href: '/services/techno-commercial-audit',
+    title: 'Construction Claim Management',
+    href: '/services/claim-management',
   },
+
+  {
+    title: 'Business Transformation',
+    href: '/services/business-transformation',
+  },
+
   {
     title: 'Transaction Advisory',
     href: '/services/transaction-advisory',
@@ -116,8 +118,18 @@ const projects: { title: string; href: string }[] = [
     href: '/projects',
   },
   {
-    title: 'past-projects',
+    title: 'Other projects',
     href: '/projects',
+  },
+];
+const careers: { title: string; href: string }[] = [
+  {
+    title: 'Jobs',
+    href: '/career/jobs',
+  },
+  {
+    title: 'Life at numbertree',
+    href: '/career/life-at-numbertree',
   },
 ];
 
@@ -160,10 +172,11 @@ export function NavigationBar() {
                 <div>
                   <ListItem
                     href='/about/more-about-us'
-                    title='About NumberTree'
+                    title='About Numbertree'
                   />
-                  <ListItem href='/about' title='Our Mission' />
                   <ListItem href='/about' title='Our Vission' />
+                  <ListItem href='/about' title='Our Mission' />
+                  <ListItem href='/about' title='Our Approach' />
 
                   <ListItem href='/about/values' title='Our Values' />
                 </div>
@@ -172,19 +185,20 @@ export function NavigationBar() {
                     href='/about/client-ethics'
                     title='Our Ethics'
                   ></ListItem>
+                  <ListItem href='/about' title='Our Purpose'></ListItem>
                   <ListItem
-                    href='/about/client-ethics'
-                    title='Our Clients'
+                    href='/about/leadership-people'
+                    title='Our People'
                   ></ListItem>
                 </div>
                 <div>
                   <ListItem
                     href='/about/leadership-people'
-                    title='Our People'
+                    title='Our Leadership'
                   ></ListItem>
                   <ListItem
-                    href='/about/leadership-people'
-                    title='Our Leadership'
+                    href='/about/client-ethics'
+                    title='Our Clients'
                   ></ListItem>
                   <ListItem href='/about/csr-esg' title='ESG & CSR'></ListItem>
                 </div>
@@ -282,28 +296,48 @@ export function NavigationBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href='/bim' legacyBehavior passHref>
-            <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
-                BIM
+            <div className=''>
+              <NavigationMenuLink className=' text-sm font-medium px-4 py-2 hover:cursor-pointer'>
+                <Image height={50} width={85} src={'/logo/bim.png'} alt='bim' />
               </NavigationMenuLink>
             </div>
           </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
+          <NavigationMenuTrigger>
+            <Link href={`/career`}>Career</Link>
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <hr className='border-2 border-num-orange animated-hr' />
+            <div className='flex'>
+              <div className='flex flex-col w-1/2 items-center  bg-muted p-2 m-3 mt-6 rounded-lg'>
+                <Link href={`/career`}>
+                  <h1 className=' mt-6 text-2xl font-bold mb-6 text-num-indigo animate-fadeLeftTitle'>
+                    Career
+                  </h1>
+                </Link>
+                {/* <p className='text-lg  font-medium animate-fadeLeft pb-10 w-3/4'>
+                    text
+                </p> */}
+              </div>
+              <ul className='grid grid-cols-1 w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[1000px] '>
+                {careers.map((career) => (
+                  <ListItem
+                    key={career.title}
+                    title={career.title}
+                    href={career.href}
+                  ></ListItem>
+                ))}
+              </ul>
+            </div>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href='/insights' legacyBehavior passHref>
             <div className=' mb-0.5'>
               <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
                 Insights
-              </NavigationMenuLink>
-            </div>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href='/career' legacyBehavior passHref>
-            <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
-                Career
               </NavigationMenuLink>
             </div>
           </Link>

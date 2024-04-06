@@ -42,7 +42,7 @@ const Page = () => {
                 Career
               </h1>
               <p className=' md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                Get in touch with our global experts to discover how NumberTree
+                Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision. Please choose an option below
                 and we will get back to you shortly.
               </p>
@@ -99,7 +99,7 @@ const Page = () => {
           <div className='flex flex-col border-2 border-num-orange p-10 m-10'>
             <h1>{`Want to know more about Number tree?`}</h1>
             <h2>Explore our:</h2>
-            <Button className='bg-num-indigo'>Life at NumberTree</Button>
+            <Button className='bg-num-indigo'>Life at Numbertree</Button>
           </div>
         </div>
       </div>

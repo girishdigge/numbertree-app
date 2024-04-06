@@ -26,7 +26,7 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>About Us</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'> About NumberTree</p>
+        <p className='font-bold text-num-indigo'> About Numbertree</p>
       </div>
       <div className='relative '>
         <Image
@@ -43,7 +43,7 @@ const Page = () => {
             </h2> */}
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                About NumberTree
+                About Numbertree
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
                 Connecting Communities. Enriching Lives
@@ -62,7 +62,7 @@ const Page = () => {
         <div className='w-2/3 flex flex-col items-center '>
           <div className='w-3/4'>
             <p className='text-lg text-justify mb-6'>
-              NumberTree is a consulting engineering and audit services firm
+              Numbertree is a consulting engineering and audit services firm
               working with top infrastructure companies in the world. We are
               committed to shaping a brighter future. Over close to two decades
               of operations, we have earned the trust of diverse businesses.

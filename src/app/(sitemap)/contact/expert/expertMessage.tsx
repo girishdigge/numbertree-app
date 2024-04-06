@@ -56,8 +56,8 @@ export const Exp1Message = (data: any) => {
 
   sendMail({
     to: 'Mahtab.syed@numbertree.in',
-    name: 'NumberTree', // You can pass a default name or use the name from data
-    subject: 'Message from NumberTree',
+    name: 'Numbertree', // You can pass a default name or use the name from data
+    subject: 'Message from Numbertree',
     body: htmlContent, // Pass the HTML content
   });
 };
@@ -117,8 +117,8 @@ export const Exp2Message = (data: any) => {
 
   sendMail({
     to: 'ajay.shekhar@numbertree.in',
-    name: 'NumberTree', // You can pass a default name or use the name from data
-    subject: 'Message from NumberTree',
+    name: 'Numbertree', // You can pass a default name or use the name from data
+    subject: 'Message from Numbertree',
     body: htmlContent, // Pass the HTML content
   });
 };
@@ -178,8 +178,8 @@ export const Exp3Message = (data: any) => {
 
   sendMail({
     to: 'sulagna@numbertree.in',
-    name: 'NumberTree', // You can pass a default name or use the name from data
-    subject: 'Message from NumberTree',
+    name: 'Numbertree', // You can pass a default name or use the name from data
+    subject: 'Message from Numbertree',
     body: htmlContent, // Pass the HTML content
   });
 };
@@ -238,8 +238,8 @@ export const Exp4Message = (data: any) => {
 
   sendMail({
     to: 'Kishan.panchal@numbertree.in',
-    name: 'NumberTree', // You can pass a default name or use the name from data
-    subject: 'Message from NumberTree',
+    name: 'Numbertree', // You can pass a default name or use the name from data
+    subject: 'Message from Numbertree',
     body: htmlContent, // Pass the HTML content
   });
 };

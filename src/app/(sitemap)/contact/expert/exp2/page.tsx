@@ -22,7 +22,7 @@ const page = () => {
           <p className='font-bold text-num-indigo'>Find an Expert</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>John Doe</p>
+        <p className='font-bold text-num-indigo'>Ajay Shekhar</p>
       </div>
       <div className=' flex flex-col items-center justify-center mt-20 mb-10 ml-12'>
         <div className='flex flex-row mb-4'>
@@ -31,7 +31,7 @@ const page = () => {
           </span>
           <RxSlash size={32} className='mt-1' />
           <span>
-            <p className='text-3xl text-num-orange'>John Doe* </p>{' '}
+            <p className='text-3xl text-num-orange'>Ajay Shekhar* </p>{' '}
           </span>
         </div>
         <Expert2 />

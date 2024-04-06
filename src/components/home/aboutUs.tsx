@@ -12,7 +12,7 @@ const AboutUs = () => {
         </h2>
         <p className='md:text-lg text-sm text-num-blue text-justify md:w-2/3'>
           {
-            'NumberTree is an infrastructure consulting engineering & audit services firm. We are committed to delivering exceptional and cutting-edge solutions to today’s business problems.'
+            'Numbertree is an infrastructure consulting engineering & audit services firm. We are committed to delivering exceptional and cutting-edge solutions to today’s business problems.'
           }
         </p>
         <div className='md:mt-5'>

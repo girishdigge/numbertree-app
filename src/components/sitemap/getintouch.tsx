@@ -1,3 +1,4 @@
+'use client';
 import { FaSquarePhone } from 'react-icons/fa6';
 import { IoIosMail } from 'react-icons/io';
 import { FaQuoteLeft } from 'react-icons/fa';
@@ -19,14 +20,24 @@ const GetInTouch = () => {
           {`011-41458409`}
         </span>
         <h3 className='text-num-blue text-lg'>Enquiries</h3>
-        <span className='flex mb-2'>
-          <IoIosMail size={24} className='text-num-indigo' />
-          {`info@numbertree.in`}
-        </span>
-        <span className='flex mb-4'>
-          <IoIosMail size={24} className='text-num-indigo' />
-          {`services@numbertree.in`}
-        </span>
+        <div
+          onClick={() => (window.location.href = `mailto:info@numbertree.in`)}
+        >
+          <span className='flex mb-2 hover:cursor-pointer'>
+            <IoIosMail size={24} className='text-num-indigo' />
+            {`info@numbertree.in`}
+          </span>
+        </div>
+        <div
+          onClick={() =>
+            (window.location.href = `mailto:services@numbertree.in`)
+          }
+        >
+          <span className='flex mb-4 hover:cursor-pointer'>
+            <IoIosMail size={24} className='text-num-indigo' />
+            {`services@numbertree.in`}
+          </span>
+        </div>
       </div>
       {/* <h2 className='text-lg flex font-bold text-num-indigo mt-4 mb-4'>
         Enquiries

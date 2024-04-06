@@ -19,7 +19,7 @@ const Services = () => {
 
     {
       id: 1,
-      name: 'Contract Adiministration & Bill Verification',
+      name: 'Contract Administration & Bill Verification',
       imageUrl: '/services/ContractAdministration.jpg',
       content: ` We help clients, navigate complex contracts, control costs, ensure compliance, manage vendors, and maintain financial transparency through this service. With this we contribute to successful project outcomes, stakeholder satisfaction, and the long-term sustainability of infrastructure developments`,
       link: '/services/contract-administration',
@@ -48,18 +48,19 @@ const Services = () => {
     },
     {
       id: 5,
-      name: 'Transaction Advisory',
-      imageUrl: '/services/TransactionAdvisory.jpg',
-      content: `We provide high-quality advisory services. With focus on debt intermediation, M&A, SME IPO, infrastructure advisory, project consultancy, and structured finance, we bring a wealth of expertise and experience to the table.`,
-      link: '/services/transaction-advisory',
-    },
-    {
-      id: 6,
       name: 'Business Transformation',
       imageUrl: '/services/BusinessTransformation.jpg',
       content: `Construction businesses have a primary need for improved efficiency in project delivery. Traditional construction processes often suffer from delays, cost overruns, and quality issues, which can be mitigated by adopting innovative approaches and methodologies. With transformative technologies, construction firms can streamline their operations leading to improved profitability.`,
       link: '/services/business-transformation',
     },
+    {
+      id: 6,
+      name: 'Transaction Advisory',
+      imageUrl: '/services/TransactionAdvisory.jpg',
+      content: `We provide high-quality advisory services. With focus on debt intermediation, M&A, SME IPO, infrastructure advisory, project consultancy, and structured finance, we bring a wealth of expertise and experience to the table.`,
+      link: '/services/transaction-advisory',
+    },
+
     // Add more tabs as needed
   ];
 
@@ -89,8 +90,8 @@ const Services = () => {
         </h4>
       </div>
 
-      <div className='flex ml-16 items-center'>
-        <div className='flex w-3/5'>
+      <div className='flex md:flex-row flex-col md:ml-16 items-center md:w-11/12'>
+        <div className='flex md:w-3/5'>
           <div className=' mt-0'>
             <div className='relative'>
               <Image
@@ -102,12 +103,12 @@ const Services = () => {
               />
               <div className='absolute inset-0 flex  '>
                 <div className='bg-black  bg-opacity-40  md:p-5'>
-                  <div className=' text-white ml-2 w-1/2'>
-                    <h2 className='md:text-4xl  font-bold md:flex hidden text-sm  mb-2'>
+                  <div className=' text-white ml-2 md:w-1/2 w-2/3'>
+                    <h2 className='md:text-4xl  font-bold flex   md:mb-2'>
                       {tabs[activeTab].name}
                     </h2>
                     <hr className='w-2/5 border-num-orange border-2 md:mt-3 md:mb-3' />
-                    <h3 className='md:text-lg bg-black bg-opacity-5 '>
+                    <h3 className='md:text-lg text-sm bg-black bg-opacity-5 '>
                       {tabs[activeTab].content}
                     </h3>
                     <Link href={tabs[activeTab].link}>
@@ -121,11 +122,26 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col w-1/3  font-bold bg-num-blue bg-opacity-10 text-num-orange   '>
+        <div className='md:flex hidden flex-col w-2/5 font-bold bg-num-blue bg-opacity-10 text-num-orange pb-3 '>
           {tabs.map((tab) => (
             <div
               key={tab.id}
-              className={`cursor-pointer  px-4 py-6  ${
+              className={`cursor-pointer  px-4 py-5  ${
+                activeTab === tab.id
+                  ? 'text-white   bg-num-indigo'
+                  : 'text-black border-b-2 border-num2-gray-dark'
+              }`}
+              onMouseEnter={() => handleTabChange(tab.id)}
+            >
+              {tab.name}
+            </div>
+          ))}
+        </div>
+        <div className=' md:hidden flex-wrap w-full font-bold bg-num-blue bg-opacity-10 text-num-orange  '>
+          {tabs.map((tab) => (
+            <div
+              key={tab.id}
+              className={`cursor-pointer py-1 ${
                 activeTab === tab.id
                   ? 'text-white   bg-num-indigo'
                   : 'text-black border-b-2 border-num2-gray-dark'

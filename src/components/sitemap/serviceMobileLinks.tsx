@@ -49,19 +49,9 @@ const ServiceMobileLinks = () => {
                   Techno-Commercial Audit
                 </Button>
               </Link>
-              <Link href='/services/business-transformation'>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Business Transformation
-                </Button>
-              </Link>
-              <Link href='/services/claim-management'>
-                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Construction Claim Management
-                </Button>
-              </Link>
               <Link href='/services/contract-administration'>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
-                  Contract Adiministration & Bill Verification
+                  Contract Administration & Bill Verification
                 </Button>
               </Link>
               <Link href='/services/project-monitoring-and-control'>
@@ -72,6 +62,16 @@ const ServiceMobileLinks = () => {
               <Link href='/services/quantity-survey'>
                 <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
                   Quantity Survey & Cost Control
+                </Button>
+              </Link>
+              <Link href='/services/claim-management'>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Construction Claim Management
+                </Button>
+              </Link>
+              <Link href='/services/business-transformation'>
+                <Button className='bg-num-indigo mb-2 mr-2 text-white hover:bg-wilmer-orange hover:text-white'>
+                  Business Transformation
                 </Button>
               </Link>
               <Link href='/services/transaction-advisory'>

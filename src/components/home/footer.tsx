@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { FaFacebookF, FaSquarePhone } from 'react-icons/fa6';
 import { FaInstagram } from 'react-icons/fa';
@@ -21,6 +22,9 @@ const Footer = () => {
               </Link>
               <Link href={`/projects`}>
                 <p>Projects</p>
+              </Link>
+              <Link href={`/sitemap`}>
+                <p>Site Map</p>
               </Link>
             </div>
             <div className='flex flex-col w-1/5 '>
@@ -61,7 +65,7 @@ const Footer = () => {
                     <FaSquarePhone size={20} className='text-white' />
                     {`011-41458409`}
                   </span>
-                  <p className='mb-4 mt-2 text-sm w-3/5'>
+                  <p className='mb-4 mt-2 text-sm w-4/5'>
                     A-99, 3rd Floor, Lajpat Nagar 2, New Delhi, 110018
                   </p>
                 </div>
@@ -71,7 +75,7 @@ const Footer = () => {
                     <FaSquarePhone size={20} className='text-white' />
                     {`+971 50 815 4933`}
                   </span>
-                  <p className='mb-4 mt-2 text-sm w-3/5'>
+                  <p className='mb-4 mt-2 text-sm w-5/6'>
                     Office No.1043-0, Dawood Building, Hor AL ANZ, Al Barsha PO
                     Box 80080, United Arab Emirates
                   </p>
@@ -132,24 +136,42 @@ const Footer = () => {
         <div className='flex text-white'>
           <div className='flex flex-col w-1/2 ml-12'>
             <h1 className='mb-2 text-xl font-semibold'>Enquiry</h1>
-            <div className='grid grid-cols-2 '>
-              <div>
-                <p className='text-base mb-3 font-normal '>
+            <div className='grid grid-cols-2'>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:Press.enquiries@numbertree.in`)
+                }
+              >
+                <p className='text-base mb-3 font-normal  hover:cursor-pointer'>
                   Press.enquiries@numbertree.in
                 </p>
               </div>
-              <div>
-                <p className='text-base mb-3 font-normal '>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:services@numbertree.in`)
+                }
+              >
+                <p className='text-base mb-3 font-normal hover:cursor-pointer '>
                   services@numbertree.in
                 </p>
               </div>
-              <div>
-                <p className='text-base mb-3 font-normal  '>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:info@numbertree.in`)
+                }
+              >
+                <p className='text-base mb-3 font-normal hover:cursor-pointer  '>
                   info@numbertree.in
                 </p>
               </div>
-              <div>
-                <p className='text-base font-normal '>career@numbertree.in</p>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:careers@numbertree.in`)
+                }
+              >
+                <p className='text-base font-normal hover:cursor-pointer '>
+                  careers@numbertree.in
+                </p>
               </div>
             </div>
           </div>
