@@ -1,9 +1,10 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { RxSlash } from 'react-icons/rx';
 import { IoHomeSharp } from 'react-icons/io5';
-import { FaSquarePhone } from 'react-icons/fa6';
+import { FaLinkedin, FaSquarePhone } from 'react-icons/fa6';
 import { IoIosMail } from 'react-icons/io';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -52,7 +53,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
-        <div className='flex gap-10'>
+        <div className='flex gap-10 md:flex-row flex-col'>
           <Link href={`/contact/proposal`}>
             <Button className='w-64 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
               Request for Proposal
@@ -73,8 +74,8 @@ const Page = () => {
           </Link>
         </div>
       </div>
-      <div className='flex m-20'>
-        <div className='grid grid-cols-3 gap-8'>
+      <div className='flex md:m-20 m-4'>
+        <div className='grid md:grid-cols-3 gap-4'>
           <div className='flex'>
             <Image
               src={`/testimonials/profile.png`}
@@ -85,13 +86,34 @@ const Page = () => {
             />
             <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
               <h1 className='text-2xl font-semibold'>Syed mahtab Alam</h1>
-              <h2 className='text-lg font-light text-num2-blue'>
-                Founder & CEO
-              </h2>
-              <span className='flex'>
-                <IoIosMail size={24} className='text-num-indigo' />
-                {`Mahtab.syed@numbertree.in`}
-              </span>
+              <div className='flex'>
+                <div
+                  onClick={() =>
+                    (window.location.href = `https://in.linkedin.com/in/syed-mahtab-alam-007b5244`)
+                  }
+                >
+                  <FaLinkedin
+                    size={22}
+                    className='text-num-indigo hover:cursor-pointer mt-0.5 mr-1'
+                  />
+                </div>
+                <span className='text-lg font-light text-num2-blue'>
+                  Founder & CEO
+                </span>
+              </div>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:Mahtab.syed@numbertree.in`)
+                }
+              >
+                <span className='flex'>
+                  <IoIosMail
+                    size={24}
+                    className='text-num-indigo hover:cursor-pointer'
+                  />
+                  {`Mahtab.syed@numbertree.in`}
+                </span>
+              </div>
               {/* <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
@@ -113,11 +135,34 @@ const Page = () => {
             />
             <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
               <h1 className='text-2xl font-semibold'>Ajay Shekhar </h1>
-              <h2 className='text-lg font-light text-num2-blue'>Partner</h2>
-              <span className='flex'>
-                <IoIosMail size={24} className='text-num-indigo' />
-                {`ajay.shekhar@numbertree.in`}
-              </span>
+              <div className='flex'>
+                <div
+                  onClick={() =>
+                    (window.location.href = `https://in.linkedin.com/in/ca-ajay-shekhar-45660037`)
+                  }
+                >
+                  <FaLinkedin
+                    size={22}
+                    className='text-num-indigo hover:cursor-pointer mt-0.5 mr-1'
+                  />
+                </div>
+                <span className='text-lg font-light text-num2-blue '>
+                  Partner
+                </span>
+              </div>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:ajay.shekhar@numbertree.in`)
+                }
+              >
+                <span className='flex'>
+                  <IoIosMail
+                    size={24}
+                    className='text-num-indigo hover:cursor-pointer'
+                  />
+                  {`ajay.shekhar@numbertree.in`}
+                </span>
+              </div>
               {/* <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
@@ -139,17 +184,39 @@ const Page = () => {
             />
             <div className='flex flex-col w-2/3 ml-2 gap-1 justify-center'>
               <h1 className='text-2xl font-semibold'>Sulagna Bisoi </h1>
-              <h2 className='text-lg font-light text-num2-blue'>
-                Head Sales – India & UAE
-              </h2>
-              <span className='flex'>
-                <IoIosMail size={24} className='text-num-indigo' />
-                {`sulagna@numbertree.in`}
-              </span>
+              <div className='flex'>
+                <div
+                  onClick={() =>
+                    (window.location.href = `https://in.linkedin.com/in/sulagna-bisoi-9b9484131`)
+                  }
+                >
+                  <FaLinkedin
+                    size={22}
+                    className='text-num-indigo hover:cursor-pointer mt-0.5 mr-0.5'
+                  />
+                </div>
+                <span className='text-lg font-light text-num2-blue '>
+                  Head Sales – India & UAE
+                </span>
+              </div>
+              <div
+                onClick={() =>
+                  (window.location.href = `mailto:sulagna@numbertree.in`)
+                }
+              >
+                <span className='flex'>
+                  <IoIosMail
+                    size={24}
+                    className='text-num-indigo hover:cursor-pointer'
+                  />
+                  {`sulagna@numbertree.in`}
+                </span>
+              </div>
               {/* <span className='flex'>
                 <FaSquarePhone size={24} className='text-num-indigo' />
                 {`+91-9988776655`}
               </span> */}
+
               <Link href={`/contact/expert/exp3`}>
                 <Button className='bg-num-indigo text-lg hover:bg-num-orange'>
                   Send Message

@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
@@ -13,46 +14,46 @@ import { RxSlash } from 'react-icons/rx';
 const Page = () => {
   const team = [
     {
-      image: '/testimonials/saqlain.png',
+      image: '/testimonials/profile.png',
       name: 'Syed Mahtab Alam',
       title: 'Founder & CEO',
-      mail: '',
-      linkedin: '',
+      mail: 'Mahtab.syed@numbertree.in',
+      linkedin: 'https://in.linkedin.com/in/syed-mahtab-alam-007b5244',
     },
     {
-      image: '/testimonials/saqlain.png',
+      image: '/testimonials/profile.png',
       name: 'Ajay Shekhar',
       title: 'Partner',
-      mail: '',
-      linkedin: '',
+      mail: 'ajay.shekhar@numbertree.in',
+      linkedin: 'https://in.linkedin.com/in/ca-ajay-shekhar-45660037',
     },
     {
-      image: '/testimonials/saqlain.png',
+      image: '/testimonials/profile.png',
       name: 'Rashmi Anand',
       title: 'Director',
       mail: '',
-      linkedin: '',
+      linkedin: 'https://in.linkedin.com/in/rashmi-anand-24742028',
     },
     {
-      image: '/testimonials/saqlain.png',
+      image: '/testimonials/profile.png',
       name: 'Sulagna Bisoi',
       title: 'Head Sales',
-      mail: '',
-      linkedin: '',
+      mail: 'sulagna@numbertree.in',
+      linkedin: 'https://in.linkedin.com/in/sulagna-bisoi-9b9484131',
     },
     {
-      image: '/testimonials/saqlain.png',
+      image: '/testimonials/profile.png',
       name: 'Md. Obaidullah ',
       title: 'Head Technical ',
       mail: '',
-      linkedin: '',
+      linkedin: 'https://in.linkedin.com/in/mohd-obaid-690063179',
     },
     {
-      image: '/testimonials/saqlain.png',
+      image: '/testimonials/profile.png',
       name: 'Govinda Tamang',
       title: 'Head Operations',
       mail: '',
-      linkedin: '',
+      linkedin: 'https://in.linkedin.com/in/govindatamang',
     },
   ];
   return (
@@ -125,7 +126,7 @@ const Page = () => {
       </div>
 
       <div className='relative items-center justify-center mr-20'>
-        <div className='grid grid-cols-3 gap-4 p-12 '>
+        <div className='grid md:grid-cols-3 gap-4 p-12 '>
           {team.map((person, index) => (
             <div key={index}>
               <div className='border shadow-lg flex gap-y-2 flex-col w-4/5 rounded-lg p-4'>
@@ -138,9 +139,21 @@ const Page = () => {
                 />
                 <h1 className='text-2xl font-medium'>{person.name}</h1>
                 <h1 className='text-lg'>{person.title}</h1>
-                <div className='flex gap-2'>
-                  <IoIosMail size={24} />
-                  <FaLinkedin size={22} />
+                <div className='flex gap-2 hover:cursor-pointer'>
+                  <div
+                    onClick={() =>
+                      (window.location.href = `mailto:${person.mail}`)
+                    }
+                  >
+                    <IoIosMail size={24} />
+                  </div>
+                  <div
+                    onClick={() =>
+                      (window.location.href = `${person.linkedin}`)
+                    }
+                  >
+                    <FaLinkedin size={22} />
+                  </div>
                 </div>
               </div>
             </div>

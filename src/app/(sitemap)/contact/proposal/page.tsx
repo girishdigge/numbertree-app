@@ -49,7 +49,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
-        <div className='flex gap-10'>
+        <div className='flex gap-10 md:flex-row flex-col'>
           <Button className='w-64 text-lg h-12 bg-num-orange text-white hover:bg-num-orange '>
             Request for Proposal
           </Button>

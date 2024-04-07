@@ -53,7 +53,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col m-20 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
-        <div className='flex gap-10'>
+        <div className='flex gap-10 md:flex-row flex-col'>
           <Link href={`/contact/proposal`}>
             <Button className='w-64 text-lg h-12 bg-num-indigo text-white hover:bg-num-orange'>
               Request for Proposal
@@ -75,8 +75,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-3 gap-8 m-20'>
-        <div className='flex-flex-col'>
+      <div className='grid md:grid-cols-3 gap-8 m-20 '>
+        <div className='flex flex-col'>
           <h1 className='text-num-blue text-2xl mb-2'>Mumbai Office</h1>
           <span className='flex text-lg'>
             <FaSquarePhone size={24} className='text-num-indigo ' />
@@ -90,7 +90,7 @@ const Page = () => {
             </p>
           </span>
         </div>
-        <div className='flex-flex-col'>
+        <div className='flex flex-col'>
           <h1 className='text-num-blue text-2xl mb-2'>Delhi Office</h1>
           <span className='flex text-lg'>
             <FaSquarePhone size={24} className='text-num-indigo ' />
@@ -103,7 +103,7 @@ const Page = () => {
             </p>
           </span>
         </div>
-        <div className='flex-flex-col'>
+        <div className='flex flex-col '>
           <h1 className='text-num-blue text-2xl mb-2'>Dubai Office</h1>
           <span className='flex text-lg'>
             <FaSquarePhone size={24} className='text-num-indigo ' />
@@ -118,7 +118,7 @@ const Page = () => {
           </span>
         </div>
       </div>
-      <div className='grid grid-cols-4  gap-4 m-20'>
+      <div className='grid md:grid-cols-4  gap-4 m-20'>
         <div className='flex flex-col'>
           <div>
             <h1 className='text-2xl'>For Press Enquiry</h1>
@@ -149,11 +149,8 @@ const Page = () => {
                   (window.location.href = `mailto:services@numbertree.in`)
                 }
               >
-                <span className='flex mt-2'>
-                  <IoIosMail
-                    size={24}
-                    className='text-num-indigo mr-1 hover:cursor-pointer'
-                  />
+                <span className='flex mt-2 hover:cursor-pointer'>
+                  <IoIosMail size={24} className='text-num-indigo mr-1 ' />
                   services@numbertree.in
                 </span>
               </div>
@@ -170,11 +167,8 @@ const Page = () => {
                   (window.location.href = `mailto:info@numbertree.in`)
                 }
               >
-                <span className='flex mt-2'>
-                  <IoIosMail
-                    size={24}
-                    className='text-num-indigo mr-1 hover:cursor-pointer'
-                  />
+                <span className='flex mt-2  hover:cursor-pointer'>
+                  <IoIosMail size={24} className='text-num-indigo mr-1' />
                   info@numbertree.in
                 </span>
               </div>
@@ -190,11 +184,8 @@ const Page = () => {
                   (window.location.href = `mailto:careers@numbertree.in`)
                 }
               >
-                <span className='flex mt-2'>
-                  <IoIosMail
-                    size={24}
-                    className='text-num-indigo mr-1 hover:cursor-pointer'
-                  />
+                <span className='flex mt-2 hover:cursor-pointer'>
+                  <IoIosMail size={24} className='text-num-indigo mr-1 ' />
                   careers@numbertree.in
                 </span>
               </div>

@@ -36,8 +36,24 @@ const services = [
 
 const sectors = [
   {
+    title: 'Roads & Highways',
+    href: '/sectors/roads-highways',
+  },
+  {
+    title: 'Railways & Metro',
+    href: '/sectors/railways-metro',
+  },
+  {
     title: 'Airports & Aviation',
     href: '/sectors/aviation',
+  },
+  {
+    title: 'Ports & Maritime',
+    href: '/sectors/ports',
+  },
+  {
+    title: 'Institutional',
+    href: '/sectors/institutional',
   },
   {
     title: 'Commercial',
@@ -47,41 +63,28 @@ const sectors = [
     title: 'Industrial',
     href: '/sectors/industrial',
   },
-  {
-    title: 'Institutional',
-    href: '/sectors/institutional',
-  },
-  {
-    title: 'Oil & Gas',
-    href: '/sectors/oil-gas',
-  },
-  {
-    title: 'Ports & Maritime',
-    href: '/sectors/ports',
-  },
-  {
-    title: 'Power & Transmission',
-    href: '/sectors/power-transmission',
-  },
-  {
-    title: 'Railways & Metro',
-    href: '/sectors/railways-metro',
-  },
-  {
-    title: 'Renewable Energy',
-    href: '/sectors/renewable-energy',
-  },
+
   {
     title: 'Residential',
     href: '/sectors/residential',
   },
   {
-    title: 'Roads & Highways',
-    href: '/sectors/roads-highways',
-  },
-  {
     title: 'Water Infrastructure',
     href: '/sectors/water-infrastructure',
+  },
+  {
+    title: 'Oil & Gas',
+    href: '/sectors/oil-gas',
+  },
+
+  {
+    title: 'Power & Transmission',
+    href: '/sectors/power-transmission',
+  },
+
+  {
+    title: 'Renewable Energy',
+    href: '/sectors/renewable-energy',
   },
 ];
 
@@ -126,14 +129,16 @@ const aboutUs = [
 
 const SitemapPage: React.FC = () => {
   return (
-    <div className='px-32'>
+    <div className='md:px-32'>
       <h1 className='text-3xl font-bold  px-4 py-4  '>Site Map</h1>
 
       <div className='container flex flex-row mx-auto px-4 py-8'>
         <div className='flex flex-col '>
           <section className='mb-8'>
             <Link href={`/about`}>
-              <h2 className='text-xl font-semibold mb-2'>About us</h2>
+              <h2 className='text-xl font-semibold mb-2 hover:underline'>
+                About us
+              </h2>
             </Link>
             <ul className='list-disc ml-6'>
               {aboutUs.map((about, index) => (
@@ -188,7 +193,7 @@ const SitemapPage: React.FC = () => {
             </ul>
           </section>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col md:ml-40 '>
           <section className='mb-8'>
             <Link href={`/projects`}>
               <h2 className='text-xl font-semibold mb-2 hover:underline'>
@@ -211,7 +216,9 @@ const SitemapPage: React.FC = () => {
 
           <section>
             <Link href={`/career`}>
-              <h2 className='text-xl font-semibold mb-2'>Careers</h2>
+              <h2 className='text-xl font-semibold mb-2 hover:underline'>
+                Careers
+              </h2>
             </Link>
             <ul className='list-disc ml-6'>
               {careers.map((career, index) => (
@@ -239,6 +246,40 @@ const SitemapPage: React.FC = () => {
                 Contact Us
               </h2>
             </Link>
+            <ul className='list-disc ml-6'>
+              <li>
+                <a
+                  href={`/contact/proposal`}
+                  className='text-blue-600 hover:underline'
+                >
+                  Request for Proposal
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/contact/message`}
+                  className='text-blue-600 hover:underline'
+                >
+                  Send a Message
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/contact/expert`}
+                  className='text-blue-600 hover:underline'
+                >
+                  Find an Expert
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/contact/enquiries`}
+                  className='text-blue-600 hover:underline'
+                >
+                  Enquiries
+                </a>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
