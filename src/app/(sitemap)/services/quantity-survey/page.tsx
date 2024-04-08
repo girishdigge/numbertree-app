@@ -23,43 +23,40 @@ import ServiceLinks from '@/components/sitemap/serviceLinks';
 const Page = () => {
   const projects = [
     {
-      heading: "Empowering Tomorrow's infrastructure",
-      name: 'New Parliment',
+      name: ' ITPO Convention Center,Bharat Mandapam.',
       location: 'Delhi',
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/newParliment1.jpg', // replace with the actual image path
+      link: '/projects/ITPO',
+      image: '/projects/itpo.jpg',
     },
     {
-      heading: "Empowering Tomorrow's infrastructure",
-      name: 'Guwahati Airport',
-      location: 'Guwahati',
-
-      content:
-        'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-      link: '/quantity-survey',
-      image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
+      name: 'Nuclear Fuel Complex, Kota',
+      location: 'Kota',
+      link: '/projects/nuclear-fuel-kota',
+      image: '/projects/NuclearFuelKota.jpg',
     },
     {
-      heading: "Empowering Tomorrow's infrastructure",
-      name: 'Mercedes Benz',
-      location: 'Pune',
-
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/merc.jpg', // replace with the actual image path
+      name: 'Eastern Dedicate Freight Corridor 301',
+      location: 'Punjab',
+      link: '/projects/freight-301-ambala',
+      image: '/projects/EasternDedicateFreightCorridor301.jpg',
     },
     {
-      heading: "Empowering Tomorrow's infrastructure",
-      name: 'Leh Airport',
-      location: 'Leh',
-
-      content:
-        'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-      link: '/numbertree',
-      image: '/projects/leh.jpg', // replace with the actual image path
+      name: 'Eastern Dedicate Freight Corridor 302',
+      location: 'UP',
+      link: '/projects/freight-302-dadri',
+      image: '/projects/EasternDedicateFreightCorridor302.jpg',
+    },
+    {
+      name: ' Delhi-Vadodara Greenfield Alignment, NH148N - Package 20',
+      location: 'delhi',
+      link: '/projects/delhi-vadodara',
+      image: '/featuredProjects/Delhi-meerut-expressway.jpeg',
+    },
+    {
+      name: 'Manohar International Airport or new Goa Airport',
+      location: 'goa',
+      link: '/projects/goa-airport',
+      image: '/projects/GoaAirport.jpg',
     },
   ];
   return (
@@ -260,7 +257,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

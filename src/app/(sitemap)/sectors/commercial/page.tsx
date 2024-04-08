@@ -23,76 +23,40 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Seven, Exit 10 Mall ',
-      location: 'Riyadh, Saudi Arabia',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Indian Institute of Technology Hyderabad',
+      location: 'hyderabad',
+      link: '/projects/iit-hyd',
+      image: '/projects/iit-hyd.png',
     },
     {
-      name: 'Forum Mall',
-      location: 'Cochin, Kerala',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Indian Institute of Technology Palakkad',
+      location: 'hyderabad',
+      link: '/projects/iit-palakkad',
+      image: '/projects/iit-palakkad.jpeg',
     },
     {
-      name: 'Marriott Hotel',
-      location: 'New Delhi',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'The New Parliament Building',
+      location: 'delhi',
+      link: '/projects/new-parliment',
+      image: '/featuredProjects/parlimentInside.jpg',
     },
     {
-      name: 'Sports Stadium',
-      location: 'Rajgir, Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Al Maktoum Hospital redevelopment, Dubai ',
+      location: 'Dubai',
+      link: '/projects/al-maktoum',
+      image: '/projects/Al-Maktum.jpg',
     },
     {
-      name: 'Amity University',
-      location: 'Ranchi, Jharkhand ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: ' ITPO Convention Center,Bharat Mandapam.',
+      location: 'Delhi',
+      link: '/projects/ITPO',
+      image: '/projects/itpo.jpg',
     },
     {
-      name: 'Ascendas',
-      location: 'Telangana, Hyderabad',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Multi-level Parking',
-      location: 'Delhi ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Jockey',
-      location: 'Sitamarhi, Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Sitamarhi Hospital',
-      location: 'Ramdaspur, Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'OMC',
-      location: 'Koraput, Odisha',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'BTT',
-      location: 'Banglore',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'HDFC Bank',
-      location: 'Kolkata',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'State Sports Academy cum International Standard Modern Cricket Stadium at Rajgir, Nalanda ,Bihar',
+      location: 'bihar',
+      link: '/projects/sports-academy-bihar',
+      image: '/projects/sports-academy-bihar.jpg',
     },
   ];
   return (
@@ -269,7 +233,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

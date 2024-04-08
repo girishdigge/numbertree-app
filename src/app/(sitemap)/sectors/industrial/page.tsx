@@ -23,47 +23,28 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'IOCL Technip',
-      location: 'Paradip, Odisha',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Steel authority of India (SAIL) – New Plate Mill',
+      location: 'orrisa',
+      link: '/projects/sail-new-plate-mill',
+      image: '/projects/SAIL.jpg',
     },
     {
-      name: 'Maruti Suzuki Plant India Limited',
-      location: 'Sonipat, Haryana',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Maruti Suzuki Plant India Limited Sonipat',
+      location: 'Haryana',
+      link: '/projects/maruti-suzuki-sonipat',
+      image: '/projects/maruti-suzuki-plant-sonipat.jpeg',
     },
     {
-      name: 'Maruti Suzuki Plant',
-      location: 'Gujarat',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Maruti Suzuki Plant India Limited Gujrat',
+      location: 'Gujrat',
+      link: '/projects/maruti-suzuki-gujrat',
+      image: '/projects/maruti-suzuki-plant-gujrat.jpg',
     },
     {
-      name: 'Factory Building',
-      location: 'Dehradun, Uttarakhand ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'IOCL N-Butanol Refinery',
-      location: 'Gujarat',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Mekong Silk Factory',
-      location: 'Valsad, Gujarat ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-
-    {
-      name: 'Heinz Factory',
-      location: 'Noida',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'HPCL Mittal Energy Limited (HMEL) Polymer addition Project',
+      location: 'Bhatinda',
+      link: '/projects/hpcl',
+      image: '/featuredProjects/hpcl.jpg',
     },
   ];
   return (
@@ -246,7 +227,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

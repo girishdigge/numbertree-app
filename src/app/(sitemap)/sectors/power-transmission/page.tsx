@@ -23,64 +23,18 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Koradi Thermal Power Project',
-      location: 'Nagpur, Maharashtra',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Magdechhu Hydroelectric Project',
+
+      location: 'Bhutan',
+      link: '/projects/magdechhu-bhutan',
+      image: '/featuredProjects/bhutan-magadechhu.jpg',
     },
     {
-      name: 'NTPC Project- Kokrajhar',
-      location: 'Kokrajhar, Assam',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Rural Electrification Project-Hoshangabad',
-      location: 'Madhya Pradesh',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Rural Electrification Project',
-      location: 'Bhagalpur, Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Koradi Thermal Power',
-      location: 'Nagpur, Maharashtra',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'HCC-Teesta Project',
-      location: 'Sikkim ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: '765 KV DC line from Sikar to Bhalogi',
-      location: 'Rajasthan',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Sub Station Project',
-      location: 'Darbhanga-Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Transmission Line & Distribution WO-292BH',
-      location: 'Araria-Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Transmission Line & Distribution Tala project',
-      location: 'Jalpaiguri-West Bengal',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Nuclear Fuel Complex, Kota',
+
+      location: 'Kota',
+      link: '/projects/nuclear-fuel-kota',
+      image: '/projects/NuclearFuelKota.jpg',
     },
   ];
   return (
@@ -268,7 +222,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

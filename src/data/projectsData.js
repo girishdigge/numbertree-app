@@ -1,106 +1,3 @@
-// export const featuredProjects = [
-//   {
-//     serviceId: '1',
-//     sectorId: '0',
-//     locationId: '1',
-//     title: 'Guwahati Airport',
-//     location: 'Guwahati Airport',
-//     link: '/quantity-survey',
-//     image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '1',
-//     sectorId: '0',
-//     locationId: '0',
-//     title: '',
-//     location: 'Parliment,New Delhi',
-//     link: '/projects/new-parliment',
-//     image: '/projects/newParliment1.jpg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '2',
-//     sectorId: '4',
-//     locationId: '0',
-//     title: '',
-//     location: 'Mercedes Benz,Pune',
-//     link: 'projects/merc-pune',
-//     image: '/projects/merc.jpg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '3',
-//     sectorId: '1',
-//     locationId: '0',
-//     title: '',
-//     location: 'Leh Airport',
-//     link: '/numbertree',
-//     image: '/projects/leh.jpg', // replace with the actual image path
-//   },
-// ];
-
-// export const projects = [
-//   {
-//     serviceId: '1',
-//     sectorId: '2',
-//     locationId: '1',
-//     title: '',
-//     location: 'Bharat Mandapam G20',
-//     type: 'Featured',
-//     link: 'projects/bharat-mandapam-g20',
-//     image: '/projects/bm-g20.webp', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '3',
-//     sectorId: '2',
-//     locationId: '0',
-//     title: '',
-//     location: 'Port',
-//     type: 'Latest',
-//     link: '/numbertree',
-//     image: '/projects/port2.jpg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '0',
-//     sectorId: '3',
-//     locationId: '0',
-//     title: '',
-//     location: 'mumbai Delhi Expressway',
-//     type: 'Other',
-//     link: '/projects/MumbaiDelhiExpressway',
-//     image: '/projects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '1',
-//     sectorId: '6',
-//     locationId: '0',
-//     title: '',
-//     location: 'purvanchal Expressway',
-//     type: '',
-//     link: '/numbertree',
-//     image: '/projects/purvanchalExpressway.jpeg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '1',
-//     sectorId: '7',
-//     locationId: '0',
-//     title: '',
-//     location: 'STP Kanpur',
-//     type: '',
-//     link: '/numbertree',
-//     image: '/projects/STP_Kanpur.jpg', // replace with the actual image path
-//   },
-//   {
-//     serviceId: '1',
-//     sectorId: '2',
-//     locationId: '0',
-//     title: '',
-//     location: 'transmission Distribution Bihar',
-//     type: '',
-//     link: '/numbertree',
-//     image: '/projects/transmission_Bihar.jpg', // replace with the actual image path
-//   },
-// ];
-
-// Example project data representation
 export const projects = [
   {
     id: 1,
@@ -296,7 +193,7 @@ export const projects = [
     sectors: ['5'],
     locations: ['28'],
     types: ['3'],
-    location: 'uttarakhand',
+    location: 'Uttarakhand',
     link: '/projects/iim-kashipur',
     image: '/featuredProjects/iim-kashipur.jpg',
   },

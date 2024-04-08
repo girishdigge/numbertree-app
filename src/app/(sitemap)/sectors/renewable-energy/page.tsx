@@ -23,22 +23,17 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Padampur Biomass Project ',
-      location: 'Padampur-Rajasthan',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Magdechhu Hydroelectric Project',
+      location: 'Bhutan',
+      link: '/projects/magdechhu-bhutan',
+      image: '/featuredProjects/bhutan-magadechhu.jpg',
     },
     {
-      name: '2.	Uniara Biomass Project',
-      location: 'Uniara-Rajastan',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Mangdechhu Hydroelectric Project',
-      location: 'Mandecchu to Jigmeling, Bhutan',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Nuclear Fuel Complex, Kota',
+
+      location: 'Kota',
+      link: '/projects/nuclear-fuel-kota',
+      image: '/projects/NuclearFuelKota.jpg',
     },
   ];
   return (
@@ -260,7 +255,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

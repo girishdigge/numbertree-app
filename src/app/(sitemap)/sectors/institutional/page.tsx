@@ -23,83 +23,34 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'New Parliament Building',
-      location: 'New Delhi',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'IIM Kashipur Construction Project',
+      location: 'Uttarakhand',
+      link: '/projects/iim-kashipur',
+      image: '/featuredProjects/iim-kashipur.jpg',
     },
     {
-      name: 'Central Vista',
-      location: 'New Delhi',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'IIM Trichy Construction Project ',
+      location: 'Tamilnadu',
+      link: '/projects/iim-trichy',
+      image: '/projects/IIM-Trichy.jfif',
     },
     {
-      name: 'Bharat Mandapam',
-      location: 'New Delhi',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'The Sanchi Stupa',
-      location: 'Madhya Pradesh',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'IIT Hyderabad',
-      location: 'Telangana',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Al Maktoum Hospital',
-      location: 'Dubai',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'IIM Vizag',
-      location: 'Tamil Nadu ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-
-    {
-      name: 'Sitamarhi, Hospital',
-      location: 'Ramdaspur, Bihar',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'IIT Palakkad',
-      location: 'Kerala',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Kalyan Singh Cancer Hospital',
-      location: 'Lucknow, Uttar Pradesh',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'AIIMS Jhajjar',
+      name: 'All India Institute of Management Sciences, Jhajjar',
       location: 'Haryana',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      link: '/projects/aiims-jhajjar',
+      image: '/projects/aiimsJhajjar.jpg',
     },
     {
-      name: 'Hazaribagh Hospital',
-      location: 'Jharkhand',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Kalyan Singh Cancer Institute,Lucknow',
+      location: 'UP',
+      link: '/projects/kalyan-singh-cancer-institute',
+      image: '/projects/KalyanSinghCancerInstitute.jpeg',
     },
     {
-      name: 'Palamu Hospital',
-      location: 'Jharkhand',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Buddha Smriti Stupa & Buddha Sangrahlaya',
+      location: 'bihar',
+      link: '/projects/buddha-smriti',
+      image: '/projects/Buddha-Smriti-Stupa.png',
     },
   ];
   return (
@@ -276,7 +227,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

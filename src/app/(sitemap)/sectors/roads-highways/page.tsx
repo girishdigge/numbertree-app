@@ -23,34 +23,28 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Kartavya Path ',
-      location: 'India Gate, New Delhi ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: ' Mumbai Delhi Expressway package 2',
+      location: 'UP',
+      link: '/projects/MumbaiDelhiExpressway',
+      image: '/projects/mumbaiDelhiExpressway.jpeg',
     },
     {
-      name: 'Delhi-Vadodara Greenfield',
-      location: ' Delhi (NH148N),(Package 20)',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: ' Kartavya Path - Redevelopment as part of central Vista Redevelopment project',
+      location: 'delhi',
+      link: '/projects/kartavya-path',
+      image: '/projects/kartavyaPath.jpg',
     },
     {
-      name: 'Suryapet Khammam Road',
-      location: 'Khammam,Tamil Nadu',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: ' Delhi-Vadodara Greenfield Alignment, NH148N - Package 20',
+      location: 'delhi',
+      link: '/projects/delhi-vadodara',
+      image: '/featuredProjects/Delhi-meerut-expressway.jpeg',
     },
     {
-      name: 'Davangere Haveri Highway  ',
-      location: 'Davengere,Karnataka',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Manmad ',
-      location: 'Malegaon Toll, Maharashtra ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: ' Development of Purvanchal Expressway (Package VII) Mojrapur (Azamgarh) to Bijaura Ghazipur',
+      location: 'UP',
+      link: '/projects/purvanchal-expressway',
+      image: '/projects/mumbaiDelhiExpressway1.jpg',
     },
   ];
   return (
@@ -294,7 +288,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

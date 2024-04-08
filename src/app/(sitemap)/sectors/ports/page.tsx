@@ -23,22 +23,16 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Captain of Ports',
-      location: 'Goa',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Construction of ship building workshop at Goa Shipyard',
+      location: 'goa',
+      link: '/projects/goa-shipyard',
+      image: '/projects/GoaShipyard.jpeg',
     },
     {
-      name: 'Cochin port Trust',
-      location: 'Cochin,Kerala',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'Karwar Naval Base',
-      location: 'Karwar,Karnataka',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Petrapole Land Port',
+      location: 'Bengal',
+      link: '/projects/petrapole-land-port',
+      image: '/projects/PetrapoleLandPort.jpg',
     },
   ];
   return (
@@ -278,7 +272,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

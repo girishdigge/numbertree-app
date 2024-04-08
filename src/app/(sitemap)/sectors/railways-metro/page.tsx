@@ -23,36 +23,52 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Mumbai Metro Project ',
+      name: 'Mumbai Metro Line 5',
       location: 'Mumbai',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      link: '/projects/mumbai-metro-line-5',
+      image: '/projects/MumbaiMetroThaneBhiwandiKalyan.jpg',
     },
     {
-      name: 'Western Freight Corridor',
-      location: 'Western',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Mumbai Metro Line 9',
+      location: 'Mumbai',
+      link: '/projects/mumbai-metro-dahisar-mira',
+      image: '/projects/MumbaiMetro2.jpeg',
     },
-
     {
-      name: 'Pune Metro Project ',
-      location: 'Pune',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Pune Metro Corridor 1 & 2',
+      location: 'Mumbai',
+      link: '/projects/pune-metro-corridor-1-2',
+      image: '/projects/PuneMetro.jpg',
     },
-
     {
       name: 'Delhi Metro ',
-      location: 'New Delhi',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      location: 'Delhi',
+      link: '/projects/delhi-metro',
+      image: '/projects/Delhi-Metro.jpg',
     },
     {
-      name: 'Eastern Freight Corridor ',
-      location: 'Eastern',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Eastern Dedicate Freight Corridor 301',
+      location: 'Punjab',
+      link: '/projects/freight-301-ambala',
+      image: '/projects/EasternDedicateFreightCorridor301.jpg',
+    },
+    {
+      name: 'Eastern Dedicate Freight Corridor 302',
+      location: 'UP',
+      link: '/projects/freight-302-dadri',
+      image: '/projects/EasternDedicateFreightCorridor302.jpg',
+    },
+    {
+      name: 'Express Freight Railway Consortium Project',
+      location: 'UP',
+      link: '/projects/freight-agra',
+      image: '/projects/Freight-Agra.jpg',
+    },
+    {
+      name: 'Multimodal Transport System, Hyderabad',
+      location: 'hyderabad',
+      link: '/projects/multimodel-transport-hyderabad',
+      image: '/projects/HyderabadMetro.jpg',
     },
   ];
   return (
@@ -303,7 +319,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}

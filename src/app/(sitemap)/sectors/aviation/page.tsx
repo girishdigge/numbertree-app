@@ -21,74 +21,30 @@ import SectorLinks from '@/components/sitemap/sectorLinks';
 import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 
 const Page = () => {
-  // const projects = [
-  //   {
-  //     name: 'Red Sea Airport ',
-  //     location: 'Saudi Arabia',
-  //     link: '/projects/featured-projects/red-sea',
-  //     image: '/projects/Red-Sea.jpg', // replace with the actual image path
-  //   },
-  //   {
-  //     name: 'New Delhi',
-  //     location: 'New Delhi',
-  //     link: '/projects/featured-projects/new-parliment',
-  //     image: '/projects/parlimentInside.jpg', // replace with the actual image path
-  //   },
-  //   {
-  //     name: 'ITPO',
-  //     location: 'New Delhi',
-  //     link: '/projects/featured-projects/ITPO',
-  //     image: '/projects/itpo.jpg', // replace with the actual image path
-  //   },
-  //   {
-  //     name: 'Manohar Parrikar International Airport',
-  //     location: 'Goa',
-  //     link: '#',
-  //     image: '/projects/newParliment.jpg', // replace with the actual image path
-  //   },
-  //   {
-  //     name: 'Lok priya Gopinath Bordoloi International Airport ',
-  //     location: 'Guwahati,Assam',
-  //     link: '#',
-  //     image: '/projects/newParliment.jpg', // replace with the actual image path
-  //   },
-  //   {
-  //     name: 'The Kempe Gowda International Airport',
-  //     location: 'Bangalore ',
-  //     link: '#',
-  //     image: '/projects/newParliment.jpg', // replace with the actual image path
-  //   },
-  // ];
   const projects = [
     {
-      name: 'Red Sea Airport ',
-      location: 'Saudi Arabia',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Red Sea International airport, Saudi Arabia',
+      location: 'saudi',
+      link: '/projects/red-sea',
+      image: '/projects/Red-Sea.jpg',
     },
     {
-      name: 'Kushok Bakula Rimpochee Airport',
-      location: 'Leh',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'LEH airport Construction of terminal building',
+      location: 'leh',
+      link: '/projects/leh-airport',
+      image: '/projects/leh.jpg',
     },
     {
-      name: 'Manohar Parrikar International Airport',
-      location: 'Goa',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: 'Manohar International Airport or new Goa Airport',
+      location: 'goa',
+      link: '/projects/goa-airport',
+      image: '/projects/GoaAirport.jpg',
     },
     {
-      name: 'Lok priya Gopinath Bordoloi International Airport ',
-      location: 'Guwahati,Assam',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
-    },
-    {
-      name: 'The Kempe Gowda International Airport',
-      location: 'Bangalore ',
-      link: '#',
-      image: '/projects/newParliment.jpg', // replace with the actual image path
+      name: ' Guwahati Airport Construction of new integrated terminal building',
+      location: 'guwahati',
+      link: '/projects/guwahati-airport',
+      image: '/projects/GuwahatiAirport.jpg',
     },
   ];
   return (
@@ -341,7 +297,7 @@ const Page = () => {
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/2'>
                 <div className='relative'>
                   <Image
-                    className='object-cover hover:scale-105 transform transition-all duration-500 ease-in-out'
+                    className='object-cover h-96 hover:scale-105 transform transition-all duration-500 ease-in-out'
                     src={project.image}
                     height={800}
                     width={1200}
