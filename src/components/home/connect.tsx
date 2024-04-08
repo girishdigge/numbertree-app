@@ -28,7 +28,7 @@ const Connect = () => {
                 Quantity take off etc. We provide high quality construction cost
                 consultancy to our clients.
               </p>
-              <div className='flex flex-row-reverse mt-24 mr-4'>
+              <div className='flex flex-row-reverse md:mt-24 mr-4'>
                 <Link
                   href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
                 >

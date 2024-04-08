@@ -145,9 +145,7 @@ const Footer = () => {
             >
               <FaLinkedinIn size={30} className='bg-white p-1 rounded-xl' />
             </Link>
-            <Link
-              href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
-            >
+            <Link href={``}>
               <FiYoutube size={30} className='bg-white p-1 rounded-xl' />
             </Link>
             <Link

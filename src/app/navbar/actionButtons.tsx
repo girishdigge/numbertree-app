@@ -10,6 +10,8 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import GetCallDropDown from '@/components/sitemap/getCallDropDown';
 const ActionButtons = () => {
   return (
     <div>
@@ -23,20 +25,23 @@ const ActionButtons = () => {
               <SheetTitle>Site Map</SheetTitle>
               <SheetDescription>
                 <div className='flex flex-col space-y-4 items-start w-full text-black text-lg mt-10'>
-                  {/* <Link href='/'>Home</Link> */}
+                  <Link href='/'>Home</Link>
+                  <Link href='/about'>About</Link>
                   <Link href='/services'>Services</Link>
                   <Link href='/sectors'>Sectors</Link>
                   <Link href='/projects'>Projects</Link>
                   <Link href='/bim'>BIM</Link>
-                  <Link href='/about'>About</Link>
                   <Link href='/career'>Career</Link>
-                  <Link href='/contact/proposal'>Contact</Link>
-                  <Link href='/insights'>Resources/Blog</Link>
+                  <Link href='/insights'>Insights/Blog</Link>
+                  <Link href='/contact/proposal'>Contact us</Link>
                 </div>
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
         </Sheet>
+      </div>
+      <div>
+        <GetCallDropDown />
       </div>
     </div>
   );

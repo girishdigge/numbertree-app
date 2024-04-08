@@ -137,11 +137,15 @@ export function NavigationBar() {
   return (
     <NavigationMenu>
       <NavigationMenuList className='hidden md:flex md:justify-center md:items-center md:space-x-3 md:z-2 mr-1'>
-        {/* <NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href='/' legacyBehavior passHref>
-            <NavigationMenuLink>Home</NavigationMenuLink>
+            <div className=' mb-0.5'>
+              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-2 py-2 hover:cursor-pointer'>
+                Home
+              </NavigationMenuLink>
+            </div>
           </Link>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
         {/* <Separator orientation='vertical' className='bg-pink-400 w-1 h-10' /> */}
         <NavigationMenuItem>
           <NavigationMenuTrigger>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ESG = () => {
   return (
-    <div className='w-11/12 ml-16 mt-20 '>
+    <div className='md:w-11/12 md:ml-16 mt-20 md:pb-0 pb-20'>
       <div className='relative'>
         <Image
           src={'/images/esg1.jpg'}
@@ -15,7 +15,7 @@ const ESG = () => {
         />
         <div className='absolute inset-0 flex  '>
           <div className='bg-black md:bg-opacity-50 bg-opacity-40 w-full md:p-5'>
-            <div className=' text-white ml-2 w-1/2'>
+            <div className=' text-white ml-2 md:w-1/2'>
               <h2 className='md:text-5xl   text-sm  mb-2'>{'ESG'}</h2>
               <hr className='w-1/6 border-num-orange border-2 md:mt-3 md:mb-3' />
               <h3 className='md:text-3xl mb-2 '>{`Strategic Consulting`}</h3>
