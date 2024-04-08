@@ -251,7 +251,7 @@ const Page = () => {
           <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
             Featured Projects
           </h1>
-          <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
+          <div className='grid md:grid-cols-2 gap-8 mt-4 mb-4'>
             {MainPageProjects.map((projects, index) => (
               <div key={index}>
                 <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
@@ -288,7 +288,7 @@ const Page = () => {
       <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
         All Projects
       </h1>
-      <div className='grid grid-cols-2 gap-8 mt-4 mb-4'>
+      <div className='grid md:grid-cols-2 gap-8 mt-4 mb-4'>
         {filteredProjects.map((projects, index) => (
           <div key={index}>
             <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>

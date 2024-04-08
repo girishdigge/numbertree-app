@@ -9,10 +9,10 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <div>
-      <div className='md:grid hidden grid-col-2 pb-4 h-auto bg-num-indigo '>
-        <div className='  flex flex-col-2 '>
-          <div className='flex flex-col-4 w-4/5 mt-12 pl-2 text-white '>
-            <div className='flex flex-col w-1/5 pl-10'>
+      <div className='grid  md:grid-col-2  pb-4 h-auto bg-num-indigo '>
+        <div className='  flex md:flex-col-2 '>
+          <div className='flex md:flex-col-4 md:w-4/5 mt-12 pl-2 text-white '>
+            <div className='flex flex-col md:w-1/5 pl-10'>
               <h1 className='mb-2 text-xl font-semibold '>Pages</h1>
               <Link href={`/sectors`}>
                 <p>Sectors</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                 <p>Site Map</p>
               </Link>
             </div>
-            <div className='flex flex-col w-1/5 '>
+            <div className='flex flex-col md:w-1/5 md:pl-0 pl-10'>
               <Link href={`/about`}>
                 <h1 className='mb-2 text-xl font-semibold'>About Numbertree</h1>
               </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <p>Contact Us</p>
               </Link>
             </div>
-            <div className='flex flex-col w-3/5 '>
+            <div className='md:flex hidden flex-col w-3/5 '>
               {/* <h1 className='mb-2 text-xl font-semibold'>Offices</h1> */}
               <div className='grid grid-cols-3'>
                 {/* <h1 className='mb-2 text-xl font-semibold '>Contacts</h1> */}
@@ -82,37 +82,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            {/* <div className='flex flex-col w-1/2 '>
-            <h1 className='mb-2 text-xl font-semibold'>Enquiry</h1>
-            <div className='grid grid-cols-2'>
-              <div>
-                <h2>Press</h2>
-                <p className='text-sm mb-3 font-normal text-num2-blue underline'>
-                  Press.enquiries@numbertree.in
-                </p>
-              </div>
-              <div>
-                <h2>Services</h2>
-                <p className='text-sm mb-3 font-normal text-num2-blue underline'>
-                  services@numbertree.in
-                </p>
-              </div>
-              <div>
-                <h2>General</h2>
-                <p className='text-sm mb-3 font-normal text-num2-blue underline'>
-                  info@numbertree.in
-                </p>
-              </div>
-              <div>
-                <h2>Career</h2>
-                <p className='text-sm font-normal text-num2-blue underline'>
-                  career@numbertree.in
-                </p>
-              </div>
-            </div>
-          </div> */}
           </div>
-          <div className='md:flex hidden flex-col items-center w-1/5 '>
+          <div className='md:flex hidden flex-col items-center md:w-1/5 '>
             <div className='flex w-auto h-auto mr-8 mt-6'>
               <Image
                 src={`/logo/numbertree-logo.png`}
@@ -122,19 +93,75 @@ const Footer = () => {
               />
             </div>
             <div className='flex flex-row-5 gap-4'>
-              <FaFacebookF size={30} className='bg-white p-1  rounded-xl' />
-              <FaInstagram size={30} className='bg-white p-1  rounded-xl' />
-              <FaLinkedinIn size={30} className='bg-white p-1 rounded-xl' />
-              <FiYoutube size={30} className='bg-white p-1 rounded-xl' />
-              <FaXTwitter size={30} className='bg-white p-1 rounded-xl' />
+              <Link
+                href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
+              >
+                <FaFacebookF size={30} className='bg-white p-1  rounded-xl' />
+              </Link>
+              <Link href={``}>
+                <FaInstagram size={30} className='bg-white p-1  rounded-xl' />
+              </Link>
+              <Link
+                href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
+              >
+                <FaLinkedinIn size={30} className='bg-white p-1 rounded-xl' />
+              </Link>
+              <Link
+                href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
+              >
+                <FiYoutube size={30} className='bg-white p-1 rounded-xl' />
+              </Link>
+              <Link
+                href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
+              >
+                <FaXTwitter size={30} className='bg-white p-1 rounded-xl' />
+              </Link>
             </div>
             <p className='text-white font-md w-2/3 mr-10 mt-4'>
               &copy; 2024 Numbertree. All Rights Reserved.
             </p>
           </div>
         </div>
+        <div className='flex md:hidden flex-col '>
+          <div className='flex w-auto h-auto mr-8 mt-6'>
+            <Image
+              src={`/logo/numbertree-logo.png`}
+              width={300}
+              height={200}
+              alt='logo'
+            />
+          </div>
+          <div className='flex flex-row-5 gap-4 ml-10'>
+            <Link
+              href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
+            >
+              <FaFacebookF size={30} className='bg-white p-1  rounded-xl' />
+            </Link>
+            <Link href={``}>
+              <FaInstagram size={30} className='bg-white p-1  rounded-xl' />
+            </Link>
+            <Link
+              href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
+            >
+              <FaLinkedinIn size={30} className='bg-white p-1 rounded-xl' />
+            </Link>
+            <Link
+              href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
+            >
+              <FiYoutube size={30} className='bg-white p-1 rounded-xl' />
+            </Link>
+            <Link
+              href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
+            >
+              <FaXTwitter size={30} className='bg-white p-1 rounded-xl' />
+            </Link>
+          </div>
+          <p className='text-white font-md ml-10 mr-10 mt-4'>
+            &copy; 2024 Numbertree. All Rights Reserved.
+          </p>
+        </div>
         <div className='flex text-white'>
-          <div className='flex flex-col w-1/2 ml-12'>
+          <div className='md:flex hidden flex-col w-1/2 ml-12'>
             <h1 className='mb-2 text-xl font-semibold'>Enquiry</h1>
             <div className='grid grid-cols-2'>
               <div
@@ -175,7 +202,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className='flex flex-col w-1/2 ml-12 mt-10'>
+
+          <div className='flex flex-col md:w-1/2 ml-12 mt-10'>
             <div className='grid grid-cols-3 '>
               <div>
                 <Link href={`/footer/privacy`}>
