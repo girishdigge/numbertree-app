@@ -121,7 +121,7 @@ const Page = () => {
           </Select>
           <Select
             onValueChange={(value: string) => {
-              setSector(value), setLocation(''), setService('');
+              setSector(value), setLocation(''), setService(''), setType('');
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -154,7 +154,7 @@ const Page = () => {
           </Select>
           <Select
             onValueChange={(value: string) => {
-              setLocation(value), setSector(''), setService('');
+              setLocation(value), setSector(''), setService(''), setType('');
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -179,9 +179,11 @@ const Page = () => {
                 <SelectItem value='8'>Gujarat</SelectItem>
                 <SelectItem value='9'>Haryana</SelectItem>
                 <SelectItem value='10'>Himachal Pradesh</SelectItem>
+                <SelectItem value='36'>J&K</SelectItem>
                 <SelectItem value='11'>Jharkhand</SelectItem>
                 <SelectItem value='12'>Karnataka</SelectItem>
                 <SelectItem value='13'>Kerala</SelectItem>
+                <SelectItem value='35'>Leh</SelectItem>
                 <SelectItem value='14'>Madhya Pradesh</SelectItem>
                 <SelectItem value='15'>Maharashtra</SelectItem>
                 <SelectItem value='16'>Manipur</SelectItem>
@@ -215,7 +217,7 @@ const Page = () => {
               <SelectValue
                 placeholder='Projects'
                 onChange={(e: any) => {
-                  setSector(e.target.value);
+                  setType(e.target.value);
                 }}
               />
             </SelectTrigger>
@@ -244,7 +246,7 @@ const Page = () => {
         </div>
       </div>
 
-      {!service && !sector && !location && (
+      {!service && !sector && !location && !type && (
         <div>
           <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
             Featured Projects

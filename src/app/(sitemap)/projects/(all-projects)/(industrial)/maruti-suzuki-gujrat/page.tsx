@@ -33,14 +33,16 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>HPCL Mittal Energy Limited</p>
+        <p className='font-bold text-num-indigo'>
+          Maruti Suzuki Plant India Limited
+        </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/featuredProjects/hpcl.jpg`}
+          src={`/projects/maruti-suzuki-plant-gujrat.jpg`}
           width={2046}
           height={768}
-          alt='hpcl'
+          alt='maruti suzuki'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -50,10 +52,10 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                HPCL Mittal Energy Limited
+                Maruti Suzuki Plant
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Polymer addition Project
+                India Limited Gujrat
               </h1>
             </div>
             <Link href={`/projects`} className=''>
@@ -100,19 +102,19 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>HPCL Mittal Energy Limited (HMEL) Polymer addition Project</h3>
+            <h3>Maruti Suzuki Plant India Limited</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>Bhatinda,Punjab </h3>
+            <h3>Gujrat</h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>746 Cr(INR) </h3>
+            <h3>540 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Nov 2020 </h3>
+            <h3>June 2016 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
             <Link href={`/sectors/industrial`} className='hover:underline'>
@@ -134,39 +136,46 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`HMEL is a joint venture between the state-owned Hindustan Petroleum Corporation (HPCL) and Mittal Energy Investment. HMEL is setting up the Guru Gobind Singh Polymer Addition Plant at Bhatinda Refinery, its petrochemical complex in Punjab.`}
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The work on the project is underway and HMEL is planning to build the petrochemical plant before its scheduled completion date in 2021. Land for the unit was acquired in 2017 and in the same year, CB&I bagged the contract to provide the basic engineering for the ethylene plant, which will produce 1,200 Ktpa per annum.`}
+              {`India has become the third largest automobile market in the world. Keeping this in mind, Maruti Suzuki India (MSI) has planned to invest ₹35,000 crore to set up its second manufacturing facility in Gujarat with the aim to  ramp up annual production capacity to over 40 lakh units by 2030. `}
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new dual-feed ethylene plant will include a steam cracker, refinery off-gas treatment unit, C4 hydrogenation unit, pyrolysis gasoline hydrogenation unit, benzene extraction unit, and a high-density polyethylene unit producing 450 kilotonnes per annum.`}
+              {`The plant at Gujarat is expected to have an installed production capacity of 10 lakh units per annum.The new plant is expected to start operation in FY2028-29. In fact , the first battery electric vehicle (BEV) from the Suzuki Group will be rolled out from Suzuki Motor Gujarat by the end of 2024. The company aims to sell the EV units not only in India but also export to Japan and European countries.`}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The petrochemical complex is being built at a cost of Rs 19,635 crore and is expected to provide direct employment to 600 people.`}
+              {`In order to expand BEV production in future, Gujarat plant is expected to expand further its capacity adding new fourth production line which can produce 2.5 lakh units per year. The fourth line is expected to start operation from FY2026-27. `}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`Currently, the two plants in Haryana— Gurugram and Manesar— together roll out around 15.5 lakh units per annum. `}
+            </p>{' '}
+            <br />
+            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
+              {`Numbertree served as techno commercial auditor for this project in Gujarat.`}
             </p>{' '}
             <br />
           </div>
-
           <div className='flex  mt-10  gap-x-2 tracking-widest'>
             <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+
             <h2 className='border border-num-orange text-sm  p-1'>
               Industrial
             </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              techno–commercial audit
-            </h2>
+            <h2 className='border border-num-orange text-sm  p-1'>Gujrat</h2>
           </div>
           <div className='flex  mt-2 gap-x-2 tracking-widest mb-10'>
+            <h2 className='border border-num-orange text-sm   p-1'>
+              techno–commercial audit
+            </h2>
+            <h2 className='border border-num-orange text-sm   p-1'>
+              latest projects
+            </h2>
             <h2 className='border border-num-orange text-sm  p-1'>
               Featured Project
             </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>Punjab</h2>
           </div>
         </div>
 

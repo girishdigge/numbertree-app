@@ -39,7 +39,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/projects/maruti-suzuki-plant.jpg`}
+          src={`/projects/maruti-suzuki-plant-sonipat.jpeg`}
           width={2046}
           height={768}
           alt='maruti suzuki'
@@ -55,7 +55,7 @@ const Page = () => {
                 Maruti Suzuki Plant
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                India Limited
+                India Limited,Sonipat
               </h1>
             </div>
             <Link href={`/projects`} className=''>
@@ -117,8 +117,8 @@ const Page = () => {
             <h3>June 2023 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
-            <Link href={`/sectors/institutional`} className='hover:underline'>
-              <h3>Institutional </h3>
+            <Link href={`/sectors/industrial`} className='hover:underline'>
+              <h3>Industrial </h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>

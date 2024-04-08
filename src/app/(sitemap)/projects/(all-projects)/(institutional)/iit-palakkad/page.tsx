@@ -33,14 +33,16 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>HPCL Mittal Energy Limited</p>
+        <p className='font-bold text-num-indigo'>
+          Indian Institute of Technology Palakkad
+        </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/featuredProjects/hpcl.jpg`}
+          src={`/projects/iit-palakkad.jpeg`}
           width={2046}
           height={768}
-          alt='hpcl'
+          alt='maruti suzuki'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -50,10 +52,10 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                HPCL Mittal Energy Limited
+                Indian Institute of Technology Palakkad
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Polymer addition Project
+                Campus Development
               </h1>
             </div>
             <Link href={`/projects`} className=''>
@@ -100,23 +102,25 @@ const Page = () => {
             <h1 className='text-xl font-bold'>Project Details</h1>
             <hr className='border-b-1 border-num-indigo mb-2' />
             <h2 className='text-num-orange '>Project Name</h2>
-            <h3>HPCL Mittal Energy Limited (HMEL) Polymer addition Project</h3>
+            <h3>
+              Indian Institute of Technology(IIT) Palakkad - campus development
+            </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Location</h2>
-            <h3>Bhatinda,Punjab </h3>
+            <h3>Telangana </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Value </h2>
-            <h3>746 Cr(INR) </h3>
+            <h3>597 Cr(INR) </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Client </h2>
             <h3> </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Completion Date</h2>
-            <h3>Nov 2020 </h3>
+            <h3>Apr 2022 </h3>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Sector </h2>
-            <Link href={`/sectors/industrial`} className='hover:underline'>
-              <h3>Industrial </h3>
+            <Link href={`/sectors/commercial`} className='hover:underline'>
+              <h3>Commercial </h3>
             </Link>
             <hr className='border-b-1 border-num-indigo' />
             <h2 className='text-num-orange '>Service provided </h2>
@@ -134,39 +138,31 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`HMEL is a joint venture between the state-owned Hindustan Petroleum Corporation (HPCL) and Mittal Energy Investment. HMEL is setting up the Guru Gobind Singh Polymer Addition Plant at Bhatinda Refinery, its petrochemical complex in Punjab.`}
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The work on the project is underway and HMEL is planning to build the petrochemical plant before its scheduled completion date in 2021. Land for the unit was acquired in 2017 and in the same year, CB&I bagged the contract to provide the basic engineering for the ethylene plant, which will produce 1,200 Ktpa per annum.`}
+              {`The Indian Institute of Technology (IIT) Palakkad has two campuses: the Ahalia campus, which is temporary, and the Nila campus, which is transit. The Nila campus is made up of 30 acres on the 504-acre permanent campus site in Kanjikode. The campus has an auditorium, multimedia classrooms, student laboratories, library, canteen, and hostels with Wi-Fi. The academic space is called Samgatha, and the laboratory complex is called Manogatha. The three hostels that house students are Bageshri, Brindavani, and Tilang`}
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The new dual-feed ethylene plant will include a steam cracker, refinery off-gas treatment unit, C4 hydrogenation unit, pyrolysis gasoline hydrogenation unit, benzene extraction unit, and a high-density polyethylene unit producing 450 kilotonnes per annum.`}
-            </p>{' '}
-            <br />
-            <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The petrochemical complex is being built at a cost of Rs 19,635 crore and is expected to provide direct employment to 600 people.`}
+              {`The assignment entrusted to Numbertree involved carrying out an internal audit focused on the civil construction work. Our proficient and capable team successfully accomplished this task within an impressively short timeframe, completing the audit ahead of schedule.`}
             </p>{' '}
             <br />
           </div>
-
           <div className='flex  mt-10  gap-x-2 tracking-widest'>
             <h1 className='text-xl font-medium  p-1'>Tags:</h1>
+
             <h2 className='border border-num-orange text-sm  p-1'>
-              Industrial
+              Internal Audit
             </h2>
             <h2 className='border border-num-orange text-sm  p-1'>
-              techno–commercial audit
+              past project
             </h2>
           </div>
           <div className='flex  mt-2 gap-x-2 tracking-widest mb-10'>
-            <h2 className='border border-num-orange text-sm  p-1'>
-              Featured Project
+            <h2 className='border border-num-orange text-sm   p-1'>Palakkad</h2>
+            <h2 className='border border-num-orange text-sm   p-1'>
+              Telangana
             </h2>
-            <h2 className='border border-num-orange text-sm  p-1'>Punjab</h2>
           </div>
         </div>
 
