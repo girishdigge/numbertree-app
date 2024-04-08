@@ -40,7 +40,7 @@ const ActionButtons = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <div>
+      <div className='md:inline hidden'>
         <GetCallDropDown />
       </div>
     </div>
