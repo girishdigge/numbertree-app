@@ -18,8 +18,7 @@ export const ConnectForm = (data: any) => {
 `;
 
   sendMail({
-    to: 'test@numbertree.in',
-    // to: 'Mahtab.syed@numbertree.in',
+    to: 'Mahtab.syed@numbertree.in',
     name: 'Numbertree', // You can pass a default name or use the name from data
     subject: 'Callback Request from Numbertree Website',
     body: htmlContent, // Pass the HTML content
