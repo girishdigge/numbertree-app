@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
 import { projects } from '@/data/projectsData';
-import { featuredProjects } from '@/data/projectsData';
+// import { featuredProjects } from '@/data/projectsData';
 import {
   Select,
   SelectContent,
@@ -23,22 +23,23 @@ const Page = () => {
   const [service, setService] = useState('');
   const [sector, setSector] = useState('');
   const [location, setLocation] = useState('');
-  const [project, setProject] = useState('');
+  const [type, setType] = useState('');
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
   useEffect(() => {
-    console.log(service, sector, location, project);
+    console.log(service, sector, location, type);
 
     // Filter projects based on selected service and sector
     const filtered = projects.filter((project) => {
       return (
-        (!service || project.serviceId.includes(service)) &&
-        (!sector || project.sectorId.includes(sector)) &&
-        (!location || project.locationId.includes(location))
+        (!service || project.services.includes(service)) &&
+        (!sector || project.sectors.includes(sector)) &&
+        (!location || project.locations.includes(location)) &&
+        (!type || project.types.includes(type))
       );
     });
     setFilteredProjects(filtered);
-  }, [service, sector, location]);
+  }, [service, sector, location, type]);
   return (
     <div>
       <div className='flex flex-row mt-2 mb-2 ml-12'>
@@ -207,7 +208,7 @@ const Page = () => {
           </Select>
           <Select
             onValueChange={(value: string) => {
-              setProject(value), setLocation(''), setService(''), setSector('');
+              setType(value), setLocation(''), setService(''), setSector('');
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -258,14 +259,14 @@ const Page = () => {
                       width={800}
                       height={400}
                       alt={projects.location}
-                      className='object-cover'
+                      className='object-cover h-96'
                     />
 
                     <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                       <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                         <div className='ml-8'>
                           <h1 className='text-white text-2xl font-bold '>
-                            {projects.location}
+                            {projects.name}
                           </h1>
                           <span className='text-white font-bold'>
                             <Button className='w-40  mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
@@ -295,14 +296,14 @@ const Page = () => {
                   width={800}
                   height={400}
                   alt={projects.location}
-                  className='object-contain'
+                  className='object-cover h-96'
                 />
 
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-white text-2xl font-bold '>
-                        {projects.location}
+                        {projects.name}
                       </h1>
                       <span className='text-white font-bold'>
                         <Button className='w-40  mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>

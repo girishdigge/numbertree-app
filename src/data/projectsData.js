@@ -1,115 +1,215 @@
-export const featuredProjects = [
-  {
-    serviceId: '1',
-    sectorId: '0',
-    locationId: '1',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'Guwahati Airport',
-    content:
-      'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-    link: '/quantity-survey',
-    image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
-  },
-  {
-    serviceId: '1',
-    sectorId: '0',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'Parliment,New Delhi',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/projects/new-parliment',
-    image: '/projects/newParliment1.jpg', // replace with the actual image path
-  },
-  {
-    serviceId: '2',
-    sectorId: '4',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'Mercedes Benz,Pune',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: 'projects/merc-pune',
-    image: '/projects/merc.jpg', // replace with the actual image path
-  },
-  {
-    serviceId: '3',
-    sectorId: '1',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'Leh Airport',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/numbertree',
-    image: '/projects/leh.jpg', // replace with the actual image path
-  },
-];
+// export const featuredProjects = [
+//   {
+//     serviceId: '1',
+//     sectorId: '0',
+//     locationId: '1',
+//     title: 'Guwahati Airport',
+//     location: 'Guwahati Airport',
+//     link: '/quantity-survey',
+//     image: '/projects/GuwahatiAirport.jpg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '1',
+//     sectorId: '0',
+//     locationId: '0',
+//     title: '',
+//     location: 'Parliment,New Delhi',
+//     link: '/projects/new-parliment',
+//     image: '/projects/newParliment1.jpg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '2',
+//     sectorId: '4',
+//     locationId: '0',
+//     title: '',
+//     location: 'Mercedes Benz,Pune',
+//     link: 'projects/merc-pune',
+//     image: '/projects/merc.jpg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '3',
+//     sectorId: '1',
+//     locationId: '0',
+//     title: '',
+//     location: 'Leh Airport',
+//     link: '/numbertree',
+//     image: '/projects/leh.jpg', // replace with the actual image path
+//   },
+// ];
 
+// export const projects = [
+//   {
+//     serviceId: '1',
+//     sectorId: '2',
+//     locationId: '1',
+//     title: '',
+//     location: 'Bharat Mandapam G20',
+//     type: 'Featured',
+//     link: 'projects/bharat-mandapam-g20',
+//     image: '/projects/bm-g20.webp', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '3',
+//     sectorId: '2',
+//     locationId: '0',
+//     title: '',
+//     location: 'Port',
+//     type: 'Latest',
+//     link: '/numbertree',
+//     image: '/projects/port2.jpg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '0',
+//     sectorId: '3',
+//     locationId: '0',
+//     title: '',
+//     location: 'mumbai Delhi Expressway',
+//     type: 'Other',
+//     link: '/projects/MumbaiDelhiExpressway',
+//     image: '/projects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '1',
+//     sectorId: '6',
+//     locationId: '0',
+//     title: '',
+//     location: 'purvanchal Expressway',
+//     type: '',
+//     link: '/numbertree',
+//     image: '/projects/purvanchalExpressway.jpeg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '1',
+//     sectorId: '7',
+//     locationId: '0',
+//     title: '',
+//     location: 'STP Kanpur',
+//     type: '',
+//     link: '/numbertree',
+//     image: '/projects/STP_Kanpur.jpg', // replace with the actual image path
+//   },
+//   {
+//     serviceId: '1',
+//     sectorId: '2',
+//     locationId: '0',
+//     title: '',
+//     location: 'transmission Distribution Bihar',
+//     type: '',
+//     link: '/numbertree',
+//     image: '/projects/transmission_Bihar.jpg', // replace with the actual image path
+//   },
+// ];
+
+// Example project data representation
 export const projects = [
   {
-    serviceId: '1',
-    sectorId: '2',
-    locationId: '1',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'Bharat Mandapam G20',
-    content:
-      'Quantity surveying plays a vital role in ensuring accurate cost estimation and effective resource allocation.',
-    link: 'projects/bharat-mandapam-g20',
-    image: '/projects/bm-g20.webp', // replace with the actual image path
+    id: 1,
+    name: 'Mumbai Metro Line 5',
+    services: ['1', '4'],
+    sectors: ['2'],
+    locations: ['15'],
+    types: ['1', '2'],
+    location: 'Mumbai',
+    link: '/projects/mumbai-metro-line-5',
+    image: '/projects/MumbaiMetroThaneBhiwandiKalyan.jpg',
   },
   {
-    serviceId: '3',
-    sectorId: '2',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'Port',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/numbertree',
-    image: '/projects/port2.jpg', // replace with the actual image path
+    id: 2,
+    name: 'Mumbai Metro Line 9',
+    services: ['1', '4'],
+    sectors: ['2'],
+    locations: ['15'],
+    types: ['1', '2'],
+    location: 'Mumbai',
+    link: '/projects/mumbai-metro-dahisar-mira',
+    image: '/projects/MumbaiMetro2.jpeg',
   },
   {
-    serviceId: '0',
-    sectorId: '3',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'mumbai Delhi Expressway',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/projects/MumbaiDelhiExpressway',
-    image: '/projects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
+    id: 3,
+    name: 'Pune Metro Corridor 1 & 2',
+    services: ['1', '4'],
+    sectors: ['2'],
+    locations: ['15'],
+    types: ['1', '2'],
+    location: 'Mumbai',
+    link: '/projects/pune-metro-corridor-1-2',
+    image: '/projects/PuneMetro.jpg',
   },
   {
-    serviceId: '1',
-    sectorId: '6',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'purvanchal Expressway',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/numbertree',
-    image: '/projects/purvanchalExpressway.jpeg', // replace with the actual image path
+    id: 4,
+    name: 'Delhi Metro ',
+    services: ['1', '4'],
+    sectors: ['2'],
+    locations: ['6'],
+    types: ['1', '2'],
+    location: 'Delhi',
+    link: '/projects/delhi-metro',
+    image: '/projects/Delhi-Metro.jpg',
   },
   {
-    serviceId: '1',
-    sectorId: '7',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'STP Kanpur',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/numbertree',
-    image: '/projects/STP_Kanpur.jpg', // replace with the actual image path
+    id: 5,
+    name: 'Eastern Dedicate Freight Corridor 301',
+    services: ['2', '4', '5'],
+    sectors: ['2'],
+    locations: ['21'],
+    types: ['1', '2'],
+    location: 'Punjab',
+    link: '/projects/freight-301-ambala',
+    image: '/projects/EasternDedicateFreightCorridor301.jpg',
   },
   {
-    serviceId: '1',
-    sectorId: '2',
-    locationId: '0',
-    heading: "Empowering Tomorrow's infrastructure",
-    location: 'transmission Distribution Bihar',
-    content:
-      'We are a consulting engineering & audit services firm, partnering with businesses that advance the world, to overcome challenges and unlock their full potential.We are committed to delivering exceptional and cutting-edge solutions to today’s business problems. ',
-    link: '/numbertree',
-    image: '/projects/transmission_Bihar.jpg', // replace with the actual image path
+    id: 6,
+    name: 'Eastern Dedicate Freight Corridor 302',
+    services: ['2'],
+    sectors: ['2'],
+    locations: ['27'],
+    types: ['1'],
+    location: 'UP',
+    link: '/projects/freight-302-dadri',
+    image: '/projects/EasternDedicateFreightCorridor302.jpg',
+  },
+  {
+    id: 7,
+    name: 'Express Freight Railway Consortium Project',
+    services: ['4'],
+    sectors: ['2'],
+    locations: ['27'],
+    types: ['2'],
+    location: 'UP',
+    link: '/projects/freight-agra',
+    image: '/projects/Freight-Agra.jpg',
+  },
+  {
+    id: 8,
+    name: 'Multimodal Transport System',
+    services: ['1'],
+    sectors: ['2'],
+    locations: ['25'],
+    types: ['2'],
+    location: 'hyderabad',
+    link: '/projects/multimodel-transport-hyderabad',
+    image: '/projects/HyderabadMetro.jpg',
+  },
+  {
+    id: 9,
+    name: 'Red Sea International airport',
+    services: ['1'],
+    sectors: ['3'],
+    locations: ['25'],
+    types: ['2'],
+    location: 'hyderabad',
+    link: '/projects/multimodel-transport-hyderabad',
+    image: '/projects/HyderabadMetro.jpg',
+  },
+  {
+    id: 10,
+    name: 'Multimodal Transport System',
+    services: ['1'],
+    sectors: ['2'],
+    locations: ['25'],
+    types: ['2'],
+    location: 'hyderabad',
+    link: '/projects/multimodel-transport-hyderabad',
+    image: '/projects/HyderabadMetro.jpg',
   },
 ];
