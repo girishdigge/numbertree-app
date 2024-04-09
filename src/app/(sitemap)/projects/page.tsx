@@ -94,7 +94,7 @@ const Page = () => {
       </div>
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-xl text-num-indigo font-medium m-2'>Explore by:</h1>
-        <div className='flex gap-2'>
+        <div className='flex gap-2 md:flex-row flex-col'>
           <Select
             onValueChange={(value: string) => {
               setService(value), setLocation(''), setSector('');

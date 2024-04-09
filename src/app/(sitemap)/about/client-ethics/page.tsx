@@ -31,28 +31,32 @@ const Page = () => {
   };
   const testimonials = [
     {
-      name: 'Saqlain Shaikh',
-      role: 'CEO Osker Tech',
+      name: ' Oriental Structural Engineers Pvt. Ltd.',
+      role: 'Executive Director -SCM',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere quia consequuntur rem quaerat fuga voluptas. Laboriosam, fugit! Aperiam, quos.',
+        'We have had a professional relationship with Numbertree for several years and, during that time, have received excellent service. The team has consistently provided critical insights through their services, resulting in us viewing them as a trusted and valued audit firm.',
       rating: '⭐⭐⭐⭐⭐',
-      image: '/testimonials/saqlain.png', // replace with the actual image path
     },
     {
-      name: 'Chetan Chavan',
-      role: 'CMO Osker Tech',
+      name: 'GMR infra ',
+      role: 'CFO',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere quia consequuntur rem quaerat fuga voluptas. Laboriosam, fugit! Aperiam, quos.',
+        'Working with Numbertree has been a wonderful experience. I had the pleasure to work with the team from the time we engaged them. Every engagement has been completed in a very professional, organised manner and commitment to solve our problems. I trust and impressed Numbertree and their team professionalism, expertise, enthusiastic and knowledge.',
       rating: '⭐⭐⭐⭐⭐',
-      image: '/testimonials/chetan.png', // replace with the actual image path
     },
     {
-      name: 'Girish Digge',
-      role: 'CTO Osker Tech',
+      name: 'Shapoorji Pallonji & Company',
+      role: 'Ex CFO',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere quia consequuntur rem quaerat fuga voluptas. Laboriosam, fugit! Aperiam, quos.',
+        'The team at Numbertree is adept at tailoring their services to meet our specific needs and pain points. Whether it was quantity survey, forensic audit, or cost overrun investigation , Numbertree consistently delivered high-quality results that were customized to address our challenges. Their team led us to considerable cost saving in our projects.',
       rating: '⭐⭐⭐⭐⭐',
-      image: '/testimonials/girish.png', // replace with the actual image path
+    },
+    {
+      name: 'Shapoorji Pallonji & Company',
+      role: 'Additional general manager(Project Head)',
+      content:
+        'Working with Numbertree has been a game changer for our organization. Their commitment to excellence, in depth industry knowledge and proactive have added tremendous value to our operations. We highly recommend them.',
+      rating: '⭐⭐⭐⭐⭐',
     },
   ];
 
