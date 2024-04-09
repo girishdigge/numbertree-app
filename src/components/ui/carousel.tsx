@@ -263,15 +263,15 @@ const SliderPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        'absolute  h-14 w-14 rounded-full bg-num-indigo hover:bg-num-orange',
-        orientation === 'horizontal' ? 'mr-16' : '',
+        'absolute  h-14 w-14 bg-num-indigo hover:bg-num-orange',
+        orientation === 'horizontal' ? 'mr-20' : '',
         className
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className='h-6 w-6 text-white hover:text-num-indigo' />
+      <ArrowLeft className='h-8 w-8 text-white hover:text-num-indigo' />
       <span className='sr-only'>Previous slide</span>
     </Button>
   );
@@ -290,15 +290,15 @@ const SliderNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        'absolute h-14 w-14 rounded-full bg-num-indigo hover:bg-num-orange',
-        orientation === 'horizontal' ? '' : 'rotate-90',
+        'absolute h-14 w-14  bg-num-indigo hover:bg-num-orange',
+        orientation === 'horizontal' ? 'mr-4' : 'rotate-90 ',
         className
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className='h-14 w-14 text-white hover:text-num-indigo' />
+      <ArrowRight className='h-8 w-8 text-white hover:text-num-indigo' />
       <span className='sr-only'>Next slide</span>
     </Button>
   );

@@ -154,11 +154,12 @@ export function NavigationBar() {
 
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
-            <ul className='grid grid-cols-3 gap-3 p-6 md:w-[400px] lg:w-[1000px] lg:grid-cols-[.75fr_1fr] '>
-              <li className='row-span-4 border-r-2 border-num-orange'>
+            <hr className='border border-num-orange animated-hr' />
+            <ul className='grid grid-cols-3 gap-3 p-6 md:w-[400px] lg:w-[1200px] lg:grid-cols-[.75fr_1fr] '>
+              <li className='row-span-4 '>
                 <NavigationMenuLink asChild>
                   <a
-                    className='flex w-full pl-2 pr-2 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6  no-underline outline-none focus:shadow-md'
+                    className='flex w-full pl-2 pr-2 select-none flex-col justify-end rounded-md border-r-2 rounded-r-none border-num-orange bg-gradient-to-b from-muted/50 to-muted p-6  no-underline outline-none focus:shadow-md'
                     href='/about'
                   >
                     <Logo />
@@ -173,7 +174,7 @@ export function NavigationBar() {
                 </NavigationMenuLink>
               </li>
               <div className='flex gap-6'>
-                <div className=' border-r-2 border-num-orange pr-8'>
+                <div className=' border-r-2 border-num-orange pr-12 pl-2'>
                   <ListItem href='/about' title='Our Vission' />
                   <ListItem href='/about' title='Our Mission' />
                   <ListItem href='/about' title='Our Approach' />
@@ -181,7 +182,7 @@ export function NavigationBar() {
                   <ListItem href='/about/values' title='Our Values' />
                 </div>
                 <div>
-                  <div className='border-r-2 border-num-orange pr-8'>
+                  <div className='border-r-2 border-num-orange pl-2 pr-12'>
                     <ListItem
                       href='/about/client-ethics'
                       title='Our Ethics'
@@ -194,7 +195,7 @@ export function NavigationBar() {
                   </div>
                 </div>
                 <div>
-                  <div className=''>
+                  <div className='pl-2'>
                     <ListItem
                       href='/about/leadership-people'
                       title='Our Leadership'
@@ -224,6 +225,7 @@ export function NavigationBar() {
 
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
+            <hr className='border border-num-orange animated-hr' />
             <ul className='grid grid-cols-1 gap-3 p-6 md:w-[400px] lg:w-[1200px] lg:grid-cols-[1fr] '>
               <li className=' flex'>
                 <div className='border-r-2 border-num-orange'>
@@ -295,6 +297,7 @@ export function NavigationBar() {
 
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
+            <hr className='border border-num-orange animated-hr' />
             <ul className='grid grid-cols-1 gap-3 p-6 md:w-[400px] lg:w-[1200px] lg:grid-cols-[1fr] '>
               <li className=' flex'>
                 <div className='border-r-2 border-num-orange'>
@@ -421,7 +424,8 @@ export function NavigationBar() {
             <Link href={`/projects`}>Projects</Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <hr className='border border-b-8 border-num-orange animated-hr' />
+            <hr className='border-2 border-num-orange animated-hr' />
+            <hr className='border  border-num-orange animated-hr' />
             <div className='flex'>
               <div className='flex flex-col w-1/2 items-center  bg-muted p-2 m-3 mt-6 rounded-lg rounded-r-none border-r-2 border-num-orange'>
                 <Link href={`/projects`}>
@@ -461,6 +465,7 @@ export function NavigationBar() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
+            <hr className='border border-num-orange animated-hr' />
             <div className='flex'>
               <div className='flex flex-col w-1/2 items-center pb-2 bg-muted p-2 m-3 mt-6 rounded-lg rounded-r-none border-r-2 border-num-orange'>
                 <Link href={`/career`}>

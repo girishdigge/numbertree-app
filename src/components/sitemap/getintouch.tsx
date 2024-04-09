@@ -43,6 +43,11 @@ const GetInTouch = () => {
         </div>
       </div>
       <div className='mt-10 border-2 border-num-pink'>
+        <div className='flex justify-center'>
+          <h1 className='text-xl font-bold text-num-blue  p-1'>
+            Request a call from us
+          </h1>
+        </div>
         <ConnectInputForm />
       </div>
     </div>

@@ -81,9 +81,11 @@ const Page = () => {
                     </h4>
                   </div>
                   <div className='flex  flex-col-reverse'>
-                    <Button className='bg-num-indigo hover:bg-num-orange md:w-40'>
-                      Apply Now
-                    </Button>
+                    <Link href={`/career/jobs/apply`}>
+                      <Button className='bg-num-indigo hover:bg-num-orange md:w-40'>
+                        Apply Now
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
