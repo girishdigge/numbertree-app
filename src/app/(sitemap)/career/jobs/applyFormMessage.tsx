@@ -60,7 +60,7 @@ export const ApplyFormMessage = (data: any) => {
 `;
 
   sendMail({
-    to: 'thelordshady@gmail.com',
+    to: 'Mahtab.syed@numbertree.in',
     name: 'Numbertree', // You can pass a default name or use the name from data
     subject: 'Message from Numbertree',
     body: htmlContent, // Pass the HTML content
