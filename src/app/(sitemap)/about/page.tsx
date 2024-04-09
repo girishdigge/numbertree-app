@@ -420,8 +420,8 @@ const Page = () => {
           <div className='absolute inset-0 bg-black bg-opacity-50'>
             <div className='flex flex-col items-center justify-center  text-white'>
               <div>
-                <h1 className='text-7xl mt-40'>Corporate Social</h1>
-                <h1 className='text-7xl ml-8 mt-4 mb-20'>Responsibility</h1>
+                <h1 className='md:text-7xl mt-40'>Corporate Social</h1>
+                <h1 className='md:text-7xl ml-8 mt-4 mb-20'>Responsibility</h1>
                 <Link href={'/about/csr-esg'}>
                   <Button className='bg-num-indigo w-40 hover:bg-num-orange hover:text-black ml-44'>
                     Read More
