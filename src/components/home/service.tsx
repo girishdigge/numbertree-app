@@ -103,7 +103,7 @@ const Services = () => {
               />
               <div className='absolute inset-0 flex  '>
                 <div className='bg-black  bg-opacity-40  md:p-5'>
-                  <div className=' text-white ml-2 md:w-1/2 w-2/3'>
+                  <div className=' text-white ml-2 md:w-1/2 '>
                     <h2 className='md:text-4xl  font-bold flex   md:mb-2'>
                       {tabs[activeTab].name}
                     </h2>
