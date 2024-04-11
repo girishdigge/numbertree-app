@@ -1,16 +1,5 @@
 export const MainPageProjects = [
   {
-    name: 'ITPO Complex –convention centre at Pragati Maidan, New Delhi',
-    location: 'New Delhi ',
-    value: '2150 Cr(INR)',
-    date: 'Sep 2023',
-    client: '',
-    sector: 'Commercial',
-    service: 'Techno-Commercial Audit, Audit of Contractor Bill Checking ',
-    image: '/projects/itpo.jpg', // replace with the actual image path
-    link: '/projects/featured-projects/ITPO',
-  },
-  {
     name: 'The New Parliament Building ',
     location: 'New Delhi ',
     value: '477.08 Cr(INR)',
@@ -21,7 +10,17 @@ export const MainPageProjects = [
     image: '/projects/parlimentInside.jpg', // replace with the actual image path
     link: '/projects/featured-projects/new-parliment',
   },
-
+  {
+    name: 'ITPO Complex –convention centre at Pragati Maidan, New Delhi',
+    location: 'New Delhi ',
+    value: '2150 Cr(INR)',
+    date: 'Sep 2023',
+    client: '',
+    sector: 'Commercial',
+    service: 'Techno-Commercial Audit, Audit of Contractor Bill Checking ',
+    image: '/projects/itpo.jpg', // replace with the actual image path
+    link: '/projects/featured-projects/ITPO',
+  },
   {
     name: 'Mumbai Delhi Expressway package 2',
     location: 'Meerut , Uttar Pradesh',
