@@ -37,7 +37,7 @@ const Page = () => {
           autoPlay
           muted
           loop
-          src={'carousel/bim1.mp4'}
+          src={'carousel/bim_1.mp4'}
           className='object-cover w-full h-full'
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>

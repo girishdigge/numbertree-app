@@ -26,7 +26,7 @@ const Page = () => {
       name: 'Indian Institute of Technology Hyderabad',
       location: 'hyderabad',
       link: '/projects/iit-hyd',
-      image: '/projects/iit-hyd.png',
+      image: '/projects/iit-hyd.jpg',
     },
     {
       name: 'Indian Institute of Technology Palakkad',

@@ -15,7 +15,7 @@ const slides = [
     content:
       'We are a consulting engineering & audit services firm. We partner with businesses that advance the world, to overcome challenges they face and unlock their full potential.',
     link: '/numbertree',
-    video: '/carousel/video6.mp4', // replace with the actual video path
+    video: '/carousel/video_6.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
@@ -24,7 +24,7 @@ const slides = [
     content:
       'We are India’s foremost techno commercial audit firm with close to two decades of expertise.',
     link: '/techno-commercial-project',
-    video: '/carousel/video1.mp4', // replace with the actual video path
+    video: '/carousel/video_1.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
@@ -33,7 +33,7 @@ const slides = [
     content:
       'Our quantity surveyors play a vital role in ensuring accurate cost estimation and effective resource allocation.',
     link: '/quantity-survey',
-    video: '/carousel/video2.mp4', // replace with the actual video path
+    video: '/carousel/video_2.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
@@ -42,7 +42,7 @@ const slides = [
     content:
       'Our comprehensive services in Contract Administration and Bill Checking ensure transparency, compliance and cost optimization.',
     link: '/contract-administration',
-    video: '/carousel/video3.mp4', // replace with the actual video path
+    video: '/carousel/video_3.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
@@ -51,7 +51,7 @@ const slides = [
     content:
       'We provide cost management services on wide range of construction projects across sectors in infrastructure.',
     link: '/cost-consultants',
-    video: '/carousel/video4.mp4', // replace with the actual video path
+    video: '/carousel/video_4.mp4', // replace with the actual video path
   },
   {
     heading: "Empowering Tomorrow's infrastructure",
@@ -60,7 +60,7 @@ const slides = [
     content:
       'Digitization of infrastructure operations & projects is our forte, we help in digital transformation of construction through BIMfirst, Digital twin.',
     link: '/numbertree',
-    video: '/carousel/video5.mp4', // replace with the actual video path
+    video: '/carousel/video_5.mp4', // replace with the actual video path
   },
 ];
 

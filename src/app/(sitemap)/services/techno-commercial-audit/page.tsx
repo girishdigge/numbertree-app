@@ -51,7 +51,7 @@ const Page = () => {
       name: 'Indian Institute of Technology Hyderabad',
       location: 'hyderabad',
       link: '/projects/iit-hyd',
-      image: '/projects/iit-hyd.png',
+      image: '/projects/iit-hyd.jpg',
     },
     {
       name: 'State Sports Academy cum International Standard Modern Cricket Stadium at Rajgir, Nalanda ,Bihar',

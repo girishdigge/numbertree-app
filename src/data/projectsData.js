@@ -250,7 +250,7 @@ export const projects = [
     types: ['3'],
     location: 'hyderabad',
     link: '/projects/iit-hyd',
-    image: '/projects/iit-hyd.png',
+    image: '/projects/iit-hyd.jpg',
   },
   {
     id: 22,
