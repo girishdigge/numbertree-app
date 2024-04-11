@@ -7,7 +7,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Institutional ',
     service: 'Techno-Commercial Audit',
-    image: '/featuredProjects/parlimentInside.jpg', // replace with the actual image path
+    image: '/projects/parlimentInside.jpg', // replace with the actual image path
     link: '/projects/featured-projects/new-parliment',
   },
   {
@@ -18,7 +18,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Commercial',
     service: 'Techno-Commercial Audit, Audit of Contractor Bill Checking ',
-    image: '/featuredProjects/itpo.jpg', // replace with the actual image path
+    image: '/projects/itpo.jpg', // replace with the actual image path
     link: '/projects/featured-projects/ITPO',
   },
   {
@@ -29,7 +29,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Roads & Highways',
     service: 'Techno-Commercial Audit',
-    image: '/featuredProjects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
+    image: '/projects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
     link: '/projects/featured-projects/MumbaiDelhiExpressway',
   },
   {
@@ -40,7 +40,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Airport & Aviation ',
     service: '3D BIM ',
-    image: '/featuredProjects/Red-Sea.jpg', // replace with the actual image path
+    image: '/projects/Red-Sea.jpg', // replace with the actual image path
     link: '/projects/featured-projects/red-sea',
   },
   {
@@ -52,7 +52,7 @@ export const MainPageProjects = [
     sector: 'Institutional ',
     service:
       'Techno Commercial Audit , operational excellence review of planning & billing ',
-    image: '/featuredProjects/IIM-kashipur.jpg', // replace with the actual image path
+    image: '/projects/IIM-kashipur.jpg', // replace with the actual image path
     link: '/projects/featured-projects/iim-kashipur',
   },
 
@@ -64,7 +64,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Roads & Highways ',
     service: 'Techno-Commercial Audit',
-    image: '/featuredProjects/Delhi-meerut-expressway.jpeg', // replace with the actual image path
+    image: '/projects/Delhi-meerut-expressway.jpeg', // replace with the actual image path
     link: '/projects/featured-projects/delhi-vadodara',
   },
   {
@@ -75,7 +75,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Renewable Energy',
     service: 'Techno-Commercial Audit',
-    image: '/featuredProjects/bhutan-magadechhu.jpg', // replace with the actual image path
+    image: '/projects/bhutan-magadechhu.jpg', // replace with the actual image path
     link: '/projects/featured-projects/magdechhu-bhutan',
   },
   {
@@ -86,7 +86,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Industrial',
     service: 'Techno-Commercial Audit',
-    image: '/featuredProjects/hpcl.jpg', // replace with the actual image path
+    image: '/projects/hpcl.jpg', // replace with the actual image path
     link: '/projects/featured-projects/hpcl',
   },
 ];
