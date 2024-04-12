@@ -168,21 +168,47 @@ const Page = () => {
             </div>
 
             <div className='flex  flex-col '>
-              <h1 className='text-xl font-bold mb-2'> Share this page</h1>
+              <h1 className='text-xl font-bold mb-2'> Follow Us</h1>
 
-              <div className='flex gap-4 mb-4'>
-                <FaFacebookF
-                  size={30}
-                  className='bg-num-orange p-1 text-white  rounded-xl'
-                />
-                <FaLinkedinIn
-                  size={31}
-                  className='bg-num-orange text-white p-1 rounded-xl'
-                />
-                <FaXTwitter
-                  size={30}
-                  className='bg-num-orange text-white p-1 rounded-xl'
-                />
+              <div className='flex gap-4 mb-8'>
+                <Link
+                  href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
+                >
+                  <Image
+                    src={`/images/facebook.png`}
+                    width={32}
+                    height={32}
+                    alt='logo'
+                  />
+                </Link>
+                <Link
+                  href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
+                >
+                  <Image
+                    src={`/images/linkedin-1.png`}
+                    width={32}
+                    height={32}
+                    alt='logo'
+                  />
+                </Link>
+                <Link
+                  href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
+                >
+                  <Image
+                    src={`/images/twitter.png`}
+                    width={32}
+                    height={32}
+                    alt='logo'
+                  />
+                </Link>
+                <Link href={``}>
+                  <Image
+                    src={`/images/instagram.png`}
+                    width={32}
+                    height={32}
+                    alt='logo'
+                  />
+                </Link>
               </div>
             </div>
             <div className='flex mt-10 gap-x-2 mb-20'>

@@ -262,9 +262,11 @@ const Page = () => {
       </div>
 
       <div className='flex  mt-24'>
-        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
-          Explore More
-        </h2>
+        <Link href={`/services`}>
+          <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
+            Explore More
+          </h2>
+        </Link>
       </div>
       <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
         <div className='flex overflow-hidden'>

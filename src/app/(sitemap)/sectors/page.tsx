@@ -148,14 +148,14 @@ const Page = () => {
               {'Uplifting communities, improving access'}
             </h3>
           </div>
-          <h3 className='-translate-y-8 text-lg w-4/5 text-num-blue mb-8'>
+          <h3 className='-translate-y-8 text-lg w-2/3 text-num-blue mb-8'>
             {`In today's dynamic business environment, a company's success is
             intricately linked to its specialized knowledge and expertise within
             the industry. The integration of in-depth domain knowledge with
             unique expertise not only meets customer demands but also ensures a
             thorough understanding of the ever-changing industry trends.`}
           </h3>
-          <h3 className='-translate-y-8 w-4/5 text-base text-num-blue mb-8'>
+          <h3 className='-translate-y-8 w-2/3 text-lg text-num-blue mb-8'>
             {`We cater to sectors across infrastructure segments. Our indepth knowledge of the sector coupled with customized approach to each infrastructure project, has made us preferred partners to some of the leading infrastructure companies in India and abroad.`}
           </h3>
         </div>
@@ -178,7 +178,7 @@ const Page = () => {
                         </h1>
                         <span className='text-white font-bold'>
                           <Button className='w-40  mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                            {`Read more`}
+                            {`Read More`}
                           </Button>
                         </span>
                       </div>
@@ -190,10 +190,12 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <div className='flex flex-row  justify-center text-num-indigo font-bold mt-10 mb-4'>
-        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium  mb-4'>
-          Explore More
-        </h2>
+      <div className='flex flex-row  justify-center text-num-indigo font-bold mt-32 mb-10'>
+        <Link href={`/services`}>
+          <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium  mb-4'>
+            Explore More
+          </h2>
+        </Link>
       </div>
       <div className='  flex md:flex-row flex-col items-center  justify-center   gap-6 mb-10'>
         <div className='md:flex flex-row gap-2 md:ml-4 mr-4'>
@@ -223,7 +225,7 @@ const Page = () => {
                 <div className='flex flex-row-reverse  mr-4'>
                   <Link href={`services`}>
                     <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
-                      Explore
+                      All Services
                     </Button>
                   </Link>
                 </div>
@@ -254,8 +256,8 @@ const Page = () => {
                 </p>
                 <div className='flex flex-row-reverse mt-8 mr-4'>
                   <Link href={`projects`}>
-                    <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
-                      Explore
+                    <Button className='w-40 mt-14 text-base bg-num-orange border-0 hover:bg-num-indigo'>
+                      All Projects
                     </Button>
                   </Link>
                 </div>

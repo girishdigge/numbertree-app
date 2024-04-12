@@ -1,32 +1,36 @@
 'use client';
 import { FaSquarePhone } from 'react-icons/fa6';
-import { IoIosMail } from 'react-icons/io';
-import { FaQuoteLeft } from 'react-icons/fa';
-import { FaLocationDot } from 'react-icons/fa6';
+
+import { IoMdCall } from 'react-icons/io';
+import { MdMailOutline } from 'react-icons/md';
 import { ConnectInputForm } from './connectInput';
 const GetInTouch = () => {
   return (
-    <div>
+    <div className='mr-4'>
       <div className='flex flex-col w-full mr-6'>
-        <div className='bg-white  bg-opacity-50 w-full font-medium border-2 border-num-pink pl-16 pr-16'>
-          <h2 className='text-xl flex font-bold text-num-blue  p-2'>
-            Get in touch
+        <div className='bg-white  bg-opacity-50 w-full font-medium border-2 border-num-pink pl-4 pr-16'>
+          <h2 className='text-xl flex text tracking-widest text-num-blue  pt-2'>
+            Get In Touch
           </h2>
-          <h3 className='text-num-blue text-lg'>Contact</h3>
+          <h3 className='text-num-blue text-lg mt-4 tracking-widest mb-2'>
+            Contact
+          </h3>
           <span className='flex mb-2'>
-            <FaSquarePhone size={24} className='text-num-indigo' />
-            {`022-49617073`}
+            <IoMdCall size={24} className='text-num-indigo mr-1' />
+            {` 022-49617073`}
           </span>
           <span className='flex mb-4'>
-            <FaSquarePhone size={24} className='text-num-indigo' />
-            {`011-41458409`}
+            <IoMdCall size={24} className='text-num-indigo mr-1' />
+            {` 011-41458409`}
           </span>
-          <h3 className='text-num-blue text-lg'>Enquiries</h3>
+          <h3 className='text-num-blue text-lg tracking-widest mb-2'>
+            Enquiries
+          </h3>
           <div
             onClick={() => (window.location.href = `mailto:info@numbertree.in`)}
           >
             <span className='flex mb-2 hover:cursor-pointer'>
-              <IoIosMail size={24} className='text-num-indigo' />
+              <MdMailOutline size={24} className='text-num-indigo mr-1' />
               {`info@numbertree.in`}
             </span>
           </div>
@@ -36,15 +40,15 @@ const GetInTouch = () => {
             }
           >
             <span className='flex mb-4 hover:cursor-pointer'>
-              <IoIosMail size={24} className='text-num-indigo' />
+              <MdMailOutline size={24} className='text-num-indigo mr-1' />
               {`services@numbertree.in`}
             </span>
           </div>
         </div>
       </div>
-      <div className='mt-10 border-2 border-num-pink'>
-        <div className='flex justify-center'>
-          <h1 className='text-xl font-bold text-num-blue  p-1'>
+      <div className='mt-10  bg-num-indigo'>
+        <div className='flex '>
+          <h1 className='text-xl tracking-widest text-white ml-4 pt-2'>
             Request a call from us
           </h1>
         </div>

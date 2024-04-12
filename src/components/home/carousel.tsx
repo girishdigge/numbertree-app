@@ -49,7 +49,7 @@ const slides = [
     weAre: 'We are',
     title: 'Cost Consultants ',
     content:
-      'We provide cost management services on wide range of construction projects across sectors in infrastructure.',
+      'We provide cost management services for wide range of construction projects across sectors in infrastructure.',
     link: '/cost-consultants',
     video: '/carousel/video_4.mp4', // replace with the actual video path
   },

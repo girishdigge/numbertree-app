@@ -248,7 +248,7 @@ const Page = () => {
               className='object-contain group-hover:opacity-95' // Fade image slightly on hover
             />
             <Link href={`/sectors/aviation`}>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-0'>
                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Sector</h1>

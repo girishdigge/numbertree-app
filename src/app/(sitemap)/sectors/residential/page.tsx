@@ -252,9 +252,11 @@ const Page = () => {
           Related Projects
         </h1> */}
         <div className='flex ml-14 mt-20 mb-2'>
-          <h2 className='  text-2xl text-black font-medium'>
-            Related Projects
-          </h2>
+          <Link href={`/services`}>
+            <h2 className='  text-2xl text-black font-medium'>
+              Related Projects
+            </h2>
+          </Link>
         </div>
         <Carousel
           opts={{

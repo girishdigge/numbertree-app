@@ -1,6 +1,3 @@
-import { FaFacebookF } from 'react-icons/fa6';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
 import {
   Accordion,
   AccordionContent,
@@ -9,34 +6,49 @@ import {
 } from '@/components/ui/accordion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 const SectorLinks = () => {
   return (
     <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-      <h1 className='text-xl font-bold mb-2'>Follow Us</h1>
+      <h1 className='text-xl font-bold mb-2'> Follow Us</h1>
 
-      <div className='flex gap-4 mb-12'>
+      <div className='flex gap-4 mb-8'>
         <Link
           href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
         >
-          <FaFacebookF
-            size={30}
-            className='bg-num-orange p-1 text-white  rounded-xl'
+          <Image
+            src={`/images/facebook.png`}
+            width={32}
+            height={32}
+            alt='logo'
           />
         </Link>
         <Link
           href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
         >
-          <FaLinkedinIn
-            size={31}
-            className='bg-num-orange text-white p-1 rounded-xl'
+          <Image
+            src={`/images/linkedin-1.png`}
+            width={32}
+            height={32}
+            alt='logo'
           />
         </Link>
         <Link
           href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
         >
-          <FaXTwitter
-            size={30}
-            className='bg-num-orange text-white p-1 rounded-xl'
+          <Image
+            src={`/images/twitter.png`}
+            width={32}
+            height={32}
+            alt='logo'
+          />
+        </Link>
+        <Link href={``}>
+          <Image
+            src={`/images/instagram.png`}
+            width={32}
+            height={32}
+            alt='logo'
           />
         </Link>
       </div>

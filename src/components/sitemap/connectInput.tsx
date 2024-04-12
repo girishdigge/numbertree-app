@@ -50,13 +50,13 @@ export function ConnectInputForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className='p-4 px-10'>
+      <form onSubmit={form.handleSubmit(onSubmit)} className='p-4 px-4'>
         <FormField
           control={form.control}
           name='name'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className=' text-lg'>Name</FormLabel>
+              <FormLabel className=' text-base text-white'>Name</FormLabel>
               <FormControl>
                 <Input
                   className='bg-gray-100 shadow-md '
@@ -74,7 +74,9 @@ export function ConnectInputForm() {
           name='mailNum'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='text-lg '>Number or Email</FormLabel>
+              <FormLabel className='text-base text-white'>
+                Contact Number / Email Id
+              </FormLabel>
               <FormControl>
                 <Input
                   className='bg-gray-100 shadow-md'
@@ -87,12 +89,14 @@ export function ConnectInputForm() {
             </FormItem>
           )}
         />
-        <Button
-          className='mt-2 bg-num-indigo hover:bg-num-orange'
-          type='submit'
-        >
-          Submit
-        </Button>
+        <div className='flex items-center justify-center'>
+          <Button
+            className='mt-4 w-40 bg-num-orange hover:bg-white hover:text-num-orange'
+            type='submit'
+          >
+            Submit
+          </Button>
+        </div>
       </form>
     </Form>
   );

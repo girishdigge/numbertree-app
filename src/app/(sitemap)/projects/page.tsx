@@ -83,7 +83,7 @@ const Page = () => {
               {'Taking projects from complexity to profitability'}
             </h3>
           </div>
-          <h3 className='-translate-y-8 text-lg text-num-blue w-4/5 mb-8'>
+          <h3 className='-translate-y-8 text-lg text-num-blue w-2/3 mb-8'>
             We are experts at handling projects which are multidimensional,
             large scale and complex. Our commitment is to ensure that each
             project is completed within budgeted cost and time. We approach each
@@ -93,7 +93,9 @@ const Page = () => {
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
-        <h1 className='text-xl text-num-indigo font-medium m-2'>Explore by:</h1>
+        <h1 className='text-xl text-num-indigo font-medium m-6 mt-12'>
+          Explore by
+        </h1>
         <div className='flex gap-2 md:flex-row flex-col'>
           <Select
             onValueChange={(value: string) => {
@@ -248,8 +250,10 @@ const Page = () => {
 
       {!service && !sector && !location && !type && (
         <div>
-          <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
-            Featured Projects
+          <h1 className='text-2xl text-num-orange   flex justify-center m-10 mt-20'>
+            <span className='font-medium text-black border border-num-orange hover:bg-num-orange hover:text-white p-1'>
+              Featured Projects
+            </span>
           </h1>
           <div className='grid md:grid-cols-2 gap-8 mt-4 mb-4'>
             {MainPageProjects.map((projects, index) => (
@@ -270,9 +274,12 @@ const Page = () => {
                           <h1 className='text-white text-2xl font-bold '>
                             {projects.name}
                           </h1>
+                          <h1 className='text-num-orange text-xl font-bold '>
+                            {projects.location}
+                          </h1>
                           <span className='text-white font-bold'>
                             <Button className='w-40  mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                              {`Read more`}
+                              {`Read More`}
                             </Button>
                           </span>
                         </div>
@@ -285,8 +292,10 @@ const Page = () => {
           </div>
         </div>
       )}
-      <h1 className='text-2xl text-num-orange flex justify-center mt-2'>
-        All Projects
+      <h1 className=' text-num-orange flex justify-center m-10 mt-40'>
+        <span className='font-medium text-black text-2xl border border-num-orange hover:bg-num-orange hover:text-white p-1'>
+          All Projects
+        </span>
       </h1>
       <div className='grid md:grid-cols-2 gap-8 mt-4 mb-4'>
         {filteredProjects.map((projects, index) => (
@@ -307,9 +316,12 @@ const Page = () => {
                       <h1 className='text-white text-2xl font-bold '>
                         {projects.name}
                       </h1>
+                      <h1 className='text-num-orange text-xl font-bold '>
+                        {projects.location}
+                      </h1>
                       <span className='text-white font-bold'>
                         <Button className='w-40  mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                          {`Read more`}
+                          {`Read More`}
                         </Button>
                       </span>
                     </div>
@@ -320,10 +332,12 @@ const Page = () => {
           </div>
         ))}
       </div>
-      <div className='flex flex-row justify-center  text-num-indigo font-bold mt-10 mb-4'>
-        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium  mb-4'>
-          Explore More
-        </h2>
+      <div className='flex flex-row justify-center  text-num-indigo font-bold mt-32 mb-4'>
+        <Link href={`/sectors`}>
+          <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium  mb-4'>
+            Explore More
+          </h2>
+        </Link>
       </div>
       <div className='  flex md:flex-row flex-col items-center  justify-center   gap-6 mb-10'>
         <div className='md:flex flex-row gap-2 md:ml-4 mr-4'>
@@ -352,7 +366,7 @@ const Page = () => {
                 <div className='flex flex-row-reverse mt-16  mr-4'>
                   <Link href={`/sectors`}>
                     <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
-                      Explore
+                      All Sectors
                     </Button>
                   </Link>
                 </div>
@@ -384,8 +398,8 @@ const Page = () => {
                 </p>
                 <div className='flex flex-row-reverse  mr-4'>
                   <Link href={`services`}>
-                    <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
-                      Explore
+                    <Button className='w-40 mt-6 text-base bg-num-orange border-0 hover:bg-num-indigo'>
+                      All Services
                     </Button>
                   </Link>
                 </div>

@@ -159,7 +159,7 @@ const Page = () => {
                           </h1>
                           <span className='text-white font-bold'>
                             <Button className='w-40 ml-2 mb-2 mt-2 bg-num-indigo border-0 hover:bg-num-orange'>
-                              {`Read more`}
+                              {`Read More`}
                             </Button>
                           </span>
                         </div>
@@ -183,10 +183,12 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='flex  justify-center  text-num-indigo font-bold mt-10 mb-4'>
-        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium  mb-4'>
-          Explore More
-        </h2>
+      <div className='flex  justify-center  text-num-indigo font-bold mt-32 mb-10'>
+        <Link href={`/projects`}>
+          <h2 className=' md:text-2xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium  mb-4'>
+            Explore More
+          </h2>
+        </Link>
       </div>
       <div className='  flex md:flex-row flex-col items-center  justify-center   gap-6 mb-10'>
         <div className='md:flex flex-row gap-2 md:ml-4 mr-4'>
@@ -215,7 +217,7 @@ const Page = () => {
                 <div className='flex flex-row-reverse mt-16  mr-4'>
                   <Link href={`/sectors`}>
                     <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
-                      Explore
+                      All Sectors
                     </Button>
                   </Link>
                 </div>
@@ -246,8 +248,8 @@ const Page = () => {
                 </p>
                 <div className='flex flex-row-reverse mt-8 mr-4'>
                   <Link href={`projects`}>
-                    <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
-                      Explore
+                    <Button className='w-40 mt-14 text-base bg-num-orange  border-0 hover:bg-num-indigo'>
+                      All Projects
                     </Button>
                   </Link>
                 </div>

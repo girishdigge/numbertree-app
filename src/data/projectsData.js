@@ -320,13 +320,13 @@ export const projects = [
   },
   {
     id: 26,
-    name: 'Magdechhu Hydroelectric Project',
+    name: 'Magadechhu Hydroelectric Project',
     services: ['1'],
     sectors: ['11'],
     locations: ['0'],
     types: ['1'],
     location: 'Bhutan',
-    link: '/projects/magdechhu-bhutan',
+    link: '/projects/magadechhu-bhutan',
     image: '/featuredProjects/bhutan-magadechhu.jpg',
   },
   {

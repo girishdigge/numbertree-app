@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const Testimonials = () => {
   const settings = {
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     dots: false,
     arrows: false,
     infinite: true,

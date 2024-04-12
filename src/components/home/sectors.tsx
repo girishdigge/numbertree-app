@@ -24,8 +24,8 @@ const Sectors = () => {
           {'Uplifting communities, improving access'}
         </h3>
         <h4 className='w-2/5 -translate-y-8 md:text-lg text-sm text-justify ml-2 mb-4 mt-4'>
-          We are infrastructure experts. Adapting to the needs of the companies
-          we serve, is our forte. With close to two decades of experience, we
+          We are infrastructure experts.Adapting to the needs of the companies
+          we serve, is our forte.With close to two decades of experience, we
           have earned the trust of diverse businesses across sectors.
         </h4>
       </div>

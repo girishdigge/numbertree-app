@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
-import { FaFacebookF, FaSquarePhone } from 'react-icons/fa6';
+import { IoMdCall } from 'react-icons/io';
+
+import { FaFacebookF } from 'react-icons/fa6';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FiYoutube } from 'react-icons/fi';
@@ -12,7 +14,7 @@ const Footer = () => {
       <div className='grid  md:grid-col-2  pb-4 h-auto bg-num-indigo '>
         <div className='  flex md:flex-col-2 '>
           <div className='flex md:flex-col-4 md:w-4/5 mt-12 pl-2 text-white '>
-            <div className='flex flex-col md:w-1/5 pl-10'>
+            <div className='flex flex-col gap-2 md:w-1/5 pl-10'>
               <h1 className='mb-2 text-xl font-semibold '>Pages</h1>
               <Link href={`/sectors`}>
                 <p>Sectors</p>
@@ -27,18 +29,18 @@ const Footer = () => {
                 <p>Site Map</p>
               </Link>
             </div>
-            <div className='flex flex-col md:w-1/5 md:pl-0 pl-10'>
+            <div className='flex flex-col gap-2 md:w-1/5 md:pl-0 pl-10'>
               <Link href={`/about`}>
                 <h1 className='mb-2 text-xl font-semibold'>About Numbertree</h1>
               </Link>
               <Link href={`/bim`}>
-                <p>BIM First</p>
+                <p>BIMfirst</p>
               </Link>
               <Link href={`/insights`}>
                 <p>Insights</p>
               </Link>
               <Link href={`/career`}>
-                <p>Career</p>
+                <p>Careers</p>
               </Link>
               <Link href={`/contact`}>
                 <p>Contact Us</p>
@@ -49,36 +51,37 @@ const Footer = () => {
               <div className='grid grid-cols-3'>
                 {/* <h1 className='mb-2 text-xl font-semibold '>Contacts</h1> */}
                 <div>
-                  <h2 className='font-bold text-lg'>Mumbai Office</h2>
-                  <span className='flex'>
-                    <FaSquarePhone size={20} className='text-white' />
+                  <h2 className='font-bold text-lg mb-4'>Mumbai Office</h2>
+                  <span className='flex '>
+                    <IoMdCall size={20} className='text-white ' />
                     {`022-49617073`}
                   </span>
-                  <p className='mb-4 mt-2 text-sm w-5/6'>
-                    502 Town Centre-1,Andheri Kurla Road,Andheri East, Mumbai,
-                    400059
-                  </p>
+
+                  <p className='mt-2 text-sm w-5/6'>502 Town Centre-1,</p>
+                  <p className=' text-sm w-5/6'>Andheri Kurla Road,</p>
+                  <p className=' text-sm w-5/6'>Andheri East,</p>
+                  <p className=' text-sm w-5/6'>Mumbai-400059.</p>
                 </div>
                 <div>
-                  <h2 className='font-bold text-lg'>Delhi Office </h2>
+                  <h2 className='font-bold text-lg mb-4'>Delhi Office </h2>
                   <span className='flex'>
-                    <FaSquarePhone size={20} className='text-white' />
+                    <IoMdCall size={20} className='text-white' />
                     {`011-41458409`}
                   </span>
-                  <p className='mb-4 mt-2 text-sm w-4/5'>
-                    A-99, 3rd Floor, Lajpat Nagar 2, New Delhi, 110018
-                  </p>
+                  <p className='mt-2 text-sm w-4/5'>A-99, 3rd Floor,</p>
+                  <p className=' text-sm w-4/5'>Lajpat Nagar 2,</p>
+                  <p className=' text-sm w-4/5'>New Delhi-110018.</p>
                 </div>
                 <div>
-                  <h2 className='font-bold text-lg'>Dubai Office </h2>
+                  <h2 className='font-bold text-lg mb-4'>Dubai Office </h2>
                   <span className='flex'>
-                    <FaSquarePhone size={20} className='text-white' />
+                    <IoMdCall size={20} className='text-white' />
                     {`+971 50 815 4933`}
                   </span>
-                  <p className='mb-4 mt-2 text-sm w-5/6'>
-                    Office No.1043-0, Dawood Building, Hor AL ANZ, Al Barsha PO
-                    Box 80080, United Arab Emirates
-                  </p>
+                  <p className='mt-2 text-sm w-5/6'>Office No.1043-0,</p>
+                  <p className=' text-sm w-5/6'>Dawood Building,Hor AL ANZ,</p>
+                  <p className=' text-sm w-5/6'>Al Barsha PO Box-80080,</p>
+                  <p className=' text-sm w-5/6'>United Arab Emirates.</p>
                 </div>
               </div>
             </div>
@@ -96,29 +99,61 @@ const Footer = () => {
               <Link
                 href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
               >
-                <FaFacebookF size={30} className='bg-white p-1  rounded-xl' />
+                <Image
+                  src={`/images/facebook.png`}
+                  width={32}
+                  height={32}
+                  alt='logo'
+                />
+                {/* <FaFacebookF size={30} className='bg-white p-1  rounded-xl' /> */}
               </Link>
               <Link href={``}>
-                <FaInstagram size={30} className='bg-white p-1  rounded-xl' />
+                <Image
+                  src={`/images/instagram.png`}
+                  width={32}
+                  height={32}
+                  alt='logo'
+                />
+                {/* <FaInstagram size={30} className='bg-white p-1  rounded-xl' /> */}
               </Link>
               <Link
                 href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
               >
-                <FaLinkedinIn size={30} className='bg-white p-1 rounded-xl' />
+                <Image
+                  src={`/images/linkedin-1.png`}
+                  width={32}
+                  height={32}
+                  alt='logo'
+                />
+                {/* <FaLinkedinIn size={30} className='bg-white p-1 rounded-xl' /> */}
+              </Link>
+              <Link href={``}>
+                <Image
+                  src={`/images/youtube.png`}
+                  width={32}
+                  height={32}
+                  alt='logo'
+                />
+                {/* <FiYoutube size={30} className='bg-white p-1 rounded-xl' /> */}
               </Link>
               <Link
                 href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
               >
-                <FiYoutube size={30} className='bg-white p-1 rounded-xl' />
-              </Link>
-              <Link
-                href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
-              >
-                <FaXTwitter size={30} className='bg-white p-1 rounded-xl' />
+                <Image
+                  src={`/images/twitter.png`}
+                  width={32}
+                  height={32}
+                  alt='logo'
+                />
+                {/* <FaXTwitter size={30} className='bg-white p-1 rounded-xl' /> */}
               </Link>
             </div>
-            <p className='text-white font-md w-2/3 mr-10 mt-4'>
-              &copy; 2024 Numbertree. All Rights Reserved.
+
+            <p className='text-white ml-8 font-md w-2/3 mr-10 mt-4'>
+              &copy; 2024 Numbertree LLP.
+            </p>
+            <p className='text-white ml-8 font-md w-2/3 mr-10 '>
+              All Rights Reserved.
             </p>
           </div>
         </div>
@@ -158,7 +193,7 @@ const Footer = () => {
             &copy; 2024 Numbertree. All Rights Reserved.
           </p>
         </div>
-        <div className='flex text-white'>
+        <div className='flex text-white mt-8'>
           <div className='md:flex hidden flex-col w-1/2 ml-12'>
             <h1 className='mb-2 text-xl font-semibold'>Enquiry</h1>
             <div className='grid grid-cols-2'>

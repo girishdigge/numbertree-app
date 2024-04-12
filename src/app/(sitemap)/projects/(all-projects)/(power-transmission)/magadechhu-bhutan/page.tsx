@@ -34,7 +34,7 @@ const Page = () => {
         </Link>
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>
-          Magdechhu Hydroelectric Project
+          Magadechhu Hydroelectric Project
         </p>
       </div>
       <div className='relative '>
@@ -52,7 +52,7 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Magdechhu Hydroelectric Project
+                Magadechhu Hydroelectric Project
               </h1>
               {/* <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Package 2
@@ -274,7 +274,7 @@ const Page = () => {
               className='object-contain group-hover:opacity-95' // Fade image slightly on hover
             />
             <Link href={`/sectors/aviation`}>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-0'>
                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Sector</h1>

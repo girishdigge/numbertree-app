@@ -54,10 +54,10 @@ const Page = () => {
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Insights
               </h1>
-              <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
+              {/* <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
                 Get in touch with our global experts to discover how Numbertree
                 can help you realize your vision.
-              </p>
+              </p> */}
             </div>
 
             <Link href={`/contact/proposal`} className='animate-fadeInUp'>

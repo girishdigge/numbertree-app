@@ -75,7 +75,7 @@ const Keyfacts = () => {
 
         <h3 className='-translate-y-10 md:text-3xl font-medium w-1/2  mt-2  ml-1'>
           {
-            'We are committed to working collaboratively to understand business goals and create a strategy to achieve them. '
+            'We are committed to working collaboratively. We understand business goals and create a strategy to achieve them.'
           }
         </h3>
         <div className='grid  bg-num-indigo text-white'>

@@ -162,12 +162,12 @@ export function NavigationBar() {
                     className='flex w-full pl-2 pr-2 select-none flex-col justify-end rounded-md border-r-2 rounded-r-none border-num-orange bg-gradient-to-b from-muted/50 to-muted p-6  no-underline outline-none focus:shadow-md'
                     href='/about'
                   >
-                    <Logo />
+                    {/* <Logo /> */}
                     <div className='mb-2 mt-4 text-2xl font-bold  text-num-indigo animate-fadeLeftTitle'>
                       About Us
                     </div>
                     {/* <p className='text-base leading-tight text-muted-foreground w-11/12'> */}
-                    <p className='text-xl w-3/5 font-semibold  animate-fadeLeft'>
+                    <p className='text-xl w-3/5 font-semibold mb-6  animate-fadeLeft pb-4'>
                       We are Infrastructure Experts
                     </p>
                   </a>
@@ -175,7 +175,7 @@ export function NavigationBar() {
               </li>
               <div className='flex gap-6'>
                 <div className=' border-r-2 border-num-orange pr-12 pl-2'>
-                  <ListItem href='/about' title='Our Vission' />
+                  <ListItem href='/about' title='Our Vision' />
                   <ListItem href='/about' title='Our Mission' />
                   <ListItem href='/about' title='Our Approach' />
 
@@ -320,7 +320,7 @@ export function NavigationBar() {
                   <div>
                     <div className=' border-r-2 border-num-orange pr-12'>
                       <h1 className='font-bold text-xl ml-2'>
-                        Urban Development
+                        Urban Infrastructure
                       </h1>
                       <ListItem title='Commercial' href='/sectors/commercial' />
                       <ListItem title='Industrial' href='/sectors/industrial' />
@@ -437,7 +437,7 @@ export function NavigationBar() {
                   Taking projects from complexity to profitability
                 </p>
               </div>
-              <ul className='grid grid-cols-1 w-[400px] gap-3 p-6 md:w-[500px]  lg:w-[600px] '>
+              <ul className='grid grid-cols-1 w-[400px] gap-3 p-6 md:w-[500px]  lg:w-[1000px] '>
                 {projects.map((project) => (
                   <ListItem
                     key={project.title}
@@ -477,7 +477,7 @@ export function NavigationBar() {
                   We promise growth, inclusion and diversity
                 </p>
               </div>
-              <ul className='grid grid-cols-1 w-[400px] gap-3 p-10 md:w-[500px]  lg:w-[700px] '>
+              <ul className='grid grid-cols-1 w-[400px] gap-3 p-10 md:w-[500px]  lg:w-[1000px] '>
                 {careers.map((career) => (
                   <ListItem
                     key={career.title}

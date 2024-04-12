@@ -440,9 +440,12 @@
 //       </div>
 
 //       <div className='flex  mt-20'>
+//<Link href={`/services`}>
+
 //         <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
 //           Explore More
 //         </h2>
+// </Link>
 //       </div>
 //       <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
 //         <div className='flex overflow-hidden'>
@@ -455,7 +458,7 @@
 //               className='object-contain group-hover:opacity-95 ' // Fade image slightly on hover
 //             />
 //             <Link href={`/services/techno-commercial-audit`}>
-//               <div className='z-2 absolute inset-0 flex flex-col justify-end mb-5'>
+//               <div className='z-2 absolute inset-0 flex flex-col justify-end mb-0'>
 //                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
 //                   <div className='ml-8'>
 //                     <h1 className='text-num-orange ml-1'>Service</h1>
