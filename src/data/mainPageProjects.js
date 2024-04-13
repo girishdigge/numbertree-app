@@ -11,7 +11,7 @@ export const MainPageProjects = [
     link: '/projects/featured-projects/new-parliment',
   },
   {
-    name: 'ITPO Complex –convention centre at Pragati Maidan, New Delhi',
+    name: 'ITPO Complex –convention centre at Pragati Maidan',
     location: 'New Delhi ',
     value: '2150 Cr(INR)',
     date: 'Sep 2023',
