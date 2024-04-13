@@ -80,7 +80,7 @@ const Keyfacts = () => {
         </h3>
         <div className='grid  bg-num-indigo text-white'>
           <Marquee pauseOnHover={true} speed={75}>
-            <div className=' grid grid-cols-5 p-4 '>
+            <div className=' grid grid-cols-5 p-0 '>
               {images.map((image, index) => (
                 <div key={index} className='p-8'>
                   <div className='flex flex-col items-center justify-center  '>

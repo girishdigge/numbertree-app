@@ -23,13 +23,13 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Magdechhu Hydroelectric Project',
+      name: 'Magadechhu Hydroelectric Project',
       location: 'Bhutan',
       link: '/projects/magdechhu-bhutan',
       image: '/featuredProjects/bhutan-magadechhu.jpg',
     },
     {
-      name: 'Nuclear Fuel Complex, Kota',
+      name: 'Nuclear Fuel Complex',
 
       location: 'Kota',
       link: '/projects/nuclear-fuel-kota',
@@ -265,9 +265,7 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-2xl text-xl font-bold '>
-                            {project.name}
-                          </h3>
+                          <h3 className='text-xl font-bold '>{project.name}</h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
                             {project.location}
                           </h2>
@@ -296,22 +294,22 @@ const Page = () => {
           </h2>
         </Link>
       </div>
-      <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
-        <div className='flex overflow-hidden'>
+      <div className='md:grid md:grid-cols-2 gap-1 '>
+        <div className='flex overflow-hidden pb-4'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image
-              src={`/services/TechnoComAudit.jpg`}
+              src={`/services/TechnoComAudit3.jpg`}
               height={800}
               width={800}
-              alt='techno-commercial-audit'
-              className='object-contain group-hover:opacity-95 ' // Fade image slightly on hover
+              alt='services'
+              className='object-contain group-hover:opacity-95' // Fade image slightly on hover
             />
             <Link href={`/services/techno-commercial-audit`}>
-              <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                <div className=' text-white bg-black bg-opacity-50 flex flex-col pb-5'>
+              <div className='z-2 absolute inset-0 flex flex-col justify-end mb-0'>
+                <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                   <div className='ml-8'>
                     <h1 className='text-num-orange ml-1'>Service</h1>
-                    <h2 className='font-bold  md:text-2xl'>
+                    <h2 className='font-bold pb-2 md:text-2xl'>
                       Techno-Commercial Audit
                     </h2>
                   </div>
@@ -321,61 +319,15 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-2  align-end '>
+        <div className='grid grid-cols-2 gap-2 pb-4 align-center ml-1 '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/services/ContractAdministration.jpg`}
+                src={`/services/ClaimManagement3.jpg`}
                 height={400}
                 width={400}
-                alt='contract-administration'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-              />
-              <Link href={`/services/contract-administration`}>
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold mb-2  md:text-2xl'>
-                        Contract Administration & Bill Verification
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className='flex overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Image
-                src={`/services/ProjectMonCon.jpg`}
-                height={400}
-                width={400}
-                alt=''
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-              />
-              <Link href={`/services/project-monitoring-and-control`}>
-                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                    <div className='ml-8'>
-                      <h1 className='text-num-orange ml-1'>Service</h1>
-                      <h2 className='font-bold pb-2  md:text-2xl'>
-                        Project Management Consultancy
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className='flex overflow-hidden'>
-            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-              <Image
-                src={`/services/ClaimManagement.jpg`}
-                height={400}
-                width={400}
-                alt='claim management'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+                alt='project'
+                className=' object-contain group-hover:opacity-90 ' // Fade image slightly on hover
               />
               <Link href={`/services/claim-management`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
@@ -394,19 +346,63 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/bim/arup.jpg`}
+                src={`/services/bim.jpg`}
                 height={400}
                 width={400}
                 alt='bim'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+                className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
               />
               <Link href={`/bim`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
                     <div className='ml-8'>
                       <h1 className='text-num-orange ml-1'>Service</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>BIMfirst</h2>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className='flex overflow-hidden'>
+            <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/services/ContractAdministration4.jpg`}
+                height={400}
+                width={400}
+                alt='Contract Administration'
+                className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
+              />
+              <Link href={`/services/contract-administration`}>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Service</h1>
                       <h2 className='font-bold pb-2  md:text-2xl'>
-                        3D/4D/5D BIM
+                        Contract Administration & Bill Verification
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className='flex overflow-hidden'>
+            <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+              <Image
+                src={`/services/ProjectMonCon3.jpg`}
+                height={400}
+                width={400}
+                alt='project'
+                className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
+              />
+              <Link href={`/services/project-monitoring-and-control`}>
+                <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+                  <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+                    <div className='ml-8'>
+                      <h1 className='text-num-orange ml-1'>Service</h1>
+                      <h2 className='font-bold pb-2  md:text-2xl'>
+                        Project Management Consultancy
                       </h2>
                     </div>
                   </div>

@@ -286,7 +286,7 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-xl text-xl font-bold '>
+                          <h3 className=' text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>

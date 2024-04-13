@@ -472,24 +472,77 @@
 //           </div>
 //         </div>
 
-//         <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
+//       <div className='flex  mt-24'>
+//         <Link href={`/services`}>
+//           <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
+//             Explore More
+//           </h2>
+//         </Link>
+//       </div>
+//       <div className='md:grid md:grid-cols-2 gap-1 '>
+//         <div className='flex overflow-hidden pb-4'>
+//           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
+//             <Image
+//               src={`/services/TechnoComAudit3.jpg`}
+//               height={800}
+//               width={800}
+//               alt='services'
+//               className='object-contain group-hover:opacity-95' // Fade image slightly on hover
+//             />
+//             <Link href={`/services/techno-commercial-audit`}>
+//               <div className='z-2 absolute inset-0 flex flex-col justify-end mb-0'>
+//                 <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+//                   <div className='ml-8'>
+//                     <h1 className='text-num-orange ml-1'>Service</h1>
+//                     <h2 className='font-bold pb-2 md:text-2xl'>
+//                       Techno-Commercial Audit
+//                     </h2>
+//                   </div>
+//                 </div>
+//               </div>
+//             </Link>
+//           </div>
+//         </div>
+
+//         <div className='grid grid-cols-2 gap-2 pb-4 align-center ml-1 '>
 //           <div className='flex overflow-hidden'>
 //             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
 //               <Image
-//                 src={`/services/ContractAdministration.jpg`}
+//                 src={`/services/ClaimManagement3.jpg`}
 //                 height={400}
 //                 width={400}
-//                 alt='contract-administration'
-//                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+//                 alt='project'
+//                 className=' object-contain group-hover:opacity-90 ' // Fade image slightly on hover
 //               />
-//               <Link href={`/services/contract-administration`}>
+//               <Link href={`/services/claim-management`}>
 //                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
 //                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
 //                     <div className='ml-8'>
 //                       <h1 className='text-num-orange ml-1'>Service</h1>
 //                       <h2 className='font-bold pb-2  md:text-2xl'>
-//                         Contract Administration
+//                         Construction Claim Management
 //                       </h2>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             </div>
+//           </div>
+//           <div className='flex overflow-hidden'>
+//             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
+//               <Image
+//                 src={`/services/bim.jpg`}
+//                 height={400}
+//                 width={400}
+//                 alt='bim'
+//                 className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
+//               />
+//               <Link href={`/bim`}>
+//                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
+//                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
+//                     <div className='ml-8'>
+//                       <h1 className='text-num-orange ml-1'>Service</h1>
+//                       <h2 className='font-bold pb-2  md:text-2xl'>BIMfirst</h2>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -499,19 +552,19 @@
 //           <div className='flex overflow-hidden'>
 //             <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
 //               <Image
-//                 src={`/services/QuantitySurvey.jpg`}
+//                 src={`/services/ContractAdministration4.jpg`}
 //                 height={400}
 //                 width={400}
-//                 alt='quantity-survey'
-//                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+//                 alt='Contract Administration'
+//                 className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
 //               />
-//               <Link href={`/services/quantity-survey`}>
+//               <Link href={`/services/contract-administration`}>
 //                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
 //                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
 //                     <div className='ml-8'>
 //                       <h1 className='text-num-orange ml-1'>Service</h1>
 //                       <h2 className='font-bold pb-2  md:text-2xl'>
-//                         Quantity Survey
+//                         Contract Administration & Bill Verification
 //                       </h2>
 //                     </div>
 //                   </div>
@@ -522,42 +575,19 @@
 //           <div className='flex overflow-hidden'>
 //             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
 //               <Image
-//                 src={`/bim/arup.jpg`}
+//                 src={`/services/ProjectMonCon3.jpg`}
 //                 height={400}
 //                 width={400}
-//                 alt='bim'
-//                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+//                 alt='project'
+//                 className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
 //               />
-//               <Link href={`/bim`}>
+//               <Link href={`/services/project-monitoring-and-control`}>
 //                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
 //                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
 //                     <div className='ml-8'>
 //                       <h1 className='text-num-orange ml-1'>Service</h1>
 //                       <h2 className='font-bold pb-2  md:text-2xl'>
-//                         3D/4D/5D BIM
-//                       </h2>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </Link>
-//             </div>
-//           </div>
-//           <div className='flex overflow-hidden'>
-//             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
-//               <Image
-//                 src={`/services/BusinessTransformation.jpg`}
-//                 height={400}
-//                 width={400}
-//                 alt='Business Transformation'
-//                 className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
-//               />
-//               <Link href={`/services/business-transformation`}>
-//                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
-//                   <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-//                     <div className='ml-8'>
-//                       <h1 className='text-num-orange ml-1'>Service</h1>
-//                       <h2 className='font-bold pb-2  md:text-2xl'>
-//                         Business Transformation
+//                         Project Management Consultancy
 //                       </h2>
 //                     </div>
 //                   </div>

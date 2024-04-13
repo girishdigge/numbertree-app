@@ -25,13 +25,13 @@ const Page = () => {
     {
       name: 'Manohar International Airport or new Goa Airport',
 
-      location: 'goa',
+      location: 'Goa',
       link: '/projects/goa-airport',
       image: '/projects/GoaAirport.jpg',
     },
     {
-      name: 'Construction of ship building workshop at Goa Shipyard',
-      location: 'goa',
+      name: 'Construction of ship building workshop',
+      location: 'Goa Shipyard',
       link: '/projects/goa-shipyard',
       image: '/projects/GoaShipyard.jpeg',
     },
@@ -55,7 +55,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/services/QuantitySurvey.jpg`}
+          src={`/services/ClaimManagement.jpg`}
           width={2046}
           height={768}
           alt='Construction Claim Management'
@@ -229,52 +229,7 @@ const Page = () => {
           <GetInTouch />
         </div>
       </div>
-      {/* <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
-        <div className='w-1/4'></div>
-        <div className='flex flex-col w-3/5  mr-14'>
-          <div>
-            <h2 className='text-3xl font-bold  mb-4'>ERP & SOP Integration</h2>
-            <hr className='border-b-2  border-num-orange' />
-          </div>
-          <p className='md:text-2xl text-xs mt-4 mb-0 flex '>
-            We offer specialized ERP and SOP implementation services tailored
-            for infrastructure projects. We empower clients to effectively
-            manage and optimize their project operations, ensuring seamless
-            coordination, improved efficiency, and regulatory compliance. Our
-            service entails:
-          </p>{' '}
-          <br />
-          <div className='text-lg'>
-            <li>ERP Selection and Customization</li>
-            <li>SOP Development and Implementation</li>
-            <li>Data Managementand Integration</li>
-            <li>Project Performance Monitoring and Reporting</li>
-            <li>Change Management and User Training</li>
-            <li>Compliance and Audit Readiness</li>
-          </div>
-          <p className='md:text-lg text-xs mt-4 mb-0 flex '>
-            Our technical expertise, coupled with industry-specific knowledge,
-            enables us to deliver solutions that streamline operations, optimize
-            resource utilization, and drive the success of
-            infrastructure projects.
-          </p>{' '}
-          <br />
-        </div>
-        <div className='md:inline relative hidden mt-20 w-2/5'>
-          <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
-            <p className='text-xl font-medium  mb-2 '>
-              <em>
-                {' '}
-                {`Our Techno-Commercial Audit, has earned the trust of industry leaders seeking transformation and growth.With a wealth of experience spanning close to two decades, we specialize in providing expert audits that drive optimal results for infrastructure projects`}
-              </em>
-            </p>
-            <div className='flex justify-end '>
-              <FaQuoteLeft size={40} className='text-wilmer-orange ' />
-            </div>
-          </div>
-        </div> 
-        <div className='w-1/4'></div>
-      </div> */}
+
       <div className='md:hidden p-16 flex  justify-center '>
         <GetInTouch />
       </div>
@@ -309,7 +264,7 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-2xl text-xl font-bold '>
+                          <h3 className=' text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
@@ -332,7 +287,6 @@ const Page = () => {
           <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
-
       <div className='flex  mt-24'>
         <Link href={`/sectors`}>
           <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>

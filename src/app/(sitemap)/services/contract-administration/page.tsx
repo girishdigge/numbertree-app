@@ -5,11 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
-import { FaFacebookF } from 'react-icons/fa6';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
-import { Card, CardContent } from '@/components/ui/card';
+
 import {
   Carousel,
   CarouselContent,
@@ -35,12 +31,12 @@ const Page = () => {
     },
     {
       id: 30,
-      name: 'State Sports Academy cum International Standard Modern Cricket Stadium at Rajgir, Nalanda ,Bihar',
+      name: 'International Standard Modern Cricket Stadium',
       services: ['1'],
       sectors: ['6'],
       locations: ['4'],
       types: ['2'],
-      location: 'bihar',
+      location: 'Rajgir, Nalanda ,Bihar',
       link: '/projects/sports-academy-bihar',
       image: '/projects/sports-academy-bihar.jpg',
     },
@@ -246,7 +242,7 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='md:text-2xl text-xl font-bold '>
+                          <h3 className=' text-xl font-bold '>
                             {project.name}
                           </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
@@ -269,17 +265,18 @@ const Page = () => {
           <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
-
       <div className='flex  mt-24'>
-        <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
-          Explore More
-        </h2>
+        <Link href={`/sectors`}>
+          <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>
+            Explore More
+          </h2>
+        </Link>
       </div>
-      <div className='md:grid md:grid-cols-2 gap-1 bg-black  bg-opacity-10'>
-        <div className='flex overflow-hidden'>
+      <div className='md:grid md:grid-cols-2 gap-1 '>
+        <div className='flex overflow-hidden pb-4'>
           <div className=' group relative hover:scale-110 transform transition duration-500 ease-in-out overflow:hidden'>
             <Image
-              src={`/sectors/Aviation.jpg`}
+              src={`/sectors/Aviation2.jpg`}
               height={800}
               width={800}
               alt='sector'
@@ -298,15 +295,15 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-1 pb-4 align-middle '>
+        <div className='grid grid-cols-2 gap-2 pb-4 align-center ml-1 '>
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/OilGas1.jpg`}
+                src={`/sectors/OilGas2.jpg`}
                 height={400}
                 width={400}
                 alt='project'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+                className=' object-contain group-hover:opacity-90 ' // Fade image slightly on hover
               />
               <Link href={`/sectors/oil-gas`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
@@ -323,11 +320,11 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className='group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/Commercial1.jpg`}
+                src={`/sectors/Commercial2.jpg`}
                 height={400}
                 width={400}
                 alt='project'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+                className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
               />
               <Link href={`/sectors/commercial`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
@@ -346,11 +343,11 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/Industrial1.jpg`}
+                src={`/sectors/Industrial2.jpg`}
                 height={400}
                 width={400}
                 alt='project'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+                className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
               />
               <Link href={`/sectors/industrial`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
@@ -369,11 +366,11 @@ const Page = () => {
           <div className='flex overflow-hidden'>
             <div className=' group relative hover:scale-110 transition duration-500 ease-in-out'>
               <Image
-                src={`/sectors/Institutional1.jpg`}
+                src={`/sectors/Institutional2.jpg`}
                 height={400}
                 width={400}
                 alt='project'
-                className='object-cover group-hover:opacity-90 ' // Fade image slightly on hover
+                className='object-contain group-hover:opacity-90 ' // Fade image slightly on hover
               />
               <Link href={`/sectors/institutional`}>
                 <div className='z-2 absolute inset-0 flex flex-col justify-end '>
