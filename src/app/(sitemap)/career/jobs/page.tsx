@@ -73,9 +73,9 @@ const Page = () => {
                         {job.location}
                       </span>
                     </h2>
-                    <h3 className='text-xl mb-2 text-num-blue'>
+                    {/* <h3 className='text-xl mb-2 text-num-blue'>
                       Career Area:{job.area}
-                    </h3>
+                    </h3> */}
                     <h4 className='text-xl text-num-indigo'>
                       Skills Required:{job.skills}
                     </h4>
