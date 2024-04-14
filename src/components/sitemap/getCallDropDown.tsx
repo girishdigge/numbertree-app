@@ -10,7 +10,7 @@ import {
 
 import { Label } from '@radix-ui/react-dropdown-menu';
 
-import { ConnectInputForm } from './connectInput';
+import { ConnectInputForm } from './connectInputDropdown';
 const GetCallDropDown = () => {
   return (
     <div>
@@ -21,8 +21,10 @@ const GetCallDropDown = () => {
           </Label>{' '}
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel className='text-lg bg-gray-100'>
-            Request a call from us
+          <DropdownMenuLabel className='text-lg bg-num-indigo'>
+            <h1 className='text-xl tracking-widest text-white ml-4 pt-2'>
+              Request a call from us
+            </h1>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
           <ConnectInputForm />

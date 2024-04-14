@@ -161,21 +161,21 @@ const Page = () => {
           </h1> */}
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`Buddha Smriti Stupa is the central attraction of the buddha smriti park in Patna, Bihar. The stupa popularly known as Patliputra Karuna Stupa, is approx. 200 feet high and is situated in the middle of the Buddha Smriti Park. The peaceful 9-hectare park, inaugurated by the Dalai Lama in 2010, is notable for its massive sandblasted charcoal stupa which houses a unique, bulletproof relic chamber, and sapling planted  from both the Bodhi Tree in Bodhgaya and Anuradhapura in Sri Lanka. The relic chamber in the stupa , houses the pot containing holy ashes of the Buddha `}
+              {`The state government has taken several steps to develop sports infrastructure in Bihar `}
             </p>{' '}
             <br />
             {/* <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'></p>{' '}
             <br /> */}
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The pot containing ashes of Buddha was notably excavated from Vaishali. The Buddha smriti museum is also located within this park. The museum has relics from Japan, Myanmar, South Korea, Sri Lanka and Thailand . A prayer hall is also part of the entire development.`}
+              {`The state government is aiming to inaugurate the sports academy- cum- international stadium being developed over more than 90-acres at Rajgir next year on the occasion of Bihar Diwas, the state culture minister said. The upcoming facility in Bihar’s heritage city is estimated to cost ₹740 crore. Almost 60% work of the international stadium- cum- sports academy has already been done. `}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`The strikingly modern Buddhist Museum is worthwhile, and there is also a library and a meditation. The Buddha Smriti Museum is planned to interpret the stories associated with the Buddha and the ongoing legacy of Buddhism as a philosophy and major world religion. `}
+              {`He said the facility will be the first of its kind. The stadium has been designed to house 40,000 spectators at a time and is divided into six blocks and will support 25 games including cricket, football and swimming. Besides, it is slated to have a hall to seat 1,500 persons, a sports library, a well-equipped hospital, a wellness centre, motivational centre, sports stores and other basic amenities, officials said. The sports academy will have office and accommodation facilities for officials, students, players and coaches. `}
             </p>{' '}
             <br />
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-4'>
-              {`Numbertree was entrusted with internal audit of the entire project by the developers. `}
+              {`Numbertree was entrusted as techno commercial auditor for the project during the early phase.`}
             </p>{' '}
             <br />
           </div>
