@@ -16,8 +16,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     (job) =>
       job.title.toLowerCase().includes(term.toLowerCase()) ||
       job.location.toLowerCase().includes(term.toLowerCase()) ||
-      job.skills.toLowerCase().includes(term.toLowerCase()) ||
-      job.area.toLowerCase().includes(term.toLowerCase())
+      job.skills.toLowerCase().includes(term.toLowerCase())
+    // || job.area.toLowerCase().includes(term.toLowerCase())
   );
   if (filteredJobs.length === 0) {
     return (
@@ -44,9 +44,9 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                     {job.location}
                   </span>
                 </h2>
-                <h3 className='text-xl mb-2 text-num-blue'>
+                {/* <h3 className='text-xl mb-2 text-num-blue'>
                   Career Area:{job.area}
-                </h3>
+                </h3> */}
                 <h4 className='text-xl text-num-indigo'>
                   Skills Required:{job.skills}
                 </h4>
