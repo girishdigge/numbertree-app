@@ -95,13 +95,19 @@ const Page = () => {
         <div className='flex flex-col w-1/4 mt-24 ml-10'>
           <div className='flex flex-col bg-num-indigo p-10 m-10'>
             <h1 className='text-white'>{`Don't see what you're looking for?`}</h1>
-            <h2 className='text-white'>Connect with us:</h2>
-            <Button className='bg-num-orange'>Follow us on linkedin</Button>
+            <h2 className='text-white'>Connect with us</h2>
+            <Link
+              href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
+            >
+              <Button className='bg-num-orange'>Follow us on linkedin</Button>
+            </Link>
           </div>
           <div className='flex flex-col border-2 border-num-orange p-10 m-10'>
-            <h1>{`Want to know more about Number tree?`}</h1>
-            <h2>Explore our:</h2>
-            <Button className='bg-num-indigo'>Life at Numbertree</Button>
+            <h1>{`Want to know more about Numbertree?`}</h1>
+            <h2>Explore:</h2>
+            <Link href={`/career/life-at-numbertree`}>
+              <Button className='bg-num-indigo'>Life at Numbertree</Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,172 +1,123 @@
 export const ExploreArticles = [
   {
     type: 'article',
-    date: '10 Mar 2024',
-    image: '/insights/1.jpg',
-    title: 'The Future of Artificial Intelligence',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+    date: '14 April 2024',
+    image: '/insights/5d-bim.png',
+    title: '5D BIM & Cost optimization in infra projects ',
+    content: `In the dynamic landscape of infrastructure development, the pursuit 
+of efficiency and cost optimization has never been more crucial. 
+5D Building Information Modelling (BIM) is a transformative tool 
+that goes beyond traditional 3D models
+`,
+    link: '/insights/5D-BIM-Cost-Optimization',
   },
   {
     type: 'article',
-    date: '15 Apr 2024',
-    image: '/insights/2.jpg',
-    title: 'Advancements in Renewable Energy Technologies',
+    date: '04 Apr 2024',
+    image: '/insights/twin.png',
+    title: 'Digital Twin- Transformative Trend in Infrastructure',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    link: '#',
+      'In the rapidly evolving landscape of infrastructure development, the concept of a "Digital Twin" has emerged as a revolutionary force, reshaping the way complex projects are conceived, designed, and managed',
+    link: '/insights/digital-twin',
   },
   {
     type: 'article',
-    date: '28 May 2024',
-    image: '/insights/3.jpg',
-    title: 'Exploring Space Travel Possibilities',
+    date: '31 March 2024',
+    image: '/insights/3d-bim.png',
+    title: 'BIM & Level of detail ',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+      'BIM can be implemented at different levels of detail (LOD) to cater to various purposes throughout the construction project.The LOD framework encompasses six levels, ranging from LOD 100 to LOD 500, each representing different degrees of detail and development in the BIM model.  ',
+    link: '/insights/bim-level-detail',
   },
 ];
 
 export const FeaturedArticles = [
-  // {
-  //   type: 'article',
-  //   date: '10 Mar 2024',
-  //   image: '/insights/1.jpg',
-  //   title: 'The Future of Artificial Intelligence',
-  //   content:
-  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  //   link: '#',
-  // },
   {
     type: 'article',
-    date: '15 Apr 2024',
-    image: '/insights/2.jpg',
-    title: 'Advancements in Renewable Energy Technologies',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    link: '#',
+    date: '14 April 2024',
+    image: '/insights/5d-bim.png',
+    title: '5D BIM & Cost optimization in infra projects ',
+    content: `In the dynamic landscape of infrastructure development, the pursuit 
+of efficiency and cost optimization has never been more crucial. 
+5D Building Information Modelling (BIM) is a transformative tool 
+that goes beyond traditional 3D models
+`,
+    link: '/insights/5D-BIM-Cost-Optimization',
   },
   {
     type: 'article',
-    date: '28 May 2024',
-    image: '/insights/3.jpg',
-    title: 'Exploring Space Travel Possibilities',
+    date: '04 Apr 2024',
+    image: '/insights/twin.png',
+    title: 'Digital Twin- Transformative Trend in Infrastructure',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
-
-  {
-    type: 'article',
-    date: '3 Jun 2024',
-    image: '/insights/4.jpg',
-    title: 'The Impact of Climate Change on Global Economy',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+      'In the rapidly evolving landscape of infrastructure development, the concept of a "Digital Twin" has emerged as a revolutionary force, reshaping the way complex projects are conceived, designed, and managed',
+    link: '/insights/digital-twin',
   },
   {
     type: 'article',
-    date: '12 Jul 2024',
-    image: '/insights/5.jpg',
-    title: 'Latest Developments in Biotechnology',
+    date: '31 March 2024',
+    image: '/insights/3d-bim.png',
+    title: 'BIM & Level of detail ',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+      'BIM can be implemented at different levels of detail (LOD) to cater to various purposes throughout the construction project.The LOD framework encompasses six levels, ranging from LOD 100 to LOD 500, each representing different degrees of detail and development in the BIM model.  ',
+    link: '/insights/bim-level-detail',
   },
 ];
 
 export const Articles = [
   {
     type: 'article',
-    date: '10 Mar 2024',
-    image: '/insights/1.jpg',
-    title: 'The Future of Artificial Intelligence',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: `/insights/The-Future-of-Artificial-Intelligence`,
+    date: '14 April 2024',
+    image: '/insights/5d-bim.png',
+    title: '5D BIM & Cost optimization in infra projects ',
+    content: `In the dynamic landscape of infrastructure development, the pursuit 
+of efficiency and cost optimization has never been more crucial. 
+5D Building Information Modelling (BIM) is a transformative tool 
+that goes beyond traditional 3D models
+`,
+    link: '/insights/5D-BIM-Cost-Optimization',
   },
   {
     type: 'article',
-    date: '15 Apr 2024',
-    image: '/insights/2.jpg',
-    title: 'Advancements in Renewable Energy Technologies',
+    date: '04 Apr 2024',
+    image: '/insights/twin.png',
+    title: 'Digital Twin- Transformative Trend in Infrastructure',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    link: '#',
+      'In the rapidly evolving landscape of infrastructure development, the concept of a "Digital Twin" has emerged as a revolutionary force, reshaping the way complex projects are conceived, designed, and managed',
+    link: '/insights/digital-twin',
   },
   {
     type: 'article',
-    date: '28 May 2024',
-    image: '/insights/3.jpg',
-    title: 'Exploring Space Travel Possibilities',
+    date: '31 March 2024',
+    image: '/insights/3d-bim.png',
+    title: 'BIM & Level of detail ',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
-
-  {
-    type: 'article',
-    date: '3 Jun 2024',
-    image: '/insights/4.jpg',
-    title: 'The Impact of Climate Change on Global Economy',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+      'BIM can be implemented at different levels of detail (LOD) to cater to various purposes throughout the construction project.The LOD framework encompasses six levels, ranging from LOD 100 to LOD 500, each representing different degrees of detail and development in the BIM model.  ',
+    link: '/insights/bim-level-detail',
   },
   {
     type: 'article',
-    date: '12 Jul 2024',
-    image: '/insights/5.jpg',
-    title: 'Latest Developments in Biotechnology',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+    date: '24 Feb 2024',
+    image: '/insights/digital.png',
+    title: '3DBIM - Maximizing Cost Effectiveness in Infrastructure ',
+    content: `BIM has emerged as a transformative technology in the construction industry. It has transformed the way infrastructure projects are planned, designed, constructed, and operated.  `,
+    link: '/insights/bim-3d-maximizing-cost',
   },
   {
     type: 'article',
-    date: '22 Aug 2024',
-    image: '/insights/6.jpg',
-    title: 'Revolutionizing Healthcare with AI',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+    date: '20 Feb 2024',
+    image: '/insights/bim-unlocking-cost.jpg',
+    title: 'Unlocking Cost Savings in Infrastructure Projects: Leveraging BIM',
+    content: `In today's rapidly evolving construction industry, technology has become a driving force behind improved efficiency and effectiveness. Among the various technological advancements, BIM stands out as a transformative tool that has revolutionized infrastructure projects.`,
+    link: '/insights/unlocking-cost-3d-bim',
   },
   {
     type: 'article',
-    date: '5 Sep 2024',
-    image: '/insights/7.jpg',
-    title: 'Future Trends in Consumer Electronics',
+    date: '15 Feb 2024',
+    image: '/insights/ray-nagar-solapur.png',
+    title: 'World’s largest Mass housing project',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
-  {
-    type: 'article',
-    date: '18 Oct 2024',
-    image: '/insights/8.jpg',
-    title: 'Innovations in Sustainable Agriculture',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
-  {
-    type: 'article',
-    date: '9 Nov 2024',
-    image: '/insights/9.jpg',
-    title: 'Challenges and Opportunities in Cybersecurity',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
-  },
-  {
-    type: 'article',
-    date: '30 Dec 2024',
-    image: '/projects/newParliment.jpg',
-    title: 'The Future of Work: Remote and Flexible',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: '#',
+      ' India witnessed the launch of one of the world’s largest low cost mass housing projects at Solapur , Maharashtra. The project built under the PMAY – initiative of the government of India, Witnessing the success "Gareebon ka Taj mahal" – RAY nagar housing project at Solapur has been an extraordinary journey!   ',
+    link: '/insights/ray-nagar-solapur',
   },
 ];

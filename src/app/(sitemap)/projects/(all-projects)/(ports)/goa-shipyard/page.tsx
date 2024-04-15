@@ -52,13 +52,13 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Construction of ship
+                Goa Shipyard
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                building workshop
+                Ship building workshop
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Marmugao, Goa
+                Mormugao, Goa
               </h1>
             </div>
             <Link href={`/projects`} className=''>

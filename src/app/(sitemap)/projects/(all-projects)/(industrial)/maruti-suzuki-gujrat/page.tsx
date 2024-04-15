@@ -52,13 +52,13 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Maruti Suzuki Plant
+                Maruti Suzuki
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 India Limited
               </h1>
               <h1 className='font-bold md:text-3xl text-xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Gujrat
+                Gujarat
               </h1>
             </div>
             <Link href={`/projects`} className=''>

@@ -33,9 +33,7 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Projects</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>
-          Maruti Suzuki Plant India Limited
-        </p>
+        <p className='font-bold text-num-indigo'>Maruti Suzuki India Limited</p>
       </div>
       <div className='relative '>
         <Image
@@ -52,7 +50,7 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Maruti Suzuki Plant
+                Maruti Suzuki
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 India Limited

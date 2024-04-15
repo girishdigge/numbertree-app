@@ -183,7 +183,28 @@ const Page = () => {
               </TabsContent>
               <TabsContent value='3'>
                 <div className='grid md:grid-cols-2'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'></div>
+                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
+                    <h1 className='text-sm mb-2'>Digital Twin</h1>
+                    <p className='text-xl mt-2 '>
+                      A digital twin is a virtual representation of physical
+                      assets, systems, or processes, leveraging real-time data
+                      and advanced analytics to mirror their behaviour and
+                      performance accurately. By creating a digital replica of
+                      assets such as buildings, bridges, or roads , stakeholders
+                      gain unprecedented insights into their operations and
+                      condition, enabling proactive decision-making and
+                      optimization of resources.In Infra projects, digital twins
+                      facilitate detailed planning and simulation of
+                      construction processes, allowing project teams to identify
+                      potential issues, optimize workflows, and improve safety
+                      measures before commencing work on-site. This proactive
+                      approach helps mitigate risks, reduce project delays, and
+                      enhance overall project outcomes. Digital twins enable
+                      predictive maintenance, allowing infrastructure managers
+                      to anticipate equipment failures, optimize maintenance
+                      schedules, and extend the lifespan of assets.
+                    </p>
+                  </div>
                   <Image
                     src={'/bim/b3.png'}
                     height={600}
@@ -375,7 +396,7 @@ const Page = () => {
                 <TabsList className='grid grid-cols-5 mb-4  bg-white'>
                   <TabsTrigger value='1'>
                     <Image
-                      src={'/bim/etihad.png'}
+                      src={'/featuredProjects/Red-Sea.jpg'}
                       height={100}
                       width={120}
                       alt='img'
@@ -384,7 +405,7 @@ const Page = () => {
                   <TabsTrigger value='2'>
                     {' '}
                     <Image
-                      src={'/featuredProjects/Red-Sea.jpg'}
+                      src={'/bim/etihad.png'}
                       height={100}
                       width={120}
                       alt='img'
@@ -393,7 +414,7 @@ const Page = () => {
                   <TabsTrigger value='3'>
                     {' '}
                     <Image
-                      src={'/bim/shurayrah.png'}
+                      src={'/bim/seaWorld.jpg'}
                       height={100}
                       width={120}
                       alt='img'
@@ -402,7 +423,7 @@ const Page = () => {
                   <TabsTrigger value='4'>
                     {' '}
                     <Image
-                      src={'/bim/seaWorld.jpg'}
+                      src={'/bim/shurayrah.png'}
                       height={100}
                       width={120}
                       alt='img'

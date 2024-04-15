@@ -101,14 +101,14 @@ const Page = () => {
                 {/* <h2 className=' md:text-3xl text-3xl font-medium md:mb-3 mb-1 text-white'>
                   Empowering Tomorrow{`'`}s infrastructure
                 </h2> */}
-                <p className='w-4/5 text-white md:text-lg'>
+                {/* <p className='w-4/5 text-white md:text-lg'>
                   {`We're a high performance, hand-selected team of industry
                   professionals, subject matter experts, career consultants,
                   designers and developers. Building businesses that change the
                   world.`}
-                </p>
+                </p> */}
                 <div className='flex flex-row-reverse mt-36 mr-4'>
-                  <Link href={'/about'}>
+                  <Link href={'/about/leadership-people'}>
                     <Button className='w-40 mt-2 text-base hover:bg-num-indigo border-0 bg-num-orange'>
                       Explore
                     </Button>
@@ -133,15 +133,15 @@ const Page = () => {
                 {/* <h2 className='md:text-3xl text-xl  md:mb-3 mb-1 font-medium text-white'>
                   Without Boundaries
                 </h2> */}
-                <p className='w-4/5 text-white md:text-lg'>
+                {/* <p className='w-4/5 text-white md:text-lg'>
                   {` We work with disruptors. Risk takers. Fearless leaders. Those
                   unafraid to go against the grain. Whether you're interested in
                   what we can do for your business, or you're interested in
                   joining our growing team, get in touch.`}
-                </p>
-                <div className='flex flex-row-reverse mr-4 md:mt-32'>
+                </p> */}
+                <div className='flex flex-row-reverse mr-4 md:mt-36'>
                   <Link href={'/contact/proposal'}>
-                    <Button className='w-40 mt-3 hover:bg-num-indigo  border-0 bg-num-orange'>
+                    <Button className='w-40 mt-4 hover:bg-num-indigo  border-0 bg-num-orange'>
                       Connect
                     </Button>
                   </Link>

@@ -182,13 +182,22 @@ const Page = () => {
         </div>
       </div>
       <div>
-        <Image
-          src={'/career/values.jpg'}
-          height={800}
-          width={1920}
-          alt='img'
-          className=''
-        />
+        <div className='md:relative '>
+          <Image
+            src={'/career/values.jpg'}
+            height={800}
+            width={1920}
+            alt='img'
+            className=''
+          />
+          <div className='md:absolute md:inset-10 flex flex-col justify-end items-center'>
+            <Link href={`/about/values`}>
+              <Button className='w-40 text-lg bg-num-indigo  hover:bg-white hover:text-num-orange'>
+                Read More
+              </Button>
+            </Link>
+          </div>
+        </div>
       </div>
       <div>
         <div className='flex  mt-20'>

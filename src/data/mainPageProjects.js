@@ -11,7 +11,7 @@ export const MainPageProjects = [
     link: '/projects/featured-projects/new-parliment',
   },
   {
-    name: 'ITPO Complex –convention centre at Pragati Maidan',
+    name: 'ITPO convention centre , Pragati Maidan',
     location: 'New Delhi ',
     value: '2150 Cr(INR)',
     date: 'Sep 2023',
@@ -44,7 +44,7 @@ export const MainPageProjects = [
     link: '/projects/featured-projects/red-sea',
   },
   {
-    name: 'IIM Kashipur Construction Project ',
+    name: 'Indian Institute of Management',
     location: 'Kashipur, Uttarakhand ',
     value: ' 360 Cr(INR)',
     date: 'April 2017',
@@ -68,8 +68,8 @@ export const MainPageProjects = [
     link: '/projects/featured-projects/delhi-vadodara',
   },
   {
-    name: 'Magdechhu Hydroelectric Project',
-    location: 'Jigmeling,Bhutan',
+    name: 'Magadechhu Power Transmission',
+    location: 'Jigmeling, Bhutan',
     value: '549 Cr(INR)',
     date: 'Sep 2017',
     client: '',
@@ -80,7 +80,7 @@ export const MainPageProjects = [
   },
   {
     name: 'HPCL Mittal Energy Limited (HMEL)',
-    location: 'Bhatinda,Punjab',
+    location: 'Bhatinda, Punjab',
     value: '746 Cr(INR)',
     date: 'Nov 2020',
     client: '',

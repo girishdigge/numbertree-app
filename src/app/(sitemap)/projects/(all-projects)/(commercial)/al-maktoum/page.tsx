@@ -50,13 +50,13 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Al Maktoum
+                Al Makhtoum Hospital
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Hospital Redevelopment
+                Redevelopment
               </h1>
               <h1 className='font-bold md:text-3xl text-xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Dubai,UAE
+                Naif, Dubai
               </h1>
             </div>
             <Link href={`/projects`} className=''>

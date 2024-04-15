@@ -60,7 +60,7 @@ const Page = () => {
     },
     {
       name: 'Koradi Coal Mines',
-      location: 'Koradi',
+      location: 'Koradi, Nagpur',
       link: '#',
       image: '/projects/newParliment.jpg', // replace with the actual image path
     },

@@ -55,11 +55,9 @@ const Page = () => {
                 Indian Institute of management
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Trichy
+                Trichy,Tamil Nadu
               </h1>
-              <h1 className='font-bold md:text-3xl text-xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Tamil Nadu
-              </h1>
+              <h1 className='font-bold md:text-3xl text-xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'></h1>
             </div>
             <Link href={`/projects`} className=''>
               <Button className='md:w-40 ml-4  bg-num-orange text-white mt-2 hover:bg-num-indigo hover:text-white animate-fadeInUp'>

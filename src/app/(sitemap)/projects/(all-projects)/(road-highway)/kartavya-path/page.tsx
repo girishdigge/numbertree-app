@@ -53,7 +53,7 @@ const Page = () => {
                 Kartavya Path
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Redevelopment as part of central Vista Redevelopment project
+                Redevelopment project
               </h1>
               <h1 className='font-bold md:text-3xl text-xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 New Delhi

@@ -52,10 +52,10 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Dedicated Freight Corridor
+                Eastern Dedicated Freight Corridor
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Lot 301 Sahnewal-Pilakhwa
+                Lot 301
               </h1>
               <h1 className='font-bold md:text-3xl text-xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Ambala,Punjab

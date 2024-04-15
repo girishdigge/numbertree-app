@@ -23,7 +23,7 @@ import SectorMobileLinks from '@/components/sitemap/sectorMobileLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Indian Institute of Technology Hyderabad',
+      name: 'Indian Institute of Technology(IIT)',
       location: 'Hyderabad',
       link: '/projects/iit-hyd',
       image: '/projects/iit-hyd.jpg',

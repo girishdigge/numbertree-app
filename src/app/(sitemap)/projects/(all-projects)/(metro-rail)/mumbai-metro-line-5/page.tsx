@@ -34,7 +34,7 @@ const Page = () => {
         </Link>
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>
-          Line 5 of Mumbai Metro Project, Thane -Bhiwandi – Kalyan
+          Mumbai Metro, Thane -Bhiwandi – Kalyan
         </p>
       </div>
       <div className='relative '>
@@ -52,7 +52,7 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Line 5 of Mumbai Metro Project
+                Mumbai Metro
               </h1>
               <h1 className='font-bold md:text-5xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
                 Thane -Bhiwandi – Kalyan
