@@ -20,7 +20,8 @@ const ESG = () => {
               <hr className='w-1/6 border-num-orange border-2 md:mt-3 md:mb-3' />
               <h3 className='md:text-3xl mb-2 '>{`Strategic Consulting`}</h3>
               <h3 className='md:text-lg w-11/12'>{`By integrating ESG considerations into project planning, execution, and management, infrastructure companies can create lasting positive impact, while also building resilience in this rapidly changing world.`}</h3>
-              <Link href={`/about/csr-esg`}>
+              {/* <Link href={`/about/csr-esg`}> */}
+              <Link href={`#`}>
                 <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
                   Read More
                 </Button>
