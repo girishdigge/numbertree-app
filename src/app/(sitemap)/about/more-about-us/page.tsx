@@ -256,7 +256,8 @@ const Page = () => {
               className='object-fill bg-num-indigo'
             />
           </Link>
-          <Link href={`/about/csr-esg`}>
+          {/* <Link href={`/about/csr-esg`}> */}
+          <Link href={`#`}>
             <Image
               src={`/about/socialSquare.png`}
               width={400}

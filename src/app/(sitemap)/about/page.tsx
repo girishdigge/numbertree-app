@@ -424,7 +424,8 @@ const Page = () => {
                 <h1 className='md:text-7xl ml-8 md:mt-4 md:mb-20'>
                   Responsibility
                 </h1>
-                <Link href={'/about/csr-esg'}>
+                {/* <Link href={'/about/csr-esg'}> */}
+                <Link href={'#'}>
                   <Button className='bg-num-indigo w-40 hover:bg-num-orange hover:text-black ml-44'>
                     Read More
                   </Button>

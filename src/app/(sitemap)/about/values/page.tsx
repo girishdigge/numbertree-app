@@ -283,7 +283,8 @@ const Page = () => {
                 </h1>
 
                 <div className='flex flex-row-reverse mr-4 md:mt-56'>
-                  <Link href={'/about/csr-esg'}>
+                  {/* <Link href={'/about/csr-esg'}> */}
+                  <Link href={'#'}>
                     <Button className='w-40 mt-3 hover:bg-num-indigo  border-0 bg-num-orange'>
                       Read More
                     </Button>

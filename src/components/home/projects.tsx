@@ -52,41 +52,43 @@ const Projects = () => {
                     <div className='absolute inset-0 flex  '>
                       <div className='bg-black md:bg-opacity-70  md:w-1/3 w-1/2  '>
                         <div className=' text-white ml-2'>
-                          <div className='flex flex-col gap-y-2 pl-4 tracking-widest'>
-                            <h1 className='text-2xl font-bold  tracking-widest'>
+                          <div className='flex flex-col md:gap-y-2 pl-4 tracking-widest'>
+                            <h1 className='md:text-2xl font-bold  tracking-widest'>
                               Project Details
                             </h1>
                             <hr className='border-b-1 w-40 border-white mb-2' />
-                            <h2 className='text-num-orange text-lg '>
+                            <h2 className='text-num-orange md:text-lg '>
                               Project Name
                             </h2>
-                            <h3 className='text-xl'>{project.name}</h3>
+                            <h3 className='md:text-xl'>{project.name}</h3>
                             <hr className='border-b-1 w-40 border-white mb-2' />
-                            <h2 className='text-num-orange text-lg '>
+                            <h2 className='text-num-orange md:text-lg '>
                               Location
                             </h2>
-                            <h3 className='text-xl'>{project.location}</h3>
+                            <h3 className='md:text-xl'>{project.location}</h3>
                             <hr className='border-b-1 w-40 border-white mb-2' />
-                            <h2 className='text-num-orange text-lg '>Value </h2>
-                            <h3 className='text-xl'>{project.value}</h3>
+                            <h2 className='text-num-orange md:text-lg '>
+                              Value{' '}
+                            </h2>
+                            <h3 className='md:text-xl'>{project.value}</h3>
                             <hr className='border-b-1 w-40 border-white mb-2' />
                             {/* <h2 className='text-num-orange text-lg '>Client </h2>
                           <h3> </h3>
                          <hr className='border-b-1 w-40 border-white mb-2' /> */}
-                            <h2 className='text-num-orange text-lg '>
+                            <h2 className='text-num-orange md:text-lg '>
                               Completion Date
                             </h2>
                             <h3 className='text-xl'>{project.date} </h3>
                             <hr className='border-b-1 w-40 border-white mb-2' />
-                            <h2 className='text-num-orange text-lg '>
+                            <h2 className='text-num-orange md:text-lg '>
                               Sector{' '}
                             </h2>
-                            <h3 className='text-xl'>{project.sector}</h3>
+                            <h3 className='md:text-xl'>{project.sector}</h3>
                             <hr className='border-b-1 w-40 border-white mb-2' />
                             <h2 className='text-num-orange text-lg '>
                               Service provided{' '}
                             </h2>
-                            <h3 className='text-xl'>{project.service}</h3>
+                            <h3 className='md:text-xl'>{project.service}</h3>
                             <hr className='border-b-1 w-40 border-white mb-2' />
                             <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
                               Read More
