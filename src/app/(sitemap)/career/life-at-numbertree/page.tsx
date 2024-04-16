@@ -49,39 +49,32 @@ const Page = () => {
           <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
             <div>
               <Tabs defaultValue='1' className='w-[full]'>
-                <TabsList className='grid md:grid-cols-4 grid-cols-2  md:mb-4 mb-10 gap-2'>
-                  <TabsTrigger value='1'>5D BIM</TabsTrigger>
-                  <TabsTrigger value='2'>3D BIM</TabsTrigger>
-                  <TabsTrigger value='3'>Digital Twin</TabsTrigger>
-                  <TabsTrigger value='4'>
-                    Digital Project Monitoring
-                  </TabsTrigger>
-                  {/* <TabsTrigger value='4'>IoT</TabsTrigger> */}
+                <TabsList className='grid md:grid-cols-3 grid-cols-2  md:mb-4 mb-10 gap-2'>
+                  <TabsTrigger value='1'>Diversity & Inclusion</TabsTrigger>
+                  <TabsTrigger value='2'>#numbertreeDNA</TabsTrigger>
+                  <TabsTrigger value='3'>Employee Stories</TabsTrigger>
                 </TabsList>
                 <hr className='border-b-2 border-num-orange' />
                 <TabsContent value='1'>
                   <div className='grid md:grid-cols-2 bg-num-blue bg-opacity-10'>
                     <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                      <h1 className='text-sm mb-2'>
-                        The Power of Cost Optimization
-                      </h1>
+                      <h1 className='text-sm mb-2'>Diversity & Inclusion</h1>
                       {/* <h2 className='text-2xl mb-2 w-3/4'>
                       Connecting the physical and digital worlds
                     </h2> */}
                       <p className='text-xl mt-2 mb-4 w-3/4'>
-                        BIM 5D model integrates cost data into the digital
-                        models, empowering decision makers to make financially
-                        accurate decisions throughout the project lifecycle. By
-                        linking the 3D models with accurate material quantities,
-                        labor costs, and resource allocations, we enable precise
-                        cost estimations and cost tracking. Our BIM 5D services
-                        facilitate real-time cost analysis, enabling businesses
-                        to identify cost-saving opportunities, evaluate
-                        alternative design options, and ultimately maximize ROI.
+                        {`At Numbertree, diversity and inclusion is an integral
+                        part of who we are. We believe in harnessing the power
+                        of diverse perspectives, backgrounds, and experiences to
+                        drive innovation and collaborative work culture . Our
+                        inclusive environment ensures that every voice is not
+                        only heard but also valued and respected. Join our team
+                        where we're committed to fostering a culture of respect,
+                        equality, and collaboration.`}
                       </p>
                     </div>
                     <Image
-                      src={'/bim/b1.png'}
+                      src={'/career/c1.jpg'}
                       height={600}
                       width={600}
                       alt='img'
@@ -92,24 +85,18 @@ const Page = () => {
                 <TabsContent value='2'>
                   <div className='grid md:grid-cols-2'>
                     <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                      <h1 className='text-sm mb-2'>
-                        The Foundation of Exceptional Design
-                      </h1>
+                      <h1 className='text-sm mb-2'>#numbertreeDNA</h1>
 
                       <p className='text-xl mt-2 mb-4 w-3/4'>
-                        The BIM model lays the groundwork for exceptional
-                        infrastructure design. We employ the latest software and
-                        techniques to create highly accurate and detailed 3D
-                        models of the project. These models allow stakeholders
-                        to visualize and analyse every aspect of the project
-                        with remarkable clarity. We ensure that the 3D models
-                        are not only visually appealing but also meticulously
-                        aligned with the project requirements and
-                        industry standards.
+                        Our values are our core while our purpose gives us a
+                        strong sense of direction and the path that we take. Our
+                        team imbibes the values that we live by and that form
+                        the unique #numbertreeDNA , a recognisable feature of
+                        our team.
                       </p>
                     </div>
                     <Image
-                      src={'/bim/b2.png'}
+                      src={'/career/c3.jpg'}
                       height={600}
                       width={600}
                       alt='img'
@@ -120,7 +107,7 @@ const Page = () => {
                   <div className='grid md:grid-cols-2'>
                     <div className='flex flex-col justify-center pl-8 bg-gray-100'></div>
                     <Image
-                      src={'/bim/b3.png'}
+                      src={'/career/c1.jpg'}
                       height={600}
                       width={600}
                       alt='img'
@@ -130,27 +117,9 @@ const Page = () => {
                 <TabsContent value='4'>
                   <div className='grid grid-cols-2'>
                     <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                      <h1 className='text-sm mb-2'>
-                        Digital Project Monitoring{' '}
-                      </h1>
+                      <h1 className='text-sm mb-2'>Employee Stories</h1>
 
-                      <p className='text-xl mt-2 mb-4 w-3/4'>
-                        {`Numbertree offers advanced digital project monitoring
-                      services to enhance project oversight, efficiency, and
-                      transparency. 
-                       The scope includes- `}
-                        <li>Integrated project management</li>
-                        <li> Automated data collection and analysis </li>
-                        <li>Real time monitoring and reporting</li>
-                        <li>Performance & risk analytics </li>
-                        <li>Document Management and Version Control</li>
-                        <li>Mobile Applications and Field Data Capture </li>
-                        <li>Data Security and Compliance</li>
-                        With our digital project monitoring services, clients
-                        can benefit from enhanced project visibility, proactive
-                        decision-making, and improved collaboration among
-                        stakeholders.
-                      </p>
+                      <p className='text-xl mt-2 mb-4 w-3/4'></p>
                     </div>
                     <Image
                       src={'/bim/b4.png'}
@@ -164,9 +133,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <h1 className='text-4xl pt-20 pb-6'>
-          Learn more from Numbertree Professionals
-        </h1>
+        <h1 className='text-4xl pt-20 pb-6'>Experience life at Numbertree</h1>
         <div className='flex mb-20'>
           <Slider />
         </div>

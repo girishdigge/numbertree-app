@@ -75,11 +75,13 @@ const Page = () => {
           <h1 className='md:text-4xl text-2xl mb-2'>Career at Numbertree</h1>
 
           <p className='md:text-lg text-sm mt-2 mb-4 w-3/4'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-            asperiores consequuntur repellendus reprehenderit modi nam incidunt
-            totam aperiam, perspiciatis praesentium voluptates dolores velit,
-            suscipit animi veritatis possimus molestiae tenetur ut illo earum
-            quasi voluptas maiores odio blanditiis. Asperiores,
+            Discover a rewarding career at Numbertree. Join a dynamic team of
+            professionals dedicated to delivering excellence in engineering and
+            audit services We believe we are as good as our team. We are here to
+            make difference in the way infrastructure projects operate. We offer
+            opportunities for growth, collaboration, and innovation in a
+            supportive environment. Explore your potential and make a meaningful
+            impact with us.
           </p>
           <Link href={`/career/jobs`}>
             <Button className='w-40 text-lg bg-num-indigo  hover:bg-num-orange'>
@@ -103,8 +105,9 @@ const Page = () => {
               <h1 className='text-xl'>Explore career</h1>
               <h2 className='text-4xl font-bold'>Life at Numbertree</h2>
               <p className='text-justify text-lg'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-                fugit magnam dolorem.
+                Experience our culture at, where collaboration thrives in a
+                supportive and fun environment, fostering innovation, diversity
+                and professional growth. Join us!
               </p>
               <Link href={`/career/life-at-numbertree`}>
                 <Button className='w-40 text-lg bg-num-orange  hover:bg-white hover:text-num-orange'>

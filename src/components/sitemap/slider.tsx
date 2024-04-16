@@ -15,30 +15,23 @@ import {
 export function Slider() {
   const dataSet = [
     {
-      image: '/career/c1.jpg',
+      image: '/career/emp1.png',
       title: 'Title 1',
       heading: 'Heading 1',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
     },
     {
-      image: '/career/c3.jpg',
+      image: '/career/emp2.png',
       title: 'Title 2',
       heading: 'Heading 2',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
     },
     {
-      image: '/career/c1.jpg',
+      image: '/career/emp3.png',
       title: 'Title 3',
       heading: 'Heading 3',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
-    },
-    {
-      image: '/career/c3.jpg',
-      title: 'Title 4',
-      heading: 'Heading 4',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
     },
@@ -71,15 +64,15 @@ export function Slider() {
                   <div className='flex flex-col items-center justify-center shadow-xl'>
                     <div className=''>
                       <div className='flex'>
-                        <div className='flex flex-col gap-4 ml-10 justify-center text-justify '>
+                        {/* <div className='flex flex-col gap-4 ml-10 justify-center text-justify '>
                           <h1 className='text-3xl font-medium'>{data.title}</h1>
                           <h2 className='text-2xl'>{data.heading}</h2>
                           <h3 className='text-lg w-3/4'>{data.content}</h3>
-                        </div>
+                        </div> */}
                         <Image
                           src={data.image}
-                          height={400}
-                          width={400}
+                          height={423}
+                          width={940}
                           alt='image'
                         />
                       </div>
