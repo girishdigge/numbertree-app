@@ -61,7 +61,7 @@ const Page = () => {
         </div>
       </div>
       <div className='flex  mt-20'>
-        <div className='w-3/4 flex flex-col items-center '>
+        <div className='md:w-3/4 flex flex-col items-center '>
           <div className='w-5/6 flex flex-col'>
             <p className='text-xl font-medium text-justify mb-6'>
               We work on the some of the most complex & challenging projects,
@@ -71,7 +71,7 @@ const Page = () => {
               values.
             </p>
             <div className='flex mt-20'>
-              <div className='w-1/5 flex items-center justify-center'>
+              <div className='md:w-1/5 w-1/2 flex items-center justify-center'>
                 <Image
                   src={`/about/aim1.png`}
                   width={512}
@@ -98,7 +98,7 @@ const Page = () => {
               </div>
             </div>
             <div className='flex mt-20'>
-              <div className='w-1/5 flex items-center justify-center'>
+              <div className='md:w-1/5 w-1/2 flex items-center justify-center'>
                 <Image
                   src={`/about/integrity1.png`}
                   width={512}
@@ -115,7 +115,7 @@ const Page = () => {
               </div>
             </div>
             <div className='flex mt-20'>
-              <div className='w-1/5 flex items-center justify-center'>
+              <div className='md:w-1/5 w-1/2 flex items-center justify-center'>
                 <Image
                   src={`/about/agility1.png`}
                   width={512}
@@ -132,7 +132,7 @@ const Page = () => {
               </div>
             </div>
             <div className='flex mt-20'>
-              <div className='w-1/5 flex items-center justify-center'>
+              <div className='md:w-1/5 w-1/2 flex items-center justify-center'>
                 <Image
                   src={`/about/auction1.png`}
                   width={512}
@@ -149,7 +149,7 @@ const Page = () => {
               </div>
             </div>
             <div className='flex mt-20'>
-              <div className='w-1/5 flex items-center justify-center'>
+              <div className='md:w-1/5 w-1/2 flex items-center justify-center'>
                 <Image
                   src={`/about/social1.png`}
                   width={512}
@@ -166,7 +166,7 @@ const Page = () => {
               </div>
             </div>
             <div className='flex mt-20'>
-              <div className='w-1/5 flex items-center justify-center'>
+              <div className='md:w-1/5 w-1/2 flex items-center justify-center'>
                 <Image
                   src={`/about/idea1.png`}
                   width={512}
@@ -185,7 +185,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-1/4 flex flex-col'>
+        <div className='w-1/4 md:flex hidden flex-col'>
           <div className='flex flex-col items-center'>
             <h1 className='text-xl font-bold mb-2'> Follow Us</h1>
 

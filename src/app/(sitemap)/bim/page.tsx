@@ -214,7 +214,7 @@ const Page = () => {
                 </div>
               </TabsContent>
               <TabsContent value='4'>
-                <div className='grid grid-cols-2'>
+                <div className='grid md:grid-cols-2'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>
                       Digital Project Monitoring{' '}

@@ -195,8 +195,8 @@ const Page = () => {
           {testimonials.map((test, index) => (
             <div key={index} className='flex mt-10 mb-5 '>
               <div className='flex flex-col'>
-                <div className='flex items-center justify-center'>
-                  <div className='mb-2 w-1/2'>
+                <div className='flex  items-center justify-center'>
+                  <div className='mb-2 md:w-1/2'>
                     <h1 className='h-4 text-8xl  text-left text-num-indigo'>
                       “
                     </h1>
@@ -220,7 +220,7 @@ const Page = () => {
                     height={50}
                     width={200}
                     alt='img'
-                    className='w-28 '
+                    className='md:w-28 '
                   />
                 </div>
               </div>
@@ -228,14 +228,14 @@ const Page = () => {
           ))}
         </Slider>
       </div>
-      <div className='grid grid-cols-2 m-8'>
-        <div className='border-2 border-num-orange border-r-0 p-10 flex flex-col items-center justify-center'>
+      <div className='grid grid-cols-2 md:m-8 m-2'>
+        <div className='border-2 border-num-orange border-r-0 md:p-10 flex flex-col items-center justify-center'>
           <div>
             <h1 className='md:text-5xl text-2xl font-medium  mb-3'>
               Our Ethics
             </h1>
             <hr className='w-40 border-2 border-num-orange' />
-            <h2 className='md:text-2xl mt-4 mb-4 w-2/3'>
+            <h2 className='md:text-2xl md:mt-4 md:mb-4 md:w-2/3'>
               Committed to doing the right thing, every time
             </h2>
           </div>
@@ -245,7 +245,7 @@ const Page = () => {
           height={800}
           width={800}
           alt='ethics'
-          className=' '
+          className=' md:h-auto '
         />
       </div>
       <div className='flex flex-col text-lg p-8 text-justify gap-6 mr-4'>

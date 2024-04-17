@@ -76,7 +76,7 @@ const Testimonials = () => {
             <div key={index} className='flex mt-10 mb-5 '>
               <div className='flex flex-col'>
                 <div className='flex items-center justify-center'>
-                  <div className='mb-2 w-2/3'>
+                  <div className='mb-2 md:w-2/3'>
                     <h1 className='h-4 text-8xl mb-2 text-left text-num-indigo'>
                       “
                     </h1>

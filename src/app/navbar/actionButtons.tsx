@@ -12,6 +12,7 @@ import {
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import GetCallDropDown from '@/components/sitemap/getCallDropDown';
+import MobileConnectForm from '@/components/sitemap/mobileConnectForm';
 const ActionButtons = () => {
   return (
     <div>
@@ -34,7 +35,7 @@ const ActionButtons = () => {
                   <Link href='/career'>Career</Link>
                   <Link href='/insights'>Insights/Blog</Link>
                   <Link href='/contact/proposal'>Contact us</Link>
-                  <GetCallDropDown />
+                  <MobileConnectForm />
                 </div>
               </SheetDescription>
             </SheetHeader>

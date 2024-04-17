@@ -129,7 +129,7 @@ const Page = () => {
         <div className='grid md:grid-cols-3 gap-4 p-12 '>
           {team.map((person, index) => (
             <div key={index}>
-              <div className='border shadow-lg flex gap-y-2 flex-col w-4/5 rounded-lg p-4'>
+              <div className='border shadow-lg flex gap-y-2 flex-col md:w-4/5 rounded-lg p-4'>
                 <Image
                   src={person.image}
                   height={150}

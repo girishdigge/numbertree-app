@@ -63,7 +63,7 @@ const Keyfacts = () => {
   }, []);
 
   return (
-    <div className='w-11/12 '>
+    <div className='md:w-11/12 '>
       <div className='mt-20 md:ml-14'>
         <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
           Key Facts
