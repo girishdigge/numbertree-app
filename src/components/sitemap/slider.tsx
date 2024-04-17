@@ -15,26 +15,26 @@ import {
 export function Slider() {
   const dataSet = [
     {
-      image: '/career/emp1.png',
+      image: '/career/holi1.jpg',
       title: 'Title 1',
       heading: 'Heading 1',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
     },
-    {
-      image: '/career/emp2.png',
-      title: 'Title 2',
-      heading: 'Heading 2',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
-    },
-    {
-      image: '/career/emp3.png',
-      title: 'Title 3',
-      heading: 'Heading 3',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
-    },
+    // {
+    //   image: '/career/emp2.png',
+    //   title: 'Title 2',
+    //   heading: 'Heading 2',
+    //   content:
+    //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
+    // },
+    // {
+    //   image: '/career/emp3.png',
+    //   title: 'Title 3',
+    //   heading: 'Heading 3',
+    //   content:
+    //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam quisquam sed, minima maiores ducimus consectetur vero iste cumque tempora.',
+    // },
   ];
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -71,8 +71,8 @@ export function Slider() {
                         </div> */}
                         <Image
                           src={data.image}
-                          height={423}
-                          width={940}
+                          height={800}
+                          width={800}
                           alt='image'
                         />
                       </div>
@@ -83,10 +83,10 @@ export function Slider() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className='flex flex-row-reverse mr-44'>
+        {/* <div className='flex flex-row-reverse mr-44'>
           <SliderPrevious />
           <SliderNext />
-        </div>
+        </div> */}
       </Carousel>
       <div className='flex ml-52 mt-6'>
         {/* Slide {current} of {count} */}
