@@ -19,30 +19,40 @@ import ServiceLinks from '@/components/sitemap/serviceLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Mumbai Metro Line 5',
-      location: 'Mumbai',
-      link: '/projects/mumbai-metro-line-5',
-      image: '/projects/MumbaiMetroThaneBhiwandiKalyan.jpg',
+      name: ' ITPO Convention Center,Bharat Mandapam.',
+      location: 'New Delhi',
+      link: '/projects/ITPO',
+      image: '/projects/itpo.jpg',
     },
     {
-      name: 'Pune Metro Corridor 1 & 2',
-
-      location: 'Pune',
-      link: '/projects/pune-metro-corridor-1-2',
-      image: '/projects/PuneMetro.jpg',
+      name: 'Nuclear Fuel Complex',
+      location: 'Kota',
+      link: '/projects/nuclear-fuel-kota',
+      image: '/projects/NuclearFuelKota.jpg',
     },
     {
       name: 'Eastern Dedicate Freight Corridor 301',
-
       location: 'Ambala,Punjab',
       link: '/projects/freight-301-ambala',
       image: '/projects/EasternDedicateFreightCorridor301.jpg',
     },
     {
       name: 'Eastern Dedicate Freight Corridor 302',
-      location: 'Uttar Pradesh ',
+      location: 'Uttar Pradesh',
       link: '/projects/freight-302-dadri',
       image: '/projects/EasternDedicateFreightCorridor302.jpg',
+    },
+    {
+      name: ' Delhi-Vadodara Greenfield Alignment, NH148N',
+      location: 'New Delhi',
+      link: '/projects/delhi-vadodara',
+      image: '/featuredProjects/Delhi-meerut-expressway.jpeg',
+    },
+    {
+      name: 'Manohar International Airport',
+      location: 'Goa',
+      link: '/projects/goa-airport',
+      image: '/projects/GoaAirport.jpg',
     },
   ];
   return (
@@ -59,15 +69,15 @@ const Page = () => {
         </Link>
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>
-          Project Management Consultancy{' '}
+          Quantity Survey & Cost Control
         </p>
       </div>
       <div className='relative '>
         <Image
-          src={`/services/ProjectMonCon.jpg`}
+          src={`/services/QuantitySurvey.jpg`}
           width={2046}
           height={768}
-          alt='Project Management Consultancy '
+          alt='Quantity Survey'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -77,12 +87,11 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Project Management Consultancy
+                Quantity Survey & Cost Control
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                We improve efficiency, reduce costs and time, and maximize value
-                by managing the supply chain, making timely decisions, and
-                operating in a proactive manner.
+                With this service, we enable project stakeholders to make
+                informed decisions, manage risks, and optimize project budgets
               </p>
             </div>
             <Link href={`/services`} className=''>
@@ -104,116 +113,16 @@ const Page = () => {
         <ServiceMobileLinks />
       </div>
       <div className='flex flex-row'>
-        {/* <ServiceLinks /> */}
-        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Follow Us</h1>
-
-          <div className='flex gap-4 mb-8'>
-            <Link
-              href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
-            >
-              <Image
-                src={`/images/facebook.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link
-              href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
-            >
-              <Image
-                src={`/images/linkedin-1.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link
-              href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
-            >
-              <Image
-                src={`/images/twitter.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link href={``}>
-              <Image
-                src={`/images/instagram.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-              Other Services
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <div className='w-1/2'>
-                <Link href='/services/techno-commercial-audit'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    Techno-Commercial Audit
-                  </Button>
-                </Link>
-                <Link href='/services/contract-administration'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1> Contract Adiministration and</h1>
-                    <h1> Bill Verification</h1>
-                  </Button>
-                </Link>
-
-                {/* <Link href='/services/project-monitoring-and-control'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1>Project Management</h1>
-                    <h1>Consultancy</h1>
-                  </Button>
-                </Link> */}
-
-                <Link href='/services/quantity-survey'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1> Quantity Survey and</h1>
-                    <h1> Cost Control</h1>
-                  </Button>
-                </Link>
-                <Link href='/services/claim-management'>
-                  <Button className='w-60 h-14 items-start justify-start flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1>Construction Claim </h1>
-                    <h1>Management</h1>
-                  </Button>
-                </Link>
-
-                <Link href='/services/business-transformation'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1 className='w-3/4'>Business Transformation</h1>
-                  </Button>
-                </Link>
-                <Link href='/services/transaction-advisory'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    Transaction Advisory
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ServiceLinks />
         <div className=' flex flex-col items-center  text-justify'>
           <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            <em>Adding value beyond what is expected </em>
+            <em>Engineering success with maximum Precision </em>
           </h1>
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-              {` We provide world-class project management services, helping our
-              clients achieve their goals with precision, speed, and efficiency.
-              We ensure that our clients' projects are delivered on-time and
-              within budget, managing every aspect of construction delivery from
-              pre-construction to post-construction. We specialize in managing
-              sustainable infrastructure projects and meeting the most
-              challenging deadlines, delivering predictable cost, schedule, and
-              quality`}
+              In the infrastructure industry, precise and comprehensive
+              quantification of materials, labour, and resources is crucial for
+              successful project planning and budgeting.
             </p>{' '}
             <br />
           </div>
@@ -229,35 +138,45 @@ const Page = () => {
             <hr className='border-2 border-num-orange mt-4' />
           </div> */}
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            At NumberTree, we offer three typical stages of Project Management
-            services: Pre-Construction Management, Construction Management, and
-            Post-Construction Management.
+            Quantity surveying plays a vital role in ensuring accurate cost
+            estimation and effective resource allocation.
           </p>
           <br />
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`During the Pre-Construction Management stage, we take ownership of the entire project and chalk out a roadmap for our customers. We improve efficiency, reduce costs and time, and maximize value by managing the supply chain, making timely decisions, and operating in a proactive and robust environment.`}
+            {` At NumberTree, quantity survey is our forte and we have completed
+            more than 100 projects spanning the last decade. NumberTree provides
+            cost management and quantity surveying (QS) services on a vast range
+            of construction projects. From accurately estimating costs for
+            construction to providing precise quantity calculations for
+            engineering projects, we deliver comprehensive solutions tailored to
+            each project's unique requirements.`}
+          </p>
+          <br />
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            Our portfolio of offerings ranges from pre-contract and
+            post-contract Quantity Surveying to the complete set of cost
+            management services. We employ industry-standard measurement methods
+            and advanced software tools to provide invaluable insights into the
+            quantities of materials needed, the labour required, and the
+            resources necessary for construction projects.
           </p>
 
           <br />
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {` Our Construction Management strategy involves overseeing the general
-            contractor's supervision team at the site, monitoring their
-            established processes, and doing periodic quality checks. During the
-            final design, we conduct constructability and cost-saving reviews,
-            make necessary design changes, and ensure environmental compliance.
-            We ensure that the project is handed over to the client in a
-            controlled and disciplined manner during the Post-Construction Management stage. We coordinate the handover of all documents, including as-built drawings and approved O&M manuals by the contractors/vendors.`}
-          </p>
-          <br />
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`Regardless of the scale or complexity of a project, we employ and refine our systems and processes to provide control, governance and transparency from inception to completion. In every decision we make, we challenge and work diligently to find the most efficient and cost-effective outcome. As an agile, focused and flexible partner we adopt a value-driven strategy to define and articulate project objectives, before identifying the most effective means to deliver. Over the last few years our programme management expertise has helped clients to improve performance, drive organisational change and realise efficiencies.We are adept at helping our clients navigate through ambiguity – managing multiple workstreams, interdependencies, and driving and configuring complex programmes from integrated projects.`}
-          </p>
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`Our Procurement Assistance service creates top-to-bottom consistency throughout the entire logistics, delivery, and installation process, and our Value Engineering service achieves the optimum balance between function, performance, quality, safety, and cost. Our QS and Cost Management service helps deliver projects that meet all the functional and operational requirements of our clients within their budgets. We rely on flexible techniques that can be adapted to changing demands, managing the entire life cycle of the project from initiation to  occupancy.`}
-          </p>
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`We manage the sustainable infrastructure projects to meet the most challenging deadlines, delivering predictable cost, schedule, and quality.`}
-          </p>
+
+          <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
+            Our comprehensive range of quantity take off services include –
+          </h1>
+          <div className=' flex flex-col  w-3/4  mb-4 text-xl font-medium '>
+            <Link href={`/bim`}>
+              <li className='hover:underline'>Cost Overrun Investigation</li>
+              <li className='hover:underline'>
+                Cost Consultancy Services/BOQ, CTC &amp; Budget preparation
+              </li>
+              <li className='hover:underline'>
+                BBS Preparation, Site Survey &amp; Remeasurement of work
+              </li>
+            </Link>{' '}
+          </div>
         </div>
 
         <div className='hidden w-1/4 md:flex flex-col justify-between '>
@@ -344,7 +263,9 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='text-xl font-bold '>{project.name}</h3>
+                          <h3 className=' text-xl font-bold '>
+                            {project.name}
+                          </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
                             {project.location}
                           </h2>
@@ -365,7 +286,6 @@ const Page = () => {
           <CarouselNext className=' h-14 w-12 text-white bg-num-orange hover:bg-num-indigo ' />
         </Carousel>
       </div>
-
       <div className='flex  mt-24'>
         <Link href={`/sectors`}>
           <h2 className=' md:text-xl text-black border-2 border-num-orange hover:bg-num-orange hover:text-white p-2 font-medium ml-14 mb-2'>

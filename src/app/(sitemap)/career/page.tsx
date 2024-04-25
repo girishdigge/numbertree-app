@@ -3,9 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { RxSlash } from 'react-icons/rx';
 import { IoHomeSharp } from 'react-icons/io5';
-import { FaFacebookF } from 'react-icons/fa6';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
+
 import BlogCard from '@/components/sitemap/blog-card';
 import { ExploreArticles } from '@/data/Insights';
 
@@ -62,7 +60,7 @@ const Page = () => {
               {'We promise growth, inclusion and diversity'}
             </h3>
           </div>
-          <h3 className='-translate-y-8 md:text-lg text-sm text-num-blue mb-8'>
+          <h3 className='-translate-y-8 md:text-lg md:w-3/4 w-11/12 text-sm text-num-blue mb-8'>
             People are at the heart of our services. At Numbertree, you can
             create relationships that support your development and a career path
             that fits your goals. Come explore a world of opportunities in
@@ -193,7 +191,7 @@ const Page = () => {
             alt='img'
             className=''
           />
-          <div className='md:absolute md:inset-10 flex flex-col justify-end items-center'>
+          <div className='md:absolute md:inset-10 md:translate-y-0 -translate-y-10 flex flex-col justify-end items-center'>
             <Link href={`/about/values`}>
               <Button className='w-40 text-lg bg-num-indigo  hover:bg-white hover:text-num-orange'>
                 Read More

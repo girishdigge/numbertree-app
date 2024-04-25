@@ -49,7 +49,7 @@ const SectorMobileLinks = () => {
         </div>
         <div>
           <h2 className='text-xl font-bold flex  text-black mb-2 '>
-            Our Services
+            Our Sectors
           </h2>
 
           <div className='flex w-full gap-2'>

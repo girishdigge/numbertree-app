@@ -19,30 +19,41 @@ import ServiceLinks from '@/components/sitemap/serviceLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Mumbai Metro Line 5',
-      location: 'Mumbai',
-      link: '/projects/mumbai-metro-line-5',
-      image: '/projects/MumbaiMetroThaneBhiwandiKalyan.jpg',
+      name: 'IIM Kashipur Construction Project',
+      location: 'Uttarakhand',
+      link: '/projects/iim-kashipur',
+      image: '/featuredProjects/iim-kashipur.jpg',
     },
     {
-      name: 'Pune Metro Corridor 1 & 2',
+      name: ' ITPO Convention Center,Bharat Mandapam.',
+      location: 'New Delhi',
+      link: '/projects/ITPO',
+      image: '/projects/itpo.jpg',
+    },
+    {
+      name: 'Maruti Suzuki Plant India Limited Sonipat',
+      location: 'Haryana',
+      link: '/projects/maruti-suzuki-sonipat',
+      image: '/projects/maruti-suzuki-plant-sonipat.jpeg',
+    },
+    {
+      name: 'Buddha Smriti Stupa & Buddha Sangrahlaya',
 
-      location: 'Pune',
-      link: '/projects/pune-metro-corridor-1-2',
-      image: '/projects/PuneMetro.jpg',
+      location: 'Bihar',
+      link: '/projects/buddha-smriti',
+      image: '/projects/Buddha-Smriti-Stupa.png',
     },
     {
-      name: 'Eastern Dedicate Freight Corridor 301',
-
-      location: 'Ambala,Punjab',
-      link: '/projects/freight-301-ambala',
-      image: '/projects/EasternDedicateFreightCorridor301.jpg',
+      name: 'Indian Institute of Technology Hyderabad',
+      location: 'Hyderabad',
+      link: '/projects/iit-hyd',
+      image: '/projects/iit-hyd.jpg',
     },
     {
-      name: 'Eastern Dedicate Freight Corridor 302',
-      location: 'Uttar Pradesh ',
-      link: '/projects/freight-302-dadri',
-      image: '/projects/EasternDedicateFreightCorridor302.jpg',
+      name: 'International Standard Modern Cricket Stadium',
+      location: 'Rajgir, Nalanda ,Bihar',
+      link: '/projects/sports-academy-bihar',
+      image: '/projects/sports-academy-bihar.jpg',
     },
   ];
   return (
@@ -58,16 +69,14 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Services</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>
-          Project Management Consultancy{' '}
-        </p>
+        <p className='font-bold text-num-indigo'>Techno-Commercial Audit</p>
       </div>
       <div className='relative '>
         <Image
-          src={`/services/ProjectMonCon.jpg`}
+          src={`/services/TechnoComAudit.jpg`}
           width={2046}
           height={768}
-          alt='Project Management Consultancy '
+          alt='Techno-com Audit'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -77,12 +86,12 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Project Management Consultancy
+                Techno-commercial Audit
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                We improve efficiency, reduce costs and time, and maximize value
-                by managing the supply chain, making timely decisions, and
-                operating in a proactive manner.
+                Steering projects through resilience & profitability, our
+                service empowers you to make informed decision with real time
+                insights of the project
               </p>
             </div>
             <Link href={`/services`} className=''>
@@ -104,120 +113,23 @@ const Page = () => {
         <ServiceMobileLinks />
       </div>
       <div className='flex flex-row'>
-        {/* <ServiceLinks /> */}
-        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Follow Us</h1>
-
-          <div className='flex gap-4 mb-8'>
-            <Link
-              href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
-            >
-              <Image
-                src={`/images/facebook.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link
-              href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
-            >
-              <Image
-                src={`/images/linkedin-1.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link
-              href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
-            >
-              <Image
-                src={`/images/twitter.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link href={``}>
-              <Image
-                src={`/images/instagram.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-              Other Services
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <div className='w-1/2'>
-                <Link href='/services/techno-commercial-audit'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    Techno-Commercial Audit
-                  </Button>
-                </Link>
-                <Link href='/services/contract-administration'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1> Contract Adiministration and</h1>
-                    <h1> Bill Verification</h1>
-                  </Button>
-                </Link>
-
-                {/* <Link href='/services/project-monitoring-and-control'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1>Project Management</h1>
-                    <h1>Consultancy</h1>
-                  </Button>
-                </Link> */}
-
-                <Link href='/services/quantity-survey'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1> Quantity Survey and</h1>
-                    <h1> Cost Control</h1>
-                  </Button>
-                </Link>
-                <Link href='/services/claim-management'>
-                  <Button className='w-60 h-14 items-start justify-start flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1>Construction Claim </h1>
-                    <h1>Management</h1>
-                  </Button>
-                </Link>
-
-                <Link href='/services/business-transformation'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1 className='w-3/4'>Business Transformation</h1>
-                  </Button>
-                </Link>
-                <Link href='/services/transaction-advisory'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    Transaction Advisory
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ServiceLinks />
         <div className=' flex flex-col items-center  text-justify'>
           <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            <em>Adding value beyond what is expected </em>
+            <em>
+              Moving infrastructure projects , from complexity to profitability
+            </em>
           </h1>
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-              {` We provide world-class project management services, helping our
-              clients achieve their goals with precision, speed, and efficiency.
-              We ensure that our clients' projects are delivered on-time and
-              within budget, managing every aspect of construction delivery from
-              pre-construction to post-construction. We specialize in managing
-              sustainable infrastructure projects and meeting the most
-              challenging deadlines, delivering predictable cost, schedule, and
-              quality`}
+              We understand that infrastructure projects are plagued with time &
+              cost overrun that threatens to derail a company’s strategic
+              vision. We take a systematic and controlled approach to audit,
+              with a view to facilitating decision-making and improving
+              operating efficiency.
             </p>{' '}
-            <br />
           </div>
-          {/* <div className='flex flex-col w-4/5 pr-8   mr-2 m-10 '>
+          <div className='flex flex-col w-4/5 pr-8   mr-2 m-10 '>
             <hr className='border-2 border-num-orange mb-6' />
             <FaQuoteLeft size={30} className='text-num-orange mb-2 ml-2' />
             <p className='md:text-lg  ml-2 mr-4 mb-2 w-11/12'>
@@ -227,73 +139,154 @@ const Page = () => {
               </em>
             </p>
             <hr className='border-2 border-num-orange mt-4' />
-          </div> */}
+          </div>
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            At NumberTree, we offer three typical stages of Project Management
-            services: Pre-Construction Management, Construction Management, and
-            Post-Construction Management.
+            We pride ourselves on delivering unparalleled audit solutions. Our
+            professionals employ a risk-based approach to audit, with a view to
+            help improve performance and operating efficiency.
           </p>
           <br />
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`During the Pre-Construction Management stage, we take ownership of the entire project and chalk out a roadmap for our customers. We improve efficiency, reduce costs and time, and maximize value by managing the supply chain, making timely decisions, and operating in a proactive and robust environment.`}
+            We help our clients establish and assess internal controls, standard
+            operating procedures, and financial processes Our services
+            particularly - time & cost overrun focussed audit help reduce client
+            risk, improve value and deliver positive outcomes in all sectors of
+            the built environment.
+          </p>
+          <br />
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            We align ourselves around clients’ sectors to provide
+            industry-relevant advice and specialized expertise. We create
+            custom-made client teams that bring together technical delivery
+            experts, strategists and other specialists. We work together to
+            achieve viable developments that capture client objectives through
+            value-driven and efficient consulting engineering and audit
+            services. We manage costs through rigorous change management and
+            risk-management processes.
           </p>
 
           <br />
+          <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
+            <span className='border-b-2 border-num-orange'>
+              From Insights to Actionables
+            </span>
+          </h1>
+
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {` Our Construction Management strategy involves overseeing the general
-            contractor's supervision team at the site, monitoring their
-            established processes, and doing periodic quality checks. During the
-            final design, we conduct constructability and cost-saving reviews,
-            make necessary design changes, and ensure environmental compliance.
-            We ensure that the project is handed over to the client in a
-            controlled and disciplined manner during the Post-Construction Management stage. We coordinate the handover of all documents, including as-built drawings and approved O&M manuals by the contractors/vendors.`}
+            In today’s world, we cannot over emphasise the importance of
+            insights derived from financial numbers. It helps businesses take
+            informed and critical decisions which can transform businesses. Our
+            audit-based insights serves as a valuable asset, enabling informed
+            decision-making, optimizing operations, enhancing project
+            management, streamline processes, mitigating risks and identifying
+            opportunities for improvement.
           </p>
-          <br />
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`Regardless of the scale or complexity of a project, we employ and refine our systems and processes to provide control, governance and transparency from inception to completion. In every decision we make, we challenge and work diligently to find the most efficient and cost-effective outcome. As an agile, focused and flexible partner we adopt a value-driven strategy to define and articulate project objectives, before identifying the most effective means to deliver. Over the last few years our programme management expertise has helped clients to improve performance, drive organisational change and realise efficiencies.We are adept at helping our clients navigate through ambiguity – managing multiple workstreams, interdependencies, and driving and configuring complex programmes from integrated projects.`}
-          </p>
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`Our Procurement Assistance service creates top-to-bottom consistency throughout the entire logistics, delivery, and installation process, and our Value Engineering service achieves the optimum balance between function, performance, quality, safety, and cost. Our QS and Cost Management service helps deliver projects that meet all the functional and operational requirements of our clients within their budgets. We rely on flexible techniques that can be adapted to changing demands, managing the entire life cycle of the project from initiation to  occupancy.`}
-          </p>
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`We manage the sustainable infrastructure projects to meet the most challenging deadlines, delivering predictable cost, schedule, and quality.`}
-          </p>
+          <div className='w-4/5 '>
+            {/* <div className='flex flex-col p-8   m-4 mr-2 mb-20 '>
+              <hr className='border-2 border-num-orange mb-6' />
+              <FaQuoteLeft size={30} className='text-num-orange mb-2' />
+              <p className='md:text-lg  ml-2 mr-4 mb-2 w-11/12'>
+                <em>
+                  {' '}
+                  {`Every infrastructure assignment we work on , is an opportunity for us to bring our unique thinking to solve problems, innovate and collaborate with our clients and beyond. We are here to hand hold our clients through various stages of development so that they can focus on important issues.”`}
+                </em>
+              </p>
+              <hr className='border-2 border-num-orange mt-4' />
+            </div> */}
+          </div>
         </div>
 
         <div className='hidden w-1/4 md:flex flex-col justify-between '>
           <GetInTouch />
         </div>
       </div>
-      {/* <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
+      <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <div>
-            <h2 className='text-3xl font-bold  mb-4'>ERP & SOP Integration</h2>
+            <h2 className='text-3xl font-bold  mb-4'>
+              Techno-commercial Audit
+            </h2>
             <hr className='border-b-2  border-num-orange' />
           </div>
           <p className='md:text-2xl text-xs mt-4 mb-0 flex '>
-            We offer specialized ERP and SOP implementation services tailored
-            for infrastructure projects. We empower clients to effectively
-            manage and optimize their project operations, ensuring seamless
-            coordination, improved efficiency, and regulatory compliance. Our
-            service entails:
+            We are india’s foremost techno commercial audit firm with close to
+            two decades years of experience across varied industries. This
+            specialized audit examines both the technical and commercial aspects
+            of infrastructure ventures, providing a comprehensive evaluation of
+            their feasibility, efficiency, and financial viability.{' '}
           </p>{' '}
           <br />
-          <div className='text-lg'>
-            <li>ERP Selection and Customization</li>
-            <li>SOP Development and Implementation</li>
-            <li>Data Managementand Integration</li>
-            <li>Project Performance Monitoring and Reporting</li>
-            <li>Change Management and User Training</li>
-            <li>Compliance and Audit Readiness</li>
-          </div>
           <p className='md:text-lg text-xs mt-4 mb-0 flex '>
-            Our technical expertise, coupled with industry-specific knowledge,
-            enables us to deliver solutions that streamline operations, optimize
-            resource utilization, and drive the success of
-            infrastructure projects.
+            Our dedicated team of engineers & auditors work collaboratively to
+            present a meticulous analysis of project plans, contracts, cost
+            estimates, procurement processes, and financial controls. We are
+            well equipped to use our processes and identify potential risks,
+            cost-saving opportunities, and areas for improvement.{' '}
           </p>{' '}
           <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            With our multidimensional approach, this audit serves as a valuable
+            tool for project managers and top management in navigating the
+            complex landscape of infrastructure development, ensuring
+            transparency, accountability, and successful project delivery. The
+            scope of audit extends to capturing financial fraud and addressing
+            project mismanagement in the construction and infrastructure
+            industry. By leveraging on audit findings , businesses can{' '}
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            proactively detect anomalies and irregularities that may indicate
+            fraudulent activities or project mismanagement.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            Our audits enable early intervention and corrective actions,
+            safeguarding financial resources and ensuring project success. It
+            empowers businesses to maintain transparency, accountability, and
+            integrity, fostering trust among stakeholders.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            With a team of experienced engineers and auditors, we conduct
+            thorough assessments that evaluate the technical and commercial
+            feasibility of your infrastructure plans.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            We meticulously assess critical factors such as Men, Machine,
+            Material, Methods, and Money at the project level.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            We provide detailed breakdowns of our service activities, which are
+            categorized into pre-construction, early stage of construction,
+            significant construction, and project closure. Our services cater to
+            the entire project lifecycle, spanning from the conceptual proposal
+            stage to active construction, substantial completion, and even after
+            closeout.
+          </p>{' '}
+          <br />
+          <p className='md:text-lg text-xs flex mb-0'>
+            Committed to providing valuable insights, we strive to empower you
+            to make informed decisions and enhance your project outcomes. Let
+            our expert team and comprehensive services elevate your
+            infrastructure projects to the next level and help you achieve your
+            goals. We also identify and assess the risks of material
+            misstatement, with an emphasis on accounts that have a high
+            probability of containing errors.
+          </p>{' '}
+          <br />
+          <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
+            Some of the specialized Techno commercial audits that we provide
+            are:
+          </h1>
+          <li>Techno Commercial Internal Audit</li>
+          <li>Project Concurrent Audit</li>
+          <li>Project Closure Audit</li>
+          <li>Functional Audits/P2P Audits/Process Audits</li>
+          <li>Revenue Assurance Audit of Toll Plaza</li>
+          <li>Energy Audit- Renewables</li>
         </div>
         <div className='md:inline relative hidden mt-20 w-2/5'>
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
@@ -307,9 +300,8 @@ const Page = () => {
               <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
-        </div> 
-        <div className='w-1/4'></div>
-      </div> */}
+        </div>
+      </div>
       <div className='md:hidden p-16 flex  justify-center '>
         <GetInTouch />
       </div>
@@ -344,7 +336,9 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='text-xl font-bold '>{project.name}</h3>
+                          <h3 className=' text-xl font-bold '>
+                            {project.name}
+                          </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
                             {project.location}
                           </h2>

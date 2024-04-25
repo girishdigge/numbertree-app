@@ -140,13 +140,13 @@ const Page = () => {
                 <h1 className='text-2xl font-medium'>{person.name}</h1>
                 <h1 className='text-lg'>{person.title}</h1>
                 <div className='flex gap-2 hover:cursor-pointer'>
-                  <div
+                  {/* <div
                     onClick={() =>
                       (window.location.href = `mailto:${person.mail}`)
                     }
                   >
                     <IoIosMail size={24} />
-                  </div>
+                  </div> */}
                   <div
                     onClick={() =>
                       (window.location.href = `${person.linkedin}`)

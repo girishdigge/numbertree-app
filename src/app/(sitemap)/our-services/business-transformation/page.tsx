@@ -5,7 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IoHomeSharp } from 'react-icons/io5';
 import { RxSlash } from 'react-icons/rx';
-
+import { FaFacebookF } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
+import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -19,30 +23,27 @@ import ServiceLinks from '@/components/sitemap/serviceLinks';
 const Page = () => {
   const projects = [
     {
-      name: 'Mumbai Metro Line 5',
-      location: 'Mumbai',
-      link: '/projects/mumbai-metro-line-5',
-      image: '/projects/MumbaiMetroThaneBhiwandiKalyan.jpg',
+      name: 'IIM Kashipur Construction Project',
+      location: 'Uttarakhand',
+      link: '/projects/iim-kashipur',
+      image: '/featuredProjects/iim-kashipur.jpg',
     },
     {
-      name: 'Pune Metro Corridor 1 & 2',
-
-      location: 'Pune',
-      link: '/projects/pune-metro-corridor-1-2',
-      image: '/projects/PuneMetro.jpg',
+      name: ' ITPO Convention Center,Bharat Mandapam.',
+      location: 'New Delhi',
+      link: '/projects/ITPO',
+      image: '/projects/itpo.jpg',
     },
     {
-      name: 'Eastern Dedicate Freight Corridor 301',
-
-      location: 'Ambala,Punjab',
-      link: '/projects/freight-301-ambala',
-      image: '/projects/EasternDedicateFreightCorridor301.jpg',
-    },
-    {
-      name: 'Eastern Dedicate Freight Corridor 302',
-      location: 'Uttar Pradesh ',
-      link: '/projects/freight-302-dadri',
-      image: '/projects/EasternDedicateFreightCorridor302.jpg',
+      id: 31,
+      name: 'Al Maktoum Hospital redevelopment',
+      services: ['1'],
+      sectors: ['6'],
+      locations: ['0'],
+      types: ['1'],
+      location: 'Dubai',
+      link: '/projects/al-maktoum',
+      image: '/projects/Al-Maktum.jpg',
     },
   ];
   return (
@@ -58,16 +59,14 @@ const Page = () => {
           <p className='font-bold text-num-indigo'>Services</p>
         </Link>
         <RxSlash color='gray' className='mt-1' />
-        <p className='font-bold text-num-indigo'>
-          Project Management Consultancy{' '}
-        </p>
+        <p className='font-bold text-num-indigo'>Business Transformation</p>
       </div>
       <div className='relative '>
         <Image
-          src={`/services/ProjectMonCon.jpg`}
+          src={`/services/BusinessTransformation1.jpg`}
           width={2046}
           height={768}
-          alt='Project Management Consultancy '
+          alt='Business Transformation'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
@@ -77,12 +76,12 @@ const Page = () => {
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>
               <h1 className='font-bold md:text-7xl text-2xl md:mb-2 border-num-orange ml-2 flex animate-fadeIn animate-fadeInRight'>
-                Project Management Consultancy
+                Business Transformation
               </h1>
               <p className='md:text-lg text-xs font-medium ml-4 md:mb-2 animate-fadeInUp'>
-                We improve efficiency, reduce costs and time, and maximize value
-                by managing the supply chain, making timely decisions, and
-                operating in a proactive manner.
+                Traditional construction processes often suffer from delays,
+                cost overruns, and quality issues, which can be mitigated by
+                adopting innovative approaches and methodologies.
               </p>
             </div>
             <Link href={`/services`} className=''>
@@ -104,116 +103,21 @@ const Page = () => {
         <ServiceMobileLinks />
       </div>
       <div className='flex flex-row'>
-        {/* <ServiceLinks /> */}
-        <div className='md:flex w-1/4 hidden  pl-4 flex-col'>
-          <h1 className='text-xl font-bold mb-2'> Follow Us</h1>
-
-          <div className='flex gap-4 mb-8'>
-            <Link
-              href={`https://www.facebook.com/p/NumberTree-Assurance-Services-100066721811439/`}
-            >
-              <Image
-                src={`/images/facebook.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link
-              href={`https://in.linkedin.com/company/numbertree-advisor-pvt-ltd`}
-            >
-              <Image
-                src={`/images/linkedin-1.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link
-              href={`https://twitter.com/numbertreellp?s=21&t=5IMHdP5ykmmz3QRuWsHNaQ`}
-            >
-              <Image
-                src={`/images/twitter.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-            <Link href={``}>
-              <Image
-                src={`/images/instagram.png`}
-                width={32}
-                height={32}
-                alt='logo'
-              />
-            </Link>
-          </div>
-          <div>
-            <h2 className='text-xl font-bold flex  text-black mt-2 mb-2 '>
-              Other Services
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <div className='w-1/2'>
-                <Link href='/services/techno-commercial-audit'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    Techno-Commercial Audit
-                  </Button>
-                </Link>
-                <Link href='/services/contract-administration'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1> Contract Adiministration and</h1>
-                    <h1> Bill Verification</h1>
-                  </Button>
-                </Link>
-
-                {/* <Link href='/services/project-monitoring-and-control'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1>Project Management</h1>
-                    <h1>Consultancy</h1>
-                  </Button>
-                </Link> */}
-
-                <Link href='/services/quantity-survey'>
-                  <Button className='w-60 items-start justify-start h-14 flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1> Quantity Survey and</h1>
-                    <h1> Cost Control</h1>
-                  </Button>
-                </Link>
-                <Link href='/services/claim-management'>
-                  <Button className='w-60 h-14 items-start justify-start flex flex-col mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1>Construction Claim </h1>
-                    <h1>Management</h1>
-                  </Button>
-                </Link>
-
-                <Link href='/services/business-transformation'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    <h1 className='w-3/4'>Business Transformation</h1>
-                  </Button>
-                </Link>
-                <Link href='/services/transaction-advisory'>
-                  <Button className='w-60 items-start justify-start  mb-2 text-black bg-gray-100 hover:border-2 hover:border-wilmer-orange hover:bg-num-gray'>
-                    Transaction Advisory
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ServiceLinks />
         <div className=' flex flex-col items-center  text-justify'>
           <h1 className='text-3xl flex justify-center gap-y-2 font-normal md:w-3/4 w-11/12 text-black mb-4'>
-            <em>Adding value beyond what is expected </em>
+            <em>Leading the Infrastructure Transformation </em>
           </h1>
           <div className='flex flex-col items-center '>
             <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-              {` We provide world-class project management services, helping our
-              clients achieve their goals with precision, speed, and efficiency.
-              We ensure that our clients' projects are delivered on-time and
-              within budget, managing every aspect of construction delivery from
-              pre-construction to post-construction. We specialize in managing
-              sustainable infrastructure projects and meeting the most
-              challenging deadlines, delivering predictable cost, schedule, and
-              quality`}
+              Business transformation entails leveraging cutting-edge
+              technologies, new methodologies, and advanced management practices
+              to reshape the way infrastructure projects are designed, planned,
+              executed, and maintained. As the industry evolves, stakeholders
+              are increasingly recognising the need to adapt to changing market
+              demands and address emerging challenges, propelling the
+              infrastructure construction sector into a new era of growth and
+              performance excellence.
             </p>{' '}
             <br />
           </div>
@@ -229,42 +133,80 @@ const Page = () => {
             <hr className='border-2 border-num-orange mt-4' />
           </div> */}
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            At NumberTree, we offer three typical stages of Project Management
-            services: Pre-Construction Management, Construction Management, and
-            Post-Construction Management.
+            Adoption of latest technology is crucial for a variety of reasons,
+            ensuring the long-term success and sustainability of the industry.
+            One primary reason is the need for improved efficiency in project
+            delivery. Traditional construction processes often suffer from
+            delays, cost overruns, and quality issues, which can be mitigated by
+            adopting innovative approaches and methodologies. By implementing
+            new technologies and processes, construction firms can streamline
+            their operations, reducing waste and boosting productivity.
           </p>
           <br />
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`During the Pre-Construction Management stage, we take ownership of the entire project and chalk out a roadmap for our customers. We improve efficiency, reduce costs and time, and maximize value by managing the supply chain, making timely decisions, and operating in a proactive and robust environment.`}
+            Another important factor is the growing emphasis on sustainability
+            and environmental responsibility. The infrastructure industry has a
+            significant impact on the environment, contributing to carbon
+            emissions, resource depletion, and waste generation. Business model
+            transformation enables the adoption of green building practices,
+            energy-efficient technologies, and circular economy principles,
+            resulting in more environmentally friendly and resource-efficient
+            projects.
+          </p>
+          <br />
+          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
+            Moreover, market demands, and customer expectations are rapidly
+            changing. Clients are increasingly seeking greater value, faster
+            delivery, and more customised solutions. By embracing business model
+            transformation, construction companies can better respond to these
+            demands by developing new service offerings, incorporating digital
+            technologies for enhanced customer experience, and fostering a
+            culture of innovation.
           </p>
 
           <br />
+
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {` Our Construction Management strategy involves overseeing the general
-            contractor's supervision team at the site, monitoring their
-            established processes, and doing periodic quality checks. During the
-            final design, we conduct constructability and cost-saving reviews,
-            make necessary design changes, and ensure environmental compliance.
-            We ensure that the project is handed over to the client in a
-            controlled and disciplined manner during the Post-Construction Management stage. We coordinate the handover of all documents, including as-built drawings and approved O&M manuals by the contractors/vendors.`}
+            The construction industry is also facing a growing skills gap and
+            labour shortages. By adopting new business models that incorporate
+            automation, robotics, and other advanced technologies, firms can
+            address these challenges while increasing safety and reducing the
+            reliance on manual labour.
           </p>
           <br />
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`Regardless of the scale or complexity of a project, we employ and refine our systems and processes to provide control, governance and transparency from inception to completion. In every decision we make, we challenge and work diligently to find the most efficient and cost-effective outcome. As an agile, focused and flexible partner we adopt a value-driven strategy to define and articulate project objectives, before identifying the most effective means to deliver. Over the last few years our programme management expertise has helped clients to improve performance, drive organisational change and realise efficiencies.We are adept at helping our clients navigate through ambiguity – managing multiple workstreams, interdependencies, and driving and configuring complex programmes from integrated projects.`}
+            The competitive landscape of the construction industry is evolving,
+            with new players entering the market and established firms seeking
+            differentiation. Business model transformation enables construction
+            companies to stay ahead of the competition by continuously adapting
+            to market dynamics, exploring new revenue streams, and fostering a
+            culture of innovation and agility.
           </p>
+          <br />
           <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`Our Procurement Assistance service creates top-to-bottom consistency throughout the entire logistics, delivery, and installation process, and our Value Engineering service achieves the optimum balance between function, performance, quality, safety, and cost. Our QS and Cost Management service helps deliver projects that meet all the functional and operational requirements of our clients within their budgets. We rely on flexible techniques that can be adapted to changing demands, managing the entire life cycle of the project from initiation to  occupancy.`}
+            In summary, the importance of business model transformation in the
+            construction industry lies in its ability to drive efficiency,
+            sustainability, adaptability, and competitiveness, ensuring the
+            sector’s long-term growth and success
           </p>
-          <p className='  md:w-3/4 w-11/12 md:text-lg text-xs flex mb-0'>
-            {`We manage the sustainable infrastructure projects to meet the most challenging deadlines, delivering predictable cost, schedule, and quality.`}
-          </p>
+          <br />
+          <h1 className='  md:w-3/4 w-11/12 md:text-xl font-bold text-xs flex mb-2 '>
+            Our Business Transformation entails{' '}
+          </h1>
+          <div className=' flex flex-col  w-3/4  mb-4 text-xl font-medium '>
+            <Link href={`/bim`}>
+              <li className='hover:underline'>BIMfirst</li>
+              <li className='hover:underline'>Digital Twin</li>
+              <li className='hover:underline'>Digital Project Monitoring </li>
+            </Link>{' '}
+          </div>
         </div>
 
         <div className='hidden w-1/4 md:flex flex-col justify-between '>
           <GetInTouch />
         </div>
       </div>
-      {/* <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
+      <div className='flex flex-row text-justify pr-8 ml-8 mt-20'>
         <div className='w-1/4'></div>
         <div className='flex flex-col w-3/5  mr-14'>
           <div>
@@ -295,7 +237,7 @@ const Page = () => {
           </p>{' '}
           <br />
         </div>
-        <div className='md:inline relative hidden mt-20 w-2/5'>
+        {/* <div className='md:inline relative hidden mt-20 w-2/5'>
           <div className='  border-2 font-xl  border-wilmer-orange mt-20 p-10   text-wilmer-orange '>
             <p className='text-xl font-medium  mb-2 '>
               <em>
@@ -307,9 +249,9 @@ const Page = () => {
               <FaQuoteLeft size={40} className='text-wilmer-orange ' />
             </div>
           </div>
-        </div> 
+        </div> */}
         <div className='w-1/4'></div>
-      </div> */}
+      </div>
       <div className='md:hidden p-16 flex  justify-center '>
         <GetInTouch />
       </div>
@@ -344,7 +286,9 @@ const Page = () => {
                     <div className='bg-black md:bg-opacity-70 bg-opacity-40 w-full  md:h-1/4 md:p-5'>
                       <div className=' text-white ml-2 flex justify-around'>
                         <div>
-                          <h3 className='text-xl font-bold '>{project.name}</h3>
+                          <h3 className=' text-xl font-bold '>
+                            {project.name}
+                          </h3>
                           <h2 className='text-num-orange ml-1 text-lg font-semibold'>
                             {project.location}
                           </h2>
