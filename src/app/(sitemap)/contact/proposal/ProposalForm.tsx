@@ -74,7 +74,7 @@ export function ProposalForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className='w-3/4 grid grid-cols-2 gap-8'
+        className='w-3/4 grid md:grid-cols-2 gap-8'
       >
         <FormField
           control={form.control}

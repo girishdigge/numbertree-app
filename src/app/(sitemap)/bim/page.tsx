@@ -68,7 +68,7 @@ const Page = () => {
       <div className='flex flex-row'>
         <ServiceLinks />
         <div className='flex flex-row justify-center text-justify'>
-          <div className='md:w-3/4 flex flex-col justify-center text-justify'>
+          <div className='md:w-3/4 w-11/12 flex flex-col justify-center text-justify'>
             {/* <h1 className='font-medium text-3xl mt-2 mb-1'>
               3D/4D/5D BIM services
             </h1> */}

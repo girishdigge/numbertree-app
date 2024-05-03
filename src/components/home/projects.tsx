@@ -50,10 +50,10 @@ const Projects = () => {
                       alt='image'
                     />
                     <div className='absolute inset-0 flex  '>
-                      <div className='bg-black md:bg-opacity-70  md:w-1/3 w-1/2  '>
+                      <div className='bg-black bg-opacity-70  md:w-1/3 w-2/3  '>
                         <div className=' text-white ml-2'>
-                          <div className='flex flex-col md:gap-y-2 md:pl-4 tracking-widest'>
-                            <h1 className='md:text-2xl font-bold md:inline hidden tracking-widest'>
+                          <div className='flex flex-col md:gap-y-2 md:pl-4 md:tracking-widest'>
+                            <h1 className='md:text-3xl md:mt-4 font-bold md:inline hidden tracking-widest'>
                               Project Details
                             </h1>
                             <hr className='border-b-1 w-40 border-white mb-2' />

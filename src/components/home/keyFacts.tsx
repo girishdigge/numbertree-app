@@ -63,7 +63,7 @@ const Keyfacts = () => {
   }, []);
 
   return (
-    <div className='md:w-11/12 '>
+    <div className='md:mr-20'>
       <div className='mt-20 md:ml-14'>
         <h1 className='text-7xl text-num-watermark text-opacity-50 font-medium'>
           Key Facts
@@ -78,17 +78,18 @@ const Keyfacts = () => {
             'We are committed to working collaboratively. We understand business goals and create a strategy to achieve them.'
           }
         </h3>
+
         <div className='grid  bg-num-indigo text-white'>
           <Marquee pauseOnHover={true} speed={75}>
             <div className=' grid grid-cols-5 p-0 '>
               {images.map((image, index) => (
-                <div key={index} className='p-8'>
+                <div key={index} className='p-12 pl-20 placeholder-lime-200'>
                   <div className='flex flex-col items-center justify-center  '>
                     <Image
                       src={image.url}
                       alt={image.alt}
-                      width={100}
-                      height={100}
+                      width={110}
+                      height={110}
                       className='object-contain'
                     />
                     <h1 className='text-4xl font-bold'>{image.alt}</h1>

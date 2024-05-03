@@ -91,12 +91,43 @@ const Services = () => {
       </div>
 
       <div className='flex md:flex-row flex-col md:ml-16 items-center md:w-11/12'>
+        <div className='md:flex hidden flex-col w-2/5 font-bold bg-num-blue bg-opacity-10 text-num-orange border-t-2 border-num2-gray-dark  '>
+          {tabs.map((tab) => (
+            <div
+              key={tab.id}
+              className={`cursor-pointer  px-4 py-5  ${
+                activeTab === tab.id
+                  ? 'text-white   bg-num-indigo'
+                  : 'text-black border-b-2 border-num2-gray-dark'
+              }   `}
+              onMouseEnter={() => handleTabChange(tab.id)}
+            >
+              {tab.name}
+            </div>
+          ))}
+        </div>
+        <div className=' md:hidden flex-wrap w-full font-bold bg-num-blue bg-opacity-10 text-num-orange  '>
+          {tabs.map((tab) => (
+            <div
+              key={tab.id}
+              className={`cursor-pointer py-1 ${
+                activeTab === tab.id
+                  ? 'text-white   bg-num-indigo'
+                  : 'text-black border-b-2 border-num2-gray-dark'
+              }`}
+              onMouseEnter={() => handleTabChange(tab.id)}
+            >
+              {tab.name}
+            </div>
+          ))}
+        </div>
+
         <div className='flex md:w-3/5'>
-          <div className=' mt-0'>
+          <div className=' mt-0 md:p-4 md:pl-0'>
             <div className='relative'>
               <Image
-                width={1200}
-                height={600}
+                width={1296}
+                height={598}
                 src={tabs[activeTab].imageUrl}
                 alt={`Image for ${tabs[activeTab].name}`}
                 className='w-full h-auto'
@@ -121,36 +152,6 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className='md:flex hidden flex-col w-2/5 font-bold bg-num-blue bg-opacity-10 text-num-orange pb-3 '>
-          {tabs.map((tab) => (
-            <div
-              key={tab.id}
-              className={`cursor-pointer  px-4 py-5  ${
-                activeTab === tab.id
-                  ? 'text-white   bg-num-indigo'
-                  : 'text-black border-b-2 border-num2-gray-dark'
-              }`}
-              onMouseEnter={() => handleTabChange(tab.id)}
-            >
-              {tab.name}
-            </div>
-          ))}
-        </div>
-        <div className=' md:hidden flex-wrap w-full font-bold bg-num-blue bg-opacity-10 text-num-orange  '>
-          {tabs.map((tab) => (
-            <div
-              key={tab.id}
-              className={`cursor-pointer py-1 ${
-                activeTab === tab.id
-                  ? 'text-white   bg-num-indigo'
-                  : 'text-black border-b-2 border-num2-gray-dark'
-              }`}
-              onMouseEnter={() => handleTabChange(tab.id)}
-            >
-              {tab.name}
-            </div>
-          ))}
         </div>
       </div>
     </div>

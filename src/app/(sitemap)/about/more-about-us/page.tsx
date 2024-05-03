@@ -96,51 +96,51 @@ const Page = () => {
               <h2 className='text-2xl flex  font-semibold text-black mb-4'>
                 Our comprehensive ranges of services include
               </h2>
-              <div className='flex flex-col w-2/3 mr-10 gap-2'>
+              <div className='flex flex-col md:w-2/3 md:mr-10 gap-2'>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Project techno-commercial audit`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Project management consultancy`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Cost Management`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Quantity take-off`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Contract Administration & Bill Verification`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Claim management & Delay Analysis`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` 3D/4D BIM`}
                   </span>
                 </p>
                 <p className='text-xl'>
-                  <span className='flex items-center'>
+                  <span className='flex md:items-center'>
                     <FaArrowRight size={16} className='mr-1 text-num-orange' />
                     {` Transaction advisory`}
                   </span>

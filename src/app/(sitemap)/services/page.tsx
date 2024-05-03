@@ -106,6 +106,7 @@ const Page = () => {
           width={1920}
           height={768}
           alt='services banner'
+          className='contain'
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-40 bg-black  text-white'>
           <div className='ml-10'>
@@ -150,11 +151,12 @@ const Page = () => {
                       width={800}
                       height={600}
                       alt={service.name}
+                      className='contain'
                     />
                     <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                       <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
-                        <div className='ml-8'>
-                          <h1 className='text-white text-2xl font-bold '>
+                        <div className='md:ml-8'>
+                          <h1 className='text-white md:text-2xl text-xl font-bold '>
                             {service.name}
                           </h1>
                           <span className='text-white font-bold'>

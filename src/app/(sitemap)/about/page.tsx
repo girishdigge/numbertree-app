@@ -186,7 +186,7 @@ const Page = () => {
               <h1 className='md:text-7xl text-4xl'>Our Values</h1>
               <hr className='w-1/2 -translate-y-4 border-2 border-num-orange' />
               <h2 className='text-3xl'>The compass that guides our ship</h2>
-              <p className='md:text-lg w-3/4 text-justify'>
+              <p className='md:text-lg md:w-3/4 text-justify'>
                 We work on the some of the most complex & challenging projects,
                 partnering with great businesses that will shape tomorrow’s
                 world in the most positive and sustainable way.{' '}
@@ -195,7 +195,7 @@ const Page = () => {
           </div>
           <div className='w-1/2 bg-num-indigo p-8'>
             <div className='grid md:grid-cols-2 gap-y-12'>
-              <div className='flex flex-col text-white items-center ml-4'>
+              <div className='flex flex-col text-white items-center md:ml-4'>
                 <Image
                   src={`/about/aim.png`}
                   width={80}
@@ -205,7 +205,7 @@ const Page = () => {
                 />
                 <h1 className='text-xl'>Client First</h1>
               </div>
-              <div className='flex flex-col text-white items-center mr-4'>
+              <div className='flex flex-col text-white items-center md:mr-4'>
                 <Image
                   src={`/about/agility.png`}
                   width={80}
@@ -215,7 +215,7 @@ const Page = () => {
                 />
                 <h1 className='text-xl '>Agility</h1>
               </div>
-              <div className='flex flex-col text-white items-center ml-4'>
+              <div className='flex flex-col text-white items-center md:ml-4'>
                 <Image
                   src={`/about/integrity.png`}
                   width={80}
@@ -225,7 +225,7 @@ const Page = () => {
                 />
                 <h1 className='text-xl'>Integrity</h1>
               </div>
-              <div className='flex flex-col text-white items-center mr-4'>
+              <div className='flex flex-col text-white items-center md:mr-4'>
                 <Image
                   src={`/about/social.png`}
                   width={80}
@@ -235,7 +235,7 @@ const Page = () => {
                 />
                 <h1 className='text-xl '>Social Impact</h1>
               </div>
-              <div className='flex flex-col text-white items-center ml-4'>
+              <div className='flex flex-col text-white items-center md:ml-4'>
                 <Image
                   src={`/about/auction.png`}
                   width={80}
@@ -245,7 +245,7 @@ const Page = () => {
                 />
                 <h1 className='text-xl'>Law of Land</h1>
               </div>
-              <div className='flex flex-col text-white items-center  mr-4'>
+              <div className='flex flex-col text-white items-center  md:mr-4'>
                 <Image
                   src={`/about/idea.png`}
                   width={80}
@@ -267,9 +267,9 @@ const Page = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-        <div className='flex flex-row w-11/12'>
+        <div className='flex md:flex-row flex-col w-11/12'>
           <div className='md:w-2/5 '>
-            <h1 className='md:text-7xl text-4xl mb-4 pt-32'>Our Approach</h1>
+            <h1 className='md:text-7xl text-4xl  mb-4 pt-32'>Our Approach</h1>
             <hr className='w-1/2 border-2 border-num-orange' />
           </div>
           <div className='md:w-3/5 text-justify'>
@@ -352,11 +352,11 @@ const Page = () => {
       <div className='flex mt-20 mb-20'>
         <div className='w-11/12 bg-num-indigo ml-12'>
           <div className='flex flex-col p-12 text-white'>
-            <h1 className='text-7xl mb-4 mt-8 '>Our Ethics</h1>
+            <h1 className='md:text-7xl text-4xl mb-4 mt-8 '>Our Ethics</h1>
             <hr className='w-1/6 border-2 border-num-orange' />
             <div className='flex '>
-              <div className=' flex mt-8'>
-                <div className='w-1/2'>
+              <div className=' flex md:flex-row flex-col mt-8'>
+                <div className='md:w-1/2'>
                   <h1 className='text-3xl  mr-4'>
                     Committed to doing the right thing , every time
                   </h1>
@@ -369,7 +369,7 @@ const Page = () => {
               </div>
             </div>
             <div className='w-11/12 flex flex-col mt-10'>
-              <div className='grid grid-cols-3 gap-12'>
+              <div className='grid md:grid-cols-3 gap-12'>
                 <div>
                   <Image
                     src={`/about/B1.jpg`}
@@ -404,12 +404,12 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='w-1/12 h-72 flex mt-44'>
+        <div className='w-1/12  h-72 flex mt-44'>
           <div className='w-1/2  bg-num-orange'></div>
         </div>
       </div>
       <div className=' flex items-center justify-center mb-20'>
-        <div className='relative ml-10 mr-10'>
+        <div className='relative md:ml-10 md:mr-10'>
           <Image
             src={`/about/socialResponce.png`}
             width={1920}
@@ -419,14 +419,16 @@ const Page = () => {
           />
           <div className='absolute inset-0 bg-black bg-opacity-50'>
             <div className='flex flex-col items-center justify-center  text-white'>
-              <div className=''>
-                <h1 className='md:text-7xl md:mt-40'>Corporate Social</h1>
-                <h1 className='md:text-7xl ml-8 md:mt-4 md:mb-20'>
+              <div className='md:mt-0 mt-2'>
+                <h1 className='md:text-7xl text-3xl md:mt-40'>
+                  Corporate Social
+                </h1>
+                <h1 className='md:text-7xl text-3xl md:ml-8 md:mt-4 md:mb-20 mb-4'>
                   Responsibility
                 </h1>
                 {/* <Link href={'/about/csr-esg'}> */}
                 <Link href={'#'}>
-                  <Button className='bg-num-indigo w-40 hover:bg-num-orange hover:text-black ml-44'>
+                  <Button className='bg-num-indigo w-40 hover:bg-num-orange hover:text-black md:ml-44'>
                     Read More
                   </Button>
                 </Link>

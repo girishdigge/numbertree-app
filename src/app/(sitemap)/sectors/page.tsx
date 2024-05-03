@@ -159,7 +159,7 @@ const Page = () => {
             {`We cater to sectors across infrastructure segments. Our indepth knowledge of the sector coupled with customized approach to each infrastructure project, has made us preferred partners to some of the leading infrastructure companies in India and abroad.`}
           </h3>
         </div>
-        <div className='grid grid-cols-2  gap-8 '>
+        <div className='grid md:grid-cols-2  gap-8 '>
           {sectors.map((sector, index) => (
             <div key={index}>
               <div className='z-1 flex flex-row relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
@@ -169,6 +169,7 @@ const Page = () => {
                     width={750}
                     height={460}
                     alt={sector.title}
+                    className='contain'
                   />
                   <div className='z-2 absolute inset-0 flex flex-col justify-end '>
                     <div className=' text-white bg-black bg-opacity-50 flex flex-col '>
