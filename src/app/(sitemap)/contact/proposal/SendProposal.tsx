@@ -34,9 +34,9 @@ export const sendProposal = (data: any) => {
 `;
 
   sendMail({
-    to: 'thelordshady@gmail.com',
+    to: 'numbertreehr@gmail.com',
     name: 'Girish', // You can pass a default name or use the name from data
-    subject: 'Test Proposal',
+    subject: 'Proposal Request from Numbertree Website',
     body: htmlContent, // Pass the HTML content
   });
 };
