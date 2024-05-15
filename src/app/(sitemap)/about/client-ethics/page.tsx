@@ -241,7 +241,7 @@ const Page = () => {
           </div>
         </div>
         <Image
-          src={`/about/Ethics.png`}
+          src={`/about/Ethics.jpg`}
           height={800}
           width={800}
           alt='ethics'

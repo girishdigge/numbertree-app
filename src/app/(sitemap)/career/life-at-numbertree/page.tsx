@@ -122,7 +122,7 @@ const Page = () => {
                       <p className='text-xl mt-2 mb-4 w-3/4'></p>
                     </div>
                     <Image
-                      src={'/bim/b4.png'}
+                      src={'/bim/b4.jpg'}
                       height={600}
                       width={600}
                       alt='img'

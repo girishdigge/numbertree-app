@@ -147,7 +147,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/bim/b1.png'}
+                    src={'/bim/b1.jpg'}
                     height={600}
                     width={600}
                     alt='img'
@@ -174,7 +174,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/bim/b2.png'}
+                    src={'/bim/b2.jpg'}
                     height={600}
                     width={600}
                     alt='img'
@@ -206,7 +206,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/bim/b3.png'}
+                    src={'/bim/b3.jpg'}
                     height={600}
                     width={600}
                     alt='img'
@@ -239,7 +239,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/bim/b4.png'}
+                    src={'/bim/b4.jpg'}
                     height={600}
                     width={600}
                     alt='img'
@@ -300,7 +300,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/bim/etihad.png'}
+                    src={'/bim/etihad.jpg'}
                     height={800}
                     width={800}
                     alt='img'
@@ -357,7 +357,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/bim/shurayrah.png'}
+                    src={'/bim/shurayrah.jpg'}
                     height={800}
                     width={800}
                     alt='img'
@@ -405,7 +405,7 @@ const Page = () => {
                   <TabsTrigger value='2'>
                     {' '}
                     <Image
-                      src={'/bim/etihad.png'}
+                      src={'/bim/etihad.jpg'}
                       height={100}
                       width={120}
                       alt='img'
@@ -423,7 +423,7 @@ const Page = () => {
                   <TabsTrigger value='4'>
                     {' '}
                     <Image
-                      src={'/bim/shurayrah.png'}
+                      src={'/bim/shurayrah.jpg'}
                       height={100}
                       width={120}
                       alt='img'

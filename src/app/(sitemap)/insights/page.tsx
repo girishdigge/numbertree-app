@@ -119,7 +119,7 @@ const Page = () => {
           </div>
           <div className='z-1 flex flex-row relative h-96'>
             <Image
-              src={`/connect/linkedin.png`}
+              src={`/connect/linkedin.jpg`}
               height={540}
               width={960}
               alt='insights'
