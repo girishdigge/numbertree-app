@@ -38,7 +38,7 @@ const Page = () => {
       name: 'The New Parliament Building',
       location: 'New Delhi',
       link: '/projects/new-parliment',
-      image: '/featuredProjects/parlimentInside.jpg',
+      image: '/projects/parlimentInside.jpg',
     },
     {
       name: 'Al Maktoum Hospital redevelopment ',

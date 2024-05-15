@@ -40,7 +40,7 @@ const Page = () => {
       name: 'HPCL Mittal Energy Limited (HMEL) ',
       location: 'Bhatinda',
       link: '/projects/hpcl',
-      image: '/featuredProjects/hpcl.jpg',
+      image: '/projects/hpcl.jpg',
     },
   ];
   return (

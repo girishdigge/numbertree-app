@@ -191,7 +191,7 @@ const Page = () => {
             alt='img'
             className=''
           />
-          <div className='md:absolute md:inset-10 md:translate-y-0 -translate-y-10 flex flex-col justify-end items-center'>
+          <div className='md:absolute md:inset-10 md:translate-y-0 -translate-y-5 flex flex-col justify-end items-center'>
             <Link href={`/about/values`}>
               <Button className='w-40 text-lg bg-num-indigo  hover:bg-white hover:text-num-orange'>
                 Read More

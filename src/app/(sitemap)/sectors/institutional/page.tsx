@@ -26,13 +26,13 @@ const Page = () => {
       name: 'IIM Kashipur Construction Project',
       location: 'Uttarakhand',
       link: '/projects/iim-kashipur',
-      image: '/featuredProjects/iim-kashipur.jpg',
+      image: '/projects/iim-kashipur.jpg',
     },
     {
       name: 'IIM Trichy Construction Project ',
       location: 'Tamilnadu',
       link: '/projects/iim-trichy',
-      image: '/projects/IIM-Trichy.jfif',
+      image: '/projects/IIM-Trichy.jpg',
     },
     {
       name: 'All India Institute of Management Sciences',

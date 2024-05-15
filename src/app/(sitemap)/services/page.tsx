@@ -218,7 +218,7 @@ const Page = () => {
                 </p>
                 <div className='flex flex-row-reverse mt-16  mr-4'>
                   <Link href={`/sectors`}>
-                    <Button className='w-40 mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
+                    <Button className='w-40 md:mt-4 text-base bg-num-orange border-0 hover:bg-num-indigo'>
                       All Sectors
                     </Button>
                   </Link>
@@ -250,7 +250,7 @@ const Page = () => {
                 </p>
                 <div className='flex flex-row-reverse mt-8 mr-4'>
                   <Link href={`projects`}>
-                    <Button className='w-40 mt-14 text-base bg-num-orange  border-0 hover:bg-num-indigo'>
+                    <Button className='w-40 md:mt-14 text-base bg-num-orange  border-0 hover:bg-num-indigo'>
                       All Projects
                     </Button>
                   </Link>

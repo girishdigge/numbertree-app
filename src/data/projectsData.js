@@ -162,7 +162,7 @@ export const projects = [
     types: ['1'],
     location: 'New Delhi',
     link: '/projects/delhi-vadodara',
-    image: '/featuredProjects/Delhi-meerut-expressway.jpeg',
+    image: '/projects/Delhi-meerut-expressway.jpeg',
   },
   {
     id: 16,
@@ -195,7 +195,7 @@ export const projects = [
     types: ['3'],
     location: 'Kashipur, Uttarakhand',
     link: '/projects/iim-kashipur',
-    image: '/featuredProjects/iim-kashipur.jpg',
+    image: '/projects/iim-kashipur.jpg',
   },
   {
     id: 18,
@@ -206,7 +206,7 @@ export const projects = [
     types: ['1'],
     location: 'Trichy, Tamil Nadu',
     link: '/projects/iim-trichy',
-    image: '/projects/IIM-Trichy.jfif',
+    image: '/projects/IIM-Trichy.jpg',
   },
   {
     id: 19,
@@ -272,7 +272,7 @@ export const projects = [
     types: ['1'],
     location: 'New Delhi',
     link: '/projects/new-parliment',
-    image: '/featuredProjects/parlimentInside.jpg',
+    image: '/projects/parlimentInside.jpg',
   },
   {
     id: 23,
@@ -316,7 +316,7 @@ export const projects = [
     types: ['1'],
     location: 'Bhatinda, Punjab',
     link: '/projects/hpcl',
-    image: '/featuredProjects/hpcl.jpg',
+    image: '/projects/hpcl.jpg',
   },
   {
     id: 26,
@@ -327,7 +327,7 @@ export const projects = [
     types: ['1'],
     location: 'Jigmeling, Bhutan',
     link: '/projects/magadechhu-bhutan',
-    image: '/featuredProjects/bhutan-magadechhu.jpg',
+    image: '/projects/bhutan-magadechhu.jpg',
   },
   {
     id: 27,

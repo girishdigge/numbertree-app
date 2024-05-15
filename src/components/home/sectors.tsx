@@ -34,7 +34,7 @@ const Sectors = () => {
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
           href={`/sectors`}
-          className='md:w-1/3 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
+          className='md:w-1/3 md:mr-0 mr-5 border flex flex-col text-num-indigo md:hover:bg-num-indigo md:hover:text-white'
         >
           <h1 className='ml-4 mt-2  md:text-4xl text-2xl font-light w-1/2'>
             Transportation

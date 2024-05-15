@@ -26,7 +26,7 @@ const Page = () => {
       name: 'Magadechhu Hydroelectric Project',
       location: 'Bhutan',
       link: '/projects/magdechhu-bhutan',
-      image: '/featuredProjects/bhutan-magadechhu.jpg',
+      image: '/projects/bhutan-magadechhu.jpg',
     },
     {
       name: 'Nuclear Fuel Complex',

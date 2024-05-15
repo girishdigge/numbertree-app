@@ -38,7 +38,7 @@ const Page = () => {
       name: ' Delhi-Vadodara Greenfield Alignment, NH148N - Package 20',
       location: 'New Delhi',
       link: '/projects/delhi-vadodara',
-      image: '/featuredProjects/Delhi-meerut-expressway.jpeg',
+      image: '/projects/Delhi-meerut-expressway.jpeg',
     },
     {
       name: ' Development of Purvanchal Expressway (Package VII) Mojrapur (Azamgarh) to Bijaura Ghazipur',

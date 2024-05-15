@@ -56,7 +56,7 @@ const Page = () => {
           Jobs
         </h2>
       </div>
-      <div className='flex flex-rows-2 '>
+      <div className='flex md:flex-row flex-col '>
         <div className='flex flex-col w-3/4 m-10 '>
           <Suspense>
             <InputSearchButton />
@@ -64,7 +64,7 @@ const Page = () => {
           <div className='mt-10'>
             {Jobs.map((job, index) => (
               <div key={index} className='flex flex-col p-4'>
-                <div className=' flex border border-num-orange p-2'>
+                <div className=' flex md:flex-row flex-col border border-num-orange p-2'>
                   <div className='flex flex-col w-11/12'>
                     <h1 className='text-2xl font-medium'>{job.title}</h1>
                     <h2 className='text-num-orange text-lg'>
@@ -92,7 +92,7 @@ const Page = () => {
             ))}
           </div>
         </div>
-        <div className='flex flex-col w-1/4 mt-24 ml-10'>
+        <div className='flex flex-col md:w-1/4 mt-24 md:ml-10'>
           <div className='flex flex-col bg-num-indigo p-10 m-10'>
             <h1 className='text-white'>{`Don't see what you're looking for?`}</h1>
             <h2 className='text-white'>Connect with us</h2>

@@ -238,16 +238,15 @@ const Page = () => {
             <li>Risk Evaluation and Quantification</li>
             <li>Unforeseen and Differing Site Conditions</li>
             <li>Damage Assessments</li>
-            <li>Change Order Impacts</li> <li>Schedule Delay Analysis</li>
+            <li>Change Order Impacts</li>
+            <li>Schedule Delay Analysis</li>
             <li>Time Impact Analysis</li>
             <li>Construction Defect Evaluation</li>
             <li>Disruption Assessments</li>
             <li>Productivity Impact Evaluations</li>
             <li>Acceleration Claims </li>
-            <li>
-              Wrongful Contract Termination or Suspension
-              <li>Assessment of Force Majeure Events</li>
-            </li>
+            <li>Wrongful Contract Termination or Suspension</li>
+            <li>Assessment of Force Majeure Events</li>
             <li>Claims Mitigation & Avoidance</li>
             <li>Claim Preparation & Presentation</li>
             <li>Construction Mediation</li>
@@ -273,10 +272,12 @@ const Page = () => {
             <li>Time Impact Analysis (TIA)</li>
             <li>
               Delay Analysis Methods
-              <ul className='ml-6'>1. Retrospective Analysis </ul>
-              <ul className='ml-6'>2. Forensic Schedule Analysis </ul>
-              <ul className='ml-6'>3. Time Impact Analysis </ul>
-              <ul className='ml-6'>4. Impacted As-Planned Analysis </ul>
+              <ul className='ml-6'>
+                <li>1. Retrospective Analysis </li>
+                <li>2. Forensic Schedule Analysis </li>
+                <li>3. Time Impact Analysis </li>
+                <li>4. Impacted As-Planned Analysis </li>
+              </ul>
             </li>
             <br />
           </div>

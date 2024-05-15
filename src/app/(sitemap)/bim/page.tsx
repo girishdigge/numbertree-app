@@ -276,7 +276,7 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/featuredProjects/Red-Sea.jpg'}
+                    src={'/projects/Red-Sea.jpg'}
                     height={800}
                     width={800}
                     alt='img'
@@ -396,7 +396,7 @@ const Page = () => {
                 <TabsList className='grid grid-cols-5 mb-4  bg-white'>
                   <TabsTrigger value='1'>
                     <Image
-                      src={'/featuredProjects/Red-Sea.jpg'}
+                      src={'/projects/Red-Sea.jpg'}
                       height={100}
                       width={120}
                       alt='img'

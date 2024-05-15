@@ -182,7 +182,7 @@ const Page = () => {
       <div className='flex  items-center justify-center mb-20 mt-10'>
         <div className='flex w-11/12 '>
           <div className='md:w-1/2 border-2 border-num-orange border-r-0'>
-            <div className='flex flex-col gap-8 p-14'>
+            <div className='flex flex-col gap-8 md:p-14 p-4'>
               <h1 className='md:text-7xl text-4xl'>Our Values</h1>
               <hr className='w-1/2 -translate-y-4 border-2 border-num-orange' />
               <h2 className='text-3xl'>The compass that guides our ship</h2>
@@ -193,7 +193,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className='w-1/2 bg-num-indigo p-8'>
+          <div className='w-1/2 bg-num-indigo md:p-8'>
             <div className='grid md:grid-cols-2 gap-y-12'>
               <div className='flex flex-col text-white items-center md:ml-4'>
                 <Image
