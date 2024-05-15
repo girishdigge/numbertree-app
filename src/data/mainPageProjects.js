@@ -50,9 +50,8 @@ export const MainPageProjects = [
     date: 'April 2017',
     client: '',
     sector: 'Institutional ',
-    service:
-      'Techno Commercial Audit , operational excellence review of planning & billing ',
-    image: '/projects/IIM-kashipur.jpg', // replace with the actual image path
+    service: 'Techno Commercial Audit ',
+    image: '/projects/IIM-kashipur1.jpg', // replace with the actual image path
     link: '/projects/featured-projects/iim-kashipur',
   },
 
