@@ -24,7 +24,7 @@ const page = () => {
         <RxSlash color='gray' className='mt-1' />
         <p className='font-bold text-num-indigo'>Kishan Panchal</p>
       </div>
-      <div className=' flex flex-col items-center justify-center mt-20 mb-10 ml-12'>
+      <div className=' flex flex-col items-center justify-center mt-20 mb-10 md:ml-12 ml-2'>
         <div className='flex flex-row mb-4'>
           <span>
             <p className='text-3xl'>Send Message </p>{' '}

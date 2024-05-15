@@ -33,7 +33,7 @@ const Page = () => {
       name: 'IIM Kashipur Construction Project',
       location: 'Uttarakhand',
       link: '/projects/iim-kashipur',
-      image: '/projects/iim-kashipur.jpg',
+      image: '/projects/IIM-kashipur.jpg',
     },
     {
       name: ' ITPO Convention Center,Bharat Mandapam.',

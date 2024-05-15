@@ -50,11 +50,11 @@ const Testimonials = () => {
     <div className='flex flex-col items-center mt-20 '>
       <div className='flex flex-row items-center justify-center'>
         <div className='md:ml-36'>
-          <h1 className='text-7xl text-num-indigo text-opacity-50 opacity-10 font-medium'>
+          <h1 className='md:text-7xl text-5xl text-num-indigo text-opacity-50 opacity-10 font-medium'>
             Testimonials
           </h1>
 
-          <h2 className='-translate-y-12 ml-2  text-5xl text-num-orange font-medium'>
+          <h2 className='md:-translate-y-12 -translate-y-8 ml-2 md:mb-0 mb-4 md:text-5xl text-3xl text-num-orange font-medium'>
             Testimonials
           </h2>
           <h3 className='-translate-y-12 md:text-3xl ml-2 font-medium mt-2'>

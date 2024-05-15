@@ -17,7 +17,7 @@ export const Services = [
   {
     name: 'Project Management Consultancy',
     link: '/services/project-monitoring-and-control',
-    image: '/services/projectMonCon.jpg', // replace with the actual image path
+    image: '/services/ProjectMonCon.jpg', // replace with the actual image path
   },
   {
     name: 'Quantity Survey & Cost Control',

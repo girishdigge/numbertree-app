@@ -47,7 +47,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col m-20 '>
+      <div className='flex flex-col md:m-20 m-4'>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
         <div className='flex gap-10 md:flex-row flex-col'>
           <Button className='w-64 text-lg h-12 bg-num-orange text-white hover:bg-num-orange '>
@@ -82,7 +82,7 @@ const Page = () => {
           you achieve your objectives , fill out the following form
         </p>
       </div>
-      <div className='flex flex-col pl-20 mt-10'>
+      <div className='flex flex-col md:pl-20 pl-2 mt-10'>
         <ProposalForm />
       </div>
     </div>

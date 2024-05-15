@@ -195,7 +195,7 @@ export const projects = [
     types: ['3'],
     location: 'Kashipur, Uttarakhand',
     link: '/projects/iim-kashipur',
-    image: '/projects/iim-kashipur.jpg',
+    image: '/projects/IIM-kashipur.jpg',
   },
   {
     id: 18,

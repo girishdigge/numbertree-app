@@ -7,7 +7,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Institutional ',
     service: 'Techno-Commercial Audit',
-    image: '/projects/parlimentInside.jpg', // replace with the actual image path
+    image: '/projects/parlimentInside1.jpg', // replace with the actual image path
     link: '/projects/featured-projects/new-parliment',
   },
   {

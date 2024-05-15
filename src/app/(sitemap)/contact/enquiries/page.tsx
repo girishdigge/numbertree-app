@@ -51,7 +51,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col m-20 '>
+      <div className='flex flex-col md:m-20 m-4 '>
         <h1 className='text-2xl mb-10'>What can we help you with?</h1>
         <div className='flex gap-10 md:flex-row flex-col'>
           <Link href={`/contact/proposal`}>
@@ -75,7 +75,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='grid md:grid-cols-3 gap-8 m-20 '>
+      <div className='grid md:grid-cols-3 gap-8 md:m-20 m-10 '>
         <div className='flex flex-col'>
           <h1 className='text-num-blue text-2xl mb-2'>Mumbai Office</h1>
           <span className='flex text-lg'>
@@ -118,7 +118,7 @@ const Page = () => {
           </span>
         </div>
       </div>
-      <div className='grid md:grid-cols-4  gap-4 m-20'>
+      <div className='grid md:grid-cols-4  gap-4 md:m-20 m-10'>
         <div className='flex flex-col'>
           <div>
             <h1 className='text-2xl'>For Press Enquiry</h1>
