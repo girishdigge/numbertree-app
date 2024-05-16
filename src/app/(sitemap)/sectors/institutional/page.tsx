@@ -44,13 +44,13 @@ const Page = () => {
       name: 'Kalyan Singh Cancer Institute,Lucknow',
       location: 'Uttar Pradesh',
       link: '/projects/kalyan-singh-cancer-institute',
-      image: '/projects/KalyanSinghCancerInstitute.jpeg',
+      image: '/projects/KalyanSinghCancerInstitute.jpg',
     },
     {
       name: 'Buddha Smriti Stupa & Buddha Sangrahlaya',
       location: 'Bihar',
       link: '/projects/buddha-smriti',
-      image: '/projects/Buddha-Smriti-Stupa.png',
+      image: '/projects/Buddha-Smriti-Stupa.jpg',
     },
   ];
   return (

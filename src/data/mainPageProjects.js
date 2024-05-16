@@ -29,7 +29,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Roads & Highways',
     service: 'Techno-Commercial Audit',
-    image: '/projects/mumbaiDelhiExpressway.jpeg', // replace with the actual image path
+    image: '/projects/mumbaiDelhiExpressway.jpg', // replace with the actual image path
     link: '/projects/featured-projects/MumbaiDelhiExpressway',
   },
   {
@@ -63,7 +63,7 @@ export const MainPageProjects = [
     client: '',
     sector: 'Roads & Highways ',
     service: 'Techno-Commercial Audit',
-    image: '/projects/Delhi-meerut-expressway.jpeg', // replace with the actual image path
+    image: '/projects/Delhi-meerut-expressway.jpg', // replace with the actual image path
     link: '/projects/featured-projects/delhi-vadodara',
   },
   {

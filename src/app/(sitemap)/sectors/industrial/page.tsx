@@ -28,7 +28,7 @@ const Page = () => {
       name: 'Maruti Suzuki Plant India Limited Sonipat',
       location: 'Haryana',
       link: '/projects/maruti-suzuki-sonipat',
-      image: '/projects/maruti-suzuki-plant-sonipat.jpeg',
+      image: '/projects/maruti-suzuki-plant-sonipat.jpg',
     },
     {
       name: 'Maruti Suzuki Plant India Limited Gujrat',

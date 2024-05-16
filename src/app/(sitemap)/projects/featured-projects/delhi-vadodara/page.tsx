@@ -39,7 +39,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/projects/Delhi-meerut-expressway.jpeg`}
+          src={`/projects/Delhi-meerut-expressway.jpg`}
           width={2046}
           height={768}
           alt='mumbaiDelhiExpressway'

@@ -34,14 +34,14 @@ const Page = () => {
       name: 'Maruti Suzuki Plant India Limited Sonipat',
       location: 'Haryana',
       link: '/projects/maruti-suzuki-sonipat',
-      image: '/projects/maruti-suzuki-plant-sonipat.jpeg',
+      image: '/projects/maruti-suzuki-plant-sonipat.jpg',
     },
     {
       name: 'Buddha Smriti Stupa & Buddha Sangrahlaya',
 
       location: 'Bihar',
       link: '/projects/buddha-smriti',
-      image: '/projects/Buddha-Smriti-Stupa.png',
+      image: '/projects/Buddha-Smriti-Stupa.jpg',
     },
     {
       name: 'Indian Institute of Technology Hyderabad',

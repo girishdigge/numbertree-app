@@ -26,7 +26,7 @@ const Page = () => {
       name: ' Mumbai Delhi Expressway package 2',
       location: 'Uttar Pradesh',
       link: '/projects/MumbaiDelhiExpressway',
-      image: '/projects/mumbaiDelhiExpressway.jpeg',
+      image: '/projects/mumbaiDelhiExpressway.jpg',
     },
     {
       name: ' Kartavya Path - Redevelopment as part of central Vista Redevelopment project',
@@ -38,7 +38,7 @@ const Page = () => {
       name: ' Delhi-Vadodara Greenfield Alignment, NH148N - Package 20',
       location: 'New Delhi',
       link: '/projects/delhi-vadodara',
-      image: '/projects/Delhi-meerut-expressway.jpeg',
+      image: '/projects/Delhi-meerut-expressway.jpg',
     },
     {
       name: ' Development of Purvanchal Expressway (Package VII) Mojrapur (Azamgarh) to Bijaura Ghazipur',

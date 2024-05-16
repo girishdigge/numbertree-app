@@ -32,7 +32,7 @@ const Page = () => {
       name: 'Indian Institute of Technology Palakkad',
       location: 'Palakkad, Kerala',
       link: '/projects/iit-palakkad',
-      image: '/projects/iit-palakkad.jpeg',
+      image: '/projects/iit-palakkad.jpg',
     },
     {
       name: 'The New Parliament Building',

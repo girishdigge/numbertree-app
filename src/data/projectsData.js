@@ -19,7 +19,7 @@ export const projects = [
     types: ['1', '2'],
     location: 'Mumbai',
     link: '/projects/mumbai-metro-dahisar-mira',
-    image: '/projects/MumbaiMetro2.jpeg',
+    image: '/projects/MumbaiMetro2.jpg',
   },
   {
     id: 3,
@@ -140,7 +140,7 @@ export const projects = [
     types: ['1'],
     location: 'Meerat,Uttar Pradesh',
     link: '/projects/MumbaiDelhiExpressway',
-    image: '/projects/mumbaiDelhiExpressway.jpeg',
+    image: '/projects/mumbaiDelhiExpressway.jpg',
   },
   {
     id: 14,
@@ -162,7 +162,7 @@ export const projects = [
     types: ['1'],
     location: 'New Delhi',
     link: '/projects/delhi-vadodara',
-    image: '/projects/Delhi-meerut-expressway.jpeg',
+    image: '/projects/Delhi-meerut-expressway.jpg',
   },
   {
     id: 16,
@@ -184,7 +184,7 @@ export const projects = [
     types: ['1'],
     location: 'Goa',
     link: '/projects/goa-shipyard',
-    image: '/projects/GoaShipyard.jpeg',
+    image: '/projects/GoaShipyard.jpg',
   },
   {
     id: 17,
@@ -228,7 +228,7 @@ export const projects = [
     types: ['1'],
     location: 'Lucknow, Uttar Pradesh',
     link: '/projects/kalyan-singh-cancer-institute',
-    image: '/projects/KalyanSinghCancerInstitute.jpeg',
+    image: '/projects/KalyanSinghCancerInstitute.jpg',
   },
   {
     id: 20,
@@ -239,7 +239,7 @@ export const projects = [
     types: ['3'],
     location: 'Rajgir, Bihar',
     link: '/projects/buddha-smriti',
-    image: '/projects/Buddha-Smriti-Stupa.png',
+    image: '/projects/Buddha-Smriti-Stupa.jpg',
   },
   {
     id: 21,
@@ -261,7 +261,7 @@ export const projects = [
     types: ['3'],
     location: 'Palakkad, Kerala',
     link: '/projects/iit-palakkad',
-    image: '/projects/iit-palakkad.jpeg',
+    image: '/projects/iit-palakkad.jpg',
   },
   {
     id: 23,
@@ -294,7 +294,7 @@ export const projects = [
     types: ['1', '2'],
     location: 'Sonipat, Haryana',
     link: '/projects/maruti-suzuki-sonipat',
-    image: '/projects/maruti-suzuki-plant-sonipat.jpeg',
+    image: '/projects/maruti-suzuki-plant-sonipat.jpg',
   },
   {
     id: 24,

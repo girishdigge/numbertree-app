@@ -33,7 +33,7 @@ const Page = () => {
       name: 'Construction of ship building workshop',
       location: 'Goa Shipyard',
       link: '/projects/goa-shipyard',
-      image: '/projects/GoaShipyard.jpeg',
+      image: '/projects/GoaShipyard.jpg',
     },
   ];
   return (

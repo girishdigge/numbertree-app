@@ -42,7 +42,7 @@ const Page = () => {
           src={`/projects/MumbaiMetroThaneBhiwandiKalyan.jpg`}
           width={2046}
           height={768}
-          alt='MumbaiMetroThaneBhiwandiKalyan.jpeg'
+          alt='MumbaiMetroThaneBhiwandiKalyan.jpg'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>

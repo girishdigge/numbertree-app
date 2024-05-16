@@ -46,7 +46,7 @@ const Page = () => {
       name: ' Delhi-Vadodara Greenfield Alignment, NH148N',
       location: 'New Delhi',
       link: '/projects/delhi-vadodara',
-      image: '/projects/Delhi-meerut-expressway.jpeg',
+      image: '/projects/Delhi-meerut-expressway.jpg',
     },
     {
       name: 'Manohar International Airport',

@@ -32,7 +32,7 @@ const Page = () => {
       name: 'Mumbai Metro Line 9',
       location: 'Mumbai',
       link: '/projects/mumbai-metro-dahisar-mira',
-      image: '/projects/MumbaiMetro2.jpeg',
+      image: '/projects/MumbaiMetro2.jpg',
     },
     {
       name: 'Pune Metro Corridor 1 & 2',

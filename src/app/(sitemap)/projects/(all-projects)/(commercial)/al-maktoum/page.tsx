@@ -40,7 +40,7 @@ const Page = () => {
           src={`/projects/Al-Maktum.jpg`}
           width={2046}
           height={768}
-          alt='maruti suzuki'
+          alt='Al-Maktum'
           className='object-contain'
         />
         <div className='absolute inset-0 flex flex-col md:justify-center bg-opacity-50 bg-black text-white'>
