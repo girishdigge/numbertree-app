@@ -272,7 +272,7 @@ export const projects = [
     types: ['1'],
     location: 'New Delhi',
     link: '/projects/new-parliment',
-    image: '/projects/parlimentInside.jpg',
+    image: '/projects/parlimentInside1.jpg',
   },
   {
     id: 23,
