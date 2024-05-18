@@ -28,7 +28,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/about/socialResponce.png`}
+          src={`/about/socialResponce.jpg`}
           width={2046}
           height={768}
           alt='Leadership'
@@ -58,7 +58,7 @@ const Page = () => {
       </div>
       <div className='relative p-20'>
         <Image
-          src={`/about/esgBanner2.png`}
+          src={`/about/esgBanner2.jpg`}
           width={2046}
           height={768}
           alt='Leadership'
@@ -106,7 +106,7 @@ const Page = () => {
           </div>
           <div>
             <Image
-              src={`/about/csr1.png`}
+              src={`/about/csr1.jpg`}
               width={2046}
               height={768}
               alt='Leadership'
@@ -131,7 +131,7 @@ const Page = () => {
         <div className='grid grid-cols-2 mt-10'>
           <div>
             <Image
-              src={`/about/csr2.png`}
+              src={`/about/csr2.jpg`}
               width={2046}
               height={768}
               alt='Leadership'
@@ -157,7 +157,7 @@ const Page = () => {
       </div>
       <div className='relative p-20'>
         <Image
-          src={`/about/esgBanner3.png`}
+          src={`/about/esgBanner3.jpg`}
           width={2046}
           height={768}
           alt='Leadership'
@@ -205,7 +205,7 @@ const Page = () => {
           </div>
           <div>
             <Image
-              src={`/about/csr3.png`}
+              src={`/about/csr3.jpg`}
               width={2046}
               height={768}
               alt='Leadership'
@@ -230,7 +230,7 @@ const Page = () => {
         <div className='grid grid-cols-2 mt-10'>
           <div>
             <Image
-              src={`/about/csr4.png`}
+              src={`/about/csr4.jpg`}
               width={2046}
               height={768}
               alt='Leadership'
@@ -285,7 +285,7 @@ const Page = () => {
           </div>
           <div>
             <Image
-              src={`/about/csr5.png`}
+              src={`/about/csr5.jpg`}
               width={2046}
               height={768}
               alt='Leadership'

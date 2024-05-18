@@ -411,7 +411,7 @@ const Page = () => {
       <div className=' flex items-center justify-center mb-20'>
         <div className='relative md:ml-10 md:mr-10'>
           <Image
-            src={`/about/socialResponce.png`}
+            src={`/about/socialResponce.jpg`}
             width={1920}
             height={786}
             alt='integrity'

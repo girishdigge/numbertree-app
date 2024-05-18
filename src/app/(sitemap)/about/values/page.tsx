@@ -32,7 +32,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/about/valueBanner.png`}
+          src={`/about/valueBanner.jpg`}
           width={2046}
           height={768}
           alt='Value'
@@ -270,7 +270,7 @@ const Page = () => {
           </div>
           <div className='z-1 flex flex-row relative h-96'>
             <Image
-              src={`/about/socialResponce.png`}
+              src={`/about/socialResponce.jpg`}
               height={540}
               width={960}
               alt='insights'

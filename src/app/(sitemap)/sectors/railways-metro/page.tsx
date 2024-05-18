@@ -88,7 +88,7 @@ const Page = () => {
       </div>
       <div className='relative '>
         <Image
-          src={`/sectors/RailwaysMetro.jpg`}
+          src={`/sectors/RailwaysMetro1.jpg`}
           width={2046}
           height={768}
           alt='Railways & Metro'
