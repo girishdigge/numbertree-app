@@ -7,7 +7,8 @@ const manrope = Manrope({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Numbertree',
-  description: 'Numbertree Assurance Services',
+  description:
+    'Numbertree is an infrastructure consulting engineering & audit services firm. We are committed to delivering exceptional and cutting-edge solutions to today’s business problems.',
 };
 
 export default function RootLayout({
