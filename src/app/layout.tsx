@@ -18,11 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <GoogleTagManager gtmId='GTM-5RKC2K3M' />
+      <GoogleTagManager gtmId='GTM-W7BCS5LN' />
       <body className={manrope.className}>
         <noscript>
           <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-5RKC2K3M'
+            src='https://www.googletagmanager.com/ns.html?id=GTM-W7BCS5LN'
             height='0'
             width='0'
             style={{ display: 'none', visibility: 'hidden' }}
