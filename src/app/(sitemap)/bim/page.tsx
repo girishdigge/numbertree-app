@@ -1,9 +1,4 @@
 'use client';
-import { FaArrowRight } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa6';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaQuoteLeft } from 'react-icons/fa';
 
 import GetInTouch from '@/components/sitemap/getintouch';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -42,7 +37,7 @@ const Page = () => {
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
           <div className='ml-10'>
-            <h2 className='md:text-lg font-light text-sm ml-4 mb-2 animate-fadeInLeft'>
+            <h2 className='hidden md:flex md:text-lg font-light text-sm ml-4 md:mb-2 animate-fadeInLeft'>
               EXPLORE
             </h2>
             <div className='border-l-4 md:w-1/2 border-num-orange'>

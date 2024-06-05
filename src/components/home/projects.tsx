@@ -56,17 +56,17 @@ const Projects = () => {
                             <h1 className='md:text-3xl md:mt-4 font-bold md:inline hidden tracking-widest'>
                               Project Details
                             </h1>
-                            <hr className='border-b-1 w-40 border-white mb-2' />
+                            <hr className='border-b-1 w-40 border-white md:mb-2' />
                             <h2 className='text-num-orange md:text-lg '>
                               Project Name
                             </h2>
                             <h3 className='md:text-xl'>{project.name}</h3>
-                            <hr className='border-b-1 w-40 border-white mb-2' />
+                            <hr className='border-b-1 w-40 border-white md:mb-2' />
                             <h2 className='text-num-orange md:text-lg '>
                               Location
                             </h2>
                             <h3 className='md:text-xl '>{project.location}</h3>
-                            <hr className='border-b-1 w-40 border-white mb-2 ' />
+                            <hr className='border-b-1 w-40 border-white md:mb-2 ' />
                             <h2 className='text-num-orange md:text-lg  md:inline hidden '>
                               Value{' '}
                             </h2>
