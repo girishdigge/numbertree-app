@@ -17,9 +17,20 @@ const Page = () => {
         link: '/services/techno-commercial-audit',
       },
     },
-
     {
       id: 1,
+      name: 'BIM First',
+      imageUrl: '/services/bim1.jpg',
+      content: {
+        heading: 'BIM First',
+        paragraph:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatem et voluptates ipsam consectetur natus reiciendis impedit unde corrupti dignissimos?',
+        link: '/bim',
+      },
+    },
+
+    {
+      id: 2,
       name: 'Contract Administration & Bill Verification',
       imageUrl: '/services/ContractAdministration.jpg',
       content: {
@@ -32,7 +43,7 @@ const Page = () => {
       },
     },
     {
-      id: 2,
+      id: 3,
       name: 'Project Management Consultancy',
       imageUrl: '/services/ProjectMonCon.jpg',
       content: {
@@ -43,7 +54,7 @@ const Page = () => {
       },
     },
     {
-      id: 3,
+      id: 4,
       name: 'Quantity Survey & Cost Control',
       imageUrl: '/services/QuantitySurvey.jpg',
       content: {
@@ -55,7 +66,7 @@ const Page = () => {
       },
     },
     {
-      id: 4,
+      id: 5,
       name: 'Construction Claim Management',
       imageUrl: '/services/ClaimManagement.jpg',
       content: {
@@ -67,7 +78,7 @@ const Page = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       name: 'Business Transformation',
       imageUrl: '/services/BusinessTransformation.jpg',
       content: {
@@ -78,7 +89,7 @@ const Page = () => {
       },
     },
     {
-      id: 6,
+      id: 7,
       name: 'Transaction Advisory',
       imageUrl: '/services/TransactionAdvisory.jpg',
       content: {

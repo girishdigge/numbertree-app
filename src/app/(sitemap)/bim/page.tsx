@@ -121,9 +121,9 @@ const Page = () => {
               </TabsList>
               <hr className='border-b-2 border-num-orange' />
               <TabsContent value='1'>
-                <div className='grid md:grid-cols-2 bg-num-blue bg-opacity-10'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>
+                    <h1 className='text-2xl font-medium mb-2'>
                       The Power of Cost Optimization
                     </h1>
                     {/* <h2 className='text-2xl mb-2 w-3/4'>
@@ -151,9 +151,9 @@ const Page = () => {
                 </div>
               </TabsContent>
               <TabsContent value='2'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>
+                    <h1 className='text-2xl font-medium  mb-2'>
                       The Foundation of Exceptional Design
                     </h1>
 
@@ -173,13 +173,14 @@ const Page = () => {
                     height={600}
                     width={600}
                     alt='img'
+                    className='p-4'
                   />
                 </div>{' '}
               </TabsContent>
               <TabsContent value='3'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Digital Twin</h1>
+                    <h1 className='text-2xl font-medium  mb-2'>Digital Twin</h1>
                     <p className='text-xl mt-2 '>
                       A digital twin is a virtual representation of physical
                       assets, systems, or processes, leveraging real-time data
@@ -205,13 +206,14 @@ const Page = () => {
                     height={600}
                     width={600}
                     alt='img'
+                    className='p-4'
                   />
                 </div>
               </TabsContent>
               <TabsContent value='4'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>
+                    <h1 className='text-2xl font-medium  mb-2'>
                       Digital Project Monitoring{' '}
                     </h1>
 
@@ -238,6 +240,7 @@ const Page = () => {
                     height={600}
                     width={600}
                     alt='img'
+                    className='p-4'
                   />
                 </div>
               </TabsContent>
@@ -250,7 +253,7 @@ const Page = () => {
           <div>
             <Tabs defaultValue='1' className='w-[full]'>
               <TabsContent value='1'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>SAUDI ARABIA</h1>
                     <h2 className='text-2xl mb-2 w-3/4'>
@@ -271,15 +274,16 @@ const Page = () => {
                     </p>
                   </div>
                   <Image
-                    src={'/projects/Red-Sea.jpg'}
-                    height={800}
-                    width={800}
-                    alt='img'
+                    src={'/bim/Red-Sea.jpg'}
+                    height={1280}
+                    width={675}
+                    alt='Red Sea airport'
+                    className='p-4 m-2'
                   />
                 </div>{' '}
               </TabsContent>
               <TabsContent value='2'>
-                <div className='grid md:grid-cols-2 bg-num-blue bg-opacity-10'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>UAE</h1>
                     <h2 className='text-2xl mb-2 w-3/4'>
@@ -296,21 +300,21 @@ const Page = () => {
                   </div>
                   <Image
                     src={'/bim/etihad.jpg'}
-                    height={800}
-                    width={800}
-                    alt='img'
-                    className='p-4'
+                    height={1280}
+                    width={675}
+                    alt='etihad'
+                    className='p-4 m-2'
                   />
                 </div>
               </TabsContent>
               <TabsContent value='3'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>
                       Sea & World Entertainment Park
                     </h1>
 
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
+                    <p className='text-xl mt-2 mb-4 w-4/5'>
                       The project involved the development of Shurayrah Island
                       which is composed of 13 luxury resorts located on the
                       untouched island in the Red Sea Area. The Shurayrah Island
@@ -327,14 +331,15 @@ const Page = () => {
                   </div>
                   <Image
                     src={'/bim/seaWorld.jpg'}
-                    height={800}
-                    width={800}
-                    alt='img'
+                    height={1280}
+                    width={675}
+                    alt='sea world'
+                    className='p-4 m-2'
                   />
                 </div>
               </TabsContent>
               <TabsContent value='4'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>
                       Shurayrah Island Central Hotel 3 Project - Red Sea
@@ -353,15 +358,16 @@ const Page = () => {
                   </div>
                   <Image
                     src={'/bim/shurayrah.jpg'}
-                    height={800}
-                    width={800}
-                    alt='img'
+                    height={1280}
+                    width={675}
+                    alt='shurayrah'
+                    className='p-4 m-2'
                   />
                 </div>
               </TabsContent>
 
               <TabsContent value='5'>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
                     <h1 className='text-sm mb-2'>Grand Bleu Tower</h1>
                     {/* <h2 className='text-2xl mb-2 w-3/4'>
@@ -380,9 +386,10 @@ const Page = () => {
                   </div>
                   <Image
                     src={'/bim/emmar.jpg'}
-                    height={800}
-                    width={800}
-                    alt='img'
+                    height={1280}
+                    width={675}
+                    alt='emmar'
+                    className='p-4 m-2'
                   />
                 </div>
               </TabsContent>
@@ -391,7 +398,7 @@ const Page = () => {
                 <TabsList className='grid grid-cols-5 mb-4  bg-white'>
                   <TabsTrigger value='1'>
                     <Image
-                      src={'/projects/Red-Sea.jpg'}
+                      src={'/bim/Red-Sea.jpg'}
                       height={100}
                       width={120}
                       alt='img'

@@ -22,6 +22,10 @@ const services: { title: string; href: string }[] = [
     href: '/services/techno-commercial-audit',
   },
   {
+    title: 'BIM First',
+    href: '/bim',
+  },
+  {
     title: 'Contract Administration & Bill Verification',
     href: '/services/contract-administration',
   },
@@ -250,19 +254,26 @@ export function NavigationBar() {
                       <ListItem
                         title='Techno-Commercial Audit'
                         href='/services/techno-commercial-audit'
+                        className='pb-4 mb-3'
+                      />
+                      <ListItem
+                        title='BIM First'
+                        href='/bim'
+                        className='pb-4 mb-3'
                       />
                       <ListItem
                         title='Contract Administration & Bill Verification'
                         href='/services/contract-administration'
-                      />
-                      <ListItem
-                        title='Project Management Consultancy'
-                        href='/services/project-monitoring-and-control'
+                        className='pb-2'
                       />
                     </div>
                   </div>
                   <div>
                     <div className='border-r-2 border-num-orange pr-8'>
+                      <ListItem
+                        title='Project Management Consultancy'
+                        href='/services/project-monitoring-and-control'
+                      />
                       <ListItem
                         title='Quantity Survey & Cost Control'
                         href='/services/quantity-survey'
