@@ -310,7 +310,7 @@ const Page = () => {
               <TabsContent value='3'>
                 <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>
+                    <h1 className='text-2xl mb-2'>
                       Sea & World Entertainment Park
                     </h1>
 
@@ -341,7 +341,7 @@ const Page = () => {
               <TabsContent value='4'>
                 <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>
+                    <h1 className='text-2xl mb-2'>
                       Shurayrah Island Central Hotel 3 Project - Red Sea
                     </h1>
 
@@ -369,7 +369,7 @@ const Page = () => {
               <TabsContent value='5'>
                 <div className='grid md:grid-cols-2 bg-gray-100'>
                   <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>Grand Bleu Tower</h1>
+                    <h1 className='text-2xl mb-2'>Grand Bleu Tower</h1>
                     {/* <h2 className='text-2xl mb-2 w-3/4'>
                       Connecting the physical and digital worlds
                     </h2> */}
