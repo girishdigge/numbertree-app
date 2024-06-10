@@ -19,10 +19,10 @@
 // export default Brochure;
 'use client';
 import { Button } from '@/components/ui/button';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 const DownloadPDF = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   const handleDownload = async () => {
     const filePath = '/Numbertree-Brochure.pdf'; // Replace with actual filename
