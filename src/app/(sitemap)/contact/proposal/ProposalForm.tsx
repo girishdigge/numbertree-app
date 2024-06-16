@@ -185,7 +185,7 @@ export function ProposalForm() {
         />
         <br />
         <Button
-          className='w-80 h-12 text-lg bg-num-indigo hover:bg-num-orange mb-20'
+          className='w-80 h-12 text-lg bg-num-indigo hover:bg-num-orange mb-20 Submit-Contact'
           type='submit'
         >
           Submit

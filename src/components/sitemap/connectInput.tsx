@@ -3,7 +3,6 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -91,7 +90,7 @@ export function ConnectInputForm() {
         />
         <div className='flex items-center justify-center'>
           <Button
-            className='mt-4 w-40 bg-num-orange hover:bg-white hover:text-num-orange'
+            className='mt-4 w-40 bg-num-orange hover:bg-white hover:text-num-orange Submit-Request'
             type='submit'
           >
             Submit
