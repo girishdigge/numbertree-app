@@ -22,6 +22,28 @@ export const MainPageProjects = [
     link: '/projects/featured-projects/ITPO',
   },
   {
+    name: 'Data Centre DC-02 & DC-03',
+    location: 'Navi Mumbai',
+    value: '4,074.53Cr(INR)',
+    date: 'January 2027',
+    client: '',
+    sector: 'Roads & Highways',
+    service: 'Techno-Commercial Audit',
+    image: '/projects/dataCenter.jpg', // replace with the actual image path
+    link: '/projects/data-center',
+  },
+  {
+    name: 'Mumbai Metro Line 2B',
+    location: 'Mumbai',
+    value: '10,986 Cr(INR)',
+    date: 'April 2026',
+    client: '',
+    sector: 'Roads & Highways',
+    service: 'Techno-Commercial Audit',
+    image: '/projects/mumbaiMetro2b.jpg', // replace with the actual image path
+    link: '/projects/mumbai-metro-line-2b',
+  },
+  {
     name: 'Mumbai Delhi Expressway package 2',
     location: 'Meerut , Uttar Pradesh',
     value: '1057.6 Cr(INR)',

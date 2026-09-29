@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -12,6 +11,7 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { MainPageProjects } from '@/data/mainPageProjects';
+
 const Projects = () => {
   return (
     <div className=''>
@@ -24,9 +24,10 @@ const Projects = () => {
           Projects
         </h2>
 
-        <h3 className='-translate-y-12 md:text-3xl  font-medium ml-1 mt-2'>
-          {'Taking projects from complexity to profitability'}
+        <h3 className='-translate-y-12 md:text-3xl font-medium ml-1 mt-2'>
+          Taking projects from complexity to profitability
         </h3>
+
         <h4 className='w-1/2 -translate-y-10 md:text-lg text-sm text-justify ml-2 mb-6 mt-4'>
           We are experts at handling projects which are multidimensional, large
           scale and complex. Our commitment is to ensure that each project is
@@ -35,6 +36,7 @@ const Projects = () => {
           prosper.
         </h4>
       </div>
+
       <div className='flex items-center justify-center'>
         <Carousel className='flex items-center justify-center w-5/6 relative'>
           <CarouselContent>
@@ -47,58 +49,80 @@ const Projects = () => {
                       src={project.image}
                       height={853}
                       width={1280}
-                      alt='image'
+                      alt={project.name}
+                      loading='lazy'
+                      sizes='(max-width: 768px) 83.33vw, 83.33vw'
+                      quality={70}
+                      fetchPriority='low'
                     />
-                    <div className='absolute inset-0 flex  '>
-                      <div className='bg-black bg-opacity-70  md:w-1/3 w-2/3  '>
-                        <div className=' text-white ml-2'>
+
+                    <div className='absolute inset-0 flex'>
+                      <div className='bg-black bg-opacity-70 md:w-1/3 w-2/3'>
+                        <div className='text-white ml-2'>
                           <div className='flex flex-col md:gap-y-2 md:pl-4 md:tracking-widest'>
                             <h1 className='md:text-3xl md:mt-4 font-bold md:inline hidden tracking-widest'>
                               Project Details
                             </h1>
+
                             <hr className='border-b-1 w-40 border-white md:mb-2' />
-                            <h2 className='text-num-orange md:text-lg '>
+
+                            <h2 className='text-num-orange md:text-lg'>
                               Project Name
                             </h2>
+
                             <h3 className='md:text-xl'>{project.name}</h3>
+
                             <hr className='border-b-1 w-40 border-white md:mb-2' />
-                            <h2 className='text-num-orange md:text-lg '>
+
+                            <h2 className='text-num-orange md:text-lg'>
                               Location
                             </h2>
-                            <h3 className='md:text-xl '>{project.location}</h3>
-                            <hr className='border-b-1 w-40 border-white md:mb-2 ' />
-                            <h2 className='text-num-orange md:text-lg  md:inline hidden '>
-                              Value{' '}
+
+                            <h3 className='md:text-xl'>{project.location}</h3>
+
+                            <hr className='border-b-1 w-40 border-white md:mb-2' />
+
+                            <h2 className='text-num-orange md:text-lg md:inline hidden'>
+                              Value
                             </h2>
-                            <h3 className='md:text-xl md:inline hidden '>
+
+                            <h3 className='md:text-xl md:inline hidden'>
                               {project.value}
                             </h3>
-                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden ' />
-                            {/* <h2 className='text-num-orange text-lg '>Client </h2>
-                          <h3> </h3>
-                         <hr className='border-b-1 w-40 border-white mb-2' /> */}
-                            <h2 className='text-num-orange md:text-lg  md:inline hidden '>
+
+                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden' />
+
+                            <h2 className='text-num-orange md:text-lg md:inline hidden'>
                               Completion Date
                             </h2>
-                            <h3 className='text-xl md:inline hidden '>
-                              {project.date}{' '}
+
+                            <h3 className='text-xl md:inline hidden'>
+                              {project.date}
                             </h3>
-                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden ' />
-                            <h2 className='text-num-orange md:text-lg  md:inline hidden '>
-                              Sector{' '}
+
+                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden' />
+
+                            <h2 className='text-num-orange md:text-lg md:inline hidden'>
+                              Sector
                             </h2>
-                            <h3 className='md:text-xl md:inline hidden '>
+
+                            <h3 className='md:text-xl md:inline hidden'>
                               {project.sector}
                             </h3>
-                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden ' />
-                            <h2 className='text-num-orange text-lg  md:inline hidden '>
-                              Service provided{' '}
+
+                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden' />
+
+                            <h2 className='text-num-orange text-lg md:inline hidden'>
+                              Service provided
                             </h2>
-                            <h3 className='md:text-xl md:inline hidden '>
+
+                            <h3 className='md:text-xl md:inline hidden'>
                               {project.service}
                             </h3>
-                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden ' />
-                            <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+
+                            <hr className='border-b-1 w-40 border-white mb-2 md:inline hidden' />
+
+                            <Button className='w-40 bg-num-indigo md:mt-5 border-0 hover:bg-num-orange'>
                               Read More
                             </Button>
                           </div>
@@ -110,11 +134,13 @@ const Projects = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo ' />
-          <CarouselNext className=' h-14 w-12  text-white bg-num-orange hover:bg-num-indigo' />
+
+          <CarouselPrevious className='h-14 w-12 text-white bg-num-orange hover:bg-num-indigo' />
+          <CarouselNext className='h-14 w-12 text-white bg-num-orange hover:bg-num-indigo' />
         </Carousel>
       </div>
     </div>
   );
 };
+
 export default Projects;

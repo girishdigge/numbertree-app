@@ -15,8 +15,7 @@ import {
   SelectGroup,
   SelectValue,
 } from '@/components/ui/select';
-
-import { useEffect, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { MainPageProjects } from '@/data/mainPageProjects';
 
 const Page = () => {
@@ -24,13 +23,8 @@ const Page = () => {
   const [sector, setSector] = useState('');
   const [location, setLocation] = useState('');
   const [type, setType] = useState('');
-  const [filteredProjects, setFilteredProjects] = useState(projects);
-
-  useEffect(() => {
-    console.log(service, sector, location, type);
-
-    // Filter projects based on selected service and sector
-    const filtered = projects.filter((project) => {
+  const filteredProjects = useMemo(() => {
+    return projects.filter((project) => {
       return (
         (!service || project.services.includes(service)) &&
         (!sector || project.sectors.includes(sector)) &&
@@ -38,7 +32,6 @@ const Page = () => {
         (!type || project.types.includes(type))
       );
     });
-    setFilteredProjects(filtered);
   }, [service, sector, location, type]);
   return (
     <div>
@@ -56,6 +49,7 @@ const Page = () => {
           src={'/projects/banner.jpg'}
           height={768}
           width={1920}
+          priority
           alt='services banner'
         />
         <div className='absolute inset-0 flex flex-col justify-center bg-opacity-50 bg-black  text-white'>
@@ -99,7 +93,7 @@ const Page = () => {
         <div className='flex gap-2 md:flex-row flex-col'>
           <Select
             onValueChange={(value: string) => {
-              setService(value), setLocation(''), setSector('');
+              (setService(value), setLocation(''), setSector(''));
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -123,7 +117,7 @@ const Page = () => {
           </Select>
           <Select
             onValueChange={(value: string) => {
-              setSector(value), setLocation(''), setService(''), setType('');
+              (setSector(value), setLocation(''), setService(''), setType(''));
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -156,7 +150,7 @@ const Page = () => {
           </Select>
           <Select
             onValueChange={(value: string) => {
-              setLocation(value), setSector(''), setService(''), setType('');
+              (setLocation(value), setSector(''), setService(''), setType(''));
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -212,7 +206,7 @@ const Page = () => {
           </Select>
           <Select
             onValueChange={(value: string) => {
-              setType(value), setLocation(''), setService(''), setSector('');
+              (setType(value), setLocation(''), setService(''), setSector(''));
             }}
           >
             <SelectTrigger className='w-[180px]'>
@@ -237,11 +231,13 @@ const Page = () => {
           </Select>
           <Button
             onClick={() => {
-              // setSector(''), setService('');
-              window.location.reload();
+              setService('');
+              setSector('');
+              setLocation('');
+              setType('');
             }}
             className='font-bold'
-            variant={'secondary'}
+            variant='secondary'
           >
             Reset
           </Button>
@@ -259,12 +255,15 @@ const Page = () => {
             {MainPageProjects.map((projects, index) => (
               <div key={index}>
                 <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
-                  <Link href={projects.link}>
+                  <Link href={projects.link} prefetch={false}>
                     <Image
                       src={projects.image}
                       width={800}
                       height={400}
-                      alt={projects.location}
+                      alt={projects.name}
+                      loading='lazy'
+                      quality={70}
+                      sizes='(max-width: 768px) 100vw, 50vw'
                       className='object-cover h-96'
                     />
 
@@ -301,12 +300,15 @@ const Page = () => {
         {filteredProjects.map((projects, index) => (
           <div key={index}>
             <div className='flex flex-row  relative hover:scale-115 transform transition-all duration-500 ease-in-out'>
-              <Link href={projects.link}>
+              <Link href={projects.link} prefetch={false}>
                 <Image
                   src={projects.image}
                   width={800}
                   height={400}
-                  alt={projects.location}
+                  alt={projects.name}
+                  loading='lazy'
+                  quality={70}
+                  sizes='(max-width: 768px) 100vw, 50vw'
                   className='object-cover h-96'
                 />
 

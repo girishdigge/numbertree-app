@@ -108,342 +108,494 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='flex mt-0 flex-col items-center justify-center'>
-        <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
-          <div>
-            <Tabs defaultValue='1' className='w-[full]'>
-              <TabsList className='grid md:grid-cols-4 grid-cols-2  md:mb-4 mb-10 gap-2'>
-                <TabsTrigger value='1'>5D BIM</TabsTrigger>
-                <TabsTrigger value='2'>3D BIM</TabsTrigger>
-                <TabsTrigger value='3'>Digital Twin</TabsTrigger>
-                <TabsTrigger value='4'>Digital Project Monitoring</TabsTrigger>
-                {/* <TabsTrigger value='4'>IoT</TabsTrigger> */}
-              </TabsList>
-              <hr className='border-b-2 border-num-orange' />
-              <TabsContent value='1'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl font-medium mb-2'>
-                      The Power of Cost Optimization
-                    </h1>
-                    {/* <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2> */}
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      BIM 5D model integrates cost data into the digital models,
-                      empowering decision makers to make financially accurate
-                      decisions throughout the project lifecycle. By linking the
-                      3D models with accurate material quantities, labor costs,
-                      and resource allocations, we enable precise cost
-                      estimations and cost tracking. Our BIM 5D services
-                      facilitate real-time cost analysis, enabling businesses to
-                      identify cost-saving opportunities, evaluate alternative
-                      design options, and ultimately maximize ROI.
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/b1.jpg'}
-                    height={600}
-                    width={600}
-                    alt='img'
-                    className='p-4'
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value='2'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl font-medium  mb-2'>
-                      The Foundation of Exceptional Design
-                    </h1>
+      <div className='w-full flex flex-col items-center'>
+        <div className='w-11/12 mt-2 mb-10'>
+          <Tabs defaultValue='1' className='w-full'>
+            {/* Tabs */}
+            <TabsList
+              className='
+          w-full
+          grid grid-cols-2 md:grid-cols-4
+          gap-2
+          h-auto
+          bg-transparent
+          p-0
+          mb-6
+        '
+            >
+              <TabsTrigger
+                value='1'
+                className='py-3 px-3 text-sm md:text-base whitespace-normal'
+              >
+                5D BIM
+              </TabsTrigger>
 
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      The BIM model lays the groundwork for exceptional
-                      infrastructure design. We employ the latest software and
-                      techniques to create highly accurate and detailed 3D
-                      models of the project. These models allow stakeholders to
-                      visualize and analyse every aspect of the project with
-                      remarkable clarity. We ensure that the 3D models are not
-                      only visually appealing but also meticulously aligned with
-                      the project requirements and industry standards.
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/b2.jpg'}
-                    height={600}
-                    width={600}
-                    alt='img'
-                    className='p-4'
-                  />
-                </div>{' '}
-              </TabsContent>
-              <TabsContent value='3'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl font-medium  mb-2'>Digital Twin</h1>
-                    <p className='text-xl mt-2 '>
-                      A digital twin is a virtual representation of physical
-                      assets, systems, or processes, leveraging real-time data
-                      and advanced analytics to mirror their behaviour and
-                      performance accurately. By creating a digital replica of
-                      assets such as buildings, bridges, or roads , stakeholders
-                      gain unprecedented insights into their operations and
-                      condition, enabling proactive decision-making and
-                      optimization of resources.In Infra projects, digital twins
-                      facilitate detailed planning and simulation of
-                      construction processes, allowing project teams to identify
-                      potential issues, optimize workflows, and improve safety
-                      measures before commencing work on-site. This proactive
-                      approach helps mitigate risks, reduce project delays, and
-                      enhance overall project outcomes. Digital twins enable
-                      predictive maintenance, allowing infrastructure managers
-                      to anticipate equipment failures, optimize maintenance
-                      schedules, and extend the lifespan of assets.
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/b3.jpg'}
-                    height={600}
-                    width={600}
-                    alt='img'
-                    className='p-4'
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value='4'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl font-medium  mb-2'>
-                      Digital Project Monitoring{' '}
-                    </h1>
+              <TabsTrigger
+                value='2'
+                className='py-3 px-3 text-sm md:text-base whitespace-normal'
+              >
+                3D BIM
+              </TabsTrigger>
 
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      {`Numbertree offers advanced digital project monitoring
-                      services to enhance project oversight, efficiency, and
-                      transparency. 
-                       The scope includes- `}
-                      <li>Integrated project management</li>
-                      <li> Automated data collection and analysis </li>
-                      <li>Real time monitoring and reporting</li>
-                      <li>Performance & risk analytics </li>
-                      <li>Document Management and Version Control</li>
-                      <li>Mobile Applications and Field Data Capture </li>
-                      <li>Data Security and Compliance</li>
-                      With our digital project monitoring services, clients can
-                      benefit from enhanced project visibility, proactive
-                      decision-making, and improved collaboration among
-                      stakeholders.
-                    </p>
-                  </div>
+              <TabsTrigger
+                value='3'
+                className='py-3 px-3 text-sm md:text-base whitespace-normal'
+              >
+                Digital Twin
+              </TabsTrigger>
+
+              <TabsTrigger
+                value='4'
+                className='py-3 px-3 text-sm md:text-base whitespace-normal'
+              >
+                Digital Project Monitoring
+              </TabsTrigger>
+            </TabsList>
+
+            <hr className='border-0 border-t-2 border-num-orange mb-6' />
+
+            {/* ==================== 5D BIM ==================== */}
+            <TabsContent value='1' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Text */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h1 className='text-2xl md:text-3xl font-medium mb-3'>
+                    The Power of Cost Optimization
+                  </h1>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    BIM 5D model integrates cost data into the digital models,
+                    empowering decision makers to make financially accurate
+                    decisions throughout the project lifecycle. By linking the
+                    3D models with accurate material quantities, labor costs,
+                    and resource allocations, we enable precise cost estimations
+                    and cost tracking. Our BIM 5D services facilitate real-time
+                    cost analysis, enabling businesses to identify cost-saving
+                    opportunities, evaluate alternative design options, and
+                    ultimately maximize ROI.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[4/3] md:aspect-auto md:min-h-[520px]'>
                   <Image
-                    src={'/bim/b4.jpg'}
-                    height={600}
-                    width={600}
-                    alt='img'
-                    className='p-4'
+                    src='/bim/b1.jpg'
+                    alt='5D BIM'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
                   />
                 </div>
-              </TabsContent>
-            </Tabs>
-          </div>
+              </div>
+            </TabsContent>
+
+            {/* ==================== 3D BIM ==================== */}
+            <TabsContent value='2' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Text */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h1 className='text-2xl md:text-3xl font-medium mb-3'>
+                    The Foundation of Exceptional Design
+                  </h1>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    The BIM model lays the groundwork for exceptional
+                    infrastructure design. We employ the latest software and
+                    techniques to create highly accurate and detailed 3D models
+                    of the project. These models allow stakeholders to visualize
+                    and analyse every aspect of the project with remarkable
+                    clarity. We ensure that the 3D models are not only visually
+                    appealing but also meticulously aligned with the project
+                    requirements and industry standards.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[4/3] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/b2.jpg'
+                    alt='3D BIM'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* ==================== DIGITAL TWIN ==================== */}
+            <TabsContent value='3' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Text */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h1 className='text-2xl md:text-3xl font-medium mb-3'>
+                    Digital Twin
+                  </h1>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    A digital twin is a virtual representation of physical
+                    assets, systems, or processes, leveraging real-time data and
+                    advanced analytics to mirror their behaviour and performance
+                    accurately. By creating a digital replica of assets such as
+                    buildings, bridges, or roads, stakeholders gain
+                    unprecedented insights into their operations and condition,
+                    enabling proactive decision-making and optimization of
+                    resources. In infrastructure projects, digital twins
+                    facilitate detailed planning and simulation of construction
+                    processes, allowing project teams to identify potential
+                    issues, optimize workflows, and improve safety measures
+                    before commencing work on-site. This proactive approach
+                    helps mitigate risks, reduce project delays, and enhance
+                    overall project outcomes. Digital twins also enable
+                    predictive maintenance, allowing infrastructure managers to
+                    anticipate equipment failures, optimize maintenance
+                    schedules, and extend the lifespan of assets.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[4/3] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/b3.jpg'
+                    alt='Digital Twin'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* ==================== DIGITAL PROJECT MONITORING ==================== */}
+            <TabsContent value='4' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Text */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h1 className='text-2xl md:text-3xl font-medium mb-3'>
+                    Digital Project Monitoring
+                  </h1>
+
+                  <p className='text-base md:text-lg leading-relaxed mb-4'>
+                    Numbertree offers advanced digital project monitoring
+                    services to enhance project oversight, efficiency, and
+                    transparency.
+                  </p>
+
+                  <ul className='list-disc pl-6 space-y-2 text-base md:text-lg'>
+                    <li>Integrated project management</li>
+                    <li>Automated data collection and analysis</li>
+                    <li>Real-time monitoring and reporting</li>
+                    <li>Performance & risk analytics</li>
+                    <li>Document Management and Version Control</li>
+                    <li>Mobile Applications and Field Data Capture</li>
+                    <li>Data Security and Compliance</li>
+                  </ul>
+
+                  <p className='text-base md:text-lg leading-relaxed mt-4'>
+                    With our digital project monitoring services, clients can
+                    benefit from enhanced project visibility, proactive
+                    decision-making, and improved collaboration among
+                    stakeholders.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[4/3] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/b4.jpg'
+                    alt='Digital Project Monitoring'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
-      <div className='flex mt-0 flex-col items-center justify-center'>
-        <div className=' flex w-11/12 mt-2 flex-col items-center justify-center mb-10 '>
-          <div>
-            <Tabs defaultValue='1' className='w-[full]'>
-              <TabsContent value='1'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>SAUDI ARABIA</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      Red Sea International Airport Project
-                    </h2>
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      The Red Sea International Airport received its first
-                      flight last year .The airport serves as a gateway to the
-                      Red Sea Resort - a dedicated luxury regenerative tourism
-                      spot being developed in Saudi Arabia.
-                    </p>
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      As part of vision2030 initiative, Saudi Arabia is
-                      developing several exciting tourist destinations. The
-                      development of tourism industry is being done as part of a
-                      strategic roadmap, to develop the country’s non-oil
-                      economy...
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/Red-Sea.jpg'}
-                    height={1280}
-                    width={675}
-                    alt='Red Sea airport'
-                    className='p-4 m-2'
-                  />
-                </div>{' '}
-              </TabsContent>
-              <TabsContent value='2'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-sm mb-2'>UAE</h1>
-                    <h2 className='text-2xl mb-2 w-3/4'>
-                      The Etihad Rail Stage-2 project
-                    </h2>
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      Core Services -To develop BIM models (LOD 500) for Civil,
-                      Structural and MEP discipline Etihad Rail is being
-                      developed in line with the Abu Dhabi Economic Vision 2030
-                      and the UAE Vision 2021, which in turn contributes to
-                      economic diversification through strategic initiatives set
-                      to bolster UAE socio-economic growth and diversification
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/etihad.jpg'}
-                    height={1280}
-                    width={675}
-                    alt='etihad'
-                    className='p-4 m-2'
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value='3'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl mb-2'>
-                      Sea & World Entertainment Park
-                    </h1>
+      <div className='w-full flex flex-col items-center'>
+        <div className='w-11/12 mt-2 mb-10'>
+          <Tabs defaultValue='1' className='w-full'>
+            {/* ========================================================= */}
+            {/* PROJECT 1 */}
+            {/* ========================================================= */}
+            <TabsContent value='1' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Content */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <span className='text-sm font-medium mb-2'>SAUDI ARABIA</span>
 
-                    <p className='text-xl mt-2 mb-4 w-4/5'>
-                      The project involved the development of Shurayrah Island
-                      which is composed of 13 luxury resorts located on the
-                      untouched island in the Red Sea Area. The Shurayrah Island
-                      master plan also included Shurayrah Central Hotel 3. Our
-                      services included BIM LOD-350-500 MEP Services Integration
-                      of PODs MEP Services Modeling & Coordination & Sheet
-                      Production of Hotel PODs BIM Clash Detection As-Built
-                      Model Visualizatio Our scope of work included , BIM
-                      LOD-400 and Services Integration MEPF Modeling &
-                      Coordination & Sheet Production of Various Oceans of the
-                      project. BIM Clash Detection BOQ’s from BIM Model As-Built
-                      Model Visualization
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/seaWorld.jpg'}
-                    height={1280}
-                    width={675}
-                    alt='sea world'
-                    className='p-4 m-2'
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value='4'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl mb-2'>
-                      Shurayrah Island Central Hotel 3 Project - Red Sea
-                    </h1>
+                  <h2 className='text-2xl md:text-3xl font-medium mb-4'>
+                    Red Sea International Airport Project
+                  </h2>
 
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      The project involved the development of Shurayrah Island
-                      which is composed of 13 luxury resorts located on the
-                      untouched island in the Red Sea Area. The Shurayrah Island
-                      master plan also included Shurayrah Central Hotel 3. Our
-                      services included BIM LOD-350-500 MEP Services Integration
-                      of PODs MEP Services Modeling & Coordination & Sheet
-                      Production of Hotel PODs BIM Clash Detection As-Built
-                      Model Visualizatio
-                    </p>
-                  </div>
-                  <Image
-                    src={'/bim/shurayrah.jpg'}
-                    height={1280}
-                    width={675}
-                    alt='shurayrah'
-                    className='p-4 m-2'
-                  />
-                </div>
-              </TabsContent>
+                  <p className='text-base md:text-lg leading-relaxed mb-4'>
+                    The Red Sea International Airport received its first flight
+                    last year. The airport serves as a gateway to the Red Sea
+                    Resort — a dedicated luxury regenerative tourism destination
+                    being developed in Saudi Arabia.
+                  </p>
 
-              <TabsContent value='5'>
-                <div className='grid md:grid-cols-2 bg-gray-100'>
-                  <div className='flex flex-col justify-center pl-8 bg-gray-100'>
-                    <h1 className='text-2xl mb-2'>Grand Bleu Tower</h1>
-                    {/* <h2 className='text-2xl mb-2 w-3/4'>
-                      Connecting the physical and digital worlds
-                    </h2> */}
-                    <p className='text-xl mt-2 mb-4 w-3/4'>
-                      BIM Consultancy: Building Maintenance Unit Package Dubai
-                      Marina Grand Bleu Tower is a skyscraper located on the
-                      first line of the beach of the Emaar Beach front Island.
-                      Emaar Beachfront is the part of new peninsula which will
-                      be used for building skyscrapers for residential and
-                      investment purposes. Scope of Work included BIM LOD-350
-                      and LOD-500 BIM Works of the BMU (Building Maintenance
-                      Unit) Package for Facility Management
-                    </p>
-                  </div>
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    {`As part of Vision 2030 initiative, Saudi Arabia is
+                    developing several exciting tourist destinations. The
+                    development of the tourism industry is being done as part of
+                    a strategic roadmap to develop the country's non-oil
+                    economy.`}
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[16/10] md:aspect-auto md:min-h-[520px]'>
                   <Image
-                    src={'/bim/emmar.jpg'}
-                    height={1280}
-                    width={675}
-                    alt='emmar'
-                    className='p-4 m-2'
+                    src='/bim/Red-Sea.jpg'
+                    alt='Red Sea International Airport'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
                   />
                 </div>
-              </TabsContent>
-              <div className='grid md:grid-cols-2'>
-                <div></div>
-                <TabsList className='grid grid-cols-5 mb-4  bg-white'>
-                  <TabsTrigger value='1'>
-                    <Image
-                      src={'/bim/Red-Sea.jpg'}
-                      height={100}
-                      width={120}
-                      alt='img'
-                    />
-                  </TabsTrigger>
-                  <TabsTrigger value='2'>
-                    {' '}
-                    <Image
-                      src={'/bim/etihad.jpg'}
-                      height={100}
-                      width={120}
-                      alt='img'
-                    />
-                  </TabsTrigger>
-                  <TabsTrigger value='3'>
-                    {' '}
-                    <Image
-                      src={'/bim/seaWorld.jpg'}
-                      height={100}
-                      width={120}
-                      alt='img'
-                    />
-                  </TabsTrigger>
-                  <TabsTrigger value='4'>
-                    {' '}
-                    <Image
-                      src={'/bim/shurayrah.jpg'}
-                      height={100}
-                      width={120}
-                      alt='img'
-                    />
-                  </TabsTrigger>
-                  <TabsTrigger value='5'>
-                    {' '}
-                    <Image
-                      src={'/bim/emmar.jpg'}
-                      height={100}
-                      width={120}
-                      alt='img'
-                    />
-                  </TabsTrigger>
-                </TabsList>
               </div>
-            </Tabs>
-          </div>
+            </TabsContent>
+
+            {/* ========================================================= */}
+            {/* PROJECT 2 */}
+            {/* ========================================================= */}
+            <TabsContent value='2' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Content */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <span className='text-sm font-medium mb-2'>UAE</span>
+
+                  <h2 className='text-2xl md:text-3xl font-medium mb-4'>
+                    The Etihad Rail Stage-2 Project
+                  </h2>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    Core services included developing BIM models (LOD 500) for
+                    Civil, Structural and MEP disciplines. Etihad Rail is being
+                    developed in line with the Abu Dhabi Economic Vision 2030
+                    and the UAE Vision 2021, contributing to economic
+                    diversification through strategic initiatives designed to
+                    strengthen socio-economic growth.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[16/10] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/etihad.jpg'
+                    alt='Etihad Rail Stage 2 Project'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* ========================================================= */}
+            {/* PROJECT 3 */}
+            {/* ========================================================= */}
+            <TabsContent value='3' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Content */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h2 className='text-2xl md:text-3xl font-medium mb-4'>
+                    Sea & World Entertainment Park
+                  </h2>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    The project involved the development of Shurayrah Island,
+                    which is composed of 13 luxury resorts located on an
+                    untouched island in the Red Sea area. The Shurayrah Island
+                    master plan also included Shurayrah Central Hotel 3.
+                  </p>
+
+                  <p className='text-base md:text-lg leading-relaxed mt-4'>
+                    Our services included BIM LOD 350–500, MEP services
+                    integration, MEP services modelling and coordination, sheet
+                    production of hotel PODs, BIM clash detection, BOQs from BIM
+                    models, as-built model development and visualization.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[16/10] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/seaWorld.jpg'
+                    alt='Sea and World Entertainment Park'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* ========================================================= */}
+            {/* PROJECT 4 */}
+            {/* ========================================================= */}
+            <TabsContent value='4' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Content */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h2 className='text-2xl md:text-3xl font-medium mb-4'>
+                    Shurayrah Island Central Hotel 3 Project - Red Sea
+                  </h2>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    The project involved the development of Shurayrah Island,
+                    which is composed of 13 luxury resorts located on an
+                    untouched island in the Red Sea area. The Shurayrah Island
+                    master plan also included Shurayrah Central Hotel 3.
+                  </p>
+
+                  <p className='text-base md:text-lg leading-relaxed mt-4'>
+                    Our services included BIM LOD 350–500, MEP services
+                    integration, POD MEP services modelling and coordination,
+                    sheet production, BIM clash detection, as-built model
+                    development and visualization.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[16/10] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/shurayrah.jpg'
+                    alt='Shurayrah Island Central Hotel 3'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* ========================================================= */}
+            {/* PROJECT 5 */}
+            {/* ========================================================= */}
+            <TabsContent value='5' className='mt-0'>
+              <div className='grid grid-cols-1 md:grid-cols-[42%_58%] bg-gray-100 overflow-hidden'>
+                {/* Content */}
+                <div className='flex flex-col justify-center p-6 md:p-8'>
+                  <h2 className='text-2xl md:text-3xl font-medium mb-4'>
+                    Grand Bleu Tower
+                  </h2>
+
+                  <p className='text-base md:text-lg leading-relaxed'>
+                    BIM Consultancy: Building Maintenance Unit Package. Dubai
+                    Marina Grand Bleu Tower is a skyscraper located on the first
+                    line of the beach of the Emaar Beachfront Island.
+                  </p>
+
+                  <p className='text-base md:text-lg leading-relaxed mt-4'>
+                    Emaar Beachfront forms part of a new peninsula planned for
+                    high-rise residential and investment developments. Our scope
+                    included BIM LOD 350 and LOD 500 works for the BMU (Building
+                    Maintenance Unit) package supporting Facility Management.
+                  </p>
+                </div>
+
+                {/* Image */}
+                <div className='relative w-full aspect-[16/10] md:aspect-auto md:min-h-[520px]'>
+                  <Image
+                    src='/bim/emmar.jpg'
+                    alt='Grand Bleu Tower'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 58vw'
+                  />
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* ========================================================= */}
+            {/* THUMBNAIL NAVIGATION */}
+            {/* ========================================================= */}
+            <div className='grid grid-cols-1 md:grid-cols-[42%_58%] mt-3'>
+              {/* Empty left side to align thumbnails with image */}
+              <div className='hidden md:block' />
+
+              {/* Thumbnail navigation */}
+              <TabsList
+                className='
+            w-full
+            h-auto
+            grid grid-cols-5
+            gap-2
+            p-0
+            bg-transparent
+          '
+              >
+                <TabsTrigger
+                  value='1'
+                  className='h-auto p-1 data-[state=active]:ring-2 data-[state=active]:ring-num-orange'
+                >
+                  <Image
+                    src='/bim/Red-Sea.jpg'
+                    width={120}
+                    height={80}
+                    alt='Red Sea International Airport'
+                    className='w-full aspect-[3/2] object-cover'
+                  />
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value='2'
+                  className='h-auto p-1 data-[state=active]:ring-2 data-[state=active]:ring-num-orange'
+                >
+                  <Image
+                    src='/bim/etihad.jpg'
+                    width={120}
+                    height={80}
+                    alt='Etihad Rail'
+                    className='w-full aspect-[3/2] object-cover'
+                  />
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value='3'
+                  className='h-auto p-1 data-[state=active]:ring-2 data-[state=active]:ring-num-orange'
+                >
+                  <Image
+                    src='/bim/seaWorld.jpg'
+                    width={120}
+                    height={80}
+                    alt='Sea and World Entertainment Park'
+                    className='w-full aspect-[3/2] object-cover'
+                  />
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value='4'
+                  className='h-auto p-1 data-[state=active]:ring-2 data-[state=active]:ring-num-orange'
+                >
+                  <Image
+                    src='/bim/shurayrah.jpg'
+                    width={120}
+                    height={80}
+                    alt='Shurayrah Island'
+                    className='w-full aspect-[3/2] object-cover'
+                  />
+                </TabsTrigger>
+
+                <TabsTrigger
+                  value='5'
+                  className='h-auto p-1 data-[state=active]:ring-2 data-[state=active]:ring-num-orange'
+                >
+                  <Image
+                    src='/bim/emmar.jpg'
+                    width={120}
+                    height={80}
+                    alt='Grand Bleu Tower'
+                    className='w-full aspect-[3/2] object-cover'
+                  />
+                </TabsTrigger>
+              </TabsList>
+            </div>
+          </Tabs>
         </div>
       </div>
 

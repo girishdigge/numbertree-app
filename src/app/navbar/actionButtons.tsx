@@ -42,7 +42,7 @@ const ActionButtons = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <div className='md:inline hidden'>
+      <div className='md:inline hidden hover:cursor-pointer'>
         <GetCallDropDown />
       </div>
     </div>

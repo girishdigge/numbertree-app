@@ -153,7 +153,9 @@ export function NavigationBar() {
         {/* <Separator orientation='vertical' className='bg-pink-400 w-1 h-10' /> */}
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <Link href={`/about`}>About Us</Link>
+            <Link href={`/about`} prefetch={false}>
+              About Us
+            </Link>
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
@@ -226,7 +228,9 @@ export function NavigationBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <Link href={`/services`}>Services</Link>
+            <Link href={`/services`} prefetch={false}>
+              Services
+            </Link>
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
@@ -305,7 +309,9 @@ export function NavigationBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <Link href={`/sectors`}>Sectors</Link>
+            <Link href={`/sectors`} prefetch={false}>
+              Sectors
+            </Link>
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
@@ -434,7 +440,9 @@ export function NavigationBar() {
 
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <Link href={`/projects`}>Projects</Link>
+            <Link href={`/projects`} prefetch={false}>
+              Projects
+            </Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
@@ -474,7 +482,9 @@ export function NavigationBar() {
 
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <Link href={`/career`}>Career</Link>
+            <Link href={`/career`} prefetch={false}>
+              Career
+            </Link>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <hr className='border-2 border-num-orange animated-hr' />
@@ -503,7 +513,7 @@ export function NavigationBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href='/insights' legacyBehavior passHref>
+          <Link href='/insights' prefetch={false} legacyBehavior passHref>
             <div className=' mb-0.5'>
               <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
                 Insights
@@ -511,10 +521,15 @@ export function NavigationBar() {
             </div>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href='/contact/proposal' legacyBehavior passHref>
+        <NavigationMenuItem className='hover:cursor-pointer'>
+          <Link
+            href='/contact/proposal'
+            prefetch={false}
+            legacyBehavior
+            passHref
+          >
             <div className=' mb-0.5'>
-              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 hover:cursor-pointer'>
+              <NavigationMenuLink className='hover:bg-gray-100 text-sm font-medium px-4 py-2 '>
                 Contact us
               </NavigationMenuLink>
             </div>
@@ -538,7 +553,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
-            className
+            className,
           )}
           {...props}
         >

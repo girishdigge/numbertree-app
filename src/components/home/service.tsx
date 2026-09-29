@@ -90,60 +90,69 @@ const Services = () => {
         </h4>
       </div>
 
-      <div className='flex md:flex-row flex-col md:ml-16 items-center md:w-11/12'>
-        <div className='md:flex hidden flex-col w-2/5 font-bold bg-num-blue bg-opacity-10 text-num-orange border-t-2 border-num2-gray-dark  '>
-          {tabs.map((tab) => (
-            <div
-              key={tab.id}
-              className={`cursor-pointer  px-4 py-5  ${
-                activeTab === tab.id
-                  ? 'text-white   bg-num-indigo'
-                  : 'text-black border-b-2 border-num2-gray-dark'
-              }   `}
-              onMouseEnter={() => handleTabChange(tab.id)}
-            >
-              {tab.name}
-            </div>
-          ))}
-        </div>
-        <div className=' md:hidden flex-wrap w-full font-bold bg-num-blue bg-opacity-10 text-num-orange  '>
-          {tabs.map((tab) => (
-            <div
-              key={tab.id}
-              className={`cursor-pointer py-1 ${
-                activeTab === tab.id
-                  ? 'text-white   bg-num-indigo'
-                  : 'text-black border-b-2 border-num2-gray-dark'
-              }`}
-              onMouseEnter={() => handleTabChange(tab.id)}
-            >
-              {tab.name}
-            </div>
-          ))}
-        </div>
+      <div className='w-full md:w-11/12 md:ml-16'>
+        <div className='flex flex-col md:grid md:grid-cols-[40%_60%] items-stretch'>
+          {/* Desktop Tabs */}
+          <div className='hidden md:flex flex-col font-bold bg-num-blue/10 text-num-orange border-t-2 border-num2-gray-dark h-full'>
+            {tabs.map((tab) => (
+              <div
+                key={tab.id}
+                className={`cursor-pointer px-4 py-5 flex-1 flex items-center ${
+                  activeTab === tab.id
+                    ? 'text-white bg-num-indigo'
+                    : 'text-black border-b-2 border-num2-gray-dark'
+                }`}
+                onMouseEnter={() => handleTabChange(tab.id)}
+              >
+                {tab.name}
+              </div>
+            ))}
+          </div>
 
-        <div className='flex md:w-3/5'>
-          <div className=' mt-0 md:p-4 md:pl-0'>
-            <div className='relative'>
+          {/* Mobile Tabs */}
+          <div className='flex md:hidden flex-wrap w-full font-bold bg-num-blue/10 text-num-orange'>
+            {tabs.map((tab) => (
+              <div
+                key={tab.id}
+                className={`cursor-pointer px-3 py-2 ${
+                  activeTab === tab.id
+                    ? 'text-white bg-num-indigo'
+                    : 'text-black border-b border-num2-gray-dark'
+                }`}
+                onClick={() => handleTabChange(tab.id)}
+              >
+                {tab.name}
+              </div>
+            ))}
+          </div>
+
+          {/* Image + Content */}
+          <div className='w-full h-full'>
+            <div className='relative w-full h-full overflow-hidden'>
               <Image
                 width={1296}
                 height={598}
                 src={tabs[activeTab].imageUrl}
                 alt={`Image for ${tabs[activeTab].name}`}
-                className='w-full h-auto'
+                className='w-full h-full object-cover'
               />
-              <div className='absolute inset-0 flex  '>
-                <div className='bg-black  bg-opacity-40  md:p-5'>
-                  <div className=' text-white ml-2 md:w-1/2 '>
-                    <h2 className='md:text-4xl  font-bold flex   md:mb-2'>
+
+              {/* Overlay */}
+              <div className='absolute inset-0 flex items-center'>
+                <div className='bg-black/40 w-full h-full flex items-center'>
+                  <div className='text-white p-4 md:p-5 md:w-1/2'>
+                    <h2 className='text-xl md:text-4xl font-bold mb-2'>
                       {tabs[activeTab].name}
                     </h2>
-                    <hr className='w-2/5 border-num-orange border-2 md:mt-3 md:mb-3' />
-                    <h3 className='md:text-lg text-sm bg-black bg-opacity-5 '>
+
+                    <hr className='w-2/5 border-num-orange border-2 mt-2 mb-3' />
+
+                    <h3 className='text-sm md:text-lg'>
                       {tabs[activeTab].content}
                     </h3>
+
                     <Link href={tabs[activeTab].link}>
-                      <Button className='w-40 bg-num-indigo md:mt-5  border-0 hover:bg-num-orange'>
+                      <Button className='w-40 bg-num-indigo mt-4 md:mt-5 border-0 hover:bg-num-orange'>
                         Read More
                       </Button>
                     </Link>

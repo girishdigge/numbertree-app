@@ -150,7 +150,7 @@ const Footer = () => {
             </div>
 
             <p className='text-white ml-8 font-md w-2/3 mr-10 mt-4'>
-              &copy; 2024 Numbertree LLP.
+              &copy; {new Date().getFullYear()} Numbertree LLP.
             </p>
             <p className='text-white ml-8 font-md w-2/3 mr-10 '>
               All Rights Reserved.
@@ -190,7 +190,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className='text-white font-md ml-10 mr-10 mt-4'>
-            &copy; 2024 Numbertree. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Numbertree. All Rights Reserved.
           </p>
         </div>
         <div className='flex text-white mt-8'>
